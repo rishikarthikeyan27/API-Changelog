@@ -5950,7 +5950,7 @@
               "raw": "{\n    \"ID\": \"00000000-0000-0000-0000-000000000000\",\n    \"CustomFields\": [\n        {\n            \"Code\": \"string\",\n            \"Values\": [\n                \"string\"\n            ]\n        }\n    ]\n}"
             },
             "url": "https://{{your-marketplace}}.arcadier.io/api/v2/marketplaces",
-            "description": "The only fields that can be changed are \"Values\" and \"Names\" of Custom fields. This is used to store data in \"Implementation\" custom fields. Admin Auth only."
+            "description": "The only fields that can be changed are \"Values\" and \"Names\" of Custom fields. This is used to store data in \"Implementation\" custom fields. \n\n#### Authentication\nAdmin Auth only."
           },
           "response": [
             {
