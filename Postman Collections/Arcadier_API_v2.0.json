@@ -2557,14 +2557,14 @@
             "method": "GET",
             "header": [
               {
-                "key": "Authorization",
-                "value": "Bearer {{merchanttoken}}",
                 "description": "This can be {{admintoken}} too",
-                "type": "text"
+                "key": "Authorization",
+                "type": "text",
+                "value": "Bearer {{merchanttoken}}"
               }
             ],
             "url": {
-              "raw": "https://{{your-marketplace}}.arcadier.io/api/v2/merchants/{{merchantID}}/transactions?",
+              "raw": "https://{{your-marketplace}}.arcadier.io/api/v2/merchants/{{merchantID}}/transactions?pageSize=1&pageNumber=1",
               "protocol": "https",
               "host": [
                 "{{your-marketplace}}",
@@ -2580,16 +2580,14 @@
               ],
               "query": [
                 {
-                  "key": "pageSize",
-                  "value": "1",
                   "description": "(Optional) The number of results per page",
-                  "disabled": true
+                  "key": "pageSize",
+                  "value": "1"
                 },
                 {
-                  "key": "pageNumber",
-                  "value": "1",
                   "description": "(Optional) The page Number",
-                  "disabled": true
+                  "key": "pageNumber",
+                  "value": "1"
                 }
               ]
             },
