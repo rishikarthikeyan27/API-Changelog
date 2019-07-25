@@ -2819,7 +2819,7 @@
               }
             ],
             "url": "https://{{your-marketplace}}.arcadier.io/api/v2/users/{{merchantID}}/orders/{{orderID}}",
-            "description": "Gets a specific order using the orderID.\n\n#### Authentication\n> Admin and merchant token only"
+            "description": "Gets a specific order using the orderID.\n\n*Omitting the orderID returns all the orders of that merchant.*\n\n#### Authentication\n> Admin and merchant token only"
           },
           "response": [
             {
