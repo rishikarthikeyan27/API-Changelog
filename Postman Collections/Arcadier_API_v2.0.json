@@ -1076,7 +1076,7 @@
               "raw": "{\r\n  \"Name\": \"string\",\r\n  \"Line1\": \"string\",\r\n  \"Line2\": \"string\",\r\n  \"PostCode\": \"string\",\r\n  \"Delivery\": true,\r\n  \"Pickup\": true,\r\n  \"SpecialInstructions\": \"string\",\r\n  \"State\": \"string\",\r\n  \"City\": \"string\",\r\n  \"Country\": \"string\",\r\n  \"CountryCode\": \"string\"\r\n}"
             },
             "url": "https://{{your-marketplace}}.arcadier.io/api/v2/users/{{userID}}/addresses",
-            "description": "Creates an address for the specified user in the userID.\n\n#### Authentication\n> Admin token \n> Admin can create addresses for:\n>* Admin\n>* Merchant\n>* Buyer\n\n> Merchant token\nMerchant can create addresses for:\n* Merchant\n\n> Buyer token \nBuyer can create addresses for:\n* Buyer"
+            "description": "Creates an address for the specified user in the userID.\n\n#### Authentication\n> Admin token \n>\n> Creates addresses for:\n>* Admin\n>* Merchant\n>* Buyer\n\n> Merchant token\n> \nCreates addresses for:\n* Merchant\n\n> Buyer token\n>\nCreates addresses for:\n* Buyer"
           },
           "response": [
             {
