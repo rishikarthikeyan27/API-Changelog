@@ -5859,7 +5859,7 @@
             "method": "GET",
             "header": [],
             "url": "https://{{your-marketplace}}.arcadier.io/api/v2/marketplaces",
-            "description": "Gets basic information about the marketplace itself. Custom Fields Names, codes, and contents can be seen by calling this API."
+            "description": "Gets basic information about the marketplace itself. Custom Fields Names, codes, and contents that have `ReferenceTable: Implementations` can be seen by calling this API.\n\n#### Authentication\n> None Required"
           },
           "response": [
             {
