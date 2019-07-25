@@ -6998,25 +6998,7 @@
           },
           "request": {
             "method": "GET",
-            "header": [
-              {
-                "key": "Authorization",
-                "value": "Bearer {{admintoken}}",
-                "type": "text",
-                "disabled": true
-              },
-              {
-                "key": "Authorization",
-                "value": "Bearer {{merchanttoken}}",
-                "type": "text",
-                "disabled": true
-              },
-              {
-                "key": "Authorization",
-                "value": "Bearer {{buyertoken}}",
-                "type": "text"
-              }
-            ],
+            "header": [],
             "url": "https://{{your-marketplace}}.arcadier.io/api/v2/static/payment-statuses",
             "description": "Returns the different payment statuses that can happen on the marketplace.\n\n#### Authentication\n> None Required"
           },
