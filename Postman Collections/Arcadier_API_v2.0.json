@@ -6198,7 +6198,8 @@
               "mode": "raw",
               "raw": ""
             },
-            "url": "https://{{your-marketplace}}.arcadier.io/api/v2/merchants/{{merchantID}}/shipping-methods/"
+            "url": "https://{{your-marketplace}}.arcadier.io/api/v2/merchants/{{merchantID}}/shipping-methods/",
+            "description": "Gets the shipping methods set up by a merchant on his/her items.\n\n#### Authentication\n> Admin and Merchant token only"
           },
           "response": [
             {
