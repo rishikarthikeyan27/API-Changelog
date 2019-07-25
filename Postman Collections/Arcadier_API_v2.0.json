@@ -8803,7 +8803,7 @@
             "method": "DELETE",
             "header": [],
             "url": "https://{{your-marketplace}}.arcadier.io/api/v2/admins/{{adminID}}/payment-gateways/{{payment-gateway-ID-code}}",
-            "description": "Deletes a payment gateway from the whole marketplace using its `Code`"
+            "description": "Deletes a payment gateway from the whole marketplace using its `Code`\n\n#### Authentication\n> Admin token only."
           },
           "response": [
             {
@@ -8881,15 +8881,19 @@
           },
           "request": {
             "auth": {
-              "type": "bearer",
-              "bearer": {
-                "token": "{{merchanttoken}}"
-              }
+              "type": "noauth"
             },
             "method": "DELETE",
-            "header": [],
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{admintoken}}",
+                "description": "This can be {{merchanttoken}} too",
+                "type": "text"
+              }
+            ],
             "url": "https://{{your-marketplace}}.arcadier.io/api/v2/merchants/{{merchantID}}/payment-acceptance-methods/{{paymentAcceptanceMethodID}}",
-            "description": "Deletes a payment acceptance method for the merchant only."
+            "description": "Deletes a payment acceptance method for the merchant only.\n\n#### Authentication\n> Admin and merchant token only."
           },
           "response": [
             {
@@ -8959,10 +8963,7 @@
           },
           "request": {
             "auth": {
-              "type": "bearer",
-              "bearer": {
-                "token": "{{admintoken}}"
-              }
+              "type": "noauth"
             },
             "method": "PUT",
             "header": [
@@ -8971,6 +8972,11 @@
                 "name": "Content-Type",
                 "value": "application/json",
                 "type": "text"
+              },
+              {
+                "key": "Authorization",
+                "value": "Bearer {{admintoken}}",
+                "type": "text"
               }
             ],
             "body": {
@@ -8978,7 +8984,7 @@
               "raw": "{\r\n  \"Description\": \"Updated Description\",\r\n  \"Gateway\": \"Updated Gateway\",\r\n  \"Active\": true,\r\n  \"Logo\": {\r\n    \"MediaUrl\": \"https://theme.zdassets.com/theme_assets/2008942/9566e69f67b1ee67fdfbcd79b1e580bdbbc98874.svg\"\r\n  }\r\n}"
             },
             "url": "https://{{your-marketplace}}.arcadier.io/api/v2/admins/{{adminID}}/payment-gateways/{{paymentAcceptanceMethodCode}}",
-            "description": "Updates details about a payment gateway - Admin only API."
+            "description": "Updates details about a payment gateway.\n\n#### Authentication\n> Admin token only."
           },
           "response": [
             {
