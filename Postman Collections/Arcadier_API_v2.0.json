@@ -3185,7 +3185,7 @@
                 }
               ]
             },
-            "description": "PageSize and PageNumber aren't required; they only help with pagination.\n\nNo Auth required."
+            "description": "Returns all categories and their sub-categories. Paginated.\n\n#### Authentication\n> None required"
           },
           "response": [
             {
