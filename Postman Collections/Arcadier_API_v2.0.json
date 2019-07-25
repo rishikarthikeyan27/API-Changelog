@@ -8614,7 +8614,7 @@
               "raw": "{\r\n  \"Code\": \"string\",\r\n  \"Description\": \"string\",\r\n  \"Gateway\": \"string\",\r\n  \"Active\": true,\r\n  \"Logo\": {\r\n    \"ID\": \"00000000-0000-0000-0000-000000000000\",\r\n    \"MediaUrl\": \"string\"\r\n  },\r\n  \"CustomFields\": [\r\n    {\r\n      \"Code\": \"string\",\r\n      \"Name\": \"string\",\r\n      \"DataFieldType\": \"string\",\r\n      \"Values\": [\r\n        \"string\"\r\n      ]\r\n    }\r\n  ],\r\n  \"Meta\": {}\r\n}"
             },
             "url": "https://{{your-marketplace}}.arcadier.io/api/v2/admins/{{adminID}}/payment-gateways",
-            "description": "Creates a new custom payment gateway on the admin dashboard. The actual API linking to the payment gateway's has to be made manually on the dashboard.\nCustom Fields need to be created separately, they aren't created here."
+            "description": "Creates a new custom payment gateway on the admin dashboard. The actual API linking to the payment gateway's has to be made manually on the dashboard.\nCustom Fields need to be created separately, they aren't created here.\n\n#### Authentication\n> Admin token only"
           },
           "response": [
             {
