@@ -6680,7 +6680,7 @@
               }
             ],
             "url": "https://{{your-marketplace}}.arcadier.io/api/v2/static/fulfilment-statuses",
-            "description": "Indicates the different Fulfilment Statuses on the marketplace "
+            "description": "Indicates the different Fulfilment Statuses on the marketplace.\n\n#### Authentication\n> None Required"
           },
           "response": [
             {
