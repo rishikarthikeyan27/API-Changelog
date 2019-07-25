@@ -2908,7 +2908,7 @@
               }
             ],
             "url": "https://{{your-marketplace}}.arcadier.io/api/v2/merchants/{{merchantID}}/transactions/{{invoiceID}}",
-            "description": "Admin and merchant authorisation only.\n\nOmitting invoiceID returns all invoices."
+            "description": "Gets details of a particular order using invoiceID.\n\n*Omitting invoiceID returns all invoices.*\n\n#### Authentication\n> Admin and Merchant token only"
           },
           "response": [
             {
@@ -2986,119 +2986,6 @@
               "cookie": [],
               "responseTime": null,
               "body": "{\n    \"InvoiceNo\": \"ROYALLY1553829625OTL1\",\n    \"CurrencyCode\": \"SGD\",\n    \"Total\": \"510.00\",\n    \"Fee\": \"0.00\",\n    \"Orders\": [\n        {\n            \"ID\": \"11e37c9b-b0ab-4386-ab3e-2aaf3a61d5c3\",\n            \"CurrencyCode\": \"SGD\",\n            \"Total\": \"500.00\",\n            \"Freight\": \"10.00\",\n            \"GrandTotal\": \"510.00\",\n            \"Balance\": \"0.00\",\n            \"MerchantDetail\": {\n                \"ID\": \"b9d1e057-9dab-4894-8e38-c34ce2a8bd96\",\n                \"Email\": \"tanoo_joy@hotmail.com\",\n                \"FirstName\": \"Tanoo\",\n                \"LastName\": \"Joyekurun\",\n                \"DisplayName\": \"Tanoo 2\",\n                \"PhoneNumber\": \"90854839\",\n                \"DateJoined\": 1553827229\n            },\n            \"ConsumerDetail\": {\n                \"ID\": \"5b2d005e-f4ae-41e3-b2e1-d5bca5e98095\",\n                \"Email\": \"tanoo_joy@hotmail.com\",\n                \"FirstName\": \"Tanoo\",\n                \"LastName\": \"Joyekurun\",\n                \"DisplayName\": \"Tanoo BUyer 2\",\n                \"PhoneNumber\": \"90854839\",\n                \"DateJoined\": 1553829473\n            },\n            \"CartItemDetails\": [\n                {\n                    \"ID\": \"b1e43063-4d48-4c60-a36b-87a785cc83d9\",\n                    \"Quantity\": \"1\",\n                    \"CurrencyCode\": \"SGD\",\n                    \"SubTotal\": \"500.00\",\n                    \"Freight\": \"10.00\",\n                    \"CartItemType\": \"delivery\",\n                    \"ShippingMethod\": {\n                        \"ID\": \"5cb0e93d-5df3-42a1-8e3f-8212029f327c\",\n                        \"Method\": \"guitar pro\",\n                        \"Price\": \"10.00\",\n                        \"CombinedPrice\": \"15.00\",\n                        \"CurrencyCode\": \"SGD\",\n                        \"Description\": \"guitar pro\"\n                    },\n                    \"AddOns\": [],\n                    \"ItemDetail\": {\n                        \"Variants\": [],\n                        \"ID\": \"ee0e67f7-85cd-4b51-a851-a73572087ac7\",\n                        \"SKU\": \"2000\",\n                        \"Name\": \"Semi acoustic guitar\",\n                        \"BuyerDescription\": \"Semi-acoustic wood guitar used by me during my greatest performances\",\n                        \"Price\": \"500.00\",\n                        \"StockLimited\": false,\n                        \"StockQuantity\": \"0\",\n                        \"IsVisibleToCustomer\": true,\n                        \"Active\": true,\n                        \"IsAvailable\": true,\n                        \"CurrencyCode\": \"SGD\",\n                        \"Tags\": [\n                            \"tag1\",\n                            \"tag2\",\n                            \"tag3\"\n                        ],\n                        \"HasChildItems\": false\n                    }\n                }\n            ],\n            \"PaymentDetails\": [\n                {\n                    \"InvoiceNo\": \"ROYALLY1553829625OTL1\",\n                    \"Payer\": {\n                        \"ID\": \"5b2d005e-f4ae-41e3-b2e1-d5bca5e98095\",\n                        \"Email\": \"tanoo_joy@hotmail.com\",\n                        \"FirstName\": \"Tanoo\",\n                        \"LastName\": \"Joyekurun\",\n                        \"PhoneNumber\": \"90854839\"\n                    },\n                    \"Payee\": {\n                        \"ID\": \"b9d1e057-9dab-4894-8e38-c34ce2a8bd96\",\n                        \"Email\": \"tanoo_joy@hotmail.com\",\n                        \"FirstName\": \"Tanoo\",\n                        \"LastName\": \"Joyekurun\",\n                        \"PhoneNumber\": \"90854839\"\n                    },\n                    \"CurrencyCode\": \"SGD\",\n                    \"Total\": \"510.00\",\n                    \"Fee\": \"0.00\",\n                    \"Status\": \"Success\",\n                    \"Refunded\": false,\n                    \"GatewayPayKey\": \"ch_1EJBGaLQJMgwPIfOdBxVwQ9a\",\n                    \"GatewayTransactionID\": \"ch_1EJBGaLQJMgwPIfOdBxVwQ9a\",\n                    \"GatewayStatus\": \"succeeded\",\n                    \"GatewayTimeStamp\": 1553829628,\n                    \"GatewayRef\": \"txn_1EJBGaLQJMgwPIfO21yDDGVx\",\n                    \"GatewaySenderId\": \"cus_EmkmjC3sol4PQ6\",\n                    \"GatewayReceiverId\": \"acct_1C05W1LQJMgwPIfO\",\n                    \"Gateway\": {\n                        \"Code\": \"stripe\",\n                        \"Gateway\": \"Stripe\"\n                    },\n                    \"DateTimeCreated\": 1553829625,\n                    \"DateTimePaid\": 1553829629\n                }\n            ],\n            \"DeliveryFromAddress\": {\n                \"ID\": \"dfd086c0-bf9b-4c48-81e8-66d4bd357898\",\n                \"Line1\": \"34 Boon Leat Terrace\",\n                \"Latitude\": \"0.00\",\n                \"Longitude\": \"0.00\",\n                \"Delivery\": false,\n                \"Pickup\": true\n            },\n            \"DeliveryToAddress\": {\n                \"ID\": \"27f823f3-394a-4244-bd81-1f316d2b321b\",\n                \"Name\": \"Tanoo|Joyekurun\",\n                \"Line1\": \"26 Nanyang Avenue, NTU, Hall 8, Block 44-3-830\",\n                \"PostCode\": \"639812\",\n                \"Latitude\": \"0.00\",\n                \"Longitude\": \"0.00\",\n                \"Delivery\": true,\n                \"Pickup\": false,\n                \"State\": \"Select\",\n                \"City\": \"Singapore\",\n                \"Country\": \"Singapore\",\n                \"CountryCode\": \"SG\"\n            },\n            \"FulfilmentStatus\": \"Delivered\",\n            \"PaymentStatus\": \"Failed\",\n            \"CreatedDateTime\": 1553829528\n        }\n    ]\n}"
-            }
-          ]
-        },
-        {
-          "name": "Merchant - Edit Cart Properties",
-          "_postman_id": "b4b3cc61-9813-4c73-a4cb-b96acea0a7e1",
-          "protocolProfileBehavior": {
-            "disableBodyPruning": true
-          },
-          "request": {
-            "auth": {
-              "type": "noauth"
-            },
-            "method": "POST",
-            "header": [
-              {
-                "key": "Content-Type",
-                "name": "Content-Type",
-                "value": "application/json",
-                "type": "text"
-              },
-              {
-                "key": "Authorization",
-                "value": "Bearer {{merchanttoken}}",
-                "type": "text"
-              }
-            ],
-            "body": {
-              "mode": "raw",
-              "raw": "{\n    \"Quantity\": 0,\n    \"SubTotal\": 0,\n    \"Freight\": 0,\n    \"Notes\": \"string\",\n    \"DiscountAmount\": 0,\n    \"CartItemType\": \"string\",\n    \"ShippingMethod\": {\n        \"ID\": \"string\",\n        \"Courier\": \"string\",\n        \"Method\": \"string\",\n        \"Price\": 0,\n        \"CombinedPrice\": 0,\n        \"CurrencyCode\": \"string\",\n        \"Description\": \"string\"\n    },\n    \"PickupAddress\": {\n        \"ID\": \"00000000-0000-0000-0000-000000000000\",\n        \"Name\": \"string\",\n        \"Line1\": \"string\",\n        \"Line2\": \"string\",\n        \"PostCode\": \"string\",\n        \"Latitude\": 0,\n        \"Longitude\": 0,\n        \"Delivery\": true,\n        \"Pickup\": true,\n        \"SpecialInstructions\": \"string\",\n        \"State\": \"string\",\n        \"City\": \"string\",\n        \"Country\": \"string\",\n        \"CountryCode\": \"string\"\n    }\n}"
-            },
-            "url": "https://{{your-marketplace}}.arcadier.io/api/v2/merchants/{{merchantID}}/carts/{{cartID}}"
-          },
-          "response": [
-            {
-              "id": "1fb3a9c9-3008-4ee4-ac15-67f1681013a0",
-              "name": "Changing the Quantity and Delivery for an item in cart",
-              "originalRequest": {
-                "method": "POST",
-                "header": [
-                  {
-                    "key": "Content-Type",
-                    "name": "Content-Type",
-                    "value": "application/json",
-                    "type": "text"
-                  }
-                ],
-                "body": {
-                  "mode": "raw",
-                  "raw": "{\r\n  \"Quantity\": 11,\r\n  \"SubTotal\": 4500,\r\n  \"Freight\": 10,\r\n  \"Notes\": \"VIP discount\",\r\n  \"DiscountAmount\": 1500,\r\n\r\n  \"ShippingMethod\": {\r\n    \"ID\": \"b2379ffe-1b40-4bc3-a3a9-6c08035d69f4\"\r\n  }\r\n}"
-                },
-                "url": "https://{{your-marketplace}}.arcadier.io/api/v2/merchants/{{merchantID}}/carts/{{cartID}}"
-              },
-              "status": "OK",
-              "code": 200,
-              "_postman_previewlanguage": "json",
-              "header": [
-                {
-                  "key": "Cache-Control",
-                  "value": "no-cache"
-                },
-                {
-                  "key": "Pragma",
-                  "value": "no-cache"
-                },
-                {
-                  "key": "Content-Type",
-                  "value": "application/json; charset=utf-8"
-                },
-                {
-                  "key": "Content-Encoding",
-                  "value": "gzip"
-                },
-                {
-                  "key": "Expires",
-                  "value": "-1"
-                },
-                {
-                  "key": "Vary",
-                  "value": "Accept-Encoding"
-                },
-                {
-                  "key": "X-StackifyID",
-                  "value": "V1|800016a1-1001-0000-b63f-84710c7967bb|"
-                },
-                {
-                  "key": "X-StackifyID",
-                  "value": "V1|80002158-0000-0900-b63f-84710c7967bb|"
-                },
-                {
-                  "key": "api-version",
-                  "value": "v2"
-                },
-                {
-                  "key": "X-XSS-Protection",
-                  "value": "1; mode=block"
-                },
-                {
-                  "key": "X-Content-Type-Options",
-                  "value": "nosniff"
-                },
-                {
-                  "key": "Date",
-                  "value": "Thu, 04 Apr 2019 07:18:10 GMT"
-                },
-                {
-                  "key": "Content-Length",
-                  "value": "594"
-                }
-              ],
-              "cookie": [],
-              "responseTime": null,
-              "body": "{\n    \"ID\": \"ff5a223e-79d2-4d7f-b8d2-e9ebfe4d742d\",\n    \"Quantity\": \"11\",\n    \"CurrencyCode\": \"SGD\",\n    \"SubTotal\": \"4500.00\",\n    \"Freight\": \"10.00\",\n    \"Notes\": \"VIP discount\",\n    \"DiscountAmount\": \"1500.00\",\n    \"CartItemType\": \"delivery\",\n    \"ShippingMethod\": {\n        \"ID\": \"5cb0e93d-5df3-42a1-8e3f-8212029f327c\",\n        \"Price\": \"10.00\",\n        \"CombinedPrice\": \"15.00\",\n        \"CurrencyCode\": \"SGD\",\n        \"Description\": \"guitar pro\"\n    },\n    \"AddOns\": [],\n    \"ItemDetail\": {\n        \"Variants\": [],\n        \"ID\": \"ee0e67f7-85cd-4b51-a851-a73572087ac7\",\n        \"SKU\": \"2000\",\n        \"Name\": \"Semi acoustic guitar\",\n        \"BuyerDescription\": \"Semi-acoustic wood guitar used by me during my greatest performances\",\n        \"Price\": \"500.00\",\n        \"StockLimited\": false,\n        \"StockQuantity\": \"0\",\n        \"IsVisibleToCustomer\": true,\n        \"Active\": true,\n        \"IsAvailable\": true,\n        \"CurrencyCode\": \"SGD\",\n        \"HasChildItems\": false\n    }\n}"
             }
           ]
         },
