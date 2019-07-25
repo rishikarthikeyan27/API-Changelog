@@ -7360,7 +7360,7 @@
                 }
               ]
             },
-            "description": "This API returns all orders that have been placed on the marketplace. Pagination helps with filtering."
+            "description": "This API returns all orders that have been placed on the marketplace. Pagination helps with filtering.\n\n#### Authentication\n> Admin token"
           },
           "response": [
             {
@@ -7506,7 +7506,7 @@
           ]
         },
         {
-          "name": "Get Order History  - For Buyers & Admin",
+          "name": "Get transaction history of a buyer",
           "_postman_id": "7796dac1-8da4-4f27-861f-86e87ac6abde",
           "protocolProfileBehavior": {
             "disableBodyPruning": true
@@ -7521,7 +7521,7 @@
             "method": "GET",
             "header": [],
             "url": "https://{{your-marketplace}}.arcadier.io/api/v2/users/{{buyerID}}/transactions",
-            "description": "Buyers can see their transactions.\nAdmin can see buyer transactions"
+            "description": "Returns all the transaction done by a user.\n\n#### Authentication\n> Admin token only"
           },
           "response": [
             {
