@@ -189,7 +189,7 @@
             "method": "GET",
             "header": [],
             "url": "https://{{your-marketplace}}.arcadier.io/api/v2/users/{{userID}}",
-            "description": "Calling this API will get all available information of the user ID you provide.\n\nIt requires no authentication, anyone can get the user info of anyone if they know the user GUID."
+            "description": "Calling this API will get all available information of the user ID you provide.\n\n#### Authentication\n> None required"
           },
           "response": [
             {
