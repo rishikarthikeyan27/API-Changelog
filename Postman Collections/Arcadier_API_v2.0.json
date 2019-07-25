@@ -4482,7 +4482,7 @@
           ]
         },
         {
-          "name": "Developer - Get all Plug-in custom fields",
+          "name": "Get Plug-in's custom fields",
           "_postman_id": "22b64569-63f2-4987-aaeb-7146019e906a",
           "protocolProfileBehavior": {
             "disableBodyPruning": true
@@ -4491,7 +4491,7 @@
             "method": "GET",
             "header": [],
             "url": "https://{{your-marketplace}}.arcadier.io/api/v2/packages/{{packageID}}/custom-field-definitions",
-            "description": "This API gets custom fields (CF) that are related to the plug-ins that are installed on the marketplace. However, they don't show the value stored in each individual custom field. **They also wont show custom fields that are empty.**\n\nTo know the value stored:\n* If a CF has reference table \"Implementations\", then if it has a value stored in it, you'll get it by calling the [Get Marketplace Info](https://apiv2.arcadier.com/#928eac76-5bee-4bf3-9484-293551f95cde) API.\n* If a CF has reference table \"Users\", then if it has a value stored in it, you'll get it by calling the [Get User Info](https://apiv2.arcadier.com/#129fa6b1-1c39-4a41-b7b8-8aa7f2545394) API.\n* If a CF has reference table \"Items\", then if it has a value stored in it, you'll get it by calling the [Get Item Details](https://apiv2.arcadier.com/?version=latest#a48c136d-a478-41b3-b647-66ef6c2dd440) API."
+            "description": "This API gets custom fields (CF) that are related to the plug-ins that are installed on the marketplace. However, they don't show the value stored in each individual custom field. **They also wont show custom fields that are empty.**\n\nTo know the value stored:\n* If a CF has reference table \"Implementations\", then if it has a value stored in it, you'll get it by calling the [Get Marketplace Info](https://apiv2.arcadier.com/#928eac76-5bee-4bf3-9484-293551f95cde) API.\n* If a CF has reference table \"Users\", then if it has a value stored in it, you'll get it by calling the [Get User Info](https://apiv2.arcadier.com/#129fa6b1-1c39-4a41-b7b8-8aa7f2545394) API.\n* If a CF has reference table \"Items\", then if it has a value stored in it, you'll get it by calling the [Get Item Details](https://apiv2.arcadier.com/?version=latest#a48c136d-a478-41b3-b647-66ef6c2dd440) API.\n\n#### Authentication\n> None required"
           },
           "response": [
             {
@@ -4617,7 +4617,7 @@
               "raw": "{\n    \"From\": \"string\",\n    \"To\": \"string\",\n    \"Body\": \"Your email content. It can be in plaintext or in HTML\",\n    \"Subject\": \"string\"\n}"
             },
             "url": "https://{{your-marketplace}}.arcadier.io/api/v2/admins/{{adminID}}/emails",
-            "description": "This API can send emails on behalf of the marketplace Admin to anyone with a valid email address.\n\nTo write the message in HTML, your whole HTML code should be in one single line, i.e, no line breaks in the JSON body. Here is a list of things you need to know before writing HTML in the \"Body\" parameter:\n* Line breaks in your email can be inserted using <br>\n* Inverted commas `href=\"example\"` should be written as `href=\\\"example\\\"` or `style=\"color:#fff\"` should be written `style=\\\"color:#fff\\\"`\n* Links should always start as `http://` or `https://`"
+            "description": "This API can send emails on behalf of the marketplace Admin to anyone with a valid email address.\n\nTo write the message in HTML, your whole HTML code should be in one single line, i.e, no line breaks in the JSON body. Here is a list of things you need to know before writing HTML in the \"Body\" parameter:\n* Line breaks in your email can be inserted using <br>\n* Inverted commas `href=\"example\"` should be written as `href=\\\"example\\\"` or `style=\"color:#fff\"` should be written `style=\\\"color:#fff\\\"`\n* Links should always start as `http://` or `https://`\n\n#### Authentication\n> Admin Token only."
           },
           "response": [
             {
