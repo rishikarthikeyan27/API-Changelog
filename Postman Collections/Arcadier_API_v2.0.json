@@ -3275,7 +3275,7 @@
           ]
         },
         {
-          "name": "Users - Get Categories - no Admin ID required",
+          "name": "Get Categories - no Admin ID required",
           "_postman_id": "cc9501e7-f421-48a6-90b0-66af6aeae97b",
           "protocolProfileBehavior": {
             "disableBodyPruning": true
@@ -3283,7 +3283,8 @@
           "request": {
             "method": "GET",
             "header": [],
-            "url": "https://{{your-marketplace}}.arcadier.io/api/v2/categories"
+            "url": "https://{{your-marketplace}}.arcadier.io/api/v2/categories",
+            "description": "Returns all categories and their sub-categories. Paginated.\n\n#### Authentication\n> None required"
           },
           "response": [
             {
