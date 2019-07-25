@@ -3275,7 +3275,7 @@
           ]
         },
         {
-          "name": "Get Categories - no Admin ID required",
+          "name": "Get all Categories - no Admin ID required",
           "_postman_id": "cc9501e7-f421-48a6-90b0-66af6aeae97b",
           "protocolProfileBehavior": {
             "disableBodyPruning": true
