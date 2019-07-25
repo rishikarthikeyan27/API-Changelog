@@ -6547,7 +6547,7 @@
               "raw": "{\n\t\"ID\": \"string\",\n\t\"Courier\": \"string\",\n\t\"Method\": \"string\",\n\t\"Price\": \"string\",\n\t\"CombinedPrice\": \"string\",\n\t\"CurrencyCode\": \"string\",\n\t\"Description\": \"string\"\n}"
             },
             "url": "https://{{your-marketplace}}.arcadier.io/api/v2/merchants/{{merchantID}}/shipping-methods/{{shippingmethodID}}",
-            "description": "Shipping ID is needed in the URL, not necessarily in body."
+            "description": "Edits details of a shipping method.\n\n| Parameter           | Description                          | Type    |\n|---------------------|--------------------------------------|---------|\n| ID                  | ID of the shipping address to delete | string  |\n| Name                | Name of the Address - Home/Work      | string  |\n| Line1               | First Line of the address            | string  |\n| Line2               | Second Line of the address           | string  |\n| PostCode            | Postal Code                          | string  |\n| Delivery            | true if address is for delivery      | boolean |\n| Pickup              | true if address is for pickup        | boolean |\n| SpecialInstructions |                                      | string  |\n| State               |                                      | string  |\n| City                |                                      | string  |\n| Country             |                                      | string  |\n| CountryCode         | Example: SG for Singapore            | string  |\n\n#### Authentication\n> Admin and merchant token only."
           },
           "response": [
             {
