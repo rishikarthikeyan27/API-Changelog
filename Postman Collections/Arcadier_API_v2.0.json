@@ -7317,7 +7317,7 @@
       "name": "Transaction Histories",
       "item": [
         {
-          "name": "Get Order History - Admin API",
+          "name": "Get Transactions History of marketplace",
           "_postman_id": "7adc00bd-be5a-4f9c-9329-e6ece127e76f",
           "protocolProfileBehavior": {
             "disableBodyPruning": true
@@ -7506,7 +7506,7 @@
           ]
         },
         {
-          "name": "Get transaction history of a buyer",
+          "name": "Get Transaction History of a buyer",
           "_postman_id": "7796dac1-8da4-4f27-861f-86e87ac6abde",
           "protocolProfileBehavior": {
             "disableBodyPruning": true
@@ -7641,7 +7641,7 @@
           ]
         },
         {
-          "name": "Get order history using Invoice number - Admin API",
+          "name": "Get Transaction History using Invoice number",
           "_postman_id": "345749bc-d4c9-4dcc-a670-06e0ac91eb47",
           "protocolProfileBehavior": {
             "disableBodyPruning": true
@@ -7655,7 +7655,8 @@
             },
             "method": "GET",
             "header": [],
-            "url": "https://{{your-marketplace}}.arcadier.io/api/v2/admins/{{adminID}}/transactions/{{invoiceID}}"
+            "url": "https://{{your-marketplace}}.arcadier.io/api/v2/admins/{{adminID}}/transactions/{{invoiceID}}",
+            "description": "Returns the transaction details of a specific invoice.\n\n#### Authentication\n> Admin token only"
           },
           "response": [
             {
