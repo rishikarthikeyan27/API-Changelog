@@ -8513,7 +8513,7 @@
             "method": "GET",
             "header": [],
             "url": "https://{{your-marketplace}}.arcadier.io/api/v2/merchants/{{merchantID}}/payment-acceptance-methods",
-            "description": "Shows the different payment acceptance methods available for the merchant to use."
+            "description": "Shows the different payment acceptance methods available for the merchant to use.\n\n#### Authentication\n> Admin and merchant token"
           },
           "response": [
             {
