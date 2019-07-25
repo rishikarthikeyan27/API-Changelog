@@ -6877,7 +6877,8 @@
                 "disabled": true
               }
             ],
-            "url": "https://{{your-marketplace}}.arcadier.io/api/v2/static/countries"
+            "url": "https://{{your-marketplace}}.arcadier.io/api/v2/static/countries",
+            "description": "Returns a list of countries that are available for the marketplace.\n\n#### Authentication\n> None Required"
           },
           "response": [
             {
