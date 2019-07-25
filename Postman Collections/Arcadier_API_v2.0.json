@@ -4228,7 +4228,7 @@
               }
             ],
             "url": "https://{{your-marketplace}}.arcadier.io/api/v2/admins/{{adminID}}/custom-field-definitions/",
-            "description": "If you want to put data in a custom field you created, use this API to know in which reference table this custom field was assigned to.\n\nExample:\n* Reference Table: Users - Use [Update User Information](https://apiv2.arcadier.com/#cce29c0d-6faa-4ad8-8a83-d6ea4baddbb6) to store data in that custom field.\n* Reference Table: Implementations -  Use [Update Marketplace information](https://apiv2.arcadier.com/#73471ada-ab82-42f3-bad4-af79f5e1714b) to store data in that custom field.\n* Reference Table: Items - Use [Edit Item Details](https://apiv2.arcadier.com/?version=latest#8af9bf27-a3fb-4623-b8d0-f53a67697c47) to store data in that custom field."
+            "description": "If you want to put data in a custom field you created, use this API to know in which reference table this custom field was assigned to.\n\nExample:\n* Reference Table: Users - Use [Update User Information](https://apiv2.arcadier.com/#cce29c0d-6faa-4ad8-8a83-d6ea4baddbb6) to store data in that custom field.\n* Reference Table: Implementations -  Use [Update Marketplace information](https://apiv2.arcadier.com/#73471ada-ab82-42f3-bad4-af79f5e1714b) to store data in that custom field.\n* Reference Table: Items - Use [Edit Item Details](https://apiv2.arcadier.com/?version=latest#8af9bf27-a3fb-4623-b8d0-f53a67697c47) to store data in that custom field.\n\n#### Authentication\n> Admin token only"
           },
           "response": [
             {
@@ -4309,7 +4309,7 @@
               }
             ],
             "url": "https://{{your-marketplace}}.arcadier.io/api/v2/admins/{{adminID}}/custom-field-definitions/{{custom-field-code}}",
-            "description": "Successfully deleting a custom field will respond with the details of the deleted custom field."
+            "description": "Deletes a custom field created by the Create Custom Field Definitions API.\n\nSuccessfully deleting a custom field will respond with the details of the deleted custom field.\n\n#### Authentication\n> Admin token only"
           },
           "response": [
             {
@@ -4400,7 +4400,7 @@
               "raw": "{\r\n  \"Name\": \"string\",\r\n  \"IsMandatory\": true,\r\n  \"SortOrder\": 0,\r\n  \"DataInputType\": \"string\",\r\n  \"DataRegex\": \"string\",\r\n  \"MinValue\": 0,\r\n  \"MaxValue\": 0,\r\n  \"ReferenceTable\": \"string\",\r\n  \"DataFieldType\": \"string\",\r\n  \"IsSearchable\": true,\r\n  \"IsSensitive\": true,\r\n  \"Active\": true,\r\n  \"Options\": [\r\n    {\r\n      \"Name\": \"string\"\r\n    }\r\n  ]\r\n}\r\n"
             },
             "url": "https://{{your-marketplace}}.arcadier.io/api/v2/admins/{{adminID}}/custom-field-definitions/{{customfield-code}}",
-            "description": "The Custom FIeld ID can be in the URL, so its not necessary to have it in the JSON body."
+            "description": "Edits properties of a custom field.\n\n#### Authentication\n> Admin Token only"
           },
           "response": [
             {
