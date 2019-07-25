@@ -7744,7 +7744,7 @@
       ]
     },
     {
-      "name": "Pages",
+      "name": "Pages (Plug-In)",
       "item": [
         {
           "name": "Get Content Pages",
@@ -7755,7 +7755,8 @@
           "request": {
             "method": "GET",
             "header": [],
-            "url": "https://{{your-marketplace}}.arcadier.io/api/v2/content-pages"
+            "url": "https://{{your-marketplace}}.arcadier.io/api/v2/content-pages",
+            "description": "Returns all the pages created via API or the plug-in itself.\n\n#### Authentication\n> None required"
           },
           "response": [
             {
@@ -7843,7 +7844,7 @@
           "response": []
         },
         {
-          "name": "Edit Content Page",
+          "name": "Create Content Page",
           "_postman_id": "8d9909dd-5a38-4763-af5a-1859b04c2e01",
           "protocolProfileBehavior": {
             "disableBodyPruning": true
