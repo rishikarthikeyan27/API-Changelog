@@ -3542,7 +3542,7 @@
               "raw": "{\r\n  \"Name\": \"string\",\r\n  \"Description\": \"string\",\r\n  \"SortOrder\": 0,\r\n  \"Media\": [\r\n    {\r\n      \"ID\": \"00000000-0000-0000-0000-000000000000\",\r\n      \"MediaUrl\": \"string\"\r\n    }\r\n  ],\r\n  \"ParentCategoryID\": \"00000000-0000-0000-0000-000000000000\",\r\n  \"Level\": 0\r\n}"
             },
             "url": "https://{{your-marketplace}}.arcadier.io/api/v2/admins/{{adminID}}/categories",
-            "description": "Admin auth only."
+            "description": "Creates a category or sub-category.\n\n#### Authentication\n> Admin token only"
           },
           "response": [
             {
