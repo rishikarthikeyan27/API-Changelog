@@ -4020,7 +4020,7 @@
               "raw": "{\r\n  \"ID\": \"00000000-0000-0000-0000-000000000000\",\r\n  \"Name\": \"string\",\r\n  \"Description\": \"string\",\r\n  \"SortOrder\": 0,\r\n  \"Media\": [\r\n    {\r\n      \"ID\": \"00000000-0000-0000-0000-000000000000\",\r\n      \"MediaUrl\": \"string\"\r\n    }\r\n  ],\r\n  \"ParentCategoryID\": \"00000000-0000-0000-0000-000000000000\",\r\n  \"ChildCategories\": [\r\n    {}\r\n  ],\r\n  \"Level\": 0\r\n}"
             },
             "url": "https://{{your-marketplace}}.arcadier.io/api/v2/admins/{{adminID}}/categories/{{categoryID_to_update}}",
-            "description": "Admin Auth Only"
+            "description": "Edits details of a Category/Sub-Category\n\n#### Authentication\n> Admin token only"
           },
           "response": [
             {
@@ -4136,7 +4136,7 @@
               "raw": "{\r\n  \"Name\": \"string\",\r\n  \"IsMandatory\": true,\r\n  \"SortOrder\": 0,\r\n  \"DataInputType\": \"string\",\r\n  \"DataRegex\": \"string\",\r\n  \"MinValue\": 0,\r\n  \"MaxValue\": 0,\r\n  \"ReferenceTable\": \"string\",\r\n  \"DataFieldType\": \"string\",\r\n  \"IsSearchable\": true,\r\n  \"IsSensitive\": true,\r\n  \"Active\": true,\r\n  \"Options\": [\r\n    {\r\n      \"Name\": \"string\"\r\n    }\r\n  ]\r\n}"
             },
             "url": "https://{{your-marketplace}}.arcadier.io/api/v2/admins/{{adminID}}/custom-field-definitions",
-            "description": "Information about how to create custom fields is documented on our [Github](https://github.com/Arcadier/Tutorials/tree/master/Creating%20Custom%20Fields)"
+            "description": "Creates Custom Field.\n\nInformation about how to create custom fields is documented on our [Github](https://github.com/Arcadier/Tutorials/tree/master/Creating%20Custom%20Fields)\n\n#### Authentication\n> Admin token only"
           },
           "response": [
             {
