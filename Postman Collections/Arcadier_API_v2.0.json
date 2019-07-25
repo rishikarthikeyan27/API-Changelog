@@ -8204,7 +8204,7 @@
                 }
               ]
             },
-            "description": "These panels are the panels which make up the theme of the marketplace."
+            "description": "These panels are the panels which make up the theme of the marketplace.\n\n#### Authentication\n> None required"
           },
           "response": [
             {
@@ -8397,7 +8397,7 @@
             "method": "GET",
             "header": [],
             "url": "https://{{your-marketplace}}.arcadier.io/api/v2/panels/{{panelId}}",
-            "description": "No Auth required"
+            "description": "Get specific panels by ID.\n\n#### Authentication\n> None Required"
           },
           "response": []
         }
