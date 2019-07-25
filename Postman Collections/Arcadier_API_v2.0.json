@@ -5773,7 +5773,7 @@
               "raw": "{\r\n  \"SellerID\": \"4587d5a3-ee92-4a25-b73f-436e26eda75d\",\r\n  \"PageSize\": 2,\r\n  \"PageNumber\": 1,\r\n  \"Keywords\": \"gibson\"\r\n}"
             },
             "url": "https://.{{your-marketplace}}.arcadier.io/api/v2/items",
-            "description": "This API works like a search."
+            "description": "Returns items which have parameters similar to those specified.\n\nCategories param is the category ID, not the name.\nTags param searches for the exact tag given.\n\n#### Authentication\n> None Required"
           },
           "response": [
             {
