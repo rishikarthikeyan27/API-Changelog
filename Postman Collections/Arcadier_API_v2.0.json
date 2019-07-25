@@ -1380,7 +1380,7 @@
               }
             ],
             "url": "https://{{your-marketplace}}.arcadier.io/api/v2/users/{{userID}}/addresses/{{addressID}}",
-            "description": "*Omitting the address ID returns all the addresses of the user.*\n\nAdmins can GET:\n* Admin addresses\n* Merchant Addresses\n* Buyer Addresses\n\nMerchants can GET:\n* Merchant Addresses\n\nBuyers can GET:\n* Buyer Addresses"
+            "description": "Returns the details of the addressID specified.\n*Omitting the address ID returns all the addresses of the user.*\n\nAdmins can GET:\n* Admin addresses\n* Merchant Addresses\n* Buyer Addresses\n\nMerchants can GET:\n* Merchant Addresses\n\nBuyers can GET:\n* Buyer Addresses\n\n#### Authentication\n> **Admin token**\n>\n> Gets addresses for:\n>* Admin\n>* Merchant\n>* Buyer\n\n> **Merchant token**\n> \n> Gets addresses for:\n> * Merchant\n\n> **Buyer token**\n>\n> Gets addresses for:\n> * Buyer"
           },
           "response": [
             {
