@@ -416,7 +416,7 @@
               "raw": "{\r\n  \"Email\": \"string\",\r\n  \"Password\": \"string\",\r\n  \"ConfirmPassword\": \"string\"\r\n}"
             },
             "url": "https://{{your-marketplace}}.arcadier.io/api/v2/accounts/register",
-            "description": "Creates a new **Buyer** account. E-mail should be unique (not already existing) and password should be at least 6 characters long.\n\n#### Authentication\n> Admin only"
+            "description": "Creates a new **Buyer** account. E-mail should be unique (not already existing) and password should be at least 6 characters long.\n\n#### Authentication\n> Admin token only"
           },
           "response": [
             {
