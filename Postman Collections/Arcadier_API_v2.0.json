@@ -926,7 +926,7 @@
                 }
               ]
             },
-            "description": "Admin Auth only.\n\nThis APIs responds with a list of users filtered by role. \n\n* The admin can be a buyer and a merchant.\n* All merchants can be buyers.\n* That's why when not specifying the role, the total number displayed, TotalRecords, will be all the users of the marketplace. And that will be equal to the number of buyers + the admin.\n\nResponse parameters are the same as [Get All Users' Info](https://apiv2.arcadier.com/#5282732e-0930-43b5-b98f-eeb3d5ce94b8)\n\nAdmin Auth only."
+            "description": "Responds with a list of users filtered by role. \n\n* The admin can be a buyer and a merchant.\n* All merchants can be buyers.\n* That's why when not specifying the role, the total number displayed, TotalRecords, will be all the users of the marketplace. And that will be equal to the number of buyers + the admin.\n\nResponse parameters are identical to [Get All Users' Info](https://apiv2.arcadier.com/#5282732e-0930-43b5-b98f-eeb3d5ce94b8)\n\n#### Authentication\n> Admin token only"
           },
           "response": [
             {
@@ -1076,7 +1076,7 @@
               "raw": "{\r\n  \"Name\": \"string\",\r\n  \"Line1\": \"string\",\r\n  \"Line2\": \"string\",\r\n  \"PostCode\": \"string\",\r\n  \"Delivery\": true,\r\n  \"Pickup\": true,\r\n  \"SpecialInstructions\": \"string\",\r\n  \"State\": \"string\",\r\n  \"City\": \"string\",\r\n  \"Country\": \"string\",\r\n  \"CountryCode\": \"string\"\r\n}"
             },
             "url": "https://{{your-marketplace}}.arcadier.io/api/v2/users/{{userID}}/addresses",
-            "description": "Admin can create addresses for:\n* Admin\n* Merchant\n* Buyer\n\nMerchant can create addresses for:\n* Merchant\n\nBuyer can create addresses for:\n* Buyer"
+            "description": "Creates an address for the specified user in the userID.\n\n#### Authentication\n> If Admin token is used\n> Admin can create addresses for:\n>* Admin\n>* Merchant\n>* Buyer\n\n> Merchant can create addresses for:\n* Merchant\n\n> Buyer can create addresses for:\n* Buyer"
           },
           "response": [
             {
