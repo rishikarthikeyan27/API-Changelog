@@ -5507,7 +5507,7 @@
               "raw": "[\n\t\"string\", \n\t\"string\", \n\t\"string\"\n]"
             },
             "url": "https://{{your-marketplace}}.arcadier.io/api/v2/tags",
-            "description": "if you want to delete several tags, separate them with a comma like this:\n```javascript\n[\n\t\"string\", \"string\", \"string\", \"string\"\n]\n```"
+            "description": "Deletes tags by specifying their names.\n\nIf you want to delete several tags, separate them with a comma like this:\n```javascript\n[\n\t\"string\", \"string\", \"string\", \"string\"\n]\n```\n\n#### Authorisation\n> Admin and merchant token only"
           },
           "response": [
             {
@@ -7312,11 +7312,6 @@
           }
         }
       ]
-    },
-    {
-      "name": "Tags",
-      "item": [],
-      "_postman_id": "3b13a3af-319d-4110-ba50-127500e55d3a"
     },
     {
       "name": "Transaction Histories",
