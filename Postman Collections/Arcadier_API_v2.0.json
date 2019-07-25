@@ -5379,7 +5379,7 @@
           ]
         },
         {
-          "name": "Merchant - Tag Item",
+          "name": "Tag Item",
           "_postman_id": "3d824710-7770-4d4c-972d-84073d3b2556",
           "protocolProfileBehavior": {
             "disableBodyPruning": true
@@ -5588,7 +5588,7 @@
                 }
               ]
             },
-            "description": "Categories param is the category ID, not the name.\nTags param searches for the exact tag given."
+            "description": "Returns items which have parameters similar to those specified.\n\nCategories param is the category ID, not the name.\nTags param searches for the exact tag given.\n\n#### Authentication\n>"
           },
           "response": [
             {
