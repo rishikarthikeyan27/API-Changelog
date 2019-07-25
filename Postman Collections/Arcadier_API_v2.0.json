@@ -1076,7 +1076,7 @@
               "raw": "{\r\n  \"Name\": \"string\",\r\n  \"Line1\": \"string\",\r\n  \"Line2\": \"string\",\r\n  \"PostCode\": \"string\",\r\n  \"Delivery\": true,\r\n  \"Pickup\": true,\r\n  \"SpecialInstructions\": \"string\",\r\n  \"State\": \"string\",\r\n  \"City\": \"string\",\r\n  \"Country\": \"string\",\r\n  \"CountryCode\": \"string\"\r\n}"
             },
             "url": "https://{{your-marketplace}}.arcadier.io/api/v2/users/{{userID}}/addresses",
-            "description": "Creates an address for the specified user in the userID.\n\n#### Authentication\n> **Admin token**\n>\n> Creates addresses for:\n> Admin, \n> Merchant, \n> Buyer\n\n> **Merchant token**\n> \n> Creates addresses for:\n> Merchant\n\n> **Buyer token**\n>\n> Creates addresses for:\n> Buyer"
+            "description": "Creates an address for the specified user in the userID.\n\n#### Authentication\n> **Admin token**\n>\n> Creates addresses for:\n> Admin, \n> Merchant, \n> Buyer\n> ______________________\n> **Merchant token**\n> \n> Creates addresses for:\n> Merchant\n> ______________________\n> **Buyer token**\n>\n> Creates addresses for:\n> Buyer"
           },
           "response": [
             {
@@ -1185,7 +1185,7 @@
               }
             ],
             "url": "https://{{your-marketplace}}.arcadier.io/api/v2/users/{{userID}}/addresses/{{addressID}}",
-            "description": "Deletes the address specified in the URL. The `response` will be the details of the deleted address.\n\n#### Authentication\n> **Admin token**\n>\n> Deletes addresses for:\n> Admin, \n> Merchant, \n> Buyer\n\n> **Merchant token**\n> \n> Deletes addresses for:\n> Merchant\n\n> **Buyer token**\n>\n> Deletes addresses for:\n> Buyer"
+            "description": "Deletes the address specified in the URL. The `response` will be the details of the deleted address.\n\n#### Authentication\n> **Admin token**\n>\n> Deletes addresses for:\n> Admin, \n> Merchant, \n> Buyer\n> ______________________\n> **Merchant token**\n> \n> Deletes addresses for:\n> Merchant\n> ______________________\n> **Buyer token**\n>\n> Deletes addresses for:\n> Buyer"
           },
           "response": [
             {
@@ -1380,7 +1380,7 @@
               }
             ],
             "url": "https://{{your-marketplace}}.arcadier.io/api/v2/users/{{userID}}/addresses/{{addressID}}",
-            "description": "Returns the details of the addressID specified.\n\n*Omitting the address ID returns all the addresses of the user.*\n\nAdmins can GET:\n* Admin addresses\n* Merchant Addresses\n* Buyer Addresses\n\nMerchants can GET:\n* Merchant Addresses\n\nBuyers can GET:\n* Buyer Addresses\n\n#### Authentication\n> **Admin token**\n>\n> Gets addresses for:\n> Admin, \n> Merchant, \n> Buyer\n\n> **Merchant token**\n> \n> Gets addresses for:\n> Merchant\n\n> **Buyer token**\n>\n> Gets addresses for:\n> Buyer"
+            "description": "Returns the details of the addressID specified.\n\n*Omitting the address ID returns all the addresses of the user.*\n\nAdmins can GET:\n* Admin addresses\n* Merchant Addresses\n* Buyer Addresses\n\nMerchants can GET:\n* Merchant Addresses\n\nBuyers can GET:\n* Buyer Addresses\n\n#### Authentication\n> **Admin token**\n>\n> Gets addresses for:\n> Admin, \n> Merchant, \n> Buyer\n> ______________________\n> **Merchant token**\n> \n> Gets addresses for:\n> Merchant\n> ______________________\n> **Buyer token**\n>\n> Gets addresses for:\n> Buyer"
           },
           "response": [
             {
