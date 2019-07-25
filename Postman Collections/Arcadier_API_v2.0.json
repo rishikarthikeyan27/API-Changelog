@@ -5170,10 +5170,7 @@
           },
           "request": {
             "auth": {
-              "type": "bearer",
-              "bearer": {
-                "token": "{{admintoken}}"
-              }
+              "type": "noauth"
             },
             "method": "GET",
             "header": [
@@ -5185,7 +5182,7 @@
               }
             ],
             "url": {
-              "raw": "https://{{your-marketplace}}.arcadier.io/api/v2/tags?",
+              "raw": "https://{{your-marketplace}}.arcadier.io/api/v2/tags?pageSize={integer}&pageNumber={integer}",
               "protocol": "https",
               "host": [
                 "{{your-marketplace}}",
@@ -5200,13 +5197,11 @@
               "query": [
                 {
                   "key": "pageSize",
-                  "value": "{integer}",
-                  "disabled": true
+                  "value": "{integer}"
                 },
                 {
                   "key": "pageNumber",
-                  "value": "{integer}",
-                  "disabled": true
+                  "value": "{integer}"
                 }
               ]
             },
