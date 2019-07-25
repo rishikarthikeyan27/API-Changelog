@@ -2241,7 +2241,7 @@
               }
             ],
             "url": "https://{{your-marketplace}}.arcadier.io/api/v2/users/{{buyerID}}/carts",
-            "description": "Responds with the contents of the cart of the specified buyer. The cart must exist for it to return something.\n\n#### Authentication\n> Admin token\n> Buyer token of the buyerID specified in URL"
+            "description": "Responds with the contents of the cart of the specified buyer. The cart must exist for it to return something.\n\n#### Authentication\n> Admin token\n>\n> Buyer token of the buyerID specified in URL"
           },
           "response": [
             {
