@@ -1185,7 +1185,7 @@
               }
             ],
             "url": "https://{{your-marketplace}}.arcadier.io/api/v2/users/{{userID}}/addresses/{{addressID}}",
-            "description": "Admin can delete addresses of:\n* Admin\n* Merchant\n* Buyer\n\nMerchant and buyer can only delete their own addresses. The `response` will be the details of the deleted address."
+            "description": "Deletes the address specified in the URL. The `response` will be the details of the deleted address.\n\n#### Authentication\n> **Admin token**\n>\n> Deletes addresses for:\n>* Admin\n>* Merchant\n>* Buyer\n\n> **Merchant token**\n> \n> Deletes addresses for:\n> * Merchant\n\n> **Buyer token**\n>\n> Deletes addresses for:\n> * Buyer"
           },
           "response": [
             {
