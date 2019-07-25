@@ -719,7 +719,7 @@
               }
             ],
             "url": "https://{{your-marketplace}}.arcadier.io/api/v2/admins/{{adminID}}/users/{{userID}}",
-            "description": "Admin Auth only.\n\nAllows admin to delete a particular user and responds with \"true\" is the user has been deleted."
+            "description": "Deletes a particular user and responds with \"true\" is the user has been deleted.\n\n#### Authentication\n> Admin token only"
           },
           "response": [
             {
