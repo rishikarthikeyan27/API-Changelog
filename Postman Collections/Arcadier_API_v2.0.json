@@ -2593,7 +2593,7 @@
                 }
               ]
             },
-            "description": "Merchant and Admin Authorisation only."
+            "description": "Gets the Order history of the merchant.\n\n#### Authentication\n> Admin and Merchant token only"
           },
           "response": [
             {
