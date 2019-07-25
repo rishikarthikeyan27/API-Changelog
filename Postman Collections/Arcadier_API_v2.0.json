@@ -5488,10 +5488,7 @@
           },
           "request": {
             "auth": {
-              "type": "bearer",
-              "bearer": {
-                "token": "{{admintoken}}"
-              }
+              "type": "noauth"
             },
             "method": "DELETE",
             "header": [
@@ -7513,13 +7510,16 @@
           },
           "request": {
             "auth": {
-              "type": "bearer",
-              "bearer": {
-                "token": "{{admintoken}}"
-              }
+              "type": "noauth"
             },
             "method": "GET",
-            "header": [],
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "{{buyertoken}}",
+                "type": "text"
+              }
+            ],
             "url": "https://{{your-marketplace}}.arcadier.io/api/v2/users/{{buyerID}}/transactions",
             "description": "Returns all the transaction done by a user.\n\n#### Authentication\n> Admin token only"
           },
