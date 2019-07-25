@@ -7017,7 +7017,8 @@
                 "type": "text"
               }
             ],
-            "url": "https://{{your-marketplace}}.arcadier.io/api/v2/static/payment-statuses"
+            "url": "https://{{your-marketplace}}.arcadier.io/api/v2/static/payment-statuses",
+            "description": "Returns the different payment statuses that can happen on the marketplace.\n\n#### Authentication\n> None Required"
           },
           "response": [
             {
