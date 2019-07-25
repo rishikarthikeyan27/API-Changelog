@@ -2467,7 +2467,8 @@
                 "type": "text"
               }
             ],
-            "url": "https://{{your-marketplace}}.arcadier.io/api/v2/users/{{buyerID}}/carts/{{cart-item-ID}}"
+            "url": "https://{{your-marketplace}}.arcadier.io/api/v2/users/{{buyerID}}/carts/{{cart-item-ID}}",
+            "description": "Deletes items that were added to a cart.\n\n#### Authentication\n> Buyer token only"
           },
           "response": [
             {
