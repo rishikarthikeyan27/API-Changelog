@@ -5205,7 +5205,7 @@
                 }
               ]
             },
-            "description": "Admin Only API."
+            "description": "Gets all tags that have been created on all items of the marketplace\n\n#### Authentication\n> Admin token only"
           },
           "response": [
             {
@@ -5407,7 +5407,7 @@
               "raw": "[\r\n\t\"string\",\r\n\t\"string\",\r\n\t\"string\"\r\n]"
             },
             "url": "https://{{your-marketplace}}.arcadier.io/api/v2/merchants/{{merchantID}}/items/{{itemID}}/tags",
-            "description": "Tags are added to a specific item by its merchant, to add little details to it."
+            "description": "Merchant adds a tag to his/her own item.\n\n#### Authentication\n> Merchant token only"
           },
           "response": [
             {
