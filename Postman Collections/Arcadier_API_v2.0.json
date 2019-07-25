@@ -3811,7 +3811,7 @@
               }
             ],
             "url": "https://{{your-marketplace}}.arcadier.io/api/v2/admins/{{adminID}}/categories/{{categoryID_to_delete}}",
-            "description": "Admin Auth only."
+            "description": "Deletes a category.\n\n#### Authentication\n>Admin token only."
           },
           "response": [
             {
