@@ -3107,7 +3107,7 @@
           ]
         },
         {
-          "name": "Update order from invoice no.",
+          "name": "Update Fulfilment and Payment Statuses",
           "_postman_id": "6b4aa892-30cc-4ac5-8117-b5d9374c2996",
           "protocolProfileBehavior": {
             "disableBodyPruning": true
@@ -3135,7 +3135,7 @@
               "raw": "[\n    {\n        \"ID\": \"2c48653f-5b15-4617-92ed-1fa38cddb3ed\",\n        \"FulfilmentStatus\": \"Delivered\",\n        \"PaymentStatus\": \"Failed\"\n    }\n]"
             },
             "url": "https://{{your-marketplace}}.arcadier.io/api/v2/admins/{{adminID}}/orders",
-            "description": "The only parameters that can be updated for now are \"FulfilmentStatus\" and \"PaymentStatus\". \n\nAdmin Auth only."
+            "description": "The only parameters that can be updated for now are \"FulfilmentStatus\" and \"PaymentStatus\" of an order.\n\n#### Authentication\n> Merchant token only."
           },
           "response": []
         }
@@ -3146,7 +3146,7 @@
       "name": "Categories",
       "item": [
         {
-          "name": "Users - Get Categories (Requires Admin ID)",
+          "name": "Get all Categories",
           "_postman_id": "2f56d70c-d1e8-4589-b388-8a4fe2f85b27",
           "protocolProfileBehavior": {
             "disableBodyPruning": true
