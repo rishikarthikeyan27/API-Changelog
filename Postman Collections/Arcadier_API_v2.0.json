@@ -806,7 +806,7 @@
               }
             ],
             "url": "https://{{your-marketplace}}.arcadier.io/api/v2/admins/{{adminID}}/users/{{userID}}/roles/{{role}}",
-            "description": "There are 4 roles:\n* User - the person that buys\n* Merchant - the person that sells\n* Owner - the owner of the marketplace\n* Admin - the person that controls the marketplace\n\nIf you are a merchant you will be both \"Merchant\" and \"User\".\nThe owner can be all 4.\nAn admin can be \"Admin\" and \"Merchant\", or \"Admin\" and \"User\"\n\nAdmin auth only.\nThis API does not need any Request body; just the params in the URL are enough."
+            "description": "**Upgrades** the role of the userID specified in URL.\n\nThere are 4 roles, in ascending power:\n* User - the person that buys (buyer)\n* Merchant - the person that sells (seller)\n* Admin - the person that controls the marketplace\n* Owner - the owner of the marketplace\n\nIf you are a merchant you will be both \"Merchant\" and \"User\".\nThe owner can be all 4.\nAn admin can be \"Admin\" and \"Merchant\", or \"Admin\" and \"User\"\n\n#### Authentication\n> Admin token only"
           },
           "response": [
             {
