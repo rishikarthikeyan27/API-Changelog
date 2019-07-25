@@ -6985,7 +6985,8 @@
                 "type": "text"
               }
             ],
-            "url": "https://{{your-marketplace}}.arcadier.io/api/v2/static/order-statuses"
+            "url": "https://{{your-marketplace}}.arcadier.io/api/v2/static/order-statuses",
+            "description": "Returns The different Order Statuses that can happen on the marketplace.\n\n#### Authentication\n> None Required"
           },
           "response": []
         },
