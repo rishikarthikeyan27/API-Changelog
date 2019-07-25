@@ -7091,19 +7091,19 @@
             "header": [
               {
                 "key": "Authorization",
-                "value": "Bearer {{admintoken}}",
-                "type": "text"
+                "type": "text",
+                "value": "Bearer {{admintoken}}"
               },
               {
                 "key": "Authorization",
-                "value": "Bearer {{merchanttoken}}",
                 "type": "text",
+                "value": "Bearer {{merchanttoken}}",
                 "disabled": true
               },
               {
                 "key": "Authorization",
-                "value": "Bearer {{buyertoken}}",
                 "type": "text",
+                "value": "Bearer {{buyertoken}}",
                 "disabled": true
               }
             ],
