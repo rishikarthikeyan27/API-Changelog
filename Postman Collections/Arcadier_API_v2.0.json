@@ -1926,7 +1926,7 @@
               "raw": "{\n    \"Quantity\": 0,\n    \"SubTotal\": 0,\n    \"Freight\": 0,\n    \"Notes\": \"string\",\n    \"DiscountAmount\": 0,\n    \"CartItemType\": \"string\",\n    \"ShippingMethod\": {\n        \"ID\": \"string\",\n        \"Courier\": \"string\",\n        \"Method\": \"string\",\n        \"Price\": 0,\n        \"CombinedPrice\": 0,\n        \"CurrencyCode\": \"string\",\n        \"Description\": \"string\"\n    },\n    \"PickupAddress\": {\n        \"ID\": \"00000000-0000-0000-0000-000000000000\",\n        \"Name\": \"string\",\n        \"Line1\": \"string\",\n        \"Line2\": \"string\",\n        \"PostCode\": \"string\",\n        \"Latitude\": 0,\n        \"Longitude\": 0,\n        \"Delivery\": true,\n        \"Pickup\": true,\n        \"SpecialInstructions\": \"string\",\n        \"State\": \"string\",\n        \"City\": \"string\",\n        \"Country\": \"string\",\n        \"CountryCode\": \"string\"\n    }\n}"
             },
             "url": "https://{{your-marketplace}}.arcadier.io/api/v2/merchants/{{merchantID}}/carts/{{cartID}}",
-            "description": "Edits parameters in the cart as shown in the body.\n\n#### Authentication\n> Admin token\n> Merchant of the item's token"
+            "description": "Edits parameters in the cart as shown in the body.\n\n#### Authentication\n> Admin token\n>\n> Merchant of the item's token"
           },
           "response": []
         },
@@ -1959,7 +1959,7 @@
               "raw": "[\n    \"a72ff5eb-1056-48ba-ad30-a9f484aac79\",\n    \"738f6554-7a41-4fe5-a7af-d704ad2d784a\",\n    \"261f4c58-d298-4fc7-9684-21d7147160ca\"\n]"
             },
             "url": "https://{{your-marketplace}}.arcadier.io/api/v2/users/{{buyerID}}/invoices/carts",
-            "description": "This API is the next step after using the [Add Item to Cart](https://apiv2.arcadier.com/?version=latest#ff3b5052-d889-4421-b419-942d1be7e19d) API. It generates an invoice with all the necessary data to be sent to your Payment Gateway's API. You can see the kind of data it returns in the Example Response on the right.\n\n**Request**\n\nThe request body is just an array of the different [Cart Item IDs](https://apiv2.arcadier.com/?version=latest#ff3b5052-d889-4421-b419-942d1be7e19d). In the request body below, there are 3 Cart Item IDs - 3 items were checked out.\n\n**Response**\n\nThe response will be an Invoice (for the buyer), and Order(s) for the Merchant(s). Each Order will have information that might be relevant for the payment gateway API."
+            "description": "This API is the next step after using the [Add Item to Cart](https://apiv2.arcadier.com/?version=latest#ff3b5052-d889-4421-b419-942d1be7e19d) API. It generates an invoice with all the necessary data to be sent to your Payment Gateway's API. You can see the kind of data it returns in the Example Response on the right.\n\n**Request**\n\nThe request body is just an array of the different [Cart Item IDs](https://apiv2.arcadier.com/?version=latest#ff3b5052-d889-4421-b419-942d1be7e19d). In the request body below, there are 3 Cart Item IDs - 3 items were checked out.\n\n**Response**\n\nThe response will be an Invoice (for the buyer), and Order(s) for the Merchant(s). Each Order will have information that might be relevant for the payment gateway API.\n\n#### Authentication\n> Buyer token only"
           },
           "response": []
         },
