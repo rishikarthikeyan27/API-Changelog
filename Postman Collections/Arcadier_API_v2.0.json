@@ -1662,7 +1662,7 @@
               "raw": "{\n    \"ID\": \"string\",\n    \"Name\": \"string\",\n    \"Line1\": \"string\",\n    \"Line2\": \"string\",\n    \"PostCode\": \"string\",\n    \"Delivery\": true,\n    \"Pickup\": true,\n    \"SpecialInstructions\": \"string\",\n    \"State\": \"string\",\n    \"City\": \"string\",\n    \"Country\": \"string\",\n    \"CountryCode\": \"string\"\n}"
             },
             "url": "https://{{your-marketplace}}.arcadier.io/api/v2/users/{{userID}}/addresses/{{addressID}}",
-            "description": "Admins can update the addresses of\n* Admin\n* Merchant\n* Buyer\n\nMerchants can update the addresses of\n* Merchants\n\nBuyer can update the addresses of\n* Buyer"
+            "description": "Edits the details of the address specified in the addressID. Response will be the updated address.\n\n#### Authentication\n> **Admin token**\n>\n> Updates addresses for:\n>* Admin\n>* Merchant\n>* Buyer\n\n> **Merchant token**\n> \n> Updates addresses for:\n> * Merchant\n\n> **Buyer token**\n>\n> Updates addresses for:\n> * Buyer"
           },
           "response": [
             {
@@ -1806,7 +1806,7 @@
               "raw": "{\n    \"ItemDetail\": {\n        \"ID\": \"00000000-0000-0000-0000-000000000000\"\n    },\n    \"Quantity\": 0,\n    \"CartItemType\": \"string\",\n    \"ShippingMethod\": {\n        \"ID\": \"00000000-0000-0000-0000-000000000000\"\n    },\n    \"PickupAddress\": {\n        \"ID\": \"00000000-0000-0000-0000-000000000000\"\n    }\n}"
             },
             "url": "https://{{your-marketplace}}.arcadier.io/api/v2/users/{{buyerID}}/carts",
-            "description": "This API adds a single item to the cart of the user. It requires the ID of the buyer, as well as the buyer's token for authorisation.\n\n**Request**\n\nAll the parameters are required.\n\nIf \"CartItemType\": \"delivery\", then you can only add:\n\n```\n\"ShippingMethod\": {\n        \"ID\": \"46a0896b-482f-453f-acb4-aa39ddc2707d\"   (This is the ID of a shipping method that already has been created by the merchant beforehand)\n    }\n```\n \n **Response**\n \n The \"ID\" responded is represents a unique identifier for the Item in that cart. It is not the same as the Item ID given by Items API. Each item in the cart will have a unique `Cart Item ID` which is represented by the `ID` in the reponse."
+            "description": "This API adds a single item to the cart of the buyer.\n\n**Request**\n\nAll the parameters are required.\n\nIf \"CartItemType\": \"delivery\", then you can only add:\n\n```\n\"ShippingMethod\": {\n        \"ID\": \"46a0896b-482f-453f-acb4-aa39ddc2707d\"   (This is the ID of a shipping method that already has been created by the merchant beforehand)\n    }\n```\n \n **Response**\n \n The \"ID\" responded is represents a unique identifier for the Item in that cart. It is not the same as the Item ID given by Items API. Each item in the cart will have a unique `Cart Item ID` which is represented by the `ID` in the reponse.\n\n#### Authentication\n> Buyer token only"
           },
           "response": [
             {
