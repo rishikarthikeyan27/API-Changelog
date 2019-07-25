@@ -7961,6 +7961,122 @@
           ]
         },
         {
+          "name": "Edit Content Page",
+          "_postman_id": "e7f92744-b9c5-4747-82e1-f3435549fe9f",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "PUT",
+            "header": [
+              {
+                "key": "Content-Type",
+                "name": "Content-Type",
+                "value": "application/json",
+                "type": "text"
+              },
+              {
+                "key": "Authorization",
+                "value": "Bearer {{admintoken}}",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n    \"Title\": \"string\",\n    \"Content\": \"string\",\n    \"ExternalURL\": \"string\",\n    \"Active\": true,\n    \"Available\": 0,\n    \"VisibleTo\": 1,\n    \"Meta\": \"string\"\n}"
+            },
+            "url": "https://{{your-marketplace}}.arcadier.io/api/v2/content-pages/{{contentPageID}}",
+            "description": "Edits the details of a page.\n\n\"VisibleTo\" take the following values:\n* 0: Everyone\n* 1: Merchants and Consumer only\n* 2: MerchantOnly\n\n\"Available\" takes the following values:\n* 0: Publish\n* 1: Hide\n\n#### Authentication\n> Admin token only"
+          },
+          "response": [
+            {
+              "id": "c9952af8-e6b0-43c1-a0ff-419a0eaeea04",
+              "name": "Create Content Page",
+              "originalRequest": {
+                "method": "POST",
+                "header": [
+                  {
+                    "key": "Content-Type",
+                    "name": "Content-Type",
+                    "value": "application/json",
+                    "type": "text"
+                  },
+                  {
+                    "key": "Authorization",
+                    "value": "Bearer {{admintoken}}",
+                    "type": "text"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n    \"Title\": \"Footer Link\",\n    \"Content\": \"<div class=\\\"contact-main\\\">\\r\\n    <div class=\\\"contact-title\\\">   \\r\\n        <h1>strAdmin_Contact_ContactUs</h1>\\r\\n    </div>\\r\\n    <p>strAdmin_Contact_ContactDescription</p>\\r\\n    <p><img src=\\\"/Assets/img/contact_icon.svg\\\" alt=\\\"\\\" style=\\\"margin-bottom: 0.25em; vertical-align: middle;\\\" data-pin-nopin=\\\"true\\\">dbContactNo</p>\\r\\n    <p><img src=\\\"/Assets/img/email_icon.svg\\\" alt=\\\"\\\" style=\\\"margin-bottom: 0.25em; vertical-align: middle;\\\" data-pin-nopin=\\\"true\\\">\\r\\n    <a href=\\\"mailto:dbContactEmail\\\">dbContactEmail</a>\\r\\n    </p>\\r\\n</div>\",\n    \"ExternalURL\": \"string\",\n    \"CreatedDateTime\": \"2019-05-31T07:10:24.834Z\",\n    \"ModifiedDateTime\": \"2019-05-31T07:10:24.834Z\",\n    \"Active\": true,\n    \"Available\": 0,\n    \"VisibleTo\": 1,\n    \"Meta\": \"This\"\n}"
+                },
+                "url": "https://{{your-marketplace}}.arcadier.io/api/v2/content-pages"
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Cache-Control",
+                  "value": "no-cache"
+                },
+                {
+                  "key": "Pragma",
+                  "value": "no-cache"
+                },
+                {
+                  "key": "Content-Type",
+                  "value": "application/json; charset=utf-8"
+                },
+                {
+                  "key": "Content-Encoding",
+                  "value": "gzip"
+                },
+                {
+                  "key": "Expires",
+                  "value": "-1"
+                },
+                {
+                  "key": "Vary",
+                  "value": "Accept-Encoding"
+                },
+                {
+                  "key": "X-StackifyID",
+                  "value": "V1|80007b9a-0801-1800-b63f-84710c7967bb|"
+                },
+                {
+                  "key": "X-StackifyID",
+                  "value": "V1|80005d52-0801-0c00-b63f-84710c7967bb|"
+                },
+                {
+                  "key": "api-version",
+                  "value": "v2"
+                },
+                {
+                  "key": "X-XSS-Protection",
+                  "value": "1; mode=block"
+                },
+                {
+                  "key": "X-Content-Type-Options",
+                  "value": "nosniff"
+                },
+                {
+                  "key": "Date",
+                  "value": "Fri, 31 May 2019 08:06:55 GMT"
+                },
+                {
+                  "key": "Content-Length",
+                  "value": "545"
+                }
+              ],
+              "cookie": [],
+              "responseTime": null,
+              "body": "{\n    \"ID\": \"0f77ff93-fc3d-4521-8366-43cbae0d931d\",\n    \"Title\": \"Footer Link\",\n    \"Content\": \"<div class=\\\"contact-main\\\">\\r\\n    <div class=\\\"contact-title\\\">   \\r\\n        <h1>strAdmin_Contact_ContactUs</h1>\\r\\n    </div>\\r\\n    <p>strAdmin_Contact_ContactDescription</p>\\r\\n    <p><img src=\\\"/Assets/img/contact_icon.svg\\\" alt=\\\"\\\" style=\\\"margin-bottom: 0.25em; vertical-align: middle;\\\" data-pin-nopin=\\\"true\\\">dbContactNo</p>\\r\\n    <p><img src=\\\"/Assets/img/email_icon.svg\\\" alt=\\\"\\\" style=\\\"margin-bottom: 0.25em; vertical-align: middle;\\\" data-pin-nopin=\\\"true\\\">\\r\\n    <a href=\\\"mailto:dbContactEmail\\\">dbContactEmail</a>\\r\\n    </p>\\r\\n</div>\",\n    \"ExternalURL\": \"string\",\n    \"CreatedDateTime\": 1559290015,\n    \"ModifiedDateTime\": 1559290015,\n    \"Active\": true,\n    \"Available\": \"Publish\",\n    \"VisibleTo\": \"MerchantAndConsumer\",\n    \"Meta\": \"This\"\n}"
+            }
+          ]
+        },
+        {
           "name": "Delete Content Page",
           "_postman_id": "a9b6a430-b501-40e9-92bb-e88ae8ddb3a4",
           "protocolProfileBehavior": {
@@ -8049,121 +8165,6 @@
               "cookie": [],
               "responseTime": null,
               "body": "{\n    \"ID\": \"79096fc5-a2fa-4d1d-8d01-c8d5f1320ea3\",\n    \"Title\": \"CONTACT US\",\n    \"Content\": \"<div class=\\\"contact-main\\\">\\r\\n    <div class=\\\"contact-title\\\">   \\r\\n        <h1>strAdmin_Contact_ContactUs</h1>\\r\\n    </div>\\r\\n    <p>strAdmin_Contact_ContactDescription</p>\\r\\n    <p><img src=\\\"/Assets/img/contact_icon.svg\\\" alt=\\\"\\\" style=\\\"margin-bottom: 0.25em; vertical-align: middle;\\\" data-pin-nopin=\\\"true\\\">dbContactNo</p>\\r\\n    <p><img src=\\\"/Assets/img/email_icon.svg\\\" alt=\\\"\\\" style=\\\"margin-bottom: 0.25em; vertical-align: middle;\\\" data-pin-nopin=\\\"true\\\">\\r\\n    <a href=\\\"mailto:dbContactEmail\\\">dbContactEmail</a>\\r\\n    </p>\\r\\n</div>\",\n    \"CreatedDateTime\": 1553671038,\n    \"ModifiedDateTime\": 1559290496,\n    \"Active\": false\n}"
-            }
-          ]
-        },
-        {
-          "name": "Edit Content Page",
-          "_postman_id": "e7f92744-b9c5-4747-82e1-f3435549fe9f",
-          "protocolProfileBehavior": {
-            "disableBodyPruning": true
-          },
-          "request": {
-            "method": "PUT",
-            "header": [
-              {
-                "key": "Content-Type",
-                "name": "Content-Type",
-                "value": "application/json",
-                "type": "text"
-              },
-              {
-                "key": "Authorization",
-                "value": "Bearer {{admintoken}}",
-                "type": "text"
-              }
-            ],
-            "body": {
-              "mode": "raw",
-              "raw": "{\n    \"Title\": \"string\",\n    \"Content\": \"string\",\n    \"ExternalURL\": \"string\",\n    \"Active\": true,\n    \"Available\": 0,\n    \"VisibleTo\": 1,\n    \"Meta\": \"string\"\n}"
-            },
-            "url": "https://{{your-marketplace}}.arcadier.io/api/v2/content-pages/{{contentPageID}}"
-          },
-          "response": [
-            {
-              "id": "c9952af8-e6b0-43c1-a0ff-419a0eaeea04",
-              "name": "Create Content Page",
-              "originalRequest": {
-                "method": "POST",
-                "header": [
-                  {
-                    "key": "Content-Type",
-                    "name": "Content-Type",
-                    "value": "application/json",
-                    "type": "text"
-                  },
-                  {
-                    "key": "Authorization",
-                    "value": "Bearer {{admintoken}}",
-                    "type": "text"
-                  }
-                ],
-                "body": {
-                  "mode": "raw",
-                  "raw": "{\n    \"Title\": \"Footer Link\",\n    \"Content\": \"<div class=\\\"contact-main\\\">\\r\\n    <div class=\\\"contact-title\\\">   \\r\\n        <h1>strAdmin_Contact_ContactUs</h1>\\r\\n    </div>\\r\\n    <p>strAdmin_Contact_ContactDescription</p>\\r\\n    <p><img src=\\\"/Assets/img/contact_icon.svg\\\" alt=\\\"\\\" style=\\\"margin-bottom: 0.25em; vertical-align: middle;\\\" data-pin-nopin=\\\"true\\\">dbContactNo</p>\\r\\n    <p><img src=\\\"/Assets/img/email_icon.svg\\\" alt=\\\"\\\" style=\\\"margin-bottom: 0.25em; vertical-align: middle;\\\" data-pin-nopin=\\\"true\\\">\\r\\n    <a href=\\\"mailto:dbContactEmail\\\">dbContactEmail</a>\\r\\n    </p>\\r\\n</div>\",\n    \"ExternalURL\": \"string\",\n    \"CreatedDateTime\": \"2019-05-31T07:10:24.834Z\",\n    \"ModifiedDateTime\": \"2019-05-31T07:10:24.834Z\",\n    \"Active\": true,\n    \"Available\": 0,\n    \"VisibleTo\": 1,\n    \"Meta\": \"This\"\n}"
-                },
-                "url": "https://{{your-marketplace}}.arcadier.io/api/v2/content-pages"
-              },
-              "status": "OK",
-              "code": 200,
-              "_postman_previewlanguage": "json",
-              "header": [
-                {
-                  "key": "Cache-Control",
-                  "value": "no-cache"
-                },
-                {
-                  "key": "Pragma",
-                  "value": "no-cache"
-                },
-                {
-                  "key": "Content-Type",
-                  "value": "application/json; charset=utf-8"
-                },
-                {
-                  "key": "Content-Encoding",
-                  "value": "gzip"
-                },
-                {
-                  "key": "Expires",
-                  "value": "-1"
-                },
-                {
-                  "key": "Vary",
-                  "value": "Accept-Encoding"
-                },
-                {
-                  "key": "X-StackifyID",
-                  "value": "V1|80007b9a-0801-1800-b63f-84710c7967bb|"
-                },
-                {
-                  "key": "X-StackifyID",
-                  "value": "V1|80005d52-0801-0c00-b63f-84710c7967bb|"
-                },
-                {
-                  "key": "api-version",
-                  "value": "v2"
-                },
-                {
-                  "key": "X-XSS-Protection",
-                  "value": "1; mode=block"
-                },
-                {
-                  "key": "X-Content-Type-Options",
-                  "value": "nosniff"
-                },
-                {
-                  "key": "Date",
-                  "value": "Fri, 31 May 2019 08:06:55 GMT"
-                },
-                {
-                  "key": "Content-Length",
-                  "value": "545"
-                }
-              ],
-              "cookie": [],
-              "responseTime": null,
-              "body": "{\n    \"ID\": \"0f77ff93-fc3d-4521-8366-43cbae0d931d\",\n    \"Title\": \"Footer Link\",\n    \"Content\": \"<div class=\\\"contact-main\\\">\\r\\n    <div class=\\\"contact-title\\\">   \\r\\n        <h1>strAdmin_Contact_ContactUs</h1>\\r\\n    </div>\\r\\n    <p>strAdmin_Contact_ContactDescription</p>\\r\\n    <p><img src=\\\"/Assets/img/contact_icon.svg\\\" alt=\\\"\\\" style=\\\"margin-bottom: 0.25em; vertical-align: middle;\\\" data-pin-nopin=\\\"true\\\">dbContactNo</p>\\r\\n    <p><img src=\\\"/Assets/img/email_icon.svg\\\" alt=\\\"\\\" style=\\\"margin-bottom: 0.25em; vertical-align: middle;\\\" data-pin-nopin=\\\"true\\\">\\r\\n    <a href=\\\"mailto:dbContactEmail\\\">dbContactEmail</a>\\r\\n    </p>\\r\\n</div>\",\n    \"ExternalURL\": \"string\",\n    \"CreatedDateTime\": 1559290015,\n    \"ModifiedDateTime\": 1559290015,\n    \"Active\": true,\n    \"Available\": \"Publish\",\n    \"VisibleTo\": \"MerchantAndConsumer\",\n    \"Meta\": \"This\"\n}"
             }
           ]
         }
