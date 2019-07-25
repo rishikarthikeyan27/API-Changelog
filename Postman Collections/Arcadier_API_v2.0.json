@@ -1048,6 +1048,278 @@
       "name": "Addresses",
       "item": [
         {
+          "name": "User Address",
+          "_postman_id": "091d7b50-f824-4483-a59e-e68a6a8e4b26",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "auth": {
+              "type": "noauth"
+            },
+            "method": "GET",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{admintoken}}",
+                "type": "text"
+              }
+            ],
+            "url": "https://{{your-marketplace}}.arcadier.io/api/v2/users/{{userID}}/addresses/{{addressID}}",
+            "description": "Returns the details of the addressID specified.\n\n*Omitting the address ID returns all the addresses of the user.*\n\nAdmins can GET:\n* Admin addresses\n* Merchant Addresses\n* Buyer Addresses\n\nMerchants can GET:\n* Merchant Addresses\n\nBuyers can GET:\n* Buyer Addresses\n\n#### Authentication\n> **Admin token**\n>\n> Gets addresses for:\n> Admin, \n> Merchant, \n> Buyer\n> ______________________\n> **Merchant token**\n> \n> Gets addresses for:\n> Merchant\n> ______________________\n> **Buyer token**\n>\n> Gets addresses for:\n> Buyer"
+          },
+          "response": [
+            {
+              "id": "2549ab67-0314-45a4-bccc-ad85365471ed",
+              "name": "No address ID in URL",
+              "originalRequest": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                  "raw": "https://{{your-marketplace}}.arcadier.io/api/v2/users/{{merchantID}}/addresses/?",
+                  "protocol": "https",
+                  "host": [
+                    "{{your-marketplace}}",
+                    "arcadier",
+                    "io"
+                  ],
+                  "path": [
+                    "api",
+                    "v2",
+                    "users",
+                    "{{merchantID}}",
+                    "addresses",
+                    ""
+                  ],
+                  "query": [
+                    {
+                      "key": "filter",
+                      "value": "boss",
+                      "disabled": true
+                    }
+                  ]
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Cache-Control",
+                  "value": "no-cache"
+                },
+                {
+                  "key": "Pragma",
+                  "value": "no-cache"
+                },
+                {
+                  "key": "Content-Type",
+                  "value": "application/json; charset=utf-8"
+                },
+                {
+                  "key": "Expires",
+                  "value": "-1"
+                },
+                {
+                  "key": "api-version",
+                  "value": "v2"
+                },
+                {
+                  "key": "X-XSS-Protection",
+                  "value": "1; mode=block"
+                },
+                {
+                  "key": "X-Content-Type-Options",
+                  "value": "nosniff"
+                },
+                {
+                  "key": "X-Powered-By",
+                  "value": "ARR/3.0"
+                },
+                {
+                  "key": "Date",
+                  "value": "Wed, 20 Mar 2019 07:32:17 GMT"
+                },
+                {
+                  "key": "Content-Length",
+                  "value": "989"
+                }
+              ],
+              "cookie": [],
+              "responseTime": null,
+              "body": "{\n    \"TotalRecords\": 3,\n    \"PageNumber\": 1,\n    \"PageSize\": 24,\n    \"Records\": [\n        {\n            \"ID\": \"ec48afd5-d679-4ef1-9eeb-a61659d3cc73\",\n            \"Name\": \"Joseph Bro\",\n            \"Line1\": \"Room number 10\",\n            \"Line2\": \"Block number 9, Hall of Residence 9\",\n            \"PostCode\": \"555558\",\n            \"Delivery\": true,\n            \"Pickup\": false,\n            \"SpecialInstructions\": \"Knock on Door\",\n            \"State\": \"Jurong\",\n            \"City\": \"Singapore\",\n            \"Country\": \"Singapore\",\n            \"CountryCode\": \"SG\"\n        },\n        {\n            \"ID\": \"aea9ed2b-6ff1-4b78-8c20-9211b7973ba9\",\n            \"Name\": \"Rachael Boss\",\n            \"Line1\": \"Room number 2\",\n            \"Line2\": \"Block number 2, Hall of Residence 2\",\n            \"PostCode\": \"555557\",\n            \"Delivery\": true,\n            \"Pickup\": false,\n            \"SpecialInstructions\": \"Leave item in shoe rack\",\n            \"State\": \"Jurong\",\n            \"City\": \"Singapore\",\n            \"Country\": \"Singapore\",\n            \"CountryCode\": \"SG\"\n        },\n        {\n            \"ID\": \"d32ea9b0-e035-43ae-b63b-0bafb883c609\",\n            \"Name\": \"Tanoo Joy\",\n            \"Line1\": \"Room number 1\",\n            \"Line2\": \"Block number 1, Hall of Residence 1\",\n            \"PostCode\": \"555556\",\n            \"Delivery\": true,\n            \"Pickup\": false,\n            \"SpecialInstructions\": \"Leave item in shoe rack\",\n            \"State\": \"Sengkang\",\n            \"City\": \"Singapore\",\n            \"Country\": \"Singapore\",\n            \"CountryCode\": \"SG\"\n        }\n    ]\n}"
+            },
+            {
+              "id": "203236ab-c7a7-4f4c-81a5-a10d3c77323d",
+              "name": "Address ID in URL",
+              "originalRequest": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                  "raw": "https://{{your-marketplace}}.arcadier.io/api/v2/users/{{merchantID}}/addresses/{{addressID}}?",
+                  "protocol": "https",
+                  "host": [
+                    "{{your-marketplace}}",
+                    "arcadier",
+                    "io"
+                  ],
+                  "path": [
+                    "api",
+                    "v2",
+                    "users",
+                    "{{merchantID}}",
+                    "addresses",
+                    "{{addressID}}"
+                  ],
+                  "query": [
+                    {
+                      "key": "filter",
+                      "value": "boss",
+                      "disabled": true
+                    }
+                  ]
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Cache-Control",
+                  "value": "no-cache"
+                },
+                {
+                  "key": "Pragma",
+                  "value": "no-cache"
+                },
+                {
+                  "key": "Content-Type",
+                  "value": "application/json; charset=utf-8"
+                },
+                {
+                  "key": "Expires",
+                  "value": "-1"
+                },
+                {
+                  "key": "api-version",
+                  "value": "v2"
+                },
+                {
+                  "key": "X-XSS-Protection",
+                  "value": "1; mode=block"
+                },
+                {
+                  "key": "X-Content-Type-Options",
+                  "value": "nosniff"
+                },
+                {
+                  "key": "X-Powered-By",
+                  "value": "ARR/3.0"
+                },
+                {
+                  "key": "Date",
+                  "value": "Wed, 20 Mar 2019 07:33:50 GMT"
+                },
+                {
+                  "key": "Content-Length",
+                  "value": "302"
+                }
+              ],
+              "cookie": [],
+              "responseTime": null,
+              "body": "{\n    \"ID\": \"ec48afd5-d679-4ef1-9eeb-a61659d3cc73\",\n    \"Name\": \"Joseph Bro\",\n    \"Line1\": \"Room number 10\",\n    \"Line2\": \"Block number 9, Hall of Residence 9\",\n    \"PostCode\": \"555558\",\n    \"Delivery\": true,\n    \"Pickup\": false,\n    \"SpecialInstructions\": \"Knock on Door\",\n    \"State\": \"Jurong\",\n    \"City\": \"Singapore\",\n    \"Country\": \"Singapore\",\n    \"CountryCode\": \"SG\"\n}"
+            },
+            {
+              "id": "2e6e0530-373c-4604-8adb-78935871f535",
+              "name": "Paginated, no address in URL",
+              "originalRequest": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                  "raw": "https://{{your-marketplace}}.arcadier.io/api/v2/users/{{merchantID}}d/addresses/?pageSize=2&pageNumber=1",
+                  "protocol": "https",
+                  "host": [
+                    "{{your-marketplace}}",
+                    "arcadier",
+                    "io"
+                  ],
+                  "path": [
+                    "api",
+                    "v2",
+                    "users",
+                    "{{merchantID}}d",
+                    "addresses",
+                    ""
+                  ],
+                  "query": [
+                    {
+                      "key": "pageSize",
+                      "value": "2"
+                    },
+                    {
+                      "key": "pageNumber",
+                      "value": "1"
+                    },
+                    {
+                      "key": "filter",
+                      "value": "boss",
+                      "disabled": true
+                    }
+                  ]
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Cache-Control",
+                  "value": "no-cache"
+                },
+                {
+                  "key": "Pragma",
+                  "value": "no-cache"
+                },
+                {
+                  "key": "Content-Type",
+                  "value": "application/json; charset=utf-8"
+                },
+                {
+                  "key": "Expires",
+                  "value": "-1"
+                },
+                {
+                  "key": "api-version",
+                  "value": "v2"
+                },
+                {
+                  "key": "X-XSS-Protection",
+                  "value": "1; mode=block"
+                },
+                {
+                  "key": "X-Content-Type-Options",
+                  "value": "nosniff"
+                },
+                {
+                  "key": "X-Powered-By",
+                  "value": "ARR/3.0"
+                },
+                {
+                  "key": "Date",
+                  "value": "Wed, 20 Mar 2019 07:35:00 GMT"
+                },
+                {
+                  "key": "Content-Length",
+                  "value": "675"
+                }
+              ],
+              "cookie": [],
+              "responseTime": null,
+              "body": "{\n    \"TotalRecords\": 3,\n    \"PageNumber\": 1,\n    \"PageSize\": 2,\n    \"Records\": [\n        {\n            \"ID\": \"ec48afd5-d679-4ef1-9eeb-a61659d3cc73\",\n            \"Name\": \"Joseph Bro\",\n            \"Line1\": \"Room number 10\",\n            \"Line2\": \"Block number 9, Hall of Residence 9\",\n            \"PostCode\": \"555558\",\n            \"Delivery\": true,\n            \"Pickup\": false,\n            \"SpecialInstructions\": \"Knock on Door\",\n            \"State\": \"Jurong\",\n            \"City\": \"Singapore\",\n            \"Country\": \"Singapore\",\n            \"CountryCode\": \"SG\"\n        },\n        {\n            \"ID\": \"aea9ed2b-6ff1-4b78-8c20-9211b7973ba9\",\n            \"Name\": \"Rachael Boss\",\n            \"Line1\": \"Room number 2\",\n            \"Line2\": \"Block number 2, Hall of Residence 2\",\n            \"PostCode\": \"555557\",\n            \"Delivery\": true,\n            \"Pickup\": false,\n            \"SpecialInstructions\": \"Leave item in shoe rack\",\n            \"State\": \"Jurong\",\n            \"City\": \"Singapore\",\n            \"Country\": \"Singapore\",\n            \"CountryCode\": \"SG\"\n        }\n    ]\n}"
+            }
+          ]
+        },
+        {
           "name": "Create a User Address",
           "_postman_id": "3d35d5ba-b2d6-4160-a60a-8f7d98887b99",
           "protocolProfileBehavior": {
@@ -1358,278 +1630,6 @@
               "cookie": [],
               "responseTime": null,
               "body": "{\n    \"ID\": \"1c55358c-cbd1-4da5-b445-9c96948d2c61\",\n    \"Name\": \"FirstName LastName\",\n    \"Line1\": \"Room number\",\n    \"Line2\": \"Block number, Hall of Residence\",\n    \"PostCode\": \"555555\",\n    \"Delivery\": true,\n    \"Pickup\": false,\n    \"SpecialInstructions\": \"Leave item in show rack\",\n    \"State\": \"Jurong\",\n    \"City\": \"Singapore\",\n    \"Country\": \"Singapore\",\n    \"CountryCode\": \"SG\"\n}"
-            }
-          ]
-        },
-        {
-          "name": "User Address",
-          "_postman_id": "091d7b50-f824-4483-a59e-e68a6a8e4b26",
-          "protocolProfileBehavior": {
-            "disableBodyPruning": true
-          },
-          "request": {
-            "auth": {
-              "type": "noauth"
-            },
-            "method": "GET",
-            "header": [
-              {
-                "key": "Authorization",
-                "value": "Bearer {{admintoken}}",
-                "type": "text"
-              }
-            ],
-            "url": "https://{{your-marketplace}}.arcadier.io/api/v2/users/{{userID}}/addresses/{{addressID}}",
-            "description": "Returns the details of the addressID specified.\n\n*Omitting the address ID returns all the addresses of the user.*\n\nAdmins can GET:\n* Admin addresses\n* Merchant Addresses\n* Buyer Addresses\n\nMerchants can GET:\n* Merchant Addresses\n\nBuyers can GET:\n* Buyer Addresses\n\n#### Authentication\n> **Admin token**\n>\n> Gets addresses for:\n> Admin, \n> Merchant, \n> Buyer\n> ______________________\n> **Merchant token**\n> \n> Gets addresses for:\n> Merchant\n> ______________________\n> **Buyer token**\n>\n> Gets addresses for:\n> Buyer"
-          },
-          "response": [
-            {
-              "id": "2549ab67-0314-45a4-bccc-ad85365471ed",
-              "name": "No address ID in URL",
-              "originalRequest": {
-                "method": "GET",
-                "header": [],
-                "url": {
-                  "raw": "https://{{your-marketplace}}.arcadier.io/api/v2/users/{{merchantID}}/addresses/?",
-                  "protocol": "https",
-                  "host": [
-                    "{{your-marketplace}}",
-                    "arcadier",
-                    "io"
-                  ],
-                  "path": [
-                    "api",
-                    "v2",
-                    "users",
-                    "{{merchantID}}",
-                    "addresses",
-                    ""
-                  ],
-                  "query": [
-                    {
-                      "key": "filter",
-                      "value": "boss",
-                      "disabled": true
-                    }
-                  ]
-                }
-              },
-              "status": "OK",
-              "code": 200,
-              "_postman_previewlanguage": "json",
-              "header": [
-                {
-                  "key": "Cache-Control",
-                  "value": "no-cache"
-                },
-                {
-                  "key": "Pragma",
-                  "value": "no-cache"
-                },
-                {
-                  "key": "Content-Type",
-                  "value": "application/json; charset=utf-8"
-                },
-                {
-                  "key": "Expires",
-                  "value": "-1"
-                },
-                {
-                  "key": "api-version",
-                  "value": "v2"
-                },
-                {
-                  "key": "X-XSS-Protection",
-                  "value": "1; mode=block"
-                },
-                {
-                  "key": "X-Content-Type-Options",
-                  "value": "nosniff"
-                },
-                {
-                  "key": "X-Powered-By",
-                  "value": "ARR/3.0"
-                },
-                {
-                  "key": "Date",
-                  "value": "Wed, 20 Mar 2019 07:32:17 GMT"
-                },
-                {
-                  "key": "Content-Length",
-                  "value": "989"
-                }
-              ],
-              "cookie": [],
-              "responseTime": null,
-              "body": "{\n    \"TotalRecords\": 3,\n    \"PageNumber\": 1,\n    \"PageSize\": 24,\n    \"Records\": [\n        {\n            \"ID\": \"ec48afd5-d679-4ef1-9eeb-a61659d3cc73\",\n            \"Name\": \"Joseph Bro\",\n            \"Line1\": \"Room number 10\",\n            \"Line2\": \"Block number 9, Hall of Residence 9\",\n            \"PostCode\": \"555558\",\n            \"Delivery\": true,\n            \"Pickup\": false,\n            \"SpecialInstructions\": \"Knock on Door\",\n            \"State\": \"Jurong\",\n            \"City\": \"Singapore\",\n            \"Country\": \"Singapore\",\n            \"CountryCode\": \"SG\"\n        },\n        {\n            \"ID\": \"aea9ed2b-6ff1-4b78-8c20-9211b7973ba9\",\n            \"Name\": \"Rachael Boss\",\n            \"Line1\": \"Room number 2\",\n            \"Line2\": \"Block number 2, Hall of Residence 2\",\n            \"PostCode\": \"555557\",\n            \"Delivery\": true,\n            \"Pickup\": false,\n            \"SpecialInstructions\": \"Leave item in shoe rack\",\n            \"State\": \"Jurong\",\n            \"City\": \"Singapore\",\n            \"Country\": \"Singapore\",\n            \"CountryCode\": \"SG\"\n        },\n        {\n            \"ID\": \"d32ea9b0-e035-43ae-b63b-0bafb883c609\",\n            \"Name\": \"Tanoo Joy\",\n            \"Line1\": \"Room number 1\",\n            \"Line2\": \"Block number 1, Hall of Residence 1\",\n            \"PostCode\": \"555556\",\n            \"Delivery\": true,\n            \"Pickup\": false,\n            \"SpecialInstructions\": \"Leave item in shoe rack\",\n            \"State\": \"Sengkang\",\n            \"City\": \"Singapore\",\n            \"Country\": \"Singapore\",\n            \"CountryCode\": \"SG\"\n        }\n    ]\n}"
-            },
-            {
-              "id": "203236ab-c7a7-4f4c-81a5-a10d3c77323d",
-              "name": "Address ID in URL",
-              "originalRequest": {
-                "method": "GET",
-                "header": [],
-                "url": {
-                  "raw": "https://{{your-marketplace}}.arcadier.io/api/v2/users/{{merchantID}}/addresses/{{addressID}}?",
-                  "protocol": "https",
-                  "host": [
-                    "{{your-marketplace}}",
-                    "arcadier",
-                    "io"
-                  ],
-                  "path": [
-                    "api",
-                    "v2",
-                    "users",
-                    "{{merchantID}}",
-                    "addresses",
-                    "{{addressID}}"
-                  ],
-                  "query": [
-                    {
-                      "key": "filter",
-                      "value": "boss",
-                      "disabled": true
-                    }
-                  ]
-                }
-              },
-              "status": "OK",
-              "code": 200,
-              "_postman_previewlanguage": "json",
-              "header": [
-                {
-                  "key": "Cache-Control",
-                  "value": "no-cache"
-                },
-                {
-                  "key": "Pragma",
-                  "value": "no-cache"
-                },
-                {
-                  "key": "Content-Type",
-                  "value": "application/json; charset=utf-8"
-                },
-                {
-                  "key": "Expires",
-                  "value": "-1"
-                },
-                {
-                  "key": "api-version",
-                  "value": "v2"
-                },
-                {
-                  "key": "X-XSS-Protection",
-                  "value": "1; mode=block"
-                },
-                {
-                  "key": "X-Content-Type-Options",
-                  "value": "nosniff"
-                },
-                {
-                  "key": "X-Powered-By",
-                  "value": "ARR/3.0"
-                },
-                {
-                  "key": "Date",
-                  "value": "Wed, 20 Mar 2019 07:33:50 GMT"
-                },
-                {
-                  "key": "Content-Length",
-                  "value": "302"
-                }
-              ],
-              "cookie": [],
-              "responseTime": null,
-              "body": "{\n    \"ID\": \"ec48afd5-d679-4ef1-9eeb-a61659d3cc73\",\n    \"Name\": \"Joseph Bro\",\n    \"Line1\": \"Room number 10\",\n    \"Line2\": \"Block number 9, Hall of Residence 9\",\n    \"PostCode\": \"555558\",\n    \"Delivery\": true,\n    \"Pickup\": false,\n    \"SpecialInstructions\": \"Knock on Door\",\n    \"State\": \"Jurong\",\n    \"City\": \"Singapore\",\n    \"Country\": \"Singapore\",\n    \"CountryCode\": \"SG\"\n}"
-            },
-            {
-              "id": "2e6e0530-373c-4604-8adb-78935871f535",
-              "name": "Paginated, no address in URL",
-              "originalRequest": {
-                "method": "GET",
-                "header": [],
-                "url": {
-                  "raw": "https://{{your-marketplace}}.arcadier.io/api/v2/users/{{merchantID}}d/addresses/?pageSize=2&pageNumber=1",
-                  "protocol": "https",
-                  "host": [
-                    "{{your-marketplace}}",
-                    "arcadier",
-                    "io"
-                  ],
-                  "path": [
-                    "api",
-                    "v2",
-                    "users",
-                    "{{merchantID}}d",
-                    "addresses",
-                    ""
-                  ],
-                  "query": [
-                    {
-                      "key": "pageSize",
-                      "value": "2"
-                    },
-                    {
-                      "key": "pageNumber",
-                      "value": "1"
-                    },
-                    {
-                      "key": "filter",
-                      "value": "boss",
-                      "disabled": true
-                    }
-                  ]
-                }
-              },
-              "status": "OK",
-              "code": 200,
-              "_postman_previewlanguage": "json",
-              "header": [
-                {
-                  "key": "Cache-Control",
-                  "value": "no-cache"
-                },
-                {
-                  "key": "Pragma",
-                  "value": "no-cache"
-                },
-                {
-                  "key": "Content-Type",
-                  "value": "application/json; charset=utf-8"
-                },
-                {
-                  "key": "Expires",
-                  "value": "-1"
-                },
-                {
-                  "key": "api-version",
-                  "value": "v2"
-                },
-                {
-                  "key": "X-XSS-Protection",
-                  "value": "1; mode=block"
-                },
-                {
-                  "key": "X-Content-Type-Options",
-                  "value": "nosniff"
-                },
-                {
-                  "key": "X-Powered-By",
-                  "value": "ARR/3.0"
-                },
-                {
-                  "key": "Date",
-                  "value": "Wed, 20 Mar 2019 07:35:00 GMT"
-                },
-                {
-                  "key": "Content-Length",
-                  "value": "675"
-                }
-              ],
-              "cookie": [],
-              "responseTime": null,
-              "body": "{\n    \"TotalRecords\": 3,\n    \"PageNumber\": 1,\n    \"PageSize\": 2,\n    \"Records\": [\n        {\n            \"ID\": \"ec48afd5-d679-4ef1-9eeb-a61659d3cc73\",\n            \"Name\": \"Joseph Bro\",\n            \"Line1\": \"Room number 10\",\n            \"Line2\": \"Block number 9, Hall of Residence 9\",\n            \"PostCode\": \"555558\",\n            \"Delivery\": true,\n            \"Pickup\": false,\n            \"SpecialInstructions\": \"Knock on Door\",\n            \"State\": \"Jurong\",\n            \"City\": \"Singapore\",\n            \"Country\": \"Singapore\",\n            \"CountryCode\": \"SG\"\n        },\n        {\n            \"ID\": \"aea9ed2b-6ff1-4b78-8c20-9211b7973ba9\",\n            \"Name\": \"Rachael Boss\",\n            \"Line1\": \"Room number 2\",\n            \"Line2\": \"Block number 2, Hall of Residence 2\",\n            \"PostCode\": \"555557\",\n            \"Delivery\": true,\n            \"Pickup\": false,\n            \"SpecialInstructions\": \"Leave item in shoe rack\",\n            \"State\": \"Jurong\",\n            \"City\": \"Singapore\",\n            \"Country\": \"Singapore\",\n            \"CountryCode\": \"SG\"\n        }\n    ]\n}"
             }
           ]
         },
