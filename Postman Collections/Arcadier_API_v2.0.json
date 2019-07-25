@@ -8695,17 +8695,20 @@
           },
           "request": {
             "auth": {
-              "type": "bearer",
-              "bearer": {
-                "token": "{{admintoken}}"
-              }
+              "type": "noauth"
             },
             "method": "POST",
             "header": [
               {
                 "key": "Content-Type",
                 "name": "Content-Type",
-                "value": "application/json",
+                "type": "text",
+                "value": "application/json"
+              },
+              {
+                "key": "Authorization",
+                "value": "Bearer {{admintoken}}",
+                "description": "This can be {{merchanttoken}} too.",
                 "type": "text"
               }
             ],
@@ -8795,13 +8798,16 @@
           },
           "request": {
             "auth": {
-              "type": "bearer",
-              "bearer": {
-                "token": "{{admintoken}}"
-              }
+              "type": "noauth"
             },
             "method": "DELETE",
-            "header": [],
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{admintoken}}",
+                "type": "text"
+              }
+            ],
             "url": "https://{{your-marketplace}}.arcadier.io/api/v2/admins/{{adminID}}/payment-gateways/{{payment-gateway-ID-code}}",
             "description": "Deletes a payment gateway from the whole marketplace using its `Code`\n\n#### Authentication\n> Admin token only."
           },
