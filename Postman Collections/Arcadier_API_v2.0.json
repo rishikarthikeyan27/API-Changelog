@@ -5488,15 +5488,12 @@
           },
           "request": {
             "auth": {
-              "type": "bearer",
-              "bearer": {
-                "token": "{{buyertoken}}"
-              }
+              "type": "noauth"
             },
             "method": "GET",
             "header": [],
             "url": {
-              "raw": "https://{{your-marketplace}}.arcadier.io/api/v2/items?sellerID={{merchantID}}&pageSize=1&pageNumber=1&keywords={{string}}&categories={{string}}&customFields={{string}}&tags={{string}}&minPrice={{integer}}&maxPrice={{integer}}&minRating={{integer}}&maxRating={{integer}}&startDate={{linux_date}}&endDate={{linux_date}}",
+              "raw": "https://{{your-marketplace}}.arcadier.io/api/v2/items?sellerID={{merchantID}}&pageSize=1&pageNumber=1&categories={{string}}&customFields={{string}}&tags={{string}}&minPrice={{integer}}&maxPrice={{integer}}&minRating={{integer}}&maxRating={{integer}}&startDate={{linux_date}}&endDate={{linux_date}}&latitude={{string}}&longitude={{string}}&keywords={{string}}",
               "protocol": "https",
               "host": [
                 "{{your-marketplace}}",
@@ -5523,11 +5520,6 @@
                   "key": "pageNumber",
                   "value": "1",
                   "description": "The number of pages"
-                },
-                {
-                  "key": "keywords",
-                  "value": "{{string}}",
-                  "description": "A keyword in the name/description of the item"
                 },
                 {
                   "key": "categories",
@@ -5577,14 +5569,16 @@
                 {
                   "key": "latitude",
                   "value": "{{string}}",
-                  "description": "The geographical number of degrees above or below the equator.",
-                  "disabled": true
+                  "description": "The geographical number of degrees above or below the equator."
                 },
                 {
                   "key": "longitude",
                   "value": "{{string}}",
-                  "description": "The geographical number of degrees before of after Greenwich, UK. ",
-                  "disabled": true
+                  "description": "The geographical number of degrees before of after Greenwich, UK. "
+                },
+                {
+                  "key": "keywords",
+                  "value": "{{string}}"
                 }
               ]
             },
