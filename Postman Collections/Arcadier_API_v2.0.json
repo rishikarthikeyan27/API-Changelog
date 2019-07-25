@@ -8415,13 +8415,16 @@
           },
           "request": {
             "auth": {
-              "type": "bearer",
-              "bearer": {
-                "token": "{{admintoken}}"
-              }
+              "type": "noauth"
             },
             "method": "GET",
-            "header": [],
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{admintoken}}",
+                "type": "text"
+              }
+            ],
             "url": "https://{{your-marketplace}}.arcadier.io/api/v2/admins/{{adminID}}/payment-gateways",
             "description": "Gets the details and keys for each payment gateway on the marketplace.\n\n#### Authentication\n> Admin token only"
           },
