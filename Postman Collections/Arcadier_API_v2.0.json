@@ -3910,7 +3910,7 @@
               "raw": "[\n\t\"Category ID of first placed category\",\n\t\"Category ID of second placed category\",\n\t\"Category ID of third placed category\"\n]"
             },
             "url": "https://{{your-marketplace}}.arcadier.io/api/v2/admins/{{adminID}}/categories",
-            "description": "This API rearranged the sequence in which the order appears to the Admin and the users. The sequence will be exactly match with the sequence of the category IDs you put in the JSON body as shown in the examples."
+            "description": "This API rearranges the sequence in which the order appears to the Admin and the users. The sequence will be exactly matched with the sequence of the category IDs you put in the JSON body as shown in the examples.\n\n#### Authentication\n> Admin token only"
           },
           "response": [
             {
