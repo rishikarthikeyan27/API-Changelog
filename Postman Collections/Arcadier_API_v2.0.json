@@ -3379,7 +3379,7 @@
             "method": "GET",
             "header": [],
             "url": "https://{{your-marketplace}}.arcadier.io/api/v2/categories/hierarchy",
-            "description": "Returns Categories and their child(sub) Categories.\nNo Auth required"
+            "description": "Returns hierarchy of Categories and their child(sub) Categories.\n\n#### Authentication\n> None required"
           },
           "response": [
             {
