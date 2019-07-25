@@ -4223,12 +4223,12 @@
             "header": [
               {
                 "key": "Authorization",
-                "value": "Bearer {{admintoken}}",
-                "type": "text"
+                "type": "text",
+                "value": "Bearer {{admintoken}}"
               }
             ],
             "url": "https://{{your-marketplace}}.arcadier.io/api/v2/admins/{{adminID}}/custom-field-definitions/",
-            "description": "If you want to put data in a custom field you created, use this API to know in which reference table this custom field was assigned to.\n\nExample:\n* Reference Table: Users - Use [Update User Information](https://apiv2.arcadier.com/#cce29c0d-6faa-4ad8-8a83-d6ea4baddbb6) to store data in that custom field.\n* Reference Table: Implementations -  Use [Update Marketplace information](https://apiv2.arcadier.com/#73471ada-ab82-42f3-bad4-af79f5e1714b) to store data in that custom field.\n* Reference Table: Items - Use [Edit Item Details](https://apiv2.arcadier.com/?version=latest#8af9bf27-a3fb-4623-b8d0-f53a67697c47) to stor datat in that custom field."
+            "description": "If you want to put data in a custom field you created, use this API to know in which reference table this custom field was assigned to.\n\nExample:\n* Reference Table: Users - Use [Update User Information](https://apiv2.arcadier.com/#cce29c0d-6faa-4ad8-8a83-d6ea4baddbb6) to store data in that custom field.\n* Reference Table: Implementations -  Use [Update Marketplace information](https://apiv2.arcadier.com/#73471ada-ab82-42f3-bad4-af79f5e1714b) to store data in that custom field.\n* Reference Table: Items - Use [Edit Item Details](https://apiv2.arcadier.com/?version=latest#8af9bf27-a3fb-4623-b8d0-f53a67697c47) to store data in that custom field."
           },
           "response": [
             {
