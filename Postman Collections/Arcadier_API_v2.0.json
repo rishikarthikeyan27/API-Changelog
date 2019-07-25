@@ -1926,7 +1926,7 @@
               "raw": "{\n    \"Quantity\": 0,\n    \"SubTotal\": 0,\n    \"Freight\": 0,\n    \"Notes\": \"string\",\n    \"DiscountAmount\": 0,\n    \"CartItemType\": \"string\",\n    \"ShippingMethod\": {\n        \"ID\": \"string\",\n        \"Courier\": \"string\",\n        \"Method\": \"string\",\n        \"Price\": 0,\n        \"CombinedPrice\": 0,\n        \"CurrencyCode\": \"string\",\n        \"Description\": \"string\"\n    },\n    \"PickupAddress\": {\n        \"ID\": \"00000000-0000-0000-0000-000000000000\",\n        \"Name\": \"string\",\n        \"Line1\": \"string\",\n        \"Line2\": \"string\",\n        \"PostCode\": \"string\",\n        \"Latitude\": 0,\n        \"Longitude\": 0,\n        \"Delivery\": true,\n        \"Pickup\": true,\n        \"SpecialInstructions\": \"string\",\n        \"State\": \"string\",\n        \"City\": \"string\",\n        \"Country\": \"string\",\n        \"CountryCode\": \"string\"\n    }\n}"
             },
             "url": "https://{{your-marketplace}}.arcadier.io/api/v2/merchants/{{merchantID}}/carts/{{cartID}}",
-            "description": "Merchant/Admin Only API.\n\nIf the merchant wants to do changes to the cart, for example, VIP discounts or preferential shipping fees"
+            "description": "Edits parameters in the cart as shown in the body.\n\n#### Authentication\n> Admin token\n> Merchant of the item's token"
           },
           "response": []
         },
