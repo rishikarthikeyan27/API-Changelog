@@ -6180,17 +6180,19 @@
           },
           "request": {
             "auth": {
-              "type": "bearer",
-              "bearer": {
-                "token": "{{admintoken}}"
-              }
+              "type": "noauth"
             },
             "method": "GET",
             "header": [
               {
                 "key": "Content-Type",
                 "name": "Content-Type",
-                "value": "application/json",
+                "type": "text",
+                "value": "application/json"
+              },
+              {
+                "key": "Authorization",
+                "value": "Bearer {{merchanttoken}}",
                 "type": "text"
               }
             ],
@@ -6199,7 +6201,7 @@
               "raw": ""
             },
             "url": "https://{{your-marketplace}}.arcadier.io/api/v2/merchants/{{merchantID}}/shipping-methods/",
-            "description": "Gets the shipping methods set up by a merchant on his/her items.\n\n#### Authentication\n> Admin and Merchant token only"
+            "description": "Returns an array of shipping methods set up by a merchant on his/her items.\n\n#### Authentication\n> Admin and Merchant token only"
           },
           "response": [
             {
