@@ -1992,7 +1992,7 @@
               "raw": "{\n    \"FulfilmentStatus\": \"Acknowledged\",\n    \"PaymentStatus\": \"Pending\",\n    \"Balance\": 252,\n    \"DeliveryToAddress\": {\n        \"ID\": \"1136caaf-f98a-4c14-bd97-14808ff82b41\"\n    },\n    \"CartItemType\": \"delivery\"\n}"
             },
             "url": "https://{{your-marketplace}}.arcadier.io/api/v2/merchants/{{merchantID}}/orders/{{orderID}}",
-            "description": "This API is for the merchant to use whenever he/she gets confirmation for the following:\n\n\"FulfilmentStatus\": \"Delivered\" or \"Acknowledged\"\n* Delivered: The item reached the buyer.\n* Acknowledged: The item has not reached the buyer yet.\n\n\"PaymentStatus\": \"Acknowledged\", \"Processing\", \"Waiting For Payment\", \"Pending\", \"Paid\", \"Failed\", \"Refunded\"\n* This is totally dependant on the payment gateway used and the actual movement of money.\n\n\"Balance\": integer\n* If the merchant somehow receives money in installments, then the merchant can use this API to keep updating the balance owed to him in the Order Details.\n\n\"CartItemType\": \"\",\n\"DeliveryToAddress\":{\n\t\"ID\": \"\"\n}\n\n* If `\"CartItemType\": \"delivery\"`, then the `\"DeliveryToAddress\": { \"ID\": \"\" }` will take the address of the buyer.\n* If `\"CartItemType\": \"pickup\"`, then the `\"DeliveryToAddress\": { \"ID\": \"\" }` will take the address of the pickup.\n* Make sure `\"PaymentStatus\"` is **not** set to `\"Paid\"` before updating user address."
+            "description": "This API is for the merchant to use whenever he/she gets confirmation for the following:\n\n\"FulfilmentStatus\": \"Delivered\" or \"Acknowledged\"\n* Delivered: The item reached the buyer.\n* Acknowledged: The item has not reached the buyer yet.\n\n\"PaymentStatus\": \"Acknowledged\", \"Processing\", \"Waiting For Payment\", \"Pending\", \"Paid\", \"Failed\", \"Refunded\"\n* This is totally dependant on the payment gateway used and the actual movement of money.\n\n\"Balance\": integer\n* If the merchant somehow receives money in installments, then the merchant can use this API to keep updating the balance owed to him in the Order Details.\n\n\"CartItemType\": \"\",\n\"DeliveryToAddress\":{\n\t\"ID\": \"\"\n}\n\n* If `\"CartItemType\": \"delivery\"`, then the `\"DeliveryToAddress\": { \"ID\": \"\" }` will take the address of the buyer.\n* Make sure `\"PaymentStatus\"` is **not** set to `\"Paid\"` before updating user address.\n\n#### Authentication\n> Merchant token only"
           },
           "response": [
             {
@@ -2108,7 +2108,7 @@
               "raw": "[\r\n  {\r\n    \"InvoiceNo\": \"string\",\r\n    \"Payer\": {\r\n      \"ID\": \"00000000-0000-0000-0000-000000000000\"\r\n     \r\n    },\r\n    \"Payee\": {\r\n      \"ID\": \"00000000-0000-0000-0000-000000000000\"\r\n    },\r\n    \"Order\": {\r\n      \"ID\": \"00000000-0000-0000-0000-000000000000\"\r\n    },\r\n \r\n    \"Total\": 0,\r\n    \"Fee\": 0,\r\n    \"Status\": \"string\",\r\n    \"Refunded\": true,\r\n    \"RefundedRef\": \"string\",\r\n    \"GatewayPayKey\": \"string\",\r\n    \"GatewayTransactionID\": \"string\",\r\n    \"GatewayStatus\": \"string\",\r\n    \"GatewayTimeStamp\": \"string\",\r\n    \"GatewayRef\": \"string\",\r\n    \"GatewayCorrelationId\": \"string\",\r\n    \"GatewaySenderId\": \"string\",\r\n    \"GatewaySenderRef\": \"string\",\r\n    \"GatewayReceiverId\": \"string\",\r\n    \"GatewayReceiverRef\": \"string\",\r\n    \"Gateway\": {\r\n      \"Code\": \"string\"\r\n    },\r\n    \"DateTimeCreated\": 0,\r\n    \"DateTimePaid\": 0,\r\n    \"DateTimeSubmittedForApproval\": 0,\r\n    \"DateTimeRefunded\": 0\r\n  }\r\n]"
             },
             "url": "https://{{your-marketplace}}.arcadier.io/api/v2/admins/{{adminID}}/invoices/{{invoiceID}}",
-            "description": "If `\"Status\"` is set as `\"Success\"` then \"Total\", \"Fee\", and \"DateTimeCreated\" and \"DateTimePaid\" will be  filled automatically.\n\nThis API can be used after payment confirmation is received and confirmed."
+            "description": "Updates Marketplace's databases on payment details received from the payment gateway after a successful/pending/failed transaction has occured.\nIf `\"Status\"` is set as `\"Success\"` then \"Total\", \"Fee\", and \"DateTimeCreated\" and \"DateTimePaid\" will be  filled automatically.\n\nThis API can be used after payment confirmation is received and confirmed.\n\n#### Authentication\n> Merchant token only"
           },
           "response": [
             {
@@ -2241,7 +2241,7 @@
               }
             ],
             "url": "https://{{your-marketplace}}.arcadier.io/api/v2/users/{{buyerID}}/carts",
-            "description": "The reponse will contain the cart details and the `ID` of the cart, which is useful in other API's. The cart must exist for it to return something."
+            "description": "Responds with the contents of the cart of the specified buyer. The cart must exist for it to return something.\n\n#### Authentication\n> Admin token\n> Buyer token of the buyerID specified in URL"
           },
           "response": [
             {
