@@ -523,7 +523,7 @@
               "raw": "{\n    \"Email\": \"string\",\n    \"FirstName\": \"string\",\n    \"LastName\": \"string\",\n    \"DisplayName\": \"string\",\n    \"Description\": \"string\",\n    \"DOB\": \"string\",\n    \"PhoneNumber\": \"string\",\n     \"Media\": [\n        {\n            \"ID\": \"00000000-0000-0000-0000-000000000000\",\n            \"MediaUrl\": \"string\"\n        }\n    ],\n    \"CustomFields\": [\n        {\n            \"Code\": \"string\",\n            \"Name\": \"string\",\n            \"DataFieldType\": \"string\",\n            \"Values\": [\n                \"string\"\n            ]\n        }\n    ],\n    \"TimeZone\": \"string\",\n    \"Active\": true,\n    \"Enabled\": true,\n    \"Visible\": true\n        \n}"
             },
             "url": "https://{{your-marketplace}}.arcadier.io/api/v2/users/{{userID}}",
-            "description": "This API edits information about the user who's user ID is put in the URL. Admin token can be used, irrespective of the userID. User token can only be used with the respective user ID.\n\nThis API also adds/edits data in custom fields which have `\"ReferenceTable\": \"Users\"`."
+            "description": "Edits information about the user who's userID is put in the URL. This API also adds/edits data in (Custom fields)[] which have `\"ReferenceTable\": \"Users\"`.\n\n#### Authentication\n> Admin token\n\n> User token of specified userID"
           },
           "response": [
             {
