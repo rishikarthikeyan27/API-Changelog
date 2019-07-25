@@ -632,7 +632,7 @@
               }
             ],
             "url": "https://{{your-marketplace}}.arcadier.io/api/v2/admins/{{adminID}}/users",
-            "description": "Admin auth only.\nGets the information of all existing buyers/merchants/admins and owner of the marketplace."
+            "description": "Gets the information of all existing buyers/merchants/admins and owner of the marketplace.\n\n#### Authentication\n> Admin only"
           },
           "response": [
             {
