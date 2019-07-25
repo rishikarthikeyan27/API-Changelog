@@ -8408,7 +8408,7 @@
       "name": "Payment Methods",
       "item": [
         {
-          "name": "Admin - Get payment Gateways",
+          "name": "Get payment Gateways",
           "_postman_id": "13bf4d2d-a015-41bb-ad5d-f49d476800a8",
           "protocolProfileBehavior": {
             "disableBodyPruning": true
@@ -8423,7 +8423,7 @@
             "method": "GET",
             "header": [],
             "url": "https://{{your-marketplace}}.arcadier.io/api/v2/admins/{{adminID}}/payment-gateways",
-            "description": "Gets the details and keys for each payment gateway on the marketplace."
+            "description": "Gets the details and keys for each payment gateway on the marketplace.\n\n#### Authentication\n> Admin token only"
           },
           "response": [
             {
