@@ -1989,7 +1989,7 @@
             ],
             "body": {
               "mode": "raw",
-              "raw": "{\n    \"FulfilmentStatus\": \"Acknowledged\",\n    \"PaymentStatus\": \"Pending\",\n    \"Balance\": 252,\n    \"DeliveryToAddress\": {\n        \"ID\": \"1136caaf-f98a-4c14-bd97-14808ff82b41\"\n    },\n    \"CartItemType\": \"delivery\"\n}"
+              "raw": "{\n    \"FulfilmentStatus\": \"Acknowledged\",\n    \"PaymentStatus\": \"Pending\",\n    \"Balance\": 0,\n    \"DeliveryToAddress\": {\n        \"ID\": \"00000000-0000-0000-0000-000000000000\"\n    },\n    \"CartItemType\": \"delivery\"\n}"
             },
             "url": "https://{{your-marketplace}}.arcadier.io/api/v2/merchants/{{merchantID}}/orders/{{orderID}}",
             "description": "This API is for the merchant to use whenever he/she gets confirmation for the following:\n\n\"FulfilmentStatus\": \"Delivered\" or \"Acknowledged\"\n* Delivered: The item reached the buyer.\n* Acknowledged: The item has not reached the buyer yet.\n\n\"PaymentStatus\": \"Acknowledged\", \"Processing\", \"Waiting For Payment\", \"Pending\", \"Paid\", \"Failed\", \"Refunded\"\n* This is totally dependant on the payment gateway used and the actual movement of money.\n\n\"Balance\": integer\n* If the merchant somehow receives money in installments, then the merchant can use this API to keep updating the balance owed to him in the Order Details.\n\n\"CartItemType\": \"\",\n\"DeliveryToAddress\":{\n\t\"ID\": \"\"\n}\n\n* If `\"CartItemType\": \"delivery\"`, then the `\"DeliveryToAddress\": { \"ID\": \"\" }` will take the address of the buyer.\n* Make sure `\"PaymentStatus\"` is **not** set to `\"Paid\"` before updating user address.\n\n#### Authentication\n> Merchant token only"
@@ -3002,18 +3002,18 @@
               {
                 "key": "Content-Type",
                 "name": "Content-Type",
-                "value": "application/json",
-                "type": "text"
+                "type": "text",
+                "value": "application/json"
               },
               {
                 "key": "Authorization",
-                "value": "Bearer {{merchanttoken}}",
-                "type": "text"
+                "type": "text",
+                "value": "Bearer {{merchanttoken}}"
               }
             ],
             "body": {
               "mode": "raw",
-              "raw": "{\r\n  \"FulfilmentStatus\": \"Acknowledged\",\r\n  \"PaymentStatus\": \"Pending\",\r\n  \"Balance\": 250,\r\n  \"DeliveryToAddress\": {\r\n  \t\"ID\": \"570efdc4-4908-40e1-8d5d-30436cc4e18c\"\r\n  },\r\n  \"CartItemType\":\"delivery\"\r\n}"
+              "raw": "{\r\n  \"FulfilmentStatus\": \"Acknowledged\",\r\n  \"PaymentStatus\": \"Pending\",\r\n  \"Balance\": 0,\r\n  \"DeliveryToAddress\": {\r\n  \t\"ID\": \"00000000-0000-0000-0000-000000000000\"\r\n  },\r\n  \"CartItemType\":\"delivery\"\r\n}"
             },
             "url": "https://{{your-marketplace}}.arcadier.io/api/v2/merchants/{{merchantID}}/orders/{{orderID}}",
             "description": "This API is for the merchant to use whenever he/she gets confirmation for the following:\n\n\"FulfilmentStatus\": \"Delivered\" or \"Acknowledged\"\n* Delivered: The item reached the buyer.\n* Acknowledged: The item has not reached the buyer yet.\n\n\"PaymentStatus\": \"Acknowledged\", \"Processing\", \"Waiting For Payment\", \"Pending\", \"Paid\", \"Failed\", \"Refunded\"\n* This is totally dependant on the payment gateway used and the actual movement of money.\n\n\"Balance\": integer\n* If the merchant somehow receives money in installments, then the merchant can use this API to keep updating the balance owed to him in the Order Details.\n\n\"CartItemType\": \"\",\n\"DeliveryToAddress\":{\n\t\"ID\": \"\"\n}\n\n* If `\"CartItemType\": \"delivery\"`, then the `\"DeliveryToAddress\": { \"ID\": \"\" }` will take the address of the buyer.\n* Make sure `\"PaymentStatus\"` is **not** set to `\"Paid\"` before updating user address.\n\n#### Authentication\n> Merchant token only"
