@@ -4815,7 +4815,7 @@
             "method": "GET",
             "header": [],
             "url": "https://{{your-marketplace}}.arcadier.io/api/v2/items/{{itemID}}",
-            "description": "Leaving itemID blank returns all items' details.\n\nPutting a item ID in the URL return all details, including variants details in the response"
+            "description": "Gets an item's details, all details, including variants details.\n*Omitting itemID returns all items' details, but not details like variants*\n\n#### Authentication\n> None required"
           },
           "response": [
             {
@@ -4959,7 +4959,8 @@
               "mode": "raw",
               "raw": "{\n    \"SKU\": \"string\",\n    \"Name\": \"string\",\n    \"BuyerDescription\": \"string\",\n    \"SellerDescription\": \"string\",\n    \"Price\": \"string\",\n    \"PriceUnit\": \"string\",\n    \"StockLimited\": true,\n    \"StockQuantity\": 0,\n    \"IsVisibleToCustomer\": true,\n    \"Active\": true,\n    \"IsAvailable\": true,\n    \"CurrencyCode\": \"string\",\n    \"MerchantDetail\": {\n        \"ID\": \"00000000-0000-0000-0000-000000000000\"\n    },\n    \"Categories\": [\n        {\n            \"ID\": \"00000000-0000-0000-0000-000000000000\"\n        },\n        {\n            \"ID\": \"00000000-0000-0000-0000-000000000000\"\n        },\n        {\n            \"ID\": \"00000000-0000-0000-0000-000000000000\"\n        }\n    ],\n    \"ShippingMethods\": [\n        {\n            \"ID\": \"00000000-0000-0000-0000-000000000000\"\n        }\n    ],\n    \"PickupAddresses\": [\n        {\n            \"ID\": \"00000000-0000-0000-0000-000000000000\"\n        }\n    ],\n    \"Media\": [\n        {\n            \"MediaUrl\": \"string\"\n        }\n    ],\n    \"Tags\": [\n        \"string\"\n    ],\n    \"ChildItems\": [\n        {\n            \"Variants\": [\n                {\n                    \"Name\": \"string\",\n                    \"GroupName\": \"string\"\n                },\n                {\n                    \"Name\": \"string\",\n                    \"GroupName\": \"string\"\n                }\n            ],\n            \"SKU\": \"string\",\n            \"Name\": \"Astring\",\n            \"Price\": 0,\n            \"PriceUnit\": \"string\",\n            \"StockLimited\": true,\n            \"StockQuantity\": 0,\n            \"Active\": true,\n            \"IsAvailable\": true,\n            \"Media\": [\n                {\n                    \"MediaUrl\": \"string\"\n                }\n            ],\n            \"Tags\": [\n                \"string\",\n                \"string\"\n            ]\n        }\n    ]\n}"
             },
-            "url": "https://{{your-marketplace}}.arcadier.io/api/v2/merchants/{{merchantID}}/items"
+            "url": "https://{{your-marketplace}}.arcadier.io/api/v2/merchants/{{merchantID}}/items",
+            "description": "Creates an item for a merchant.\n\n#### Authentication\n> Merchant token only"
           },
           "response": [
             {
@@ -5750,7 +5751,7 @@
           ]
         },
         {
-          "name": "Get items - Params in JSON body",
+          "name": "Search items - Params in JSON body",
           "_postman_id": "61b718db-2d07-4af1-992d-520c0fe259c0",
           "protocolProfileBehavior": {
             "disableBodyPruning": true
