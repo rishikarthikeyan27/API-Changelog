@@ -7831,7 +7831,7 @@
           ]
         },
         {
-          "name": "Get Specific Page Content",
+          "name": "Get Page Content",
           "_postman_id": "c21b729a-762d-488e-ad83-98c3fb167f5e",
           "protocolProfileBehavior": {
             "disableBodyPruning": true
