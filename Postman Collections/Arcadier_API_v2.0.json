@@ -8595,17 +8595,19 @@
           },
           "request": {
             "auth": {
-              "type": "bearer",
-              "bearer": {
-                "token": "{{admintoken}}"
-              }
+              "type": "noauth"
             },
             "method": "POST",
             "header": [
               {
                 "key": "Content-Type",
                 "name": "Content-Type",
-                "value": "application/json",
+                "type": "text",
+                "value": "application/json"
+              },
+              {
+                "key": "Authorization",
+                "value": "Bearer {{admintoken}}",
                 "type": "text"
               }
             ],
