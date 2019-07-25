@@ -7839,7 +7839,8 @@
           "request": {
             "method": "GET",
             "header": [],
-            "url": "https://{{your-marketplace}}.arcadier.io/api/v2/content-pages/{{contentPageID}}"
+            "url": "https://{{your-marketplace}}.arcadier.io/api/v2/content-pages/{{contentPageID}}",
+            "description": "Gets the contents of a particular page\n\n#### Authentication\n> None required"
           },
           "response": []
         },
@@ -7869,7 +7870,7 @@
               "raw": "{\n    \"Title\": \"string\",\n    \"Content\": \"string\",\n    \"ExternalURL\": \"string\",\n    \"Active\": true,\n    \"Available\": 0,\n    \"VisibleTo\": 1,\n    \"Meta\": \"string\"\n}"
             },
             "url": "https://{{your-marketplace}}.arcadier.io/api/v2/content-pages",
-            "description": "\"VisibleTo\" take the following values:\n* 0: Everyone\n* 1: Merchants and Consumer only\n* 2: MerchantOnly\n\n\"Available\" takes the following values:\n* 0: Publish\n* 1: Hide\n\n\"Content\" accepts HTML in a string."
+            "description": "Creates a Page\n\n\"VisibleTo\" take the following values:\n* 0: Everyone\n* 1: Merchants and Consumer only\n* 2: MerchantOnly\n\n\"Available\" takes the following values:\n* 0: Publish\n* 1: Hide\n\n\"Content\" accepts HTML in a string.\n\n#### Authenticaton\n> Admin token only"
           },
           "response": [
             {
@@ -7974,7 +7975,8 @@
                 "type": "text"
               }
             ],
-            "url": "https://{{your-marketplace}}.arcadier.io/api/v2/content-pages/{{contentPageID}}"
+            "url": "https://{{your-marketplace}}.arcadier.io/api/v2/content-pages/{{contentPageID}}",
+            "description": "Deletes a page\n\n#### Authentication\n> Admin token only"
           },
           "response": [
             {
