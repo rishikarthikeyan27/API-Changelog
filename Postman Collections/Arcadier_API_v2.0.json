@@ -5588,7 +5588,7 @@
                 }
               ]
             },
-            "description": "Returns items which have parameters similar to those specified.\n\nCategories param is the category ID, not the name.\nTags param searches for the exact tag given.\n\n#### Authentication\n>"
+            "description": "Returns items which have parameters similar to those specified.\n\nCategories param is the category ID, not the name.\nTags param searches for the exact tag given.\n\n#### Authentication\n> None Required"
           },
           "response": [
             {
