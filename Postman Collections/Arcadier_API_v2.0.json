@@ -1439,6 +1439,121 @@
           ]
         },
         {
+          "name": "Update a user address",
+          "_postman_id": "f6ef750d-7c57-4742-bc37-b6d93b5c8757",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "auth": {
+              "type": "noauth"
+            },
+            "method": "PUT",
+            "header": [
+              {
+                "key": "Content-Type",
+                "name": "Content-Type",
+                "value": "application/json",
+                "type": "text"
+              },
+              {
+                "key": "Authorization",
+                "value": "Bearer {{admintoken}}",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n    \"ID\": \"string\",\n    \"Name\": \"string\",\n    \"Line1\": \"string\",\n    \"Line2\": \"string\",\n    \"PostCode\": \"string\",\n    \"Delivery\": true,\n    \"Pickup\": true,\n    \"SpecialInstructions\": \"string\",\n    \"State\": \"string\",\n    \"City\": \"string\",\n    \"Country\": \"string\",\n    \"CountryCode\": \"string\"\n}"
+            },
+            "url": "https://{{your-marketplace}}.arcadier.io/api/v2/users/{{userID}}/addresses/{{addressID}}",
+            "description": "Edits the details of the address specified in the addressID. Response will be the updated address.\n\n#### Authentication\n> **Admin token**\n>\n> Updates addresses for:\n> Admin, \n> Merchant, \n> Buyer\n> ______________________\n>\n> **Merchant token**\n> \n> Updates addresses for:\n> Merchant\n> ______________________\n>\n> **Buyer token**\n>\n> Updates addresses for:\n> Buyer"
+          },
+          "response": [
+            {
+              "id": "45c380bb-5118-4950-aa09-884bf4bf0f84",
+              "name": "Update a user address",
+              "originalRequest": {
+                "method": "PUT",
+                "header": [
+                  {
+                    "key": "Content-Type",
+                    "name": "Content-Type",
+                    "value": "application/json",
+                    "type": "text"
+                  },
+                  {
+                    "key": "Authorization",
+                    "value": "Bearer {{admintoken}}",
+                    "type": "text"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n    \n    \"ID\": \"cc4269c3-ea6e-40dc-873b-1cc419e09fe3\",\n    \"Name\": \"Arcadier Singapore HQ\",\n    \"Line1\": \"34 Boon Leat Terrace\",\n    \"Line2\": \"Mapletree\",\n    \"PostCode\": \"119886\",\n    \"Delivery\": true,\n    \"Pickup\": false,\n    \"SpecialInstructions\": \"Special\",\n    \"State\": \"Singapore\",\n    \"City\": \"Singapore\",\n    \"Country\": \"Singapore\",\n    \"CountryCode\": \"SG\"\n}"
+                },
+                "url": "https://{{your-marketplace}}.arcadier.io/api/v2/users/{{userID}}/addresses/cc4269c3-ea6e-40dc-873b-1cc419e09fe3"
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Cache-Control",
+                  "value": "no-cache"
+                },
+                {
+                  "key": "Pragma",
+                  "value": "no-cache"
+                },
+                {
+                  "key": "Content-Type",
+                  "value": "application/json; charset=utf-8"
+                },
+                {
+                  "key": "Content-Encoding",
+                  "value": "gzip"
+                },
+                {
+                  "key": "Expires",
+                  "value": "-1"
+                },
+                {
+                  "key": "Vary",
+                  "value": "Accept-Encoding"
+                },
+                {
+                  "key": "X-StackifyID",
+                  "value": "V1|800019a6-0c01-5900-b63f-84710c7967bb|"
+                },
+                {
+                  "key": "api-version",
+                  "value": "v2"
+                },
+                {
+                  "key": "X-XSS-Protection",
+                  "value": "1; mode=block"
+                },
+                {
+                  "key": "X-Content-Type-Options",
+                  "value": "nosniff"
+                },
+                {
+                  "key": "Date",
+                  "value": "Mon, 03 Jun 2019 02:55:56 GMT"
+                },
+                {
+                  "key": "Content-Length",
+                  "value": "317"
+                }
+              ],
+              "cookie": [],
+              "responseTime": null,
+              "body": "{\n    \"ID\": \"cc4269c3-ea6e-40dc-873b-1cc419e09fe3\",\n    \"Name\": \"Arcadier Singapore HQ\",\n    \"Line1\": \"34 Boon Leat Terrace\",\n    \"Line2\": \"Mapletree\",\n    \"PostCode\": \"119886\",\n    \"Delivery\": true,\n    \"Pickup\": false,\n    \"SpecialInstructions\": \"Special\",\n    \"State\": \"Singapore\",\n    \"City\": \"Singapore\",\n    \"Country\": \"Singapore\",\n    \"CountryCode\": \"SG\"\n}"
+            }
+          ]
+        },
+        {
           "name": "Delete a User address",
           "_postman_id": "956999a1-92f2-4654-9583-1881ab2208ff",
           "protocolProfileBehavior": {
@@ -1630,121 +1745,6 @@
               "cookie": [],
               "responseTime": null,
               "body": "{\n    \"ID\": \"1c55358c-cbd1-4da5-b445-9c96948d2c61\",\n    \"Name\": \"FirstName LastName\",\n    \"Line1\": \"Room number\",\n    \"Line2\": \"Block number, Hall of Residence\",\n    \"PostCode\": \"555555\",\n    \"Delivery\": true,\n    \"Pickup\": false,\n    \"SpecialInstructions\": \"Leave item in show rack\",\n    \"State\": \"Jurong\",\n    \"City\": \"Singapore\",\n    \"Country\": \"Singapore\",\n    \"CountryCode\": \"SG\"\n}"
-            }
-          ]
-        },
-        {
-          "name": "Update a user address",
-          "_postman_id": "f6ef750d-7c57-4742-bc37-b6d93b5c8757",
-          "protocolProfileBehavior": {
-            "disableBodyPruning": true
-          },
-          "request": {
-            "auth": {
-              "type": "noauth"
-            },
-            "method": "PUT",
-            "header": [
-              {
-                "key": "Content-Type",
-                "name": "Content-Type",
-                "value": "application/json",
-                "type": "text"
-              },
-              {
-                "key": "Authorization",
-                "value": "Bearer {{admintoken}}",
-                "type": "text"
-              }
-            ],
-            "body": {
-              "mode": "raw",
-              "raw": "{\n    \"ID\": \"string\",\n    \"Name\": \"string\",\n    \"Line1\": \"string\",\n    \"Line2\": \"string\",\n    \"PostCode\": \"string\",\n    \"Delivery\": true,\n    \"Pickup\": true,\n    \"SpecialInstructions\": \"string\",\n    \"State\": \"string\",\n    \"City\": \"string\",\n    \"Country\": \"string\",\n    \"CountryCode\": \"string\"\n}"
-            },
-            "url": "https://{{your-marketplace}}.arcadier.io/api/v2/users/{{userID}}/addresses/{{addressID}}",
-            "description": "Edits the details of the address specified in the addressID. Response will be the updated address.\n\n#### Authentication\n> **Admin token**\n>\n> Updates addresses for:\n> Admin, \n> Merchant, \n> Buyer\n> ______________________\n>\n> **Merchant token**\n> \n> Updates addresses for:\n> Merchant\n> ______________________\n>\n> **Buyer token**\n>\n> Updates addresses for:\n> Buyer"
-          },
-          "response": [
-            {
-              "id": "45c380bb-5118-4950-aa09-884bf4bf0f84",
-              "name": "Update a user address",
-              "originalRequest": {
-                "method": "PUT",
-                "header": [
-                  {
-                    "key": "Content-Type",
-                    "name": "Content-Type",
-                    "value": "application/json",
-                    "type": "text"
-                  },
-                  {
-                    "key": "Authorization",
-                    "value": "Bearer {{admintoken}}",
-                    "type": "text"
-                  }
-                ],
-                "body": {
-                  "mode": "raw",
-                  "raw": "{\n    \n    \"ID\": \"cc4269c3-ea6e-40dc-873b-1cc419e09fe3\",\n    \"Name\": \"Arcadier Singapore HQ\",\n    \"Line1\": \"34 Boon Leat Terrace\",\n    \"Line2\": \"Mapletree\",\n    \"PostCode\": \"119886\",\n    \"Delivery\": true,\n    \"Pickup\": false,\n    \"SpecialInstructions\": \"Special\",\n    \"State\": \"Singapore\",\n    \"City\": \"Singapore\",\n    \"Country\": \"Singapore\",\n    \"CountryCode\": \"SG\"\n}"
-                },
-                "url": "https://{{your-marketplace}}.arcadier.io/api/v2/users/{{userID}}/addresses/cc4269c3-ea6e-40dc-873b-1cc419e09fe3"
-              },
-              "status": "OK",
-              "code": 200,
-              "_postman_previewlanguage": "json",
-              "header": [
-                {
-                  "key": "Cache-Control",
-                  "value": "no-cache"
-                },
-                {
-                  "key": "Pragma",
-                  "value": "no-cache"
-                },
-                {
-                  "key": "Content-Type",
-                  "value": "application/json; charset=utf-8"
-                },
-                {
-                  "key": "Content-Encoding",
-                  "value": "gzip"
-                },
-                {
-                  "key": "Expires",
-                  "value": "-1"
-                },
-                {
-                  "key": "Vary",
-                  "value": "Accept-Encoding"
-                },
-                {
-                  "key": "X-StackifyID",
-                  "value": "V1|800019a6-0c01-5900-b63f-84710c7967bb|"
-                },
-                {
-                  "key": "api-version",
-                  "value": "v2"
-                },
-                {
-                  "key": "X-XSS-Protection",
-                  "value": "1; mode=block"
-                },
-                {
-                  "key": "X-Content-Type-Options",
-                  "value": "nosniff"
-                },
-                {
-                  "key": "Date",
-                  "value": "Mon, 03 Jun 2019 02:55:56 GMT"
-                },
-                {
-                  "key": "Content-Length",
-                  "value": "317"
-                }
-              ],
-              "cookie": [],
-              "responseTime": null,
-              "body": "{\n    \"ID\": \"cc4269c3-ea6e-40dc-873b-1cc419e09fe3\",\n    \"Name\": \"Arcadier Singapore HQ\",\n    \"Line1\": \"34 Boon Leat Terrace\",\n    \"Line2\": \"Mapletree\",\n    \"PostCode\": \"119886\",\n    \"Delivery\": true,\n    \"Pickup\": false,\n    \"SpecialInstructions\": \"Special\",\n    \"State\": \"Singapore\",\n    \"City\": \"Singapore\",\n    \"Country\": \"Singapore\",\n    \"CountryCode\": \"SG\"\n}"
             }
           ]
         }
