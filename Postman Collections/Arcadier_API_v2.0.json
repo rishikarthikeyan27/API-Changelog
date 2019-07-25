@@ -5050,6 +5050,117 @@
           ]
         },
         {
+          "name": "Edit Item Details",
+          "_postman_id": "8af9bf27-a3fb-4623-b8d0-f53a67697c47",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "PUT",
+            "header": [
+              {
+                "key": "Content-Type",
+                "name": "Content-Type",
+                "value": "application/json",
+                "type": "text"
+              },
+              {
+                "key": "Authorization",
+                "value": "Bearer {{merchanttoken}}",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n    \"SKU\": \"string\",\n    \"Name\": \"string\",\n    \"BuyerDescription\": \"string\",\n    \"SellerDescription\": \"string\",\n    \"Price\": 0,\n    \"PriceUnit\": \"string\",\n    \"StockLimited\": false,\n    \"StockQuantity\": 0,\n    \"IsVisibleToCustomer\": true,\n    \"Active\": true,\n    \"IsAvailable\": true,\n    \"CurrencyCode\": \"string\",\n    \"Categories\": [\n        {\n            \"ID\": \"00000000-0000-0000-0000-000000000000\"\n        },\n        {\n            \"ID\": \"00000000-0000-0000-0000-000000000000a\"\n        },\n        {\n            \"ID\": \"00000000-0000-0000-0000-000000000000\"\n        }\n    ],\n    \n    \"ShippingMethods\": [\n        {\n            \"ID\": \"00000000-0000-0000-0000-000000000000\"\n        }\n    ],\n    \"PickupAddresses\": [\n        {\n            \"ID\": \"00000000-0000-0000-0000-000000000000\"\n        }\n    ],\n    \"Tags\": [\n        \"string\"\n    ],\n    \"CustomFields\": [\n        {\n            \"Code\": \"string\",\n            \"Values\": [\n                \"string\"\n            ]\n        }\n    ],\n    \"ChildItems\": [\n        {\n            \"Variants\": [\n                {\n                    \"Name\": \"string\",\n                    \"GroupName\": \"string2\"\n                }\n            ],\n            \"SKU\": \"string\",\n            \"Name\": \"string\",\n            \"BuyerDescription\": \"string2\",\n            \"SellerDescription\": \"string2\",\n            \"Price\": 0,\n            \"PriceUnit\": \"string\",\n            \"StockLimited\": false,\n            \"StockQuantity\": 0,\n            \"IsVisibleToCustomer\": true,\n            \"Active\": true,\n            \"IsAvailable\": true,\n            \"ShippingMethods\": [\n                {\n                    \"ID\": \"00000000-0000-0000-0000-000000000000\"\n                }\n            ],\n            \"PickupAddresses\": [\n                {\n                    \"ID\": \"00000000-0000-0000-0000-000000000000\"\n                }\n            ],\n            \"Media\": [\n                {\n                    \"MediaUrl\": \"string\"\n                }\n            ],\n            \"Tags\": [\n                \"string\",\n                \"string\"\n            ],\n            \"CustomFields\": [\n                {\n                    \"Code\": \"string\",\n                    \"Values\": [\n                        \"string\"\n                    ]\n                }\n            ]\n        }\n    ]\n    \n}"
+            },
+            "url": "https://{{your-marketplace}}.arcadier.io/api/v2/merchants/{{merchantID}}/items/2ba68e73-acef-45df-8bb0-6a5efca679be"
+          },
+          "response": [
+            {
+              "id": "c5e55d3f-d509-4f0c-a8e5-83b01eddb7ad",
+              "name": "Edit Item Details",
+              "originalRequest": {
+                "method": "PUT",
+                "header": [
+                  {
+                    "key": "Content-Type",
+                    "name": "Content-Type",
+                    "value": "application/json",
+                    "type": "text"
+                  },
+                  {
+                    "key": "Authorization",
+                    "value": "Bearer {{merchanttoken}}",
+                    "type": "text"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n    \"SKU\": \"3101\",\n    \"Name\": \"Yamaha 2\",\n    \"BuyerDescription\": \"Sculpted Mahogany Body\",\n    \"SellerDescription\": \"Test Seller Desc\",\n    \"Price\": \"600.00\",\n    \"PriceUnit\": \"SGD\",\n    \"StockLimited\": false,\n    \"StockQuantity\": \"10\",\n    \"IsVisibleToCustomer\": true,\n    \"Active\": true,\n    \"IsAvailable\": true,\n    \"CurrencyCode\": \"SGD\",\n    \"Categories\": [\n        {\n            \"ID\": \"fd482739-0a5d-447e-851e-c1579ab9b568\"\n        },\n        {\n            \"ID\": \"3c6f524e-a108-4864-b262-f96e0e34745a\"\n        },\n        {\n            \"ID\": \"e1c738fd-3a1e-4ca8-a7e2-5bd46df5d808\"\n        }\n    ],\n    \"ShippingMethods\": [\n        {\n            \"ID\": \"46a0896b-482f-453f-acb4-aa39ddc2707d\"\n        }\n    ],\n    \"PickupAddresses\": [\n        {\n            \"ID\": \"1136caaf-f98a-4c14-bd97-14808ff82b41\"\n        }\n    ],\n    \"Tags\": [\n        \"API created Item\"\n    ],\n    \"CustomFields\": [\n        {\n            \"Code\": \"parentitem-kdBefmjxpr\",\n            \"Values\": [\n                \"Parent Value\"\n            ]\n        }\n    ],\n    \"ChildItems\": [\n        {\n            \"Variants\": [\n                {\n                    \"Name\": \"API Variant 2\",\n                    \"GroupName\": \"API 2\"\n                }\n            ],\n            \"SKU\": \"3102\",\n            \"Name\": \"API CHILD 2\",\n            \"BuyerDescription\": \"API CHILD 2\",\n            \"SellerDescription\": \"API CHILD 2\",\n            \"Price\": 10,\n            \"PriceUnit\": \"SGD\",\n            \"StockLimited\": false,\n            \"StockQuantity\": 0,\n            \"IsVisibleToCustomer\": true,\n            \"Active\": true,\n            \"IsAvailable\": true,\n            \"ShippingMethods\": [\n                {\n                    \"ID\": \"46a0896b-482f-453f-acb4-aa39ddc2707d\"\n                }\n            ],\n            \"PickupAddresses\": [\n                {\n                    \"ID\": \"1136caaf-f98a-4c14-bd97-14808ff82b41\"\n                }\n            ],\n            \"Media\": [\n                {\n                    \"MediaUrl\": \"https://royally.test.arcadier.io/images/items/item-59589-636905631235783991-3M2dCw.jpg\"\n                }\n            ],\n            \"Tags\": [\n                \"API Tag\",\n                \"API Tag 2\"\n            ],\n            \"CustomFields\": [\n                {\n                    \"Code\": \"childitem-pVengIi8l4\",\n                    \"Values\": [\n                        \"Child Value\"\n                    ]\n                }\n            ]\n        }\n    ]\n}"
+                },
+                "url": "https://{{your-marketplace}}.arcadier.io/api/v2/merchants/{{merchantID}}/items/2ba68e73-acef-45df-8bb0-6a5efca679be"
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Cache-Control",
+                  "value": "no-cache"
+                },
+                {
+                  "key": "Pragma",
+                  "value": "no-cache"
+                },
+                {
+                  "key": "Content-Type",
+                  "value": "application/json; charset=utf-8"
+                },
+                {
+                  "key": "Content-Encoding",
+                  "value": "gzip"
+                },
+                {
+                  "key": "Expires",
+                  "value": "-1"
+                },
+                {
+                  "key": "Vary",
+                  "value": "Accept-Encoding"
+                },
+                {
+                  "key": "X-StackifyID",
+                  "value": "V1|800011d0-0000-5900-b63f-84710c7967bb|"
+                },
+                {
+                  "key": "api-version",
+                  "value": "v2"
+                },
+                {
+                  "key": "X-XSS-Protection",
+                  "value": "1; mode=block"
+                },
+                {
+                  "key": "X-Content-Type-Options",
+                  "value": "nosniff"
+                },
+                {
+                  "key": "Date",
+                  "value": "Thu, 30 May 2019 10:21:44 GMT"
+                },
+                {
+                  "key": "Content-Length",
+                  "value": "1721"
+                }
+              ],
+              "cookie": [],
+              "responseTime": null,
+              "body": "{\n    \"ID\": \"2ba68e73-acef-45df-8bb0-6a5efca679be\",\n    \"SKU\": \"3101\",\n    \"Name\": \"Yamaha 2\",\n    \"BuyerDescription\": \"Sculpted Mahogany Body\",\n    \"SellerDescription\": \"Test Seller Desc\",\n    \"Price\": \"600.00\",\n    \"PriceUnit\": \"SGD\",\n    \"StockLimited\": false,\n    \"StockQuantity\": \"10\",\n    \"IsVisibleToCustomer\": true,\n    \"Active\": true,\n    \"IsAvailable\": true,\n    \"CurrencyCode\": \"SGD\",\n    \"InstantBuy\": true,\n    \"Negotiation\": false,\n    \"MerchantDetail\": {\n        \"ID\": \"d90ca45c-3c56-459b-bfab-7d755111be2a\",\n        \"Email\": \"tanoo_joy@hotmail.com\",\n        \"FirstName\": \"Tanoo\",\n        \"LastName\": \"Joyekurun\",\n        \"DisplayName\": \"tanoo\",\n        \"PhoneNumber\": \"90854839\"\n    },\n    \"Categories\": [\n        {\n            \"ID\": \"fd482739-0a5d-447e-851e-c1579ab9b568\",\n            \"Name\": \"Guitars\",\n            \"Description\": \"The sexiest\",\n            \"SortOrder\": 1,\n            \"CreatedDateTime\": 1553748069,\n            \"ModifiedDateTime\": 1553844908\n        },\n        {\n            \"ID\": \"3c6f524e-a108-4864-b262-f96e0e34745a\",\n            \"Name\": \"Test auth in header\",\n            \"Description\": \"test auth in header\",\n            \"SortOrder\": 0,\n            \"CreatedDateTime\": 1553846013,\n            \"ModifiedDateTime\": 1553846013\n        },\n        {\n            \"ID\": \"e1c738fd-3a1e-4ca8-a7e2-5bd46df5d808\",\n            \"Name\": \"5 string bass\",\n            \"Description\": \"\",\n            \"SortOrder\": 1,\n            \"ParentCategoryID\": \"fd482739-0a5d-447e-851e-c1579ab9b568\",\n            \"CreatedDateTime\": 1553761437,\n            \"ModifiedDateTime\": 1553761437\n        }\n    ],\n    \"ShippingMethods\": [\n        {\n            \"ID\": \"46a0896b-482f-453f-acb4-aa39ddc2707d\",\n            \"Price\": \"2.00\",\n            \"CombinedPrice\": \"5.00\",\n            \"CurrencyCode\": \"SGD\",\n            \"Description\": \"Fast\"\n        }\n    ],\n    \"PickupAddresses\": [\n        {\n            \"ID\": \"1136caaf-f98a-4c14-bd97-14808ff82b41\",\n            \"Line1\": \"34 Boon Leat Terrace\",\n            \"Latitude\": \"0.00\",\n            \"Longitude\": \"0.00\",\n            \"Delivery\": false,\n            \"Pickup\": true\n        }\n    ],\n    \"Tags\": [\n        \"API created Item\"\n    ],\n    \"CreatedDateTime\": 1559198636,\n    \"ModifiedDateTime\": 1559211704,\n    \"HasChildItems\": true,\n    \"ChildItems\": [\n        {\n            \"Variants\": [\n                {\n                    \"ID\": \"7ef9d376-4373-4633-8972-4b50bf699b91\",\n                    \"Name\": \"API Variant\",\n                    \"GroupID\": \"fda30339-b3ac-49db-80c4-286d531e68be\",\n                    \"GroupName\": \"API\"\n                }\n            ],\n            \"ID\": \"11812c63-e82d-476d-b7ec-b28466315c7f\",\n            \"SKU\": \"3102\",\n            \"Price\": \"610.00\",\n            \"StockLimited\": false,\n            \"StockQuantity\": \"0\",\n            \"Active\": true,\n            \"IsAvailable\": true,\n            \"ParentID\": \"2ba68e73-acef-45df-8bb0-6a5efca679be\",\n            \"InstantBuy\": true,\n            \"Negotiation\": false,\n            \"Media\": [\n                {\n                    \"ID\": \"a17e7701-f689-4157-b0ef-23b3dc4f98d5\",\n                    \"MediaUrl\": \"https://royally.test.arcadier.io/images/items/item-59589-636905631235783991-3M2dCw.jpg\"\n                },\n                {\n                    \"ID\": \"745b8c25-b2d2-46d9-b025-c5d6b55b47e4\",\n                    \"MediaUrl\": \"https://royally.test.arcadier.io/images/items/item-59589-636905631235783991-3M2dCw.jpg\"\n                },\n                {\n                    \"ID\": \"6981e426-08ae-43ba-9433-0e2dd5448775\",\n                    \"MediaUrl\": \"https://royally.test.arcadier.io/images/items/item-59589-636905631235783991-3M2dCw.jpg\"\n                }\n            ],\n            \"Tags\": [\n                \"API Tag\",\n                \"API Tag 2\"\n            ],\n            \"CreatedDateTime\": 1559198636,\n            \"ModifiedDateTime\": 1559198636,\n            \"HasChildItems\": false\n        },\n        {\n            \"Variants\": [\n                {\n                    \"ID\": \"032d5ea7-f8ab-4666-89e8-bfc05f95ac48\",\n                    \"Name\": \"API Variant 2\",\n                    \"GroupID\": \"3f755109-35d3-458b-aa98-1fd46f02725f\",\n                    \"GroupName\": \"API 2\"\n                }\n            ],\n            \"ID\": \"2847f0e6-8ff7-4294-85ac-10279146598d\",\n            \"SKU\": \"3102\",\n            \"Price\": \"610.00\",\n            \"StockLimited\": false,\n            \"StockQuantity\": \"0\",\n            \"Active\": true,\n            \"IsAvailable\": true,\n            \"ParentID\": \"2ba68e73-acef-45df-8bb0-6a5efca679be\",\n            \"InstantBuy\": true,\n            \"Negotiation\": false,\n            \"Media\": [\n                {\n                    \"ID\": \"a17e7701-f689-4157-b0ef-23b3dc4f98d5\",\n                    \"MediaUrl\": \"https://royally.test.arcadier.io/images/items/item-59589-636905631235783991-3M2dCw.jpg\"\n                },\n                {\n                    \"ID\": \"745b8c25-b2d2-46d9-b025-c5d6b55b47e4\",\n                    \"MediaUrl\": \"https://royally.test.arcadier.io/images/items/item-59589-636905631235783991-3M2dCw.jpg\"\n                },\n                {\n                    \"ID\": \"6981e426-08ae-43ba-9433-0e2dd5448775\",\n                    \"MediaUrl\": \"https://royally.test.arcadier.io/images/items/item-59589-636905631235783991-3M2dCw.jpg\"\n                }\n            ],\n            \"Tags\": [\n                \"API Tag\",\n                \"API Tag 2\"\n            ],\n            \"CreatedDateTime\": 1559198952,\n            \"ModifiedDateTime\": 1559198952,\n            \"HasChildItems\": false\n        },\n        {\n            \"Variants\": [\n                {\n                    \"ID\": \"c1fc0407-b7b8-4bc9-8486-838363f6d0f7\",\n                    \"Name\": \"API Variant 2\",\n                    \"GroupID\": \"a1c5f58e-7ced-41aa-9dfe-e164f670f57a\",\n                    \"GroupName\": \"API 2\"\n                }\n            ],\n            \"ID\": \"494da3c8-aa3f-4d19-8c10-734833f6af8e\",\n            \"SKU\": \"3102\",\n            \"Price\": \"610.00\",\n            \"StockLimited\": false,\n            \"StockQuantity\": \"0\",\n            \"Active\": true,\n            \"IsAvailable\": true,\n            \"ParentID\": \"2ba68e73-acef-45df-8bb0-6a5efca679be\",\n            \"InstantBuy\": true,\n            \"Negotiation\": false,\n            \"Media\": [\n                {\n                    \"ID\": \"a17e7701-f689-4157-b0ef-23b3dc4f98d5\",\n                    \"MediaUrl\": \"https://royally.test.arcadier.io/images/items/item-59589-636905631235783991-3M2dCw.jpg\"\n                },\n                {\n                    \"ID\": \"745b8c25-b2d2-46d9-b025-c5d6b55b47e4\",\n                    \"MediaUrl\": \"https://royally.test.arcadier.io/images/items/item-59589-636905631235783991-3M2dCw.jpg\"\n                },\n                {\n                    \"ID\": \"6981e426-08ae-43ba-9433-0e2dd5448775\",\n                    \"MediaUrl\": \"https://royally.test.arcadier.io/images/items/item-59589-636905631235783991-3M2dCw.jpg\"\n                }\n            ],\n            \"Tags\": [\n                \"API Tag\",\n                \"API Tag 2\"\n            ],\n            \"CreatedDateTime\": 1559211704,\n            \"ModifiedDateTime\": 1559211704,\n            \"HasChildItems\": false\n        }\n    ]\n}"
+            }
+          ]
+        },
+        {
           "name": "Get Item Tags",
           "_postman_id": "8b913717-9e6f-4bdc-95ad-b6109d8dfaec",
           "protocolProfileBehavior": {
@@ -5373,7 +5484,7 @@
           ]
         },
         {
-          "name": "Get items - Params in URL",
+          "name": "Search items - Params in URL",
           "_postman_id": "c6d3c581-2556-4cb0-a7f1-daed8733f9fd",
           "protocolProfileBehavior": {
             "disableBodyPruning": true
@@ -5735,117 +5846,6 @@
               "cookie": [],
               "responseTime": null,
               "body": "{\n    \"TotalRecords\": 1,\n    \"PageNumber\": 1,\n    \"PageSize\": 2,\n    \"Records\": [\n        {\n            \"ID\": \"730f2754-35b8-4919-b2f8-b85b808577ab\",\n            \"SKU\": \"1000\",\n            \"Name\": \"Gibson ES-150\",\n            \"BuyerDescription\": \"Fully hollow-body electric guitar Gibson ES-150, with a pair of f-holes visible\",\n            \"Price\": \"123.00\",\n            \"StockLimited\": true,\n            \"StockQuantity\": \"10\",\n            \"IsVisibleToCustomer\": true,\n            \"Active\": true,\n            \"IsAvailable\": true,\n            \"CurrencyCode\": \"SGD\",\n            \"InstantBuy\": false,\n            \"Negotiation\": false,\n            \"MerchantDetail\": {\n                \"ID\": \"4587d5a3-ee92-4a25-b73f-436e26eda75d\",\n                \"Email\": \"seller@email.com\",\n                \"FirstName\": \"John\",\n                \"LastName\": \"Smith\",\n                \"DisplayName\": \"JS\",\n                \"PhoneNumber\": \"2525\"\n            },\n            \"Categories\": [\n                {\n                    \"ID\": \"a3465af3-4fde-437c-8e1b-9d968d1da6a9\",\n                    \"Name\": \"Guitars\",\n                    \"Description\": \"\",\n                    \"SortOrder\": 10156,\n                    \"CreatedDateTime\": 1552963533,\n                    \"ModifiedDateTime\": 1552963533\n                },\n                {\n                    \"ID\": \"f9d3a912-9c8a-4af9-ac37-360f88bdd1e4\",\n                    \"Name\": \"Semi-Acoustic\",\n                    \"Description\": \"\",\n                    \"SortOrder\": 2,\n                    \"ParentCategoryID\": \"a3465af3-4fde-437c-8e1b-9d968d1da6a9\",\n                    \"CreatedDateTime\": 1552963553,\n                    \"ModifiedDateTime\": 1552963553\n                }\n            ],\n            \"ShippingMethods\": [\n                {\n                    \"ID\": \"82e926ff-c204-4adf-b657-e5464c0c002d\",\n                    \"Price\": \"2.50\",\n                    \"CombinedPrice\": \"2.50\",\n                    \"CurrencyCode\": \"SGD\",\n                    \"Description\": \"Singapore Delivery\"\n                },\n                {\n                    \"ID\": \"f3609327-e45f-450a-9be4-0705789c0c92\",\n                    \"Price\": \"2.50\",\n                    \"CombinedPrice\": \"2.50\",\n                    \"CurrencyCode\": \"SGD\",\n                    \"Description\": \"International Delivery\"\n                },\n                {\n                    \"ID\": \"00d14bc5-5622-41ac-9938-04c6d7226909\",\n                    \"Courier\": \"Tanoo 4\",\n                    \"Method\": \"pickup\",\n                    \"Price\": \"10.00\",\n                    \"CombinedPrice\": \"20.00\",\n                    \"CurrencyCode\": \"SGD\",\n                    \"Description\": \"Fastest here\"\n                }\n            ],\n            \"Media\": [\n                {\n                    \"MediaUrl\": \"https://inkit.sandbox.arcadier.io/images/items/item-11635-636885620276641579-bEiYZM.jpg\"\n                }\n            ],\n            \"Tags\": [\n                \"Been used for 3 years\",\n                \"Metal strings\",\n                \"Doesn't come with amp\",\n                \"Another tag\",\n                \"Bites the dust\"\n            ],\n            \"CustomFields\": [\n                {\n                    \"Code\": \"11632-Used-q5grSDNror\",\n                    \"Name\": \"Used\",\n                    \"Values\": [\n                        \"Yes\"\n                    ]\n                }\n            ],\n            \"CreatedDateTime\": 1552965227,\n            \"ModifiedDateTime\": 1554274936,\n            \"HasChildItems\": true\n        }\n    ]\n}"
-            }
-          ]
-        },
-        {
-          "name": "Edit Item Details",
-          "_postman_id": "8af9bf27-a3fb-4623-b8d0-f53a67697c47",
-          "protocolProfileBehavior": {
-            "disableBodyPruning": true
-          },
-          "request": {
-            "method": "PUT",
-            "header": [
-              {
-                "key": "Content-Type",
-                "name": "Content-Type",
-                "value": "application/json",
-                "type": "text"
-              },
-              {
-                "key": "Authorization",
-                "value": "Bearer {{merchanttoken}}",
-                "type": "text"
-              }
-            ],
-            "body": {
-              "mode": "raw",
-              "raw": "{\n    \"SKU\": \"string\",\n    \"Name\": \"string\",\n    \"BuyerDescription\": \"string\",\n    \"SellerDescription\": \"string\",\n    \"Price\": 0,\n    \"PriceUnit\": \"string\",\n    \"StockLimited\": false,\n    \"StockQuantity\": 0,\n    \"IsVisibleToCustomer\": true,\n    \"Active\": true,\n    \"IsAvailable\": true,\n    \"CurrencyCode\": \"string\",\n    \"Categories\": [\n        {\n            \"ID\": \"00000000-0000-0000-0000-000000000000\"\n        },\n        {\n            \"ID\": \"00000000-0000-0000-0000-000000000000a\"\n        },\n        {\n            \"ID\": \"00000000-0000-0000-0000-000000000000\"\n        }\n    ],\n    \n    \"ShippingMethods\": [\n        {\n            \"ID\": \"00000000-0000-0000-0000-000000000000\"\n        }\n    ],\n    \"PickupAddresses\": [\n        {\n            \"ID\": \"00000000-0000-0000-0000-000000000000\"\n        }\n    ],\n    \"Tags\": [\n        \"string\"\n    ],\n    \"CustomFields\": [\n        {\n            \"Code\": \"string\",\n            \"Values\": [\n                \"string\"\n            ]\n        }\n    ],\n    \"ChildItems\": [\n        {\n            \"Variants\": [\n                {\n                    \"Name\": \"string\",\n                    \"GroupName\": \"string2\"\n                }\n            ],\n            \"SKU\": \"string\",\n            \"Name\": \"string\",\n            \"BuyerDescription\": \"string2\",\n            \"SellerDescription\": \"string2\",\n            \"Price\": 0,\n            \"PriceUnit\": \"string\",\n            \"StockLimited\": false,\n            \"StockQuantity\": 0,\n            \"IsVisibleToCustomer\": true,\n            \"Active\": true,\n            \"IsAvailable\": true,\n            \"ShippingMethods\": [\n                {\n                    \"ID\": \"00000000-0000-0000-0000-000000000000\"\n                }\n            ],\n            \"PickupAddresses\": [\n                {\n                    \"ID\": \"00000000-0000-0000-0000-000000000000\"\n                }\n            ],\n            \"Media\": [\n                {\n                    \"MediaUrl\": \"string\"\n                }\n            ],\n            \"Tags\": [\n                \"string\",\n                \"string\"\n            ],\n            \"CustomFields\": [\n                {\n                    \"Code\": \"string\",\n                    \"Values\": [\n                        \"string\"\n                    ]\n                }\n            ]\n        }\n    ]\n    \n}"
-            },
-            "url": "https://{{your-marketplace}}.arcadier.io/api/v2/merchants/{{merchantID}}/items/2ba68e73-acef-45df-8bb0-6a5efca679be"
-          },
-          "response": [
-            {
-              "id": "c5e55d3f-d509-4f0c-a8e5-83b01eddb7ad",
-              "name": "Edit Item Details",
-              "originalRequest": {
-                "method": "PUT",
-                "header": [
-                  {
-                    "key": "Content-Type",
-                    "name": "Content-Type",
-                    "value": "application/json",
-                    "type": "text"
-                  },
-                  {
-                    "key": "Authorization",
-                    "value": "Bearer {{merchanttoken}}",
-                    "type": "text"
-                  }
-                ],
-                "body": {
-                  "mode": "raw",
-                  "raw": "{\n    \"SKU\": \"3101\",\n    \"Name\": \"Yamaha 2\",\n    \"BuyerDescription\": \"Sculpted Mahogany Body\",\n    \"SellerDescription\": \"Test Seller Desc\",\n    \"Price\": \"600.00\",\n    \"PriceUnit\": \"SGD\",\n    \"StockLimited\": false,\n    \"StockQuantity\": \"10\",\n    \"IsVisibleToCustomer\": true,\n    \"Active\": true,\n    \"IsAvailable\": true,\n    \"CurrencyCode\": \"SGD\",\n    \"Categories\": [\n        {\n            \"ID\": \"fd482739-0a5d-447e-851e-c1579ab9b568\"\n        },\n        {\n            \"ID\": \"3c6f524e-a108-4864-b262-f96e0e34745a\"\n        },\n        {\n            \"ID\": \"e1c738fd-3a1e-4ca8-a7e2-5bd46df5d808\"\n        }\n    ],\n    \"ShippingMethods\": [\n        {\n            \"ID\": \"46a0896b-482f-453f-acb4-aa39ddc2707d\"\n        }\n    ],\n    \"PickupAddresses\": [\n        {\n            \"ID\": \"1136caaf-f98a-4c14-bd97-14808ff82b41\"\n        }\n    ],\n    \"Tags\": [\n        \"API created Item\"\n    ],\n    \"CustomFields\": [\n        {\n            \"Code\": \"parentitem-kdBefmjxpr\",\n            \"Values\": [\n                \"Parent Value\"\n            ]\n        }\n    ],\n    \"ChildItems\": [\n        {\n            \"Variants\": [\n                {\n                    \"Name\": \"API Variant 2\",\n                    \"GroupName\": \"API 2\"\n                }\n            ],\n            \"SKU\": \"3102\",\n            \"Name\": \"API CHILD 2\",\n            \"BuyerDescription\": \"API CHILD 2\",\n            \"SellerDescription\": \"API CHILD 2\",\n            \"Price\": 10,\n            \"PriceUnit\": \"SGD\",\n            \"StockLimited\": false,\n            \"StockQuantity\": 0,\n            \"IsVisibleToCustomer\": true,\n            \"Active\": true,\n            \"IsAvailable\": true,\n            \"ShippingMethods\": [\n                {\n                    \"ID\": \"46a0896b-482f-453f-acb4-aa39ddc2707d\"\n                }\n            ],\n            \"PickupAddresses\": [\n                {\n                    \"ID\": \"1136caaf-f98a-4c14-bd97-14808ff82b41\"\n                }\n            ],\n            \"Media\": [\n                {\n                    \"MediaUrl\": \"https://royally.test.arcadier.io/images/items/item-59589-636905631235783991-3M2dCw.jpg\"\n                }\n            ],\n            \"Tags\": [\n                \"API Tag\",\n                \"API Tag 2\"\n            ],\n            \"CustomFields\": [\n                {\n                    \"Code\": \"childitem-pVengIi8l4\",\n                    \"Values\": [\n                        \"Child Value\"\n                    ]\n                }\n            ]\n        }\n    ]\n}"
-                },
-                "url": "https://{{your-marketplace}}.arcadier.io/api/v2/merchants/{{merchantID}}/items/2ba68e73-acef-45df-8bb0-6a5efca679be"
-              },
-              "status": "OK",
-              "code": 200,
-              "_postman_previewlanguage": "json",
-              "header": [
-                {
-                  "key": "Cache-Control",
-                  "value": "no-cache"
-                },
-                {
-                  "key": "Pragma",
-                  "value": "no-cache"
-                },
-                {
-                  "key": "Content-Type",
-                  "value": "application/json; charset=utf-8"
-                },
-                {
-                  "key": "Content-Encoding",
-                  "value": "gzip"
-                },
-                {
-                  "key": "Expires",
-                  "value": "-1"
-                },
-                {
-                  "key": "Vary",
-                  "value": "Accept-Encoding"
-                },
-                {
-                  "key": "X-StackifyID",
-                  "value": "V1|800011d0-0000-5900-b63f-84710c7967bb|"
-                },
-                {
-                  "key": "api-version",
-                  "value": "v2"
-                },
-                {
-                  "key": "X-XSS-Protection",
-                  "value": "1; mode=block"
-                },
-                {
-                  "key": "X-Content-Type-Options",
-                  "value": "nosniff"
-                },
-                {
-                  "key": "Date",
-                  "value": "Thu, 30 May 2019 10:21:44 GMT"
-                },
-                {
-                  "key": "Content-Length",
-                  "value": "1721"
-                }
-              ],
-              "cookie": [],
-              "responseTime": null,
-              "body": "{\n    \"ID\": \"2ba68e73-acef-45df-8bb0-6a5efca679be\",\n    \"SKU\": \"3101\",\n    \"Name\": \"Yamaha 2\",\n    \"BuyerDescription\": \"Sculpted Mahogany Body\",\n    \"SellerDescription\": \"Test Seller Desc\",\n    \"Price\": \"600.00\",\n    \"PriceUnit\": \"SGD\",\n    \"StockLimited\": false,\n    \"StockQuantity\": \"10\",\n    \"IsVisibleToCustomer\": true,\n    \"Active\": true,\n    \"IsAvailable\": true,\n    \"CurrencyCode\": \"SGD\",\n    \"InstantBuy\": true,\n    \"Negotiation\": false,\n    \"MerchantDetail\": {\n        \"ID\": \"d90ca45c-3c56-459b-bfab-7d755111be2a\",\n        \"Email\": \"tanoo_joy@hotmail.com\",\n        \"FirstName\": \"Tanoo\",\n        \"LastName\": \"Joyekurun\",\n        \"DisplayName\": \"tanoo\",\n        \"PhoneNumber\": \"90854839\"\n    },\n    \"Categories\": [\n        {\n            \"ID\": \"fd482739-0a5d-447e-851e-c1579ab9b568\",\n            \"Name\": \"Guitars\",\n            \"Description\": \"The sexiest\",\n            \"SortOrder\": 1,\n            \"CreatedDateTime\": 1553748069,\n            \"ModifiedDateTime\": 1553844908\n        },\n        {\n            \"ID\": \"3c6f524e-a108-4864-b262-f96e0e34745a\",\n            \"Name\": \"Test auth in header\",\n            \"Description\": \"test auth in header\",\n            \"SortOrder\": 0,\n            \"CreatedDateTime\": 1553846013,\n            \"ModifiedDateTime\": 1553846013\n        },\n        {\n            \"ID\": \"e1c738fd-3a1e-4ca8-a7e2-5bd46df5d808\",\n            \"Name\": \"5 string bass\",\n            \"Description\": \"\",\n            \"SortOrder\": 1,\n            \"ParentCategoryID\": \"fd482739-0a5d-447e-851e-c1579ab9b568\",\n            \"CreatedDateTime\": 1553761437,\n            \"ModifiedDateTime\": 1553761437\n        }\n    ],\n    \"ShippingMethods\": [\n        {\n            \"ID\": \"46a0896b-482f-453f-acb4-aa39ddc2707d\",\n            \"Price\": \"2.00\",\n            \"CombinedPrice\": \"5.00\",\n            \"CurrencyCode\": \"SGD\",\n            \"Description\": \"Fast\"\n        }\n    ],\n    \"PickupAddresses\": [\n        {\n            \"ID\": \"1136caaf-f98a-4c14-bd97-14808ff82b41\",\n            \"Line1\": \"34 Boon Leat Terrace\",\n            \"Latitude\": \"0.00\",\n            \"Longitude\": \"0.00\",\n            \"Delivery\": false,\n            \"Pickup\": true\n        }\n    ],\n    \"Tags\": [\n        \"API created Item\"\n    ],\n    \"CreatedDateTime\": 1559198636,\n    \"ModifiedDateTime\": 1559211704,\n    \"HasChildItems\": true,\n    \"ChildItems\": [\n        {\n            \"Variants\": [\n                {\n                    \"ID\": \"7ef9d376-4373-4633-8972-4b50bf699b91\",\n                    \"Name\": \"API Variant\",\n                    \"GroupID\": \"fda30339-b3ac-49db-80c4-286d531e68be\",\n                    \"GroupName\": \"API\"\n                }\n            ],\n            \"ID\": \"11812c63-e82d-476d-b7ec-b28466315c7f\",\n            \"SKU\": \"3102\",\n            \"Price\": \"610.00\",\n            \"StockLimited\": false,\n            \"StockQuantity\": \"0\",\n            \"Active\": true,\n            \"IsAvailable\": true,\n            \"ParentID\": \"2ba68e73-acef-45df-8bb0-6a5efca679be\",\n            \"InstantBuy\": true,\n            \"Negotiation\": false,\n            \"Media\": [\n                {\n                    \"ID\": \"a17e7701-f689-4157-b0ef-23b3dc4f98d5\",\n                    \"MediaUrl\": \"https://royally.test.arcadier.io/images/items/item-59589-636905631235783991-3M2dCw.jpg\"\n                },\n                {\n                    \"ID\": \"745b8c25-b2d2-46d9-b025-c5d6b55b47e4\",\n                    \"MediaUrl\": \"https://royally.test.arcadier.io/images/items/item-59589-636905631235783991-3M2dCw.jpg\"\n                },\n                {\n                    \"ID\": \"6981e426-08ae-43ba-9433-0e2dd5448775\",\n                    \"MediaUrl\": \"https://royally.test.arcadier.io/images/items/item-59589-636905631235783991-3M2dCw.jpg\"\n                }\n            ],\n            \"Tags\": [\n                \"API Tag\",\n                \"API Tag 2\"\n            ],\n            \"CreatedDateTime\": 1559198636,\n            \"ModifiedDateTime\": 1559198636,\n            \"HasChildItems\": false\n        },\n        {\n            \"Variants\": [\n                {\n                    \"ID\": \"032d5ea7-f8ab-4666-89e8-bfc05f95ac48\",\n                    \"Name\": \"API Variant 2\",\n                    \"GroupID\": \"3f755109-35d3-458b-aa98-1fd46f02725f\",\n                    \"GroupName\": \"API 2\"\n                }\n            ],\n            \"ID\": \"2847f0e6-8ff7-4294-85ac-10279146598d\",\n            \"SKU\": \"3102\",\n            \"Price\": \"610.00\",\n            \"StockLimited\": false,\n            \"StockQuantity\": \"0\",\n            \"Active\": true,\n            \"IsAvailable\": true,\n            \"ParentID\": \"2ba68e73-acef-45df-8bb0-6a5efca679be\",\n            \"InstantBuy\": true,\n            \"Negotiation\": false,\n            \"Media\": [\n                {\n                    \"ID\": \"a17e7701-f689-4157-b0ef-23b3dc4f98d5\",\n                    \"MediaUrl\": \"https://royally.test.arcadier.io/images/items/item-59589-636905631235783991-3M2dCw.jpg\"\n                },\n                {\n                    \"ID\": \"745b8c25-b2d2-46d9-b025-c5d6b55b47e4\",\n                    \"MediaUrl\": \"https://royally.test.arcadier.io/images/items/item-59589-636905631235783991-3M2dCw.jpg\"\n                },\n                {\n                    \"ID\": \"6981e426-08ae-43ba-9433-0e2dd5448775\",\n                    \"MediaUrl\": \"https://royally.test.arcadier.io/images/items/item-59589-636905631235783991-3M2dCw.jpg\"\n                }\n            ],\n            \"Tags\": [\n                \"API Tag\",\n                \"API Tag 2\"\n            ],\n            \"CreatedDateTime\": 1559198952,\n            \"ModifiedDateTime\": 1559198952,\n            \"HasChildItems\": false\n        },\n        {\n            \"Variants\": [\n                {\n                    \"ID\": \"c1fc0407-b7b8-4bc9-8486-838363f6d0f7\",\n                    \"Name\": \"API Variant 2\",\n                    \"GroupID\": \"a1c5f58e-7ced-41aa-9dfe-e164f670f57a\",\n                    \"GroupName\": \"API 2\"\n                }\n            ],\n            \"ID\": \"494da3c8-aa3f-4d19-8c10-734833f6af8e\",\n            \"SKU\": \"3102\",\n            \"Price\": \"610.00\",\n            \"StockLimited\": false,\n            \"StockQuantity\": \"0\",\n            \"Active\": true,\n            \"IsAvailable\": true,\n            \"ParentID\": \"2ba68e73-acef-45df-8bb0-6a5efca679be\",\n            \"InstantBuy\": true,\n            \"Negotiation\": false,\n            \"Media\": [\n                {\n                    \"ID\": \"a17e7701-f689-4157-b0ef-23b3dc4f98d5\",\n                    \"MediaUrl\": \"https://royally.test.arcadier.io/images/items/item-59589-636905631235783991-3M2dCw.jpg\"\n                },\n                {\n                    \"ID\": \"745b8c25-b2d2-46d9-b025-c5d6b55b47e4\",\n                    \"MediaUrl\": \"https://royally.test.arcadier.io/images/items/item-59589-636905631235783991-3M2dCw.jpg\"\n                },\n                {\n                    \"ID\": \"6981e426-08ae-43ba-9433-0e2dd5448775\",\n                    \"MediaUrl\": \"https://royally.test.arcadier.io/images/items/item-59589-636905631235783991-3M2dCw.jpg\"\n                }\n            ],\n            \"Tags\": [\n                \"API Tag\",\n                \"API Tag 2\"\n            ],\n            \"CreatedDateTime\": 1559211704,\n            \"ModifiedDateTime\": 1559211704,\n            \"HasChildItems\": false\n        }\n    ]\n}"
             }
           ]
         }
