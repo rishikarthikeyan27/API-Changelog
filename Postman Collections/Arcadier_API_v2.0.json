@@ -5481,6 +5481,106 @@
           ]
         },
         {
+          "name": "Delete tags",
+          "_postman_id": "24c73ab0-12ee-444e-b96b-ca3d1dd4c13b",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": {
+                "token": "{{admintoken}}"
+              }
+            },
+            "method": "DELETE",
+            "header": [
+              {
+                "key": "Content-Type",
+                "name": "Content-Type",
+                "type": "text",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "[\n\t\"string\", \n\t\"string\", \n\t\"string\"\n]"
+            },
+            "url": "https://{{your-marketplace}}.arcadier.io/api/v2/tags",
+            "description": "if you want to delete several tags, separate them with a comma like this:\n```javascript\n[\n\t\"string\", \"string\", \"string\", \"string\"\n]\n```"
+          },
+          "response": [
+            {
+              "id": "f6d62fc9-b186-479c-b495-c3070696c486",
+              "name": "Delete a tag",
+              "originalRequest": {
+                "method": "DELETE",
+                "header": [
+                  {
+                    "key": "Content-Type",
+                    "name": "Content-Type",
+                    "value": "application/json",
+                    "type": "text"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "[\n\t\"Tag 1\"\n]"
+                },
+                "url": "https://{{your-marketplace}}.arcadier.io/api/v2/tags"
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Cache-Control",
+                  "value": "no-cache"
+                },
+                {
+                  "key": "Pragma",
+                  "value": "no-cache"
+                },
+                {
+                  "key": "Content-Type",
+                  "value": "application/json; charset=utf-8"
+                },
+                {
+                  "key": "Expires",
+                  "value": "-1"
+                },
+                {
+                  "key": "api-version",
+                  "value": "v2"
+                },
+                {
+                  "key": "X-XSS-Protection",
+                  "value": "1; mode=block"
+                },
+                {
+                  "key": "X-Content-Type-Options",
+                  "value": "nosniff"
+                },
+                {
+                  "key": "X-Powered-By",
+                  "value": "ARR/3.0"
+                },
+                {
+                  "key": "Date",
+                  "value": "Tue, 26 Mar 2019 09:55:41 GMT"
+                },
+                {
+                  "key": "Content-Length",
+                  "value": "15"
+                }
+              ],
+              "cookie": [],
+              "responseTime": null,
+              "body": "{\n    \"Result\": true\n}"
+            }
+          ]
+        },
+        {
           "name": "Search items - Params in URL",
           "_postman_id": "c6d3c581-2556-4cb0-a7f1-daed8733f9fd",
           "protocolProfileBehavior": {
@@ -5834,106 +5934,6 @@
               "cookie": [],
               "responseTime": null,
               "body": "{\n    \"TotalRecords\": 1,\n    \"PageNumber\": 1,\n    \"PageSize\": 2,\n    \"Records\": [\n        {\n            \"ID\": \"730f2754-35b8-4919-b2f8-b85b808577ab\",\n            \"SKU\": \"1000\",\n            \"Name\": \"Gibson ES-150\",\n            \"BuyerDescription\": \"Fully hollow-body electric guitar Gibson ES-150, with a pair of f-holes visible\",\n            \"Price\": \"123.00\",\n            \"StockLimited\": true,\n            \"StockQuantity\": \"10\",\n            \"IsVisibleToCustomer\": true,\n            \"Active\": true,\n            \"IsAvailable\": true,\n            \"CurrencyCode\": \"SGD\",\n            \"InstantBuy\": false,\n            \"Negotiation\": false,\n            \"MerchantDetail\": {\n                \"ID\": \"4587d5a3-ee92-4a25-b73f-436e26eda75d\",\n                \"Email\": \"seller@email.com\",\n                \"FirstName\": \"John\",\n                \"LastName\": \"Smith\",\n                \"DisplayName\": \"JS\",\n                \"PhoneNumber\": \"2525\"\n            },\n            \"Categories\": [\n                {\n                    \"ID\": \"a3465af3-4fde-437c-8e1b-9d968d1da6a9\",\n                    \"Name\": \"Guitars\",\n                    \"Description\": \"\",\n                    \"SortOrder\": 10156,\n                    \"CreatedDateTime\": 1552963533,\n                    \"ModifiedDateTime\": 1552963533\n                },\n                {\n                    \"ID\": \"f9d3a912-9c8a-4af9-ac37-360f88bdd1e4\",\n                    \"Name\": \"Semi-Acoustic\",\n                    \"Description\": \"\",\n                    \"SortOrder\": 2,\n                    \"ParentCategoryID\": \"a3465af3-4fde-437c-8e1b-9d968d1da6a9\",\n                    \"CreatedDateTime\": 1552963553,\n                    \"ModifiedDateTime\": 1552963553\n                }\n            ],\n            \"ShippingMethods\": [\n                {\n                    \"ID\": \"82e926ff-c204-4adf-b657-e5464c0c002d\",\n                    \"Price\": \"2.50\",\n                    \"CombinedPrice\": \"2.50\",\n                    \"CurrencyCode\": \"SGD\",\n                    \"Description\": \"Singapore Delivery\"\n                },\n                {\n                    \"ID\": \"f3609327-e45f-450a-9be4-0705789c0c92\",\n                    \"Price\": \"2.50\",\n                    \"CombinedPrice\": \"2.50\",\n                    \"CurrencyCode\": \"SGD\",\n                    \"Description\": \"International Delivery\"\n                },\n                {\n                    \"ID\": \"00d14bc5-5622-41ac-9938-04c6d7226909\",\n                    \"Courier\": \"Tanoo 4\",\n                    \"Method\": \"pickup\",\n                    \"Price\": \"10.00\",\n                    \"CombinedPrice\": \"20.00\",\n                    \"CurrencyCode\": \"SGD\",\n                    \"Description\": \"Fastest here\"\n                }\n            ],\n            \"Media\": [\n                {\n                    \"MediaUrl\": \"https://inkit.sandbox.arcadier.io/images/items/item-11635-636885620276641579-bEiYZM.jpg\"\n                }\n            ],\n            \"Tags\": [\n                \"Been used for 3 years\",\n                \"Metal strings\",\n                \"Doesn't come with amp\",\n                \"Another tag\",\n                \"Bites the dust\"\n            ],\n            \"CustomFields\": [\n                {\n                    \"Code\": \"11632-Used-q5grSDNror\",\n                    \"Name\": \"Used\",\n                    \"Values\": [\n                        \"Yes\"\n                    ]\n                }\n            ],\n            \"CreatedDateTime\": 1552965227,\n            \"ModifiedDateTime\": 1554274936,\n            \"HasChildItems\": true\n        }\n    ]\n}"
-            }
-          ]
-        },
-        {
-          "name": "Delete tags",
-          "_postman_id": "24c73ab0-12ee-444e-b96b-ca3d1dd4c13b",
-          "protocolProfileBehavior": {
-            "disableBodyPruning": true
-          },
-          "request": {
-            "auth": {
-              "type": "bearer",
-              "bearer": {
-                "token": "{{admintoken}}"
-              }
-            },
-            "method": "DELETE",
-            "header": [
-              {
-                "key": "Content-Type",
-                "name": "Content-Type",
-                "type": "text",
-                "value": "application/json"
-              }
-            ],
-            "body": {
-              "mode": "raw",
-              "raw": "[\n\t\"string\", \n\t\"string\", \n\t\"string\"\n]"
-            },
-            "url": "https://{{your-marketplace}}.arcadier.io/api/v2/tags",
-            "description": "if you want to delete several tags, separate them with a comma like this:\n```javascript\n[\n\t\"string\", \"string\", \"string\", \"string\"\n]\n```"
-          },
-          "response": [
-            {
-              "id": "f6d62fc9-b186-479c-b495-c3070696c486",
-              "name": "Delete a tag",
-              "originalRequest": {
-                "method": "DELETE",
-                "header": [
-                  {
-                    "key": "Content-Type",
-                    "name": "Content-Type",
-                    "value": "application/json",
-                    "type": "text"
-                  }
-                ],
-                "body": {
-                  "mode": "raw",
-                  "raw": "[\n\t\"Tag 1\"\n]"
-                },
-                "url": "https://{{your-marketplace}}.arcadier.io/api/v2/tags"
-              },
-              "status": "OK",
-              "code": 200,
-              "_postman_previewlanguage": "json",
-              "header": [
-                {
-                  "key": "Cache-Control",
-                  "value": "no-cache"
-                },
-                {
-                  "key": "Pragma",
-                  "value": "no-cache"
-                },
-                {
-                  "key": "Content-Type",
-                  "value": "application/json; charset=utf-8"
-                },
-                {
-                  "key": "Expires",
-                  "value": "-1"
-                },
-                {
-                  "key": "api-version",
-                  "value": "v2"
-                },
-                {
-                  "key": "X-XSS-Protection",
-                  "value": "1; mode=block"
-                },
-                {
-                  "key": "X-Content-Type-Options",
-                  "value": "nosniff"
-                },
-                {
-                  "key": "X-Powered-By",
-                  "value": "ARR/3.0"
-                },
-                {
-                  "key": "Date",
-                  "value": "Tue, 26 Mar 2019 09:55:41 GMT"
-                },
-                {
-                  "key": "Content-Length",
-                  "value": "15"
-                }
-              ],
-              "cookie": [],
-              "responseTime": null,
-              "body": "{\n    \"Result\": true\n}"
             }
           ]
         }
