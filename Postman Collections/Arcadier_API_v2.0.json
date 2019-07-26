@@ -188,7 +188,7 @@
             },
             "method": "GET",
             "header": [],
-            "url": "https://{{your-marketplce}}.arcadier.io/api/v2/users/{{userID}}",
+            "url": "https://{{your-marketplace}}.arcadier.io/api/v2/users/{{userID}}",
             "description": "Calling this API will get all available information of the user ID you provide.\n\n#### Authentication\n> None required"
           },
           "response": [
