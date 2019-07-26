@@ -188,7 +188,7 @@
             },
             "method": "GET",
             "header": [],
-            "url": "https://{{your-marketplace}}.arcadier.io/api/v2/users/{{userID}}",
+            "url": "https://{{your-marketplce}}.arcadier.io/api/v2/users/{{userID}}",
             "description": "Calling this API will get all available information of the user ID you provide.\n\n#### Authentication\n> None required"
           },
           "response": [
@@ -8508,13 +8508,17 @@
           },
           "request": {
             "auth": {
-              "type": "bearer",
-              "bearer": {
-                "token": "{{admintoken}}"
-              }
+              "type": "noauth"
             },
             "method": "GET",
-            "header": [],
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{admintoken}}",
+                "description": "This can be {{merchattoken}} too",
+                "type": "text"
+              }
+            ],
             "url": "https://{{your-marketplace}}.arcadier.io/api/v2/merchants/{{merchantID}}/payment-acceptance-methods",
             "description": "Shows the different payment acceptance methods available for the merchant to use.\n\n#### Authentication\n> Admin and merchant token"
           },
