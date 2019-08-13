@@ -6191,8 +6191,30 @@
                 }
               ]
             },
-            "url": "https://{{your-marketplace}}.arcadier.io/api/v2/users/{{userID}}/media",
-            "description": "Uploads photos for the userID given."
+            "url": {
+              "raw": "https://{{your-marketplace}}.arcadier.io/api/v2/users/{{userID}}/media?purpose",
+              "protocol": "https",
+              "host": [
+                "{{your-marketplace}}",
+                "arcadier",
+                "io"
+              ],
+              "path": [
+                "api",
+                "v2",
+                "users",
+                "{{userID}}",
+                "media"
+              ],
+              "query": [
+                {
+                  "key": "purpose",
+                  "value": "",
+                  "type": "text"
+                }
+              ]
+            },
+            "description": "Uploads photos for the userID given.\n\n\"purpose\" takes values of: gateways, categories, items and users\n\n#### Authentication\n> Admin token for any any userID of that marketplace\n>\n> or\n>\n> userID's token if user is not Admin"
           },
           "response": [
             {
