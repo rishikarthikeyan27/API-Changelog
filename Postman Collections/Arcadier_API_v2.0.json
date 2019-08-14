@@ -1015,6 +1015,94 @@
               "body": "{\n    \"TotalRecords\": 9,\n    \"PageNumber\": 1,\n    \"PageSize\": 24,\n    \"Records\": [\n        {\n            \"ID\": \"d87f1bd4-7df5-4fca-a9b6-00f791311b73\",\n            \"Email\": \"tanoo@mail.com\",\n            \"FirstName\": \"Tanoo\",\n            \"LastName\": \"Joy\",\n            \"DisplayName\": \"InkIt\",\n            \"Description\": \"\",\n            \"PhoneNumber\": \"6591234567\",\n            \"DateJoined\": 1552963330,\n            \"Roles\": [\n                \"User\",\n                \"Merchant\"\n            ],\n            \"Media\": [\n                {\n                    \"MediaUrl\": \"https://inkit.sandbox.arcadier.io/userdata/inkit.sandbox.arcadier.io/images/user/5c77e813-73f5-44c4-b128-622fa800e4b3.jpg\"\n                }\n            ],\n            \"Onboarded\": false,\n            \"Active\": true,\n            \"Enabled\": true,\n            \"Visible\": true\n        },\n        {\n            \"ID\": \"2b256e94-65e5-418c-bc1a-0128134287c8\",\n            \"Email\": \"tanoo_joy@hotmail.com\",\n            \"FirstName\": \"Dash\",\n            \"LastName\": \"Kaur\",\n            \"DisplayName\": \"Dash\",\n            \"PhoneNumber\": \"959595959\",\n            \"DateJoined\": 1553504628,\n            \"Roles\": [\n                \"User\",\n                \"Merchant\"\n            ],\n            \"Media\": [\n                {\n                    \"MediaUrl\": \"https://inkit.sandbox.arcadier.io/images/user/profile-image-11644-08l7fc8dxc.jpg\"\n                }\n            ],\n            \"Onboarded\": false,\n            \"Active\": true,\n            \"Enabled\": true,\n            \"Visible\": true\n        },\n        {\n            \"ID\": \"8aecd7ff-acd6-470c-8901-0652284c666e\",\n            \"Email\": \"tanoo@mail.au\",\n            \"DisplayName\": \"tanoo@mail.au\",\n            \"DateJoined\": 1553050271,\n            \"Roles\": [\n                \"User\",\n                \"Merchant\"\n            ],\n            \"Onboarded\": false,\n            \"Active\": true,\n            \"Enabled\": true,\n            \"Visible\": true\n        },\n        {\n            \"ID\": \"c32f9f55-8e66-48f3-b9d7-248022aa3ba5\",\n            \"Email\": \"random@random.com\",\n            \"FirstName\": \"Random\",\n            \"LastName\": \"Random\",\n            \"DisplayName\": \"Random\",\n            \"Description\": \"Random\",\n            \"PhoneNumber\": \"4545454545\",\n            \"DateJoined\": 1557203617,\n            \"Roles\": [\n                \"User\",\n                \"Merchant\"\n            ],\n            \"Media\": [\n                {\n                    \"MediaUrl\": \"https://inkit.sandbox.arcadier.io/images/user/profile-image-11888-quikrw6yd4.jpg\"\n                }\n            ],\n            \"CustomFields\": [\n                {\n                    \"Code\": \"11632-user_seller_location-pyB52Hny8n\",\n                    \"Name\": \"user_seller_location\",\n                    \"Values\": [\n                        \"Random\"\n                    ]\n                }\n            ],\n            \"Onboarded\": false,\n            \"Active\": true,\n            \"Enabled\": true,\n            \"Visible\": true\n        },\n        {\n            \"ID\": \"4587d5a3-ee92-4a25-b73f-436e26eda75d\",\n            \"Email\": \"seller@email.com\",\n            \"FirstName\": \"Lord Vador\",\n            \"LastName\": \"Smith\",\n            \"DisplayName\": \"JS\",\n            \"Description\": \"Virtual Person\",\n            \"PhoneNumber\": \"2525\",\n            \"DateJoined\": 1552964801,\n            \"Roles\": [\n                \"User\",\n                \"Merchant\"\n            ],\n            \"Media\": [\n                {\n                    \"MediaUrl\": \"https://inkit.sandbox.arcadier.io/images/user/profile-image-11635-3zsr8mzqx4.jpg\"\n                }\n            ],\n            \"CustomFields\": [\n                {\n                    \"Code\": \"11632-user_seller_location-pyB52Hny8n\",\n                    \"Name\": \"user_seller_location\",\n                    \"Values\": [\n                        \"Venice\"\n                    ]\n                },\n                {\n                    \"Code\": \"cause-GcxHM7vZVf\",\n                    \"Name\": \"Cause\",\n                    \"Values\": [\n                        \"stuff\"\n                    ]\n                },\n                {\n                    \"Code\": \"cause-idiHwEss0Y\",\n                    \"Name\": \"Cause\",\n                    \"Values\": [\n                        \"Cancer\"\n                    ]\n                },\n                {\n                    \"Code\": \"cause-2uyryJtilN\",\n                    \"Name\": \"Cause\",\n                    \"Values\": [\n                        \"Cancer\"\n                    ]\n                },\n                {\n                    \"Code\": \"cause-HjjBcV7ZsQ\",\n                    \"Name\": \"Cause\",\n                    \"Values\": [\n                        \"Africa\"\n                    ]\n                },\n                {\n                    \"Code\": \"cause-BycGOHZ1iS\",\n                    \"Name\": \"Cause\",\n                    \"Values\": [\n                        \"Animals\"\n                    ]\n                },\n                {\n                    \"Code\": \"cause-Qp7JDZmKI6\",\n                    \"Name\": \"Cause\",\n                    \"Values\": [\n                        \"TanooJOy\"\n                    ]\n                },\n                {\n                    \"Code\": \"cause-u8XzA1VVSl\",\n                    \"Name\": \"Cause\",\n                    \"Values\": [\n                        \"Cancer 2\"\n                    ]\n                },\n                {\n                    \"Code\": \"gender-lLSMXvk38a\",\n                    \"Name\": \"gender\",\n                    \"Values\": [\n                        \"Male\"\n                    ]\n                }\n            ],\n            \"Onboarded\": true,\n            \"OnboardedDateTime\": 1553051154,\n            \"Active\": true,\n            \"Enabled\": true,\n            \"Visible\": true\n        },\n        {\n            \"ID\": \"e1676334-1724-45e3-b5fd-5481a3537b45\",\n            \"Email\": \"tanoo_joy@hotmail.com\",\n            \"FirstName\": \"Lord Tanoo\",\n            \"LastName\": \"Tanoo\",\n            \"DisplayName\": \"\",\n            \"PhoneNumber\": \"90854839\",\n            \"DateJoined\": 1552961612,\n            \"Roles\": [\n                \"User\",\n                \"Merchant\",\n                \"Owner\",\n                \"Admin\"\n            ],\n            \"CustomFields\": [\n                {\n                    \"Code\": \"11632-ManagingExperience-znhUsIdOzV\",\n                    \"Name\": \"Managing Experience\",\n                    \"Values\": [\n                        \"I\u2019m just playing around\"\n                    ]\n                },\n                {\n                    \"Code\": \"11632-MarketplaceType-tgkIFX6r8I\",\n                    \"Name\": \"Marketplace Type\",\n                    \"Values\": [\n                        \"Don\u2019t know yet!\"\n                    ]\n                },\n                {\n                    \"Code\": \"11632-EntityType-yBCySioYHg\",\n                    \"Name\": \"Entity Type\",\n                    \"Values\": [\n                        \"I\u2019m an individual\"\n                    ]\n                },\n                {\n                    \"Code\": \"cause-Q5Yl6Tmxvr\",\n                    \"Name\": \"Cause\",\n                    \"Values\": [\n                        \"AIDS\"\n                    ]\n                },\n                {\n                    \"Code\": \"cause-xQwuUa6pBw\",\n                    \"Name\": \"Cause\",\n                    \"Values\": [\n                        \"Animals\"\n                    ]\n                }\n            ],\n            \"Onboarded\": false,\n            \"OnboardedDateTime\": 1552963349,\n            \"Active\": true,\n            \"Enabled\": true,\n            \"Visible\": true\n        },\n        {\n            \"ID\": \"d7aa1dec-9522-476f-9120-b350380cc0d9\",\n            \"Email\": \"tanoo_joy@hotmail.com\",\n            \"DisplayName\": \"\",\n            \"DateJoined\": 1554710149,\n            \"Roles\": [\n                \"User\",\n                \"Merchant\"\n            ],\n            \"Onboarded\": false,\n            \"Active\": true,\n            \"Enabled\": true,\n            \"Visible\": true\n        },\n        {\n            \"ID\": \"d6c3734c-f768-49bc-a186-b8ba0a302327\",\n            \"Email\": \"some-email@provider.com\",\n            \"DisplayName\": \"some-email@provider.com\",\n            \"DateJoined\": 1558315273,\n            \"Roles\": [\n                \"User\",\n                \"Merchant\"\n            ],\n            \"Onboarded\": false,\n            \"Active\": true,\n            \"Enabled\": true,\n            \"Visible\": true\n        },\n        {\n            \"ID\": \"8b867cb2-0c5a-45ac-a523-d365e7f303cb\",\n            \"Email\": \"Rachael@chin.com\",\n            \"FirstName\": \"Rachael\",\n            \"LastName\": \"chin\",\n            \"DisplayName\": \"Test merchant\",\n            \"Description\": \"Test merchant\",\n            \"PhoneNumber\": \"90854839\",\n            \"DateJoined\": 1554709528,\n            \"Roles\": [\n                \"User\",\n                \"Merchant\"\n            ],\n            \"Media\": [\n                {\n                    \"MediaUrl\": \"https://inkit.sandbox.arcadier.io/images/user/profile-image-11752-n67mpmufqs.jpg\"\n                }\n            ],\n            \"CustomFields\": [\n                {\n                    \"Code\": \"11632-user_seller_location-pyB52Hny8n\",\n                    \"Name\": \"user_seller_location\",\n                    \"Values\": [\n                        \"Singapore\"\n                    ]\n                },\n                {\n                    \"Code\": \"string\",\n                    \"Name\": \"test\",\n                    \"Values\": [\n                        \"ProductManager\"\n                    ]\n                },\n                {\n                    \"Code\": \"cause-ohCozAbtAQ\",\n                    \"Name\": \"Cause\",\n                    \"Values\": [\n                        \"Cancer\"\n                    ]\n                },\n                {\n                    \"Code\": \"cause-dghJRX63hj\",\n                    \"Name\": \"Cause\",\n                    \"Values\": [\n                        \"AIDS\"\n                    ]\n                },\n                {\n                    \"Code\": \"cause-3HvMWne1cn\",\n                    \"Name\": \"Cause\",\n                    \"Values\": [\n                        \"Animals\"\n                    ]\n                },\n                {\n                    \"Code\": \"cause-xd17c8Qmsc\",\n                    \"Name\": \"Cause\",\n                    \"Values\": [\n                        \"TAnoo\"\n                    ]\n                }\n            ],\n            \"Onboarded\": true,\n            \"OnboardedDateTime\": 1555560629,\n            \"Active\": true,\n            \"Enabled\": true,\n            \"Visible\": true\n        }\n    ]\n}"
             }
           ]
+        },
+        {
+          "name": "Reset Password",
+          "_postman_id": "fc790ff7-125b-42e5-b5cb-65505acac740",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": "",
+            "description": "This API returns a link to Arcadier's password reset page\n\nRequest:\n\n* \"UserID\" - ID of the user to change the password of\n* \"Action\" - token\n\nResponse:\n\n\"Url\" - URL of Arcadier's password reset page\n\n#### Authentication\n> Admin only"
+          },
+          "response": [
+            {
+              "id": "721b2f4f-ac2c-430a-be9d-1aea58909fac",
+              "name": "Reset Password",
+              "originalRequest": {
+                "method": "POST",
+                "header": [
+                  {
+                    "key": "Authorization",
+                    "value": "Bearer {{admintoken}}",
+                    "type": "text"
+                  },
+                  {
+                    "key": "Content-Type",
+                    "name": "Content-Type",
+                    "value": "application/json",
+                    "type": "text"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\r\n  \"UserID\": \"b33a0c0c-b896-475e-92ce-f3ca0c47fbdf\",\r\n  \"Action\": \"token\"\r\n}"
+                },
+                "url": "https://{{your-marketplace}}.arcadier.io/api/v2/admins/{{adminID}}/password"
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Cache-Control",
+                  "value": "no-cache"
+                },
+                {
+                  "key": "Pragma",
+                  "value": "no-cache"
+                },
+                {
+                  "key": "Content-Type",
+                  "value": "application/json; charset=utf-8"
+                },
+                {
+                  "key": "Expires",
+                  "value": "-1"
+                },
+                {
+                  "key": "api-version",
+                  "value": "v2"
+                },
+                {
+                  "key": "X-XSS-Protection",
+                  "value": "1; mode=block"
+                },
+                {
+                  "key": "X-Content-Type-Options",
+                  "value": "nosniff"
+                },
+                {
+                  "key": "X-Powered-By",
+                  "value": "ARR/3.0"
+                },
+                {
+                  "key": "Date",
+                  "value": "Wed, 14 Aug 2019 09:07:42 GMT"
+                },
+                {
+                  "key": "Content-Length",
+                  "value": "480"
+                }
+              ],
+              "cookie": [],
+              "responseTime": null,
+              "body": "{\n    \"UserID\": \"b33a0c0c-b896-475e-92ce-f3ca0c47fbdf\",\n    \"Url\": \"https://inkit.sandbox.arcadier.io/user/marketplace/resetpassword?userId=19513&code=%2fZ4AY42zzRm2Oq8HjihUY5FPRxZUIA4Ppzjtot8SXrEkj9f1vWSy2j15uD78%2buefaMbzPXJIkrXgUzTB7ry1%2fImUR0JlJOH82EwoQFsaSVu6f0nHAB6f9sx8rUAWE7JZsjjRPfIbjaHv5pbLzzAV28sEg68%3d\",\n    \"Token\": \"%2fZ4AY42zzRm2Oq8HjihUY5FPRxZUIA4Ppzjtot8SXrEkj9f1vWSy2j15uD78%2buefaMbzPXJIkrXgUzTB7ry1%2fImUR0JlJOH82EwoQFsaSVu6f0nHAB6f9sx8rUAWE7JZsjjRPfIbjaHv5pbLzzAV28sEg68%3d\"\n}"
+            }
+          ]
         }
       ],
       "_postman_id": "d406cc09-fcaf-4c79-9af5-ff67735221ae",
