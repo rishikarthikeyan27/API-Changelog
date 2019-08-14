@@ -1023,9 +1023,25 @@
             "disableBodyPruning": true
           },
           "request": {
-            "method": "GET",
-            "header": [],
-            "url": "",
+            "method": "POST",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{admintoken}}",
+                "type": "text"
+              },
+              {
+                "key": "Content-Type",
+                "name": "Content-Type",
+                "value": "application/json",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n  \"UserID\": \"2e4788e8-1013-4671-9fdd-b8402ea44852\",\r\n  \"Action\": \"token\"\r\n}"
+            },
+            "url": "https://{{your-marketplace}}.arcadier.io/api/v2/admins/{{adminID}}/password",
             "description": "This API allows the resetting of a user's password by returning a link to Arcadier's reset password page for that user.\n\nRequest:\n\n* \"UserID\" - ID of the user who wants to change their password\n* \"Action\" - \"token\"\n\nResponse:\n\n\"Url\" - URL of Arcadier's password reset page\n\n(More details in example on the right)\n\n#### Authentication\n> Admin token only"
           },
           "response": [
