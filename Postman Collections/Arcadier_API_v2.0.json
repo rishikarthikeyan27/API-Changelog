@@ -1017,7 +1017,7 @@
           ]
         },
         {
-          "name": "Reset Password",
+          "name": "Reset User Password",
           "_postman_id": "12e8be69-7939-48f0-b8b5-ce25b001d9ed",
           "protocolProfileBehavior": {
             "disableBodyPruning": true
@@ -1039,7 +1039,7 @@
             ],
             "body": {
               "mode": "raw",
-              "raw": "{\r\n  \"UserID\": \"2e4788e8-1013-4671-9fdd-b8402ea44852\",\r\n  \"Action\": \"token\"\r\n}"
+              "raw": "{\r\n  \"UserID\": \"00000000-0000-0000-0000-000000000000\",\r\n  \"Action\": \"token\"\r\n}"
             },
             "url": "https://{{your-marketplace}}.arcadier.io/api/v2/admins/{{adminID}}/password",
             "description": "This API allows the resetting of a user's password by returning a link to Arcadier's reset password page for that user.\n\nRequest:\n\n* \"UserID\" - ID of the user who wants to change their password\n* \"Action\" - \"token\"\n\nResponse:\n\n\"Url\" - URL of Arcadier's password reset page\n\n(More details in example on the right)\n\n#### Authentication\n> Admin token only"
@@ -1116,7 +1116,7 @@
               ],
               "cookie": [],
               "responseTime": null,
-              "body": "{\n    \"UserID\": \"2e4788e8-1013-4671-9fdd-b8402ea44852\",\n    \"Url\": \"https://inkit.sandbox.arcadier.io/user/marketplace/resetpassword?userId=19514&code=hMtYeaqRwgw%2frcv6zlLEdmI%2beMG7KB24wlCQqQQknkAFVsH5CacMIbqzlFXz2XEuDsBgI3AAv%2bz1JM25cNBRgiuhXEv4j4U62merhoj8tp9xJPYADFrulWmxUB2YhKMBxdEOUrGpGzNsfnEWbbyebQZ4tkU%3d\",\n    \"Token\": \"hMtYeaqRwgw%2frcv6zlLEdmI%2beMG7KB24wlCQqQQknkAFVsH5CacMIbqzlFXz2XEuDsBgI3AAv%2bz1JM25cNBRgiuhXEv4j4U62merhoj8tp9xJPYADFrulWmxUB2YhKMBxdEOUrGpGzNsfnEWbbyebQZ4tkU%3d\"\n}"
+              "body": "{\n    \"UserID\": \"2e4788e8-1013-4671-9fdd-b8402ea44852\",\n    \"Url\": \"https://{{your-marketplace}}.arcadier.io/user/marketplace/resetpassword?userId=19514&code=hMtYeaqRwgw%2frcv6zlLEdmI%2beMG7KB24wlCQqQQknkAFVsH5CacMIbqzlFXz2XEuDsBgI3AAv%2bz1JM25cNBRgiuhXEv4j4U62merhoj8tp9xJPYADFrulWmxUB2YhKMBxdEOUrGpGzNsfnEWbbyebQZ4tkU%3d\",\n    \"Token\": \"hMtYeaqRwgw%2frcv6zlLEdmI%2beMG7KB24wlCQqQQknkAFVsH5CacMIbqzlFXz2XEuDsBgI3AAv%2bz1JM25cNBRgiuhXEv4j4U62merhoj8tp9xJPYADFrulWmxUB2YhKMBxdEOUrGpGzNsfnEWbbyebQZ4tkU%3d\"\n}"
             }
           ]
         }
