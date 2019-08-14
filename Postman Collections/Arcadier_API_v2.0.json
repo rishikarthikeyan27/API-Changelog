@@ -1025,9 +1025,84 @@
           "request": {
             "method": "GET",
             "header": [],
-            "url": ""
+            "url": "",
+            "description": "This API allows the resetting of a user's password by returning a link to Arcadier's reset password page for that user.\n\nRequest:\n\n* \"UserID\" - ID of the user who wants to change their password\n* \"Action\" - \"token\"\n\nResponse:\n\"Url\" - URL of Arcadier's password reset page\n\n(More details in example on the right)\n\n#### Authentication\n> Admin token only"
           },
-          "response": []
+          "response": [
+            {
+              "id": "b94f9a75-163a-4e95-89ca-c653b054c3ea",
+              "name": "Reset Password",
+              "originalRequest": {
+                "method": "POST",
+                "header": [
+                  {
+                    "key": "Authorization",
+                    "value": "Bearer {{admintoken}}",
+                    "type": "text"
+                  },
+                  {
+                    "key": "Content-Type",
+                    "name": "Content-Type",
+                    "value": "application/json",
+                    "type": "text"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\r\n  \"UserID\": \"2e4788e8-1013-4671-9fdd-b8402ea44852\",\r\n  \"Action\": \"token\"\r\n}"
+                },
+                "url": "https://{{your-marketplace}}.arcadier.io/api/v2/admins/{{adminID}}/password"
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Cache-Control",
+                  "value": "no-cache"
+                },
+                {
+                  "key": "Pragma",
+                  "value": "no-cache"
+                },
+                {
+                  "key": "Content-Type",
+                  "value": "application/json; charset=utf-8"
+                },
+                {
+                  "key": "Expires",
+                  "value": "-1"
+                },
+                {
+                  "key": "api-version",
+                  "value": "v2"
+                },
+                {
+                  "key": "X-XSS-Protection",
+                  "value": "1; mode=block"
+                },
+                {
+                  "key": "X-Content-Type-Options",
+                  "value": "nosniff"
+                },
+                {
+                  "key": "X-Powered-By",
+                  "value": "ARR/3.0"
+                },
+                {
+                  "key": "Date",
+                  "value": "Wed, 14 Aug 2019 09:42:55 GMT"
+                },
+                {
+                  "key": "Content-Length",
+                  "value": "480"
+                }
+              ],
+              "cookie": [],
+              "responseTime": null,
+              "body": "{\n    \"UserID\": \"2e4788e8-1013-4671-9fdd-b8402ea44852\",\n    \"Url\": \"https://inkit.sandbox.arcadier.io/user/marketplace/resetpassword?userId=19514&code=hMtYeaqRwgw%2frcv6zlLEdmI%2beMG7KB24wlCQqQQknkAFVsH5CacMIbqzlFXz2XEuDsBgI3AAv%2bz1JM25cNBRgiuhXEv4j4U62merhoj8tp9xJPYADFrulWmxUB2YhKMBxdEOUrGpGzNsfnEWbbyebQZ4tkU%3d\",\n    \"Token\": \"hMtYeaqRwgw%2frcv6zlLEdmI%2beMG7KB24wlCQqQQknkAFVsH5CacMIbqzlFXz2XEuDsBgI3AAv%2bz1JM25cNBRgiuhXEv4j4U62merhoj8tp9xJPYADFrulWmxUB2YhKMBxdEOUrGpGzNsfnEWbbyebQZ4tkU%3d\"\n}"
+            }
+          ]
         }
       ],
       "_postman_id": "d406cc09-fcaf-4c79-9af5-ff67735221ae",
