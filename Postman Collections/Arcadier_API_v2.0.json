@@ -1026,7 +1026,7 @@
             "method": "GET",
             "header": [],
             "url": "",
-            "description": "This API allows the resetting of a user's password by returning a link to Arcadier's reset password page for that user.\n\nRequest:\n\n* \"UserID\" - ID of the user who wants to change their password\n* \"Action\" - \"token\"\n\nResponse:\n\"Url\" - URL of Arcadier's password reset page\n\n(More details in example on the right)\n\n#### Authentication\n> Admin token only"
+            "description": "This API allows the resetting of a user's password by returning a link to Arcadier's reset password page for that user.\n\nRequest:\n\n* \"UserID\" - ID of the user who wants to change their password\n* \"Action\" - \"token\"\n\nResponse:\n\n\"Url\" - URL of Arcadier's password reset page\n\n(More details in example on the right)\n\n#### Authentication\n> Admin token only"
           },
           "response": [
             {
