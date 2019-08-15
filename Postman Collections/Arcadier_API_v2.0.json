@@ -6588,7 +6588,7 @@
               "raw": ""
             },
             "url": "https://{{your-marketplace}}.arcadier.io/api/v2/merchants/{{adminID}}/shipping-methods/",
-            "description": "Returns an array of shipping methods set up by a merchant on his/her items.\n\n#### Authentication\n> Admin token only"
+            "description": "Returns an array of shipping methods set up by the admin, together with details of the pricing for different weights/order prices.\n\n#### Authentication\n> Admin token only"
           },
           "response": [
             {
