@@ -6566,6 +6566,176 @@
           ]
         },
         {
+          "name": "Get Merchant Shipping Methods Copy",
+          "_postman_id": "6405b0c6-25e7-4ce9-a9a9-980c5b164b1b",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "auth": {
+              "type": "noauth"
+            },
+            "method": "GET",
+            "header": [
+              {
+                "key": "Content-Type",
+                "name": "Content-Type",
+                "type": "text",
+                "value": "application/json"
+              },
+              {
+                "key": "Authorization",
+                "value": "Bearer {{merchanttoken}}",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": ""
+            },
+            "url": "https://{{your-marketplace}}.arcadier.io/api/v2/merchants/{{merchantID}}/shipping-methods/",
+            "description": "Returns an array of shipping methods set up by a merchant on his/her items.\n\n#### Authentication\n> Admin and Merchant token only"
+          },
+          "response": [
+            {
+              "id": "4fc6f0f4-395e-47a6-97dc-fc8d5b479db4",
+              "name": "200 OK -  no shipping method in URL",
+              "originalRequest": {
+                "method": "GET",
+                "header": [
+                  {
+                    "key": "Content-Type",
+                    "name": "Content-Type",
+                    "value": "application/json",
+                    "type": "text"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": ""
+                },
+                "url": "https://{{your-marketplace}}.arcadier.io/api/v2/merchants/{{merchantID}}/shipping-methods/"
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Cache-Control",
+                  "value": "no-cache"
+                },
+                {
+                  "key": "Pragma",
+                  "value": "no-cache"
+                },
+                {
+                  "key": "Content-Type",
+                  "value": "application/json; charset=utf-8"
+                },
+                {
+                  "key": "Expires",
+                  "value": "-1"
+                },
+                {
+                  "key": "api-version",
+                  "value": "v2"
+                },
+                {
+                  "key": "X-XSS-Protection",
+                  "value": "1; mode=block"
+                },
+                {
+                  "key": "X-Content-Type-Options",
+                  "value": "nosniff"
+                },
+                {
+                  "key": "X-Powered-By",
+                  "value": "ARR/3.0"
+                },
+                {
+                  "key": "Date",
+                  "value": "Tue, 19 Mar 2019 08:28:50 GMT"
+                },
+                {
+                  "key": "Content-Length",
+                  "value": "417"
+                }
+              ],
+              "cookie": [],
+              "responseTime": null,
+              "body": "[\n    {\n        \"ID\": \"6072f1e4-67ce-400a-964e-69a7a051b966\",\n        \"Price\": \"1.00\",\n        \"CombinedPrice\": \"2.00\",\n        \"CurrencyCode\": \"SGD\",\n        \"Description\": \"Mydelivery\"\n    },\n    {\n        \"ID\": \"f3609327-e45f-450a-9be4-0705789c0c92\",\n        \"Price\": \"2.50\",\n        \"CombinedPrice\": \"2.50\",\n        \"CurrencyCode\": \"SGD\",\n        \"Description\": \"International Delivery\"\n    },\n    {\n        \"ID\": \"82e926ff-c204-4adf-b657-e5464c0c002d\",\n        \"Price\": \"2.50\",\n        \"CombinedPrice\": \"2.50\",\n        \"CurrencyCode\": \"SGD\",\n        \"Description\": \"Singapore Delivery\"\n    }\n]"
+            },
+            {
+              "id": "82126871-8fdb-48eb-8af4-cec096811e37",
+              "name": "200 OK - shipping method in URL",
+              "originalRequest": {
+                "method": "GET",
+                "header": [
+                  {
+                    "key": "Content-Type",
+                    "name": "Content-Type",
+                    "value": "application/json",
+                    "type": "text"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": ""
+                },
+                "url": "https://{{your-marketplace}}.arcadier.io/api/v2/merchants/{{merchantID}}/shipping-methods/f3609327-e45f-450a-9be4-0705789c0c92"
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Cache-Control",
+                  "value": "no-cache"
+                },
+                {
+                  "key": "Pragma",
+                  "value": "no-cache"
+                },
+                {
+                  "key": "Content-Type",
+                  "value": "application/json; charset=utf-8"
+                },
+                {
+                  "key": "Expires",
+                  "value": "-1"
+                },
+                {
+                  "key": "api-version",
+                  "value": "v2"
+                },
+                {
+                  "key": "X-XSS-Protection",
+                  "value": "1; mode=block"
+                },
+                {
+                  "key": "X-Content-Type-Options",
+                  "value": "nosniff"
+                },
+                {
+                  "key": "X-Powered-By",
+                  "value": "ARR/3.0"
+                },
+                {
+                  "key": "Date",
+                  "value": "Tue, 19 Mar 2019 08:29:50 GMT"
+                },
+                {
+                  "key": "Content-Length",
+                  "value": "143"
+                }
+              ],
+              "cookie": [],
+              "responseTime": null,
+              "body": "{\n    \"ID\": \"f3609327-e45f-450a-9be4-0705789c0c92\",\n    \"Price\": \"2.50\",\n    \"CombinedPrice\": \"2.50\",\n    \"CurrencyCode\": \"SGD\",\n    \"Description\": \"International Delivery\"\n}"
+            }
+          ]
+        },
+        {
           "name": "Create a shipping method",
           "_postman_id": "4fc81ed1-97b5-45ce-b1e9-51fee0a9916e",
           "protocolProfileBehavior": {
@@ -6840,176 +7010,6 @@
               "cookie": [],
               "responseTime": null,
               "body": "{\n    \"ID\": \"{{shippingmethodID}}\",\n    \"Courier\": \"Tanoo 4\",\n    \"Method\": \"pickup\",\n    \"Price\": \"10.00\",\n    \"CombinedPrice\": \"20.00\",\n    \"CurrencyCode\": \"SGD\",\n    \"Description\": \"Fastest here\"\n}"
-            }
-          ]
-        },
-        {
-          "name": "Get Merchant Shipping Methods Copy",
-          "_postman_id": "6405b0c6-25e7-4ce9-a9a9-980c5b164b1b",
-          "protocolProfileBehavior": {
-            "disableBodyPruning": true
-          },
-          "request": {
-            "auth": {
-              "type": "noauth"
-            },
-            "method": "GET",
-            "header": [
-              {
-                "key": "Content-Type",
-                "name": "Content-Type",
-                "type": "text",
-                "value": "application/json"
-              },
-              {
-                "key": "Authorization",
-                "value": "Bearer {{merchanttoken}}",
-                "type": "text"
-              }
-            ],
-            "body": {
-              "mode": "raw",
-              "raw": ""
-            },
-            "url": "https://{{your-marketplace}}.arcadier.io/api/v2/merchants/{{merchantID}}/shipping-methods/",
-            "description": "Returns an array of shipping methods set up by a merchant on his/her items.\n\n#### Authentication\n> Admin and Merchant token only"
-          },
-          "response": [
-            {
-              "id": "4fc6f0f4-395e-47a6-97dc-fc8d5b479db4",
-              "name": "200 OK -  no shipping method in URL",
-              "originalRequest": {
-                "method": "GET",
-                "header": [
-                  {
-                    "key": "Content-Type",
-                    "name": "Content-Type",
-                    "value": "application/json",
-                    "type": "text"
-                  }
-                ],
-                "body": {
-                  "mode": "raw",
-                  "raw": ""
-                },
-                "url": "https://{{your-marketplace}}.arcadier.io/api/v2/merchants/{{merchantID}}/shipping-methods/"
-              },
-              "status": "OK",
-              "code": 200,
-              "_postman_previewlanguage": "json",
-              "header": [
-                {
-                  "key": "Cache-Control",
-                  "value": "no-cache"
-                },
-                {
-                  "key": "Pragma",
-                  "value": "no-cache"
-                },
-                {
-                  "key": "Content-Type",
-                  "value": "application/json; charset=utf-8"
-                },
-                {
-                  "key": "Expires",
-                  "value": "-1"
-                },
-                {
-                  "key": "api-version",
-                  "value": "v2"
-                },
-                {
-                  "key": "X-XSS-Protection",
-                  "value": "1; mode=block"
-                },
-                {
-                  "key": "X-Content-Type-Options",
-                  "value": "nosniff"
-                },
-                {
-                  "key": "X-Powered-By",
-                  "value": "ARR/3.0"
-                },
-                {
-                  "key": "Date",
-                  "value": "Tue, 19 Mar 2019 08:28:50 GMT"
-                },
-                {
-                  "key": "Content-Length",
-                  "value": "417"
-                }
-              ],
-              "cookie": [],
-              "responseTime": null,
-              "body": "[\n    {\n        \"ID\": \"6072f1e4-67ce-400a-964e-69a7a051b966\",\n        \"Price\": \"1.00\",\n        \"CombinedPrice\": \"2.00\",\n        \"CurrencyCode\": \"SGD\",\n        \"Description\": \"Mydelivery\"\n    },\n    {\n        \"ID\": \"f3609327-e45f-450a-9be4-0705789c0c92\",\n        \"Price\": \"2.50\",\n        \"CombinedPrice\": \"2.50\",\n        \"CurrencyCode\": \"SGD\",\n        \"Description\": \"International Delivery\"\n    },\n    {\n        \"ID\": \"82e926ff-c204-4adf-b657-e5464c0c002d\",\n        \"Price\": \"2.50\",\n        \"CombinedPrice\": \"2.50\",\n        \"CurrencyCode\": \"SGD\",\n        \"Description\": \"Singapore Delivery\"\n    }\n]"
-            },
-            {
-              "id": "82126871-8fdb-48eb-8af4-cec096811e37",
-              "name": "200 OK - shipping method in URL",
-              "originalRequest": {
-                "method": "GET",
-                "header": [
-                  {
-                    "key": "Content-Type",
-                    "name": "Content-Type",
-                    "value": "application/json",
-                    "type": "text"
-                  }
-                ],
-                "body": {
-                  "mode": "raw",
-                  "raw": ""
-                },
-                "url": "https://{{your-marketplace}}.arcadier.io/api/v2/merchants/{{merchantID}}/shipping-methods/f3609327-e45f-450a-9be4-0705789c0c92"
-              },
-              "status": "OK",
-              "code": 200,
-              "_postman_previewlanguage": "json",
-              "header": [
-                {
-                  "key": "Cache-Control",
-                  "value": "no-cache"
-                },
-                {
-                  "key": "Pragma",
-                  "value": "no-cache"
-                },
-                {
-                  "key": "Content-Type",
-                  "value": "application/json; charset=utf-8"
-                },
-                {
-                  "key": "Expires",
-                  "value": "-1"
-                },
-                {
-                  "key": "api-version",
-                  "value": "v2"
-                },
-                {
-                  "key": "X-XSS-Protection",
-                  "value": "1; mode=block"
-                },
-                {
-                  "key": "X-Content-Type-Options",
-                  "value": "nosniff"
-                },
-                {
-                  "key": "X-Powered-By",
-                  "value": "ARR/3.0"
-                },
-                {
-                  "key": "Date",
-                  "value": "Tue, 19 Mar 2019 08:29:50 GMT"
-                },
-                {
-                  "key": "Content-Length",
-                  "value": "143"
-                }
-              ],
-              "cookie": [],
-              "responseTime": null,
-              "body": "{\n    \"ID\": \"f3609327-e45f-450a-9be4-0705789c0c92\",\n    \"Price\": \"2.50\",\n    \"CombinedPrice\": \"2.50\",\n    \"CurrencyCode\": \"SGD\",\n    \"Description\": \"International Delivery\"\n}"
             }
           ]
         }
