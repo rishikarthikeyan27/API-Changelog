@@ -6396,7 +6396,7 @@
       "name": "Shipping Methods",
       "item": [
         {
-          "name": "Get Shipping Methods",
+          "name": "Get Merchant Shipping Methods",
           "_postman_id": "8c05f6ee-79fb-4033-994b-3513bc3f4d27",
           "protocolProfileBehavior": {
             "disableBodyPruning": true
