@@ -6566,7 +6566,7 @@
           ]
         },
         {
-          "name": "Get Admin Shipping Methods",
+          "name": "Get Delivery 2.0 Shipping Methods",
           "_postman_id": "6405b0c6-25e7-4ce9-a9a9-980c5b164b1b",
           "protocolProfileBehavior": {
             "disableBodyPruning": true
