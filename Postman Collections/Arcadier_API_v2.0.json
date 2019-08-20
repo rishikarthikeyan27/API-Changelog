@@ -6993,25 +6993,7 @@
               "type": "noauth"
             },
             "method": "GET",
-            "header": [
-              {
-                "key": "Authorization",
-                "value": "Bearer {{admintoken}}",
-                "type": "text"
-              },
-              {
-                "key": "Authorization",
-                "value": "Bearer {{merchanttoken}}",
-                "type": "text",
-                "disabled": true
-              },
-              {
-                "key": "Authorization",
-                "value": "Bearer {{buyertoken}}",
-                "type": "text",
-                "disabled": true
-              }
-            ],
+            "header": [],
             "url": "https://{{your-marketplace}}.arcadier.io/api/v2/static/fulfilment-statuses",
             "description": "Indicates the different Fulfilment Statuses on the marketplace.\n\n#### Authentication\n> None Required"
           },
