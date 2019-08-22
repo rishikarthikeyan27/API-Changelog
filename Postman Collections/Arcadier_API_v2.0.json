@@ -1449,7 +1449,7 @@
             ],
             "body": {
               "mode": "raw",
-              "raw": "{\r\n  \"Name\": \"string\",\r\n  \"Line1\": \"string\",\r\n  \"Line2\": \"string\",\r\n  \"PostCode\": \"string\",\r\n  \"Delivery\": true,\r\n  \"Pickup\": true,\r\n  \"SpecialInstructions\": \"string\",\r\n  \"State\": \"string\",\r\n  \"City\": \"string\",\r\n  \"Country\": \"string\",\r\n  \"CountryCode\": \"string\"\r\n}"
+              "raw": "{\n    \"Name\": \"firstname|lastname\",\n    \"Line1\": \"string\",\n    \"Line2\": \"string\",\n    \"PostCode\": \"string\",\n    \"Delivery\": true,\n    \"Pickup\": true,\n    \"SpecialInstructions\": \"string\",\n    \"State\": \"string\",\n    \"City\": \"string\",\n    \"Country\": \"string\",\n    \"CountryCode\": \"string\"\n}"
             },
             "url": "https://{{your-marketplace}}.arcadier.io/api/v2/users/{{userID}}/addresses",
             "description": "Creates an address for the specified user in the userID.\n\n#### Authentication\n> **Admin token**\n>\n> Creates addresses for:\n> Admin, \n> Merchant, \n> Buyer\n> ______________________\n> **Merchant token**\n> \n> Creates addresses for:\n> Merchant\n> ______________________\n> **Buyer token**\n>\n> Creates addresses for:\n> Buyer"
@@ -5694,7 +5694,7 @@
             "method": "GET",
             "header": [],
             "url": {
-              "raw": "https://{{your-marketplace}}.arcadier.io/api/v2/items?sellerID={{merchantID}}&pageSize=1&pageNumber=1&categories={{string}}&customFields={{string}}&tags={{string}}&minPrice={{integer}}&maxPrice={{integer}}&minRating={{integer}}&maxRating={{integer}}&startDate={{unix_time}}&endDate={{unix_time}}&latitude={{string}}&longitude={{string}}&keywords={{string}}&createdStartDate={{unix_time}}&createdEndDate={{unix_time}}",
+              "raw": "https://{{your-marketplace}}.arcadier.io/api/v2/items?sellerID={{merchantID}}&pageSize=1&pageNumber=1&categories={{string}}&customFields={{string}}&tags={{string}}&minPrice={{integer}}&maxPrice={{integer}}&minRating={{integer}}&maxRating={{integer}}&startDate={{unix_time}}&endDate={{unix_time}}&latitude={{string}}&longitude={{string}}&keywords={{string}}&createdStartDate={{unix_time}}&createdEndDate={{unix_time}}&updatedStartDate={{unix_time}}&updatedEndDate={{unix_time}}",
               "protocol": "https",
               "host": [
                 "{{your-marketplace}}",
@@ -5784,14 +5784,22 @@
                 {
                   "key": "createdStartDate",
                   "value": "{{unix_time}}",
-                  "description": "The lower boundary of creation time",
-                  "type": "text"
+                  "description": "The search will look for items created at `CreatedDateTime > createdStartDate`"
                 },
                 {
                   "key": "createdEndDate",
                   "value": "{{unix_time}}",
-                  "description": "The upper boundary of creation time",
-                  "type": "text"
+                  "description": "The search will look for items created at `CreatedEndTime < createdEndDate`"
+                },
+                {
+                  "key": "updatedStartDate",
+                  "value": "{{unix_time}}",
+                  "description": "The search will look for items updated at `ModifiedDateTime > UpdatedStartDate`"
+                },
+                {
+                  "key": "updatedEndDate",
+                  "value": "{{unix_time}}",
+                  "description": "The search will look for items updated at `ModifiedDateTime < UpdatedEndDate`"
                 }
               ]
             },
