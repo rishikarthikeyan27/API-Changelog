@@ -5818,7 +5818,7 @@
             "method": "GET",
             "header": [],
             "url": {
-              "raw": "https://{{your-marketplace}}.arcadier.io/api/v2/items?sellerID={{merchantID}}&pageSize=1&pageNumber=1&categories={{string}}&customFields={{string}}&tags={{string}}&minPrice={{integer}}&maxPrice={{integer}}&minRating={{integer}}&maxRating={{integer}}&startDate={{unix_time}}&endDate={{unix_time}}&latitude={{string}}&longitude={{string}}&keywords={{string}}&createdStartDate={{unix_time}}&createdEndDate={{unix_time}}&updatedStartDate={{unix_time}}&updatedEndDate={{unix_time}}",
+              "raw": "https://{{your-marketplace}}.arcadier.io/api/v2/items?",
               "protocol": "https",
               "host": [
                 "{{your-marketplace}}",
@@ -5834,96 +5834,115 @@
                 {
                   "key": "sellerID",
                   "value": "{{merchantID}}",
-                  "description": "The merchant ID"
+                  "description": "The merchant ID",
+                  "disabled": true
                 },
                 {
                   "key": "pageSize",
                   "value": "1",
-                  "description": "The number of results per page"
+                  "description": "The number of results per page",
+                  "disabled": true
                 },
                 {
                   "key": "pageNumber",
                   "value": "1",
-                  "description": "The number of pages"
+                  "description": "The number of pages",
+                  "disabled": true
                 },
                 {
                   "key": "categories",
                   "value": "{{string}}",
-                  "description": "The category the item belongs to"
+                  "description": "The category the item belongs to",
+                  "disabled": true
                 },
                 {
                   "key": "customFields",
                   "value": "{{string}}",
-                  "description": "The name of the custom field it might have"
+                  "description": "The name of the custom field it might have",
+                  "disabled": true
                 },
                 {
                   "key": "tags",
                   "value": "{{string}}",
-                  "description": "Tags that were given to it"
+                  "description": "Tags that were given to it",
+                  "disabled": true
                 },
                 {
                   "key": "minPrice",
                   "value": "{{integer}}",
-                  "description": "Its minimum price"
+                  "description": "Its minimum price",
+                  "disabled": true
                 },
                 {
                   "key": "maxPrice",
                   "value": "{{integer}}",
-                  "description": "Its maximum price"
+                  "description": "Its maximum price",
+                  "disabled": true
                 },
                 {
                   "key": "minRating",
                   "value": "{{integer}}",
-                  "description": "Its minimum rating"
+                  "description": "Its minimum rating",
+                  "disabled": true
                 },
                 {
                   "key": "maxRating",
                   "value": "{{integer}}",
-                  "description": "Its maximum rating"
+                  "description": "Its maximum rating",
+                  "disabled": true
                 },
                 {
                   "key": "startDate",
                   "value": "{{unix_time}}",
-                  "description": "(For spacetime) The start date of the service in unix format"
+                  "description": "(For spacetime) The start date of the service in unix format",
+                  "disabled": true
                 },
                 {
                   "key": "endDate",
                   "value": "{{unix_time}}",
-                  "description": "(For spacetime) The end date of the service in unix format"
+                  "description": "(For spacetime) The end date of the service in unix format",
+                  "disabled": true
                 },
                 {
                   "key": "latitude",
                   "value": "{{string}}",
-                  "description": "The geographical number of degrees above or below the equator."
+                  "description": "The geographical number of degrees above or below the equator.",
+                  "disabled": true
                 },
                 {
                   "key": "longitude",
                   "value": "{{string}}",
-                  "description": "The geographical number of degrees before of after Greenwich, UK. "
+                  "description": "The geographical number of degrees before of after Greenwich, UK. ",
+                  "disabled": true
                 },
                 {
                   "key": "keywords",
-                  "value": "{{string}}"
+                  "value": "{{string}}",
+                  "disabled": true
                 },
                 {
                   "key": "createdStartDate",
                   "value": "{{unix_time}}",
-                  "description": "The search will look for items created at `CreatedDateTime > createdStartDate`"
+                  "description": "The search will look for items created at `CreatedDateTime > createdStartDate`",
+                  "disabled": true
                 },
                 {
                   "key": "createdEndDate",
                   "value": "{{unix_time}}",
-                  "description": "The search will look for items created at `CreatedEndTime < createdEndDate`"
+                  "description": "The search will look for items created at `CreatedEndTime < createdEndDate`",
+                  "disabled": true
                 },
                 {
                   "key": "updatedStartDate",
                   "value": "{{unix_time}}",
-                  "description": "The search will look for items updated at `ModifiedDateTime > UpdatedStartDate`"
+                  "description": "The search will look for items updated at `ModifiedDateTime > UpdatedStartDate`",
+                  "disabled": true
                 },
                 {
                   "key": "updatedEndDate",
                   "value": "{{unix_time}}",
-                  "description": "The search will look for items updated at `ModifiedDateTime < UpdatedEndDate`"
+                  "description": "The search will look for items updated at `ModifiedDateTime < UpdatedEndDate`",
+                  "disabled": true
                 }
               ]
             },
