@@ -1146,7 +1146,7 @@
               "raw": "{\r\n  \"OldPassword\": \"string\",\r\n  \"Password\": \"string\",\r\n  \"ConfirmPassword\": \"string\",\r\n  \"ResetPasswordToken\": \"string\"\r\n}"
             },
             "url": "https://{{your-marketplace}}.arcadier.io/api/v2/users/{{userID}}/password",
-            "description": "This API resets the password of a buyer/merchant in 2 ways:\n\n* A user has not forgotten their password but wants to change it:\n * In this scenario, `\"OldPassword\"` is required.\n * `\"ResetPasswordToken\"` is *not* required.\n* A user has forgotten their password:\n * In this scenario, `\"OldPassword\"`is *not* required.\n * `\"ResetPasswordToken\"` is required, and is obtained from [Reset User Password API]()"
+            "description": "This API resets the password of a buyer/merchant in 2 ways:\n\n* A user has not forgotten their password but wants to change it:\n * In this scenario, `\"OldPassword\"` is required.\n * `\"ResetPasswordToken\"` is **not** required.\n* A user has forgotten their password:\n * In this scenario, `\"OldPassword\"`is **not** required.\n * `\"ResetPasswordToken\"` is required, and is obtained from [Reset User Password API]()"
           },
           "response": []
         }
