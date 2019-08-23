@@ -1149,6 +1149,31 @@
             "description": "This API resets the password of a buyer/merchant in 2 ways:\n\n* A user has not forgotten their password but wants to change it:\n * In this scenario, `\"OldPassword\"` is required.\n * `\"ResetPasswordToken\"` is **not** required.\n* A user has forgotten their password, and wants to reset it:\n * In this scenario, `\"OldPassword\"`is **not** required.\n * `\"ResetPasswordToken\"` is required, and is obtained from [Reset User Password API](https://apiv2.arcadier.com/?version=latest#12e8be69-7939-48f0-b8b5-ce25b001d9ed)\n\nIn the event of a successful change, the response will be:\n```json\n{\n\tResult: true\n}\n```\n\n#### Authentication\n> Password change: Admin/User token\n>\n> Password Reset: Admin token"
           },
           "response": []
+        },
+        {
+          "name": "Log Out",
+          "_postman_id": "fe1fedea-0d13-47b9-97b7-d4500fb94f2e",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer 9AnzPLpxMbc53qmtM7a1MzSUU2u1u9cByyXr8MIgwpuEgkvEmGPcfkbCwloSD6sg2FcvsLicp28nZX2_aSeUo7AbKXzjRRNOC6gkGxHxAidttEHzw4WkVvsCwj3US6FtB6QJyFzqoHGBNcyPQjMY7PCzYHKYQ0414oJGNDid8t89Ujpp2Ygqqs-bS10PhGsrlC9NNGlhX3r9Ey6DOTu3AqWix4hE0hbzBkeHm4u5tZL3hjcWhQfeunuzb_5frI-yaS1MRetxamC0rjlt-XO5PdHlqDYJRnZ44PaxrHgI7kvPJJ0Cweu_A9pGclwQHnFzDa8bjJzGqhNH1E4SHtYfq-PMxzeqcp82eupi7IorTdT3K1G9sRubK3wjaumJqiRciCgHN91QkyUM0S_xQ-luCKdK4od8fk7np1g_w6qC3d1QKME1LX-NV72D4kE10a3RYzrSr6WXlla7FUew3oAWy8u7HUEHGtxZuzHkf-AmCnJB-Sy-ZPQy4vsA7FuupuLxoxUpr_Vz1MWUmuCQ9fsVPuu5B8hVHXMizRKr_G1vwz0Tdbo5NSF6Jx9H6Z6u8Qo8kq4N3eb1W9XXuuasbGFNZsEdaWcC_nkzLt0FE46-TUVnf8_EjQotAma4OZxMSRhL61Nv9_ptqGLHqBOMoVX3541ePCkHQI9nN2tZ6Gq7x3XXIchwCePp1yJ47ze-9lni1zZJ6CVI-PCXPNPU6MkJZPJNYynHHuSYEEQQSGUwI_YKDDlG",
+                "type": "text"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json",
+                "type": "text"
+              }
+            ],
+            "url": "https://{{your-marketplace}}.arcadier.io/api/v2/accounts/sign-out",
+            "description": "This API ends the session of a user using his/her authentication token."
+          },
+          "response": []
         }
       ],
       "_postman_id": "d406cc09-fcaf-4c79-9af5-ff67735221ae",
