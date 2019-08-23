@@ -1042,7 +1042,7 @@
               "raw": "{\r\n  \"UserID\": \"00000000-0000-0000-0000-000000000000\",\r\n  \"Action\": \"token\"\r\n}"
             },
             "url": "https://{{your-marketplace}}.arcadier.io/api/v2/admins/{{adminID}}/password",
-            "description": "This API allows the resetting of a user's password by returning a link to Arcadier's reset password page for that user.\n\nRequest:\n\n* \"UserID\" - ID of the user who wants to change their password\n* \"Action\" - \"token\"\n\nResponse:\n\n* \"Url\" - URL of Arcadier's password reset page\n* \"Token\" - Reset password token to be used in [Update User Password API]()\n\n(More details in example on the right)\n\n#### Authentication\n> Admin token only"
+            "description": "This API allows the resetting of a user's password by returning a link to Arcadier's reset password page for that user.\n\nRequest:\n\n* \"UserID\" - ID of the user who wants to change their password\n* \"Action\" - \"token\"\n\nResponse:\n\n* \"Url\" - URL of Arcadier's password reset page\n* \"Token\" - Reset password token to be used in [Update User Password API](https://apiv2.arcadier.com/?version=latest#39756c48-c576-4451-9edd-b6825ef789e8)\n\n(More details in example on the right)\n\n#### Authentication\n> Admin token only"
           },
           "response": [
             {
@@ -1146,7 +1146,7 @@
               "raw": "{\r\n  \"OldPassword\": \"string\",\r\n  \"Password\": \"string\",\r\n  \"ConfirmPassword\": \"string\",\r\n  \"ResetPasswordToken\": \"string\"\r\n}"
             },
             "url": "https://{{your-marketplace}}.arcadier.io/api/v2/users/{{userID}}/password",
-            "description": "This API resets the password of a buyer/merchant in 2 ways:\n\n* A user has not forgotten their password but wants to change it:\n * In this scenario, `\"OldPassword\"` is required.\n * `\"ResetPasswordToken\"` is **not** required.\n* A user has forgotten their password:\n * In this scenario, `\"OldPassword\"`is **not** required.\n * `\"ResetPasswordToken\"` is required, and is obtained from [Reset User Password API]()\n\nIn the event of a successful change, the response will be as in the example on the right."
+            "description": "This API resets the password of a buyer/merchant in 2 ways:\n\n* A user has not forgotten their password but wants to change it:\n * In this scenario, `\"OldPassword\"` is required.\n * `\"ResetPasswordToken\"` is **not** required.\n* A user has forgotten their password:\n * In this scenario, `\"OldPassword\"`is **not** required.\n * `\"ResetPasswordToken\"` is required, and is obtained from [Reset User Password API](https://apiv2.arcadier.com/?version=latest#12e8be69-7939-48f0-b8b5-ce25b001d9ed)\n\nIn the event of a successful change, the response will be:\n```json\n{\n\tResult: true\n}\n```"
           },
           "response": []
         }
