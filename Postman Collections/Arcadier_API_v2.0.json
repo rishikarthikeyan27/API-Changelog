@@ -1119,6 +1119,35 @@
               "body": "{\n    \"UserID\": \"2e4788e8-1013-4671-9fdd-b8402ea44852\",\n    \"Url\": \"https://{{your-marketplace}}.arcadier.io/user/marketplace/resetpassword?userId=19514&code=hMtYeaqRwgw%2frcv6zlLEdmI%2beMG7KB24wlCQqQQknkAFVsH5CacMIbqzlFXz2XEuDsBgI3AAv%2bz1JM25cNBRgiuhXEv4j4U62merhoj8tp9xJPYADFrulWmxUB2YhKMBxdEOUrGpGzNsfnEWbbyebQZ4tkU%3d\",\n    \"Token\": \"hMtYeaqRwgw%2frcv6zlLEdmI%2beMG7KB24wlCQqQQknkAFVsH5CacMIbqzlFXz2XEuDsBgI3AAv%2bz1JM25cNBRgiuhXEv4j4U62merhoj8tp9xJPYADFrulWmxUB2YhKMBxdEOUrGpGzNsfnEWbbyebQZ4tkU%3d\"\n}"
             }
           ]
+        },
+        {
+          "name": "https://{{your-marketplace}}.arcadier.io/api/v2/users/{{userID}}/password",
+          "_postman_id": "39756c48-c576-4451-9edd-b6825ef789e8",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "PUT",
+            "header": [
+              {
+                "key": "Content-Type",
+                "name": "Content-Type",
+                "value": "application/json",
+                "type": "text"
+              },
+              {
+                "key": "Authorization",
+                "value": "Bearer {{admintoken}}",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n  \"OldPassword\": \"string\",\r\n  \"Password\": \"string\",\r\n  \"ConfirmPassword\": \"string\",\r\n  \"ResetPasswordToken\": \"string\"\r\n}"
+            },
+            "url": "https://{{your-marketplace}}.arcadier.io/api/v2/users/{{userID}}/password"
+          },
+          "response": []
         }
       ],
       "_postman_id": "d406cc09-fcaf-4c79-9af5-ff67735221ae",
