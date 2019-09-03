@@ -2121,6 +2121,79 @@
               "cookie": [],
               "responseTime": null,
               "body": "{\n    \"ID\": \"a98680ff-3ac9-4828-871a-9a0218084d8b\",\n    \"Quantity\": \"1\",\n    \"CurrencyCode\": \"SGD\",\n    \"SubTotal\": \"250.00\",\n    \"Freight\": \"2.00\",\n    \"CartItemType\": \"delivery\",\n    \"ShippingMethod\": {\n        \"ID\": \"46a0896b-482f-453f-acb4-aa39ddc2707d\",\n        \"Price\": \"2.00\",\n        \"CombinedPrice\": \"5.00\",\n        \"CurrencyCode\": \"SGD\",\n        \"Description\": \"Fast\"\n    },\n    \"AddOns\": [],\n    \"ItemDetail\": {\n        \"Variants\": [],\n        \"ID\": \"915ff529-1a3c-4b70-8737-073a295d2f32\",\n        \"SKU\": \"3099\",\n        \"Name\": \"Yamaha TRBX305 5 String Bass Guitar\",\n        \"BuyerDescription\": \"Sculpted Mahogany Body\\nThe Yamaha TRBX features a sculpted Mahogany body with a mass optimised 3D design for the perfect balance between tone and comfort, and an even weight distribution. A high-mass die-cast bridge efficiently transfers vibrations to the body for full, rich tone combined with excellent adjustability and road tested durability. 18mm string spacing on this 5 string model offers outstanding playability for slap and finger styles.\\n\\nFast, Playable Neck\\nThe bass has a neck that combines a fast, comfortable profile with 5 piece Maple/Mahogany laminated construction for outstanding stability and excellent tone. A precision fitted bolt-on neck joint gives maximum adjustability and clear punchy tone. It perfectly balances strength, vibration transfer and upper fret access for good all round performance.\\n\\nM3 Pickups & Performance EQ\\nYGD designed M3 pickups feature oversized polepieces and ceramic magnets for a clear, powerful tone with impressive definition and depth. Your performance is sure to be clean and noise free thanks to the hum-cancelling design and a thumb rest gives unmatched playability and comfort.\\n\\nThe TRBX305 features Yamaha's exclusive Performance EQ active circuit with five performance tuned full spectrum EQ curves optimised to give instant access to essential sounds along with powerful 2 band master equalisation to shape and define your tone.\\n\\nYamaha Quality Hardware\\nOther features include straight string pull from nut to machine head that eliminates lateral tension, providing superior tuning stability and reducing overtones, a 43mm (5-string) nut width that gives fast, comfortable playability for any style and Yamaha\u2019s metal plate-mounted standard jack socket that offers superior durability and easy maintenance.\\n\\nSpecifications\\nBody & Bridge\\n\\nBody: Mahogany\\nFinish: Black\\nNeck & Fingerboard\\n\\nNeck: 5-Piece Maple / Mahogany\\nFingerboard: Rosewood\\nScale Length: 864mm\\nFrets: 24\\nElectronics & Hardware\\n\\nPickups: Yamaha Ceramic HU\\nControls: 5 EQ Style Switch (Slap, Pick, Flat, Finger, Solo)\\nHardware: Yamaha Black Chrome\",\n        \"SellerDescription\": \"Test Seller Desc\",\n        \"Price\": \"250.00\",\n        \"PriceUnit\": \"SGD\",\n        \"StockLimited\": false,\n        \"StockQuantity\": \"10\",\n        \"IsVisibleToCustomer\": true,\n        \"Active\": true,\n        \"IsAvailable\": true,\n        \"CurrencyCode\": \"SGD\",\n        \"Tags\": [\n            \"Diifff 2\",\n            \"Different Item lolol\",\n            \"Extra Tag\"\n        ],\n        \"HasChildItems\": false\n    }\n}"
+            },
+            {
+              "id": "7ad42e20-5dca-4464-a405-8ae7ac405053",
+              "name": "Anonymous User Check Out",
+              "originalRequest": {
+                "method": "POST",
+                "header": [
+                  {
+                    "key": "Content-Type",
+                    "name": "Content-Type",
+                    "type": "text",
+                    "value": "application/json"
+                  },
+                  {
+                    "key": "Authorization",
+                    "type": "text",
+                    "value": "Bearer {{admintoken}}"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n    \"ItemDetail\": {\n        \"ID\": \"4ddebe05-92ac-48ae-bbda-4b3de1ecc632\"\n    },\n    \"Quantity\": 1,\n    \"CartItemType\": \"delivery\",\n    \"ShippingMethod\": {\n        \"ID\": \"c0b6cf1c-9b1f-4f36-a0a2-dd795cec0338\"\n    }\n}"
+                },
+                "url": "https://{{your-marketplace}}.arcadier.io/api/v2/users/00000000-0000-0000-0000-000000000000/carts"
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Cache-Control",
+                  "value": "no-cache"
+                },
+                {
+                  "key": "Pragma",
+                  "value": "no-cache"
+                },
+                {
+                  "key": "Content-Type",
+                  "value": "application/json; charset=utf-8"
+                },
+                {
+                  "key": "Expires",
+                  "value": "-1"
+                },
+                {
+                  "key": "api-version",
+                  "value": "v2"
+                },
+                {
+                  "key": "X-XSS-Protection",
+                  "value": "1; mode=block"
+                },
+                {
+                  "key": "X-Content-Type-Options",
+                  "value": "nosniff"
+                },
+                {
+                  "key": "X-Powered-By",
+                  "value": "ARR/3.0"
+                },
+                {
+                  "key": "Date",
+                  "value": "Tue, 27 Aug 2019 08:08:00 GMT"
+                },
+                {
+                  "key": "Content-Length",
+                  "value": "2450"
+                }
+              ],
+              "cookie": [],
+              "responseTime": null,
+              "body": "{\n    \"ID\": \"c368b5b9-2956-43c5-8b0a-ca5ef0064903\",\n    \"Quantity\": 1,\n    \"CurrencyCode\": \"SGD\",\n    \"SubTotal\": 500,\n    \"Freight\": 0,\n    \"CartItemType\": \"delivery\",\n    \"ShippingMethod\": {\n        \"ID\": \"c0b6cf1c-9b1f-4f36-a0a2-dd795cec0338\",\n        \"Courier\": null,\n        \"Method\": null,\n        \"Price\": 0,\n        \"CombinedPrice\": null,\n        \"CurrencyCode\": \"SGD\",\n        \"Description\": \"Tanoo Delivery 2.0\",\n        \"CustomFields\": null\n    },\n    \"AddOns\": [],\n    \"ItemDetail\": {\n        \"Variants\": [\n            {\n                \"ID\": \"ee3fdd5e-9310-4b5f-a4c3-4892c8045d3e\",\n                \"Name\": \"Red\",\n                \"GroupID\": \"a826bbb5-568b-4b45-a1c7-a02bb9ce0254\",\n                \"GroupName\": \"Color\",\n                \"PriceChange\": null,\n                \"SortOrder\": null\n            }\n        ],\n        \"ID\": \"4ddebe05-92ac-48ae-bbda-4b3de1ecc632\",\n        \"SKU\": null,\n        \"Name\": \"Black Electric Guitar\",\n        \"BuyerDescription\": \"This guitar is so fucking cold it makes you wanna go back to your ex now lol\",\n        \"SellerDescription\": null,\n        \"Price\": 500,\n        \"PriceUnit\": null,\n        \"StockLimited\": true,\n        \"StockQuantity\": \"0\",\n        \"IsVisibleToCustomer\": true,\n        \"Active\": true,\n        \"IsAvailable\": true,\n        \"DateOfPurchase\": null,\n        \"Weight\": null,\n        \"WeightUnit\": null,\n        \"Cubes\": null,\n        \"CubeUnit\": null,\n        \"Length\": null,\n        \"LengthUnit\": null,\n        \"Width\": null,\n        \"WidthUnit\": null,\n        \"Height\": null,\n        \"HeightUnit\": null,\n        \"AdditionalDetails\": null,\n        \"ExpiryDate\": null,\n        \"CurrencyCode\": \"SGD\",\n        \"ParentID\": null,\n        \"AverageRating\": null,\n        \"InstantBuy\": null,\n        \"Negotiation\": null,\n        \"MerchantDetail\": null,\n        \"Location\": null,\n        \"Categories\": null,\n        \"ShippingMethods\": null,\n        \"PickupAddresses\": null,\n        \"Media\": null,\n        \"Tags\": null,\n        \"Scheduler\": null,\n        \"Distance\": null,\n        \"CustomFields\": null,\n        \"CreatedDateTime\": null,\n        \"ModifiedDateTime\": null,\n        \"HasChildItems\": false,\n        \"ChildItems\": null\n    },\n    \"AccessToken\": {\n        \"access_token\": \"xwLLhkBAcs4W9-Rx6t8pv_vHja2EmHSjW4rlKh99Xy8adU9jeExajSOZNbbBM8XUyoV-MiUfgKTQSfEW33fl7JLl-ujBfw-RQKFfGFz311x1d9oYbD-VLZUdvFDkaS0ORKmFjuW5AymKpVdzzSCYcTOBaTaEk3aHkyhFWWbSMfs3eLw0AT2lIUBDsPQDcLCibkqnJt7-n1QQ7wvV0jqDRsP1imjKT0xzTDbsqON55UWaXsiEXkzr6Exo0YcetEV4l33OCo3JdezBbL18q736hQxkSei6C08C7fSsu3OSrnOeuB7JLWI-qvEKIjXJivHNQycdu-CsLWqCWSvKRRalpsrJWKs_GUIBlfiKMSw6KQGVCKgGRx-_tz84n29Nm5aSCqfvIOEtb25OoD9BUElXKeP2NVO5kTwNEL5x17MGVtHLPLhV8YWeINLYcQKldi64P41ZUEXwekQPXQMyBeSci-N3wQMdebmBYabmGTNN6UvfewS1mqtRryCjVgTNijUCQRV3WUC8T61EmJ3vh5wOKC5J-rChiqjgVacPREuN4ZZUucw7343ESKLOnKT6zd4DfyrDOt6JQA2oeStNvYYvZmvHpx5B9BPb3rG5qtwhpU6gWWAqkK_Yb86g5a6uZIwkpP04gvgYelvPZT7_iwQtuZCsSwSPTy-gGcyE7L1jBpRhY4tSb3OB14KBg4AvSzfMnltYSTbOXt2XOKsuVDv_LDRdGUMxUx7NZ8tauEswXBQhUv5sY_xdfEYL6hj-ITilert3gQ\",\n        \"token_type\": \"bearer\",\n        \"expires_in\": 107999,\n        \"refresh_token\": \"eeabf49ea3a5415ca5b5fd42bfe8cc3b\",\n        \".issued\": null,\n        \".expires\": null,\n        \"UserId\": \"b879aeac-9537-4969-9963-f221bbb88193\"\n    }\n}"
             }
           ]
         },
@@ -7897,7 +7970,7 @@
             "header": [
               {
                 "key": "Authorization",
-                "value": "{{buyertoken}}",
+                "value": "Bearer {{admintoken}}",
                 "type": "text"
               }
             ],
