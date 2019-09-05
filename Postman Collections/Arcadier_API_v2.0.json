@@ -5168,7 +5168,7 @@
           ]
         },
         {
-          "name": "Send Email after transaction",
+          "name": "Send Email after Generating Invoice",
           "_postman_id": "2c83c9e7-d535-4f64-8891-2af030ffc2b3",
           "protocolProfileBehavior": {
             "disableBodyPruning": true
