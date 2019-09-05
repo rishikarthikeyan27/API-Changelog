@@ -5166,6 +5166,20 @@
               "body": "{\n    \"Result\": true\n}"
             }
           ]
+        },
+        {
+          "name": "Send Email after transaction",
+          "_postman_id": "2c83c9e7-d535-4f64-8891-2af030ffc2b3",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": "",
+            "description": "After an invoice has been created, you can call this API to send an email to both the buyer and the sellers involved. The email contents can be edited in the Marketplace Admin Dashboard found here.\n\n#### Authorization\n> Admin token only"
+          },
+          "response": []
         }
       ],
       "_postman_id": "b927e9e5-c3fd-48a5-b966-bbbfee078b3c",
