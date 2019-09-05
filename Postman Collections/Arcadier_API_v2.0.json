@@ -2257,7 +2257,7 @@
             ],
             "body": {
               "mode": "raw",
-              "raw": "[\n    \"381983f6-2bc7-4c1e-a190-5677241dbb9f\"\n]"
+              "raw": "[\n    \"334797f8-dafd-485c-9d73-22c4cfc2cd60\",\n    \"f54eb9e4-d84e-4dcf-a6be-f4c40dd73ef6\",\n    \"381983f6-2bc7-4c1e-a190-5677241dbb9f\"\n]"
             },
             "url": "https://{{your-marketplace}}.arcadier.io/api/v2/users/{{buyerID}}/invoices/carts",
             "description": "This API is the next step after using the [Add Item to Cart](https://apiv2.arcadier.com/?version=latest#ff3b5052-d889-4421-b419-942d1be7e19d) API. It generates an invoice with all the necessary data to be sent to your Payment Gateway's API. You can see the kind of data it returns in the Example Response on the right.\n\n**Request**\n\nThe request body is just an array of the different [Cart Item IDs](https://apiv2.arcadier.com/?version=latest#ff3b5052-d889-4421-b419-942d1be7e19d). In the request body below, there are 3 Cart Item IDs - 3 items were checked out.\n\n**Response**\n\nThe response will be an Invoice (for the buyer), and Order(s) for the Merchant(s). Each Order will have information that might be relevant for the payment gateway API.\n\n#### Authentication\n> Buyer token only"
