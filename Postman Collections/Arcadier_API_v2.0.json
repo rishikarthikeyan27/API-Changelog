@@ -5193,7 +5193,7 @@
               "raw": "{\n\t\"Type\": \"invoice\",\n\t\"InvoiceNo\": \"string\"\n}"
             },
             "url": "https://{{your-marketplace}}.arcadier.io/api/v2/emails",
-            "description": "After an invoice has been created, you can call this API to send an email to both the buyer and the sellers involved. The email contents can be edited in the Marketplace Admin Dashboard found here.\n\n#### Authorization\n> Admin token only"
+            "description": "After an invoice has been created, you can call this API to send an email to both the buyer and the sellers involved. The email contents can be edited in the Marketplace Admin Dashboard found here.\n\n\"Type\" takes only \"invoice\" as value for now\n\n\"InvoiceNo\" takes the InvoiceNo generated after you generate an invoice from cart.\n\n#### Authorization\n> Admin token only"
           },
           "response": [
             {
