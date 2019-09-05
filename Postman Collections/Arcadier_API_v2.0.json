@@ -5174,12 +5174,102 @@
             "disableBodyPruning": true
           },
           "request": {
-            "method": "GET",
-            "header": [],
-            "url": "",
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "name": "Content-Type",
+                "value": "application/json",
+                "type": "text"
+              },
+              {
+                "key": "Authorization",
+                "value": "Bearer {{admintoken}}",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n\t\"Type\": \"invoice\",\n\t\"InvoiceNo\": \"TANOO1567668625X8TZ\"\n}"
+            },
+            "url": "https://{{your-marketplace}}.arcadier.io/api/v2/emails",
             "description": "After an invoice has been created, you can call this API to send an email to both the buyer and the sellers involved. The email contents can be edited in the Marketplace Admin Dashboard found here.\n\n#### Authorization\n> Admin token only"
           },
-          "response": []
+          "response": [
+            {
+              "id": "2eb1ef2c-8d11-4762-9276-0e1a6c2a9080",
+              "name": "Send Email after transaction",
+              "originalRequest": {
+                "method": "POST",
+                "header": [
+                  {
+                    "key": "Content-Type",
+                    "name": "Content-Type",
+                    "value": "application/json",
+                    "type": "text"
+                  },
+                  {
+                    "key": "Authorization",
+                    "value": "Bearer {{admintoken}}",
+                    "type": "text"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n\t\"Type\": \"invoice\",\n\t\"InvoiceNo\": \"TANOO1567668625X8TZ\"\n}"
+                },
+                "url": "https://{{your-marketplace}}.arcadier.io/api/v2/emails"
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Cache-Control",
+                  "value": "no-cache"
+                },
+                {
+                  "key": "Pragma",
+                  "value": "no-cache"
+                },
+                {
+                  "key": "Content-Type",
+                  "value": "application/json; charset=utf-8"
+                },
+                {
+                  "key": "Expires",
+                  "value": "-1"
+                },
+                {
+                  "key": "api-version",
+                  "value": "v2"
+                },
+                {
+                  "key": "X-XSS-Protection",
+                  "value": "1; mode=block"
+                },
+                {
+                  "key": "X-Content-Type-Options",
+                  "value": "nosniff"
+                },
+                {
+                  "key": "X-Powered-By",
+                  "value": "ARR/3.0"
+                },
+                {
+                  "key": "Date",
+                  "value": "Thu, 05 Sep 2019 08:44:54 GMT"
+                },
+                {
+                  "key": "Content-Length",
+                  "value": "15"
+                }
+              ],
+              "cookie": [],
+              "responseTime": null,
+              "body": "{\n    \"Result\": true\n}"
+            }
+          ]
         }
       ],
       "_postman_id": "b927e9e5-c3fd-48a5-b966-bbbfee078b3c",
