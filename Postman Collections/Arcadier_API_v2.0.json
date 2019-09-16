@@ -439,7 +439,7 @@
                 ],
                 "body": {
                   "mode": "raw",
-                  "raw": "{\r\n  \"Email\": \"string\",\r\n  \"Password\": \"string\",\r\n  \"ConfirmPassword\": \"string\"\r\n}"
+                  "raw": "{\r\n  \"Email\": \"tanoo@hotmail.com\",\r\n  \"Password\": \"password1234\",\r\n  \"ConfirmPassword\": \"password1234\"\r\n}"
                 },
                 "url": "https://{{your-marketplace}}.arcadier.io/api/v2/accounts/register"
               },
