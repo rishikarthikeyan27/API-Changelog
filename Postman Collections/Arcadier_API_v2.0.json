@@ -4396,7 +4396,7 @@
             ],
             "body": {
               "mode": "raw",
-              "raw": "{\r\n\t\"Name\": \"Creating an CFD through API\",\r\n\t\"IsMandatory\": true,\r\n\t\"SortOrder\": 5,\r\n\t\"DataInputType\": \"textfield\",\r\n\t\"ReferenceTable\": \"Implementations\",\r\n\t\"DataFieldType\": \"string\",\r\n\t\"IsSearchable\": true,\r\n\t\"IsSensitive\": true,\r\n\t\"Active\": true\r\n}"
+              "raw": "{\n  \"Name\": \"string\",\n  \"IsMandatory\": true,\n  \"SortOrder\": 0,\n  \"DataInputType\": \"string\",\n  \"DataRegex\": \"string\",\n  \"MinValue\": 0,\n  \"MaxValue\": 0,\n  \"ReferenceTable\": \"string\",\n  \"DataFieldType\": \"string\",\n  \"IsSearchable\": true,\n  \"IsSensitive\": true,\n  \"Active\": true,\n  \"Options\": [\n    {\n      \"Name\": \"string\"\n    }\n  ]\n}"
             },
             "url": "https://{{your-marketplace}}.arcadier.io/api/v2/admins/{{adminID}}/custom-field-definitions",
             "description": "Creates Custom Field.\n\nInformation about how to create custom fields is documented on our [Github](https://github.com/Arcadier/Tutorials/tree/master/Creating%20Custom%20Fields)\n\n#### Authentication\n> Admin token only"
