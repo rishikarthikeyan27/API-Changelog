@@ -9853,7 +9853,8 @@
               "mode": "raw",
               "raw": "{\n    \"{{column-name}}\": \"\"\n}"
             },
-            "url": "https://{{your-marketplace}}.arcadier.io/api/v2/plugins/{{packageID}}/custom-tables/{{custom-table-name}}/rows/{{rowID}}"
+            "url": "https://{{your-marketplace}}.arcadier.io/api/v2/plugins/{{packageID}}/custom-tables/{{custom-table-name}}/rows/{{rowID}}",
+            "description": "Using the ID of a row, you can edit 1 or more row entries of that row.\n\n#### Authentication\n> None"
           },
           "response": [
             {
