@@ -4028,7 +4028,7 @@
                 ],
                 "body": {
                   "mode": "raw",
-                  "raw": "{\r\n  \"Name\": \"Grand Piano\",\r\n  \"Description\": \"Guaranteed to pull out the Taylor Swift hidden inside you\",\r\n  \"SortOrder\": 1,\r\n  \"Media\": [\r\n    {\r\n      \"ID\": \"00000000-0000-0000-0000-000000000000\",\r\n      \"MediaUrl\": \"https://static1.squarespace.com/static/58c25c63cd0f68722ca260d8/5b0d95998a922d7f4d0ed3bb/5b15f40c88251b408d488515/1528165492648/OMS+PIANO+IMAGE+1.JPG\"\r\n    }\r\n  ],\r\n  \"ParentCategoryID\": \"b40da804-377d-46c4-a11f-b46064002831\",\r\n  \"Level\": 1\r\n}\r\n\r\n"
+                  "raw": "{\r\n  \"Name\": \"Grand Piano\",\r\n  \"Description\": \"Guaranteed to pull out the Taylor Swift hidden inside you\",\r\n  \"SortOrder\": 1,\r\n  \"Media\": [\r\n    {\r\n      \"MediaUrl\": \"https://static1.squarespace.com/static/58c25c63cd0f68722ca260d8/5b0d95998a922d7f4d0ed3bb/5b15f40c88251b408d488515/1528165492648/OMS+PIANO+IMAGE+1.JPG\"\r\n    }\r\n  ],\r\n  \"ParentCategoryID\": \"b40da804-377d-46c4-a11f-b46064002831\",\r\n  \"Level\": 1\r\n}\r\n\r\n"
                 },
                 "url": "https://{{your-marketplace}}.arcadier.io/api/v2/admins/{{adminID}}/categories"
               },
