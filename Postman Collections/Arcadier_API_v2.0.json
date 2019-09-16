@@ -524,14 +524,14 @@
             ],
             "body": {
               "mode": "raw",
-              "raw": "{\n    \"Email\": \"string\",\n    \"FirstName\": \"string\",\n    \"LastName\": \"string\",\n    \"DisplayName\": \"string\",\n    \"Description\": \"string\",\n    \"DOB\": \"string\",\n    \"PhoneNumber\": \"string\",\n     \"Media\": [\n        {\n            \"ID\": \"00000000-0000-0000-0000-000000000000\",\n            \"MediaUrl\": \"string\"\n        }\n    ],\n    \"CustomFields\": [\n        {\n            \"Code\": \"string\",\n            \"Name\": \"string\",\n            \"DataFieldType\": \"string\",\n            \"Values\": [\n                \"string\"\n            ]\n        }\n    ],\n    \"TimeZone\": \"string\",\n    \"Active\": true,\n    \"Enabled\": true,\n    \"Visible\": true\n        \n}"
+              "raw": "{\n    \"Email\": \"xinerchan@gmail.com\",\n    \"FirstName\": \"Xiner\",\n    \"LastName\": \"Chan\",\n    \"DisplayName\": \"Xiner Chan\",\n    \"DOB\": \"12/12/1980\",\n    \"PhoneNumber\": \"89639612\"\n}\n"
             },
             "url": "https://{{your-marketplace}}.arcadier.io/api/v2/users/{{userID}}",
             "description": "Edits information about the user who's userID is put in the URL. This API also adds/edits data in (Custom fields)[] which have `\"ReferenceTable\": \"Users\"`.\n\n#### Authentication\n> Admin token for any userID\n>\n> Merchant token if userID = merchantID\n>\n> Buyer token if userID = buyerID"
           },
           "response": [
             {
-              "id": "cf2af583-2b5e-4ea7-9ae2-de9197dff450",
+              "id": "51aa995c-997d-4d16-a70e-d7a034e2884c",
               "name": "Update User Info",
               "originalRequest": {
                 "method": "PUT",
@@ -550,7 +550,7 @@
                 ],
                 "body": {
                   "mode": "raw",
-                  "raw": "{\n    \"ID\": \"e1676334-1724-45e3-b5fd-5481a3537b45\",\n    \"Email\": \"tanoo_joy@hotmail.com\",\n    \"FirstName\": \"Joseph\",\n    \"LastName\": \"Long\",\n    \"DisplayName\": \"J.Long\",\n    \"Description\": \"\",\n    \"DOB\": \"\",\n    \"PhoneNumber\": \"98529852\"\n}"
+                  "raw": "{\n    \"Email\": \"xinerchan@gmail.com\",\n    \"FirstName\": \"Xiner\",\n    \"LastName\": \"Chan\",\n    \"DisplayName\": \"Xiner Chan\",\n    \"DOB\": \"12/12/1980\",\n    \"PhoneNumber\": \"89639612\"\n}\n"
                 },
                 "url": "https://{{your-marketplace}}.arcadier.io/api/v2/users/{{userID}}"
               },
@@ -575,6 +575,10 @@
                   "value": "-1"
                 },
                 {
+                  "key": "request-id",
+                  "value": "bdb487a0-5206-45f2-b738-fe2f1589dffa"
+                },
+                {
                   "key": "api-version",
                   "value": "v2"
                 },
@@ -592,16 +596,16 @@
                 },
                 {
                   "key": "Date",
-                  "value": "Fri, 24 May 2019 02:49:24 GMT"
+                  "value": "Mon, 16 Sep 2019 04:20:02 GMT"
                 },
                 {
                   "key": "Content-Length",
-                  "value": "804"
+                  "value": "458"
                 }
               ],
               "cookie": [],
               "responseTime": null,
-              "body": "{\n    \"ID\": \"e1676334-1724-45e3-b5fd-5481a3537b45\",\n    \"Email\": \"tanoo_joy@hotmail.com\",\n    \"FirstName\": \"Joseph\",\n    \"LastName\": \"Long\",\n    \"DisplayName\": \"J.Long\",\n    \"Description\": \"\",\n    \"PhoneNumber\": \"98529852\",\n    \"DateJoined\": 1552961612,\n    \"Roles\": [\n        \"User\",\n        \"Merchant\",\n        \"Owner\",\n        \"Admin\"\n    ],\n    \"Media\": [],\n    \"CustomFields\": [\n        {\n            \"Code\": \"11632-ManagingExperience-znhUsIdOzV\",\n            \"Name\": \"Managing Experience\",\n            \"Values\": [\n                \"I\u2019m just playing around\"\n            ]\n        },\n        {\n            \"Code\": \"11632-MarketplaceType-tgkIFX6r8I\",\n            \"Name\": \"Marketplace Type\",\n            \"Values\": [\n                \"Don\u2019t know yet!\"\n            ]\n        },\n        {\n            \"Code\": \"11632-EntityType-yBCySioYHg\",\n            \"Name\": \"Entity Type\",\n            \"Values\": [\n                \"I\u2019m an individual\"\n            ]\n        },\n        {\n            \"Code\": \"cause-Q5Yl6Tmxvr\",\n            \"Name\": \"Cause\",\n            \"Values\": [\n                \"AIDS\"\n            ]\n        },\n        {\n            \"Code\": \"cause-xQwuUa6pBw\",\n            \"Name\": \"Cause\",\n            \"Values\": [\n                \"Animals\"\n            ]\n        }\n    ],\n    \"Onboarded\": false,\n    \"OnboardedDateTime\": 1552963349,\n    \"Active\": true,\n    \"Enabled\": true,\n    \"Visible\": true\n}"
+              "body": "{\n    \"ID\": \"830f8c74-b2fd-4628-b95b-234e850c0c8a\",\n    \"Email\": \"xinerchan@gmail.com\",\n    \"FirstName\": \"Xiner\",\n    \"LastName\": \"Chan\",\n    \"DisplayName\": \"Xiner Chan\",\n    \"Description\": null,\n    \"DOB\": null,\n    \"PhoneNumber\": \"89639612\",\n    \"DateJoined\": 1567590045,\n    \"Roles\": [\n        \"User\"\n    ],\n    \"Media\": [],\n    \"CustomFields\": null,\n    \"TimeZone\": null,\n    \"Onboarded\": false,\n    \"OnboardedDateTime\": null,\n    \"Active\": true,\n    \"Enabled\": true,\n    \"Visible\": true,\n    \"Addresses\": null,\n    \"PaymentMethods\": null,\n    \"PaymentAcceptanceMethods\": null,\n    \"UserLogin\": null\n}"
             }
           ]
         },
