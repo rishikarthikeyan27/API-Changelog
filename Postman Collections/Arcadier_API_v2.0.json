@@ -1578,7 +1578,7 @@
           },
           "response": [
             {
-              "id": "dcfedf61-b6eb-4c12-aa2a-3d8d7901c1e3",
+              "id": "b19f0282-220c-4586-82b1-8d9a7e548a47",
               "name": "Create a User Address",
               "originalRequest": {
                 "method": "POST",
@@ -1597,7 +1597,7 @@
                 ],
                 "body": {
                   "mode": "raw",
-                  "raw": "{\r\n  \"Name\": \"Arcadier HQ\",\r\n  \"Line1\": \"34 Boon Leat Terrace\",\r\n  \"Line2\": \"Mapletree\",\r\n  \"PostCode\": \"119886\",\r\n  \"Delivery\": true,\r\n  \"Pickup\": false,\r\n  \"SpecialInstructions\": \"Special Instructions\",\r\n  \"State\": \"Singapore\",\r\n  \"City\": \"Singapore\",\r\n  \"Country\": \"Singapore\",\r\n  \"CountryCode\": \"SG\"\r\n}"
+                  "raw": "{\n    \"Name\": \"Arcadier HQ\",\n    \"Line1\": \"34 Boon Leat Terrace\",\n    \"Line2\": \"Mapletree\",\n    \"PostCode\": \"119886\",\n    \"Delivery\": true,\n    \"Pickup\": false,\n    \"SpecialInstructions\": \"Special Instructions\",\n    \"State\": \"Singapore\",\n    \"City\": \"Singapore\",\n    \"Country\": \"Singapore\",\n    \"CountryCode\": \"SG\"\n}"
                 },
                 "url": "https://{{your-marketplace}}.arcadier.io/api/v2/users/{{userID}}/addresses"
               },
@@ -1618,24 +1618,12 @@
                   "value": "application/json; charset=utf-8"
                 },
                 {
-                  "key": "Content-Encoding",
-                  "value": "gzip"
-                },
-                {
                   "key": "Expires",
                   "value": "-1"
                 },
                 {
-                  "key": "Vary",
-                  "value": "Accept-Encoding"
-                },
-                {
-                  "key": "X-StackifyID",
-                  "value": "V1|80003035-0c01-8000-b63f-84710c7967bb|"
-                },
-                {
-                  "key": "X-StackifyID",
-                  "value": "V1|80001987-0c01-5900-b63f-84710c7967bb|"
+                  "key": "request-id",
+                  "value": "78efbb11-834d-4753-aeb0-3dfa8e50aa2b"
                 },
                 {
                   "key": "api-version",
@@ -1650,17 +1638,21 @@
                   "value": "nosniff"
                 },
                 {
+                  "key": "X-Powered-By",
+                  "value": "ARR/3.0"
+                },
+                {
                   "key": "Date",
-                  "value": "Mon, 03 Jun 2019 02:46:10 GMT"
+                  "value": "Mon, 16 Sep 2019 04:36:19 GMT"
                 },
                 {
                   "key": "Content-Length",
-                  "value": "315"
+                  "value": "326"
                 }
               ],
               "cookie": [],
               "responseTime": null,
-              "body": "{\n    \"ID\": \"cc4269c3-ea6e-40dc-873b-1cc419e09fe3\",\n    \"Name\": \"Arcadier HQ\",\n    \"Line1\": \"34 Boon Leat Terrace\",\n    \"Line2\": \"Mapletree\",\n    \"PostCode\": \"119886\",\n    \"Delivery\": true,\n    \"Pickup\": false,\n    \"SpecialInstructions\": \"Special Instructions\",\n    \"State\": \"Singapore\",\n    \"City\": \"Singapore\",\n    \"Country\": \"Singapore\",\n    \"CountryCode\": \"SG\"\n}"
+              "body": "{\n    \"ID\": \"b3406215-b95d-4878-a2a4-042e4c313882\",\n    \"Name\": \"Arcadier HQ\",\n    \"Line1\": \"34 Boon Leat Terrace\",\n    \"Line2\": \"Mapletree\",\n    \"PostCode\": \"119886\",\n    \"Latitude\": null,\n    \"Longitude\": null,\n    \"Delivery\": true,\n    \"Pickup\": false,\n    \"SpecialInstructions\": \"Special Instructions\",\n    \"State\": \"Singapore\",\n    \"City\": \"Singapore\",\n    \"Country\": \"Singapore\",\n    \"CountryCode\": \"SG\"\n}"
             }
           ]
         },
