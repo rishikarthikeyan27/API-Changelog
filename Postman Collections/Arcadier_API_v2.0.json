@@ -3925,7 +3925,7 @@
             ],
             "body": {
               "mode": "raw",
-              "raw": "{\n  \"Name\": \"Keys\",\n  \"Description\": \"The finest collection of keys be it classic or electronic\",\n  \"SortOrder\": \"3\",\n  \"Media\": [\n    {\n      \"MediaUrl\": \"https://static1.squarespace.com/static/58c25c63cd0f68722ca260d8/5b0d95998a922d7f4d0ed3bb/5b15f40c88251b408d488515/1528165492648/OMS+PIANO+IMAGE+1.JPG\"\n    }\n  ],\n  \"ParentCategoryID\": \"a797d917-11a8-4590-99af-24a6cdd1d3e3\",\n  \"Level\": 0\n}\n\n"
+              "raw": "{\r\n  \"Name\": \"string\",\r\n  \"Description\": \"string\",\r\n  \"SortOrder\": 0,\r\n  \"Media\": [\r\n    {\r\n      \"ID\": \"00000000-0000-0000-0000-000000000000\",\r\n      \"MediaUrl\": \"string\"\r\n    }\r\n  ],\r\n  \"ParentCategoryID\": \"00000000-0000-0000-0000-000000000000\",\r\n  \"Level\": 0\r\n}"
             },
             "url": "https://{{your-marketplace}}.arcadier.io/api/v2/admins/{{adminID}}/categories",
             "description": "Creates a category or sub-category.\n\n#### Authentication\n> Admin token only"
