@@ -9652,7 +9652,8 @@
             },
             "method": "GET",
             "header": [],
-            "url": "https://{{your-marketplace}}.arcadier.io/api/v2/plugins/{{packageID}}/custom-tables/{{custom-table-name}}/"
+            "url": "https://{{your-marketplace}}.arcadier.io/api/v2/plugins/{{packageID}}/custom-tables/{{custom-table-name}}/",
+            "description": "Gets the contents of a Custom Table you created for your Plug-In. For more information on Custom Tables, click [here](https://api.arcadier.com/overview-of-custom-tables).\n\n#### Authentication\n> None"
           },
           "response": [
             {
