@@ -3653,35 +3653,12 @@
           },
           "response": [
             {
-              "id": "bff763a1-662a-4163-8c7d-b926f1628079",
-              "name": "200 OK",
+              "id": "4899076b-64b2-4202-8791-6d15d8350b7a",
+              "name": "Get all Categories - no Admin ID required",
               "originalRequest": {
                 "method": "GET",
                 "header": [],
-                "url": {
-                  "raw": "https://{{your-marketplace}}.arcadier.io/api/v2/categories?pageSize=1&pageNumber=1",
-                  "protocol": "https",
-                  "host": [
-                    "{{your-marketplace}}",
-                    "arcadier",
-                    "io"
-                  ],
-                  "path": [
-                    "api",
-                    "v2",
-                    "categories"
-                  ],
-                  "query": [
-                    {
-                      "key": "pageSize",
-                      "value": "1"
-                    },
-                    {
-                      "key": "pageNumber",
-                      "value": "1"
-                    }
-                  ]
-                }
+                "url": "https://{{your-marketplace}}.arcadier.io/api/v2/categories"
               },
               "status": "OK",
               "code": 200,
@@ -3704,6 +3681,10 @@
                   "value": "-1"
                 },
                 {
+                  "key": "request-id",
+                  "value": "77f5402c-7ca2-4670-bc47-1bf7f3bf0d04"
+                },
+                {
                   "key": "api-version",
                   "value": "v2"
                 },
@@ -3721,16 +3702,16 @@
                 },
                 {
                   "key": "Date",
-                  "value": "Tue, 19 Mar 2019 08:05:01 GMT"
+                  "value": "Mon, 16 Sep 2019 05:01:36 GMT"
                 },
                 {
                   "key": "Content-Length",
-                  "value": "1466"
+                  "value": "3304"
                 }
               ],
               "cookie": [],
               "responseTime": null,
-              "body": "{\n    \"TotalRecords\": 7,\n    \"PageNumber\": 1,\n    \"PageSize\": 7,\n    \"Records\": [\n        {\n            \"ID\": \"a3465af3-4fde-437c-8e1b-9d968d1da6a9\",\n            \"Name\": \"Guitars\",\n            \"Description\": \"\",\n            \"SortOrder\": 10156,\n            \"Media\": [\n                {\n                    \"MediaUrl\": \"https://{{your-marketplace}}.arcadier.io/images/categories/download-z8vxva44zg6ktvjnvl04me0xw.jpg\"\n                }\n            ],\n            \"Level\": 0,\n            \"CreatedDateTime\": 1552963533,\n            \"ModifiedDateTime\": 1552963533\n        },\n        {\n            \"ID\": \"2916e6a5-6559-4245-b6d9-95f12c121da5\",\n            \"Name\": \"Drums\",\n            \"Description\": \"\",\n            \"SortOrder\": 10157,\n            \"Media\": [\n                {\n                    \"MediaUrl\": \"https://{{your-marketplace}}.arcadier.io/images/categories/Tama-Superstar-White-600x300-96ob32b9fr5jhk548s39qkltw.jpg\"\n                }\n            ],\n            \"Level\": 0,\n            \"CreatedDateTime\": 1552963654,\n            \"ModifiedDateTime\": 1552963654\n        },\n        {\n            \"ID\": \"eb324855-e2ed-4d7e-a6c4-d0c4324c4c21\",\n            \"Name\": \"Electric\",\n            \"Description\": \"\",\n            \"SortOrder\": 1,\n            \"Level\": 1,\n            \"CreatedDateTime\": 1552963664,\n            \"ModifiedDateTime\": 1552963664\n        },\n        {\n            \"ID\": \"c2992a0a-60c3-4ea3-976c-691b2b673246\",\n            \"Name\": \"Regular\",\n            \"Description\": \"\",\n            \"SortOrder\": 2,\n            \"Level\": 1,\n            \"CreatedDateTime\": 1552963670,\n            \"ModifiedDateTime\": 1552963670\n        },\n        {\n            \"ID\": \"f5b8588e-6b7c-4bbf-9021-79f9d56ce571\",\n            \"Name\": \"Acoustic\",\n            \"Description\": \"\",\n            \"SortOrder\": 1,\n            \"Level\": 1,\n            \"CreatedDateTime\": 1552963539,\n            \"ModifiedDateTime\": 1552963539\n        },\n        {\n            \"ID\": \"f9d3a912-9c8a-4af9-ac37-360f88bdd1e4\",\n            \"Name\": \"Semi-Acoustic\",\n            \"Description\": \"\",\n            \"SortOrder\": 2,\n            \"Level\": 1,\n            \"CreatedDateTime\": 1552963553,\n            \"ModifiedDateTime\": 1552963553\n        },\n        {\n            \"ID\": \"ad11caca-6f0a-4b98-9a37-d54f84d084ef\",\n            \"Name\": \"Electric\",\n            \"Description\": \"\",\n            \"SortOrder\": 3,\n            \"Level\": 1,\n            \"CreatedDateTime\": 1552963558,\n            \"ModifiedDateTime\": 1552963558\n        }\n    ]\n}"
+              "body": "{\n    \"TotalRecords\": 12,\n    \"PageNumber\": 1,\n    \"PageSize\": 12,\n    \"Records\": [\n        {\n            \"ID\": \"ed36e72f-a36d-4eb4-9a5a-270296e766f7\",\n            \"Name\": \"Category9\",\n            \"Description\": \"This is Category9\",\n            \"SortOrder\": 0,\n            \"Media\": null,\n            \"ParentCategoryID\": null,\n            \"ChildCategories\": null,\n            \"Level\": 0,\n            \"CreatedDateTime\": 1567425433,\n            \"ModifiedDateTime\": 1567425433,\n            \"Commission\": null\n        },\n        {\n            \"ID\": \"dd599e4a-dc97-4e9a-ae09-6f98d0695b49\",\n            \"Name\": \"Category10\",\n            \"Description\": \"This is Category10\",\n            \"SortOrder\": 0,\n            \"Media\": null,\n            \"ParentCategoryID\": null,\n            \"ChildCategories\": null,\n            \"Level\": 0,\n            \"CreatedDateTime\": 1568022762,\n            \"ModifiedDateTime\": 1568022762,\n            \"Commission\": null\n        },\n        {\n            \"ID\": \"b60c7fb0-3e4e-4f97-97cc-38bb47ed8cab\",\n            \"Name\": \"Category11\",\n            \"Description\": \"This is Category11\",\n            \"SortOrder\": 0,\n            \"Media\": null,\n            \"ParentCategoryID\": null,\n            \"ChildCategories\": null,\n            \"Level\": 0,\n            \"CreatedDateTime\": 1568109020,\n            \"ModifiedDateTime\": 1568109020,\n            \"Commission\": null\n        },\n        {\n            \"ID\": \"a797d917-11a8-4590-99af-24a6cdd1d3e3\",\n            \"Name\": \"Category1\",\n            \"Description\": \"This is Category1\",\n            \"SortOrder\": 1,\n            \"Media\": null,\n            \"ParentCategoryID\": null,\n            \"ChildCategories\": null,\n            \"Level\": 0,\n            \"CreatedDateTime\": 1566198170,\n            \"ModifiedDateTime\": 1566806010,\n            \"Commission\": null\n        },\n        {\n            \"ID\": \"0b845ec6-41c8-433f-a8d9-33add9c9cdf7\",\n            \"Name\": \"Category6\",\n            \"Description\": \"This is Category6\",\n            \"SortOrder\": 2,\n            \"Media\": null,\n            \"ParentCategoryID\": null,\n            \"ChildCategories\": null,\n            \"Level\": 0,\n            \"CreatedDateTime\": 1566198260,\n            \"ModifiedDateTime\": 1566806010,\n            \"Commission\": null\n        },\n        {\n            \"ID\": \"d3fe70ee-6006-4847-ad2e-a78dce15f404\",\n            \"Name\": \"Categoryundefined\",\n            \"Description\": \"This is Categoryundefined\",\n            \"SortOrder\": 3,\n            \"Media\": null,\n            \"ParentCategoryID\": null,\n            \"ChildCategories\": null,\n            \"Level\": 0,\n            \"CreatedDateTime\": 1566199864,\n            \"ModifiedDateTime\": 1566806010,\n            \"Commission\": null\n        },\n        {\n            \"ID\": \"479b3df3-44a1-41cf-84ed-95ee4ff0206e\",\n            \"Name\": \"Category2\",\n            \"Description\": \"This is Category2\",\n            \"SortOrder\": 4,\n            \"Media\": null,\n            \"ParentCategoryID\": null,\n            \"ChildCategories\": null,\n            \"Level\": 0,\n            \"CreatedDateTime\": 1566198170,\n            \"ModifiedDateTime\": 1566806010,\n            \"Commission\": null\n        },\n        {\n            \"ID\": \"c4d76697-6d2b-41f6-aba5-521b98fa2ebd\",\n            \"Name\": \"Categoryundefined\",\n            \"Description\": \"This is Categoryundefined\",\n            \"SortOrder\": 5,\n            \"Media\": null,\n            \"ParentCategoryID\": null,\n            \"ChildCategories\": null,\n            \"Level\": 0,\n            \"CreatedDateTime\": 1566201273,\n            \"ModifiedDateTime\": 1566806010,\n            \"Commission\": null\n        },\n        {\n            \"ID\": \"955fe9b0-cb3f-496f-8b37-9e9b4ea85bee\",\n            \"Name\": \"SubCategory 2A\",\n            \"Description\": \"This is SubCategory A of Category2\",\n            \"SortOrder\": 0,\n            \"Media\": null,\n            \"ParentCategoryID\": null,\n            \"ChildCategories\": null,\n            \"Level\": 1,\n            \"CreatedDateTime\": 1566198170,\n            \"ModifiedDateTime\": 1566198170,\n            \"Commission\": null\n        },\n        {\n            \"ID\": \"84ab2eef-87fa-4e41-add8-c63670783230\",\n            \"Name\": \"SubCategory 2B\",\n            \"Description\": \"This is SubCategory B of Category2\",\n            \"SortOrder\": 0,\n            \"Media\": null,\n            \"ParentCategoryID\": null,\n            \"ChildCategories\": null,\n            \"Level\": 1,\n            \"CreatedDateTime\": 1566198170,\n            \"ModifiedDateTime\": 1566198170,\n            \"Commission\": null\n        },\n        {\n            \"ID\": \"078948dd-f1d4-42c5-8170-c6ac754fb76e\",\n            \"Name\": \"SubCategory 1A\",\n            \"Description\": \"This is SubCategory A of Category1\",\n            \"SortOrder\": 0,\n            \"Media\": null,\n            \"ParentCategoryID\": null,\n            \"ChildCategories\": null,\n            \"Level\": 1,\n            \"CreatedDateTime\": 1566198170,\n            \"ModifiedDateTime\": 1566198170,\n            \"Commission\": null\n        },\n        {\n            \"ID\": \"ad6f61bd-1c75-49af-bd2a-ba6cce84c020\",\n            \"Name\": \"SubCategory 1B\",\n            \"Description\": \"This is SubCategory B of Category1\",\n            \"SortOrder\": 0,\n            \"Media\": null,\n            \"ParentCategoryID\": null,\n            \"ChildCategories\": null,\n            \"Level\": 1,\n            \"CreatedDateTime\": 1566198170,\n            \"ModifiedDateTime\": 1566198170,\n            \"Commission\": null\n        }\n    ]\n}"
             }
           ]
         },
