@@ -9990,6 +9990,390 @@
               "body": "{\n    \"Id\": \"90354b65-161e-48b7-8114-537c5961a2b6\",\n    \"adminid\": \"test\"\n}"
             }
           ]
+        },
+        {
+          "name": "Edit Row Entry",
+          "_postman_id": "1d3b0075-e065-436e-aa03-407e3f6173a3",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "PUT",
+            "header": [
+              {
+                "key": "Content-Type",
+                "name": "Content-Type",
+                "type": "text",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n    \"{{column-name}}\": \"\"\n}"
+            },
+            "url": "https://{{your-marketplace}}.arcadier.io/api/v2/plugins/{{packageID}}/custom-tables/{{custom-table-name}}/rows/{{rowID}}"
+          },
+          "response": [
+            {
+              "id": "3ea67c16-db23-4ab5-ba92-161a58259807",
+              "name": "Edit Row Entries",
+              "originalRequest": {
+                "method": "PUT",
+                "header": [
+                  {
+                    "key": "Content-Type",
+                    "name": "Content-Type",
+                    "value": "application/json",
+                    "type": "text"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n    \"adminid\": \"f79ddaf9-5958-4028-9ec1-890fca309a8a\"\n}"
+                },
+                "url": "https://{{your-marketplace}}.arcadier.io/api/v2/plugins/{{packageID}}/custom-tables/Tanoo/rows/{{rowID}}"
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Cache-Control",
+                  "value": "no-cache"
+                },
+                {
+                  "key": "Pragma",
+                  "value": "no-cache"
+                },
+                {
+                  "key": "Content-Type",
+                  "value": "application/json; charset=utf-8"
+                },
+                {
+                  "key": "Content-Encoding",
+                  "value": "gzip"
+                },
+                {
+                  "key": "Expires",
+                  "value": "-1"
+                },
+                {
+                  "key": "Vary",
+                  "value": "Accept-Encoding"
+                },
+                {
+                  "key": "X-StackifyID",
+                  "value": "V1|800052db-0801-a700-b63f-84710c7967bb|"
+                },
+                {
+                  "key": "api-version",
+                  "value": "v2"
+                },
+                {
+                  "key": "X-XSS-Protection",
+                  "value": "1; mode=block"
+                },
+                {
+                  "key": "X-Content-Type-Options",
+                  "value": "nosniff"
+                },
+                {
+                  "key": "Date",
+                  "value": "Mon, 01 Jul 2019 09:44:28 GMT"
+                },
+                {
+                  "key": "Content-Length",
+                  "value": "211"
+                }
+              ],
+              "cookie": [],
+              "responseTime": null,
+              "body": "{\n    \"Id\": \"a255b419-351b-4da6-9700-974f3087ca69\",\n    \"adminid\": \"f79ddaf9-5958-4028-9ec1-890fca309a8a\"\n}"
+            }
+          ]
+        },
+        {
+          "name": "Delete row entry",
+          "_postman_id": "474387c8-8388-438d-ad57-c6e5442dcedb",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "DELETE",
+            "header": [
+              {
+                "key": "Content-Type",
+                "name": "Content-Type",
+                "value": "application/json",
+                "type": "text"
+              }
+            ],
+            "url": "https://{{your-marketplace}}.arcadier.io/api/v2/plugins/{{packageID}}/custom-tables/{{custom-table-name}}/rows/{{rowID}}"
+          },
+          "response": [
+            {
+              "id": "d1b51556-dabc-462d-b96b-51d2b1dbe29c",
+              "name": "Edit Row Entries",
+              "originalRequest": {
+                "method": "PUT",
+                "header": [
+                  {
+                    "key": "Content-Type",
+                    "name": "Content-Type",
+                    "value": "application/json",
+                    "type": "text"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n    \"adminid\": \"f79ddaf9-5958-4028-9ec1-890fca309a8a\"\n}"
+                },
+                "url": "https://{{your-marketplace}}.arcadier.io/api/v2/plugins/{{packageID}}/custom-tables/Tanoo/rows/{{rowID}}"
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Cache-Control",
+                  "value": "no-cache"
+                },
+                {
+                  "key": "Pragma",
+                  "value": "no-cache"
+                },
+                {
+                  "key": "Content-Type",
+                  "value": "application/json; charset=utf-8"
+                },
+                {
+                  "key": "Content-Encoding",
+                  "value": "gzip"
+                },
+                {
+                  "key": "Expires",
+                  "value": "-1"
+                },
+                {
+                  "key": "Vary",
+                  "value": "Accept-Encoding"
+                },
+                {
+                  "key": "X-StackifyID",
+                  "value": "V1|800052db-0801-a700-b63f-84710c7967bb|"
+                },
+                {
+                  "key": "api-version",
+                  "value": "v2"
+                },
+                {
+                  "key": "X-XSS-Protection",
+                  "value": "1; mode=block"
+                },
+                {
+                  "key": "X-Content-Type-Options",
+                  "value": "nosniff"
+                },
+                {
+                  "key": "Date",
+                  "value": "Mon, 01 Jul 2019 09:44:28 GMT"
+                },
+                {
+                  "key": "Content-Length",
+                  "value": "211"
+                }
+              ],
+              "cookie": [],
+              "responseTime": null,
+              "body": "{\n    \"Id\": \"a255b419-351b-4da6-9700-974f3087ca69\",\n    \"adminid\": \"f79ddaf9-5958-4028-9ec1-890fca309a8a\"\n}"
+            }
+          ]
+        },
+        {
+          "name": "Search Table",
+          "_postman_id": "9718b2fc-181b-4d65-bbd8-d38debbf5191",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "name": "Content-Type",
+                "type": "text",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "[\n    {\n        \"Name\": \"string\",\n        \"Operator\": \"string\",\n        \"Value\": \"string\"\n    }\n]"
+            },
+            "url": "https://{{your-marketplace}}.arcadier.io/api/v2/plugins/{{packageID}}/custom-tables/{{custom-table-name}}/",
+            "description": "Operator: equal, like, in\n\nName:  Name of the Column\n\nValue: The search term.\n\nExample:\nThere's a column name called \"Phone Numbers\", and there's a value of \"999\" in that column. Then the request body is:\n\n```json\n[\n    {\n        \"Name\": \"Phone Numbers\",\n        \"Operator\": \"equal\",\n        \"Value\": \"999\"\n    }\n]\n```\n\nIf it exists, the response will be:\n\n```json\n{\n  \"TotalRecords\": 1,\n  \"PageNumber\": 1,\n  \"PageSize\": 1,\n  \"Records\": [\n    {\n      \"Id\": \"{{rowID}}\",\n      \"Phone Numbers\": \"999\"\n    }\n  ]\n}\n```\n\nIf there's `n` number of rows with \"999\" as value then `\"TotalRecords\": n ` and will be paginated accordingly. Having the `rowID` of each result, you can access and manipulate it the way you need it."
+          },
+          "response": [
+            {
+              "id": "66e558e2-12ae-4dce-a2eb-079c5f56361e",
+              "name": "Search Table",
+              "originalRequest": {
+                "method": "POST",
+                "header": [
+                  {
+                    "key": "Content-Type",
+                    "name": "Content-Type",
+                    "type": "text",
+                    "value": "application/json"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "[\n    {\n        \"Name\": \"adminid\",\n        \"Operator\": \"equal\",\n        \"Value\": \"test\"\n    }\n]"
+                },
+                "url": "https://{{your-marketplace}}.arcadier.io/api/v2/plugins/{{packageID}}/custom-tables/Tanoo/"
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Cache-Control",
+                  "value": "no-cache"
+                },
+                {
+                  "key": "Pragma",
+                  "value": "no-cache"
+                },
+                {
+                  "key": "Content-Type",
+                  "value": "application/json; charset=utf-8"
+                },
+                {
+                  "key": "Content-Encoding",
+                  "value": "gzip"
+                },
+                {
+                  "key": "Expires",
+                  "value": "-1"
+                },
+                {
+                  "key": "Vary",
+                  "value": "Accept-Encoding"
+                },
+                {
+                  "key": "X-StackifyID",
+                  "value": "V1|80005398-0801-a700-b63f-84710c7967bb|"
+                },
+                {
+                  "key": "X-StackifyID",
+                  "value": "V1|800045b4-0801-9900-b63f-84710c7967bb|"
+                },
+                {
+                  "key": "api-version",
+                  "value": "v2"
+                },
+                {
+                  "key": "X-XSS-Protection",
+                  "value": "1; mode=block"
+                },
+                {
+                  "key": "X-Content-Type-Options",
+                  "value": "nosniff"
+                },
+                {
+                  "key": "Date",
+                  "value": "Mon, 01 Jul 2019 09:55:13 GMT"
+                },
+                {
+                  "key": "Content-Length",
+                  "value": "222"
+                }
+              ],
+              "cookie": [],
+              "responseTime": null,
+              "body": "{\n    \"TotalRecords\": 1,\n    \"PageNumber\": 1,\n    \"PageSize\": 1,\n    \"Records\": [\n        {\n            \"Id\": \"90354b65-161e-48b7-8114-537c5961a2b6\",\n            \"adminid\": \"test\"\n        }\n    ]\n}"
+            },
+            {
+              "id": "6f4c3e72-a41a-4a6c-87ec-ad28cf5c2e72",
+              "name": "Search Table",
+              "originalRequest": {
+                "method": "POST",
+                "header": [
+                  {
+                    "key": "Content-Type",
+                    "name": "Content-Type",
+                    "type": "text",
+                    "value": "application/json"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "[\n    {\n        \"Name\": \"adminid\",\n        \"Operator\": \"like\",\n        \"Value\": \"f\"\n    }\n]"
+                },
+                "url": "https://{{your-marketplace}}.arcadier.io/api/v2/plugins/{{packageID}}/custom-tables/Tanoo/"
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Cache-Control",
+                  "value": "no-cache"
+                },
+                {
+                  "key": "Pragma",
+                  "value": "no-cache"
+                },
+                {
+                  "key": "Content-Type",
+                  "value": "application/json; charset=utf-8"
+                },
+                {
+                  "key": "Content-Encoding",
+                  "value": "gzip"
+                },
+                {
+                  "key": "Expires",
+                  "value": "-1"
+                },
+                {
+                  "key": "Vary",
+                  "value": "Accept-Encoding"
+                },
+                {
+                  "key": "X-StackifyID",
+                  "value": "V1|8000539a-0801-a700-b63f-84710c7967bb|"
+                },
+                {
+                  "key": "X-StackifyID",
+                  "value": "V1|800045b6-0801-9900-b63f-84710c7967bb|"
+                },
+                {
+                  "key": "api-version",
+                  "value": "v2"
+                },
+                {
+                  "key": "X-XSS-Protection",
+                  "value": "1; mode=block"
+                },
+                {
+                  "key": "X-Content-Type-Options",
+                  "value": "nosniff"
+                },
+                {
+                  "key": "Date",
+                  "value": "Mon, 01 Jul 2019 09:55:50 GMT"
+                },
+                {
+                  "key": "Content-Length",
+                  "value": "252"
+                }
+              ],
+              "cookie": [],
+              "responseTime": null,
+              "body": "{\n    \"TotalRecords\": 1,\n    \"PageNumber\": 1,\n    \"PageSize\": 1,\n    \"Records\": [\n        {\n            \"Id\": \"a255b419-351b-4da6-9700-974f3087ca69\",\n            \"adminid\": \"f79ddaf9-5958-4028-9ec1-890fca309a8a\"\n        }\n    ]\n}"
+            }
+          ]
         }
       ],
       "_postman_id": "8b187974-39b1-4e90-b63c-b6d1aeeb585f"
