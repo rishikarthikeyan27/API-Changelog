@@ -4679,9 +4679,34 @@
             ],
             "body": {
               "mode": "raw",
-              "raw": "{\r\n  \"Name\": \"string\",\r\n  \"IsMandatory\": true,\r\n  \"SortOrder\": 0,\r\n  \"DataInputType\": \"string\",\r\n  \"DataRegex\": \"string\",\r\n  \"MinValue\": 0,\r\n  \"MaxValue\": 0,\r\n  \"ReferenceTable\": \"string\",\r\n  \"DataFieldType\": \"string\",\r\n  \"IsSearchable\": true,\r\n  \"IsSensitive\": true,\r\n  \"Active\": true,\r\n  \"Options\": [\r\n    {\r\n      \"Name\": \"string\"\r\n    }\r\n  ]\r\n}\r\n"
+              "raw": "{\r\n\t\"Name\": \"Previously owned\",\r\n\t\"IsMandatory\": false,\r\n\t\"SortOrder\": 0,\r\n\t\"DataInputType\": \"hyperlink / URL\",\r\n\t\"DataFieldType\": \"list\",\r\n\t\"ReferenceTable\": \"Items\",\r\n\t\"Options\": [\r\n\t    {\r\n\t      \"Name\": \"Yes\"\r\n\t    },\r\n\t    {\r\n\t      \"Name\": \"No\"\r\n\t    },\r\n\t    {\r\n\t      \"Name\": \"Yes, but unused\"\r\n\t    },\r\n\t    {\r\n\t      \"Name\": \"Yes, but still functional\"\r\n\t    }\r\n\t  ]\r\n}\r\n"
             },
-            "url": "https://{{your-marketplace}}.arcadier.io/api/v2/admins/{{adminID}}/custom-field-definitions/{{customfield-code}}",
+            "url": {
+              "raw": "https://{{your-marketplace}}.arcadier.io/api/v2/admins/{{adminID}}/custom-field-definitions/{{customfield-code}}",
+              "protocol": "https",
+              "host": [
+                "{{your-marketplace}}",
+                "arcadier",
+                "io"
+              ],
+              "path": [
+                "api",
+                "v2",
+                "admins",
+                "{{adminID}}",
+                "custom-field-definitions",
+                "{{customfield-code}}"
+              ],
+              "query": [
+                {
+                  "key": "customfield-code",
+                  "value": "creatingancfdthroughapi-Ik0OAIw1nI",
+                  "description": "creatingancfdthroughapi-Ik0OAIw1nI",
+                  "type": "text",
+                  "disabled": true
+                }
+              ]
+            },
             "description": "Edits properties of a custom field.\n\n#### Authentication\n> Admin Token only"
           },
           "response": [
