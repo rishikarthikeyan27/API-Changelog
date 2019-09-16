@@ -4396,14 +4396,14 @@
             ],
             "body": {
               "mode": "raw",
-              "raw": "{\r\n  \"Name\": \"string\",\r\n  \"IsMandatory\": true,\r\n  \"SortOrder\": 0,\r\n  \"DataInputType\": \"string\",\r\n  \"DataRegex\": \"string\",\r\n  \"MinValue\": 0,\r\n  \"MaxValue\": 0,\r\n  \"ReferenceTable\": \"string\",\r\n  \"DataFieldType\": \"string\",\r\n  \"IsSearchable\": true,\r\n  \"IsSensitive\": true,\r\n  \"Active\": true,\r\n  \"Options\": [\r\n    {\r\n      \"Name\": \"string\"\r\n    }\r\n  ]\r\n}"
+              "raw": "{\r\n\t\"Name\": \"Creating an CFD through API\",\r\n\t\"IsMandatory\": true,\r\n\t\"SortOrder\": 5,\r\n\t\"DataInputType\": \"textfield\",\r\n\t\"ReferenceTable\": \"Implementations\",\r\n\t\"DataFieldType\": \"string\",\r\n\t\"IsSearchable\": true,\r\n\t\"IsSensitive\": true,\r\n\t\"Active\": true\r\n}"
             },
             "url": "https://{{your-marketplace}}.arcadier.io/api/v2/admins/{{adminID}}/custom-field-definitions",
             "description": "Creates Custom Field.\n\nInformation about how to create custom fields is documented on our [Github](https://github.com/Arcadier/Tutorials/tree/master/Creating%20Custom%20Fields)\n\n#### Authentication\n> Admin token only"
           },
           "response": [
             {
-              "id": "bef7b48e-6ab7-4ca0-a197-7ad2800a237b",
+              "id": "377787d6-8a9c-4258-ae64-4c8e286eb9b6",
               "name": "Create custom field",
               "originalRequest": {
                 "method": "POST",
@@ -4413,13 +4413,18 @@
                     "name": "Content-Type",
                     "value": "application/json",
                     "type": "text"
+                  },
+                  {
+                    "key": "Authorization",
+                    "value": "Bearer {{admintoken}}",
+                    "type": "text"
                   }
                 ],
                 "body": {
                   "mode": "raw",
-                  "raw": "{\r\n  \"Code\": \"Will_be _automatically_generated\",\r\n  \"Name\": \"Creating an CFD through API\",\r\n  \"IsMandatory\": true,\r\n  \"SortOrder\": 5,\r\n  \"DataInputType\": \"textfield\",\r\n  \"ReferenceTable\": \"Implementations\",\r\n  \"DataFieldType\": \"string\",\r\n  \"IsSearchable\": true,\r\n  \"IsSensitive\": true,\r\n  \"Active\": true,\r\n  \"CreatedDateTime\": \"1553483440\"\r\n}"
+                  "raw": "{\r\n\t\"Name\": \"Creating an CFD through API\",\r\n\t\"IsMandatory\": true,\r\n\t\"SortOrder\": 5,\r\n\t\"DataInputType\": \"textfield\",\r\n\t\"ReferenceTable\": \"Implementations\",\r\n\t\"DataFieldType\": \"string\",\r\n\t\"IsSearchable\": true,\r\n\t\"IsSensitive\": true,\r\n\t\"Active\": true\r\n}"
                 },
-                "url": "https://inkit.sandbox.arcadier.io/api/v2/admins/{{adminID}}/custom-field-definitions"
+                "url": "https://{{your-marketplace}}.arcadier.io/api/v2/admins/{{adminID}}/custom-field-definitions"
               },
               "status": "OK",
               "code": 200,
@@ -4442,6 +4447,10 @@
                   "value": "-1"
                 },
                 {
+                  "key": "request-id",
+                  "value": "fc514ed8-289f-4a33-a8c4-4595c2b66e82"
+                },
+                {
                   "key": "api-version",
                   "value": "v2"
                 },
@@ -4459,16 +4468,16 @@
                 },
                 {
                   "key": "Date",
-                  "value": "Mon, 25 Mar 2019 03:31:08 GMT"
+                  "value": "Mon, 16 Sep 2019 07:47:24 GMT"
                 },
                 {
                   "key": "Content-Length",
-                  "value": "291"
+                  "value": "369"
                 }
               ],
               "cookie": [],
               "responseTime": null,
-              "body": "{\n    \"Code\": \"11632-creatingancfdthroughapi-oGmdRbnx55\",\n    \"Name\": \"Creating an CFD through API\",\n    \"IsMandatory\": true,\n    \"SortOrder\": 5,\n    \"DataInputType\": \"textfield\",\n    \"ReferenceTable\": \"Implementations\",\n    \"DataFieldType\": \"string\",\n    \"IsSearchable\": true,\n    \"IsSensitive\": true,\n    \"Active\": true,\n    \"CreatedDateTime\": 1553484668\n}"
+              "body": "{\n    \"Code\": \"creatingancfdthroughapi-Ik0OAIw1nI\",\n    \"Name\": \"Creating an CFD through API\",\n    \"IsMandatory\": true,\n    \"SortOrder\": 5,\n    \"DataInputType\": \"textfield\",\n    \"DataRegex\": null,\n    \"MinValue\": null,\n    \"MaxValue\": null,\n    \"ReferenceTable\": \"Implementations\",\n    \"DataFieldType\": \"string\",\n    \"IsSearchable\": true,\n    \"IsSensitive\": true,\n    \"Active\": true,\n    \"CreatedDateTime\": 1568620044,\n    \"Options\": null,\n    \"Translations\": null\n}"
             }
           ]
         },
@@ -5777,85 +5786,7 @@
             "url": "https://{{your-marketplace}}.arcadier.io/api/v2/merchants/{{merchantID}}a/items/{{itemID}}/tags",
             "description": "Merchant adds a tag to his/her own item.\n\n#### Authentication\n> Merchant token only"
           },
-          "response": [
-            {
-              "id": "eb752d61-69ee-43c4-b380-77cfe5f1c4c8",
-              "name": "Tag Item with names of Thien tien and tanoo",
-              "originalRequest": {
-                "method": "POST",
-                "header": [
-                  {
-                    "key": "Content-Type",
-                    "name": "Content-Type",
-                    "value": "application/json",
-                    "type": "text"
-                  },
-                  {
-                    "key": "Authorization",
-                    "value": "Bearer PBtRWGi3ouqTtO6TskejSdh2yGS8xc9UtY1dLvxuuU9c4i2MSnFo1-2GK-VnLw5pDah-US6Hy9rZaYfb6RCLOHgh8j0m83VYuS3Sl9tlhgCmIUUXpdah2RETejWCak9gK72PCDch0Kl3R9RCC7wtRHs2pVetIFsU8QEnNKxuqzAebRBwVEZYZQO7vRJ_E5Vv-1cDjBDAJqhycn_08i2o3wSuZVgFiEerWiICKYlhodGlQK23dRANMyzan8qDcJmStff1h7Tu6BdZNhnPU4tv3VPMG3y2vjEg3ApTDOMTwQ6UpscZB5phAiQMKh98gfLELjDX6ydaNitTpZnykOK_aYxIlVuhMo64h8hzlFOTxBrOEZvrIYiwP0duJkGc0mw59Zs0vI1v4h46_9JwIi5GBaxPw3YzCAL7G8EFdgYXxe6wISS32lohxE_9H3WFqsR8pWcFxuWTyH6nX2LuWLBt0xUKysJoTRT0E4Is78tKeftazwcie-jG0G8vp8KVpFYyKmu5xCya5LcRYH-qceaH_aq9LMRFvyL5tzNOM_KFWX2AiTwFKt9iay-vhTGokR3AZC7K-qmOWf1Wo5LA8UVKg3s7A_cKWUO7PcblYAXHFqg_e_UbaRIWtkl8gt8kjzOmJEl-xFxg9TSND9fgcbiF2ImUbV9e-Z7xAP7UbuMetb4O-2t3e8-cnAxTuInlS6bNDgV_URPMVrHO6wzZwgHke8F2TkQ",
-                    "type": "text"
-                  }
-                ],
-                "body": {
-                  "mode": "raw",
-                  "raw": "[\r\n\t\"Tien\",\r\n\t\"Thien\",\r\n\t\"Tanoo\"\r\n]"
-                },
-                "url": "https://{{your-marketplace}}.arcadier.io/api/v2/merchants/02ec5b74-ecc2-4c9c-9048-dbfc9de419ba/items/{{itemID}}/tags"
-              },
-              "status": "OK",
-              "code": 200,
-              "_postman_previewlanguage": "json",
-              "header": [
-                {
-                  "key": "Cache-Control",
-                  "value": "no-cache"
-                },
-                {
-                  "key": "Pragma",
-                  "value": "no-cache"
-                },
-                {
-                  "key": "Content-Type",
-                  "value": "application/json; charset=utf-8"
-                },
-                {
-                  "key": "Expires",
-                  "value": "-1"
-                },
-                {
-                  "key": "request-id",
-                  "value": "05c46ea0-cd95-411e-90c9-92acadc60b29"
-                },
-                {
-                  "key": "api-version",
-                  "value": "v2"
-                },
-                {
-                  "key": "X-XSS-Protection",
-                  "value": "1; mode=block"
-                },
-                {
-                  "key": "X-Content-Type-Options",
-                  "value": "nosniff"
-                },
-                {
-                  "key": "X-Powered-By",
-                  "value": "ARR/3.0"
-                },
-                {
-                  "key": "Date",
-                  "value": "Mon, 16 Sep 2019 03:01:57 GMT"
-                },
-                {
-                  "key": "Content-Length",
-                  "value": "15"
-                }
-              ],
-              "cookie": [],
-              "responseTime": null,
-              "body": "{\n    \"Result\": true\n}"
-            }
-          ]
+          "response": []
         },
         {
           "name": "Delete tags",
