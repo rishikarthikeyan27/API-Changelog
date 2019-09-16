@@ -9748,7 +9748,7 @@
               "raw": "{\n    \"{{column-name1}}\": \" \",\n    \"{{column-name2}}\": \" \"\n}"
             },
             "url": "https://{{your-marketplace}}.arcadier.io/api/v2/plugins/{{packageID}}/custom-tables/{{custom-table-name}}/rows",
-            "description": "Create a row of entries, for each column that you have created in the Custom Table. Empty row entries will be set to null, as long as at least one column has a row entry.\n\n#### Authentication\n> None"
+            "description": "Create a row of entries, for each column that you have created in the Custom Table. Empty row entries will be set to null, as long as at least one column has a row entry. For more information on Custom Tables, click [here](https://api.arcadier.com/overview-of-custom-tables).\n\n#### Authentication\n> None"
           },
           "response": [
             {
