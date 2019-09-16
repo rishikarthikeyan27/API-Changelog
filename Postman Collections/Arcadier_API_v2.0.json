@@ -1571,7 +1571,7 @@
             ],
             "body": {
               "mode": "raw",
-              "raw": "{\n    \"Name\": \"Arcadier HQ\",\n    \"Line1\": \"34 Boon Leat Terrace\",\n    \"Line2\": \"Mapletree\",\n    \"PostCode\": \"119886\",\n    \"Delivery\": true,\n    \"Pickup\": false,\n    \"SpecialInstructions\": \"Special Instructions\",\n    \"State\": \"Singapore\",\n    \"City\": \"Singapore\",\n    \"Country\": \"Singapore\",\n    \"CountryCode\": \"SG\"\n}"
+              "raw": "{\n    \"Name\": \"string\",\n    \"Line1\": \"string\",\n    \"Line2\": \"string\",\n    \"PostCode\": \"string\",\n    \"Delivery\": true,\n    \"Pickup\": true,\n    \"SpecialInstructions\": \"string\",\n    \"State\": \"string\",\n    \"City\": \"string\",\n    \"Country\": \"string\",\n    \"CountryCode\": \"string\"\n}"
             },
             "url": "https://{{your-marketplace}}.arcadier.io/api/v2/users/{{userID}}/addresses",
             "description": "Creates an address for the specified user in the userID.\n\n#### Authentication\n> **Admin token**\n>\n> Creates addresses for:\n> Admin, \n> Merchant, \n> Buyer\n> ______________________\n> **Merchant token**\n> \n> Creates addresses for:\n> Merchant\n> ______________________\n> **Buyer token**\n>\n> Creates addresses for:\n> Buyer"
