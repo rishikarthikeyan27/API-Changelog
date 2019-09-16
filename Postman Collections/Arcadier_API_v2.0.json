@@ -5882,6 +5882,7 @@
               {
                 "key": "Authorization",
                 "value": "Bearer {{merchanttoken}}",
+                "description": "This can be {{admintoken}} as well.",
                 "type": "text"
               }
             ],
@@ -5889,13 +5890,13 @@
               "mode": "raw",
               "raw": "[\r\n\t\"string\",\r\n\t\"string\",\r\n\t\"string\"\r\n]"
             },
-            "url": "https://{{your-marketplace}}.arcadier.io/api/v2/merchants/{{merchantID}}/items/{{itemID}}/tags",
+            "url": "https://{{your-marketplace}}.arcadier.io/api/v2/merchants/{{merchantID}}a/items/{{itemID}}/tags",
             "description": "Merchant adds a tag to his/her own item.\n\n#### Authentication\n> Merchant token only"
           },
           "response": [
             {
-              "id": "687196aa-c98b-44de-abe6-f0ff073c9933",
-              "name": "Tag Item",
+              "id": "eb752d61-69ee-43c4-b380-77cfe5f1c4c8",
+              "name": "Tag Item with names of Thien tien and tanoo",
               "originalRequest": {
                 "method": "POST",
                 "header": [
@@ -5904,13 +5905,18 @@
                     "name": "Content-Type",
                     "value": "application/json",
                     "type": "text"
+                  },
+                  {
+                    "key": "Authorization",
+                    "value": "Bearer PBtRWGi3ouqTtO6TskejSdh2yGS8xc9UtY1dLvxuuU9c4i2MSnFo1-2GK-VnLw5pDah-US6Hy9rZaYfb6RCLOHgh8j0m83VYuS3Sl9tlhgCmIUUXpdah2RETejWCak9gK72PCDch0Kl3R9RCC7wtRHs2pVetIFsU8QEnNKxuqzAebRBwVEZYZQO7vRJ_E5Vv-1cDjBDAJqhycn_08i2o3wSuZVgFiEerWiICKYlhodGlQK23dRANMyzan8qDcJmStff1h7Tu6BdZNhnPU4tv3VPMG3y2vjEg3ApTDOMTwQ6UpscZB5phAiQMKh98gfLELjDX6ydaNitTpZnykOK_aYxIlVuhMo64h8hzlFOTxBrOEZvrIYiwP0duJkGc0mw59Zs0vI1v4h46_9JwIi5GBaxPw3YzCAL7G8EFdgYXxe6wISS32lohxE_9H3WFqsR8pWcFxuWTyH6nX2LuWLBt0xUKysJoTRT0E4Is78tKeftazwcie-jG0G8vp8KVpFYyKmu5xCya5LcRYH-qceaH_aq9LMRFvyL5tzNOM_KFWX2AiTwFKt9iay-vhTGokR3AZC7K-qmOWf1Wo5LA8UVKg3s7A_cKWUO7PcblYAXHFqg_e_UbaRIWtkl8gt8kjzOmJEl-xFxg9TSND9fgcbiF2ImUbV9e-Z7xAP7UbuMetb4O-2t3e8-cnAxTuInlS6bNDgV_URPMVrHO6wzZwgHke8F2TkQ",
+                    "type": "text"
                   }
                 ],
                 "body": {
                   "mode": "raw",
-                  "raw": "[\n\t\"Been used for 3 years\",\n\t\"Metal strings\",\n\t\"Doesn't come with amp\",\n\t\"Another tag\",\n\t\"Bites the dust\"\n]"
+                  "raw": "[\r\n\t\"Tien\",\r\n\t\"Thien\",\r\n\t\"Tanoo\"\r\n]"
                 },
-                "url": "https://{{your-marketplace}}.arcadier.io/api/v2/merchants/{{merchantID}}/items/{{itemID}}/tags"
+                "url": "https://{{your-marketplace}}.arcadier.io/api/v2/merchants/02ec5b74-ecc2-4c9c-9048-dbfc9de419ba/items/{{itemID}}/tags"
               },
               "status": "OK",
               "code": 200,
@@ -5933,6 +5939,10 @@
                   "value": "-1"
                 },
                 {
+                  "key": "request-id",
+                  "value": "05c46ea0-cd95-411e-90c9-92acadc60b29"
+                },
+                {
                   "key": "api-version",
                   "value": "v2"
                 },
@@ -5950,7 +5960,7 @@
                 },
                 {
                   "key": "Date",
-                  "value": "Tue, 26 Mar 2019 03:36:21 GMT"
+                  "value": "Mon, 16 Sep 2019 03:01:57 GMT"
                 },
                 {
                   "key": "Content-Length",
