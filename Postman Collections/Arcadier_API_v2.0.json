@@ -413,91 +413,14 @@
             ],
             "body": {
               "mode": "raw",
-              "raw": "{\r\n  \"Email\": \"tanoo@hotmail.com\",\r\n  \"Password\": \"password1234\",\r\n  \"ConfirmPassword\": \"password1234\"\r\n}"
+              "raw": "{\r\n  \"Email\": \"string\",\r\n  \"Password\": \"string\",\r\n  \"ConfirmPassword\": \"string\"\r\n}"
             },
             "url": "https://{{your-marketplace}}.arcadier.io/api/v2/accounts/register",
             "description": "Creates a new **Buyer** account. E-mail should be unique (not already existing) and password should be at least 6 characters long.\n\n#### Authentication\n> Admin token only"
           },
           "response": [
             {
-              "id": "80da11d2-a068-4db0-9595-7efa4d4a58d1",
-              "name": "Register Consumer Account",
-              "originalRequest": {
-                "method": "POST",
-                "header": [
-                  {
-                    "key": "Content-Type",
-                    "name": "Content-Type",
-                    "type": "text",
-                    "value": "application/json"
-                  },
-                  {
-                    "key": "Authorization",
-                    "value": "Bearer 7cgLJ0ndlph2Pm4NJWcsyK7MNA7fEiGMz4Uy-M-MxVYFdRZiIvGXWBL41kP4a0v_nlw5E5tbGkXSGGuyyT2p6rITep21Q81K0l12sJEAVaRj3hGERop2Lwsm1sWIe3sQWKPpTcu_d2z2GSBIjvrGkvdAeipVqEABfFrL6lYeLANsc6w3ZottRuviRNLkeqNWrymsEKwqp7f_wQNr7QLHTIZVVW2VXuwVBTSOezmnPWnKE5T1Vruj1Z1ur-Lw3L10D3WyGZ0XxsH5reWmvJoPsB-bktPxGwKksnDAfAEtexWdKHSZqjFhsxEJs9C_D3nJA83GaaOns7ap9MxL-_n0DrPN3QJA-e2hb0hA_Mf0NKvWb6GA9EAqBK1P1fsAUnqdFTFdBTVD3OuhORBABCNO_NPXaCi4oRXEytzxg482R65Bi0ozeouHikbDvnLbqib_qaPYLet_4icLTOU1MmyuJrrn1uMYTBhfI4hdFuGy5ZHx5AHgdawb-sefhqNAV_T1Rlz28xJuVBnBrhWMizCxZiC2ldNo40bm2VfLKL-QSQas81zGcXiDoOQ4s8ut78MDHxcJ6xd0dMf_qmDb8zBxbppO3SJDleXbJdDVnVVF4fI2GkyKt0fVB9L9dYh8ZRNs7IEQ_A6djGqcfwkDLcbbfK8WC0od86zCoHIBzOqIAhEcab4pRR76596cChIQcQ6R-7P6uAl-fAGv2QvMYksgvE7xpRJuG8IOiZm1UHHreiGqflnzlTdj7G2OZtLMwDQ-Pp8nOuSANQT10-Q_kUMkZihPFGY",
-                    "type": "text"
-                  }
-                ],
-                "body": {
-                  "mode": "raw",
-                  "raw": "{\r\n  \"Email\": \"string2323454\",\r\n  \"Password\": \"string12341234\"\r\n}"
-                },
-                "url": "https://{{your-marketplace}}.arcadier.io/api/v2/accounts/register"
-              },
-              "status": "OK",
-              "code": 200,
-              "_postman_previewlanguage": "json",
-              "header": [
-                {
-                  "key": "Cache-Control",
-                  "value": "no-cache"
-                },
-                {
-                  "key": "Pragma",
-                  "value": "no-cache"
-                },
-                {
-                  "key": "Content-Type",
-                  "value": "application/json; charset=utf-8"
-                },
-                {
-                  "key": "Expires",
-                  "value": "-1"
-                },
-                {
-                  "key": "request-id",
-                  "value": "738f4bdc-dfe3-4a05-8f5f-84e949f42b1a"
-                },
-                {
-                  "key": "api-version",
-                  "value": "v2"
-                },
-                {
-                  "key": "X-XSS-Protection",
-                  "value": "1; mode=block"
-                },
-                {
-                  "key": "X-Content-Type-Options",
-                  "value": "nosniff"
-                },
-                {
-                  "key": "X-Powered-By",
-                  "value": "ARR/3.0"
-                },
-                {
-                  "key": "Date",
-                  "value": "Thu, 12 Sep 2019 06:11:19 GMT"
-                },
-                {
-                  "key": "Content-Length",
-                  "value": "943"
-                }
-              ],
-              "cookie": [],
-              "responseTime": null,
-              "body": "{\n    \"access_token\": \"OB1n8splSpLJbxWZLMEXWe8pvGdpDfbk9IgKSFpqxTIijp2_5DFHMFlA8ih-T-dqTCCOVuDo0Qy5qMBfEaYe97iYsoI2kZskCL4-HaRepSlu8BnmprxWRlFXRDZs-X8u-CJS3YTTxD6XROhCneR1qt4xLGkhVbxbrID2jZPCw-JTPy1ALlxK20cz2obiVc-Vcoi08QXJZeoN9VRl8eh234HxyfCwgoZMYenmD42STDE5dO_6NCEdcwt00MNe-IgdAiujZGaMYf12XpcBZD7pptZdwzv4_6fGp0aNLwjd5oX-oqayH_MZWhsuEbEFXMO5GRwMqlCatqg7gxqG-gzcUzTVbeMHaC5vYyTSBnObUR0M-rvs5ThqXurs8gWxn1mrjBcZpyeN0S2eKdYSJ9hzbVFvxojc1d7sr4LU2p5qL7G7Z5epPbtnJj6qIfPphjPjEbcoe3GXYFcY7drdnyEAwg8tTPeodrbER3WAYQwv8NBIjs9V3wmTdujCf7C-LbQxzz8QPBDGdEh7HlETuTePUMBGPEmaoqFXniBHPALUUTtRw2AJsMNHq38rVAz6cb7A1UE7h1BuCVnn5gzlnKmW3z6ZkdgECUKcVWjywCdAmcZ_8m3yhG1lJEECZabL3yNpsrKPmePnwG-JLbAbKqpHHjb_9jJUU54WEChmcz-NG65wNcBPkX_NAxhmhs9xJQcnbWkZszJRZcN1Onf2CUVT5cqngP88XtrVrbqlQh6Zb8HjJIYP\",\n    \"token_type\": \"bearer\",\n    \"expires_in\": 107999,\n    \"refresh_token\": \"726ab55b73b849478efe07b85c751ecd\",\n    \".issued\": null,\n    \".expires\": null,\n    \"UserId\": \"949a4da0-6657-4450-821a-63a8cb279ef3\"\n}"
-            },
-            {
-              "id": "effaa47a-8233-40f7-988e-602f5a98b823",
+              "id": "75422a40-0fa5-4db8-bdff-7cf34afc806d",
               "name": "Register Consumer Account",
               "originalRequest": {
                 "method": "POST",
@@ -516,7 +439,7 @@
                 ],
                 "body": {
                   "mode": "raw",
-                  "raw": "{\r\n  \"Email\": \"tanoo@hotmail.com\",\r\n  \"Password\": \"password1234\",\r\n  \"ConfirmPassword\": \"password1234\"\r\n}"
+                  "raw": "{\r\n  \"Email\": \"string\",\r\n  \"Password\": \"string\",\r\n  \"ConfirmPassword\": \"string\"\r\n}"
                 },
                 "url": "https://{{your-marketplace}}.arcadier.io/api/v2/accounts/register"
               },
