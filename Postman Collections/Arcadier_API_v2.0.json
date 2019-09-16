@@ -1682,7 +1682,7 @@
             ],
             "body": {
               "mode": "raw",
-              "raw": "{\n    \"ID\": \"string\",\n    \"Name\": \"string\",\n    \"Line1\": \"string\",\n    \"Line2\": \"string\",\n    \"PostCode\": \"string\",\n    \"Delivery\": true,\n    \"Pickup\": true,\n    \"SpecialInstructions\": \"string\",\n    \"State\": \"string\",\n    \"City\": \"string\",\n    \"Country\": \"string\",\n    \"CountryCode\": \"string\"\n}"
+              "raw": "{\n    \"Name\": \"Arcadier HQ\",\n    \"Line1\": \"34 Boon Leat Terrace\",\n    \"Line2\": \"Mapletree\",\n    \"PostCode\": \"019886\",\n    \"Delivery\": true,\n    \"Pickup\": true,\n    \"SpecialInstructions\": \"Special\",\n    \"State\": \"Singapore\",\n    \"City\": \"Singapore\",\n    \"Country\": \"Singapore\",\n    \"CountryCode\": \"SG\"\n}\n\n\n"
             },
             "url": "https://{{your-marketplace}}.arcadier.io/api/v2/users/{{userID}}/addresses/{{addressID}}",
             "description": "Edits the details of the address specified in the addressID. Response will be the updated address.\n\n#### Authentication\n> **Admin token**\n>\n> Updates addresses for:\n> Admin, \n> Merchant, \n> Buyer\n> ______________________\n>\n> **Merchant token**\n> \n> Updates addresses for:\n> Merchant\n> ______________________\n>\n> **Buyer token**\n>\n> Updates addresses for:\n> Buyer"
