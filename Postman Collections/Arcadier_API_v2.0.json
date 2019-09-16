@@ -3893,7 +3893,7 @@
             ],
             "body": {
               "mode": "raw",
-              "raw": "{\n  \"Name\": \"string\",\n  \"Description\": \"string\",\n  \"SortOrder\": 0,\n  \"Media\": [\n    {\n      \"ID\": \"00000000-0000-0000-0000-000000000000\",\n      \"MediaUrl\": \"string\"\n    }\n  ],\n  \"ParentCategoryID\": \"00000000-0000-0000-0000-000000000000\",\n  \"Level\": 0\n}"
+              "raw": "{\n  \"Name\": \"Grand Piano\",\n  \"Description\": \"Guaranteed to pull out the Taylor Swift hidden inside you\",\n  \"SortOrder\": 1,\n  \"Media\": [\n    {\n      \"ID\": \"00000000-0000-0000-0000-000000000000\",\n      \"MediaUrl\": \"https://static1.squarespace.com/static/58c25c63cd0f68722ca260d8/5b0d95998a922d7f4d0ed3bb/5b15f40c88251b408d488515/1528165492648/OMS+PIANO+IMAGE+1.JPG\"\n    }\n  ],\n  \"ParentCategoryID\": \"b40da804-377d-46c4-a11f-b46064002831\",\n  \"Level\": 1\n}\n\n"
             },
             "url": "https://{{your-marketplace}}.arcadier.io/api/v2/admins/{{adminID}}/categories",
             "description": "Creates a category or sub-category.\n\n#### Authentication\n> Admin token only"
