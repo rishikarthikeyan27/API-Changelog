@@ -3893,7 +3893,7 @@
             ],
             "body": {
               "mode": "raw",
-              "raw": "{\r\n  \"Name\": \"Keys\",\r\n  \"Description\": \"The finest collection of keys be it classic or electronic\",\r\n  \"SortOrder\": \"3\",\r\n  \"Media\": [\r\n    {\r\n      \"MediaUrl\": \"https://static1.squarespace.com/static/58c25c63cd0f68722ca260d8/5b0d95998a922d7f4d0ed3bb/5b15f40c88251b408d488515/1528165492648/OMS+PIANO+IMAGE+1.JPG\"\r\n    }\r\n  ],\r\n  \"ParentCategoryID\": \"a797d917-11a8-4590-99af-24a6cdd1d3e3\",\r\n  \"Level\": 0\r\n}\r\n\r\n"
+              "raw": "{\n  \"Name\": \"string\",\n  \"Description\": \"string\",\n  \"SortOrder\": 0,\n  \"Media\": [\n    {\n      \"ID\": \"00000000-0000-0000-0000-000000000000\",\n      \"MediaUrl\": \"string\"\n    }\n  ],\n  \"ParentCategoryID\": \"00000000-0000-0000-0000-000000000000\",\n  \"Level\": 0\n}"
             },
             "url": "https://{{your-marketplace}}.arcadier.io/api/v2/admins/{{adminID}}/categories",
             "description": "Creates a category or sub-category.\n\n#### Authentication\n> Admin token only"
@@ -4060,8 +4060,8 @@
               "body": "{\n    \"ID\": \"0aa3f93b-268c-4439-93de-63ce021de58a\",\n    \"Name\": \"Grand Piano\",\n    \"Description\": \"Guaranteed to pull out the Taylor Swift hidden inside yu\",\n    \"SortOrder\": 1,\n    \"Media\": [\n        {\n            \"MediaUrl\": \"https://upload.wikimedia.org/wikipedia/commons/8/86/Steinway_%26_Sons_Grand_Piano.jpg\"\n        }\n    ],\n    \"CreatedDateTime\": 1553844437,\n    \"ModifiedDateTime\": 1553844437\n}"
             },
             {
-              "id": "c0f1b2e2-8947-4a0f-9d9e-65e7f82d6bd0",
-              "name": "test",
+              "id": "51c96aa4-bd1c-461f-bfac-a0480018984b",
+              "name": "Admin - Create a category",
               "originalRequest": {
                 "method": "POST",
                 "header": [
@@ -4079,7 +4079,7 @@
                 ],
                 "body": {
                   "mode": "raw",
-                  "raw": "{\r\n  \"ID\": \"this will be auto generated\",\r\n  \"Name\": \"Test auth in header\",\r\n  \"Description\": \"test auth in header\",\r\n  \"SortOrder\": 0,\r\n  \"Level\": 0,\r\n  \"CreatedDateTime\": \"2019-03-29T07:24:03.048Z\",\r\n  \"ModifiedDateTime\": \"2019-03-29T07:24:03.048Z\"\r\n}"
+                  "raw": "{\r\n  \"Name\": \"Keys\",\r\n  \"Description\": \"The finest collection of keys be it classic or electronic\",\r\n  \"SortOrder\": 0,\r\n  \"Media\": [\r\n    {\r\n      \"ID\": \"00000000-0000-0000-0000-000000000000\",\r\n      \"MediaUrl\": \"https://static1.squarespace.com/static/58c25c63cd0f68722ca260d8/5b0d95998a922d7f4d0ed3bb/5b15f40c88251b408d488515/1528165492648/OMS+PIANO+IMAGE+1.JPG\"\r\n    }\r\n  ],\r\n  \"Level\": 0\r\n}\r\n\r\n"
                 },
                 "url": "https://{{your-marketplace}}.arcadier.io/api/v2/admins/{{adminID}}/categories"
               },
@@ -4100,24 +4100,12 @@
                   "value": "application/json; charset=utf-8"
                 },
                 {
-                  "key": "Content-Encoding",
-                  "value": "gzip"
-                },
-                {
                   "key": "Expires",
                   "value": "-1"
                 },
                 {
-                  "key": "Vary",
-                  "value": "Accept-Encoding"
-                },
-                {
-                  "key": "X-StackifyID",
-                  "value": "V1|8000566a-1401-3900-b63f-84710c7967bb|"
-                },
-                {
-                  "key": "X-StackifyID",
-                  "value": "V1|80000113-1401-5500-b63f-84710c7967bb|"
+                  "key": "request-id",
+                  "value": "96a5d58a-e527-4b38-a959-4c31a0329954"
                 },
                 {
                   "key": "api-version",
@@ -4132,17 +4120,98 @@
                   "value": "nosniff"
                 },
                 {
+                  "key": "X-Powered-By",
+                  "value": "ARR/3.0"
+                },
+                {
                   "key": "Date",
-                  "value": "Fri, 29 Mar 2019 07:53:33 GMT"
+                  "value": "Mon, 16 Sep 2019 06:18:06 GMT"
                 },
                 {
                   "key": "Content-Length",
-                  "value": "258"
+                  "value": "469"
                 }
               ],
               "cookie": [],
               "responseTime": null,
-              "body": "{\n    \"ID\": \"3c6f524e-a108-4864-b262-f96e0e34745a\",\n    \"Name\": \"Test auth in header\",\n    \"Description\": \"test auth in header\",\n    \"SortOrder\": 0,\n    \"Media\": [],\n    \"CreatedDateTime\": 1553846013,\n    \"ModifiedDateTime\": 1553846013\n}"
+              "body": "{\n    \"ID\": \"b40da804-377d-46c4-a11f-b46064002831\",\n    \"Name\": \"Keys\",\n    \"Description\": \"The finest collection of keys be it classic or electronic\",\n    \"SortOrder\": 0,\n    \"Media\": [\n        {\n            \"ID\": null,\n            \"MediaUrl\": \"https://static1.squarespace.com/static/58c25c63cd0f68722ca260d8/5b0d95998a922d7f4d0ed3bb/5b15f40c88251b408d488515/1528165492648/OMS+PIANO+IMAGE+1.JPG\"\n        }\n    ],\n    \"ParentCategoryID\": null,\n    \"ChildCategories\": null,\n    \"Level\": null,\n    \"CreatedDateTime\": 1568614686,\n    \"ModifiedDateTime\": 1568614686,\n    \"Commission\": null\n}"
+            },
+            {
+              "id": "c46d9d64-f52a-4854-a640-82ef33c599c1",
+              "name": "Admin - Create a sub category",
+              "originalRequest": {
+                "method": "POST",
+                "header": [
+                  {
+                    "key": "Content-Type",
+                    "name": "Content-Type",
+                    "value": "application/json",
+                    "type": "text"
+                  },
+                  {
+                    "key": "Authorization",
+                    "value": "Bearer {{admintoken}}",
+                    "type": "text"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\r\n  \"Name\": \"Grand Piano\",\r\n  \"Description\": \"Guaranteed to pull out the Taylor Swift hidden inside you\",\r\n  \"SortOrder\": 1,\r\n  \"Media\": [\r\n    {\r\n      \"ID\": \"00000000-0000-0000-0000-000000000000\",\r\n      \"MediaUrl\": \"https://static1.squarespace.com/static/58c25c63cd0f68722ca260d8/5b0d95998a922d7f4d0ed3bb/5b15f40c88251b408d488515/1528165492648/OMS+PIANO+IMAGE+1.JPG\"\r\n    }\r\n  ],\r\n  \"ParentCategoryID\": \"b40da804-377d-46c4-a11f-b46064002831\",\r\n  \"Level\": 1\r\n}\r\n\r\n"
+                },
+                "url": "https://{{your-marketplace}}.arcadier.io/api/v2/admins/{{adminID}}/categories"
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Cache-Control",
+                  "value": "no-cache"
+                },
+                {
+                  "key": "Pragma",
+                  "value": "no-cache"
+                },
+                {
+                  "key": "Content-Type",
+                  "value": "application/json; charset=utf-8"
+                },
+                {
+                  "key": "Expires",
+                  "value": "-1"
+                },
+                {
+                  "key": "request-id",
+                  "value": "17eb7d28-bcbf-40f8-bebc-c5c954a909a0"
+                },
+                {
+                  "key": "api-version",
+                  "value": "v2"
+                },
+                {
+                  "key": "X-XSS-Protection",
+                  "value": "1; mode=block"
+                },
+                {
+                  "key": "X-Content-Type-Options",
+                  "value": "nosniff"
+                },
+                {
+                  "key": "X-Powered-By",
+                  "value": "ARR/3.0"
+                },
+                {
+                  "key": "Date",
+                  "value": "Mon, 16 Sep 2019 06:19:58 GMT"
+                },
+                {
+                  "key": "Content-Length",
+                  "value": "476"
+                }
+              ],
+              "cookie": [],
+              "responseTime": null,
+              "body": "{\n    \"ID\": \"24a12816-3721-4f6e-bc46-3b6acf3a277e\",\n    \"Name\": \"Grand Piano\",\n    \"Description\": \"Guaranteed to pull out the Taylor Swift hidden inside you\",\n    \"SortOrder\": 1,\n    \"Media\": [\n        {\n            \"ID\": null,\n            \"MediaUrl\": \"https://static1.squarespace.com/static/58c25c63cd0f68722ca260d8/5b0d95998a922d7f4d0ed3bb/5b15f40c88251b408d488515/1528165492648/OMS+PIANO+IMAGE+1.JPG\"\n        }\n    ],\n    \"ParentCategoryID\": null,\n    \"ChildCategories\": null,\n    \"Level\": null,\n    \"CreatedDateTime\": 1568614798,\n    \"ModifiedDateTime\": 1568614798,\n    \"Commission\": null\n}"
             }
           ]
         },
