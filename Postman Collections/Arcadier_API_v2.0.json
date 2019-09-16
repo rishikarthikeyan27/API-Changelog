@@ -1274,167 +1274,7 @@
           },
           "response": [
             {
-              "id": "38f359a5-0f40-413d-a281-0fee782a2098",
-              "name": "Create a category",
-              "originalRequest": {
-                "method": "POST",
-                "header": [
-                  {
-                    "key": "Content-Type",
-                    "name": "Content-Type",
-                    "value": "application/json",
-                    "type": "text"
-                  }
-                ],
-                "body": {
-                  "mode": "raw",
-                  "raw": "{\r\n  \"ID\": \"this_will_be_automatically_generated\",\r\n  \"Name\": \"Keys\",\r\n  \"Description\": \"The finest collection of keys be it classic or electronic\",\r\n  \"SortOrder\": 3,\r\n  \"Media\": [\r\n    {\r\n      \r\n      \"MediaUrl\": \"https://static1.squarespace.com/static/58c25c63cd0f68722ca260d8/5b0d95998a922d7f4d0ed3bb/5b15f40c88251b408d488515/1528165492648/OMS+PIANO+IMAGE+1.JPG\"\r\n    }\r\n  ],\r\n  \"Level\": 0,\r\n  \"CreatedDateTime\": \"2019-03-29T02:30:20.143Z\",\r\n  \"ModifiedDateTime\": \"2019-03-29T02:30:20.143Z\"\r\n}"
-                },
-                "url": "https://{{your-marketplace}}.arcadier.io/api/v2/admins/{{adminID}}/categories"
-              },
-              "status": "OK",
-              "code": 200,
-              "_postman_previewlanguage": "json",
-              "header": [
-                {
-                  "key": "Cache-Control",
-                  "value": "no-cache"
-                },
-                {
-                  "key": "Pragma",
-                  "value": "no-cache"
-                },
-                {
-                  "key": "Content-Type",
-                  "value": "application/json; charset=utf-8"
-                },
-                {
-                  "key": "Content-Encoding",
-                  "value": "gzip"
-                },
-                {
-                  "key": "Expires",
-                  "value": "-1"
-                },
-                {
-                  "key": "Vary",
-                  "value": "Accept-Encoding"
-                },
-                {
-                  "key": "X-StackifyID",
-                  "value": "V1|8000450b-1401-0500-b63f-84710c7967bb|"
-                },
-                {
-                  "key": "X-StackifyID",
-                  "value": "V1|800000b0-1401-5900-b63f-84710c7967bb|"
-                },
-                {
-                  "key": "api-version",
-                  "value": "v2"
-                },
-                {
-                  "key": "X-XSS-Protection",
-                  "value": "1; mode=block"
-                },
-                {
-                  "key": "X-Content-Type-Options",
-                  "value": "nosniff"
-                },
-                {
-                  "key": "Date",
-                  "value": "Fri, 29 Mar 2019 07:22:40 GMT"
-                },
-                {
-                  "key": "Content-Length",
-                  "value": "442"
-                }
-              ],
-              "cookie": [],
-              "responseTime": null,
-              "body": "{\n    \"ID\": \"20635dc3-8dae-4217-ad66-192beb43af07\",\n    \"Name\": \"Keys\",\n    \"Description\": \"The finest collection of keys be it classic or electronic\",\n    \"SortOrder\": 3,\n    \"Media\": [\n        {\n            \"MediaUrl\": \"https://static1.squarespace.com/static/58c25c63cd0f68722ca260d8/5b0d95998a922d7f4d0ed3bb/5b15f40c88251b408d488515/1528165492648/OMS+PIANO+IMAGE+1.JPG\"\n        }\n    ],\n    \"CreatedDateTime\": 1553844160,\n    \"ModifiedDateTime\": 1553844160\n}"
-            },
-            {
-              "id": "6513c92d-5e42-4478-bd1c-8176c8029cf9",
-              "name": "Create a sub category",
-              "originalRequest": {
-                "method": "POST",
-                "header": [
-                  {
-                    "key": "Content-Type",
-                    "name": "Content-Type",
-                    "value": "application/json",
-                    "type": "text"
-                  }
-                ],
-                "body": {
-                  "mode": "raw",
-                  "raw": "{\r\n  \"ID\": \"this will be automatically generated\",\r\n  \"Name\": \"Grand Piano\",\r\n  \"Description\": \"Guaranteed to pull out the Taylor Swift hidden inside yu\",\r\n  \"SortOrder\": 1,\r\n  \"Media\": [\r\n    {\r\n      \"MediaUrl\": \"https://upload.wikimedia.org/wikipedia/commons/8/86/Steinway_%26_Sons_Grand_Piano.jpg\"\r\n    }\r\n  ],\r\n  \"ParentCategoryID\": \"20635dc3-8dae-4217-ad66-192beb43af07\",\r\n  \"Level\": 1,\r\n  \"CreatedDateTime\": \"2019-03-29T07:24:03.048Z\",\r\n  \"ModifiedDateTime\": \"2019-03-29T07:24:03.048Z\"\r\n}"
-                },
-                "url": "https://{{your-marketplace}}.arcadier.io/api/v2/admins/{{adminID}}/categories"
-              },
-              "status": "OK",
-              "code": 200,
-              "_postman_previewlanguage": "json",
-              "header": [
-                {
-                  "key": "Cache-Control",
-                  "value": "no-cache"
-                },
-                {
-                  "key": "Pragma",
-                  "value": "no-cache"
-                },
-                {
-                  "key": "Content-Type",
-                  "value": "application/json; charset=utf-8"
-                },
-                {
-                  "key": "Content-Encoding",
-                  "value": "gzip"
-                },
-                {
-                  "key": "Expires",
-                  "value": "-1"
-                },
-                {
-                  "key": "Vary",
-                  "value": "Accept-Encoding"
-                },
-                {
-                  "key": "X-StackifyID",
-                  "value": "V1|80003466-1401-4300-b63f-84710c7967bb|"
-                },
-                {
-                  "key": "X-StackifyID",
-                  "value": "V1|80002bde-1401-0700-b63f-84710c7967bb|"
-                },
-                {
-                  "key": "api-version",
-                  "value": "v2"
-                },
-                {
-                  "key": "X-XSS-Protection",
-                  "value": "1; mode=block"
-                },
-                {
-                  "key": "X-Content-Type-Options",
-                  "value": "nosniff"
-                },
-                {
-                  "key": "Date",
-                  "value": "Fri, 29 Mar 2019 07:27:17 GMT"
-                },
-                {
-                  "key": "Content-Length",
-                  "value": "376"
-                }
-              ],
-              "cookie": [],
-              "responseTime": null,
-              "body": "{\n    \"ID\": \"0aa3f93b-268c-4439-93de-63ce021de58a\",\n    \"Name\": \"Grand Piano\",\n    \"Description\": \"Guaranteed to pull out the Taylor Swift hidden inside yu\",\n    \"SortOrder\": 1,\n    \"Media\": [\n        {\n            \"MediaUrl\": \"https://upload.wikimedia.org/wikipedia/commons/8/86/Steinway_%26_Sons_Grand_Piano.jpg\"\n        }\n    ],\n    \"CreatedDateTime\": 1553844437,\n    \"ModifiedDateTime\": 1553844437\n}"
-            },
-            {
-              "id": "69be2ad5-9e45-4061-a366-52e62fa360fa",
+              "id": "791b5c74-e71a-4f42-b3d2-3948808b7868",
               "name": "Admin - Create a category",
               "originalRequest": {
                 "method": "POST",
@@ -1453,7 +1293,7 @@
                 ],
                 "body": {
                   "mode": "raw",
-                  "raw": "{\r\n  \"Name\": \"Keys\",\r\n  \"Description\": \"The finest collection of keys be it classic or electronic\",\r\n  \"SortOrder\": 0,\r\n  \"Media\": [\r\n    {\r\n      \"ID\": \"00000000-0000-0000-0000-000000000000\",\r\n      \"MediaUrl\": \"https://static1.squarespace.com/static/58c25c63cd0f68722ca260d8/5b0d95998a922d7f4d0ed3bb/5b15f40c88251b408d488515/1528165492648/OMS+PIANO+IMAGE+1.JPG\"\r\n    }\r\n  ],\r\n  \"Level\": 0\r\n}\r\n\r\n"
+                  "raw": "{\n  \"Name\": \"Keys\",\n  \"Description\": \"The finest collection of keys be it classic or electronic\",\n  \"SortOrder\": \"3\",\n  \"Media\": [\n    {\n      \"MediaUrl\": \"https://static1.squarespace.com/static/58c25c63cd0f68722ca260d8/5b0d95998a922d7f4d0ed3bb/5b15f40c88251b408d488515/1528165492648/OMS+PIANO+IMAGE+1.JPG\"\n    }\n  ],\n  \"ParentCategoryID\": \"a797d917-11a8-4590-99af-24a6cdd1d3e3\",\n  \"Level\": 0\n}\n\n"
                 },
                 "url": "https://{{your-marketplace}}.arcadier.io/api/v2/admins/{{adminID}}/categories"
               },
@@ -1479,7 +1319,7 @@
                 },
                 {
                   "key": "request-id",
-                  "value": "96a5d58a-e527-4b38-a959-4c31a0329954"
+                  "value": "52a0aa3a-a216-42c5-b49f-e4d270a3f810"
                 },
                 {
                   "key": "api-version",
@@ -1499,7 +1339,7 @@
                 },
                 {
                   "key": "Date",
-                  "value": "Mon, 16 Sep 2019 06:18:06 GMT"
+                  "value": "Mon, 16 Sep 2019 06:24:50 GMT"
                 },
                 {
                   "key": "Content-Length",
@@ -1508,84 +1348,7 @@
               ],
               "cookie": [],
               "responseTime": null,
-              "body": "{\n    \"ID\": \"b40da804-377d-46c4-a11f-b46064002831\",\n    \"Name\": \"Keys\",\n    \"Description\": \"The finest collection of keys be it classic or electronic\",\n    \"SortOrder\": 0,\n    \"Media\": [\n        {\n            \"ID\": null,\n            \"MediaUrl\": \"https://static1.squarespace.com/static/58c25c63cd0f68722ca260d8/5b0d95998a922d7f4d0ed3bb/5b15f40c88251b408d488515/1528165492648/OMS+PIANO+IMAGE+1.JPG\"\n        }\n    ],\n    \"ParentCategoryID\": null,\n    \"ChildCategories\": null,\n    \"Level\": null,\n    \"CreatedDateTime\": 1568614686,\n    \"ModifiedDateTime\": 1568614686,\n    \"Commission\": null\n}"
-            },
-            {
-              "id": "7bd0c808-956c-4325-8764-0f3b418828ca",
-              "name": "Admin - Create a sub category",
-              "originalRequest": {
-                "method": "POST",
-                "header": [
-                  {
-                    "key": "Content-Type",
-                    "name": "Content-Type",
-                    "value": "application/json",
-                    "type": "text"
-                  },
-                  {
-                    "key": "Authorization",
-                    "value": "Bearer {{admintoken}}",
-                    "type": "text"
-                  }
-                ],
-                "body": {
-                  "mode": "raw",
-                  "raw": "{\r\n  \"Name\": \"Grand Piano\",\r\n  \"Description\": \"Guaranteed to pull out the Taylor Swift hidden inside you\",\r\n  \"SortOrder\": 1,\r\n  \"Media\": [\r\n    {\r\n      \"ID\": \"00000000-0000-0000-0000-000000000000\",\r\n      \"MediaUrl\": \"https://static1.squarespace.com/static/58c25c63cd0f68722ca260d8/5b0d95998a922d7f4d0ed3bb/5b15f40c88251b408d488515/1528165492648/OMS+PIANO+IMAGE+1.JPG\"\r\n    }\r\n  ],\r\n  \"ParentCategoryID\": \"b40da804-377d-46c4-a11f-b46064002831\",\r\n  \"Level\": 1\r\n}\r\n\r\n"
-                },
-                "url": "https://{{your-marketplace}}.arcadier.io/api/v2/admins/{{adminID}}/categories"
-              },
-              "status": "OK",
-              "code": 200,
-              "_postman_previewlanguage": "json",
-              "header": [
-                {
-                  "key": "Cache-Control",
-                  "value": "no-cache"
-                },
-                {
-                  "key": "Pragma",
-                  "value": "no-cache"
-                },
-                {
-                  "key": "Content-Type",
-                  "value": "application/json; charset=utf-8"
-                },
-                {
-                  "key": "Expires",
-                  "value": "-1"
-                },
-                {
-                  "key": "request-id",
-                  "value": "17eb7d28-bcbf-40f8-bebc-c5c954a909a0"
-                },
-                {
-                  "key": "api-version",
-                  "value": "v2"
-                },
-                {
-                  "key": "X-XSS-Protection",
-                  "value": "1; mode=block"
-                },
-                {
-                  "key": "X-Content-Type-Options",
-                  "value": "nosniff"
-                },
-                {
-                  "key": "X-Powered-By",
-                  "value": "ARR/3.0"
-                },
-                {
-                  "key": "Date",
-                  "value": "Mon, 16 Sep 2019 06:19:58 GMT"
-                },
-                {
-                  "key": "Content-Length",
-                  "value": "476"
-                }
-              ],
-              "cookie": [],
-              "responseTime": null,
-              "body": "{\n    \"ID\": \"24a12816-3721-4f6e-bc46-3b6acf3a277e\",\n    \"Name\": \"Grand Piano\",\n    \"Description\": \"Guaranteed to pull out the Taylor Swift hidden inside you\",\n    \"SortOrder\": 1,\n    \"Media\": [\n        {\n            \"ID\": null,\n            \"MediaUrl\": \"https://static1.squarespace.com/static/58c25c63cd0f68722ca260d8/5b0d95998a922d7f4d0ed3bb/5b15f40c88251b408d488515/1528165492648/OMS+PIANO+IMAGE+1.JPG\"\n        }\n    ],\n    \"ParentCategoryID\": null,\n    \"ChildCategories\": null,\n    \"Level\": null,\n    \"CreatedDateTime\": 1568614798,\n    \"ModifiedDateTime\": 1568614798,\n    \"Commission\": null\n}"
+              "body": "{\n    \"ID\": \"be327faf-681b-49e4-8213-21410e22ee6b\",\n    \"Name\": \"Keys\",\n    \"Description\": \"The finest collection of keys be it classic or electronic\",\n    \"SortOrder\": 3,\n    \"Media\": [\n        {\n            \"ID\": null,\n            \"MediaUrl\": \"https://static1.squarespace.com/static/58c25c63cd0f68722ca260d8/5b0d95998a922d7f4d0ed3bb/5b15f40c88251b408d488515/1528165492648/OMS+PIANO+IMAGE+1.JPG\"\n        }\n    ],\n    \"ParentCategoryID\": null,\n    \"ChildCategories\": null,\n    \"Level\": null,\n    \"CreatedDateTime\": 1568615090,\n    \"ModifiedDateTime\": 1568615090,\n    \"Commission\": null\n}"
             }
           ]
         }
