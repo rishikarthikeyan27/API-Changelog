@@ -1241,38 +1241,6 @@
               "body": "{\n    \"Result\": true\n}"
             }
           ]
-        },
-        {
-          "name": "Admin - Create a category",
-          "_postman_id": "1d8a0906-d33a-4db0-8447-490d43880f2e",
-          "protocolProfileBehavior": {
-            "disableBodyPruning": true
-          },
-          "request": {
-            "auth": {
-              "type": "noauth"
-            },
-            "method": "POST",
-            "header": [
-              {
-                "key": "Content-Type",
-                "name": "Content-Type",
-                "value": "application/json",
-                "type": "text"
-              },
-              {
-                "key": "Authorization",
-                "value": "Bearer {{admintoken}}",
-                "type": "text"
-              }
-            ],
-            "body": {
-              "mode": "raw",
-              "raw": "{\n  \"Name\": \"Keys\",\n  \"Description\": \"The finest collection of keys be it classic or electronic\",\n  \"SortOrder\": \"3\",\n  \"Media\": [\n    {\n      \"MediaUrl\": \"https://static1.squarespace.com/static/58c25c63cd0f68722ca260d8/5b0d95998a922d7f4d0ed3bb/5b15f40c88251b408d488515/1528165492648/OMS+PIANO+IMAGE+1.JPG\"\n    }\n  ],\n  \"ParentCategoryID\": \"a797d917-11a8-4590-99af-24a6cdd1d3e3\",\n  \"Level\": 0\n}\n\n"
-            },
-            "url": "https://{{your-marketplace}}.arcadier.io/api/v2/admins/{{adminID}}/categories"
-          },
-          "response": []
         }
       ],
       "_postman_id": "d406cc09-fcaf-4c79-9af5-ff67735221ae",
