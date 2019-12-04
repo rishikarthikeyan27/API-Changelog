@@ -6761,6 +6761,26 @@
             "description": "Deletes an item from a merchant's inventory"
           },
           "response": []
+        },
+        {
+          "name": "Delete Item Copy",
+          "_postman_id": "c6aa2716-dd85-4680-909c-543659211ee5",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "DELETE",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{merchanttoken}}",
+                "type": "text"
+              }
+            ],
+            "url": "https://{{your-marketplace}}.arcadier.io/api/v2/merchants/{{merchantID}}/items/{{itemID}}",
+            "description": "Deletes an item from a merchant's inventory"
+          },
+          "response": []
         }
       ],
       "_postman_id": "4b4c7f61-2718-43ee-9006-cb9def956ec2"
