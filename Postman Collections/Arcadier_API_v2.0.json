@@ -21,45 +21,45 @@
               {
                 "key": "Content-Type",
                 "name": "Content-Type",
-                "value": "text/plain",
-                "type": "text"
+                "type": "text",
+                "value": "text/plain"
               }
             ],
             "body": {
               "mode": "urlencoded",
               "urlencoded": [
                 {
-                  "key": "client_id",
-                  "value": "",
                   "description": "Found in the account setttings of your marketplace",
-                  "type": "text"
+                  "key": "client_id",
+                  "type": "text",
+                  "value": ""
                 },
                 {
-                  "key": "client_secret",
-                  "value": "",
                   "description": "Found in the account setttings of your marketplace",
-                  "type": "text"
+                  "key": "client_secret",
+                  "type": "text",
+                  "value": ""
                 },
                 {
                   "key": "grant_type",
-                  "value": "client_credentials",
-                  "type": "text"
+                  "type": "text",
+                  "value": "client_credentials"
                 },
                 {
-                  "key": "scope",
-                  "value": "admin",
                   "description": "\"admin\" for Administrator token.",
-                  "type": "text"
+                  "key": "scope",
+                  "type": "text",
+                  "value": "admin"
                 },
                 {
                   "key": "username",
-                  "value": "",
-                  "type": "text"
+                  "type": "text",
+                  "value": ""
                 },
                 {
                   "key": "password",
-                  "value": "",
-                  "type": "text"
+                  "type": "text",
+                  "value": ""
                 }
               ]
             },
