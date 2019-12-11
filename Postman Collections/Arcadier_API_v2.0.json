@@ -64,7 +64,7 @@
               ]
             },
             "url": "https://{{your-marketplace}}.arcadier.io/token",
-            "description": "This API uses the client ID and secret of the marketplace and responds with the admin ID (userID in response) and admin token (access_token in response)"
+            "description": "This API uses the client ID and secret of the marketplace and responds with the admin ID (userID in response) and admin token (access_token in response)."
           },
           "response": [
             {
