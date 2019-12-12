@@ -5560,7 +5560,7 @@
             "method": "GET",
             "header": [],
             "url": "https://{{your-marketplace}}.arcadier.io/api/v2/items/{{itemID}}",
-            "description": "Gets an item's details, all details, including variants details.\n*Omitting itemID returns all items' details, but not details like variants*\n\n#### Authentication\n> None required"
+            "description": "Gets an item's details, all details, including variants details.\n*Omitting itemID returns all items' details, but not details like variants*\n\n#### Search for a parent and/or variant item\n\nTo search for a parent item and/or its variant, the main API to be called is **Get Item Details**. There are 3 scenarios in which you could do the search : \n\n\n1. **Searching for a parent item and its variants**  \n \n     * GET api/v2/items/{{ParentItemID}}\n     * To get details of a parent item , enter the parent item ID in the URL\n     * The API will respond with the details of the parent item and its variants\n\n2. **Searching for all parent items but none of its variants**\n\n     * GET api/v2/items/\n     * Omitting itemID in the URL returns all items' details, but not variant details\n\n3. **Searching for a child item (a specific variant)**\n\n    * GET api/v2/items/{{ChildItemID}}\n    * To get details of a child item, enter the child item ID in the URL\n    * The API will respond with the details of the corresponding parent item, but not the details of its variants\n    * To get the details of the variants, refer back to the **search for a parent item and its variants** in the first step \n    \n#### Authentication\n> None required"
           },
           "response": [
             {
