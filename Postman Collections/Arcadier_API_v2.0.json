@@ -578,149 +578,150 @@
         },
         {
           "name": "Accounts",
-          "item": [],
+          "item": [
+            {
+              "name": "Get a User's Information",
+              "_postman_id": "129fa6b1-1c39-4a41-b7b8-8aa7f2545394",
+              "protocolProfileBehavior": {
+                "disableBodyPruning": true
+              },
+              "request": {
+                "auth": {
+                  "type": "noauth"
+                },
+                "method": "GET",
+                "header": [],
+                "url": "https://{{your-marketplace}}.arcadier.io/api/v2/users/{{userID}}",
+                "description": "Calling this API will get all available information of the user ID you provided.\n\n#### Authentication\n> None required"
+              },
+              "response": [
+                {
+                  "id": "275fe17d-05a6-48ae-9205-109c958b9712",
+                  "name": "Admin ID",
+                  "originalRequest": {
+                    "method": "GET",
+                    "header": [],
+                    "url": "https://{{your-marketplace}}.arcadier.io/api/v2/users/{{adminID}}"
+                  },
+                  "status": "OK",
+                  "code": 200,
+                  "_postman_previewlanguage": "json",
+                  "header": [
+                    {
+                      "key": "Cache-Control",
+                      "value": "no-cache"
+                    },
+                    {
+                      "key": "Pragma",
+                      "value": "no-cache"
+                    },
+                    {
+                      "key": "Content-Type",
+                      "value": "application/json; charset=utf-8"
+                    },
+                    {
+                      "key": "Expires",
+                      "value": "-1"
+                    },
+                    {
+                      "key": "request-id",
+                      "value": "4489ea9d-0344-438c-b221-95663e6e69c7"
+                    },
+                    {
+                      "key": "api-version",
+                      "value": "v2"
+                    },
+                    {
+                      "key": "X-XSS-Protection",
+                      "value": "1; mode=block"
+                    },
+                    {
+                      "key": "X-Content-Type-Options",
+                      "value": "nosniff"
+                    },
+                    {
+                      "key": "X-Powered-By",
+                      "value": "ARR/3.0"
+                    },
+                    {
+                      "key": "Date",
+                      "value": "Mon, 16 Sep 2019 04:25:07 GMT"
+                    },
+                    {
+                      "key": "Content-Length",
+                      "value": "958"
+                    }
+                  ],
+                  "cookie": [],
+                  "responseTime": null,
+                  "body": "{\n    \"ID\": \"{adminID}\",\n    \"Email\": \"tanoo_joy@hotmail.com\",\n    \"FirstName\": \"TanooJoy\",\n    \"LastName\": \"Joyekurun\",\n    \"DisplayName\": \"Desir\",\n    \"Description\": null,\n    \"DOB\": null,\n    \"PhoneNumber\": \"90854839\",\n    \"DateJoined\": 1566197598,\n    \"Roles\": [\n        \"Admin\"\n    ],\n    \"Media\": [\n        {\n            \"ID\": null,\n            \"MediaUrl\": \"https://tanoo.sandbox.arcadier.io/images/user/profile-image-19521-6naroumwuf.jpg\"\n        }\n    ],\n    \"CustomFields\": [\n        {\n            \"Code\": \"19521-ManagingExperience-mWA5tVYq1U\",\n            \"Name\": \"Managing Experience\",\n            \"DataFieldType\": null,\n            \"Values\": [\n                \"I\u2019m just playing around\"\n            ]\n        },\n        {\n            \"Code\": \"19521-MarketplaceType-BNcJdPvku3\",\n            \"Name\": \"Marketplace Type\",\n            \"DataFieldType\": null,\n            \"Values\": [\n                \"Selling and buying general items\"\n            ]\n        },\n        {\n            \"Code\": \"19521-EntityType-w6q0A7wNDE\",\n            \"Name\": \"Entity Type\",\n            \"DataFieldType\": null,\n            \"Values\": [\n                \"I\u2019m an individual\"\n            ]\n        }\n    ],\n    \"TimeZone\": null,\n    \"Onboarded\": true,\n    \"OnboardedDateTime\": 1566198012,\n    \"Active\": true,\n    \"Enabled\": true,\n    \"Visible\": true,\n    \"Addresses\": null,\n    \"PaymentMethods\": null,\n    \"PaymentAcceptanceMethods\": null,\n    \"UserLogin\": null\n}"
+                },
+                {
+                  "id": "5c332a5f-dd07-4fdb-a881-48fd01af444c",
+                  "name": "Merchant ID",
+                  "originalRequest": {
+                    "method": "GET",
+                    "header": [],
+                    "url": "https://{{your-marketplace}}.arcadier.io/api/v2/users/{{merchantID}}"
+                  },
+                  "status": "OK",
+                  "code": 200,
+                  "_postman_previewlanguage": "json",
+                  "header": [
+                    {
+                      "key": "Cache-Control",
+                      "value": "no-cache"
+                    },
+                    {
+                      "key": "Pragma",
+                      "value": "no-cache"
+                    },
+                    {
+                      "key": "Content-Type",
+                      "value": "application/json; charset=utf-8"
+                    },
+                    {
+                      "key": "Expires",
+                      "value": "-1"
+                    },
+                    {
+                      "key": "request-id",
+                      "value": "017147cc-970c-403f-8714-ff161489e231"
+                    },
+                    {
+                      "key": "api-version",
+                      "value": "v2"
+                    },
+                    {
+                      "key": "X-XSS-Protection",
+                      "value": "1; mode=block"
+                    },
+                    {
+                      "key": "X-Content-Type-Options",
+                      "value": "nosniff"
+                    },
+                    {
+                      "key": "X-Powered-By",
+                      "value": "ARR/3.0"
+                    },
+                    {
+                      "key": "Date",
+                      "value": "Mon, 16 Sep 2019 04:28:52 GMT"
+                    },
+                    {
+                      "key": "Content-Length",
+                      "value": "573"
+                    }
+                  ],
+                  "cookie": [],
+                  "responseTime": null,
+                  "body": "{\n    \"ID\": \"{merchantID}\",\n    \"Email\": \"tanoo_joy@hotmail.com\",\n    \"FirstName\": \"Tanoo\",\n    \"LastName\": \"Joyekurun\",\n    \"DisplayName\": \"tanoo\",\n    \"Description\": \"\",\n    \"DOB\": null,\n    \"PhoneNumber\": \"90854839\",\n    \"DateJoined\": 1566198002,\n    \"Roles\": [\n        \"Merchant\"\n    ],\n    \"Media\": [\n        {\n            \"ID\": null,\n            \"MediaUrl\": \"https://tanoo.sandbox.arcadier.io/images/user/b92aee3f-b052-4b81-b7f3-64b5d1851acb.jpg\"\n        }\n    ],\n    \"CustomFields\": null,\n    \"TimeZone\": null,\n    \"Onboarded\": false,\n    \"OnboardedDateTime\": null,\n    \"Active\": true,\n    \"Enabled\": true,\n    \"Visible\": true,\n    \"Addresses\": null,\n    \"PaymentMethods\": null,\n    \"PaymentAcceptanceMethods\": null,\n    \"UserLogin\": null\n}"
+                }
+              ]
+            }
+          ],
           "_postman_id": "dc3214f3-b9cb-4b0c-a5f1-b567f5b6a9e8",
           "_postman_isSubFolder": true
-        },
-        {
-          "name": "Get a User's Information",
-          "_postman_id": "129fa6b1-1c39-4a41-b7b8-8aa7f2545394",
-          "protocolProfileBehavior": {
-            "disableBodyPruning": true
-          },
-          "request": {
-            "auth": {
-              "type": "noauth"
-            },
-            "method": "GET",
-            "header": [],
-            "url": "https://{{your-marketplace}}.arcadier.io/api/v2/users/{{userID}}",
-            "description": "Calling this API will get all available information of the user ID you provided.\n\n#### Authentication\n> None required"
-          },
-          "response": [
-            {
-              "id": "275fe17d-05a6-48ae-9205-109c958b9712",
-              "name": "Admin ID",
-              "originalRequest": {
-                "method": "GET",
-                "header": [],
-                "url": "https://{{your-marketplace}}.arcadier.io/api/v2/users/{{adminID}}"
-              },
-              "status": "OK",
-              "code": 200,
-              "_postman_previewlanguage": "json",
-              "header": [
-                {
-                  "key": "Cache-Control",
-                  "value": "no-cache"
-                },
-                {
-                  "key": "Pragma",
-                  "value": "no-cache"
-                },
-                {
-                  "key": "Content-Type",
-                  "value": "application/json; charset=utf-8"
-                },
-                {
-                  "key": "Expires",
-                  "value": "-1"
-                },
-                {
-                  "key": "request-id",
-                  "value": "4489ea9d-0344-438c-b221-95663e6e69c7"
-                },
-                {
-                  "key": "api-version",
-                  "value": "v2"
-                },
-                {
-                  "key": "X-XSS-Protection",
-                  "value": "1; mode=block"
-                },
-                {
-                  "key": "X-Content-Type-Options",
-                  "value": "nosniff"
-                },
-                {
-                  "key": "X-Powered-By",
-                  "value": "ARR/3.0"
-                },
-                {
-                  "key": "Date",
-                  "value": "Mon, 16 Sep 2019 04:25:07 GMT"
-                },
-                {
-                  "key": "Content-Length",
-                  "value": "958"
-                }
-              ],
-              "cookie": [],
-              "responseTime": null,
-              "body": "{\n    \"ID\": \"{adminID}\",\n    \"Email\": \"tanoo_joy@hotmail.com\",\n    \"FirstName\": \"TanooJoy\",\n    \"LastName\": \"Joyekurun\",\n    \"DisplayName\": \"Desir\",\n    \"Description\": null,\n    \"DOB\": null,\n    \"PhoneNumber\": \"90854839\",\n    \"DateJoined\": 1566197598,\n    \"Roles\": [\n        \"Admin\"\n    ],\n    \"Media\": [\n        {\n            \"ID\": null,\n            \"MediaUrl\": \"https://tanoo.sandbox.arcadier.io/images/user/profile-image-19521-6naroumwuf.jpg\"\n        }\n    ],\n    \"CustomFields\": [\n        {\n            \"Code\": \"19521-ManagingExperience-mWA5tVYq1U\",\n            \"Name\": \"Managing Experience\",\n            \"DataFieldType\": null,\n            \"Values\": [\n                \"I\u2019m just playing around\"\n            ]\n        },\n        {\n            \"Code\": \"19521-MarketplaceType-BNcJdPvku3\",\n            \"Name\": \"Marketplace Type\",\n            \"DataFieldType\": null,\n            \"Values\": [\n                \"Selling and buying general items\"\n            ]\n        },\n        {\n            \"Code\": \"19521-EntityType-w6q0A7wNDE\",\n            \"Name\": \"Entity Type\",\n            \"DataFieldType\": null,\n            \"Values\": [\n                \"I\u2019m an individual\"\n            ]\n        }\n    ],\n    \"TimeZone\": null,\n    \"Onboarded\": true,\n    \"OnboardedDateTime\": 1566198012,\n    \"Active\": true,\n    \"Enabled\": true,\n    \"Visible\": true,\n    \"Addresses\": null,\n    \"PaymentMethods\": null,\n    \"PaymentAcceptanceMethods\": null,\n    \"UserLogin\": null\n}"
-            },
-            {
-              "id": "5c332a5f-dd07-4fdb-a881-48fd01af444c",
-              "name": "Merchant ID",
-              "originalRequest": {
-                "method": "GET",
-                "header": [],
-                "url": "https://{{your-marketplace}}.arcadier.io/api/v2/users/{{merchantID}}"
-              },
-              "status": "OK",
-              "code": 200,
-              "_postman_previewlanguage": "json",
-              "header": [
-                {
-                  "key": "Cache-Control",
-                  "value": "no-cache"
-                },
-                {
-                  "key": "Pragma",
-                  "value": "no-cache"
-                },
-                {
-                  "key": "Content-Type",
-                  "value": "application/json; charset=utf-8"
-                },
-                {
-                  "key": "Expires",
-                  "value": "-1"
-                },
-                {
-                  "key": "request-id",
-                  "value": "017147cc-970c-403f-8714-ff161489e231"
-                },
-                {
-                  "key": "api-version",
-                  "value": "v2"
-                },
-                {
-                  "key": "X-XSS-Protection",
-                  "value": "1; mode=block"
-                },
-                {
-                  "key": "X-Content-Type-Options",
-                  "value": "nosniff"
-                },
-                {
-                  "key": "X-Powered-By",
-                  "value": "ARR/3.0"
-                },
-                {
-                  "key": "Date",
-                  "value": "Mon, 16 Sep 2019 04:28:52 GMT"
-                },
-                {
-                  "key": "Content-Length",
-                  "value": "573"
-                }
-              ],
-              "cookie": [],
-              "responseTime": null,
-              "body": "{\n    \"ID\": \"{merchantID}\",\n    \"Email\": \"tanoo_joy@hotmail.com\",\n    \"FirstName\": \"Tanoo\",\n    \"LastName\": \"Joyekurun\",\n    \"DisplayName\": \"tanoo\",\n    \"Description\": \"\",\n    \"DOB\": null,\n    \"PhoneNumber\": \"90854839\",\n    \"DateJoined\": 1566198002,\n    \"Roles\": [\n        \"Merchant\"\n    ],\n    \"Media\": [\n        {\n            \"ID\": null,\n            \"MediaUrl\": \"https://tanoo.sandbox.arcadier.io/images/user/b92aee3f-b052-4b81-b7f3-64b5d1851acb.jpg\"\n        }\n    ],\n    \"CustomFields\": null,\n    \"TimeZone\": null,\n    \"Onboarded\": false,\n    \"OnboardedDateTime\": null,\n    \"Active\": true,\n    \"Enabled\": true,\n    \"Visible\": true,\n    \"Addresses\": null,\n    \"PaymentMethods\": null,\n    \"PaymentAcceptanceMethods\": null,\n    \"UserLogin\": null\n}"
-            }
-          ]
         },
         {
           "name": "Get All Users",
