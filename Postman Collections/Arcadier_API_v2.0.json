@@ -277,7 +277,7 @@
               "raw": "{\r\n  \"ExternalUserId\": \"1234C\",\r\n  \"Email\": \"troll@arca.com\",\r\n  \"FirstName\": \"Tanoo\"\r\n}"
             },
             "url": "https://{{your-marketplace}}.arcadier.io/api/v2/sso",
-            "description": "This API takes a User ID from an external platform, to create and/or log that same user on your Arcadier marketplace.\n\nIf `\"ExternalUserId\"` (required) is sent for the first time, the API will create that user and the response will contain its Arcadier \"UserId\" and an \"access_token\". (See Example response to the right). If `\"Email\"` is also sent during this first time call, the new user account will be created with that email as **Notification Email**.\n\n*Note: The newly created account will be a buyer account*\n\nOtherwise, if `ExternalUserId` is sent again, after having it's account created, the API will simply respond with its Arcadier \"UserId\" and an \"access_token\" for API access."
+            "description": "This API takes a User ID from an external platform, to create and/or log that same user on your Arcadier marketplace.\n\n\nIf `\"ExternalUserId\"` (required) is sent for the first time, the API will create that user and the response will contain its Arcadier \"UserId\" and an \"access_token\". (See Example response to the right). If `\"Email\"` is also sent during this first time call, the new user account will be created with that email as **Notification Email**.\n\n\n*Note: The newly created account will be a buyer account*\n\n\nOtherwise, if `ExternalUserId` is sent again, after having it's account created, the API will simply respond with its Arcadier \"UserId\" and an \"access_token\" for API access."
           },
           "response": []
         }
