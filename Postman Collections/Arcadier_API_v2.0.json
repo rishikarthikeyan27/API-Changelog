@@ -327,7 +327,7 @@
           ]
         },
         {
-          "name": "Register Consumer Account",
+          "name": "Create User Account",
           "_postman_id": "0c2b1f7e-275b-4d79-8b7a-949a504a5ea3",
           "protocolProfileBehavior": {
             "disableBodyPruning": true
