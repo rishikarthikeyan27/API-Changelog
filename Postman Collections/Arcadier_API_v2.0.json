@@ -744,7 +744,7 @@
           ]
         },
         {
-          "name": "Update user role",
+          "name": "Upgrade User Role",
           "_postman_id": "754f2ee4-39c3-4044-81cf-757c054b8b2f",
           "protocolProfileBehavior": {
             "disableBodyPruning": true
