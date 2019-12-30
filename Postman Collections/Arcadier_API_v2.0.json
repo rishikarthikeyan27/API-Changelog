@@ -282,7 +282,303 @@
       "item": [
         {
           "name": "Passwords",
-          "item": [],
+          "item": [
+            {
+              "name": "Accounts",
+              "item": [],
+              "_postman_id": "34cbd5f7-9c9e-4883-883d-b7a0b6b47cda",
+              "_postman_isSubFolder": true
+            },
+            {
+              "name": "Reset User Password",
+              "_postman_id": "12e8be69-7939-48f0-b8b5-ce25b001d9ed",
+              "protocolProfileBehavior": {
+                "disableBodyPruning": true
+              },
+              "request": {
+                "method": "POST",
+                "header": [
+                  {
+                    "key": "Authorization",
+                    "value": "Bearer {{admintoken}}",
+                    "type": "text"
+                  },
+                  {
+                    "key": "Content-Type",
+                    "name": "Content-Type",
+                    "value": "application/json",
+                    "type": "text"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\r\n  \"UserID\": \"00000000-0000-0000-0000-000000000000\",\r\n  \"Action\": \"token\"\r\n}"
+                },
+                "url": "https://{{your-marketplace}}.arcadier.io/api/v2/admins/{{adminID}}/password",
+                "description": "This API allows the resetting of a user's password by returning a link to Arcadier's reset password page for that user.\n\nRequest:\n\n* \"UserID\" - ID of the user who wants to change their password\n* \"Action\" - \"token\"\n\nResponse:\n\n* \"Url\" - URL of Arcadier's password reset page\n* \"Token\" - Reset password token to be used in [Update User Password API](https://apiv2.arcadier.com/?version=latest#39756c48-c576-4451-9edd-b6825ef789e8)\n\n(More details in example on the right)\n\n#### Authentication\n> Admin token only"
+              },
+              "response": [
+                {
+                  "id": "b94f9a75-163a-4e95-89ca-c653b054c3ea",
+                  "name": "Reset Password",
+                  "originalRequest": {
+                    "method": "POST",
+                    "header": [
+                      {
+                        "key": "Authorization",
+                        "value": "Bearer {{admintoken}}",
+                        "type": "text"
+                      },
+                      {
+                        "key": "Content-Type",
+                        "name": "Content-Type",
+                        "value": "application/json",
+                        "type": "text"
+                      }
+                    ],
+                    "body": {
+                      "mode": "raw",
+                      "raw": "{\r\n  \"UserID\": \"2e4788e8-1013-4671-9fdd-b8402ea44852\",\r\n  \"Action\": \"token\"\r\n}"
+                    },
+                    "url": "https://{{your-marketplace}}.arcadier.io/api/v2/admins/{{adminID}}/password"
+                  },
+                  "status": "OK",
+                  "code": 200,
+                  "_postman_previewlanguage": "json",
+                  "header": [
+                    {
+                      "key": "Cache-Control",
+                      "value": "no-cache"
+                    },
+                    {
+                      "key": "Pragma",
+                      "value": "no-cache"
+                    },
+                    {
+                      "key": "Content-Type",
+                      "value": "application/json; charset=utf-8"
+                    },
+                    {
+                      "key": "Expires",
+                      "value": "-1"
+                    },
+                    {
+                      "key": "api-version",
+                      "value": "v2"
+                    },
+                    {
+                      "key": "X-XSS-Protection",
+                      "value": "1; mode=block"
+                    },
+                    {
+                      "key": "X-Content-Type-Options",
+                      "value": "nosniff"
+                    },
+                    {
+                      "key": "X-Powered-By",
+                      "value": "ARR/3.0"
+                    },
+                    {
+                      "key": "Date",
+                      "value": "Wed, 14 Aug 2019 09:42:55 GMT"
+                    },
+                    {
+                      "key": "Content-Length",
+                      "value": "480"
+                    }
+                  ],
+                  "cookie": [],
+                  "responseTime": null,
+                  "body": "{\n    \"UserID\": \"2e4788e8-1013-4671-9fdd-b8402ea44852\",\n    \"Url\": \"https://{{your-marketplace}}.arcadier.io/user/marketplace/resetpassword?userId=19514&code=hMtYeaqRwgw%2frcv6zlLEdmI%2beMG7KB24wlCQqQQknkAFVsH5CacMIbqzlFXz2XEuDsBgI3AAv%2bz1JM25cNBRgiuhXEv4j4U62merhoj8tp9xJPYADFrulWmxUB2YhKMBxdEOUrGpGzNsfnEWbbyebQZ4tkU%3d\",\n    \"Token\": \"hMtYeaqRwgw%2frcv6zlLEdmI%2beMG7KB24wlCQqQQknkAFVsH5CacMIbqzlFXz2XEuDsBgI3AAv%2bz1JM25cNBRgiuhXEv4j4U62merhoj8tp9xJPYADFrulWmxUB2YhKMBxdEOUrGpGzNsfnEWbbyebQZ4tkU%3d\"\n}"
+                }
+              ]
+            },
+            {
+              "name": "Update User Password",
+              "_postman_id": "39756c48-c576-4451-9edd-b6825ef789e8",
+              "protocolProfileBehavior": {
+                "disableBodyPruning": true
+              },
+              "request": {
+                "method": "PUT",
+                "header": [
+                  {
+                    "key": "Content-Type",
+                    "name": "Content-Type",
+                    "value": "application/json",
+                    "type": "text"
+                  },
+                  {
+                    "key": "Authorization",
+                    "type": "text",
+                    "value": "Bearer {{admintoken}}"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\r\n  \"OldPassword\": \"string\",\r\n  \"Password\": \"string\",\r\n  \"ConfirmPassword\": \"string\",\r\n  \"ResetPasswordToken\": \"string\"\r\n}"
+                },
+                "url": "https://{{your-marketplace}}.arcadier.io/api/v2/users/{{userID}}/password",
+                "description": "This API resets the password of a buyer/merchant in 2 ways:\n\n* A user has not forgotten their password but wants to change it:\n * In this scenario, `\"OldPassword\"` is required.\n * `\"ResetPasswordToken\"` is **not** required.\n* A user has forgotten their password, and wants to reset it:\n * In this scenario, `\"OldPassword\"`is **not** required.\n * `\"ResetPasswordToken\"` is required, and is obtained from [Reset User Password API](https://apiv2.arcadier.com/?version=latest#12e8be69-7939-48f0-b8b5-ce25b001d9ed)\n\nIn the event of a successful change, the response will be:\n```json\n{\n\tResult: true\n}\n```\n\n#### Authentication\n> Password change: Admin token\n>\n> Password Reset: Admin token"
+              },
+              "response": [
+                {
+                  "id": "7a26b85b-6ba8-45a4-8bfc-7f5a4a4e82ff",
+                  "name": "Reset User Password",
+                  "originalRequest": {
+                    "method": "PUT",
+                    "header": [
+                      {
+                        "key": "Content-Type",
+                        "name": "Content-Type",
+                        "value": "application/json",
+                        "type": "text"
+                      },
+                      {
+                        "key": "Authorization",
+                        "type": "text",
+                        "value": "Bearer {{admintoken}}"
+                      }
+                    ],
+                    "body": {
+                      "mode": "raw",
+                      "raw": "{\r\n  \r\n  \"Password\": \"jackson\",\r\n  \"ConfirmPassword\": \"jackson\",\r\n  \"ResetPasswordToken\": \"F++nr6+TidBPDrnLweTNRdfnIp1ATSppKSW80rKKlAmKWFOJfjATsgvjt4wfGJpGbzheII3UDEKxR0M5QfiZhURsGt6fp2ldgL9sxtLaeAf9iTPnLEB49/aJGQDIoR0cbG2jM52ZVSFrWFbjc5dQfZi5M0I=\"\r\n}"
+                    },
+                    "url": "https://{{your-marketplace}}.arcadier.io/api/v2/users/{{userID}}/password"
+                  },
+                  "status": "OK",
+                  "code": 200,
+                  "_postman_previewlanguage": "json",
+                  "header": [
+                    {
+                      "key": "Cache-Control",
+                      "value": "no-cache"
+                    },
+                    {
+                      "key": "Pragma",
+                      "value": "no-cache"
+                    },
+                    {
+                      "key": "Content-Type",
+                      "value": "application/json; charset=utf-8"
+                    },
+                    {
+                      "key": "Expires",
+                      "value": "-1"
+                    },
+                    {
+                      "key": "request-id",
+                      "value": "5daada80-1d71-45b7-a04f-a46aac33a10f"
+                    },
+                    {
+                      "key": "api-version",
+                      "value": "v2"
+                    },
+                    {
+                      "key": "X-XSS-Protection",
+                      "value": "1; mode=block"
+                    },
+                    {
+                      "key": "X-Content-Type-Options",
+                      "value": "nosniff"
+                    },
+                    {
+                      "key": "X-Powered-By",
+                      "value": "ARR/3.0"
+                    },
+                    {
+                      "key": "Date",
+                      "value": "Fri, 20 Sep 2019 03:31:14 GMT"
+                    },
+                    {
+                      "key": "Content-Length",
+                      "value": "15"
+                    }
+                  ],
+                  "cookie": [],
+                  "responseTime": null,
+                  "body": "{\n    \"Result\": true\n}"
+                },
+                {
+                  "id": "a6e15c52-8602-4e6d-90fe-01fd47c395b8",
+                  "name": "Update User Password",
+                  "originalRequest": {
+                    "method": "PUT",
+                    "header": [
+                      {
+                        "key": "Content-Type",
+                        "name": "Content-Type",
+                        "value": "application/json",
+                        "type": "text"
+                      },
+                      {
+                        "key": "Authorization",
+                        "type": "text",
+                        "value": "Bearer {{admintoken}}"
+                      }
+                    ],
+                    "body": {
+                      "mode": "raw",
+                      "raw": "{\r\n  \"OldPassword\": \"jackson\",\r\n  \"Password\": \"arcadier_jackson\",\r\n  \"ConfirmPassword\": \"arcadier_jackson\"\r\n}"
+                    },
+                    "url": "https://{{your-marketplace}}.arcadier.io/api/v2/users/{{userID}}/password"
+                  },
+                  "status": "OK",
+                  "code": 200,
+                  "_postman_previewlanguage": "json",
+                  "header": [
+                    {
+                      "key": "Cache-Control",
+                      "value": "no-cache"
+                    },
+                    {
+                      "key": "Pragma",
+                      "value": "no-cache"
+                    },
+                    {
+                      "key": "Content-Type",
+                      "value": "application/json; charset=utf-8"
+                    },
+                    {
+                      "key": "Expires",
+                      "value": "-1"
+                    },
+                    {
+                      "key": "request-id",
+                      "value": "2999c068-de98-40e9-ac30-2273d8ad421a"
+                    },
+                    {
+                      "key": "api-version",
+                      "value": "v2"
+                    },
+                    {
+                      "key": "X-XSS-Protection",
+                      "value": "1; mode=block"
+                    },
+                    {
+                      "key": "X-Content-Type-Options",
+                      "value": "nosniff"
+                    },
+                    {
+                      "key": "X-Powered-By",
+                      "value": "ARR/3.0"
+                    },
+                    {
+                      "key": "Date",
+                      "value": "Fri, 20 Sep 2019 03:32:31 GMT"
+                    },
+                    {
+                      "key": "Content-Length",
+                      "value": "15"
+                    }
+                  ],
+                  "cookie": [],
+                  "responseTime": null,
+                  "body": "{\n    \"Result\": true\n}"
+                }
+              ]
+            }
+          ],
           "_postman_id": "bb435e81-3969-4a74-af6a-bcf094fd5d26",
           "_postman_isSubFolder": true
         },
@@ -1075,295 +1371,6 @@
                 {
                   "key": "Date",
                   "value": "Tue, 17 Sep 2019 04:08:22 GMT"
-                },
-                {
-                  "key": "Content-Length",
-                  "value": "15"
-                }
-              ],
-              "cookie": [],
-              "responseTime": null,
-              "body": "{\n    \"Result\": true\n}"
-            }
-          ]
-        },
-        {
-          "name": "Reset User Password",
-          "_postman_id": "12e8be69-7939-48f0-b8b5-ce25b001d9ed",
-          "protocolProfileBehavior": {
-            "disableBodyPruning": true
-          },
-          "request": {
-            "method": "POST",
-            "header": [
-              {
-                "key": "Authorization",
-                "value": "Bearer {{admintoken}}",
-                "type": "text"
-              },
-              {
-                "key": "Content-Type",
-                "name": "Content-Type",
-                "value": "application/json",
-                "type": "text"
-              }
-            ],
-            "body": {
-              "mode": "raw",
-              "raw": "{\r\n  \"UserID\": \"00000000-0000-0000-0000-000000000000\",\r\n  \"Action\": \"token\"\r\n}"
-            },
-            "url": "https://{{your-marketplace}}.arcadier.io/api/v2/admins/{{adminID}}/password",
-            "description": "This API allows the resetting of a user's password by returning a link to Arcadier's reset password page for that user.\n\nRequest:\n\n* \"UserID\" - ID of the user who wants to change their password\n* \"Action\" - \"token\"\n\nResponse:\n\n* \"Url\" - URL of Arcadier's password reset page\n* \"Token\" - Reset password token to be used in [Update User Password API](https://apiv2.arcadier.com/?version=latest#39756c48-c576-4451-9edd-b6825ef789e8)\n\n(More details in example on the right)\n\n#### Authentication\n> Admin token only"
-          },
-          "response": [
-            {
-              "id": "b94f9a75-163a-4e95-89ca-c653b054c3ea",
-              "name": "Reset Password",
-              "originalRequest": {
-                "method": "POST",
-                "header": [
-                  {
-                    "key": "Authorization",
-                    "value": "Bearer {{admintoken}}",
-                    "type": "text"
-                  },
-                  {
-                    "key": "Content-Type",
-                    "name": "Content-Type",
-                    "value": "application/json",
-                    "type": "text"
-                  }
-                ],
-                "body": {
-                  "mode": "raw",
-                  "raw": "{\r\n  \"UserID\": \"2e4788e8-1013-4671-9fdd-b8402ea44852\",\r\n  \"Action\": \"token\"\r\n}"
-                },
-                "url": "https://{{your-marketplace}}.arcadier.io/api/v2/admins/{{adminID}}/password"
-              },
-              "status": "OK",
-              "code": 200,
-              "_postman_previewlanguage": "json",
-              "header": [
-                {
-                  "key": "Cache-Control",
-                  "value": "no-cache"
-                },
-                {
-                  "key": "Pragma",
-                  "value": "no-cache"
-                },
-                {
-                  "key": "Content-Type",
-                  "value": "application/json; charset=utf-8"
-                },
-                {
-                  "key": "Expires",
-                  "value": "-1"
-                },
-                {
-                  "key": "api-version",
-                  "value": "v2"
-                },
-                {
-                  "key": "X-XSS-Protection",
-                  "value": "1; mode=block"
-                },
-                {
-                  "key": "X-Content-Type-Options",
-                  "value": "nosniff"
-                },
-                {
-                  "key": "X-Powered-By",
-                  "value": "ARR/3.0"
-                },
-                {
-                  "key": "Date",
-                  "value": "Wed, 14 Aug 2019 09:42:55 GMT"
-                },
-                {
-                  "key": "Content-Length",
-                  "value": "480"
-                }
-              ],
-              "cookie": [],
-              "responseTime": null,
-              "body": "{\n    \"UserID\": \"2e4788e8-1013-4671-9fdd-b8402ea44852\",\n    \"Url\": \"https://{{your-marketplace}}.arcadier.io/user/marketplace/resetpassword?userId=19514&code=hMtYeaqRwgw%2frcv6zlLEdmI%2beMG7KB24wlCQqQQknkAFVsH5CacMIbqzlFXz2XEuDsBgI3AAv%2bz1JM25cNBRgiuhXEv4j4U62merhoj8tp9xJPYADFrulWmxUB2YhKMBxdEOUrGpGzNsfnEWbbyebQZ4tkU%3d\",\n    \"Token\": \"hMtYeaqRwgw%2frcv6zlLEdmI%2beMG7KB24wlCQqQQknkAFVsH5CacMIbqzlFXz2XEuDsBgI3AAv%2bz1JM25cNBRgiuhXEv4j4U62merhoj8tp9xJPYADFrulWmxUB2YhKMBxdEOUrGpGzNsfnEWbbyebQZ4tkU%3d\"\n}"
-            }
-          ]
-        },
-        {
-          "name": "Update User Password",
-          "_postman_id": "39756c48-c576-4451-9edd-b6825ef789e8",
-          "protocolProfileBehavior": {
-            "disableBodyPruning": true
-          },
-          "request": {
-            "method": "PUT",
-            "header": [
-              {
-                "key": "Content-Type",
-                "name": "Content-Type",
-                "value": "application/json",
-                "type": "text"
-              },
-              {
-                "key": "Authorization",
-                "type": "text",
-                "value": "Bearer {{admintoken}}"
-              }
-            ],
-            "body": {
-              "mode": "raw",
-              "raw": "{\r\n  \"OldPassword\": \"string\",\r\n  \"Password\": \"string\",\r\n  \"ConfirmPassword\": \"string\",\r\n  \"ResetPasswordToken\": \"string\"\r\n}"
-            },
-            "url": "https://{{your-marketplace}}.arcadier.io/api/v2/users/{{userID}}/password",
-            "description": "This API resets the password of a buyer/merchant in 2 ways:\n\n* A user has not forgotten their password but wants to change it:\n * In this scenario, `\"OldPassword\"` is required.\n * `\"ResetPasswordToken\"` is **not** required.\n* A user has forgotten their password, and wants to reset it:\n * In this scenario, `\"OldPassword\"`is **not** required.\n * `\"ResetPasswordToken\"` is required, and is obtained from [Reset User Password API](https://apiv2.arcadier.com/?version=latest#12e8be69-7939-48f0-b8b5-ce25b001d9ed)\n\nIn the event of a successful change, the response will be:\n```json\n{\n\tResult: true\n}\n```\n\n#### Authentication\n> Password change: Admin token\n>\n> Password Reset: Admin token"
-          },
-          "response": [
-            {
-              "id": "7a26b85b-6ba8-45a4-8bfc-7f5a4a4e82ff",
-              "name": "Reset User Password",
-              "originalRequest": {
-                "method": "PUT",
-                "header": [
-                  {
-                    "key": "Content-Type",
-                    "name": "Content-Type",
-                    "value": "application/json",
-                    "type": "text"
-                  },
-                  {
-                    "key": "Authorization",
-                    "type": "text",
-                    "value": "Bearer {{admintoken}}"
-                  }
-                ],
-                "body": {
-                  "mode": "raw",
-                  "raw": "{\r\n  \r\n  \"Password\": \"jackson\",\r\n  \"ConfirmPassword\": \"jackson\",\r\n  \"ResetPasswordToken\": \"F++nr6+TidBPDrnLweTNRdfnIp1ATSppKSW80rKKlAmKWFOJfjATsgvjt4wfGJpGbzheII3UDEKxR0M5QfiZhURsGt6fp2ldgL9sxtLaeAf9iTPnLEB49/aJGQDIoR0cbG2jM52ZVSFrWFbjc5dQfZi5M0I=\"\r\n}"
-                },
-                "url": "https://{{your-marketplace}}.arcadier.io/api/v2/users/{{userID}}/password"
-              },
-              "status": "OK",
-              "code": 200,
-              "_postman_previewlanguage": "json",
-              "header": [
-                {
-                  "key": "Cache-Control",
-                  "value": "no-cache"
-                },
-                {
-                  "key": "Pragma",
-                  "value": "no-cache"
-                },
-                {
-                  "key": "Content-Type",
-                  "value": "application/json; charset=utf-8"
-                },
-                {
-                  "key": "Expires",
-                  "value": "-1"
-                },
-                {
-                  "key": "request-id",
-                  "value": "5daada80-1d71-45b7-a04f-a46aac33a10f"
-                },
-                {
-                  "key": "api-version",
-                  "value": "v2"
-                },
-                {
-                  "key": "X-XSS-Protection",
-                  "value": "1; mode=block"
-                },
-                {
-                  "key": "X-Content-Type-Options",
-                  "value": "nosniff"
-                },
-                {
-                  "key": "X-Powered-By",
-                  "value": "ARR/3.0"
-                },
-                {
-                  "key": "Date",
-                  "value": "Fri, 20 Sep 2019 03:31:14 GMT"
-                },
-                {
-                  "key": "Content-Length",
-                  "value": "15"
-                }
-              ],
-              "cookie": [],
-              "responseTime": null,
-              "body": "{\n    \"Result\": true\n}"
-            },
-            {
-              "id": "a6e15c52-8602-4e6d-90fe-01fd47c395b8",
-              "name": "Update User Password",
-              "originalRequest": {
-                "method": "PUT",
-                "header": [
-                  {
-                    "key": "Content-Type",
-                    "name": "Content-Type",
-                    "value": "application/json",
-                    "type": "text"
-                  },
-                  {
-                    "key": "Authorization",
-                    "type": "text",
-                    "value": "Bearer {{admintoken}}"
-                  }
-                ],
-                "body": {
-                  "mode": "raw",
-                  "raw": "{\r\n  \"OldPassword\": \"jackson\",\r\n  \"Password\": \"arcadier_jackson\",\r\n  \"ConfirmPassword\": \"arcadier_jackson\"\r\n}"
-                },
-                "url": "https://{{your-marketplace}}.arcadier.io/api/v2/users/{{userID}}/password"
-              },
-              "status": "OK",
-              "code": 200,
-              "_postman_previewlanguage": "json",
-              "header": [
-                {
-                  "key": "Cache-Control",
-                  "value": "no-cache"
-                },
-                {
-                  "key": "Pragma",
-                  "value": "no-cache"
-                },
-                {
-                  "key": "Content-Type",
-                  "value": "application/json; charset=utf-8"
-                },
-                {
-                  "key": "Expires",
-                  "value": "-1"
-                },
-                {
-                  "key": "request-id",
-                  "value": "2999c068-de98-40e9-ac30-2273d8ad421a"
-                },
-                {
-                  "key": "api-version",
-                  "value": "v2"
-                },
-                {
-                  "key": "X-XSS-Protection",
-                  "value": "1; mode=block"
-                },
-                {
-                  "key": "X-Content-Type-Options",
-                  "value": "nosniff"
-                },
-                {
-                  "key": "X-Powered-By",
-                  "value": "ARR/3.0"
-                },
-                {
-                  "key": "Date",
-                  "value": "Fri, 20 Sep 2019 03:32:31 GMT"
                 },
                 {
                   "key": "Content-Length",
