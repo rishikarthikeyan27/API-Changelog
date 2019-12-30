@@ -831,7 +831,7 @@
           ]
         },
         {
-          "name": "Get users by role",
+          "name": "Get Users by Role",
           "_postman_id": "1964d4ac-5dff-4bf3-b8a4-b6382cf8383b",
           "protocolProfileBehavior": {
             "disableBodyPruning": true
