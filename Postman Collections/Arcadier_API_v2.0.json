@@ -280,12 +280,90 @@
             ],
             "body": {
               "mode": "raw",
-              "raw": "{\r\n  \"ExternalUserId\": \"1234C\",\r\n  \"Email\": \"troll@arca.com\",\r\n  \"FirstName\": \"Tanoo\"\r\n}"
+              "raw": "{\r\n  \"ExternalUserId\": \"string\",\r\n  \"Email\": \"string\"\r\n}"
             },
             "url": "https://{{your-marketplace}}.arcadier.io/api/v2/sso",
             "description": "This API takes a User ID from an external platform, to create and/or log that same user on your Arcadier marketplace.\n\n\nIf `\"ExternalUserId\"` (required) is sent for the first time, the API will create that user and the response will contain its Arcadier \"UserId\" and an \"access_token\". (See Example response to the right). \n\nIf `\"Email\"` (optional) is also sent during this first time call, the new user account will be created with that email as **Notification Email**.\n\n\n> Note: The newly created account will be a buyer account\n\n\nOtherwise, if `ExternalUserId` is sent again, after having it's account created, the API will simply respond with its Arcadier \"UserId\" and an \"access_token\" for API access."
           },
-          "response": []
+          "response": [
+            {
+              "id": "eac19ddc-de47-419c-b120-6b4e10789bdd",
+              "name": "Single Sign-On",
+              "originalRequest": {
+                "method": "POST",
+                "header": [
+                  {
+                    "key": "Content-Type",
+                    "name": "Content-Type",
+                    "value": "application/json",
+                    "type": "text"
+                  },
+                  {
+                    "key": "Authorization",
+                    "value": "Bearer {{admintoken}}",
+                    "type": "text"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\r\n  \"ExternalUserId\": \"123ABC\",\r\n  \"Email\": \"devsupport@arcadier.com\"\r\n}"
+                },
+                "url": "https://{{your-marketplace}}.arcadier.io/api/v2/sso"
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Cache-Control",
+                  "value": "no-cache"
+                },
+                {
+                  "key": "Pragma",
+                  "value": "no-cache"
+                },
+                {
+                  "key": "Content-Type",
+                  "value": "application/json; charset=utf-8"
+                },
+                {
+                  "key": "Expires",
+                  "value": "-1"
+                },
+                {
+                  "key": "request-id",
+                  "value": "a0414919-cd39-47d8-9da5-105e9e66374e"
+                },
+                {
+                  "key": "api-version",
+                  "value": "v2"
+                },
+                {
+                  "key": "X-XSS-Protection",
+                  "value": "1; mode=block"
+                },
+                {
+                  "key": "X-Content-Type-Options",
+                  "value": "nosniff"
+                },
+                {
+                  "key": "X-Powered-By",
+                  "value": "ARR/3.0"
+                },
+                {
+                  "key": "Date",
+                  "value": "Mon, 30 Dec 2019 11:06:20 GMT"
+                },
+                {
+                  "key": "Content-Length",
+                  "value": "940"
+                }
+              ],
+              "cookie": [],
+              "responseTime": null,
+              "body": "{\n    \"SsoCode\": \"2046f32ac946424f9f3186389396dd8a\",\n    \"AccessToken\": {\n        \"access_token\": \"t8TCwBpHOLoy8O-VfcFUzWtBSX4gYn7ngFFmV-wBf7jsrt4-Zriab0UB6ryi35AhDH3X93e6MKefy7weoVAPZd28stR2szbnPZrZTf_ENPBK1H1eowHoF_qKMjqhZn846XC07Wvk-LsnuwOqPKSBVTEBW1oi9CPCnfPRshGSVpVzLD6gC2cQozeEKrOc1adZ7urTzuJc78KELg1b9t0S-3DqZzD7LiLcE9asUf3OliXdLGswj-1zEwSsxHQ10127ZQTqNNaKLxaK60YqKi0g_PlAKWGDNLkWuyt9-b3ABLNB_s-hCExvvYZLvamYxf78USfRJR4ab_pjAaIzrr3uZ9bqP_qWfXsHWoKsTVyMCzqsamRJbdAo9iSDOyIe_jSRDjJkj0s6149KOL0tSF6002816x4JYZezBuguDkM6gUKpqkuKE_cXgHegy0cgS_Ny9Bx8w8u5eHfgZrb0fBPhZUTqjZZvqE2JN7BJkziXnSZ1v-pbf1TYRuONWsjGVKXpWfbTOqCeLWHnH4ueuSMbvpJY10owe084I4lhKLzmSgzUFyYTM1Np3k0z67Fh03_m_r-ENDlMkPoGuJFZF-ZyxtTaRhteCY1eFW_hS7EEn4v3reXw1DQuX3oReyd63JiJRohUphwdfQHvtsLdFrDYMQOG-YeVRZLF_q6GUJwJJfKs5GmK\",\n        \"token_type\": \"bearer\",\n        \"expires_in\": 107999,\n        \"refresh_token\": \"ee76835af4de452bb773d06633328ad9\",\n        \".issued\": null,\n        \".expires\": null,\n        \"UserId\": \"bc10af8f-ab58-4004-ad7a-34e693347ca0\"\n    }\n}"
+            }
+          ]
         }
       ],
       "_postman_id": "04374e8d-012b-4c98-9290-c1ff56a8da2f",
