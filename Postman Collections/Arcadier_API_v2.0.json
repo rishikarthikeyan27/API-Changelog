@@ -577,6 +577,12 @@
           "_postman_isSubFolder": true
         },
         {
+          "name": "Accounts",
+          "item": [],
+          "_postman_id": "dc3214f3-b9cb-4b0c-a5f1-b567f5b6a9e8",
+          "_postman_isSubFolder": true
+        },
+        {
           "name": "Get a User's Information",
           "_postman_id": "129fa6b1-1c39-4a41-b7b8-8aa7f2545394",
           "protocolProfileBehavior": {
