@@ -1201,17 +1201,37 @@
                   "body": "{\n    \"ID\": \"830f8c74-b2fd-4628-b95b-234e850c0c8a\",\n    \"Email\": \"xinerchan@gmail.com\",\n    \"FirstName\": \"Xiner\",\n    \"LastName\": \"Chan\",\n    \"DisplayName\": \"Xiner Chan\",\n    \"Description\": null,\n    \"DOB\": null,\n    \"PhoneNumber\": \"89639612\",\n    \"DateJoined\": 1567590045,\n    \"Roles\": [\n        \"User\"\n    ],\n    \"Media\": [],\n    \"CustomFields\": null,\n    \"TimeZone\": null,\n    \"Onboarded\": false,\n    \"OnboardedDateTime\": null,\n    \"Active\": true,\n    \"Enabled\": true,\n    \"Visible\": true,\n    \"Addresses\": null,\n    \"PaymentMethods\": null,\n    \"PaymentAcceptanceMethods\": null,\n    \"UserLogin\": null\n}"
                 }
               ]
+            }
+          ],
+          "_postman_id": "dc3214f3-b9cb-4b0c-a5f1-b567f5b6a9e8",
+          "_postman_isSubFolder": true
+        },
+        {
+          "name": "Upgrade User Role",
+          "_postman_id": "754f2ee4-39c3-4044-81cf-757c054b8b2f",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "auth": {
+              "type": "noauth"
             },
+            "method": "PUT",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{admintoken}}",
+                "type": "text"
+              }
+            ],
+            "url": "https://{{your-marketplace}}.arcadier.io/api/v2/admins/{{adminID}}/users/{{userID}}/roles/{{role}}",
+            "description": "**Upgrades** the role of the userID specified in URL.\n\nThere are 4 roles, in ascending power:\n* User - the person that buys (buyer)\n* Merchant - the person that sells (seller)\n* Admin - the person that controls the marketplace\n* Owner - the owner of the marketplace\n\nIf you are a merchant you will be both \"Merchant\" and \"User\".\nThe owner can be all 4.\nAn admin can be \"Admin\" and \"Merchant\", or \"Admin\" and \"User\"\n\nValues taken by {{role}}: \"merchant\", \"Admin\"\n\n#### Authentication\n> Admin token only"
+          },
+          "response": [
             {
-              "name": "Upgrade User Role",
-              "_postman_id": "754f2ee4-39c3-4044-81cf-757c054b8b2f",
-              "protocolProfileBehavior": {
-                "disableBodyPruning": true
-              },
-              "request": {
-                "auth": {
-                  "type": "noauth"
-                },
+              "id": "275a534b-8534-4ddd-83f4-7ddfe7ca7b83",
+              "name": "Buyer converted to merchant",
+              "originalRequest": {
                 "method": "PUT",
                 "header": [
                   {
@@ -1220,78 +1240,58 @@
                     "type": "text"
                   }
                 ],
-                "url": "https://{{your-marketplace}}.arcadier.io/api/v2/admins/{{adminID}}/users/{{userID}}/roles/{{role}}",
-                "description": "**Upgrades** the role of the userID specified in URL.\n\nThere are 4 roles, in ascending power:\n* User - the person that buys (buyer)\n* Merchant - the person that sells (seller)\n* Admin - the person that controls the marketplace\n* Owner - the owner of the marketplace\n\nIf you are a merchant you will be both \"Merchant\" and \"User\".\nThe owner can be all 4.\nAn admin can be \"Admin\" and \"Merchant\", or \"Admin\" and \"User\"\n\nValues taken by {{role}}: \"merchant\", \"Admin\"\n\n#### Authentication\n> Admin token only"
+                "url": "https://{{your-marketplace}}.arcadier.io/api/v2/admins/{{adminID}}/users/{{buyerID}}/roles/merchant"
               },
-              "response": [
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": "json",
+              "header": [
                 {
-                  "id": "275a534b-8534-4ddd-83f4-7ddfe7ca7b83",
-                  "name": "Buyer converted to merchant",
-                  "originalRequest": {
-                    "method": "PUT",
-                    "header": [
-                      {
-                        "key": "Authorization",
-                        "value": "Bearer {{admintoken}}",
-                        "type": "text"
-                      }
-                    ],
-                    "url": "https://{{your-marketplace}}.arcadier.io/api/v2/admins/{{adminID}}/users/{{buyerID}}/roles/merchant"
-                  },
-                  "status": "OK",
-                  "code": 200,
-                  "_postman_previewlanguage": "json",
-                  "header": [
-                    {
-                      "key": "Cache-Control",
-                      "value": "no-cache"
-                    },
-                    {
-                      "key": "Pragma",
-                      "value": "no-cache"
-                    },
-                    {
-                      "key": "Content-Type",
-                      "value": "application/json; charset=utf-8"
-                    },
-                    {
-                      "key": "Expires",
-                      "value": "-1"
-                    },
-                    {
-                      "key": "api-version",
-                      "value": "v2"
-                    },
-                    {
-                      "key": "X-XSS-Protection",
-                      "value": "1; mode=block"
-                    },
-                    {
-                      "key": "X-Content-Type-Options",
-                      "value": "nosniff"
-                    },
-                    {
-                      "key": "X-Powered-By",
-                      "value": "ARR/3.0"
-                    },
-                    {
-                      "key": "Date",
-                      "value": "Mon, 20 May 2019 01:25:07 GMT"
-                    },
-                    {
-                      "key": "Content-Length",
-                      "value": "15"
-                    }
-                  ],
-                  "cookie": [],
-                  "responseTime": null,
-                  "body": "{\n    \"Result\": true\n}"
+                  "key": "Cache-Control",
+                  "value": "no-cache"
+                },
+                {
+                  "key": "Pragma",
+                  "value": "no-cache"
+                },
+                {
+                  "key": "Content-Type",
+                  "value": "application/json; charset=utf-8"
+                },
+                {
+                  "key": "Expires",
+                  "value": "-1"
+                },
+                {
+                  "key": "api-version",
+                  "value": "v2"
+                },
+                {
+                  "key": "X-XSS-Protection",
+                  "value": "1; mode=block"
+                },
+                {
+                  "key": "X-Content-Type-Options",
+                  "value": "nosniff"
+                },
+                {
+                  "key": "X-Powered-By",
+                  "value": "ARR/3.0"
+                },
+                {
+                  "key": "Date",
+                  "value": "Mon, 20 May 2019 01:25:07 GMT"
+                },
+                {
+                  "key": "Content-Length",
+                  "value": "15"
                 }
-              ]
+              ],
+              "cookie": [],
+              "responseTime": null,
+              "body": "{\n    \"Result\": true\n}"
             }
-          ],
-          "_postman_id": "dc3214f3-b9cb-4b0c-a5f1-b567f5b6a9e8",
-          "_postman_isSubFolder": true
+          ]
         },
         {
           "name": "Delete a User",
