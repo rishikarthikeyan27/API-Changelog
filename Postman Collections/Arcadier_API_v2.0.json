@@ -550,7 +550,7 @@
           ]
         },
         {
-          "name": "Get all users",
+          "name": "Get All Users",
           "event": [
             {
               "listen": "prerequest",
@@ -653,7 +653,7 @@
           ]
         },
         {
-          "name": "Delete a user",
+          "name": "Delete a User",
           "_postman_id": "688a1f91-40d6-4f52-9ecf-125630d81480",
           "protocolProfileBehavior": {
             "disableBodyPruning": true
