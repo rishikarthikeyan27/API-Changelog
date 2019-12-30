@@ -438,7 +438,7 @@
           ]
         },
         {
-          "name": "Update User Information",
+          "name": "Update User Info",
           "_postman_id": "cac4e985-84f9-48fd-bd76-0cbc1850fc66",
           "protocolProfileBehavior": {
             "disableBodyPruning": true
