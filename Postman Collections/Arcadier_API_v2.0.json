@@ -64,7 +64,7 @@
               ]
             },
             "url": "https://{{your-marketplace}}.arcadier.io/token",
-            "description": "This API uses the client ID and secret of the marketplace and responds with the admin ID (userID in response) and admin token (access_token in response)."
+            "description": "The Client ID and Client Secret are used to either:\n* Retrieve the admin token\n* Log a user in\n\nThe **Client ID** and **Client Secret** of your marketplace can be found in the Admin portal; just navigate to `Account Settings` then `Account Info`.\n\n#### Retrieving Admin ID and admin token\nParameters needed: `client_id: xxx`, `client_secret: xxx`, `grant_type: client_credentials`, `scope: admin`\n\n#### Logging a user in\nParameters needed: `client_id: xxx`, `client_secret: xxx`, `grant_type: password`, `scope: admin`, `username: (username/email of user)` and `password: (password of user)`\n\nSince this API uses sensitive information like the **Client ID** and **Client Secret**, it is not recommended that this API is called from a client like a browser (Example: of vulnerability: if called using jQuery on a browser, the request headers can be easily discovered and retrieved by anyone)."
           },
           "response": [
             {
@@ -187,7 +187,7 @@
       "name": "Accounts",
       "item": [
         {
-          "name": "Get User Information",
+          "name": "Get a User's Information",
           "_postman_id": "129fa6b1-1c39-4a41-b7b8-8aa7f2545394",
           "protocolProfileBehavior": {
             "disableBodyPruning": true
@@ -810,6 +810,93 @@
           ]
         },
         {
+          "name": "Upgrade User Role",
+          "_postman_id": "754f2ee4-39c3-4044-81cf-757c054b8b2f",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "auth": {
+              "type": "noauth"
+            },
+            "method": "PUT",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{admintoken}}",
+                "type": "text"
+              }
+            ],
+            "url": "https://{{your-marketplace}}.arcadier.io/api/v2/admins/{{adminID}}/users/{{userID}}/roles/{{role}}",
+            "description": "**Upgrades** the role of the userID specified in URL.\n\nThere are 4 roles, in ascending power:\n* User - the person that buys (buyer)\n* Merchant - the person that sells (seller)\n* Admin - the person that controls the marketplace\n* Owner - the owner of the marketplace\n\nIf you are a merchant you will be both \"Merchant\" and \"User\".\nThe owner can be all 4.\nAn admin can be \"Admin\" and \"Merchant\", or \"Admin\" and \"User\"\n\nValues taken by {{role}}: \"merchant\", \"Admin\"\n\n#### Authentication\n> Admin token only"
+          },
+          "response": [
+            {
+              "id": "275a534b-8534-4ddd-83f4-7ddfe7ca7b83",
+              "name": "Buyer converted to merchant",
+              "originalRequest": {
+                "method": "PUT",
+                "header": [
+                  {
+                    "key": "Authorization",
+                    "value": "Bearer {{admintoken}}",
+                    "type": "text"
+                  }
+                ],
+                "url": "https://{{your-marketplace}}.arcadier.io/api/v2/admins/{{adminID}}/users/{{buyerID}}/roles/merchant"
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Cache-Control",
+                  "value": "no-cache"
+                },
+                {
+                  "key": "Pragma",
+                  "value": "no-cache"
+                },
+                {
+                  "key": "Content-Type",
+                  "value": "application/json; charset=utf-8"
+                },
+                {
+                  "key": "Expires",
+                  "value": "-1"
+                },
+                {
+                  "key": "api-version",
+                  "value": "v2"
+                },
+                {
+                  "key": "X-XSS-Protection",
+                  "value": "1; mode=block"
+                },
+                {
+                  "key": "X-Content-Type-Options",
+                  "value": "nosniff"
+                },
+                {
+                  "key": "X-Powered-By",
+                  "value": "ARR/3.0"
+                },
+                {
+                  "key": "Date",
+                  "value": "Mon, 20 May 2019 01:25:07 GMT"
+                },
+                {
+                  "key": "Content-Length",
+                  "value": "15"
+                }
+              ],
+              "cookie": [],
+              "responseTime": null,
+              "body": "{\n    \"Result\": true\n}"
+            }
+          ]
+        },
+        {
           "name": "Delete a User",
           "_postman_id": "688a1f91-40d6-4f52-9ecf-125630d81480",
           "protocolProfileBehavior": {
@@ -888,93 +975,6 @@
                 {
                   "key": "Date",
                   "value": "Tue, 17 Sep 2019 04:08:22 GMT"
-                },
-                {
-                  "key": "Content-Length",
-                  "value": "15"
-                }
-              ],
-              "cookie": [],
-              "responseTime": null,
-              "body": "{\n    \"Result\": true\n}"
-            }
-          ]
-        },
-        {
-          "name": "Upgrade User Role",
-          "_postman_id": "754f2ee4-39c3-4044-81cf-757c054b8b2f",
-          "protocolProfileBehavior": {
-            "disableBodyPruning": true
-          },
-          "request": {
-            "auth": {
-              "type": "noauth"
-            },
-            "method": "PUT",
-            "header": [
-              {
-                "key": "Authorization",
-                "value": "Bearer {{admintoken}}",
-                "type": "text"
-              }
-            ],
-            "url": "https://{{your-marketplace}}.arcadier.io/api/v2/admins/{{adminID}}/users/{{userID}}/roles/{{role}}",
-            "description": "**Upgrades** the role of the userID specified in URL.\n\nThere are 4 roles, in ascending power:\n* User - the person that buys (buyer)\n* Merchant - the person that sells (seller)\n* Admin - the person that controls the marketplace\n* Owner - the owner of the marketplace\n\nIf you are a merchant you will be both \"Merchant\" and \"User\".\nThe owner can be all 4.\nAn admin can be \"Admin\" and \"Merchant\", or \"Admin\" and \"User\"\n\nValues taken by {{role}}: \"merchant\", \"Admin\"\n\n#### Authentication\n> Admin token only"
-          },
-          "response": [
-            {
-              "id": "275a534b-8534-4ddd-83f4-7ddfe7ca7b83",
-              "name": "Buyer converted to merchant",
-              "originalRequest": {
-                "method": "PUT",
-                "header": [
-                  {
-                    "key": "Authorization",
-                    "value": "Bearer {{admintoken}}",
-                    "type": "text"
-                  }
-                ],
-                "url": "https://{{your-marketplace}}.arcadier.io/api/v2/admins/{{adminID}}/users/{{buyerID}}/roles/merchant"
-              },
-              "status": "OK",
-              "code": 200,
-              "_postman_previewlanguage": "json",
-              "header": [
-                {
-                  "key": "Cache-Control",
-                  "value": "no-cache"
-                },
-                {
-                  "key": "Pragma",
-                  "value": "no-cache"
-                },
-                {
-                  "key": "Content-Type",
-                  "value": "application/json; charset=utf-8"
-                },
-                {
-                  "key": "Expires",
-                  "value": "-1"
-                },
-                {
-                  "key": "api-version",
-                  "value": "v2"
-                },
-                {
-                  "key": "X-XSS-Protection",
-                  "value": "1; mode=block"
-                },
-                {
-                  "key": "X-Content-Type-Options",
-                  "value": "nosniff"
-                },
-                {
-                  "key": "X-Powered-By",
-                  "value": "ARR/3.0"
-                },
-                {
-                  "key": "Date",
-                  "value": "Mon, 20 May 2019 01:25:07 GMT"
                 },
                 {
                   "key": "Content-Length",
