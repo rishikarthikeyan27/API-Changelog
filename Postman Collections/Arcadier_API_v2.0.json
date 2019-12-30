@@ -258,6 +258,12 @@
             "disableBodyPruning": true
           },
           "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": {
+                "token": "{{admintoken}}"
+              }
+            },
             "method": "POST",
             "header": [
               {
