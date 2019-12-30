@@ -1288,37 +1288,17 @@
                   "body": "{\n    \"Result\": true\n}"
                 }
               ]
-            }
-          ],
-          "_postman_id": "dc3214f3-b9cb-4b0c-a5f1-b567f5b6a9e8",
-          "_postman_isSubFolder": true
-        },
-        {
-          "name": "Delete a User",
-          "_postman_id": "688a1f91-40d6-4f52-9ecf-125630d81480",
-          "protocolProfileBehavior": {
-            "disableBodyPruning": true
-          },
-          "request": {
-            "auth": {
-              "type": "noauth"
             },
-            "method": "DELETE",
-            "header": [
-              {
-                "key": "Authorization",
-                "value": "Bearer {{admintoken}}",
-                "type": "text"
-              }
-            ],
-            "url": "https://{{your-marketplace}}.arcadier.io/api/v2/admins/{{adminID}}/users/{{userID}}",
-            "description": "Deletes a particular user and responds with \"true\" is the user has been deleted.\n\n#### Authentication\n> Admin token only"
-          },
-          "response": [
             {
-              "id": "237f8cd8-cf1c-472a-b0a8-3b6eba1f83ed",
-              "name": "Delete a user",
-              "originalRequest": {
+              "name": "Delete a User",
+              "_postman_id": "688a1f91-40d6-4f52-9ecf-125630d81480",
+              "protocolProfileBehavior": {
+                "disableBodyPruning": true
+              },
+              "request": {
+                "auth": {
+                  "type": "noauth"
+                },
                 "method": "DELETE",
                 "header": [
                   {
@@ -1327,62 +1307,82 @@
                     "type": "text"
                   }
                 ],
-                "url": "https://{{your-marketplace}}.arcadier.io/api/v2/admins/{{adminID}}/users/{{userID}}"
+                "url": "https://{{your-marketplace}}.arcadier.io/api/v2/admins/{{adminID}}/users/{{userID}}",
+                "description": "Deletes a particular user and responds with \"true\" is the user has been deleted.\n\n#### Authentication\n> Admin token only"
               },
-              "status": "OK",
-              "code": 200,
-              "_postman_previewlanguage": "json",
-              "header": [
+              "response": [
                 {
-                  "key": "Cache-Control",
-                  "value": "no-cache"
-                },
-                {
-                  "key": "Pragma",
-                  "value": "no-cache"
-                },
-                {
-                  "key": "Content-Type",
-                  "value": "application/json; charset=utf-8"
-                },
-                {
-                  "key": "Expires",
-                  "value": "-1"
-                },
-                {
-                  "key": "request-id",
-                  "value": "8263edc1-61b4-4803-815e-af911dc4a0b1"
-                },
-                {
-                  "key": "api-version",
-                  "value": "v2"
-                },
-                {
-                  "key": "X-XSS-Protection",
-                  "value": "1; mode=block"
-                },
-                {
-                  "key": "X-Content-Type-Options",
-                  "value": "nosniff"
-                },
-                {
-                  "key": "X-Powered-By",
-                  "value": "ARR/3.0"
-                },
-                {
-                  "key": "Date",
-                  "value": "Tue, 17 Sep 2019 04:08:22 GMT"
-                },
-                {
-                  "key": "Content-Length",
-                  "value": "15"
+                  "id": "237f8cd8-cf1c-472a-b0a8-3b6eba1f83ed",
+                  "name": "Delete a user",
+                  "originalRequest": {
+                    "method": "DELETE",
+                    "header": [
+                      {
+                        "key": "Authorization",
+                        "value": "Bearer {{admintoken}}",
+                        "type": "text"
+                      }
+                    ],
+                    "url": "https://{{your-marketplace}}.arcadier.io/api/v2/admins/{{adminID}}/users/{{userID}}"
+                  },
+                  "status": "OK",
+                  "code": 200,
+                  "_postman_previewlanguage": "json",
+                  "header": [
+                    {
+                      "key": "Cache-Control",
+                      "value": "no-cache"
+                    },
+                    {
+                      "key": "Pragma",
+                      "value": "no-cache"
+                    },
+                    {
+                      "key": "Content-Type",
+                      "value": "application/json; charset=utf-8"
+                    },
+                    {
+                      "key": "Expires",
+                      "value": "-1"
+                    },
+                    {
+                      "key": "request-id",
+                      "value": "8263edc1-61b4-4803-815e-af911dc4a0b1"
+                    },
+                    {
+                      "key": "api-version",
+                      "value": "v2"
+                    },
+                    {
+                      "key": "X-XSS-Protection",
+                      "value": "1; mode=block"
+                    },
+                    {
+                      "key": "X-Content-Type-Options",
+                      "value": "nosniff"
+                    },
+                    {
+                      "key": "X-Powered-By",
+                      "value": "ARR/3.0"
+                    },
+                    {
+                      "key": "Date",
+                      "value": "Tue, 17 Sep 2019 04:08:22 GMT"
+                    },
+                    {
+                      "key": "Content-Length",
+                      "value": "15"
+                    }
+                  ],
+                  "cookie": [],
+                  "responseTime": null,
+                  "body": "{\n    \"Result\": true\n}"
                 }
-              ],
-              "cookie": [],
-              "responseTime": null,
-              "body": "{\n    \"Result\": true\n}"
+              ]
             }
-          ]
+          ],
+          "_postman_id": "dc3214f3-b9cb-4b0c-a5f1-b567f5b6a9e8",
+          "_postman_isSubFolder": true
         }
       ],
       "_postman_id": "d406cc09-fcaf-4c79-9af5-ff67735221ae",
