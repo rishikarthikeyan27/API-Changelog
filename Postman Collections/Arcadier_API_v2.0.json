@@ -156,6 +156,100 @@
               "body": "{\n    \"access_token\": \"W0epUTVx5oFTadxY7mqiJIiXFIxd1C-RI8P9Ll-K29l4mT2lF0of933_gAtVcwxsBkLk4tC3a3yNidzH6wk2YdieHoM-JwmrblrDgTT8-bhE04MNktzmPlZmIYDwvzo2Ad5f5LRwP8DI9gAfQ4RmeSBm35pWbC7raZS0zTVAiKCf0-K9wJsMiwOnqfjtseb80HTCazEFZHcUGKzeoPw1dWeGRQ2U3vQ__LZtG1eLzz2ivUpW2vG69zN8DINlZCrL_GNknM0oosXvhTehLWM7Jt6P-PNYzvZUCPBJHRcVSOM4WV_v3Du7ZCy2gXRmmXAEFqeacGkcTJHRz1DVM3gR9kFlaBmMSAIFC_vKSrmzn6FhZ9mSXXWbtUsfHLh7cpa1k0IcYhCzLsfZ_32J3uSK6gd3UpT_ijJOmc_tVjPImdFDcxSTXc_JhfiNFqhJ9C8mRGSEZZykS8I3wi3QwGVLuFFwgU5fXmEnE10bxeuVVI3HYXl-Z6wx7I0KnVM6rcGF7fPh5-d9pVffnBoTYyld_palMyOf1OtnjHD-n4OLwLmkRUPnuq2Bs54CEau0_qFd4r71GlgLeZr-gBUIqLyOcDwk0IsgIuz2eDE37V_LHGUBuj68cc-yM5dR-MqaBkRJ1wpxjgTPeApFs67v9RYAONTtsdfwvuY7odsaGQvdG9owednDKKiv7lNOX7buzgXZSXeQklXYZScBp_gbl_16KdigQxPLYSn02j1THdNir_Dt2DofNBMv2qpmslgSbd7iFSVaKA\",\n    \"token_type\": \"bearer\",\n    \"expires_in\": 10799,\n    \"refresh_token\": \"98b93750a4054d8db242e5ab4491c323\",\n    \"UserId\": \"e1676334-1724-45e3-b5fd-5481a3537b45\"\n}"
             }
           ]
+        },
+        {
+          "name": "Log Out",
+          "_postman_id": "fe1fedea-0d13-47b9-97b7-d4500fb94f2e",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{usertoken}}",
+                "type": "text"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/json",
+                "type": "text"
+              }
+            ],
+            "url": "https://{{your-marketplace}}.arcadier.io/api/v2/accounts/sign-out",
+            "description": "This API ends the session of a user using his/her authentication token.\n\n#### Authentication\n> Valid token of an ongoing session"
+          },
+          "response": [
+            {
+              "id": "8be75da7-dad6-495f-8ed8-a702150f2f7f",
+              "name": "Log Out",
+              "originalRequest": {
+                "method": "POST",
+                "header": [
+                  {
+                    "key": "Authorization",
+                    "value": "Bearer {{token}}",
+                    "type": "text"
+                  },
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json",
+                    "type": "text"
+                  }
+                ],
+                "url": "https://{{your-marketplace}}.arcadier.io/api/v2/accounts/sign-out"
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Cache-Control",
+                  "value": "no-cache"
+                },
+                {
+                  "key": "Pragma",
+                  "value": "no-cache"
+                },
+                {
+                  "key": "Content-Type",
+                  "value": "application/json; charset=utf-8"
+                },
+                {
+                  "key": "Expires",
+                  "value": "-1"
+                },
+                {
+                  "key": "api-version",
+                  "value": "v2"
+                },
+                {
+                  "key": "X-XSS-Protection",
+                  "value": "1; mode=block"
+                },
+                {
+                  "key": "X-Content-Type-Options",
+                  "value": "nosniff"
+                },
+                {
+                  "key": "X-Powered-By",
+                  "value": "ARR/3.0"
+                },
+                {
+                  "key": "Date",
+                  "value": "Fri, 23 Aug 2019 04:55:39 GMT"
+                },
+                {
+                  "key": "Content-Length",
+                  "value": "15"
+                }
+              ],
+              "cookie": [],
+              "responseTime": null,
+              "body": "{\n    \"Result\": true\n}"
+            }
+          ]
         }
       ],
       "_postman_id": "04374e8d-012b-4c98-9290-c1ff56a8da2f",
@@ -1264,100 +1358,6 @@
                 {
                   "key": "Date",
                   "value": "Fri, 20 Sep 2019 03:32:31 GMT"
-                },
-                {
-                  "key": "Content-Length",
-                  "value": "15"
-                }
-              ],
-              "cookie": [],
-              "responseTime": null,
-              "body": "{\n    \"Result\": true\n}"
-            }
-          ]
-        },
-        {
-          "name": "Log Out",
-          "_postman_id": "fe1fedea-0d13-47b9-97b7-d4500fb94f2e",
-          "protocolProfileBehavior": {
-            "disableBodyPruning": true
-          },
-          "request": {
-            "method": "POST",
-            "header": [
-              {
-                "key": "Authorization",
-                "value": "Bearer {{usertoken}}",
-                "type": "text"
-              },
-              {
-                "key": "Content-Type",
-                "value": "application/json",
-                "type": "text"
-              }
-            ],
-            "url": "https://{{your-marketplace}}.arcadier.io/api/v2/accounts/sign-out",
-            "description": "This API ends the session of a user using his/her authentication token.\n\n#### Authentication\n> Valid token of an ongoing session"
-          },
-          "response": [
-            {
-              "id": "8be75da7-dad6-495f-8ed8-a702150f2f7f",
-              "name": "Log Out",
-              "originalRequest": {
-                "method": "POST",
-                "header": [
-                  {
-                    "key": "Authorization",
-                    "value": "Bearer {{token}}",
-                    "type": "text"
-                  },
-                  {
-                    "key": "Content-Type",
-                    "value": "application/json",
-                    "type": "text"
-                  }
-                ],
-                "url": "https://{{your-marketplace}}.arcadier.io/api/v2/accounts/sign-out"
-              },
-              "status": "OK",
-              "code": 200,
-              "_postman_previewlanguage": "json",
-              "header": [
-                {
-                  "key": "Cache-Control",
-                  "value": "no-cache"
-                },
-                {
-                  "key": "Pragma",
-                  "value": "no-cache"
-                },
-                {
-                  "key": "Content-Type",
-                  "value": "application/json; charset=utf-8"
-                },
-                {
-                  "key": "Expires",
-                  "value": "-1"
-                },
-                {
-                  "key": "api-version",
-                  "value": "v2"
-                },
-                {
-                  "key": "X-XSS-Protection",
-                  "value": "1; mode=block"
-                },
-                {
-                  "key": "X-Content-Type-Options",
-                  "value": "nosniff"
-                },
-                {
-                  "key": "X-Powered-By",
-                  "value": "ARR/3.0"
-                },
-                {
-                  "key": "Date",
-                  "value": "Fri, 23 Aug 2019 04:55:39 GMT"
                 },
                 {
                   "key": "Content-Length",
