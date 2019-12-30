@@ -550,7 +550,7 @@
           ]
         },
         {
-          "name": "Get All Users",
+          "name": "Get all users",
           "event": [
             {
               "listen": "prerequest",
