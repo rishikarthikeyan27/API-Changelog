@@ -278,7 +278,7 @@
       ]
     },
     {
-      "name": "Accounts",
+      "name": "User Accounts",
       "item": [
         {
           "name": "Get a User's Information",
