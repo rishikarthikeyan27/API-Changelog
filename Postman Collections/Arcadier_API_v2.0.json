@@ -284,12 +284,6 @@
           "name": "Passwords",
           "item": [
             {
-              "name": "Accounts",
-              "item": [],
-              "_postman_id": "34cbd5f7-9c9e-4883-883d-b7a0b6b47cda",
-              "_postman_isSubFolder": true
-            },
-            {
               "name": "Reset User Password",
               "_postman_id": "12e8be69-7939-48f0-b8b5-ce25b001d9ed",
               "protocolProfileBehavior": {
@@ -10720,6 +10714,11 @@
         }
       ],
       "_postman_id": "8b187974-39b1-4e90-b63c-b6d1aeeb585f"
+    },
+    {
+      "name": "Accounts",
+      "item": [],
+      "_postman_id": "34cbd5f7-9c9e-4883-883d-b7a0b6b47cda"
     }
   ]
 }
