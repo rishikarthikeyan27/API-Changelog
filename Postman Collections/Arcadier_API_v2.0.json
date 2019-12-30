@@ -5358,7 +5358,7 @@
       "name": "Emails",
       "item": [
         {
-          "name": "Send an Email",
+          "name": "Send Email",
           "_postman_id": "a2e283c6-f441-4077-a8d6-76f3bf13a223",
           "protocolProfileBehavior": {
             "disableBodyPruning": true
