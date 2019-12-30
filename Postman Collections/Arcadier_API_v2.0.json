@@ -187,7 +187,7 @@
       "name": "Accounts",
       "item": [
         {
-          "name": "User info",
+          "name": "Get User Information",
           "_postman_id": "129fa6b1-1c39-4a41-b7b8-8aa7f2545394",
           "protocolProfileBehavior": {
             "disableBodyPruning": true
@@ -438,7 +438,7 @@
           ]
         },
         {
-          "name": "Update User Info",
+          "name": "Update User Information",
           "_postman_id": "cac4e985-84f9-48fd-bd76-0cbc1850fc66",
           "protocolProfileBehavior": {
             "disableBodyPruning": true
@@ -550,7 +550,7 @@
           ]
         },
         {
-          "name": "Get all users",
+          "name": "Get All Users",
           "event": [
             {
               "listen": "prerequest",
