@@ -688,6 +688,34 @@
             }
           ],
           "_postman_id": "bb435e81-3969-4a74-af6a-bcf094fd5d26",
+          "auth": {
+            "type": "bearer",
+            "bearer": {
+              "token": "{{admintoken}}"
+            }
+          },
+          "event": [
+            {
+              "listen": "prerequest",
+              "script": {
+                "id": "d7508209-4e1d-4581-8474-c66e1835ed3a",
+                "type": "text/javascript",
+                "exec": [
+                  ""
+                ]
+              }
+            },
+            {
+              "listen": "test",
+              "script": {
+                "id": "3805a9c6-4247-4063-8291-875e8514b3de",
+                "type": "text/javascript",
+                "exec": [
+                  ""
+                ]
+              }
+            }
+          ],
           "_postman_isSubFolder": true
         },
         {
