@@ -252,7 +252,7 @@
           ]
         },
         {
-          "name": "Single Sign-On (Under Testing)",
+          "name": "Single Sign-On (Beta)",
           "_postman_id": "e563fb91-986d-4923-ab52-249f92828c2b",
           "protocolProfileBehavior": {
             "disableBodyPruning": true
