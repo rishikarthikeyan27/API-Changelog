@@ -3898,7 +3898,7 @@
           ]
         },
         {
-          "name": "Admin - Edit Order Details",
+          "name": "Admin - Edit Several Orders' Details",
           "_postman_id": "6b4aa892-30cc-4ac5-8117-b5d9374c2996",
           "protocolProfileBehavior": {
             "disableBodyPruning": true
@@ -6330,7 +6330,7 @@
                     {
                       "key": "sellerID",
                       "value": "",
-                      "description": "The merchant ID"
+                      "description": "The merchant GUID"
                     },
                     {
                       "key": "pageSize",
@@ -6345,7 +6345,7 @@
                     {
                       "key": "categories",
                       "value": "",
-                      "description": "The category the item belongs to"
+                      "description": "The category GUID the item belongs to"
                     },
                     {
                       "key": "customFields",
@@ -6636,7 +6636,7 @@
                   "mode": "raw",
                   "raw": "{\n\t\"sellerID\": \"00000000-0000-0000-0000-000000000000\",\n\t\"pageSize\": 0,\n\t\"pageNumber\": 0,\n\t\"categories\": \"string\",\n\t\"customFields\": \"string\",\n\t\"tax\": \"string\",\n\t\"minPrice\": 0,\n\t\"maxPrice\": 0,\n\t\"minRating\": 0,\n\t\"maxRating\": 0,\n\t\"startDate\": \"unix_time\",\n\t\"endDate\": \"unix_time\",\n\t\"keywords\": \"string\",\n\t\"createdStartDate\": \"unix_time\",\n\t\"createdEndDate\": \"unix_time\",\n\t\"updatedStartDate\": \"unix_time\",\n\t\"updatedEndDate\": \"unix_time\"\n}"
                 },
-                "url": "https://.{{your-marketplace}}.arcadier.io/api/v2/items",
+                "url": "https://{{your-marketplace}}.arcadier.io/api/v2/items",
                 "description": "This API behaves the exactly the same way as [Search for items - Params in URL](https://apiv2.arcadier.com/?version=latest#c6d3c581-2556-4cb0-a7f1-daed8733f9fd), except that search paramters are sent as a request body.\n\n#### Authentication\n> None Required"
               },
               "response": [
