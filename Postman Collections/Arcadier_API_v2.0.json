@@ -3143,414 +3143,6 @@
       "_postman_id": "f3ea7649-b5b1-46e9-a160-61bb8c41efe4"
     },
     {
-      "name": "Carts",
-      "item": [
-        {
-          "name": "Get cart details of a user",
-          "_postman_id": "8dff5e16-4fbd-4357-8234-40484f2e75e7",
-          "protocolProfileBehavior": {
-            "disableBodyPruning": true
-          },
-          "request": {
-            "auth": {
-              "type": "noauth"
-            },
-            "method": "GET",
-            "header": [
-              {
-                "key": "Authorization",
-                "value": "Bearer {{admintoken}}",
-                "type": "text"
-              }
-            ],
-            "url": "https://{{your-marketplace}}.arcadier.io/api/v2/users/{{buyerID}}/carts",
-            "description": "Responds with the contents of the cart of the specified buyer. The cart must exist for it to return something.\n\n#### Authentication\n> Admin token\n>\n> Buyer token of the buyerID specified in URL"
-          },
-          "response": [
-            {
-              "id": "49b4e3f5-f9f2-4a38-b1f9-6ccec214ba00",
-              "name": "Get cart details of a user",
-              "originalRequest": {
-                "method": "GET",
-                "header": [
-                  {
-                    "key": "Authorization",
-                    "value": "Bearer {{admintoken}}",
-                    "type": "text"
-                  }
-                ],
-                "url": "https://{{your-marketplace}}.arcadier.io/api/v2/users/{{buyerID}}/carts"
-              },
-              "status": "OK",
-              "code": 200,
-              "_postman_previewlanguage": "json",
-              "header": [
-                {
-                  "key": "Cache-Control",
-                  "value": "no-cache"
-                },
-                {
-                  "key": "Pragma",
-                  "value": "no-cache"
-                },
-                {
-                  "key": "Content-Type",
-                  "value": "application/json; charset=utf-8"
-                },
-                {
-                  "key": "Expires",
-                  "value": "-1"
-                },
-                {
-                  "key": "request-id",
-                  "value": "4a9c5ab1-0b01-4a62-8728-863e68087aab"
-                },
-                {
-                  "key": "api-version",
-                  "value": "v2"
-                },
-                {
-                  "key": "X-XSS-Protection",
-                  "value": "1; mode=block"
-                },
-                {
-                  "key": "X-Content-Type-Options",
-                  "value": "nosniff"
-                },
-                {
-                  "key": "X-Powered-By",
-                  "value": "ARR/3.0"
-                },
-                {
-                  "key": "Date",
-                  "value": "Tue, 17 Sep 2019 07:30:06 GMT"
-                },
-                {
-                  "key": "Content-Length",
-                  "value": "1705"
-                }
-              ],
-              "cookie": [],
-              "responseTime": null,
-              "body": "{\n    \"TotalRecords\": 1,\n    \"PageNumber\": 1,\n    \"PageSize\": 24,\n    \"Records\": [\n        {\n            \"ID\": \"c2374025-2159-4121-8519-67938d857ab3\",\n            \"Quantity\": \"1\",\n            \"CurrencyCode\": \"SGD\",\n            \"SubTotal\": 420,\n            \"Freight\": null,\n            \"Notes\": null,\n            \"DiscountAmount\": null,\n            \"OrderID\": null,\n            \"CartItemType\": \"\",\n            \"ShippingMethod\": null,\n            \"PickupAddress\": null,\n            \"Feedback\": null,\n            \"AddOns\": [],\n            \"BookingSlot\": null,\n            \"ItemDetail\": {\n                \"Variants\": [\n                    {\n                        \"ID\": \"deb927f0-6ced-4d63-ba66-983ac72394be\",\n                        \"Name\": \"API Variant 1\",\n                        \"GroupID\": \"a0b186cd-c44e-4444-a0f0-3331fa3a3d51\",\n                        \"GroupName\": \"API\",\n                        \"PriceChange\": null,\n                        \"SortOrder\": null\n                    },\n                    {\n                        \"ID\": \"5271770c-e176-428e-9023-e2d9db043f29\",\n                        \"Name\": \"API Variant 2\",\n                        \"GroupID\": \"504e5b0b-a06a-4a26-8247-4078e5e84704\",\n                        \"GroupName\": \"API 2\",\n                        \"PriceChange\": null,\n                        \"SortOrder\": null\n                    }\n                ],\n                \"ID\": \"16031381-837d-4f2e-8973-77f90bd00f81\",\n                \"SKU\": \"3101\",\n                \"Name\": \"Yamaha TRBX305 5 String Bass Guitar Postman Example Latest Final LAST FOSHO 3 4 5\",\n                \"BuyerDescription\": \"Sculpted Mahogany Body\",\n                \"SellerDescription\": \"Test Seller Desc\",\n                \"Price\": 420,\n                \"PriceUnit\": \"SGD\",\n                \"StockLimited\": true,\n                \"StockQuantity\": \"10\",\n                \"IsVisibleToCustomer\": true,\n                \"Active\": true,\n                \"IsAvailable\": true,\n                \"DateOfPurchase\": null,\n                \"Weight\": null,\n                \"WeightUnit\": null,\n                \"Cubes\": null,\n                \"CubeUnit\": null,\n                \"Length\": null,\n                \"LengthUnit\": null,\n                \"Width\": null,\n                \"WidthUnit\": null,\n                \"Height\": null,\n                \"HeightUnit\": null,\n                \"AdditionalDetails\": null,\n                \"ExpiryDate\": null,\n                \"CurrencyCode\": \"SGD\",\n                \"ParentID\": null,\n                \"AverageRating\": null,\n                \"InstantBuy\": null,\n                \"Negotiation\": null,\n                \"MerchantDetail\": null,\n                \"Location\": null,\n                \"Categories\": null,\n                \"ShippingMethods\": null,\n                \"PickupAddresses\": null,\n                \"Media\": null,\n                \"Tags\": [\n                    \"API Tag\",\n                    \"API Tag 2\"\n                ],\n                \"Scheduler\": null,\n                \"Distance\": null,\n                \"CustomFields\": null,\n                \"CreatedDateTime\": null,\n                \"ModifiedDateTime\": null,\n                \"HasChildItems\": false,\n                \"ChildItems\": null\n            },\n            \"User\": null,\n            \"AcceptedOffer\": null\n        }\n    ]\n}"
-            }
-          ]
-        },
-        {
-          "name": "Add item to cart",
-          "_postman_id": "687e81a0-6580-4db9-9885-516ec887b500",
-          "protocolProfileBehavior": {
-            "disableBodyPruning": true
-          },
-          "request": {
-            "auth": {
-              "type": "noauth"
-            },
-            "method": "POST",
-            "header": [
-              {
-                "key": "Content-Type",
-                "name": "Content-Type",
-                "value": "application/json",
-                "type": "text"
-              },
-              {
-                "key": "Authorization",
-                "value": "Bearer {{buyertoken}}",
-                "type": "text"
-              }
-            ],
-            "body": {
-              "mode": "raw",
-              "raw": "{\n    \"ItemDetail\": {\n        \"ID\": \"00000000-0000-0000-0000-000000000000\"\n    },\n    \"Quantity\": 0,\n    \"CartItemType\": \"string\",\n    \"ShippingMethod\": {\n        \"ID\": \"00000000-0000-0000-0000-000000000000\"\n    },\n    \"PickupAddress\": {\n        \"ID\": \"00000000-0000-0000-0000-000000000000\"\n    }\n}"
-            },
-            "url": "https://{{your-marketplace}}.arcadier.io/api/v2/users/{{buyerID}}/carts",
-            "description": "Adds a single item to the cart of the buyer.\n\n**Request**\n\nAll the parameters are required. If your item has child items, use the child item ID instead of the parent item ID. Otherwise the API will respond with `null`.\n\nIf \"CartItemType\": \"delivery\", then you can only add:\n\n```\n\"ShippingMethod\": {\n        \"ID\": \"46a0896b-482f-453f-acb4-aa39ddc2707d\"   (This is the ID of a shipping method that already has been created by the merchant beforehand)\n    }\n```\n \n **Response**\n \n The \"ID\" responded is represents a unique identifier for the Item in that cart. It is not the same as the Item ID given by Items API. Each item in the cart will have a unique `Cart Item ID` which is represented by the `ID` in the reponse.\n \n If the response you receive is null, check the item ID you provided. If that item has child items, insert those child items' IDs instead.\n\n#### Authentication\n> Buyer token only"
-          },
-          "response": [
-            {
-              "id": "f876b9ad-55e3-43cb-ab4b-cfa714789a83",
-              "name": "Add item to cart",
-              "originalRequest": {
-                "method": "POST",
-                "header": [
-                  {
-                    "key": "Content-Type",
-                    "name": "Content-Type",
-                    "value": "application/json",
-                    "type": "text"
-                  },
-                  {
-                    "key": "Authorization",
-                    "value": "Bearer {{buyertoken}}",
-                    "type": "text"
-                  }
-                ],
-                "body": {
-                  "mode": "raw",
-                  "raw": "{\n\t\"ItemDetail\": {\n\t\t\"ID\": \"16031381-837d-4f2e-8973-77f90bd00f81\"\n\t},\n\t\"Quantity\": 4,\n\t\"CartItemType\": \"delivery\",\n\t\"ShippingMethod\": {\n\t\t\"ID\": \"18077aad-3a4e-4867-a5ba-18ff79fc06d8\"\n\t\t}\n}\n\n"
-                },
-                "url": "https://{{your-marketplace}}.arcadier.io/api/v2/users/{{buyerID}}/carts"
-              },
-              "status": "OK",
-              "code": 200,
-              "_postman_previewlanguage": "json",
-              "header": [
-                {
-                  "key": "Cache-Control",
-                  "value": "no-cache"
-                },
-                {
-                  "key": "Pragma",
-                  "value": "no-cache"
-                },
-                {
-                  "key": "Content-Type",
-                  "value": "application/json; charset=utf-8"
-                },
-                {
-                  "key": "Expires",
-                  "value": "-1"
-                },
-                {
-                  "key": "request-id",
-                  "value": "a8caaa24-ed26-4f37-a216-f70c74c34b85"
-                },
-                {
-                  "key": "api-version",
-                  "value": "v2"
-                },
-                {
-                  "key": "X-XSS-Protection",
-                  "value": "1; mode=block"
-                },
-                {
-                  "key": "X-Content-Type-Options",
-                  "value": "nosniff"
-                },
-                {
-                  "key": "X-Powered-By",
-                  "value": "ARR/3.0"
-                },
-                {
-                  "key": "Date",
-                  "value": "Tue, 17 Sep 2019 07:53:06 GMT"
-                },
-                {
-                  "key": "Content-Length",
-                  "value": "1857"
-                }
-              ],
-              "cookie": [],
-              "responseTime": null,
-              "body": "{\n    \"ID\": \"4a3cb711-8ff3-4ca6-ad9a-85e2da20b9fd\",\n    \"Quantity\": \"4\",\n    \"CurrencyCode\": \"SGD\",\n    \"SubTotal\": 1680,\n    \"Freight\": 30,\n    \"Notes\": null,\n    \"DiscountAmount\": null,\n    \"OrderID\": null,\n    \"CartItemType\": \"delivery\",\n    \"ShippingMethod\": {\n        \"ID\": \"18077aad-3a4e-4867-a5ba-18ff79fc06d8\",\n        \"Courier\": \"Arcadier Express\",\n        \"Method\": \"delivery\",\n        \"Price\": 6,\n        \"CombinedPrice\": 8,\n        \"CurrencyCode\": \"SGD\",\n        \"Description\": \"Fastest in the south\",\n        \"CustomFields\": null\n    },\n    \"PickupAddress\": null,\n    \"Feedback\": null,\n    \"AddOns\": [],\n    \"BookingSlot\": null,\n    \"ItemDetail\": {\n        \"Variants\": [\n            {\n                \"ID\": \"deb927f0-6ced-4d63-ba66-983ac72394be\",\n                \"Name\": \"API Variant 1\",\n                \"GroupID\": \"a0b186cd-c44e-4444-a0f0-3331fa3a3d51\",\n                \"GroupName\": \"API\",\n                \"PriceChange\": null,\n                \"SortOrder\": null\n            },\n            {\n                \"ID\": \"5271770c-e176-428e-9023-e2d9db043f29\",\n                \"Name\": \"API Variant 2\",\n                \"GroupID\": \"504e5b0b-a06a-4a26-8247-4078e5e84704\",\n                \"GroupName\": \"API 2\",\n                \"PriceChange\": null,\n                \"SortOrder\": null\n            }\n        ],\n        \"ID\": \"16031381-837d-4f2e-8973-77f90bd00f81\",\n        \"SKU\": \"3101\",\n        \"Name\": \"Yamaha TRBX305 5 String Bass Guitar Postman Example Latest Final LAST FOSHO 3 4 5\",\n        \"BuyerDescription\": \"Sculpted Mahogany Body\",\n        \"SellerDescription\": \"Test Seller Desc\",\n        \"Price\": 420,\n        \"PriceUnit\": \"SGD\",\n        \"StockLimited\": true,\n        \"StockQuantity\": \"10\",\n        \"IsVisibleToCustomer\": true,\n        \"Active\": true,\n        \"IsAvailable\": true,\n        \"DateOfPurchase\": null,\n        \"Weight\": null,\n        \"WeightUnit\": null,\n        \"Cubes\": null,\n        \"CubeUnit\": null,\n        \"Length\": null,\n        \"LengthUnit\": null,\n        \"Width\": null,\n        \"WidthUnit\": null,\n        \"Height\": null,\n        \"HeightUnit\": null,\n        \"AdditionalDetails\": null,\n        \"ExpiryDate\": null,\n        \"CurrencyCode\": \"SGD\",\n        \"ParentID\": null,\n        \"AverageRating\": null,\n        \"InstantBuy\": null,\n        \"Negotiation\": null,\n        \"MerchantDetail\": null,\n        \"Location\": null,\n        \"Categories\": null,\n        \"ShippingMethods\": null,\n        \"PickupAddresses\": null,\n        \"Media\": null,\n        \"Tags\": [\n            \"API Tag\",\n            \"API Tag 2\"\n        ],\n        \"Scheduler\": null,\n        \"Distance\": null,\n        \"CustomFields\": null,\n        \"CreatedDateTime\": null,\n        \"ModifiedDateTime\": null,\n        \"HasChildItems\": false,\n        \"ChildItems\": null\n    },\n    \"User\": null,\n    \"AcceptedOffer\": null\n}"
-            }
-          ]
-        },
-        {
-          "name": "Update item in cart",
-          "_postman_id": "0f0df34b-2ec6-402a-8106-20092f3a7932",
-          "protocolProfileBehavior": {
-            "disableBodyPruning": true
-          },
-          "request": {
-            "auth": {
-              "type": "noauth"
-            },
-            "method": "PUT",
-            "header": [
-              {
-                "key": "Content-Type",
-                "name": "Content-Type",
-                "value": "application/json",
-                "type": "text"
-              },
-              {
-                "key": "Authorization",
-                "type": "text",
-                "value": "Bearer {{buyertoken}}"
-              }
-            ],
-            "body": {
-              "mode": "raw",
-              "raw": "{\n\t\"Quantity\": 0,\n\t\"Notes\": \"string\",\n\t\"CartItemType\": \"string\",\n\t\"ShippingMethod\": {\n\t\t\"ID\": \"00000000-0000-0000-0000-000000000000\"\n\t},\n\t\"PickupAddress\": {\n\t\t\"ID\": \"00000000-0000-0000-0000-000000000000\"\n\t},\n\t\"ItemDetail\": {\n\t\t\"ID\": \"00000000-0000-0000-0000-000000000000\"\n\t}\n}"
-            },
-            "url": "https://{{your-marketplace}}.arcadier.io/api/v2/users/{{buyerID}}/carts/{{cart-item-ID}}",
-            "description": "The cart item `ID` can be retrieved using the `Get cart details of user` API\nThis API can be used with both the PUT and POST methods.\n* PUT method with `\"Quantity\": 3`\n  * Change the originial quantity of an item from `x` to `3`\n* POST method with `\"Quantity\": 3`\n  * Change the originial quantity of an item from `x` to `x + 3`\n\nIf \"CartItemType\": \"delivery\", then you can only add:\n\n```\n\"ShippingMethod\": {\n        \"ID\": \"46a0896b-482f-453f-acb4-aa39ddc2707d\"   (This is the ID of a shipping method that already has been created by the merchant beforehand)\n    }\n```\n\nIf the response you receive is `null`, check the item ID you provided. If that item has child items, insert those child items' IDs instead.\n\n#### Authentication\n> Buyer token only"
-          },
-          "response": [
-            {
-              "id": "a738c8c2-cc14-4be7-be67-7fd672fe9e1b",
-              "name": "Update item in cart",
-              "originalRequest": {
-                "method": "PUT",
-                "header": [
-                  {
-                    "key": "Content-Type",
-                    "name": "Content-Type",
-                    "type": "text",
-                    "value": "application/json"
-                  },
-                  {
-                    "key": "Authorization",
-                    "type": "text",
-                    "value": "Bearer {{buyertoken}}"
-                  }
-                ],
-                "body": {
-                  "mode": "raw",
-                  "raw": "{\n  \"Quantity\": 4,\n  \"CartItemType\": \"delivery\",\n\t\"ShippingMethod\": {\n\t\t\"ID\": \"18077aad-3a4e-4867-a5ba-18ff79fc06d8\"\n\t\t}\n}"
-                },
-                "url": "https://{{your-marketplace}}.arcadier.io/api/v2/users/{{buyerID}}/carts/{{cart-item-ID}}"
-              },
-              "status": "OK",
-              "code": 200,
-              "_postman_previewlanguage": "json",
-              "header": [
-                {
-                  "key": "Cache-Control",
-                  "value": "no-cache"
-                },
-                {
-                  "key": "Pragma",
-                  "value": "no-cache"
-                },
-                {
-                  "key": "Content-Type",
-                  "value": "application/json; charset=utf-8"
-                },
-                {
-                  "key": "Expires",
-                  "value": "-1"
-                },
-                {
-                  "key": "request-id",
-                  "value": "1785316b-5b6a-40cc-b9b1-356c9154d612"
-                },
-                {
-                  "key": "api-version",
-                  "value": "v2"
-                },
-                {
-                  "key": "X-XSS-Protection",
-                  "value": "1; mode=block"
-                },
-                {
-                  "key": "X-Content-Type-Options",
-                  "value": "nosniff"
-                },
-                {
-                  "key": "X-Powered-By",
-                  "value": "ARR/3.0"
-                },
-                {
-                  "key": "Date",
-                  "value": "Tue, 17 Sep 2019 07:43:55 GMT"
-                },
-                {
-                  "key": "Content-Length",
-                  "value": "1856"
-                }
-              ],
-              "cookie": [],
-              "responseTime": null,
-              "body": "{\n    \"ID\": \"c2374025-2159-4121-8519-67938d857ab3\",\n    \"Quantity\": \"4\",\n    \"CurrencyCode\": \"SGD\",\n    \"SubTotal\": 1680,\n    \"Freight\": null,\n    \"Notes\": null,\n    \"DiscountAmount\": null,\n    \"OrderID\": null,\n    \"CartItemType\": \"delivery\",\n    \"ShippingMethod\": {\n        \"ID\": \"18077aad-3a4e-4867-a5ba-18ff79fc06d8\",\n        \"Courier\": \"Arcadier Express\",\n        \"Method\": \"delivery\",\n        \"Price\": 6,\n        \"CombinedPrice\": 8,\n        \"CurrencyCode\": \"SGD\",\n        \"Description\": \"Fastest in the south\",\n        \"CustomFields\": null\n    },\n    \"PickupAddress\": null,\n    \"Feedback\": null,\n    \"AddOns\": [],\n    \"BookingSlot\": null,\n    \"ItemDetail\": {\n        \"Variants\": [\n            {\n                \"ID\": \"deb927f0-6ced-4d63-ba66-983ac72394be\",\n                \"Name\": \"API Variant 1\",\n                \"GroupID\": \"a0b186cd-c44e-4444-a0f0-3331fa3a3d51\",\n                \"GroupName\": \"API\",\n                \"PriceChange\": null,\n                \"SortOrder\": null\n            },\n            {\n                \"ID\": \"5271770c-e176-428e-9023-e2d9db043f29\",\n                \"Name\": \"API Variant 2\",\n                \"GroupID\": \"504e5b0b-a06a-4a26-8247-4078e5e84704\",\n                \"GroupName\": \"API 2\",\n                \"PriceChange\": null,\n                \"SortOrder\": null\n            }\n        ],\n        \"ID\": \"16031381-837d-4f2e-8973-77f90bd00f81\",\n        \"SKU\": \"3101\",\n        \"Name\": \"Yamaha TRBX305 5 String Bass Guitar Postman Example Latest Final LAST FOSHO 3 4 5\",\n        \"BuyerDescription\": \"Sculpted Mahogany Body\",\n        \"SellerDescription\": \"Test Seller Desc\",\n        \"Price\": 420,\n        \"PriceUnit\": \"SGD\",\n        \"StockLimited\": true,\n        \"StockQuantity\": \"10\",\n        \"IsVisibleToCustomer\": true,\n        \"Active\": true,\n        \"IsAvailable\": true,\n        \"DateOfPurchase\": null,\n        \"Weight\": null,\n        \"WeightUnit\": null,\n        \"Cubes\": null,\n        \"CubeUnit\": null,\n        \"Length\": null,\n        \"LengthUnit\": null,\n        \"Width\": null,\n        \"WidthUnit\": null,\n        \"Height\": null,\n        \"HeightUnit\": null,\n        \"AdditionalDetails\": null,\n        \"ExpiryDate\": null,\n        \"CurrencyCode\": \"SGD\",\n        \"ParentID\": null,\n        \"AverageRating\": null,\n        \"InstantBuy\": null,\n        \"Negotiation\": null,\n        \"MerchantDetail\": null,\n        \"Location\": null,\n        \"Categories\": null,\n        \"ShippingMethods\": null,\n        \"PickupAddresses\": null,\n        \"Media\": null,\n        \"Tags\": [\n            \"API Tag\",\n            \"API Tag 2\"\n        ],\n        \"Scheduler\": null,\n        \"Distance\": null,\n        \"CustomFields\": null,\n        \"CreatedDateTime\": null,\n        \"ModifiedDateTime\": null,\n        \"HasChildItems\": false,\n        \"ChildItems\": null\n    },\n    \"User\": null,\n    \"AcceptedOffer\": null\n}"
-            }
-          ]
-        },
-        {
-          "name": "Delete item in cart",
-          "_postman_id": "f7fc984c-b492-4622-85ce-5646d1dc756d",
-          "protocolProfileBehavior": {
-            "disableBodyPruning": true
-          },
-          "request": {
-            "auth": {
-              "type": "noauth"
-            },
-            "method": "DELETE",
-            "header": [
-              {
-                "key": "Authorization",
-                "value": "Bearer {{buyertoken}}",
-                "type": "text"
-              }
-            ],
-            "url": "https://{{your-marketplace}}.arcadier.io/api/v2/users/{{buyerID}}/carts/{{cart-item-ID}}",
-            "description": "Deletes items that were added to a cart.\n\n#### Authentication\n> Buyer token only"
-          },
-          "response": [
-            {
-              "id": "c7a1009f-5eed-4efe-8336-ab21757230df",
-              "name": "Response is the details of the deleted item from cart",
-              "originalRequest": {
-                "method": "DELETE",
-                "header": [],
-                "url": "https://{{your-marketplace}}.arcadier.io/api/v2/users/{{buyerID}}/carts/{{cartID}}"
-              },
-              "status": "OK",
-              "code": 200,
-              "_postman_previewlanguage": "json",
-              "header": [
-                {
-                  "key": "Cache-Control",
-                  "value": "no-cache"
-                },
-                {
-                  "key": "Pragma",
-                  "value": "no-cache"
-                },
-                {
-                  "key": "Content-Type",
-                  "value": "application/json; charset=utf-8"
-                },
-                {
-                  "key": "Content-Encoding",
-                  "value": "gzip"
-                },
-                {
-                  "key": "Expires",
-                  "value": "-1"
-                },
-                {
-                  "key": "Vary",
-                  "value": "Accept-Encoding"
-                },
-                {
-                  "key": "X-StackifyID",
-                  "value": "V1|8000327a-0000-3700-b63f-84710c7967bb|"
-                },
-                {
-                  "key": "api-version",
-                  "value": "v2"
-                },
-                {
-                  "key": "X-XSS-Protection",
-                  "value": "1; mode=block"
-                },
-                {
-                  "key": "X-Content-Type-Options",
-                  "value": "nosniff"
-                },
-                {
-                  "key": "Date",
-                  "value": "Thu, 04 Apr 2019 08:05:55 GMT"
-                },
-                {
-                  "key": "Content-Length",
-                  "value": "594"
-                }
-              ],
-              "cookie": [],
-              "responseTime": null,
-              "body": "{\n    \"ID\": \"ff5a223e-79d2-4d7f-b8d2-e9ebfe4d742d\",\n    \"Quantity\": \"11\",\n    \"CurrencyCode\": \"SGD\",\n    \"SubTotal\": \"4500.00\",\n    \"Freight\": \"10.00\",\n    \"Notes\": \"VIP discount\",\n    \"DiscountAmount\": \"1500.00\",\n    \"CartItemType\": \"delivery\",\n    \"ShippingMethod\": {\n        \"ID\": \"5cb0e93d-5df3-42a1-8e3f-8212029f327c\",\n        \"Price\": \"10.00\",\n        \"CombinedPrice\": \"15.00\",\n        \"CurrencyCode\": \"SGD\",\n        \"Description\": \"guitar pro\"\n    },\n    \"AddOns\": [],\n    \"ItemDetail\": {\n        \"Variants\": [],\n        \"ID\": \"ee0e67f7-85cd-4b51-a851-a73572087ac7\",\n        \"SKU\": \"2000\",\n        \"Name\": \"Semi acoustic guitar\",\n        \"BuyerDescription\": \"Semi-acoustic wood guitar used by me during my greatest performances\",\n        \"Price\": \"500.00\",\n        \"StockLimited\": false,\n        \"StockQuantity\": \"0\",\n        \"IsVisibleToCustomer\": true,\n        \"Active\": true,\n        \"IsAvailable\": true,\n        \"CurrencyCode\": \"SGD\",\n        \"HasChildItems\": false\n    }\n}"
-            }
-          ]
-        }
-      ],
-      "_postman_id": "eed5e49d-4578-4fbd-8701-815587c83b6d"
-    },
-    {
       "name": "Checkout",
       "item": [
         {
@@ -4337,6 +3929,414 @@
           }
         }
       ]
+    },
+    {
+      "name": "Carts",
+      "item": [
+        {
+          "name": "Get cart details of a user",
+          "_postman_id": "8dff5e16-4fbd-4357-8234-40484f2e75e7",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "auth": {
+              "type": "noauth"
+            },
+            "method": "GET",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{admintoken}}",
+                "type": "text"
+              }
+            ],
+            "url": "https://{{your-marketplace}}.arcadier.io/api/v2/users/{{buyerID}}/carts",
+            "description": "Responds with the contents of the cart of the specified buyer. The cart must exist for it to return something.\n\n#### Authentication\n> Admin token\n>\n> Buyer token of the buyerID specified in URL"
+          },
+          "response": [
+            {
+              "id": "49b4e3f5-f9f2-4a38-b1f9-6ccec214ba00",
+              "name": "Get cart details of a user",
+              "originalRequest": {
+                "method": "GET",
+                "header": [
+                  {
+                    "key": "Authorization",
+                    "value": "Bearer {{admintoken}}",
+                    "type": "text"
+                  }
+                ],
+                "url": "https://{{your-marketplace}}.arcadier.io/api/v2/users/{{buyerID}}/carts"
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Cache-Control",
+                  "value": "no-cache"
+                },
+                {
+                  "key": "Pragma",
+                  "value": "no-cache"
+                },
+                {
+                  "key": "Content-Type",
+                  "value": "application/json; charset=utf-8"
+                },
+                {
+                  "key": "Expires",
+                  "value": "-1"
+                },
+                {
+                  "key": "request-id",
+                  "value": "4a9c5ab1-0b01-4a62-8728-863e68087aab"
+                },
+                {
+                  "key": "api-version",
+                  "value": "v2"
+                },
+                {
+                  "key": "X-XSS-Protection",
+                  "value": "1; mode=block"
+                },
+                {
+                  "key": "X-Content-Type-Options",
+                  "value": "nosniff"
+                },
+                {
+                  "key": "X-Powered-By",
+                  "value": "ARR/3.0"
+                },
+                {
+                  "key": "Date",
+                  "value": "Tue, 17 Sep 2019 07:30:06 GMT"
+                },
+                {
+                  "key": "Content-Length",
+                  "value": "1705"
+                }
+              ],
+              "cookie": [],
+              "responseTime": null,
+              "body": "{\n    \"TotalRecords\": 1,\n    \"PageNumber\": 1,\n    \"PageSize\": 24,\n    \"Records\": [\n        {\n            \"ID\": \"c2374025-2159-4121-8519-67938d857ab3\",\n            \"Quantity\": \"1\",\n            \"CurrencyCode\": \"SGD\",\n            \"SubTotal\": 420,\n            \"Freight\": null,\n            \"Notes\": null,\n            \"DiscountAmount\": null,\n            \"OrderID\": null,\n            \"CartItemType\": \"\",\n            \"ShippingMethod\": null,\n            \"PickupAddress\": null,\n            \"Feedback\": null,\n            \"AddOns\": [],\n            \"BookingSlot\": null,\n            \"ItemDetail\": {\n                \"Variants\": [\n                    {\n                        \"ID\": \"deb927f0-6ced-4d63-ba66-983ac72394be\",\n                        \"Name\": \"API Variant 1\",\n                        \"GroupID\": \"a0b186cd-c44e-4444-a0f0-3331fa3a3d51\",\n                        \"GroupName\": \"API\",\n                        \"PriceChange\": null,\n                        \"SortOrder\": null\n                    },\n                    {\n                        \"ID\": \"5271770c-e176-428e-9023-e2d9db043f29\",\n                        \"Name\": \"API Variant 2\",\n                        \"GroupID\": \"504e5b0b-a06a-4a26-8247-4078e5e84704\",\n                        \"GroupName\": \"API 2\",\n                        \"PriceChange\": null,\n                        \"SortOrder\": null\n                    }\n                ],\n                \"ID\": \"16031381-837d-4f2e-8973-77f90bd00f81\",\n                \"SKU\": \"3101\",\n                \"Name\": \"Yamaha TRBX305 5 String Bass Guitar Postman Example Latest Final LAST FOSHO 3 4 5\",\n                \"BuyerDescription\": \"Sculpted Mahogany Body\",\n                \"SellerDescription\": \"Test Seller Desc\",\n                \"Price\": 420,\n                \"PriceUnit\": \"SGD\",\n                \"StockLimited\": true,\n                \"StockQuantity\": \"10\",\n                \"IsVisibleToCustomer\": true,\n                \"Active\": true,\n                \"IsAvailable\": true,\n                \"DateOfPurchase\": null,\n                \"Weight\": null,\n                \"WeightUnit\": null,\n                \"Cubes\": null,\n                \"CubeUnit\": null,\n                \"Length\": null,\n                \"LengthUnit\": null,\n                \"Width\": null,\n                \"WidthUnit\": null,\n                \"Height\": null,\n                \"HeightUnit\": null,\n                \"AdditionalDetails\": null,\n                \"ExpiryDate\": null,\n                \"CurrencyCode\": \"SGD\",\n                \"ParentID\": null,\n                \"AverageRating\": null,\n                \"InstantBuy\": null,\n                \"Negotiation\": null,\n                \"MerchantDetail\": null,\n                \"Location\": null,\n                \"Categories\": null,\n                \"ShippingMethods\": null,\n                \"PickupAddresses\": null,\n                \"Media\": null,\n                \"Tags\": [\n                    \"API Tag\",\n                    \"API Tag 2\"\n                ],\n                \"Scheduler\": null,\n                \"Distance\": null,\n                \"CustomFields\": null,\n                \"CreatedDateTime\": null,\n                \"ModifiedDateTime\": null,\n                \"HasChildItems\": false,\n                \"ChildItems\": null\n            },\n            \"User\": null,\n            \"AcceptedOffer\": null\n        }\n    ]\n}"
+            }
+          ]
+        },
+        {
+          "name": "Add item to cart",
+          "_postman_id": "687e81a0-6580-4db9-9885-516ec887b500",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "auth": {
+              "type": "noauth"
+            },
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "name": "Content-Type",
+                "value": "application/json",
+                "type": "text"
+              },
+              {
+                "key": "Authorization",
+                "value": "Bearer {{buyertoken}}",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n    \"ItemDetail\": {\n        \"ID\": \"00000000-0000-0000-0000-000000000000\"\n    },\n    \"Quantity\": 0,\n    \"CartItemType\": \"string\",\n    \"ShippingMethod\": {\n        \"ID\": \"00000000-0000-0000-0000-000000000000\"\n    },\n    \"PickupAddress\": {\n        \"ID\": \"00000000-0000-0000-0000-000000000000\"\n    }\n}"
+            },
+            "url": "https://{{your-marketplace}}.arcadier.io/api/v2/users/{{buyerID}}/carts",
+            "description": "Adds a single item to the cart of the buyer.\n\n**Request**\n\nAll the parameters are required. If your item has child items, use the child item ID instead of the parent item ID. Otherwise the API will respond with `null`.\n\nIf \"CartItemType\": \"delivery\", then you can only add:\n\n```\n\"ShippingMethod\": {\n        \"ID\": \"46a0896b-482f-453f-acb4-aa39ddc2707d\"   (This is the ID of a shipping method that already has been created by the merchant beforehand)\n    }\n```\n \n **Response**\n \n The \"ID\" responded is represents a unique identifier for the Item in that cart. It is not the same as the Item ID given by Items API. Each item in the cart will have a unique `Cart Item ID` which is represented by the `ID` in the reponse.\n \n If the response you receive is null, check the item ID you provided. If that item has child items, insert those child items' IDs instead.\n\n#### Authentication\n> Buyer token only"
+          },
+          "response": [
+            {
+              "id": "f876b9ad-55e3-43cb-ab4b-cfa714789a83",
+              "name": "Add item to cart",
+              "originalRequest": {
+                "method": "POST",
+                "header": [
+                  {
+                    "key": "Content-Type",
+                    "name": "Content-Type",
+                    "value": "application/json",
+                    "type": "text"
+                  },
+                  {
+                    "key": "Authorization",
+                    "value": "Bearer {{buyertoken}}",
+                    "type": "text"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n\t\"ItemDetail\": {\n\t\t\"ID\": \"16031381-837d-4f2e-8973-77f90bd00f81\"\n\t},\n\t\"Quantity\": 4,\n\t\"CartItemType\": \"delivery\",\n\t\"ShippingMethod\": {\n\t\t\"ID\": \"18077aad-3a4e-4867-a5ba-18ff79fc06d8\"\n\t\t}\n}\n\n"
+                },
+                "url": "https://{{your-marketplace}}.arcadier.io/api/v2/users/{{buyerID}}/carts"
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Cache-Control",
+                  "value": "no-cache"
+                },
+                {
+                  "key": "Pragma",
+                  "value": "no-cache"
+                },
+                {
+                  "key": "Content-Type",
+                  "value": "application/json; charset=utf-8"
+                },
+                {
+                  "key": "Expires",
+                  "value": "-1"
+                },
+                {
+                  "key": "request-id",
+                  "value": "a8caaa24-ed26-4f37-a216-f70c74c34b85"
+                },
+                {
+                  "key": "api-version",
+                  "value": "v2"
+                },
+                {
+                  "key": "X-XSS-Protection",
+                  "value": "1; mode=block"
+                },
+                {
+                  "key": "X-Content-Type-Options",
+                  "value": "nosniff"
+                },
+                {
+                  "key": "X-Powered-By",
+                  "value": "ARR/3.0"
+                },
+                {
+                  "key": "Date",
+                  "value": "Tue, 17 Sep 2019 07:53:06 GMT"
+                },
+                {
+                  "key": "Content-Length",
+                  "value": "1857"
+                }
+              ],
+              "cookie": [],
+              "responseTime": null,
+              "body": "{\n    \"ID\": \"4a3cb711-8ff3-4ca6-ad9a-85e2da20b9fd\",\n    \"Quantity\": \"4\",\n    \"CurrencyCode\": \"SGD\",\n    \"SubTotal\": 1680,\n    \"Freight\": 30,\n    \"Notes\": null,\n    \"DiscountAmount\": null,\n    \"OrderID\": null,\n    \"CartItemType\": \"delivery\",\n    \"ShippingMethod\": {\n        \"ID\": \"18077aad-3a4e-4867-a5ba-18ff79fc06d8\",\n        \"Courier\": \"Arcadier Express\",\n        \"Method\": \"delivery\",\n        \"Price\": 6,\n        \"CombinedPrice\": 8,\n        \"CurrencyCode\": \"SGD\",\n        \"Description\": \"Fastest in the south\",\n        \"CustomFields\": null\n    },\n    \"PickupAddress\": null,\n    \"Feedback\": null,\n    \"AddOns\": [],\n    \"BookingSlot\": null,\n    \"ItemDetail\": {\n        \"Variants\": [\n            {\n                \"ID\": \"deb927f0-6ced-4d63-ba66-983ac72394be\",\n                \"Name\": \"API Variant 1\",\n                \"GroupID\": \"a0b186cd-c44e-4444-a0f0-3331fa3a3d51\",\n                \"GroupName\": \"API\",\n                \"PriceChange\": null,\n                \"SortOrder\": null\n            },\n            {\n                \"ID\": \"5271770c-e176-428e-9023-e2d9db043f29\",\n                \"Name\": \"API Variant 2\",\n                \"GroupID\": \"504e5b0b-a06a-4a26-8247-4078e5e84704\",\n                \"GroupName\": \"API 2\",\n                \"PriceChange\": null,\n                \"SortOrder\": null\n            }\n        ],\n        \"ID\": \"16031381-837d-4f2e-8973-77f90bd00f81\",\n        \"SKU\": \"3101\",\n        \"Name\": \"Yamaha TRBX305 5 String Bass Guitar Postman Example Latest Final LAST FOSHO 3 4 5\",\n        \"BuyerDescription\": \"Sculpted Mahogany Body\",\n        \"SellerDescription\": \"Test Seller Desc\",\n        \"Price\": 420,\n        \"PriceUnit\": \"SGD\",\n        \"StockLimited\": true,\n        \"StockQuantity\": \"10\",\n        \"IsVisibleToCustomer\": true,\n        \"Active\": true,\n        \"IsAvailable\": true,\n        \"DateOfPurchase\": null,\n        \"Weight\": null,\n        \"WeightUnit\": null,\n        \"Cubes\": null,\n        \"CubeUnit\": null,\n        \"Length\": null,\n        \"LengthUnit\": null,\n        \"Width\": null,\n        \"WidthUnit\": null,\n        \"Height\": null,\n        \"HeightUnit\": null,\n        \"AdditionalDetails\": null,\n        \"ExpiryDate\": null,\n        \"CurrencyCode\": \"SGD\",\n        \"ParentID\": null,\n        \"AverageRating\": null,\n        \"InstantBuy\": null,\n        \"Negotiation\": null,\n        \"MerchantDetail\": null,\n        \"Location\": null,\n        \"Categories\": null,\n        \"ShippingMethods\": null,\n        \"PickupAddresses\": null,\n        \"Media\": null,\n        \"Tags\": [\n            \"API Tag\",\n            \"API Tag 2\"\n        ],\n        \"Scheduler\": null,\n        \"Distance\": null,\n        \"CustomFields\": null,\n        \"CreatedDateTime\": null,\n        \"ModifiedDateTime\": null,\n        \"HasChildItems\": false,\n        \"ChildItems\": null\n    },\n    \"User\": null,\n    \"AcceptedOffer\": null\n}"
+            }
+          ]
+        },
+        {
+          "name": "Update item in cart",
+          "_postman_id": "0f0df34b-2ec6-402a-8106-20092f3a7932",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "auth": {
+              "type": "noauth"
+            },
+            "method": "PUT",
+            "header": [
+              {
+                "key": "Content-Type",
+                "name": "Content-Type",
+                "value": "application/json",
+                "type": "text"
+              },
+              {
+                "key": "Authorization",
+                "type": "text",
+                "value": "Bearer {{buyertoken}}"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n\t\"Quantity\": 0,\n\t\"Notes\": \"string\",\n\t\"CartItemType\": \"string\",\n\t\"ShippingMethod\": {\n\t\t\"ID\": \"00000000-0000-0000-0000-000000000000\"\n\t},\n\t\"PickupAddress\": {\n\t\t\"ID\": \"00000000-0000-0000-0000-000000000000\"\n\t},\n\t\"ItemDetail\": {\n\t\t\"ID\": \"00000000-0000-0000-0000-000000000000\"\n\t}\n}"
+            },
+            "url": "https://{{your-marketplace}}.arcadier.io/api/v2/users/{{buyerID}}/carts/{{cart-item-ID}}",
+            "description": "The cart item `ID` can be retrieved using the `Get cart details of user` API\nThis API can be used with both the PUT and POST methods.\n* PUT method with `\"Quantity\": 3`\n  * Change the originial quantity of an item from `x` to `3`\n* POST method with `\"Quantity\": 3`\n  * Change the originial quantity of an item from `x` to `x + 3`\n\nIf \"CartItemType\": \"delivery\", then you can only add:\n\n```\n\"ShippingMethod\": {\n        \"ID\": \"46a0896b-482f-453f-acb4-aa39ddc2707d\"   (This is the ID of a shipping method that already has been created by the merchant beforehand)\n    }\n```\n\nIf the response you receive is `null`, check the item ID you provided. If that item has child items, insert those child items' IDs instead.\n\n#### Authentication\n> Buyer token only"
+          },
+          "response": [
+            {
+              "id": "a738c8c2-cc14-4be7-be67-7fd672fe9e1b",
+              "name": "Update item in cart",
+              "originalRequest": {
+                "method": "PUT",
+                "header": [
+                  {
+                    "key": "Content-Type",
+                    "name": "Content-Type",
+                    "type": "text",
+                    "value": "application/json"
+                  },
+                  {
+                    "key": "Authorization",
+                    "type": "text",
+                    "value": "Bearer {{buyertoken}}"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"Quantity\": 4,\n  \"CartItemType\": \"delivery\",\n\t\"ShippingMethod\": {\n\t\t\"ID\": \"18077aad-3a4e-4867-a5ba-18ff79fc06d8\"\n\t\t}\n}"
+                },
+                "url": "https://{{your-marketplace}}.arcadier.io/api/v2/users/{{buyerID}}/carts/{{cart-item-ID}}"
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Cache-Control",
+                  "value": "no-cache"
+                },
+                {
+                  "key": "Pragma",
+                  "value": "no-cache"
+                },
+                {
+                  "key": "Content-Type",
+                  "value": "application/json; charset=utf-8"
+                },
+                {
+                  "key": "Expires",
+                  "value": "-1"
+                },
+                {
+                  "key": "request-id",
+                  "value": "1785316b-5b6a-40cc-b9b1-356c9154d612"
+                },
+                {
+                  "key": "api-version",
+                  "value": "v2"
+                },
+                {
+                  "key": "X-XSS-Protection",
+                  "value": "1; mode=block"
+                },
+                {
+                  "key": "X-Content-Type-Options",
+                  "value": "nosniff"
+                },
+                {
+                  "key": "X-Powered-By",
+                  "value": "ARR/3.0"
+                },
+                {
+                  "key": "Date",
+                  "value": "Tue, 17 Sep 2019 07:43:55 GMT"
+                },
+                {
+                  "key": "Content-Length",
+                  "value": "1856"
+                }
+              ],
+              "cookie": [],
+              "responseTime": null,
+              "body": "{\n    \"ID\": \"c2374025-2159-4121-8519-67938d857ab3\",\n    \"Quantity\": \"4\",\n    \"CurrencyCode\": \"SGD\",\n    \"SubTotal\": 1680,\n    \"Freight\": null,\n    \"Notes\": null,\n    \"DiscountAmount\": null,\n    \"OrderID\": null,\n    \"CartItemType\": \"delivery\",\n    \"ShippingMethod\": {\n        \"ID\": \"18077aad-3a4e-4867-a5ba-18ff79fc06d8\",\n        \"Courier\": \"Arcadier Express\",\n        \"Method\": \"delivery\",\n        \"Price\": 6,\n        \"CombinedPrice\": 8,\n        \"CurrencyCode\": \"SGD\",\n        \"Description\": \"Fastest in the south\",\n        \"CustomFields\": null\n    },\n    \"PickupAddress\": null,\n    \"Feedback\": null,\n    \"AddOns\": [],\n    \"BookingSlot\": null,\n    \"ItemDetail\": {\n        \"Variants\": [\n            {\n                \"ID\": \"deb927f0-6ced-4d63-ba66-983ac72394be\",\n                \"Name\": \"API Variant 1\",\n                \"GroupID\": \"a0b186cd-c44e-4444-a0f0-3331fa3a3d51\",\n                \"GroupName\": \"API\",\n                \"PriceChange\": null,\n                \"SortOrder\": null\n            },\n            {\n                \"ID\": \"5271770c-e176-428e-9023-e2d9db043f29\",\n                \"Name\": \"API Variant 2\",\n                \"GroupID\": \"504e5b0b-a06a-4a26-8247-4078e5e84704\",\n                \"GroupName\": \"API 2\",\n                \"PriceChange\": null,\n                \"SortOrder\": null\n            }\n        ],\n        \"ID\": \"16031381-837d-4f2e-8973-77f90bd00f81\",\n        \"SKU\": \"3101\",\n        \"Name\": \"Yamaha TRBX305 5 String Bass Guitar Postman Example Latest Final LAST FOSHO 3 4 5\",\n        \"BuyerDescription\": \"Sculpted Mahogany Body\",\n        \"SellerDescription\": \"Test Seller Desc\",\n        \"Price\": 420,\n        \"PriceUnit\": \"SGD\",\n        \"StockLimited\": true,\n        \"StockQuantity\": \"10\",\n        \"IsVisibleToCustomer\": true,\n        \"Active\": true,\n        \"IsAvailable\": true,\n        \"DateOfPurchase\": null,\n        \"Weight\": null,\n        \"WeightUnit\": null,\n        \"Cubes\": null,\n        \"CubeUnit\": null,\n        \"Length\": null,\n        \"LengthUnit\": null,\n        \"Width\": null,\n        \"WidthUnit\": null,\n        \"Height\": null,\n        \"HeightUnit\": null,\n        \"AdditionalDetails\": null,\n        \"ExpiryDate\": null,\n        \"CurrencyCode\": \"SGD\",\n        \"ParentID\": null,\n        \"AverageRating\": null,\n        \"InstantBuy\": null,\n        \"Negotiation\": null,\n        \"MerchantDetail\": null,\n        \"Location\": null,\n        \"Categories\": null,\n        \"ShippingMethods\": null,\n        \"PickupAddresses\": null,\n        \"Media\": null,\n        \"Tags\": [\n            \"API Tag\",\n            \"API Tag 2\"\n        ],\n        \"Scheduler\": null,\n        \"Distance\": null,\n        \"CustomFields\": null,\n        \"CreatedDateTime\": null,\n        \"ModifiedDateTime\": null,\n        \"HasChildItems\": false,\n        \"ChildItems\": null\n    },\n    \"User\": null,\n    \"AcceptedOffer\": null\n}"
+            }
+          ]
+        },
+        {
+          "name": "Delete item in cart",
+          "_postman_id": "f7fc984c-b492-4622-85ce-5646d1dc756d",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "auth": {
+              "type": "noauth"
+            },
+            "method": "DELETE",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{buyertoken}}",
+                "type": "text"
+              }
+            ],
+            "url": "https://{{your-marketplace}}.arcadier.io/api/v2/users/{{buyerID}}/carts/{{cart-item-ID}}",
+            "description": "Deletes items that were added to a cart.\n\n#### Authentication\n> Buyer token only"
+          },
+          "response": [
+            {
+              "id": "c7a1009f-5eed-4efe-8336-ab21757230df",
+              "name": "Response is the details of the deleted item from cart",
+              "originalRequest": {
+                "method": "DELETE",
+                "header": [],
+                "url": "https://{{your-marketplace}}.arcadier.io/api/v2/users/{{buyerID}}/carts/{{cartID}}"
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Cache-Control",
+                  "value": "no-cache"
+                },
+                {
+                  "key": "Pragma",
+                  "value": "no-cache"
+                },
+                {
+                  "key": "Content-Type",
+                  "value": "application/json; charset=utf-8"
+                },
+                {
+                  "key": "Content-Encoding",
+                  "value": "gzip"
+                },
+                {
+                  "key": "Expires",
+                  "value": "-1"
+                },
+                {
+                  "key": "Vary",
+                  "value": "Accept-Encoding"
+                },
+                {
+                  "key": "X-StackifyID",
+                  "value": "V1|8000327a-0000-3700-b63f-84710c7967bb|"
+                },
+                {
+                  "key": "api-version",
+                  "value": "v2"
+                },
+                {
+                  "key": "X-XSS-Protection",
+                  "value": "1; mode=block"
+                },
+                {
+                  "key": "X-Content-Type-Options",
+                  "value": "nosniff"
+                },
+                {
+                  "key": "Date",
+                  "value": "Thu, 04 Apr 2019 08:05:55 GMT"
+                },
+                {
+                  "key": "Content-Length",
+                  "value": "594"
+                }
+              ],
+              "cookie": [],
+              "responseTime": null,
+              "body": "{\n    \"ID\": \"ff5a223e-79d2-4d7f-b8d2-e9ebfe4d742d\",\n    \"Quantity\": \"11\",\n    \"CurrencyCode\": \"SGD\",\n    \"SubTotal\": \"4500.00\",\n    \"Freight\": \"10.00\",\n    \"Notes\": \"VIP discount\",\n    \"DiscountAmount\": \"1500.00\",\n    \"CartItemType\": \"delivery\",\n    \"ShippingMethod\": {\n        \"ID\": \"5cb0e93d-5df3-42a1-8e3f-8212029f327c\",\n        \"Price\": \"10.00\",\n        \"CombinedPrice\": \"15.00\",\n        \"CurrencyCode\": \"SGD\",\n        \"Description\": \"guitar pro\"\n    },\n    \"AddOns\": [],\n    \"ItemDetail\": {\n        \"Variants\": [],\n        \"ID\": \"ee0e67f7-85cd-4b51-a851-a73572087ac7\",\n        \"SKU\": \"2000\",\n        \"Name\": \"Semi acoustic guitar\",\n        \"BuyerDescription\": \"Semi-acoustic wood guitar used by me during my greatest performances\",\n        \"Price\": \"500.00\",\n        \"StockLimited\": false,\n        \"StockQuantity\": \"0\",\n        \"IsVisibleToCustomer\": true,\n        \"Active\": true,\n        \"IsAvailable\": true,\n        \"CurrencyCode\": \"SGD\",\n        \"HasChildItems\": false\n    }\n}"
+            }
+          ]
+        }
+      ],
+      "_postman_id": "eed5e49d-4578-4fbd-8701-815587c83b6d"
     },
     {
       "name": "Items",
