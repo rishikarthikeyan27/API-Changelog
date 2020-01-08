@@ -5924,6 +5924,216 @@
                   "body": "{\n    \"TotalRecords\": 7,\n    \"PageNumber\": 2,\n    \"PageSize\": 2,\n    \"Records\": [\n        \"Been used for 3 years\",\n        \"Metal strings\"\n    ]\n}"
                 }
               ]
+            },
+            {
+              "name": "Tag Item",
+              "_postman_id": "3d824710-7770-4d4c-972d-84073d3b2556",
+              "protocolProfileBehavior": {
+                "disableBodyPruning": true
+              },
+              "request": {
+                "auth": {
+                  "type": "noauth"
+                },
+                "method": "POST",
+                "header": [
+                  {
+                    "key": "Content-Type",
+                    "name": "Content-Type",
+                    "value": "application/json",
+                    "type": "text"
+                  },
+                  {
+                    "key": "Authorization",
+                    "value": "Bearer {{merchanttoken}}",
+                    "description": "This can be {{admintoken}} as well.",
+                    "type": "text"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "[\r\n\t\"Tag1\",\r\n\t\"Tag2\"\r\n]"
+                },
+                "url": "https://{{your-marketplace}}.arcadier.io/api/v2/merchants/{{merchantID}}/items/{{itemID}}/tags",
+                "description": "Merchant adds a tag to his/her own item.\n\n#### Authentication\n> Merchant token only"
+              },
+              "response": [
+                {
+                  "id": "ac25c615-4568-451d-b50a-c30738f935db",
+                  "name": "Tag Item",
+                  "originalRequest": {
+                    "method": "POST",
+                    "header": [
+                      {
+                        "key": "Content-Type",
+                        "name": "Content-Type",
+                        "value": "application/json",
+                        "type": "text"
+                      },
+                      {
+                        "key": "Authorization",
+                        "value": "Bearer {{merchanttoken}}",
+                        "description": "This can be {{admintoken}} as well.",
+                        "type": "text"
+                      }
+                    ],
+                    "body": {
+                      "mode": "raw",
+                      "raw": "[\r\n\t\"Tag1\",\r\n\t\"Tag2\"\r\n]"
+                    },
+                    "url": "https://{{your-marketplace}}.arcadier.io/api/v2/merchants/{{merchantID}}/items/{{itemID}}/tags"
+                  },
+                  "status": "OK",
+                  "code": 200,
+                  "_postman_previewlanguage": "json",
+                  "header": [
+                    {
+                      "key": "Cache-Control",
+                      "value": "no-cache"
+                    },
+                    {
+                      "key": "Pragma",
+                      "value": "no-cache"
+                    },
+                    {
+                      "key": "Content-Type",
+                      "value": "application/json; charset=utf-8"
+                    },
+                    {
+                      "key": "Expires",
+                      "value": "-1"
+                    },
+                    {
+                      "key": "request-id",
+                      "value": "745fe4f6-5b1d-4f0a-84d6-ba25d32cf9a9"
+                    },
+                    {
+                      "key": "api-version",
+                      "value": "v2"
+                    },
+                    {
+                      "key": "X-XSS-Protection",
+                      "value": "1; mode=block"
+                    },
+                    {
+                      "key": "X-Content-Type-Options",
+                      "value": "nosniff"
+                    },
+                    {
+                      "key": "X-Powered-By",
+                      "value": "ARR/3.0"
+                    },
+                    {
+                      "key": "Date",
+                      "value": "Fri, 20 Sep 2019 08:19:05 GMT"
+                    },
+                    {
+                      "key": "Content-Length",
+                      "value": "15"
+                    }
+                  ],
+                  "cookie": [],
+                  "responseTime": null,
+                  "body": "{\n    \"Result\": true\n}"
+                }
+              ]
+            },
+            {
+              "name": "Delete tags",
+              "_postman_id": "24c73ab0-12ee-444e-b96b-ca3d1dd4c13b",
+              "protocolProfileBehavior": {
+                "disableBodyPruning": true
+              },
+              "request": {
+                "auth": {
+                  "type": "noauth"
+                },
+                "method": "DELETE",
+                "header": [
+                  {
+                    "key": "Content-Type",
+                    "name": "Content-Type",
+                    "type": "text",
+                    "value": "application/json"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "[\n\t\"string\", \n\t\"string\", \n\t\"string\"\n]"
+                },
+                "url": "https://{{your-marketplace}}.arcadier.io/api/v2/tags",
+                "description": "Deletes tags by specifying their names.\n\nIf you want to delete several tags, separate them with a comma like this:\n```javascript\n[\n\t\"string\", \"string\", \"string\", \"string\"\n]\n```\n\n#### Authorisation\n> Admin and merchant token only"
+              },
+              "response": [
+                {
+                  "id": "f6d62fc9-b186-479c-b495-c3070696c486",
+                  "name": "Delete a tag",
+                  "originalRequest": {
+                    "method": "DELETE",
+                    "header": [
+                      {
+                        "key": "Content-Type",
+                        "name": "Content-Type",
+                        "value": "application/json",
+                        "type": "text"
+                      }
+                    ],
+                    "body": {
+                      "mode": "raw",
+                      "raw": "[\n\t\"Tag 1\"\n]"
+                    },
+                    "url": "https://{{your-marketplace}}.arcadier.io/api/v2/tags"
+                  },
+                  "status": "OK",
+                  "code": 200,
+                  "_postman_previewlanguage": "json",
+                  "header": [
+                    {
+                      "key": "Cache-Control",
+                      "value": "no-cache"
+                    },
+                    {
+                      "key": "Pragma",
+                      "value": "no-cache"
+                    },
+                    {
+                      "key": "Content-Type",
+                      "value": "application/json; charset=utf-8"
+                    },
+                    {
+                      "key": "Expires",
+                      "value": "-1"
+                    },
+                    {
+                      "key": "api-version",
+                      "value": "v2"
+                    },
+                    {
+                      "key": "X-XSS-Protection",
+                      "value": "1; mode=block"
+                    },
+                    {
+                      "key": "X-Content-Type-Options",
+                      "value": "nosniff"
+                    },
+                    {
+                      "key": "X-Powered-By",
+                      "value": "ARR/3.0"
+                    },
+                    {
+                      "key": "Date",
+                      "value": "Tue, 26 Mar 2019 09:55:41 GMT"
+                    },
+                    {
+                      "key": "Content-Length",
+                      "value": "15"
+                    }
+                  ],
+                  "cookie": [],
+                  "responseTime": null,
+                  "body": "{\n    \"Result\": true\n}"
+                }
+              ]
             }
           ],
           "_postman_id": "0b71d337-ee6a-472b-9582-417e9ede1e9e",
@@ -6788,216 +6998,6 @@
               "cookie": [],
               "responseTime": null,
               "body": "{\n    \"ID\": \"5ab624b2-fc2c-40c7-ac4f-777ed6a6d281\",\n    \"SKU\": \"3100\",\n    \"Name\": \"Yamaha TRBX305 5 String Bass Guitar Postman Example Latest Final LAST FOSHO 3 4 5\",\n    \"BuyerDescription\": \"Sculpted Mahogany Body\",\n    \"SellerDescription\": \"Test Seller Desc\",\n    \"Price\": 400,\n    \"PriceUnit\": \"SGD\",\n    \"StockLimited\": true,\n    \"StockQuantity\": \"10\",\n    \"IsVisibleToCustomer\": true,\n    \"Active\": true,\n    \"IsAvailable\": true,\n    \"DateOfPurchase\": null,\n    \"Weight\": 15,\n    \"WeightUnit\": \"kg\",\n    \"Cubes\": null,\n    \"CubeUnit\": null,\n    \"Length\": null,\n    \"LengthUnit\": null,\n    \"Width\": null,\n    \"WidthUnit\": null,\n    \"Height\": null,\n    \"HeightUnit\": null,\n    \"AdditionalDetails\": null,\n    \"ExpiryDate\": null,\n    \"CurrencyCode\": \"SGD\",\n    \"ParentID\": null,\n    \"AverageRating\": null,\n    \"InstantBuy\": true,\n    \"Negotiation\": true,\n    \"MerchantDetail\": {\n        \"ID\": \"b420929f-4131-4d17-a889-63ff0421d802\",\n        \"Email\": \"tanoo@hotmail.com\",\n        \"FirstName\": null,\n        \"LastName\": null,\n        \"DisplayName\": \"tanoo@hotmail.com\",\n        \"Description\": null,\n        \"DOB\": null,\n        \"PhoneNumber\": null,\n        \"DateJoined\": null,\n        \"Roles\": null,\n        \"Media\": null,\n        \"CustomFields\": null,\n        \"TimeZone\": null,\n        \"Onboarded\": null,\n        \"OnboardedDateTime\": null,\n        \"Active\": null,\n        \"Enabled\": null,\n        \"Visible\": null,\n        \"Addresses\": null,\n        \"PaymentMethods\": null,\n        \"PaymentAcceptanceMethods\": null,\n        \"UserLogin\": null\n    },\n    \"Location\": null,\n    \"Categories\": [\n        {\n            \"ID\": \"24a12816-3721-4f6e-bc46-3b6acf3a277e\",\n            \"Name\": \"Grand Piano\",\n            \"Description\": \"Guaranteed to pull out the Taylor Swift hidden inside you\",\n            \"SortOrder\": 1,\n            \"Media\": null,\n            \"ParentCategoryID\": \"b40da804-377d-46c4-a11f-b46064002831\",\n            \"ChildCategories\": null,\n            \"Level\": null,\n            \"CreatedDateTime\": 1568614798,\n            \"ModifiedDateTime\": 1568614798,\n            \"Commission\": null\n        }\n    ],\n    \"ShippingMethods\": [\n        {\n            \"ID\": \"723e34c7-c128-4899-bd5b-862d38c0d607\",\n            \"Courier\": null,\n            \"Method\": null,\n            \"Price\": null,\n            \"CombinedPrice\": null,\n            \"CurrencyCode\": \"SGD\",\n            \"Description\": null,\n            \"CustomFields\": null\n        }\n    ],\n    \"PickupAddresses\": [\n        {\n            \"ID\": \"958e7175-8c03-47fc-b587-d871e39c20f4\",\n            \"Name\": null,\n            \"Line1\": null,\n            \"Line2\": null,\n            \"PostCode\": null,\n            \"Latitude\": null,\n            \"Longitude\": null,\n            \"Delivery\": false,\n            \"Pickup\": true,\n            \"SpecialInstructions\": null,\n            \"State\": null,\n            \"City\": null,\n            \"Country\": null,\n            \"CountryCode\": null\n        }\n    ],\n    \"Media\": [\n        {\n            \"ID\": \"119c3b85-74f0-4ab8-8e37-769f78b60786\",\n            \"MediaUrl\": \"https://royally.test.arcadier.io/images/items/item-59589-636905631235783991-3M2dCw.jpg\"\n        },\n        {\n            \"ID\": \"ee5118f8-ee90-43db-9b9e-e06fc725eac2\",\n            \"MediaUrl\": \"https://royally.test.arcadier.io/images/items/item-59589-636905631235783991-3M2dCw.jpg\"\n        }\n    ],\n    \"Tags\": [\n        \"API created Item\"\n    ],\n    \"Scheduler\": null,\n    \"Distance\": null,\n    \"CustomFields\": null,\n    \"CreatedDateTime\": 1568687096,\n    \"ModifiedDateTime\": 1568687769,\n    \"HasChildItems\": true,\n    \"ChildItems\": [\n        {\n            \"Variants\": [\n                {\n                    \"ID\": \"deb927f0-6ced-4d63-ba66-983ac72394be\",\n                    \"Name\": \"API Variant 1\",\n                    \"GroupID\": \"a0b186cd-c44e-4444-a0f0-3331fa3a3d51\",\n                    \"GroupName\": \"API\",\n                    \"PriceChange\": null,\n                    \"SortOrder\": null\n                },\n                {\n                    \"ID\": \"5271770c-e176-428e-9023-e2d9db043f29\",\n                    \"Name\": \"API Variant 2\",\n                    \"GroupID\": \"504e5b0b-a06a-4a26-8247-4078e5e84704\",\n                    \"GroupName\": \"API 2\",\n                    \"PriceChange\": null,\n                    \"SortOrder\": null\n                }\n            ],\n            \"ID\": \"16031381-837d-4f2e-8973-77f90bd00f81\",\n            \"SKU\": \"3101\",\n            \"Name\": null,\n            \"BuyerDescription\": null,\n            \"SellerDescription\": null,\n            \"Price\": 420,\n            \"PriceUnit\": null,\n            \"StockLimited\": true,\n            \"StockQuantity\": \"10\",\n            \"IsVisibleToCustomer\": null,\n            \"Active\": true,\n            \"IsAvailable\": true,\n            \"DateOfPurchase\": null,\n            \"Weight\": null,\n            \"WeightUnit\": null,\n            \"Cubes\": null,\n            \"CubeUnit\": null,\n            \"Length\": null,\n            \"LengthUnit\": null,\n            \"Width\": null,\n            \"WidthUnit\": null,\n            \"Height\": null,\n            \"HeightUnit\": null,\n            \"AdditionalDetails\": null,\n            \"ExpiryDate\": null,\n            \"CurrencyCode\": null,\n            \"ParentID\": \"5ab624b2-fc2c-40c7-ac4f-777ed6a6d281\",\n            \"AverageRating\": null,\n            \"InstantBuy\": true,\n            \"Negotiation\": false,\n            \"MerchantDetail\": null,\n            \"Location\": null,\n            \"Categories\": null,\n            \"ShippingMethods\": null,\n            \"PickupAddresses\": null,\n            \"Media\": [\n                {\n                    \"ID\": \"119c3b85-74f0-4ab8-8e37-769f78b60786\",\n                    \"MediaUrl\": \"https://royally.test.arcadier.io/images/items/item-59589-636905631235783991-3M2dCw.jpg\"\n                },\n                {\n                    \"ID\": \"ee5118f8-ee90-43db-9b9e-e06fc725eac2\",\n                    \"MediaUrl\": \"https://royally.test.arcadier.io/images/items/item-59589-636905631235783991-3M2dCw.jpg\"\n                }\n            ],\n            \"Tags\": [\n                \"API Tag\",\n                \"API Tag 2\"\n            ],\n            \"Scheduler\": null,\n            \"Distance\": null,\n            \"CustomFields\": null,\n            \"CreatedDateTime\": 1568687096,\n            \"ModifiedDateTime\": 1568687096,\n            \"HasChildItems\": false,\n            \"ChildItems\": null\n        }\n    ]\n}"
-            }
-          ]
-        },
-        {
-          "name": "Tag Item",
-          "_postman_id": "3d824710-7770-4d4c-972d-84073d3b2556",
-          "protocolProfileBehavior": {
-            "disableBodyPruning": true
-          },
-          "request": {
-            "auth": {
-              "type": "noauth"
-            },
-            "method": "POST",
-            "header": [
-              {
-                "key": "Content-Type",
-                "name": "Content-Type",
-                "value": "application/json",
-                "type": "text"
-              },
-              {
-                "key": "Authorization",
-                "value": "Bearer {{merchanttoken}}",
-                "description": "This can be {{admintoken}} as well.",
-                "type": "text"
-              }
-            ],
-            "body": {
-              "mode": "raw",
-              "raw": "[\r\n\t\"Tag1\",\r\n\t\"Tag2\"\r\n]"
-            },
-            "url": "https://{{your-marketplace}}.arcadier.io/api/v2/merchants/{{merchantID}}/items/{{itemID}}/tags",
-            "description": "Merchant adds a tag to his/her own item.\n\n#### Authentication\n> Merchant token only"
-          },
-          "response": [
-            {
-              "id": "ac25c615-4568-451d-b50a-c30738f935db",
-              "name": "Tag Item",
-              "originalRequest": {
-                "method": "POST",
-                "header": [
-                  {
-                    "key": "Content-Type",
-                    "name": "Content-Type",
-                    "value": "application/json",
-                    "type": "text"
-                  },
-                  {
-                    "key": "Authorization",
-                    "value": "Bearer {{merchanttoken}}",
-                    "description": "This can be {{admintoken}} as well.",
-                    "type": "text"
-                  }
-                ],
-                "body": {
-                  "mode": "raw",
-                  "raw": "[\r\n\t\"Tag1\",\r\n\t\"Tag2\"\r\n]"
-                },
-                "url": "https://{{your-marketplace}}.arcadier.io/api/v2/merchants/{{merchantID}}/items/{{itemID}}/tags"
-              },
-              "status": "OK",
-              "code": 200,
-              "_postman_previewlanguage": "json",
-              "header": [
-                {
-                  "key": "Cache-Control",
-                  "value": "no-cache"
-                },
-                {
-                  "key": "Pragma",
-                  "value": "no-cache"
-                },
-                {
-                  "key": "Content-Type",
-                  "value": "application/json; charset=utf-8"
-                },
-                {
-                  "key": "Expires",
-                  "value": "-1"
-                },
-                {
-                  "key": "request-id",
-                  "value": "745fe4f6-5b1d-4f0a-84d6-ba25d32cf9a9"
-                },
-                {
-                  "key": "api-version",
-                  "value": "v2"
-                },
-                {
-                  "key": "X-XSS-Protection",
-                  "value": "1; mode=block"
-                },
-                {
-                  "key": "X-Content-Type-Options",
-                  "value": "nosniff"
-                },
-                {
-                  "key": "X-Powered-By",
-                  "value": "ARR/3.0"
-                },
-                {
-                  "key": "Date",
-                  "value": "Fri, 20 Sep 2019 08:19:05 GMT"
-                },
-                {
-                  "key": "Content-Length",
-                  "value": "15"
-                }
-              ],
-              "cookie": [],
-              "responseTime": null,
-              "body": "{\n    \"Result\": true\n}"
-            }
-          ]
-        },
-        {
-          "name": "Delete tags",
-          "_postman_id": "24c73ab0-12ee-444e-b96b-ca3d1dd4c13b",
-          "protocolProfileBehavior": {
-            "disableBodyPruning": true
-          },
-          "request": {
-            "auth": {
-              "type": "noauth"
-            },
-            "method": "DELETE",
-            "header": [
-              {
-                "key": "Content-Type",
-                "name": "Content-Type",
-                "type": "text",
-                "value": "application/json"
-              }
-            ],
-            "body": {
-              "mode": "raw",
-              "raw": "[\n\t\"string\", \n\t\"string\", \n\t\"string\"\n]"
-            },
-            "url": "https://{{your-marketplace}}.arcadier.io/api/v2/tags",
-            "description": "Deletes tags by specifying their names.\n\nIf you want to delete several tags, separate them with a comma like this:\n```javascript\n[\n\t\"string\", \"string\", \"string\", \"string\"\n]\n```\n\n#### Authorisation\n> Admin and merchant token only"
-          },
-          "response": [
-            {
-              "id": "f6d62fc9-b186-479c-b495-c3070696c486",
-              "name": "Delete a tag",
-              "originalRequest": {
-                "method": "DELETE",
-                "header": [
-                  {
-                    "key": "Content-Type",
-                    "name": "Content-Type",
-                    "value": "application/json",
-                    "type": "text"
-                  }
-                ],
-                "body": {
-                  "mode": "raw",
-                  "raw": "[\n\t\"Tag 1\"\n]"
-                },
-                "url": "https://{{your-marketplace}}.arcadier.io/api/v2/tags"
-              },
-              "status": "OK",
-              "code": 200,
-              "_postman_previewlanguage": "json",
-              "header": [
-                {
-                  "key": "Cache-Control",
-                  "value": "no-cache"
-                },
-                {
-                  "key": "Pragma",
-                  "value": "no-cache"
-                },
-                {
-                  "key": "Content-Type",
-                  "value": "application/json; charset=utf-8"
-                },
-                {
-                  "key": "Expires",
-                  "value": "-1"
-                },
-                {
-                  "key": "api-version",
-                  "value": "v2"
-                },
-                {
-                  "key": "X-XSS-Protection",
-                  "value": "1; mode=block"
-                },
-                {
-                  "key": "X-Content-Type-Options",
-                  "value": "nosniff"
-                },
-                {
-                  "key": "X-Powered-By",
-                  "value": "ARR/3.0"
-                },
-                {
-                  "key": "Date",
-                  "value": "Tue, 26 Mar 2019 09:55:41 GMT"
-                },
-                {
-                  "key": "Content-Length",
-                  "value": "15"
-                }
-              ],
-              "cookie": [],
-              "responseTime": null,
-              "body": "{\n    \"Result\": true\n}"
             }
           ]
         }
