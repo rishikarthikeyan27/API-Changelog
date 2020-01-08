@@ -2470,7 +2470,7 @@
               ]
             },
             {
-              "name": "Pre-Checkout - Edit Cart Properties (Optional)",
+              "name": "Merchant - Edit Buyer's Cart (Optional)",
               "_postman_id": "bef2b629-4546-4b5b-986b-e2749c062756",
               "protocolProfileBehavior": {
                 "disableBodyPruning": true
