@@ -2590,7 +2590,7 @@
           "name": "Checking Out",
           "item": [
             {
-              "name": "Checkout - Generate Invoice and Orders from Cart",
+              "name": "Generate Invoice and Orders from Cart",
               "_postman_id": "4b0bc4da-201c-472e-8deb-1a2e1099f908",
               "protocolProfileBehavior": {
                 "disableBodyPruning": true
