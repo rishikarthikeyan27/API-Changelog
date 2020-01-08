@@ -6156,6 +6156,107 @@
           ]
         },
         {
+          "name": "Search items - Params in JSON body",
+          "_postman_id": "61b718db-2d07-4af1-992d-520c0fe259c0",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "auth": {
+              "type": "noauth"
+            },
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "name": "Content-Type",
+                "value": "application/json",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n\t\"sellerID\": \"00000000-0000-0000-0000-000000000000\",\n\t\"pageSize\": 0,\n\t\"pageNumber\": 0,\n\t\"categories\": \"string\",\n\t\"customFields\": \"string\",\n\t\"tax\": \"string\",\n\t\"minPrice\": 0,\n\t\"maxPrice\": 0,\n\t\"minRating\": 0,\n\t\"maxRating\": 0,\n\t\"startDate\": \"unix_time\",\n\t\"endDate\": \"unix_time\",\n\t\"keywords\": \"string\",\n\t\"createdStartDate\": \"unix_time\",\n\t\"createdEndDate\": \"unix_time\",\n\t\"updatedStartDate\": \"unix_time\",\n\t\"updatedEndDate\": \"unix_time\"\n}"
+            },
+            "url": "https://.{{your-marketplace}}.arcadier.io/api/v2/items",
+            "description": "Returns items which have parameters similar to those specified.\n\nCategories param is the category ID, not the name.\nTags param searches for the exact tag given.\n\n#### Authentication\n> None Required"
+          },
+          "response": [
+            {
+              "id": "62727d4a-7a34-4739-9ae0-80ba312c8cc6",
+              "name": "Search items - Params in JSON body",
+              "originalRequest": {
+                "method": "POST",
+                "header": [
+                  {
+                    "key": "Content-Type",
+                    "name": "Content-Type",
+                    "type": "text",
+                    "value": "application/json"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\r\n  \"pageSize\": 1,\r\n  \"pageNumber\": 1,\r\n  \"minPrice\": 40,\r\n  \"maxPrice\": 50\r\n}"
+                },
+                "url": "https://.{{your-marketplace}}.arcadier.io/api/v2/items"
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Cache-Control",
+                  "value": "no-cache"
+                },
+                {
+                  "key": "Pragma",
+                  "value": "no-cache"
+                },
+                {
+                  "key": "Content-Type",
+                  "value": "application/json; charset=utf-8"
+                },
+                {
+                  "key": "Expires",
+                  "value": "-1"
+                },
+                {
+                  "key": "request-id",
+                  "value": "1c7e06ac-0fff-4568-a2a1-70b623ea6795"
+                },
+                {
+                  "key": "api-version",
+                  "value": "v2"
+                },
+                {
+                  "key": "X-XSS-Protection",
+                  "value": "1; mode=block"
+                },
+                {
+                  "key": "X-Content-Type-Options",
+                  "value": "nosniff"
+                },
+                {
+                  "key": "X-Powered-By",
+                  "value": "ARR/3.0"
+                },
+                {
+                  "key": "Date",
+                  "value": "Tue, 17 Sep 2019 03:22:57 GMT"
+                },
+                {
+                  "key": "Content-Length",
+                  "value": "2156"
+                }
+              ],
+              "cookie": [],
+              "responseTime": null,
+              "body": "{\n    \"TotalRecords\": 6,\n    \"PageNumber\": 1,\n    \"PageSize\": 1,\n    \"Records\": [\n        {\n            \"ID\": \"bc157723-1514-4130-909c-721a9c74d2fc\",\n            \"SKU\": null,\n            \"Name\": \"Item40\",\n            \"BuyerDescription\": \"This is Item40\",\n            \"SellerDescription\": null,\n            \"Price\": 40,\n            \"PriceUnit\": null,\n            \"StockLimited\": true,\n            \"StockQuantity\": \"97\",\n            \"IsVisibleToCustomer\": true,\n            \"Active\": true,\n            \"IsAvailable\": true,\n            \"DateOfPurchase\": null,\n            \"Weight\": null,\n            \"WeightUnit\": null,\n            \"Cubes\": null,\n            \"CubeUnit\": null,\n            \"Length\": null,\n            \"LengthUnit\": null,\n            \"Width\": null,\n            \"WidthUnit\": null,\n            \"Height\": null,\n            \"HeightUnit\": null,\n            \"AdditionalDetails\": null,\n            \"ExpiryDate\": null,\n            \"CurrencyCode\": \"SGD\",\n            \"ParentID\": null,\n            \"AverageRating\": null,\n            \"InstantBuy\": false,\n            \"Negotiation\": false,\n            \"MerchantDetail\": {\n                \"ID\": \"e541f808-fc92-40d8-9f1a-2c20860c2754\",\n                \"Email\": \"lordvador6@gmail.com\",\n                \"FirstName\": \"Charlie\",\n                \"LastName\": \"Brown\",\n                \"DisplayName\": \"Charlie Brown\",\n                \"Description\": null,\n                \"DOB\": null,\n                \"PhoneNumber\": \"32908981\",\n                \"DateJoined\": null,\n                \"Roles\": null,\n                \"Media\": null,\n                \"CustomFields\": null,\n                \"TimeZone\": null,\n                \"Onboarded\": null,\n                \"OnboardedDateTime\": null,\n                \"Active\": null,\n                \"Enabled\": null,\n                \"Visible\": null,\n                \"Addresses\": null,\n                \"PaymentMethods\": null,\n                \"PaymentAcceptanceMethods\": null,\n                \"UserLogin\": null\n            },\n            \"Location\": null,\n            \"Categories\": [\n                {\n                    \"ID\": \"c4d76697-6d2b-41f6-aba5-521b98fa2ebd\",\n                    \"Name\": \"Categoryundefined\",\n                    \"Description\": \"This is Categoryundefined\",\n                    \"SortOrder\": 5,\n                    \"Media\": null,\n                    \"ParentCategoryID\": null,\n                    \"ChildCategories\": null,\n                    \"Level\": null,\n                    \"CreatedDateTime\": 1566201273,\n                    \"ModifiedDateTime\": 1566806010,\n                    \"Commission\": null\n                }\n            ],\n            \"ShippingMethods\": null,\n            \"PickupAddresses\": null,\n            \"Media\": [\n                {\n                    \"ID\": null,\n                    \"MediaUrl\": \"https://dogaccessories.sandbox.arcadier.io/images/c27f4fc8-305b-4c5d-b209-635b2048d1ab-3x852dzo70Item19170-636439922842419797-C7k6Mg.jpg\"\n                }\n            ],\n            \"Tags\": [\n                \"Test_data\"\n            ],\n            \"Scheduler\": null,\n            \"Distance\": null,\n            \"CustomFields\": [\n                {\n                    \"Code\": \"19521-WEIGHT-cWC7A5nzGw\",\n                    \"Name\": \"WEIGHT\",\n                    \"DataFieldType\": null,\n                    \"Values\": [\n                        \"\"\n                    ]\n                },\n                {\n                    \"Code\": \"19521-Brand-IxVe9JDJjF\",\n                    \"Name\": \"Brand\",\n                    \"DataFieldType\": null,\n                    \"Values\": [\n                        \"test\"\n                    ]\n                },\n                {\n                    \"Code\": \"19521-TestRich-c19gFrdFqa\",\n                    \"Name\": \"Test Rich\",\n                    \"DataFieldType\": null,\n                    \"Values\": [\n                        \"&lt;p&gt;Somehow this is&amp;nbsp;&lt;strong&gt;bold.&lt;/strong&gt;&lt;/p&gt;\"\n                    ]\n                }\n            ],\n            \"CreatedDateTime\": 1566201279,\n            \"ModifiedDateTime\": 1568086495,\n            \"HasChildItems\": false,\n            \"ChildItems\": null\n        }\n    ]\n}"
+            }
+          ]
+        },
+        {
           "name": "Create Item",
           "_postman_id": "03d18078-0f46-4c84-b9ff-c464c7853580",
           "protocolProfileBehavior": {
@@ -6794,107 +6895,6 @@
               "cookie": [],
               "responseTime": null,
               "body": "{\n    \"Result\": true\n}"
-            }
-          ]
-        },
-        {
-          "name": "Search items - Params in JSON body",
-          "_postman_id": "61b718db-2d07-4af1-992d-520c0fe259c0",
-          "protocolProfileBehavior": {
-            "disableBodyPruning": true
-          },
-          "request": {
-            "auth": {
-              "type": "noauth"
-            },
-            "method": "POST",
-            "header": [
-              {
-                "key": "Content-Type",
-                "name": "Content-Type",
-                "value": "application/json",
-                "type": "text"
-              }
-            ],
-            "body": {
-              "mode": "raw",
-              "raw": "{\n\t\"sellerID\": \"00000000-0000-0000-0000-000000000000\",\n\t\"pageSize\": 0,\n\t\"pageNumber\": 0,\n\t\"categories\": \"string\",\n\t\"customFields\": \"string\",\n\t\"tax\": \"string\",\n\t\"minPrice\": 0,\n\t\"maxPrice\": 0,\n\t\"minRating\": 0,\n\t\"maxRating\": 0,\n\t\"startDate\": \"unix_time\",\n\t\"endDate\": \"unix_time\",\n\t\"keywords\": \"string\",\n\t\"createdStartDate\": \"unix_time\",\n\t\"createdEndDate\": \"unix_time\",\n\t\"updatedStartDate\": \"unix_time\",\n\t\"updatedEndDate\": \"unix_time\"\n}"
-            },
-            "url": "https://.{{your-marketplace}}.arcadier.io/api/v2/items",
-            "description": "Returns items which have parameters similar to those specified.\n\nCategories param is the category ID, not the name.\nTags param searches for the exact tag given.\n\n#### Authentication\n> None Required"
-          },
-          "response": [
-            {
-              "id": "62727d4a-7a34-4739-9ae0-80ba312c8cc6",
-              "name": "Search items - Params in JSON body",
-              "originalRequest": {
-                "method": "POST",
-                "header": [
-                  {
-                    "key": "Content-Type",
-                    "name": "Content-Type",
-                    "type": "text",
-                    "value": "application/json"
-                  }
-                ],
-                "body": {
-                  "mode": "raw",
-                  "raw": "{\r\n  \"pageSize\": 1,\r\n  \"pageNumber\": 1,\r\n  \"minPrice\": 40,\r\n  \"maxPrice\": 50\r\n}"
-                },
-                "url": "https://.{{your-marketplace}}.arcadier.io/api/v2/items"
-              },
-              "status": "OK",
-              "code": 200,
-              "_postman_previewlanguage": "json",
-              "header": [
-                {
-                  "key": "Cache-Control",
-                  "value": "no-cache"
-                },
-                {
-                  "key": "Pragma",
-                  "value": "no-cache"
-                },
-                {
-                  "key": "Content-Type",
-                  "value": "application/json; charset=utf-8"
-                },
-                {
-                  "key": "Expires",
-                  "value": "-1"
-                },
-                {
-                  "key": "request-id",
-                  "value": "1c7e06ac-0fff-4568-a2a1-70b623ea6795"
-                },
-                {
-                  "key": "api-version",
-                  "value": "v2"
-                },
-                {
-                  "key": "X-XSS-Protection",
-                  "value": "1; mode=block"
-                },
-                {
-                  "key": "X-Content-Type-Options",
-                  "value": "nosniff"
-                },
-                {
-                  "key": "X-Powered-By",
-                  "value": "ARR/3.0"
-                },
-                {
-                  "key": "Date",
-                  "value": "Tue, 17 Sep 2019 03:22:57 GMT"
-                },
-                {
-                  "key": "Content-Length",
-                  "value": "2156"
-                }
-              ],
-              "cookie": [],
-              "responseTime": null,
-              "body": "{\n    \"TotalRecords\": 6,\n    \"PageNumber\": 1,\n    \"PageSize\": 1,\n    \"Records\": [\n        {\n            \"ID\": \"bc157723-1514-4130-909c-721a9c74d2fc\",\n            \"SKU\": null,\n            \"Name\": \"Item40\",\n            \"BuyerDescription\": \"This is Item40\",\n            \"SellerDescription\": null,\n            \"Price\": 40,\n            \"PriceUnit\": null,\n            \"StockLimited\": true,\n            \"StockQuantity\": \"97\",\n            \"IsVisibleToCustomer\": true,\n            \"Active\": true,\n            \"IsAvailable\": true,\n            \"DateOfPurchase\": null,\n            \"Weight\": null,\n            \"WeightUnit\": null,\n            \"Cubes\": null,\n            \"CubeUnit\": null,\n            \"Length\": null,\n            \"LengthUnit\": null,\n            \"Width\": null,\n            \"WidthUnit\": null,\n            \"Height\": null,\n            \"HeightUnit\": null,\n            \"AdditionalDetails\": null,\n            \"ExpiryDate\": null,\n            \"CurrencyCode\": \"SGD\",\n            \"ParentID\": null,\n            \"AverageRating\": null,\n            \"InstantBuy\": false,\n            \"Negotiation\": false,\n            \"MerchantDetail\": {\n                \"ID\": \"e541f808-fc92-40d8-9f1a-2c20860c2754\",\n                \"Email\": \"lordvador6@gmail.com\",\n                \"FirstName\": \"Charlie\",\n                \"LastName\": \"Brown\",\n                \"DisplayName\": \"Charlie Brown\",\n                \"Description\": null,\n                \"DOB\": null,\n                \"PhoneNumber\": \"32908981\",\n                \"DateJoined\": null,\n                \"Roles\": null,\n                \"Media\": null,\n                \"CustomFields\": null,\n                \"TimeZone\": null,\n                \"Onboarded\": null,\n                \"OnboardedDateTime\": null,\n                \"Active\": null,\n                \"Enabled\": null,\n                \"Visible\": null,\n                \"Addresses\": null,\n                \"PaymentMethods\": null,\n                \"PaymentAcceptanceMethods\": null,\n                \"UserLogin\": null\n            },\n            \"Location\": null,\n            \"Categories\": [\n                {\n                    \"ID\": \"c4d76697-6d2b-41f6-aba5-521b98fa2ebd\",\n                    \"Name\": \"Categoryundefined\",\n                    \"Description\": \"This is Categoryundefined\",\n                    \"SortOrder\": 5,\n                    \"Media\": null,\n                    \"ParentCategoryID\": null,\n                    \"ChildCategories\": null,\n                    \"Level\": null,\n                    \"CreatedDateTime\": 1566201273,\n                    \"ModifiedDateTime\": 1566806010,\n                    \"Commission\": null\n                }\n            ],\n            \"ShippingMethods\": null,\n            \"PickupAddresses\": null,\n            \"Media\": [\n                {\n                    \"ID\": null,\n                    \"MediaUrl\": \"https://dogaccessories.sandbox.arcadier.io/images/c27f4fc8-305b-4c5d-b209-635b2048d1ab-3x852dzo70Item19170-636439922842419797-C7k6Mg.jpg\"\n                }\n            ],\n            \"Tags\": [\n                \"Test_data\"\n            ],\n            \"Scheduler\": null,\n            \"Distance\": null,\n            \"CustomFields\": [\n                {\n                    \"Code\": \"19521-WEIGHT-cWC7A5nzGw\",\n                    \"Name\": \"WEIGHT\",\n                    \"DataFieldType\": null,\n                    \"Values\": [\n                        \"\"\n                    ]\n                },\n                {\n                    \"Code\": \"19521-Brand-IxVe9JDJjF\",\n                    \"Name\": \"Brand\",\n                    \"DataFieldType\": null,\n                    \"Values\": [\n                        \"test\"\n                    ]\n                },\n                {\n                    \"Code\": \"19521-TestRich-c19gFrdFqa\",\n                    \"Name\": \"Test Rich\",\n                    \"DataFieldType\": null,\n                    \"Values\": [\n                        \"&lt;p&gt;Somehow this is&amp;nbsp;&lt;strong&gt;bold.&lt;/strong&gt;&lt;/p&gt;\"\n                    ]\n                }\n            ],\n            \"CreatedDateTime\": 1566201279,\n            \"ModifiedDateTime\": 1568086495,\n            \"HasChildItems\": false,\n            \"ChildItems\": null\n        }\n    ]\n}"
             }
           ]
         },
