@@ -6277,7 +6277,7 @@
           ]
         },
         {
-          "name": "Search for items - Params in URL",
+          "name": "Search items - Params in URL",
           "_postman_id": "c6d3c581-2556-4cb0-a7f1-daed8733f9fd",
           "protocolProfileBehavior": {
             "disableBodyPruning": true
@@ -6589,7 +6589,7 @@
           ]
         },
         {
-          "name": "Search for items - Params in JSON body",
+          "name": "Search items - Params in JSON body",
           "_postman_id": "61b718db-2d07-4af1-992d-520c0fe259c0",
           "protocolProfileBehavior": {
             "disableBodyPruning": true
