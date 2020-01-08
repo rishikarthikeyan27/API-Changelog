@@ -8011,6 +8011,715 @@
       ]
     },
     {
+      "name": "Payment Methods",
+      "item": [
+        {
+          "name": "Get payment Gateways",
+          "_postman_id": "13bf4d2d-a015-41bb-ad5d-f49d476800a8",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "auth": {
+              "type": "noauth"
+            },
+            "method": "GET",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{admintoken}}",
+                "type": "text"
+              }
+            ],
+            "url": "https://{{your-marketplace}}.arcadier.io/api/v2/admins/{{adminID}}/payment-gateways",
+            "description": "Gets the details and keys for each payment gateway on the marketplace.\n\n#### Authentication\n> Admin token only"
+          },
+          "response": [
+            {
+              "id": "921702da-ea37-4eea-8a70-29e67157834f",
+              "name": "Get payment Gateways",
+              "originalRequest": {
+                "method": "GET",
+                "header": [
+                  {
+                    "key": "Authorization",
+                    "value": "Bearer {{admintoken}}",
+                    "type": "text"
+                  }
+                ],
+                "url": "https://{{your-marketplace}}.arcadier.io/api/v2/admins/{{adminID}}/payment-gateways"
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Cache-Control",
+                  "value": "no-cache"
+                },
+                {
+                  "key": "Pragma",
+                  "value": "no-cache"
+                },
+                {
+                  "key": "Content-Type",
+                  "value": "application/json; charset=utf-8"
+                },
+                {
+                  "key": "Expires",
+                  "value": "-1"
+                },
+                {
+                  "key": "request-id",
+                  "value": "38726dc7-b709-4962-bf98-741c0c2b276e"
+                },
+                {
+                  "key": "api-version",
+                  "value": "v2"
+                },
+                {
+                  "key": "X-XSS-Protection",
+                  "value": "1; mode=block"
+                },
+                {
+                  "key": "X-Content-Type-Options",
+                  "value": "nosniff"
+                },
+                {
+                  "key": "X-Powered-By",
+                  "value": "ARR/3.0"
+                },
+                {
+                  "key": "Date",
+                  "value": "Tue, 17 Sep 2019 06:26:11 GMT"
+                },
+                {
+                  "key": "Content-Length",
+                  "value": "749"
+                }
+              ],
+              "cookie": [],
+              "responseTime": null,
+              "body": "{\n    \"TotalRecords\": 3,\n    \"PageNumber\": 1,\n    \"PageSize\": 3,\n    \"Records\": [\n        {\n            \"Code\": \"stripe\",\n            \"Description\": \"Stripe\",\n            \"Gateway\": \"Stripe\",\n            \"Active\": null,\n            \"Logo\": null,\n            \"CustomFields\": null,\n            \"Meta\": {\n                \"clientid\": \"xxxxxxxxxxxxxxxxxxx\",\n                \"publickey\": \"xxxxxxxxxxxxxxxxxxx\",\n                \"secretkey\": \"xxxxxxxxxxxxxxxxxxx\",\n                \"mandatory\": \"True\"\n            }\n        },\n        {\n            \"Code\": \"paypal-adaptive\",\n            \"Description\": \"Adpative Payment\",\n            \"Gateway\": \"PayPal\",\n            \"Active\": null,\n            \"Logo\": null,\n            \"CustomFields\": null,\n            \"Meta\": {\n                \"clientid\": \"\",\n                \"clientsecret\": \"\",\n                \"username\": \"\",\n                \"password\": \"\",\n                \"signature\": \"\",\n                \"mandatory\": \"\",\n                \"admin-paypal\": \"\"\n            }\n        },\n        {\n            \"Code\": \"omise\",\n            \"Description\": \"Omise\",\n            \"Gateway\": \"Omise\",\n            \"Active\": null,\n            \"Logo\": null,\n            \"CustomFields\": null,\n            \"Meta\": {\n                \"chain-url\": \"\",\n                \"publickey\": \"\",\n                \"secretkey\": \"\",\n                \"mandatory\": \"\"\n            }\n        }\n    ]\n}"
+            }
+          ]
+        },
+        {
+          "name": "Merchant - Show Payment Acceptance Methods",
+          "_postman_id": "9756e8b3-248e-426c-bddb-f57e0d7e79c7",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "auth": {
+              "type": "noauth"
+            },
+            "method": "GET",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{admintoken}}",
+                "description": "This can be {{merchattoken}} too",
+                "type": "text"
+              }
+            ],
+            "url": "https://{{your-marketplace}}.arcadier.io/api/v2/merchants/{{merchantID}}/payment-acceptance-methods",
+            "description": "Shows the different payment acceptance methods available for the merchant to use.\n\n#### Authentication\n> Admin and merchant token"
+          },
+          "response": [
+            {
+              "id": "890a9c40-70b7-4c8c-9df5-09ac8a880b8f",
+              "name": "Merchant - Show Payment Acceptance Methods",
+              "originalRequest": {
+                "method": "GET",
+                "header": [
+                  {
+                    "key": "Authorization",
+                    "value": "Bearer {{admintoken}}",
+                    "description": "This can be {{merchattoken}} too",
+                    "type": "text"
+                  }
+                ],
+                "url": "https://{{your-marketplace}}.arcadier.io/api/v2/merchants/{{merchantID}}/payment-acceptance-methods"
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Cache-Control",
+                  "value": "no-cache"
+                },
+                {
+                  "key": "Pragma",
+                  "value": "no-cache"
+                },
+                {
+                  "key": "Content-Type",
+                  "value": "application/json; charset=utf-8"
+                },
+                {
+                  "key": "Expires",
+                  "value": "-1"
+                },
+                {
+                  "key": "request-id",
+                  "value": "2304f5b7-33d3-47fe-a970-2f399a8b1165"
+                },
+                {
+                  "key": "api-version",
+                  "value": "v2"
+                },
+                {
+                  "key": "X-XSS-Protection",
+                  "value": "1; mode=block"
+                },
+                {
+                  "key": "X-Content-Type-Options",
+                  "value": "nosniff"
+                },
+                {
+                  "key": "X-Powered-By",
+                  "value": "ARR/3.0"
+                },
+                {
+                  "key": "Date",
+                  "value": "Tue, 17 Sep 2019 06:46:58 GMT"
+                },
+                {
+                  "key": "Content-Length",
+                  "value": "489"
+                }
+              ],
+              "cookie": [],
+              "responseTime": null,
+              "body": "{\n    \"TotalRecords\": 1,\n    \"PageNumber\": 1,\n    \"PageSize\": 1,\n    \"Records\": [\n        {\n            \"Id\": \"1ca00db0-7789-4039-9682-9c4ebf8da30b\",\n            \"PaymentGateway\": {\n                \"Code\": \"stripe\",\n                \"Description\": null,\n                \"Gateway\": null,\n                \"Active\": null,\n                \"Logo\": null,\n                \"CustomFields\": null,\n                \"Meta\": null\n            },\n            \"Verified\": true,\n            \"Account\": \"testaccount\",\n            \"ClientID\": \"some hash\",\n            \"ClientSecret\": null,\n            \"Active\": true,\n            \"BankName\": null,\n            \"BankAccountName\": null,\n            \"BankAccountNumber\": \"4242424242424242\",\n            \"BankIdentifierCodes\": null,\n            \"BankAccountType\": null,\n            \"TaxID\": null,\n            \"CustomFields\": null\n        }\n    ]\n}"
+            }
+          ]
+        },
+        {
+          "name": "Admin - Create a new payment Gateway",
+          "_postman_id": "54ab75eb-674f-4a34-9999-2ec7a8c881e7",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "auth": {
+              "type": "noauth"
+            },
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "name": "Content-Type",
+                "value": "application/json",
+                "type": "text"
+              },
+              {
+                "key": "Authorization",
+                "value": "Bearer {{admintoken}}",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n\t\"Description\": \"string\",\r\n\t\"Gateway\": \"string\",\r\n\t\"Active\": true,\r\n\t\"Logo\": {\r\n\t\t\"ID\": \"00000000-0000-0000-0000-000000000000\",\r\n\t\t\"MediaUrl\": \"string\"\r\n\t},\r\n\t\"CustomFields\": [\r\n\t\t{\r\n\t\t\t\"Code\": \"string\",\r\n\t\t\t\"Name\": \"string\",\r\n\t\t\t\"DataFieldType\": \"string\",\r\n\t\t\t\"Values\": [\r\n\t\t\t\t\"string\"\r\n\t\t\t]\r\n\t\t}\r\n\t]\r\n}"
+            },
+            "url": "https://{{your-marketplace}}.arcadier.io/api/v2/admins/{{adminID}}/payment-gateways",
+            "description": "Creates a new custom payment gateway on the admin dashboard. The actual API linking to the payment gateway's has to be made manually on the dashboard.\nCustom Fields need to be created separately, they aren't created here.\n\n#### Authentication\n> Admin token only"
+          },
+          "response": [
+            {
+              "id": "e362c79a-6f4e-4387-9f31-9d0fe1542747",
+              "name": "Admin - Create a new payment Gateway",
+              "originalRequest": {
+                "method": "POST",
+                "header": [
+                  {
+                    "key": "Content-Type",
+                    "name": "Content-Type",
+                    "type": "text",
+                    "value": "application/json"
+                  },
+                  {
+                    "key": "Authorization",
+                    "value": "Bearer {{admintoken}}",
+                    "type": "text"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\r\n\t\"Description\": \"Test Payment Gateway 2\",\r\n\t\"Gateway\": \"Test\",\r\n\t\"Logo\": {\r\n\t\"ID\": \"f9e001f5-53bf-4744-b73d-6e8d8734beed\",\r\n\t\"MediaUrl\": \"https://d1aeri3ty3izns.cloudfront.net/media/6/67664/1200/preview.jpg\"\r\n\t}\r\n\r\n}"
+                },
+                "url": "https://{{your-marketplace}}.arcadier.io/api/v2/admins/{{adminID}}/payment-gateways"
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Cache-Control",
+                  "value": "no-cache"
+                },
+                {
+                  "key": "Pragma",
+                  "value": "no-cache"
+                },
+                {
+                  "key": "Content-Type",
+                  "value": "application/json; charset=utf-8"
+                },
+                {
+                  "key": "Expires",
+                  "value": "-1"
+                },
+                {
+                  "key": "request-id",
+                  "value": "23554768-749c-47d2-9f53-588361ea2797"
+                },
+                {
+                  "key": "api-version",
+                  "value": "v2"
+                },
+                {
+                  "key": "X-XSS-Protection",
+                  "value": "1; mode=block"
+                },
+                {
+                  "key": "X-Content-Type-Options",
+                  "value": "nosniff"
+                },
+                {
+                  "key": "X-Powered-By",
+                  "value": "ARR/3.0"
+                },
+                {
+                  "key": "Date",
+                  "value": "Tue, 17 Sep 2019 06:35:26 GMT"
+                },
+                {
+                  "key": "Content-Length",
+                  "value": "284"
+                }
+              ],
+              "cookie": [],
+              "responseTime": null,
+              "body": "{\n    \"Code\": \"test0cb0abf4c7af4d6e8c9eebb3f0379786\",\n    \"Description\": \"Test Payment Gateway 2\",\n    \"Gateway\": \"Test\",\n    \"Active\": null,\n    \"Logo\": {\n        \"ID\": \"16d3ebfb-25aa-4555-b29e-6da17b9f4a52\",\n        \"MediaUrl\": \"https://d1aeri3ty3izns.cloudfront.net/media/6/67664/1200/preview.jpg\"\n    },\n    \"CustomFields\": null,\n    \"Meta\": null\n}"
+            }
+          ]
+        },
+        {
+          "name": "Merchant - Link payment gateway",
+          "_postman_id": "ad00a988-f655-49c5-b01a-40e7b2aa761b",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "auth": {
+              "type": "noauth"
+            },
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "name": "Content-Type",
+                "value": "application/json",
+                "type": "text"
+              },
+              {
+                "key": "Authorization",
+                "value": "Bearer {{admintoken}}",
+                "description": "This can be {{merchanttoken}} too.",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"Id\": \"00000000-0000-0000-0000-000000000000\",\n  \"PaymentGateway\": {\n    \"Code\": \"string\",\n    \"Description\": \"string\",\n    \"Gateway\": \"string\",\n    \"Active\": true,\n    \"Logo\": {\n      \"ID\": \"00000000-0000-0000-0000-000000000000\",\n      \"MediaUrl\": \"string\"\n    },\n    \"CustomFields\": [\n      {\n        \"Code\": \"string\",\n        \"Name\": \"string\",\n        \"DataFieldType\": \"string\",\n        \"Values\": [\n          \"string\"\n        ]\n      }\n    ],\n    \"Meta\": {}\n  },\n  \"Verified\": true,\n  \"Account\": \"string\",\n  \"ClientID\": \"string\",\n  \"ClientSecret\": \"string\",\n  \"Active\": true,\n  \"BankName\": \"string\",\n  \"BankAccountName\": \"string\",\n  \"BankAccountNumber\": \"string\",\n  \"BankIdentifierCodes\": \"string\",\n  \"BankAccountType\": \"string\",\n  \"TaxID\": \"string\",\n  \"CustomFields\": [\n    {\n      \"Code\": \"string\",\n      \"Name\": \"string\",\n      \"DataFieldType\": \"string\",\n      \"Values\": [\n        \"string\"\n      ]\n    }\n  ]\n}\n"
+            },
+            "url": "https://{{your-marketplace}}.arcadier.io/api/v2/merchants/{{merchantID}}/payment-acceptance-methods",
+            "description": "This API saves the details of the payment gateway in Arcadier's databases. It does not do the actual linking of the merchant's account to the Admin's account. The details to be filled in those parameters can be obtained from the `Merchant - Show Payment Acceptance Methods`.For clarification about how exactly to use this API, drop an email at `tanoo@arcadier.com`\n\n#### Authentication\n> Admin and merchant token only"
+          },
+          "response": [
+            {
+              "id": "9c33ad81-339a-4150-8a25-fd8dce8e2888",
+              "name": "Merchant - Link payment gateway",
+              "originalRequest": {
+                "method": "POST",
+                "header": [
+                  {
+                    "key": "Content-Type",
+                    "name": "Content-Type",
+                    "type": "text",
+                    "value": "application/json"
+                  },
+                  {
+                    "key": "Authorization",
+                    "value": "Bearer {{admintoken}}",
+                    "description": "This can be {{merchanttoken}} too.",
+                    "type": "text"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n\t\"PaymentGateway\": {\n    \"Code\": \"stripe\"\n  },\n  \"Verified\": true,\n  \"Account\": \"testaccount\",\n  \"ClientID\": \"some hash\",\n  \"Active\": true,\n  \"BankAccountNumber\": \"4242424242424242\"\n\t\n}"
+                },
+                "url": "https://{{your-marketplace}}.arcadier.io/api/v2/merchants/{{merchantID}}/payment-acceptance-methods"
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Cache-Control",
+                  "value": "no-cache"
+                },
+                {
+                  "key": "Pragma",
+                  "value": "no-cache"
+                },
+                {
+                  "key": "Content-Type",
+                  "value": "application/json; charset=utf-8"
+                },
+                {
+                  "key": "Expires",
+                  "value": "-1"
+                },
+                {
+                  "key": "request-id",
+                  "value": "e083bc3f-73c1-4a38-85cc-6432d43f8adb"
+                },
+                {
+                  "key": "api-version",
+                  "value": "v2"
+                },
+                {
+                  "key": "X-XSS-Protection",
+                  "value": "1; mode=block"
+                },
+                {
+                  "key": "X-Content-Type-Options",
+                  "value": "nosniff"
+                },
+                {
+                  "key": "X-Powered-By",
+                  "value": "ARR/3.0"
+                },
+                {
+                  "key": "Date",
+                  "value": "Tue, 17 Sep 2019 06:43:56 GMT"
+                },
+                {
+                  "key": "Content-Length",
+                  "value": "430"
+                }
+              ],
+              "cookie": [],
+              "responseTime": null,
+              "body": "{\n    \"Id\": \"1ca00db0-7789-4039-9682-9c4ebf8da30b\",\n    \"PaymentGateway\": {\n        \"Code\": \"stripe\",\n        \"Description\": null,\n        \"Gateway\": null,\n        \"Active\": null,\n        \"Logo\": null,\n        \"CustomFields\": null,\n        \"Meta\": null\n    },\n    \"Verified\": true,\n    \"Account\": \"testaccount\",\n    \"ClientID\": \"some hash\",\n    \"ClientSecret\": null,\n    \"Active\": true,\n    \"BankName\": null,\n    \"BankAccountName\": null,\n    \"BankAccountNumber\": \"4242424242424242\",\n    \"BankIdentifierCodes\": null,\n    \"BankAccountType\": null,\n    \"TaxID\": null,\n    \"CustomFields\": null\n}"
+            }
+          ]
+        },
+        {
+          "name": "Admin - Delete a payment Gateway",
+          "_postman_id": "b8d36b3a-e43f-42ae-99b0-ba188798faf9",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "auth": {
+              "type": "noauth"
+            },
+            "method": "DELETE",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{admintoken}}",
+                "type": "text"
+              }
+            ],
+            "url": "https://{{your-marketplace}}.arcadier.io/api/v2/admins/{{adminID}}/payment-gateways/{{payment-gateway-ID-code}}",
+            "description": "Deletes a payment gateway from the whole marketplace using its `Code`\n\n#### Authentication\n> Admin token only."
+          },
+          "response": [
+            {
+              "id": "26c98b97-0e7b-4417-8842-e55081d4498a",
+              "name": "Admin - Delete a payment Gateway",
+              "originalRequest": {
+                "method": "DELETE",
+                "header": [
+                  {
+                    "key": "Authorization",
+                    "value": "Bearer {{admintoken}}",
+                    "type": "text"
+                  }
+                ],
+                "url": "https://{{your-marketplace}}.arcadier.io/api/v2/admins/{{adminID}}/payment-gateways/{{payment-gateway-ID-code}}"
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Cache-Control",
+                  "value": "no-cache"
+                },
+                {
+                  "key": "Pragma",
+                  "value": "no-cache"
+                },
+                {
+                  "key": "Content-Type",
+                  "value": "application/json; charset=utf-8"
+                },
+                {
+                  "key": "Expires",
+                  "value": "-1"
+                },
+                {
+                  "key": "request-id",
+                  "value": "03af10c7-bee8-48bf-abc9-5b4d379d1c4d"
+                },
+                {
+                  "key": "api-version",
+                  "value": "v2"
+                },
+                {
+                  "key": "X-XSS-Protection",
+                  "value": "1; mode=block"
+                },
+                {
+                  "key": "X-Content-Type-Options",
+                  "value": "nosniff"
+                },
+                {
+                  "key": "X-Powered-By",
+                  "value": "ARR/3.0"
+                },
+                {
+                  "key": "Date",
+                  "value": "Tue, 17 Sep 2019 06:52:40 GMT"
+                },
+                {
+                  "key": "Content-Length",
+                  "value": "284"
+                }
+              ],
+              "cookie": [],
+              "responseTime": null,
+              "body": "{\n    \"Code\": \"test0cb0abf4c7af4d6e8c9eebb3f0379786\",\n    \"Description\": \"Test Payment Gateway 2\",\n    \"Gateway\": \"Test\",\n    \"Active\": null,\n    \"Logo\": {\n        \"ID\": \"16d3ebfb-25aa-4555-b29e-6da17b9f4a52\",\n        \"MediaUrl\": \"https://d1aeri3ty3izns.cloudfront.net/media/6/67664/1200/preview.jpg\"\n    },\n    \"CustomFields\": null,\n    \"Meta\": null\n}"
+            }
+          ]
+        },
+        {
+          "name": "Merchant - Delete Payment Acceptance Method",
+          "_postman_id": "1125312a-2f7f-4b61-a67d-7c1693453171",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "auth": {
+              "type": "noauth"
+            },
+            "method": "DELETE",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{admintoken}}",
+                "description": "This can be {{merchanttoken}} too",
+                "type": "text"
+              }
+            ],
+            "url": "https://{{your-marketplace}}.arcadier.io/api/v2/merchants/{{merchantID}}/payment-acceptance-methods/{{paymentAcceptanceMethodID}}",
+            "description": "Deletes a payment acceptance method for the merchant only.\n\n#### Authentication\n> Admin and merchant token only."
+          },
+          "response": [
+            {
+              "id": "8e21f94b-5904-40ab-82ee-9a55dd863260",
+              "name": "Merchant - Delete Payment Acceptance Method",
+              "originalRequest": {
+                "method": "DELETE",
+                "header": [
+                  {
+                    "key": "Authorization",
+                    "value": "Bearer {{admintoken}}",
+                    "description": "This can be {{merchanttoken}} too",
+                    "type": "text"
+                  }
+                ],
+                "url": "https://{{your-marketplace}}.arcadier.io/api/v2/merchants/{{merchantID}}/payment-acceptance-methods/{{paymentAcceptanceMethodID}}"
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Cache-Control",
+                  "value": "no-cache"
+                },
+                {
+                  "key": "Pragma",
+                  "value": "no-cache"
+                },
+                {
+                  "key": "Content-Type",
+                  "value": "application/json; charset=utf-8"
+                },
+                {
+                  "key": "Expires",
+                  "value": "-1"
+                },
+                {
+                  "key": "request-id",
+                  "value": "6c92317c-9a9b-432b-b4f1-fc43e9b25023"
+                },
+                {
+                  "key": "api-version",
+                  "value": "v2"
+                },
+                {
+                  "key": "X-XSS-Protection",
+                  "value": "1; mode=block"
+                },
+                {
+                  "key": "X-Content-Type-Options",
+                  "value": "nosniff"
+                },
+                {
+                  "key": "X-Powered-By",
+                  "value": "ARR/3.0"
+                },
+                {
+                  "key": "Date",
+                  "value": "Tue, 17 Sep 2019 06:49:18 GMT"
+                },
+                {
+                  "key": "Content-Length",
+                  "value": "431"
+                }
+              ],
+              "cookie": [],
+              "responseTime": null,
+              "body": "{\n    \"Id\": \"1ca00db0-7789-4039-9682-9c4ebf8da30b\",\n    \"PaymentGateway\": {\n        \"Code\": \"stripe\",\n        \"Description\": null,\n        \"Gateway\": null,\n        \"Active\": null,\n        \"Logo\": null,\n        \"CustomFields\": null,\n        \"Meta\": null\n    },\n    \"Verified\": true,\n    \"Account\": \"testaccount\",\n    \"ClientID\": \"some hash\",\n    \"ClientSecret\": null,\n    \"Active\": false,\n    \"BankName\": null,\n    \"BankAccountName\": null,\n    \"BankAccountNumber\": \"4242424242424242\",\n    \"BankIdentifierCodes\": null,\n    \"BankAccountType\": null,\n    \"TaxID\": null,\n    \"CustomFields\": null\n}"
+            }
+          ]
+        },
+        {
+          "name": "Admin - Update a payment Method",
+          "_postman_id": "581ed39c-3b10-48b9-a7b2-47b7ba6c1bf3",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "auth": {
+              "type": "noauth"
+            },
+            "method": "PUT",
+            "header": [
+              {
+                "key": "Content-Type",
+                "name": "Content-Type",
+                "value": "application/json",
+                "type": "text"
+              },
+              {
+                "key": "Authorization",
+                "value": "Bearer {{admintoken}}",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n\t\"Description\": \"string\",\r\n\t\"Gateway\": \"string\",\r\n\t\"Active\": true,\r\n\t\"Logo\": {\r\n\t\t\"ID\": \"00000000-0000-0000-0000-000000000000\",\r\n\t\t\"MediaUrl\": \"string\"\r\n\t},\r\n\t\"CustomFields\": [\r\n\t\t{\r\n\t\t\t\"Code\": \"string\",\r\n\t\t\t\"Name\": \"string\",\r\n\t\t\t\"DataFieldType\": \"string\",\r\n\t\t\t\"Values\": [\r\n\t\t\t\t\"string\"\r\n\t\t\t]\r\n\t\t}\r\n\t]\r\n}"
+            },
+            "url": "https://{{your-marketplace}}.arcadier.io/api/v2/admins/{{adminID}}/payment-gateways/{{paymentAcceptanceMethodCode}}",
+            "description": "Updates details about a payment gateway.\n\n#### Authentication\n> Admin token only."
+          },
+          "response": [
+            {
+              "id": "7062d11c-2e09-4797-b4e3-9d7468d4c15b",
+              "name": "Admin - Update a payment Method",
+              "originalRequest": {
+                "method": "PUT",
+                "header": [
+                  {
+                    "key": "Content-Type",
+                    "name": "Content-Type",
+                    "value": "application/json",
+                    "type": "text"
+                  },
+                  {
+                    "key": "Authorization",
+                    "value": "Bearer {{admintoken}}",
+                    "type": "text"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\r\n\t\"Description\": \"Updated Description\",\r\n\t\"Gateway\": \"Updated Gateway\",\r\n\t\"Logo\": {\r\n\t\t\"ID\": \"40abc3db-241f-45a2-868d-dd798f6feb88\",\r\n\t\t\"MediaUrl\": \"https://theme.zdassets.com/theme_assets/2008942/9566e69f67b1ee67fdfbcd79b1e580bdbbc98874.svg\"\r\n\t}\r\n}"
+                },
+                "url": "https://{{your-marketplace}}.arcadier.io/api/v2/admins/{{adminID}}/payment-gateways/{{paymentAcceptanceMethodCode}}"
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Cache-Control",
+                  "value": "no-cache"
+                },
+                {
+                  "key": "Pragma",
+                  "value": "no-cache"
+                },
+                {
+                  "key": "Content-Type",
+                  "value": "application/json; charset=utf-8"
+                },
+                {
+                  "key": "Expires",
+                  "value": "-1"
+                },
+                {
+                  "key": "request-id",
+                  "value": "9a9cab27-ad9e-4e59-91cf-5d90cee4bc24"
+                },
+                {
+                  "key": "api-version",
+                  "value": "v2"
+                },
+                {
+                  "key": "X-XSS-Protection",
+                  "value": "1; mode=block"
+                },
+                {
+                  "key": "X-Content-Type-Options",
+                  "value": "nosniff"
+                },
+                {
+                  "key": "X-Powered-By",
+                  "value": "ARR/3.0"
+                },
+                {
+                  "key": "Date",
+                  "value": "Tue, 17 Sep 2019 07:01:34 GMT"
+                },
+                {
+                  "key": "Content-Length",
+                  "value": "316"
+                }
+              ],
+              "cookie": [],
+              "responseTime": null,
+              "body": "{\n    \"Code\": \"test1fdc6785c0e241318144370dd87cb52b\",\n    \"Description\": \"Updated Description\",\n    \"Gateway\": \"Updated Gateway\",\n    \"Active\": null,\n    \"Logo\": {\n        \"ID\": \"13bc2d56-c8fd-4ad8-9dc9-b62902c5de05\",\n        \"MediaUrl\": \"https://theme.zdassets.com/theme_assets/2008942/9566e69f67b1ee67fdfbcd79b1e580bdbbc98874.svg\"\n    },\n    \"CustomFields\": null,\n    \"Meta\": null\n}"
+            }
+          ]
+        }
+      ],
+      "_postman_id": "3d238033-25db-48bc-b15f-2f2b842c011d"
+    },
+    {
       "name": "Marketplace",
       "item": [
         {
@@ -9702,715 +10411,6 @@
         }
       ],
       "_postman_id": "ea65eb8c-3155-49fc-8faa-9bb2bb6f35e9"
-    },
-    {
-      "name": "Payment Methods",
-      "item": [
-        {
-          "name": "Get payment Gateways",
-          "_postman_id": "13bf4d2d-a015-41bb-ad5d-f49d476800a8",
-          "protocolProfileBehavior": {
-            "disableBodyPruning": true
-          },
-          "request": {
-            "auth": {
-              "type": "noauth"
-            },
-            "method": "GET",
-            "header": [
-              {
-                "key": "Authorization",
-                "value": "Bearer {{admintoken}}",
-                "type": "text"
-              }
-            ],
-            "url": "https://{{your-marketplace}}.arcadier.io/api/v2/admins/{{adminID}}/payment-gateways",
-            "description": "Gets the details and keys for each payment gateway on the marketplace.\n\n#### Authentication\n> Admin token only"
-          },
-          "response": [
-            {
-              "id": "921702da-ea37-4eea-8a70-29e67157834f",
-              "name": "Get payment Gateways",
-              "originalRequest": {
-                "method": "GET",
-                "header": [
-                  {
-                    "key": "Authorization",
-                    "value": "Bearer {{admintoken}}",
-                    "type": "text"
-                  }
-                ],
-                "url": "https://{{your-marketplace}}.arcadier.io/api/v2/admins/{{adminID}}/payment-gateways"
-              },
-              "status": "OK",
-              "code": 200,
-              "_postman_previewlanguage": "json",
-              "header": [
-                {
-                  "key": "Cache-Control",
-                  "value": "no-cache"
-                },
-                {
-                  "key": "Pragma",
-                  "value": "no-cache"
-                },
-                {
-                  "key": "Content-Type",
-                  "value": "application/json; charset=utf-8"
-                },
-                {
-                  "key": "Expires",
-                  "value": "-1"
-                },
-                {
-                  "key": "request-id",
-                  "value": "38726dc7-b709-4962-bf98-741c0c2b276e"
-                },
-                {
-                  "key": "api-version",
-                  "value": "v2"
-                },
-                {
-                  "key": "X-XSS-Protection",
-                  "value": "1; mode=block"
-                },
-                {
-                  "key": "X-Content-Type-Options",
-                  "value": "nosniff"
-                },
-                {
-                  "key": "X-Powered-By",
-                  "value": "ARR/3.0"
-                },
-                {
-                  "key": "Date",
-                  "value": "Tue, 17 Sep 2019 06:26:11 GMT"
-                },
-                {
-                  "key": "Content-Length",
-                  "value": "749"
-                }
-              ],
-              "cookie": [],
-              "responseTime": null,
-              "body": "{\n    \"TotalRecords\": 3,\n    \"PageNumber\": 1,\n    \"PageSize\": 3,\n    \"Records\": [\n        {\n            \"Code\": \"stripe\",\n            \"Description\": \"Stripe\",\n            \"Gateway\": \"Stripe\",\n            \"Active\": null,\n            \"Logo\": null,\n            \"CustomFields\": null,\n            \"Meta\": {\n                \"clientid\": \"xxxxxxxxxxxxxxxxxxx\",\n                \"publickey\": \"xxxxxxxxxxxxxxxxxxx\",\n                \"secretkey\": \"xxxxxxxxxxxxxxxxxxx\",\n                \"mandatory\": \"True\"\n            }\n        },\n        {\n            \"Code\": \"paypal-adaptive\",\n            \"Description\": \"Adpative Payment\",\n            \"Gateway\": \"PayPal\",\n            \"Active\": null,\n            \"Logo\": null,\n            \"CustomFields\": null,\n            \"Meta\": {\n                \"clientid\": \"\",\n                \"clientsecret\": \"\",\n                \"username\": \"\",\n                \"password\": \"\",\n                \"signature\": \"\",\n                \"mandatory\": \"\",\n                \"admin-paypal\": \"\"\n            }\n        },\n        {\n            \"Code\": \"omise\",\n            \"Description\": \"Omise\",\n            \"Gateway\": \"Omise\",\n            \"Active\": null,\n            \"Logo\": null,\n            \"CustomFields\": null,\n            \"Meta\": {\n                \"chain-url\": \"\",\n                \"publickey\": \"\",\n                \"secretkey\": \"\",\n                \"mandatory\": \"\"\n            }\n        }\n    ]\n}"
-            }
-          ]
-        },
-        {
-          "name": "Merchant - Show Payment Acceptance Methods",
-          "_postman_id": "9756e8b3-248e-426c-bddb-f57e0d7e79c7",
-          "protocolProfileBehavior": {
-            "disableBodyPruning": true
-          },
-          "request": {
-            "auth": {
-              "type": "noauth"
-            },
-            "method": "GET",
-            "header": [
-              {
-                "key": "Authorization",
-                "value": "Bearer {{admintoken}}",
-                "description": "This can be {{merchattoken}} too",
-                "type": "text"
-              }
-            ],
-            "url": "https://{{your-marketplace}}.arcadier.io/api/v2/merchants/{{merchantID}}/payment-acceptance-methods",
-            "description": "Shows the different payment acceptance methods available for the merchant to use.\n\n#### Authentication\n> Admin and merchant token"
-          },
-          "response": [
-            {
-              "id": "890a9c40-70b7-4c8c-9df5-09ac8a880b8f",
-              "name": "Merchant - Show Payment Acceptance Methods",
-              "originalRequest": {
-                "method": "GET",
-                "header": [
-                  {
-                    "key": "Authorization",
-                    "value": "Bearer {{admintoken}}",
-                    "description": "This can be {{merchattoken}} too",
-                    "type": "text"
-                  }
-                ],
-                "url": "https://{{your-marketplace}}.arcadier.io/api/v2/merchants/{{merchantID}}/payment-acceptance-methods"
-              },
-              "status": "OK",
-              "code": 200,
-              "_postman_previewlanguage": "json",
-              "header": [
-                {
-                  "key": "Cache-Control",
-                  "value": "no-cache"
-                },
-                {
-                  "key": "Pragma",
-                  "value": "no-cache"
-                },
-                {
-                  "key": "Content-Type",
-                  "value": "application/json; charset=utf-8"
-                },
-                {
-                  "key": "Expires",
-                  "value": "-1"
-                },
-                {
-                  "key": "request-id",
-                  "value": "2304f5b7-33d3-47fe-a970-2f399a8b1165"
-                },
-                {
-                  "key": "api-version",
-                  "value": "v2"
-                },
-                {
-                  "key": "X-XSS-Protection",
-                  "value": "1; mode=block"
-                },
-                {
-                  "key": "X-Content-Type-Options",
-                  "value": "nosniff"
-                },
-                {
-                  "key": "X-Powered-By",
-                  "value": "ARR/3.0"
-                },
-                {
-                  "key": "Date",
-                  "value": "Tue, 17 Sep 2019 06:46:58 GMT"
-                },
-                {
-                  "key": "Content-Length",
-                  "value": "489"
-                }
-              ],
-              "cookie": [],
-              "responseTime": null,
-              "body": "{\n    \"TotalRecords\": 1,\n    \"PageNumber\": 1,\n    \"PageSize\": 1,\n    \"Records\": [\n        {\n            \"Id\": \"1ca00db0-7789-4039-9682-9c4ebf8da30b\",\n            \"PaymentGateway\": {\n                \"Code\": \"stripe\",\n                \"Description\": null,\n                \"Gateway\": null,\n                \"Active\": null,\n                \"Logo\": null,\n                \"CustomFields\": null,\n                \"Meta\": null\n            },\n            \"Verified\": true,\n            \"Account\": \"testaccount\",\n            \"ClientID\": \"some hash\",\n            \"ClientSecret\": null,\n            \"Active\": true,\n            \"BankName\": null,\n            \"BankAccountName\": null,\n            \"BankAccountNumber\": \"4242424242424242\",\n            \"BankIdentifierCodes\": null,\n            \"BankAccountType\": null,\n            \"TaxID\": null,\n            \"CustomFields\": null\n        }\n    ]\n}"
-            }
-          ]
-        },
-        {
-          "name": "Admin - Create a new payment Gateway",
-          "_postman_id": "54ab75eb-674f-4a34-9999-2ec7a8c881e7",
-          "protocolProfileBehavior": {
-            "disableBodyPruning": true
-          },
-          "request": {
-            "auth": {
-              "type": "noauth"
-            },
-            "method": "POST",
-            "header": [
-              {
-                "key": "Content-Type",
-                "name": "Content-Type",
-                "value": "application/json",
-                "type": "text"
-              },
-              {
-                "key": "Authorization",
-                "value": "Bearer {{admintoken}}",
-                "type": "text"
-              }
-            ],
-            "body": {
-              "mode": "raw",
-              "raw": "{\r\n\t\"Description\": \"string\",\r\n\t\"Gateway\": \"string\",\r\n\t\"Active\": true,\r\n\t\"Logo\": {\r\n\t\t\"ID\": \"00000000-0000-0000-0000-000000000000\",\r\n\t\t\"MediaUrl\": \"string\"\r\n\t},\r\n\t\"CustomFields\": [\r\n\t\t{\r\n\t\t\t\"Code\": \"string\",\r\n\t\t\t\"Name\": \"string\",\r\n\t\t\t\"DataFieldType\": \"string\",\r\n\t\t\t\"Values\": [\r\n\t\t\t\t\"string\"\r\n\t\t\t]\r\n\t\t}\r\n\t]\r\n}"
-            },
-            "url": "https://{{your-marketplace}}.arcadier.io/api/v2/admins/{{adminID}}/payment-gateways",
-            "description": "Creates a new custom payment gateway on the admin dashboard. The actual API linking to the payment gateway's has to be made manually on the dashboard.\nCustom Fields need to be created separately, they aren't created here.\n\n#### Authentication\n> Admin token only"
-          },
-          "response": [
-            {
-              "id": "e362c79a-6f4e-4387-9f31-9d0fe1542747",
-              "name": "Admin - Create a new payment Gateway",
-              "originalRequest": {
-                "method": "POST",
-                "header": [
-                  {
-                    "key": "Content-Type",
-                    "name": "Content-Type",
-                    "type": "text",
-                    "value": "application/json"
-                  },
-                  {
-                    "key": "Authorization",
-                    "value": "Bearer {{admintoken}}",
-                    "type": "text"
-                  }
-                ],
-                "body": {
-                  "mode": "raw",
-                  "raw": "{\r\n\t\"Description\": \"Test Payment Gateway 2\",\r\n\t\"Gateway\": \"Test\",\r\n\t\"Logo\": {\r\n\t\"ID\": \"f9e001f5-53bf-4744-b73d-6e8d8734beed\",\r\n\t\"MediaUrl\": \"https://d1aeri3ty3izns.cloudfront.net/media/6/67664/1200/preview.jpg\"\r\n\t}\r\n\r\n}"
-                },
-                "url": "https://{{your-marketplace}}.arcadier.io/api/v2/admins/{{adminID}}/payment-gateways"
-              },
-              "status": "OK",
-              "code": 200,
-              "_postman_previewlanguage": "json",
-              "header": [
-                {
-                  "key": "Cache-Control",
-                  "value": "no-cache"
-                },
-                {
-                  "key": "Pragma",
-                  "value": "no-cache"
-                },
-                {
-                  "key": "Content-Type",
-                  "value": "application/json; charset=utf-8"
-                },
-                {
-                  "key": "Expires",
-                  "value": "-1"
-                },
-                {
-                  "key": "request-id",
-                  "value": "23554768-749c-47d2-9f53-588361ea2797"
-                },
-                {
-                  "key": "api-version",
-                  "value": "v2"
-                },
-                {
-                  "key": "X-XSS-Protection",
-                  "value": "1; mode=block"
-                },
-                {
-                  "key": "X-Content-Type-Options",
-                  "value": "nosniff"
-                },
-                {
-                  "key": "X-Powered-By",
-                  "value": "ARR/3.0"
-                },
-                {
-                  "key": "Date",
-                  "value": "Tue, 17 Sep 2019 06:35:26 GMT"
-                },
-                {
-                  "key": "Content-Length",
-                  "value": "284"
-                }
-              ],
-              "cookie": [],
-              "responseTime": null,
-              "body": "{\n    \"Code\": \"test0cb0abf4c7af4d6e8c9eebb3f0379786\",\n    \"Description\": \"Test Payment Gateway 2\",\n    \"Gateway\": \"Test\",\n    \"Active\": null,\n    \"Logo\": {\n        \"ID\": \"16d3ebfb-25aa-4555-b29e-6da17b9f4a52\",\n        \"MediaUrl\": \"https://d1aeri3ty3izns.cloudfront.net/media/6/67664/1200/preview.jpg\"\n    },\n    \"CustomFields\": null,\n    \"Meta\": null\n}"
-            }
-          ]
-        },
-        {
-          "name": "Merchant - Link payment gateway",
-          "_postman_id": "ad00a988-f655-49c5-b01a-40e7b2aa761b",
-          "protocolProfileBehavior": {
-            "disableBodyPruning": true
-          },
-          "request": {
-            "auth": {
-              "type": "noauth"
-            },
-            "method": "POST",
-            "header": [
-              {
-                "key": "Content-Type",
-                "name": "Content-Type",
-                "value": "application/json",
-                "type": "text"
-              },
-              {
-                "key": "Authorization",
-                "value": "Bearer {{admintoken}}",
-                "description": "This can be {{merchanttoken}} too.",
-                "type": "text"
-              }
-            ],
-            "body": {
-              "mode": "raw",
-              "raw": "{\n  \"Id\": \"00000000-0000-0000-0000-000000000000\",\n  \"PaymentGateway\": {\n    \"Code\": \"string\",\n    \"Description\": \"string\",\n    \"Gateway\": \"string\",\n    \"Active\": true,\n    \"Logo\": {\n      \"ID\": \"00000000-0000-0000-0000-000000000000\",\n      \"MediaUrl\": \"string\"\n    },\n    \"CustomFields\": [\n      {\n        \"Code\": \"string\",\n        \"Name\": \"string\",\n        \"DataFieldType\": \"string\",\n        \"Values\": [\n          \"string\"\n        ]\n      }\n    ],\n    \"Meta\": {}\n  },\n  \"Verified\": true,\n  \"Account\": \"string\",\n  \"ClientID\": \"string\",\n  \"ClientSecret\": \"string\",\n  \"Active\": true,\n  \"BankName\": \"string\",\n  \"BankAccountName\": \"string\",\n  \"BankAccountNumber\": \"string\",\n  \"BankIdentifierCodes\": \"string\",\n  \"BankAccountType\": \"string\",\n  \"TaxID\": \"string\",\n  \"CustomFields\": [\n    {\n      \"Code\": \"string\",\n      \"Name\": \"string\",\n      \"DataFieldType\": \"string\",\n      \"Values\": [\n        \"string\"\n      ]\n    }\n  ]\n}\n"
-            },
-            "url": "https://{{your-marketplace}}.arcadier.io/api/v2/merchants/{{merchantID}}/payment-acceptance-methods",
-            "description": "This API saves the details of the payment gateway in Arcadier's databases. It does not do the actual linking of the merchant's account to the Admin's account. The details to be filled in those parameters can be obtained from the `Merchant - Show Payment Acceptance Methods`.For clarification about how exactly to use this API, drop an email at `tanoo@arcadier.com`\n\n#### Authentication\n> Admin and merchant token only"
-          },
-          "response": [
-            {
-              "id": "9c33ad81-339a-4150-8a25-fd8dce8e2888",
-              "name": "Merchant - Link payment gateway",
-              "originalRequest": {
-                "method": "POST",
-                "header": [
-                  {
-                    "key": "Content-Type",
-                    "name": "Content-Type",
-                    "type": "text",
-                    "value": "application/json"
-                  },
-                  {
-                    "key": "Authorization",
-                    "value": "Bearer {{admintoken}}",
-                    "description": "This can be {{merchanttoken}} too.",
-                    "type": "text"
-                  }
-                ],
-                "body": {
-                  "mode": "raw",
-                  "raw": "{\n\t\"PaymentGateway\": {\n    \"Code\": \"stripe\"\n  },\n  \"Verified\": true,\n  \"Account\": \"testaccount\",\n  \"ClientID\": \"some hash\",\n  \"Active\": true,\n  \"BankAccountNumber\": \"4242424242424242\"\n\t\n}"
-                },
-                "url": "https://{{your-marketplace}}.arcadier.io/api/v2/merchants/{{merchantID}}/payment-acceptance-methods"
-              },
-              "status": "OK",
-              "code": 200,
-              "_postman_previewlanguage": "json",
-              "header": [
-                {
-                  "key": "Cache-Control",
-                  "value": "no-cache"
-                },
-                {
-                  "key": "Pragma",
-                  "value": "no-cache"
-                },
-                {
-                  "key": "Content-Type",
-                  "value": "application/json; charset=utf-8"
-                },
-                {
-                  "key": "Expires",
-                  "value": "-1"
-                },
-                {
-                  "key": "request-id",
-                  "value": "e083bc3f-73c1-4a38-85cc-6432d43f8adb"
-                },
-                {
-                  "key": "api-version",
-                  "value": "v2"
-                },
-                {
-                  "key": "X-XSS-Protection",
-                  "value": "1; mode=block"
-                },
-                {
-                  "key": "X-Content-Type-Options",
-                  "value": "nosniff"
-                },
-                {
-                  "key": "X-Powered-By",
-                  "value": "ARR/3.0"
-                },
-                {
-                  "key": "Date",
-                  "value": "Tue, 17 Sep 2019 06:43:56 GMT"
-                },
-                {
-                  "key": "Content-Length",
-                  "value": "430"
-                }
-              ],
-              "cookie": [],
-              "responseTime": null,
-              "body": "{\n    \"Id\": \"1ca00db0-7789-4039-9682-9c4ebf8da30b\",\n    \"PaymentGateway\": {\n        \"Code\": \"stripe\",\n        \"Description\": null,\n        \"Gateway\": null,\n        \"Active\": null,\n        \"Logo\": null,\n        \"CustomFields\": null,\n        \"Meta\": null\n    },\n    \"Verified\": true,\n    \"Account\": \"testaccount\",\n    \"ClientID\": \"some hash\",\n    \"ClientSecret\": null,\n    \"Active\": true,\n    \"BankName\": null,\n    \"BankAccountName\": null,\n    \"BankAccountNumber\": \"4242424242424242\",\n    \"BankIdentifierCodes\": null,\n    \"BankAccountType\": null,\n    \"TaxID\": null,\n    \"CustomFields\": null\n}"
-            }
-          ]
-        },
-        {
-          "name": "Admin - Delete a payment Gateway",
-          "_postman_id": "b8d36b3a-e43f-42ae-99b0-ba188798faf9",
-          "protocolProfileBehavior": {
-            "disableBodyPruning": true
-          },
-          "request": {
-            "auth": {
-              "type": "noauth"
-            },
-            "method": "DELETE",
-            "header": [
-              {
-                "key": "Authorization",
-                "value": "Bearer {{admintoken}}",
-                "type": "text"
-              }
-            ],
-            "url": "https://{{your-marketplace}}.arcadier.io/api/v2/admins/{{adminID}}/payment-gateways/{{payment-gateway-ID-code}}",
-            "description": "Deletes a payment gateway from the whole marketplace using its `Code`\n\n#### Authentication\n> Admin token only."
-          },
-          "response": [
-            {
-              "id": "26c98b97-0e7b-4417-8842-e55081d4498a",
-              "name": "Admin - Delete a payment Gateway",
-              "originalRequest": {
-                "method": "DELETE",
-                "header": [
-                  {
-                    "key": "Authorization",
-                    "value": "Bearer {{admintoken}}",
-                    "type": "text"
-                  }
-                ],
-                "url": "https://{{your-marketplace}}.arcadier.io/api/v2/admins/{{adminID}}/payment-gateways/{{payment-gateway-ID-code}}"
-              },
-              "status": "OK",
-              "code": 200,
-              "_postman_previewlanguage": "json",
-              "header": [
-                {
-                  "key": "Cache-Control",
-                  "value": "no-cache"
-                },
-                {
-                  "key": "Pragma",
-                  "value": "no-cache"
-                },
-                {
-                  "key": "Content-Type",
-                  "value": "application/json; charset=utf-8"
-                },
-                {
-                  "key": "Expires",
-                  "value": "-1"
-                },
-                {
-                  "key": "request-id",
-                  "value": "03af10c7-bee8-48bf-abc9-5b4d379d1c4d"
-                },
-                {
-                  "key": "api-version",
-                  "value": "v2"
-                },
-                {
-                  "key": "X-XSS-Protection",
-                  "value": "1; mode=block"
-                },
-                {
-                  "key": "X-Content-Type-Options",
-                  "value": "nosniff"
-                },
-                {
-                  "key": "X-Powered-By",
-                  "value": "ARR/3.0"
-                },
-                {
-                  "key": "Date",
-                  "value": "Tue, 17 Sep 2019 06:52:40 GMT"
-                },
-                {
-                  "key": "Content-Length",
-                  "value": "284"
-                }
-              ],
-              "cookie": [],
-              "responseTime": null,
-              "body": "{\n    \"Code\": \"test0cb0abf4c7af4d6e8c9eebb3f0379786\",\n    \"Description\": \"Test Payment Gateway 2\",\n    \"Gateway\": \"Test\",\n    \"Active\": null,\n    \"Logo\": {\n        \"ID\": \"16d3ebfb-25aa-4555-b29e-6da17b9f4a52\",\n        \"MediaUrl\": \"https://d1aeri3ty3izns.cloudfront.net/media/6/67664/1200/preview.jpg\"\n    },\n    \"CustomFields\": null,\n    \"Meta\": null\n}"
-            }
-          ]
-        },
-        {
-          "name": "Merchant - Delete Payment Acceptance Method",
-          "_postman_id": "1125312a-2f7f-4b61-a67d-7c1693453171",
-          "protocolProfileBehavior": {
-            "disableBodyPruning": true
-          },
-          "request": {
-            "auth": {
-              "type": "noauth"
-            },
-            "method": "DELETE",
-            "header": [
-              {
-                "key": "Authorization",
-                "value": "Bearer {{admintoken}}",
-                "description": "This can be {{merchanttoken}} too",
-                "type": "text"
-              }
-            ],
-            "url": "https://{{your-marketplace}}.arcadier.io/api/v2/merchants/{{merchantID}}/payment-acceptance-methods/{{paymentAcceptanceMethodID}}",
-            "description": "Deletes a payment acceptance method for the merchant only.\n\n#### Authentication\n> Admin and merchant token only."
-          },
-          "response": [
-            {
-              "id": "8e21f94b-5904-40ab-82ee-9a55dd863260",
-              "name": "Merchant - Delete Payment Acceptance Method",
-              "originalRequest": {
-                "method": "DELETE",
-                "header": [
-                  {
-                    "key": "Authorization",
-                    "value": "Bearer {{admintoken}}",
-                    "description": "This can be {{merchanttoken}} too",
-                    "type": "text"
-                  }
-                ],
-                "url": "https://{{your-marketplace}}.arcadier.io/api/v2/merchants/{{merchantID}}/payment-acceptance-methods/{{paymentAcceptanceMethodID}}"
-              },
-              "status": "OK",
-              "code": 200,
-              "_postman_previewlanguage": "json",
-              "header": [
-                {
-                  "key": "Cache-Control",
-                  "value": "no-cache"
-                },
-                {
-                  "key": "Pragma",
-                  "value": "no-cache"
-                },
-                {
-                  "key": "Content-Type",
-                  "value": "application/json; charset=utf-8"
-                },
-                {
-                  "key": "Expires",
-                  "value": "-1"
-                },
-                {
-                  "key": "request-id",
-                  "value": "6c92317c-9a9b-432b-b4f1-fc43e9b25023"
-                },
-                {
-                  "key": "api-version",
-                  "value": "v2"
-                },
-                {
-                  "key": "X-XSS-Protection",
-                  "value": "1; mode=block"
-                },
-                {
-                  "key": "X-Content-Type-Options",
-                  "value": "nosniff"
-                },
-                {
-                  "key": "X-Powered-By",
-                  "value": "ARR/3.0"
-                },
-                {
-                  "key": "Date",
-                  "value": "Tue, 17 Sep 2019 06:49:18 GMT"
-                },
-                {
-                  "key": "Content-Length",
-                  "value": "431"
-                }
-              ],
-              "cookie": [],
-              "responseTime": null,
-              "body": "{\n    \"Id\": \"1ca00db0-7789-4039-9682-9c4ebf8da30b\",\n    \"PaymentGateway\": {\n        \"Code\": \"stripe\",\n        \"Description\": null,\n        \"Gateway\": null,\n        \"Active\": null,\n        \"Logo\": null,\n        \"CustomFields\": null,\n        \"Meta\": null\n    },\n    \"Verified\": true,\n    \"Account\": \"testaccount\",\n    \"ClientID\": \"some hash\",\n    \"ClientSecret\": null,\n    \"Active\": false,\n    \"BankName\": null,\n    \"BankAccountName\": null,\n    \"BankAccountNumber\": \"4242424242424242\",\n    \"BankIdentifierCodes\": null,\n    \"BankAccountType\": null,\n    \"TaxID\": null,\n    \"CustomFields\": null\n}"
-            }
-          ]
-        },
-        {
-          "name": "Admin - Update a payment Method",
-          "_postman_id": "581ed39c-3b10-48b9-a7b2-47b7ba6c1bf3",
-          "protocolProfileBehavior": {
-            "disableBodyPruning": true
-          },
-          "request": {
-            "auth": {
-              "type": "noauth"
-            },
-            "method": "PUT",
-            "header": [
-              {
-                "key": "Content-Type",
-                "name": "Content-Type",
-                "value": "application/json",
-                "type": "text"
-              },
-              {
-                "key": "Authorization",
-                "value": "Bearer {{admintoken}}",
-                "type": "text"
-              }
-            ],
-            "body": {
-              "mode": "raw",
-              "raw": "{\r\n\t\"Description\": \"string\",\r\n\t\"Gateway\": \"string\",\r\n\t\"Active\": true,\r\n\t\"Logo\": {\r\n\t\t\"ID\": \"00000000-0000-0000-0000-000000000000\",\r\n\t\t\"MediaUrl\": \"string\"\r\n\t},\r\n\t\"CustomFields\": [\r\n\t\t{\r\n\t\t\t\"Code\": \"string\",\r\n\t\t\t\"Name\": \"string\",\r\n\t\t\t\"DataFieldType\": \"string\",\r\n\t\t\t\"Values\": [\r\n\t\t\t\t\"string\"\r\n\t\t\t]\r\n\t\t}\r\n\t]\r\n}"
-            },
-            "url": "https://{{your-marketplace}}.arcadier.io/api/v2/admins/{{adminID}}/payment-gateways/{{paymentAcceptanceMethodCode}}",
-            "description": "Updates details about a payment gateway.\n\n#### Authentication\n> Admin token only."
-          },
-          "response": [
-            {
-              "id": "7062d11c-2e09-4797-b4e3-9d7468d4c15b",
-              "name": "Admin - Update a payment Method",
-              "originalRequest": {
-                "method": "PUT",
-                "header": [
-                  {
-                    "key": "Content-Type",
-                    "name": "Content-Type",
-                    "value": "application/json",
-                    "type": "text"
-                  },
-                  {
-                    "key": "Authorization",
-                    "value": "Bearer {{admintoken}}",
-                    "type": "text"
-                  }
-                ],
-                "body": {
-                  "mode": "raw",
-                  "raw": "{\r\n\t\"Description\": \"Updated Description\",\r\n\t\"Gateway\": \"Updated Gateway\",\r\n\t\"Logo\": {\r\n\t\t\"ID\": \"40abc3db-241f-45a2-868d-dd798f6feb88\",\r\n\t\t\"MediaUrl\": \"https://theme.zdassets.com/theme_assets/2008942/9566e69f67b1ee67fdfbcd79b1e580bdbbc98874.svg\"\r\n\t}\r\n}"
-                },
-                "url": "https://{{your-marketplace}}.arcadier.io/api/v2/admins/{{adminID}}/payment-gateways/{{paymentAcceptanceMethodCode}}"
-              },
-              "status": "OK",
-              "code": 200,
-              "_postman_previewlanguage": "json",
-              "header": [
-                {
-                  "key": "Cache-Control",
-                  "value": "no-cache"
-                },
-                {
-                  "key": "Pragma",
-                  "value": "no-cache"
-                },
-                {
-                  "key": "Content-Type",
-                  "value": "application/json; charset=utf-8"
-                },
-                {
-                  "key": "Expires",
-                  "value": "-1"
-                },
-                {
-                  "key": "request-id",
-                  "value": "9a9cab27-ad9e-4e59-91cf-5d90cee4bc24"
-                },
-                {
-                  "key": "api-version",
-                  "value": "v2"
-                },
-                {
-                  "key": "X-XSS-Protection",
-                  "value": "1; mode=block"
-                },
-                {
-                  "key": "X-Content-Type-Options",
-                  "value": "nosniff"
-                },
-                {
-                  "key": "X-Powered-By",
-                  "value": "ARR/3.0"
-                },
-                {
-                  "key": "Date",
-                  "value": "Tue, 17 Sep 2019 07:01:34 GMT"
-                },
-                {
-                  "key": "Content-Length",
-                  "value": "316"
-                }
-              ],
-              "cookie": [],
-              "responseTime": null,
-              "body": "{\n    \"Code\": \"test1fdc6785c0e241318144370dd87cb52b\",\n    \"Description\": \"Updated Description\",\n    \"Gateway\": \"Updated Gateway\",\n    \"Active\": null,\n    \"Logo\": {\n        \"ID\": \"13bc2d56-c8fd-4ad8-9dc9-b62902c5de05\",\n        \"MediaUrl\": \"https://theme.zdassets.com/theme_assets/2008942/9566e69f67b1ee67fdfbcd79b1e580bdbbc98874.svg\"\n    },\n    \"CustomFields\": null,\n    \"Meta\": null\n}"
-            }
-          ]
-        }
-      ],
-      "_postman_id": "3d238033-25db-48bc-b15f-2f2b842c011d"
     },
     {
       "name": "Custom Tables",
