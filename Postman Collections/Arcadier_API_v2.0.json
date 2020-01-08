@@ -2701,6 +2701,12 @@
           "_postman_isSubFolder": true
         },
         {
+          "name": "Post-Checkout",
+          "item": [],
+          "_postman_id": "1068fa83-b989-47f1-8c60-e5ef9ee33f15",
+          "_postman_isSubFolder": true
+        },
+        {
           "name": "Post-Checkout -  Edit Order Details",
           "_postman_id": "5b14eb44-8967-480e-82ea-166378754b2b",
           "protocolProfileBehavior": {
