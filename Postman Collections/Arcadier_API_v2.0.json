@@ -2276,873 +2276,6 @@
       ]
     },
     {
-      "name": "Categories",
-      "item": [
-        {
-          "name": "Get all Categories",
-          "_postman_id": "2f56d70c-d1e8-4589-b388-8a4fe2f85b27",
-          "protocolProfileBehavior": {
-            "disableBodyPruning": true
-          },
-          "request": {
-            "auth": {
-              "type": "noauth"
-            },
-            "method": "GET",
-            "header": [],
-            "url": {
-              "raw": "https://{{your-marketplace}}.arcadier.io/api/v2/admins/{{adminID}}/categories?pageSize={{integer}}&pageNumber={{integer}}",
-              "protocol": "https",
-              "host": [
-                "{{your-marketplace}}",
-                "arcadier",
-                "io"
-              ],
-              "path": [
-                "api",
-                "v2",
-                "admins",
-                "{{adminID}}",
-                "categories"
-              ],
-              "query": [
-                {
-                  "key": "pageSize",
-                  "value": "{{integer}}",
-                  "description": "The number of results per page"
-                },
-                {
-                  "key": "pageNumber",
-                  "value": "{{integer}}",
-                  "description": "The page number"
-                }
-              ]
-            },
-            "description": "Returns all categories and their sub-categories. Paginated.\n\n#### Authentication\n> None required"
-          },
-          "response": [
-            {
-              "id": "43ebd760-60cb-433b-82c0-e1a6f9ecf2a6",
-              "name": " Get all Categories (Requires Admin ID)",
-              "originalRequest": {
-                "method": "GET",
-                "header": [],
-                "url": {
-                  "raw": "https://{{your-marketplace}}.arcadier.io/api/v2/admins/{{adminID}}/categories?pageSize=2&pageNumber=1",
-                  "protocol": "https",
-                  "host": [
-                    "{{your-marketplace}}",
-                    "arcadier",
-                    "io"
-                  ],
-                  "path": [
-                    "api",
-                    "v2",
-                    "admins",
-                    "{{adminID}}",
-                    "categories"
-                  ],
-                  "query": [
-                    {
-                      "key": "pageSize",
-                      "value": "2",
-                      "description": "The number of results per page"
-                    },
-                    {
-                      "key": "pageNumber",
-                      "value": "1",
-                      "description": "The page number"
-                    }
-                  ]
-                }
-              },
-              "status": "OK",
-              "code": 200,
-              "_postman_previewlanguage": "json",
-              "header": [
-                {
-                  "key": "Cache-Control",
-                  "value": "no-cache"
-                },
-                {
-                  "key": "Pragma",
-                  "value": "no-cache"
-                },
-                {
-                  "key": "Content-Type",
-                  "value": "application/json; charset=utf-8"
-                },
-                {
-                  "key": "Expires",
-                  "value": "-1"
-                },
-                {
-                  "key": "request-id",
-                  "value": "dc8fa687-1c2d-4c2e-b50e-77015509fb82"
-                },
-                {
-                  "key": "api-version",
-                  "value": "v2"
-                },
-                {
-                  "key": "X-XSS-Protection",
-                  "value": "1; mode=block"
-                },
-                {
-                  "key": "X-Content-Type-Options",
-                  "value": "nosniff"
-                },
-                {
-                  "key": "X-Powered-By",
-                  "value": "ARR/3.0"
-                },
-                {
-                  "key": "Date",
-                  "value": "Mon, 16 Sep 2019 04:57:24 GMT"
-                },
-                {
-                  "key": "Content-Length",
-                  "value": "3304"
-                }
-              ],
-              "cookie": [],
-              "responseTime": null,
-              "body": "{\n    \"TotalRecords\": 12,\n    \"PageNumber\": 1,\n    \"PageSize\": 12,\n    \"Records\": [\n        {\n            \"ID\": \"ed36e72f-a36d-4eb4-9a5a-270296e766f7\",\n            \"Name\": \"Category9\",\n            \"Description\": \"This is Category9\",\n            \"SortOrder\": 0,\n            \"Media\": null,\n            \"ParentCategoryID\": null,\n            \"ChildCategories\": null,\n            \"Level\": 0,\n            \"CreatedDateTime\": 1567425433,\n            \"ModifiedDateTime\": 1567425433,\n            \"Commission\": null\n        },\n        {\n            \"ID\": \"dd599e4a-dc97-4e9a-ae09-6f98d0695b49\",\n            \"Name\": \"Category10\",\n            \"Description\": \"This is Category10\",\n            \"SortOrder\": 0,\n            \"Media\": null,\n            \"ParentCategoryID\": null,\n            \"ChildCategories\": null,\n            \"Level\": 0,\n            \"CreatedDateTime\": 1568022762,\n            \"ModifiedDateTime\": 1568022762,\n            \"Commission\": null\n        },\n        {\n            \"ID\": \"b60c7fb0-3e4e-4f97-97cc-38bb47ed8cab\",\n            \"Name\": \"Category11\",\n            \"Description\": \"This is Category11\",\n            \"SortOrder\": 0,\n            \"Media\": null,\n            \"ParentCategoryID\": null,\n            \"ChildCategories\": null,\n            \"Level\": 0,\n            \"CreatedDateTime\": 1568109020,\n            \"ModifiedDateTime\": 1568109020,\n            \"Commission\": null\n        },\n        {\n            \"ID\": \"a797d917-11a8-4590-99af-24a6cdd1d3e3\",\n            \"Name\": \"Category1\",\n            \"Description\": \"This is Category1\",\n            \"SortOrder\": 1,\n            \"Media\": null,\n            \"ParentCategoryID\": null,\n            \"ChildCategories\": null,\n            \"Level\": 0,\n            \"CreatedDateTime\": 1566198170,\n            \"ModifiedDateTime\": 1566806010,\n            \"Commission\": null\n        },\n        {\n            \"ID\": \"0b845ec6-41c8-433f-a8d9-33add9c9cdf7\",\n            \"Name\": \"Category6\",\n            \"Description\": \"This is Category6\",\n            \"SortOrder\": 2,\n            \"Media\": null,\n            \"ParentCategoryID\": null,\n            \"ChildCategories\": null,\n            \"Level\": 0,\n            \"CreatedDateTime\": 1566198260,\n            \"ModifiedDateTime\": 1566806010,\n            \"Commission\": null\n        },\n        {\n            \"ID\": \"d3fe70ee-6006-4847-ad2e-a78dce15f404\",\n            \"Name\": \"Categoryundefined\",\n            \"Description\": \"This is Categoryundefined\",\n            \"SortOrder\": 3,\n            \"Media\": null,\n            \"ParentCategoryID\": null,\n            \"ChildCategories\": null,\n            \"Level\": 0,\n            \"CreatedDateTime\": 1566199864,\n            \"ModifiedDateTime\": 1566806010,\n            \"Commission\": null\n        },\n        {\n            \"ID\": \"479b3df3-44a1-41cf-84ed-95ee4ff0206e\",\n            \"Name\": \"Category2\",\n            \"Description\": \"This is Category2\",\n            \"SortOrder\": 4,\n            \"Media\": null,\n            \"ParentCategoryID\": null,\n            \"ChildCategories\": null,\n            \"Level\": 0,\n            \"CreatedDateTime\": 1566198170,\n            \"ModifiedDateTime\": 1566806010,\n            \"Commission\": null\n        },\n        {\n            \"ID\": \"c4d76697-6d2b-41f6-aba5-521b98fa2ebd\",\n            \"Name\": \"Categoryundefined\",\n            \"Description\": \"This is Categoryundefined\",\n            \"SortOrder\": 5,\n            \"Media\": null,\n            \"ParentCategoryID\": null,\n            \"ChildCategories\": null,\n            \"Level\": 0,\n            \"CreatedDateTime\": 1566201273,\n            \"ModifiedDateTime\": 1566806010,\n            \"Commission\": null\n        },\n        {\n            \"ID\": \"955fe9b0-cb3f-496f-8b37-9e9b4ea85bee\",\n            \"Name\": \"SubCategory 2A\",\n            \"Description\": \"This is SubCategory A of Category2\",\n            \"SortOrder\": 0,\n            \"Media\": null,\n            \"ParentCategoryID\": null,\n            \"ChildCategories\": null,\n            \"Level\": 1,\n            \"CreatedDateTime\": 1566198170,\n            \"ModifiedDateTime\": 1566198170,\n            \"Commission\": null\n        },\n        {\n            \"ID\": \"84ab2eef-87fa-4e41-add8-c63670783230\",\n            \"Name\": \"SubCategory 2B\",\n            \"Description\": \"This is SubCategory B of Category2\",\n            \"SortOrder\": 0,\n            \"Media\": null,\n            \"ParentCategoryID\": null,\n            \"ChildCategories\": null,\n            \"Level\": 1,\n            \"CreatedDateTime\": 1566198170,\n            \"ModifiedDateTime\": 1566198170,\n            \"Commission\": null\n        },\n        {\n            \"ID\": \"078948dd-f1d4-42c5-8170-c6ac754fb76e\",\n            \"Name\": \"SubCategory 1A\",\n            \"Description\": \"This is SubCategory A of Category1\",\n            \"SortOrder\": 0,\n            \"Media\": null,\n            \"ParentCategoryID\": null,\n            \"ChildCategories\": null,\n            \"Level\": 1,\n            \"CreatedDateTime\": 1566198170,\n            \"ModifiedDateTime\": 1566198170,\n            \"Commission\": null\n        },\n        {\n            \"ID\": \"ad6f61bd-1c75-49af-bd2a-ba6cce84c020\",\n            \"Name\": \"SubCategory 1B\",\n            \"Description\": \"This is SubCategory B of Category1\",\n            \"SortOrder\": 0,\n            \"Media\": null,\n            \"ParentCategoryID\": null,\n            \"ChildCategories\": null,\n            \"Level\": 1,\n            \"CreatedDateTime\": 1566198170,\n            \"ModifiedDateTime\": 1566198170,\n            \"Commission\": null\n        }\n    ]\n}"
-            }
-          ]
-        },
-        {
-          "name": "Get all Categories - no Admin ID required",
-          "_postman_id": "cc9501e7-f421-48a6-90b0-66af6aeae97b",
-          "protocolProfileBehavior": {
-            "disableBodyPruning": true
-          },
-          "request": {
-            "method": "GET",
-            "header": [],
-            "url": "https://{{your-marketplace}}.arcadier.io/api/v2/categories",
-            "description": "Returns all categories and their sub-categories. Paginated.\n\n#### Authentication\n> None required"
-          },
-          "response": [
-            {
-              "id": "a094b9e3-3f28-4c8a-94c4-f214e68b767c",
-              "name": "Get all Categories - no Admin ID required",
-              "originalRequest": {
-                "method": "GET",
-                "header": [],
-                "url": "https://{{your-marketplace}}.arcadier.io/api/v2/categories"
-              },
-              "status": "OK",
-              "code": 200,
-              "_postman_previewlanguage": "json",
-              "header": [
-                {
-                  "key": "Cache-Control",
-                  "value": "no-cache"
-                },
-                {
-                  "key": "Pragma",
-                  "value": "no-cache"
-                },
-                {
-                  "key": "Content-Type",
-                  "value": "application/json; charset=utf-8"
-                },
-                {
-                  "key": "Expires",
-                  "value": "-1"
-                },
-                {
-                  "key": "request-id",
-                  "value": "b9e27669-cc3b-4993-803b-6ff15b0b4ea1"
-                },
-                {
-                  "key": "api-version",
-                  "value": "v2"
-                },
-                {
-                  "key": "X-XSS-Protection",
-                  "value": "1; mode=block"
-                },
-                {
-                  "key": "X-Content-Type-Options",
-                  "value": "nosniff"
-                },
-                {
-                  "key": "X-Powered-By",
-                  "value": "ARR/3.0"
-                },
-                {
-                  "key": "Date",
-                  "value": "Tue, 17 Sep 2019 03:48:38 GMT"
-                },
-                {
-                  "key": "Content-Length",
-                  "value": "8915"
-                }
-              ],
-              "cookie": [],
-              "responseTime": null,
-              "body": "{\n    \"TotalRecords\": 24,\n    \"PageNumber\": 1,\n    \"PageSize\": 24,\n    \"Records\": [\n        {\n            \"ID\": \"ed36e72f-a36d-4eb4-9a5a-270296e766f7\",\n            \"Name\": \"Category9\",\n            \"Description\": \"This is Category9\",\n            \"SortOrder\": 0,\n            \"Media\": null,\n            \"ParentCategoryID\": null,\n            \"ChildCategories\": null,\n            \"Level\": 0,\n            \"CreatedDateTime\": 1567425433,\n            \"ModifiedDateTime\": 1567425433,\n            \"Commission\": null\n        },\n        {\n            \"ID\": \"dd599e4a-dc97-4e9a-ae09-6f98d0695b49\",\n            \"Name\": \"Category10\",\n            \"Description\": \"This is Category10\",\n            \"SortOrder\": 0,\n            \"Media\": null,\n            \"ParentCategoryID\": null,\n            \"ChildCategories\": null,\n            \"Level\": 0,\n            \"CreatedDateTime\": 1568022762,\n            \"ModifiedDateTime\": 1568022762,\n            \"Commission\": null\n        },\n        {\n            \"ID\": \"b60c7fb0-3e4e-4f97-97cc-38bb47ed8cab\",\n            \"Name\": \"Category11\",\n            \"Description\": \"This is Category11\",\n            \"SortOrder\": 0,\n            \"Media\": null,\n            \"ParentCategoryID\": null,\n            \"ChildCategories\": null,\n            \"Level\": 0,\n            \"CreatedDateTime\": 1568109020,\n            \"ModifiedDateTime\": 1568109020,\n            \"Commission\": null\n        },\n        {\n            \"ID\": \"b40da804-377d-46c4-a11f-b46064002831\",\n            \"Name\": \"Keys\",\n            \"Description\": \"The finest collection of keys be it classic or electronic\",\n            \"SortOrder\": 0,\n            \"Media\": [\n                {\n                    \"ID\": null,\n                    \"MediaUrl\": \"https://static1.squarespace.com/static/58c25c63cd0f68722ca260d8/5b0d95998a922d7f4d0ed3bb/5b15f40c88251b408d488515/1528165492648/OMS+PIANO+IMAGE+1.JPG\"\n                }\n            ],\n            \"ParentCategoryID\": null,\n            \"ChildCategories\": null,\n            \"Level\": 0,\n            \"CreatedDateTime\": 1568614686,\n            \"ModifiedDateTime\": 1568614686,\n            \"Commission\": null\n        },\n        {\n            \"ID\": \"a797d917-11a8-4590-99af-24a6cdd1d3e3\",\n            \"Name\": \"Category1\",\n            \"Description\": \"This is Category1\",\n            \"SortOrder\": 1,\n            \"Media\": null,\n            \"ParentCategoryID\": null,\n            \"ChildCategories\": null,\n            \"Level\": 0,\n            \"CreatedDateTime\": 1566198170,\n            \"ModifiedDateTime\": 1566806010,\n            \"Commission\": null\n        },\n        {\n            \"ID\": \"0b845ec6-41c8-433f-a8d9-33add9c9cdf7\",\n            \"Name\": \"Category6\",\n            \"Description\": \"This is Category6\",\n            \"SortOrder\": 2,\n            \"Media\": null,\n            \"ParentCategoryID\": null,\n            \"ChildCategories\": null,\n            \"Level\": 0,\n            \"CreatedDateTime\": 1566198260,\n            \"ModifiedDateTime\": 1566806010,\n            \"Commission\": null\n        },\n        {\n            \"ID\": \"d3fe70ee-6006-4847-ad2e-a78dce15f404\",\n            \"Name\": \"Categoryundefined\",\n            \"Description\": \"This is Categoryundefined\",\n            \"SortOrder\": 3,\n            \"Media\": null,\n            \"ParentCategoryID\": null,\n            \"ChildCategories\": null,\n            \"Level\": 0,\n            \"CreatedDateTime\": 1566199864,\n            \"ModifiedDateTime\": 1566806010,\n            \"Commission\": null\n        },\n        {\n            \"ID\": \"a7c3a7ee-7589-43e9-acab-a3cf91865a65\",\n            \"Name\": \"Keys\",\n            \"Description\": \"The finest collection of keys be it classic or electronic\",\n            \"SortOrder\": 3,\n            \"Media\": [\n                {\n                    \"ID\": null,\n                    \"MediaUrl\": \"https://static1.squarespace.com/static/58c25c63cd0f68722ca260d8/5b0d95998a922d7f4d0ed3bb/5b15f40c88251b408d488515/1528165492648/OMS+PIANO+IMAGE+1.JPG\"\n                }\n            ],\n            \"ParentCategoryID\": null,\n            \"ChildCategories\": null,\n            \"Level\": 0,\n            \"CreatedDateTime\": 1568614333,\n            \"ModifiedDateTime\": 1568614333,\n            \"Commission\": null\n        },\n        {\n            \"ID\": \"24d48476-8b61-48fc-8ff0-685457479c19\",\n            \"Name\": \"Keys\",\n            \"Description\": \"The finest collection of keys be it classic or electronic\",\n            \"SortOrder\": 3,\n            \"Media\": [\n                {\n                    \"ID\": null,\n                    \"MediaUrl\": \"https://static1.squarespace.com/static/58c25c63cd0f68722ca260d8/5b0d95998a922d7f4d0ed3bb/5b15f40c88251b408d488515/1528165492648/OMS+PIANO+IMAGE+1.JPG\"\n                }\n            ],\n            \"ParentCategoryID\": null,\n            \"ChildCategories\": null,\n            \"Level\": 0,\n            \"CreatedDateTime\": 1568614340,\n            \"ModifiedDateTime\": 1568614340,\n            \"Commission\": null\n        },\n        {\n            \"ID\": \"9f008e17-fda6-4466-be49-b2de2adc67a0\",\n            \"Name\": \"Keys\",\n            \"Description\": \"The finest collection of keys be it classic or electronic\",\n            \"SortOrder\": 3,\n            \"Media\": [\n                {\n                    \"ID\": null,\n                    \"MediaUrl\": \"https://static1.squarespace.com/static/58c25c63cd0f68722ca260d8/5b0d95998a922d7f4d0ed3bb/5b15f40c88251b408d488515/1528165492648/OMS+PIANO+IMAGE+1.JPG\"\n                }\n            ],\n            \"ParentCategoryID\": null,\n            \"ChildCategories\": null,\n            \"Level\": 0,\n            \"CreatedDateTime\": 1568614342,\n            \"ModifiedDateTime\": 1568614342,\n            \"Commission\": null\n        },\n        {\n            \"ID\": \"31b6d214-79b2-4656-bdca-570def5eca71\",\n            \"Name\": \"Keys\",\n            \"Description\": \"The finest collection of keys be it classic or electronic\",\n            \"SortOrder\": 3,\n            \"Media\": [\n                {\n                    \"ID\": null,\n                    \"MediaUrl\": \"https://static1.squarespace.com/static/58c25c63cd0f68722ca260d8/5b0d95998a922d7f4d0ed3bb/5b15f40c88251b408d488515/1528165492648/OMS+PIANO+IMAGE+1.JPG\"\n                }\n            ],\n            \"ParentCategoryID\": null,\n            \"ChildCategories\": null,\n            \"Level\": 0,\n            \"CreatedDateTime\": 1568614416,\n            \"ModifiedDateTime\": 1568614416,\n            \"Commission\": null\n        },\n        {\n            \"ID\": \"479b3df3-44a1-41cf-84ed-95ee4ff0206e\",\n            \"Name\": \"Category2\",\n            \"Description\": \"This is Category2\",\n            \"SortOrder\": 4,\n            \"Media\": null,\n            \"ParentCategoryID\": null,\n            \"ChildCategories\": null,\n            \"Level\": 0,\n            \"CreatedDateTime\": 1566198170,\n            \"ModifiedDateTime\": 1566806010,\n            \"Commission\": null\n        },\n        {\n            \"ID\": \"c4d76697-6d2b-41f6-aba5-521b98fa2ebd\",\n            \"Name\": \"Categoryundefined\",\n            \"Description\": \"This is Categoryundefined\",\n            \"SortOrder\": 5,\n            \"Media\": null,\n            \"ParentCategoryID\": null,\n            \"ChildCategories\": null,\n            \"Level\": 0,\n            \"CreatedDateTime\": 1566201273,\n            \"ModifiedDateTime\": 1566806010,\n            \"Commission\": null\n        },\n        {\n            \"ID\": \"955fe9b0-cb3f-496f-8b37-9e9b4ea85bee\",\n            \"Name\": \"SubCategory 2A\",\n            \"Description\": \"This is SubCategory A of Category2\",\n            \"SortOrder\": 0,\n            \"Media\": null,\n            \"ParentCategoryID\": null,\n            \"ChildCategories\": null,\n            \"Level\": 1,\n            \"CreatedDateTime\": 1566198170,\n            \"ModifiedDateTime\": 1566198170,\n            \"Commission\": null\n        },\n        {\n            \"ID\": \"84ab2eef-87fa-4e41-add8-c63670783230\",\n            \"Name\": \"SubCategory 2B\",\n            \"Description\": \"This is SubCategory B of Category2\",\n            \"SortOrder\": 0,\n            \"Media\": null,\n            \"ParentCategoryID\": null,\n            \"ChildCategories\": null,\n            \"Level\": 1,\n            \"CreatedDateTime\": 1566198170,\n            \"ModifiedDateTime\": 1566198170,\n            \"Commission\": null\n        },\n        {\n            \"ID\": \"078948dd-f1d4-42c5-8170-c6ac754fb76e\",\n            \"Name\": \"SubCategory 1A\",\n            \"Description\": \"This is SubCategory A of Category1\",\n            \"SortOrder\": 0,\n            \"Media\": null,\n            \"ParentCategoryID\": null,\n            \"ChildCategories\": null,\n            \"Level\": 1,\n            \"CreatedDateTime\": 1566198170,\n            \"ModifiedDateTime\": 1566198170,\n            \"Commission\": null\n        },\n        {\n            \"ID\": \"ad6f61bd-1c75-49af-bd2a-ba6cce84c020\",\n            \"Name\": \"SubCategory 1B\",\n            \"Description\": \"This is SubCategory B of Category1\",\n            \"SortOrder\": 0,\n            \"Media\": null,\n            \"ParentCategoryID\": null,\n            \"ChildCategories\": null,\n            \"Level\": 1,\n            \"CreatedDateTime\": 1566198170,\n            \"ModifiedDateTime\": 1566198170,\n            \"Commission\": null\n        },\n        {\n            \"ID\": \"24a12816-3721-4f6e-bc46-3b6acf3a277e\",\n            \"Name\": \"Grand Piano\",\n            \"Description\": \"Guaranteed to pull out the Taylor Swift hidden inside you\",\n            \"SortOrder\": 1,\n            \"Media\": [\n                {\n                    \"ID\": null,\n                    \"MediaUrl\": \"https://static1.squarespace.com/static/58c25c63cd0f68722ca260d8/5b0d95998a922d7f4d0ed3bb/5b15f40c88251b408d488515/1528165492648/OMS+PIANO+IMAGE+1.JPG\"\n                }\n            ],\n            \"ParentCategoryID\": null,\n            \"ChildCategories\": null,\n            \"Level\": 1,\n            \"CreatedDateTime\": 1568614798,\n            \"ModifiedDateTime\": 1568614798,\n            \"Commission\": null\n        },\n        {\n            \"ID\": \"b2a0828b-0373-4143-a270-1226f7e28b2e\",\n            \"Name\": \"Keys\",\n            \"Description\": \"The finest collection of keys be it classic or electronic\",\n            \"SortOrder\": 3,\n            \"Media\": [\n                {\n                    \"ID\": null,\n                    \"MediaUrl\": \"https://static1.squarespace.com/static/58c25c63cd0f68722ca260d8/5b0d95998a922d7f4d0ed3bb/5b15f40c88251b408d488515/1528165492648/OMS+PIANO+IMAGE+1.JPG\"\n                }\n            ],\n            \"ParentCategoryID\": null,\n            \"ChildCategories\": null,\n            \"Level\": 1,\n            \"CreatedDateTime\": 1568614211,\n            \"ModifiedDateTime\": 1568614211,\n            \"Commission\": null\n        },\n        {\n            \"ID\": \"1dc8be17-0137-451b-bac7-3f362adcdcdf\",\n            \"Name\": \"Keys\",\n            \"Description\": \"The finest collection of keys be it classic or electronic\",\n            \"SortOrder\": 3,\n            \"Media\": [\n                {\n                    \"ID\": null,\n                    \"MediaUrl\": \"https://static1.squarespace.com/static/58c25c63cd0f68722ca260d8/5b0d95998a922d7f4d0ed3bb/5b15f40c88251b408d488515/1528165492648/OMS+PIANO+IMAGE+1.JPG\"\n                }\n            ],\n            \"ParentCategoryID\": null,\n            \"ChildCategories\": null,\n            \"Level\": 1,\n            \"CreatedDateTime\": 1568614261,\n            \"ModifiedDateTime\": 1568614261,\n            \"Commission\": null\n        },\n        {\n            \"ID\": \"6b5dd30f-356e-4915-89e7-7496d0630987\",\n            \"Name\": \"Keys\",\n            \"Description\": \"The finest collection of keys be it classic or electronic\",\n            \"SortOrder\": 3,\n            \"Media\": [\n                {\n                    \"ID\": null,\n                    \"MediaUrl\": \"https://static1.squarespace.com/static/58c25c63cd0f68722ca260d8/5b0d95998a922d7f4d0ed3bb/5b15f40c88251b408d488515/1528165492648/OMS+PIANO+IMAGE+1.JPG\"\n                }\n            ],\n            \"ParentCategoryID\": null,\n            \"ChildCategories\": null,\n            \"Level\": 1,\n            \"CreatedDateTime\": 1568614429,\n            \"ModifiedDateTime\": 1568614429,\n            \"Commission\": null\n        },\n        {\n            \"ID\": \"c68bcc7d-9a6c-47c8-9e23-5959b4a702b9\",\n            \"Name\": \"Keys\",\n            \"Description\": \"The finest collection of keys be it classic or electronic\",\n            \"SortOrder\": 3,\n            \"Media\": [\n                {\n                    \"ID\": null,\n                    \"MediaUrl\": \"https://static1.squarespace.com/static/58c25c63cd0f68722ca260d8/5b0d95998a922d7f4d0ed3bb/5b15f40c88251b408d488515/1528165492648/OMS+PIANO+IMAGE+1.JPG\"\n                }\n            ],\n            \"ParentCategoryID\": null,\n            \"ChildCategories\": null,\n            \"Level\": 1,\n            \"CreatedDateTime\": 1568614510,\n            \"ModifiedDateTime\": 1568614510,\n            \"Commission\": null\n        },\n        {\n            \"ID\": \"435f2c24-ec26-4e84-8f07-06566b2b6965\",\n            \"Name\": \"Keys\",\n            \"Description\": \"The finest collection of keys be it classic or electronic\",\n            \"SortOrder\": 3,\n            \"Media\": [\n                {\n                    \"ID\": null,\n                    \"MediaUrl\": \"https://static1.squarespace.com/static/58c25c63cd0f68722ca260d8/5b0d95998a922d7f4d0ed3bb/5b15f40c88251b408d488515/1528165492648/OMS+PIANO+IMAGE+1.JPG\"\n                }\n            ],\n            \"ParentCategoryID\": null,\n            \"ChildCategories\": null,\n            \"Level\": 1,\n            \"CreatedDateTime\": 1568614533,\n            \"ModifiedDateTime\": 1568614533,\n            \"Commission\": null\n        },\n        {\n            \"ID\": \"be327faf-681b-49e4-8213-21410e22ee6b\",\n            \"Name\": \"Keys\",\n            \"Description\": \"The finest collection of keys be it classic or electronic\",\n            \"SortOrder\": 3,\n            \"Media\": [\n                {\n                    \"ID\": null,\n                    \"MediaUrl\": \"https://static1.squarespace.com/static/58c25c63cd0f68722ca260d8/5b0d95998a922d7f4d0ed3bb/5b15f40c88251b408d488515/1528165492648/OMS+PIANO+IMAGE+1.JPG\"\n                }\n            ],\n            \"ParentCategoryID\": null,\n            \"ChildCategories\": null,\n            \"Level\": 1,\n            \"CreatedDateTime\": 1568615090,\n            \"ModifiedDateTime\": 1568615090,\n            \"Commission\": null\n        }\n    ]\n}"
-            }
-          ]
-        },
-        {
-          "name": "Get the hierarchy of categories.",
-          "_postman_id": "9c1da2af-57f4-454a-a624-a9f242e4263d",
-          "protocolProfileBehavior": {
-            "disableBodyPruning": true
-          },
-          "request": {
-            "method": "GET",
-            "header": [],
-            "url": "https://{{your-marketplace}}.arcadier.io/api/v2/categories/hierarchy",
-            "description": "Returns hierarchy of Categories and their child(sub) Categories.\n\n#### Authentication\n> None required"
-          },
-          "response": [
-            {
-              "id": "6d814c26-6a27-4e55-be3a-d179cbc07c1d",
-              "name": "Get the hierarchy of categories.",
-              "originalRequest": {
-                "method": "GET",
-                "header": [],
-                "url": "https://{{your-marketplace}}.arcadier.io/api/v2/categories/hierarchy"
-              },
-              "status": "OK",
-              "code": 200,
-              "_postman_previewlanguage": "json",
-              "header": [
-                {
-                  "key": "Cache-Control",
-                  "value": "no-cache"
-                },
-                {
-                  "key": "Pragma",
-                  "value": "no-cache"
-                },
-                {
-                  "key": "Content-Type",
-                  "value": "application/json; charset=utf-8"
-                },
-                {
-                  "key": "Expires",
-                  "value": "-1"
-                },
-                {
-                  "key": "request-id",
-                  "value": "77e51287-0911-4e96-ab96-04e3c14903fb"
-                },
-                {
-                  "key": "api-version",
-                  "value": "v2"
-                },
-                {
-                  "key": "X-XSS-Protection",
-                  "value": "1; mode=block"
-                },
-                {
-                  "key": "X-Content-Type-Options",
-                  "value": "nosniff"
-                },
-                {
-                  "key": "X-Powered-By",
-                  "value": "ARR/3.0"
-                },
-                {
-                  "key": "Date",
-                  "value": "Mon, 16 Sep 2019 05:05:29 GMT"
-                },
-                {
-                  "key": "Content-Length",
-                  "value": "3219"
-                }
-              ],
-              "cookie": [],
-              "responseTime": null,
-              "body": "[\n    {\n        \"ID\": \"ed36e72f-a36d-4eb4-9a5a-270296e766f7\",\n        \"Name\": \"Category9\",\n        \"Description\": \"This is Category9\",\n        \"SortOrder\": 0,\n        \"Media\": null,\n        \"ParentCategoryID\": null,\n        \"ChildCategories\": [],\n        \"Level\": 0,\n        \"CreatedDateTime\": 1567425433,\n        \"ModifiedDateTime\": 1567425433,\n        \"Commission\": null\n    },\n    {\n        \"ID\": \"dd599e4a-dc97-4e9a-ae09-6f98d0695b49\",\n        \"Name\": \"Category10\",\n        \"Description\": \"This is Category10\",\n        \"SortOrder\": 0,\n        \"Media\": null,\n        \"ParentCategoryID\": null,\n        \"ChildCategories\": [],\n        \"Level\": 0,\n        \"CreatedDateTime\": 1568022762,\n        \"ModifiedDateTime\": 1568022762,\n        \"Commission\": null\n    },\n    {\n        \"ID\": \"b60c7fb0-3e4e-4f97-97cc-38bb47ed8cab\",\n        \"Name\": \"Category11\",\n        \"Description\": \"This is Category11\",\n        \"SortOrder\": 0,\n        \"Media\": null,\n        \"ParentCategoryID\": null,\n        \"ChildCategories\": [],\n        \"Level\": 0,\n        \"CreatedDateTime\": 1568109020,\n        \"ModifiedDateTime\": 1568109020,\n        \"Commission\": null\n    },\n    {\n        \"ID\": \"a797d917-11a8-4590-99af-24a6cdd1d3e3\",\n        \"Name\": \"Category1\",\n        \"Description\": \"This is Category1\",\n        \"SortOrder\": 1,\n        \"Media\": null,\n        \"ParentCategoryID\": null,\n        \"ChildCategories\": [\n            {\n                \"ID\": \"078948dd-f1d4-42c5-8170-c6ac754fb76e\",\n                \"Name\": \"SubCategory 1A\",\n                \"Description\": \"This is SubCategory A of Category1\",\n                \"SortOrder\": 0,\n                \"Media\": null,\n                \"ParentCategoryID\": null,\n                \"ChildCategories\": [],\n                \"Level\": 1,\n                \"CreatedDateTime\": 1566198170,\n                \"ModifiedDateTime\": 1566198170,\n                \"Commission\": null\n            },\n            {\n                \"ID\": \"ad6f61bd-1c75-49af-bd2a-ba6cce84c020\",\n                \"Name\": \"SubCategory 1B\",\n                \"Description\": \"This is SubCategory B of Category1\",\n                \"SortOrder\": 0,\n                \"Media\": null,\n                \"ParentCategoryID\": null,\n                \"ChildCategories\": [],\n                \"Level\": 1,\n                \"CreatedDateTime\": 1566198170,\n                \"ModifiedDateTime\": 1566198170,\n                \"Commission\": null\n            }\n        ],\n        \"Level\": 0,\n        \"CreatedDateTime\": 1566198170,\n        \"ModifiedDateTime\": 1566806010,\n        \"Commission\": null\n    },\n    {\n        \"ID\": \"0b845ec6-41c8-433f-a8d9-33add9c9cdf7\",\n        \"Name\": \"Category6\",\n        \"Description\": \"This is Category6\",\n        \"SortOrder\": 2,\n        \"Media\": null,\n        \"ParentCategoryID\": null,\n        \"ChildCategories\": [],\n        \"Level\": 0,\n        \"CreatedDateTime\": 1566198260,\n        \"ModifiedDateTime\": 1566806010,\n        \"Commission\": null\n    },\n    {\n        \"ID\": \"d3fe70ee-6006-4847-ad2e-a78dce15f404\",\n        \"Name\": \"Categoryundefined\",\n        \"Description\": \"This is Categoryundefined\",\n        \"SortOrder\": 3,\n        \"Media\": null,\n        \"ParentCategoryID\": null,\n        \"ChildCategories\": [],\n        \"Level\": 0,\n        \"CreatedDateTime\": 1566199864,\n        \"ModifiedDateTime\": 1566806010,\n        \"Commission\": null\n    },\n    {\n        \"ID\": \"479b3df3-44a1-41cf-84ed-95ee4ff0206e\",\n        \"Name\": \"Category2\",\n        \"Description\": \"This is Category2\",\n        \"SortOrder\": 4,\n        \"Media\": null,\n        \"ParentCategoryID\": null,\n        \"ChildCategories\": [\n            {\n                \"ID\": \"955fe9b0-cb3f-496f-8b37-9e9b4ea85bee\",\n                \"Name\": \"SubCategory 2A\",\n                \"Description\": \"This is SubCategory A of Category2\",\n                \"SortOrder\": 0,\n                \"Media\": null,\n                \"ParentCategoryID\": null,\n                \"ChildCategories\": [],\n                \"Level\": 1,\n                \"CreatedDateTime\": 1566198170,\n                \"ModifiedDateTime\": 1566198170,\n                \"Commission\": null\n            },\n            {\n                \"ID\": \"84ab2eef-87fa-4e41-add8-c63670783230\",\n                \"Name\": \"SubCategory 2B\",\n                \"Description\": \"This is SubCategory B of Category2\",\n                \"SortOrder\": 0,\n                \"Media\": null,\n                \"ParentCategoryID\": null,\n                \"ChildCategories\": [],\n                \"Level\": 1,\n                \"CreatedDateTime\": 1566198170,\n                \"ModifiedDateTime\": 1566198170,\n                \"Commission\": null\n            }\n        ],\n        \"Level\": 0,\n        \"CreatedDateTime\": 1566198170,\n        \"ModifiedDateTime\": 1566806010,\n        \"Commission\": null\n    },\n    {\n        \"ID\": \"c4d76697-6d2b-41f6-aba5-521b98fa2ebd\",\n        \"Name\": \"Categoryundefined\",\n        \"Description\": \"This is Categoryundefined\",\n        \"SortOrder\": 5,\n        \"Media\": null,\n        \"ParentCategoryID\": null,\n        \"ChildCategories\": [],\n        \"Level\": 0,\n        \"CreatedDateTime\": 1566201273,\n        \"ModifiedDateTime\": 1566806010,\n        \"Commission\": null\n    }\n]"
-            }
-          ]
-        },
-        {
-          "name": "Get the hierarchy of Categories (requires admin ID in URL)",
-          "_postman_id": "da72b2aa-93ce-49fb-9cd7-dbeac5beda73",
-          "protocolProfileBehavior": {
-            "disableBodyPruning": true
-          },
-          "request": {
-            "method": "GET",
-            "header": [],
-            "url": "https://{{your-marketplace}}.arcadier.io/api/v2/admins/{{adminID}}/categories/hierarchy",
-            "description": "Returns hierarchy of Categories and their child(sub) Categories.\n\n#### Authentication\n> None required"
-          },
-          "response": [
-            {
-              "id": "1002adb7-08d8-4a40-8a72-590f6efa796d",
-              "name": "Get the hierarchy of Categories (requires admin ID in URL)",
-              "originalRequest": {
-                "method": "GET",
-                "header": [],
-                "url": "https://{{your-marketplace}}.arcadier.io/api/v2/admins/{{adminID}}/categories/hierarchy"
-              },
-              "status": "OK",
-              "code": 200,
-              "_postman_previewlanguage": "json",
-              "header": [
-                {
-                  "key": "Cache-Control",
-                  "value": "no-cache"
-                },
-                {
-                  "key": "Pragma",
-                  "value": "no-cache"
-                },
-                {
-                  "key": "Content-Type",
-                  "value": "application/json; charset=utf-8"
-                },
-                {
-                  "key": "Expires",
-                  "value": "-1"
-                },
-                {
-                  "key": "request-id",
-                  "value": "1d6fa2d9-2fd6-46cd-947f-de218a0b1e12"
-                },
-                {
-                  "key": "api-version",
-                  "value": "v2"
-                },
-                {
-                  "key": "X-XSS-Protection",
-                  "value": "1; mode=block"
-                },
-                {
-                  "key": "X-Content-Type-Options",
-                  "value": "nosniff"
-                },
-                {
-                  "key": "X-Powered-By",
-                  "value": "ARR/3.0"
-                },
-                {
-                  "key": "Date",
-                  "value": "Mon, 16 Sep 2019 05:06:32 GMT"
-                },
-                {
-                  "key": "Content-Length",
-                  "value": "3219"
-                }
-              ],
-              "cookie": [],
-              "responseTime": null,
-              "body": "[\n    {\n        \"ID\": \"ed36e72f-a36d-4eb4-9a5a-270296e766f7\",\n        \"Name\": \"Category9\",\n        \"Description\": \"This is Category9\",\n        \"SortOrder\": 0,\n        \"Media\": null,\n        \"ParentCategoryID\": null,\n        \"ChildCategories\": [],\n        \"Level\": 0,\n        \"CreatedDateTime\": 1567425433,\n        \"ModifiedDateTime\": 1567425433,\n        \"Commission\": null\n    },\n    {\n        \"ID\": \"dd599e4a-dc97-4e9a-ae09-6f98d0695b49\",\n        \"Name\": \"Category10\",\n        \"Description\": \"This is Category10\",\n        \"SortOrder\": 0,\n        \"Media\": null,\n        \"ParentCategoryID\": null,\n        \"ChildCategories\": [],\n        \"Level\": 0,\n        \"CreatedDateTime\": 1568022762,\n        \"ModifiedDateTime\": 1568022762,\n        \"Commission\": null\n    },\n    {\n        \"ID\": \"b60c7fb0-3e4e-4f97-97cc-38bb47ed8cab\",\n        \"Name\": \"Category11\",\n        \"Description\": \"This is Category11\",\n        \"SortOrder\": 0,\n        \"Media\": null,\n        \"ParentCategoryID\": null,\n        \"ChildCategories\": [],\n        \"Level\": 0,\n        \"CreatedDateTime\": 1568109020,\n        \"ModifiedDateTime\": 1568109020,\n        \"Commission\": null\n    },\n    {\n        \"ID\": \"a797d917-11a8-4590-99af-24a6cdd1d3e3\",\n        \"Name\": \"Category1\",\n        \"Description\": \"This is Category1\",\n        \"SortOrder\": 1,\n        \"Media\": null,\n        \"ParentCategoryID\": null,\n        \"ChildCategories\": [\n            {\n                \"ID\": \"078948dd-f1d4-42c5-8170-c6ac754fb76e\",\n                \"Name\": \"SubCategory 1A\",\n                \"Description\": \"This is SubCategory A of Category1\",\n                \"SortOrder\": 0,\n                \"Media\": null,\n                \"ParentCategoryID\": null,\n                \"ChildCategories\": [],\n                \"Level\": 1,\n                \"CreatedDateTime\": 1566198170,\n                \"ModifiedDateTime\": 1566198170,\n                \"Commission\": null\n            },\n            {\n                \"ID\": \"ad6f61bd-1c75-49af-bd2a-ba6cce84c020\",\n                \"Name\": \"SubCategory 1B\",\n                \"Description\": \"This is SubCategory B of Category1\",\n                \"SortOrder\": 0,\n                \"Media\": null,\n                \"ParentCategoryID\": null,\n                \"ChildCategories\": [],\n                \"Level\": 1,\n                \"CreatedDateTime\": 1566198170,\n                \"ModifiedDateTime\": 1566198170,\n                \"Commission\": null\n            }\n        ],\n        \"Level\": 0,\n        \"CreatedDateTime\": 1566198170,\n        \"ModifiedDateTime\": 1566806010,\n        \"Commission\": null\n    },\n    {\n        \"ID\": \"0b845ec6-41c8-433f-a8d9-33add9c9cdf7\",\n        \"Name\": \"Category6\",\n        \"Description\": \"This is Category6\",\n        \"SortOrder\": 2,\n        \"Media\": null,\n        \"ParentCategoryID\": null,\n        \"ChildCategories\": [],\n        \"Level\": 0,\n        \"CreatedDateTime\": 1566198260,\n        \"ModifiedDateTime\": 1566806010,\n        \"Commission\": null\n    },\n    {\n        \"ID\": \"d3fe70ee-6006-4847-ad2e-a78dce15f404\",\n        \"Name\": \"Categoryundefined\",\n        \"Description\": \"This is Categoryundefined\",\n        \"SortOrder\": 3,\n        \"Media\": null,\n        \"ParentCategoryID\": null,\n        \"ChildCategories\": [],\n        \"Level\": 0,\n        \"CreatedDateTime\": 1566199864,\n        \"ModifiedDateTime\": 1566806010,\n        \"Commission\": null\n    },\n    {\n        \"ID\": \"479b3df3-44a1-41cf-84ed-95ee4ff0206e\",\n        \"Name\": \"Category2\",\n        \"Description\": \"This is Category2\",\n        \"SortOrder\": 4,\n        \"Media\": null,\n        \"ParentCategoryID\": null,\n        \"ChildCategories\": [\n            {\n                \"ID\": \"955fe9b0-cb3f-496f-8b37-9e9b4ea85bee\",\n                \"Name\": \"SubCategory 2A\",\n                \"Description\": \"This is SubCategory A of Category2\",\n                \"SortOrder\": 0,\n                \"Media\": null,\n                \"ParentCategoryID\": null,\n                \"ChildCategories\": [],\n                \"Level\": 1,\n                \"CreatedDateTime\": 1566198170,\n                \"ModifiedDateTime\": 1566198170,\n                \"Commission\": null\n            },\n            {\n                \"ID\": \"84ab2eef-87fa-4e41-add8-c63670783230\",\n                \"Name\": \"SubCategory 2B\",\n                \"Description\": \"This is SubCategory B of Category2\",\n                \"SortOrder\": 0,\n                \"Media\": null,\n                \"ParentCategoryID\": null,\n                \"ChildCategories\": [],\n                \"Level\": 1,\n                \"CreatedDateTime\": 1566198170,\n                \"ModifiedDateTime\": 1566198170,\n                \"Commission\": null\n            }\n        ],\n        \"Level\": 0,\n        \"CreatedDateTime\": 1566198170,\n        \"ModifiedDateTime\": 1566806010,\n        \"Commission\": null\n    },\n    {\n        \"ID\": \"c4d76697-6d2b-41f6-aba5-521b98fa2ebd\",\n        \"Name\": \"Categoryundefined\",\n        \"Description\": \"This is Categoryundefined\",\n        \"SortOrder\": 5,\n        \"Media\": null,\n        \"ParentCategoryID\": null,\n        \"ChildCategories\": [],\n        \"Level\": 0,\n        \"CreatedDateTime\": 1566201273,\n        \"ModifiedDateTime\": 1566806010,\n        \"Commission\": null\n    }\n]"
-            }
-          ]
-        },
-        {
-          "name": "Admin - Create a category",
-          "_postman_id": "be380e46-ec4b-4d2d-8a5f-ba2715ba1173",
-          "protocolProfileBehavior": {
-            "disableBodyPruning": true
-          },
-          "request": {
-            "auth": {
-              "type": "noauth"
-            },
-            "method": "POST",
-            "header": [
-              {
-                "key": "Content-Type",
-                "name": "Content-Type",
-                "value": "application/json",
-                "type": "text"
-              },
-              {
-                "key": "Authorization",
-                "value": "Bearer {{admintoken}}",
-                "type": "text"
-              }
-            ],
-            "body": {
-              "mode": "raw",
-              "raw": "{\r\n  \"Name\": \"string\",\r\n  \"Description\": \"string\",\r\n  \"SortOrder\": 0,\r\n  \"Media\": [\r\n    {\r\n      \"ID\": \"00000000-0000-0000-0000-000000000000\",\r\n      \"MediaUrl\": \"string\"\r\n    }\r\n  ],\r\n  \"ParentCategoryID\": \"00000000-0000-0000-0000-000000000000\",\r\n  \"Level\": 0\r\n}"
-            },
-            "url": "https://{{your-marketplace}}.arcadier.io/api/v2/admins/{{adminID}}/categories",
-            "description": "Creates a category or sub-category.\n\n#### Authentication\n> Admin token only"
-          },
-          "response": [
-            {
-              "id": "b11d62c7-5705-43c1-808b-d9cd9433ec81",
-              "name": "Admin - Create a sub-category",
-              "originalRequest": {
-                "method": "POST",
-                "header": [
-                  {
-                    "key": "Content-Type",
-                    "name": "Content-Type",
-                    "value": "application/json",
-                    "type": "text"
-                  },
-                  {
-                    "key": "Authorization",
-                    "value": "Bearer {{admintoken}}",
-                    "type": "text"
-                  }
-                ],
-                "body": {
-                  "mode": "raw",
-                  "raw": "{\r\n  \"Name\": \"Synths\",\r\n  \"Description\": \"Create your own music from your own room\",\r\n  \"SortOrder\": 0,\r\n  \"Media\": [\r\n    {\r\n      \"MediaUrl\": \"https://cdn.pixabay.com/photo/2016/12/14/12/09/violin-1906127_960_720.jpg\"\r\n    }\r\n  ],\r\n  \"ParentCategoryID\": \"ed36e72f-a36d-4eb4-9a5a-270296e766f7\",\r\n  \"Level\": 1\r\n}"
-                },
-                "url": "https://{{your-marketplace}}.arcadier.io/api/v2/admins/{{adminID}}/categories"
-              },
-              "status": "OK",
-              "code": 200,
-              "_postman_previewlanguage": "json",
-              "header": [
-                {
-                  "key": "Cache-Control",
-                  "value": "no-cache"
-                },
-                {
-                  "key": "Pragma",
-                  "value": "no-cache"
-                },
-                {
-                  "key": "Content-Type",
-                  "value": "application/json; charset=utf-8"
-                },
-                {
-                  "key": "Expires",
-                  "value": "-1"
-                },
-                {
-                  "key": "request-id",
-                  "value": "74068cac-c8fb-4c7b-92ff-a12b154dcd2f"
-                },
-                {
-                  "key": "api-version",
-                  "value": "v2"
-                },
-                {
-                  "key": "X-XSS-Protection",
-                  "value": "1; mode=block"
-                },
-                {
-                  "key": "X-Content-Type-Options",
-                  "value": "nosniff"
-                },
-                {
-                  "key": "X-Powered-By",
-                  "value": "ARR/3.0"
-                },
-                {
-                  "key": "Date",
-                  "value": "Fri, 20 Sep 2019 07:38:16 GMT"
-                },
-                {
-                  "key": "Content-Length",
-                  "value": "378"
-                }
-              ],
-              "cookie": [],
-              "responseTime": null,
-              "body": "{\n    \"ID\": \"01dd1fc1-912a-4737-b8dc-daff13ef9f2b\",\n    \"Name\": \"Synths\",\n    \"Description\": \"Create your own music from your own room\",\n    \"SortOrder\": 0,\n    \"Media\": [\n        {\n            \"ID\": null,\n            \"MediaUrl\": \"https://cdn.pixabay.com/photo/2016/12/14/12/09/violin-1906127_960_720.jpg\"\n        }\n    ],\n    \"ParentCategoryID\": null,\n    \"ChildCategories\": null,\n    \"Level\": null,\n    \"CreatedDateTime\": 1568965095,\n    \"ModifiedDateTime\": 1568965095,\n    \"Commission\": null\n}"
-            },
-            {
-              "id": "8fafcdf2-6240-49a2-bd6b-8a10d3464c99",
-              "name": "Admin - Create a category",
-              "originalRequest": {
-                "method": "POST",
-                "header": [
-                  {
-                    "key": "Content-Type",
-                    "name": "Content-Type",
-                    "value": "application/json",
-                    "type": "text"
-                  },
-                  {
-                    "key": "Authorization",
-                    "value": "Bearer {{admintoken}}",
-                    "type": "text"
-                  }
-                ],
-                "body": {
-                  "mode": "raw",
-                  "raw": "{\r\n  \"Name\": \"Synths\",\r\n  \"Description\": \"Create your own music from your own room\",\r\n  \"SortOrder\": 0,\r\n  \"Media\": [\r\n    {\r\n      \"MediaUrl\": \"https://cdn.pixabay.com/photo/2016/12/14/12/09/violin-1906127_960_720.jpg\"\r\n    }\r\n  ]\r\n}"
-                },
-                "url": "https://{{your-marketplace}}.arcadier.io/api/v2/admins/{{adminID}}/categories"
-              },
-              "status": "OK",
-              "code": 200,
-              "_postman_previewlanguage": "json",
-              "header": [
-                {
-                  "key": "Cache-Control",
-                  "value": "no-cache"
-                },
-                {
-                  "key": "Pragma",
-                  "value": "no-cache"
-                },
-                {
-                  "key": "Content-Type",
-                  "value": "application/json; charset=utf-8"
-                },
-                {
-                  "key": "Expires",
-                  "value": "-1"
-                },
-                {
-                  "key": "request-id",
-                  "value": "350284eb-c0e3-4a13-9ad7-429a8fa0e622"
-                },
-                {
-                  "key": "api-version",
-                  "value": "v2"
-                },
-                {
-                  "key": "X-XSS-Protection",
-                  "value": "1; mode=block"
-                },
-                {
-                  "key": "X-Content-Type-Options",
-                  "value": "nosniff"
-                },
-                {
-                  "key": "X-Powered-By",
-                  "value": "ARR/3.0"
-                },
-                {
-                  "key": "Date",
-                  "value": "Fri, 20 Sep 2019 07:39:03 GMT"
-                },
-                {
-                  "key": "Content-Length",
-                  "value": "378"
-                }
-              ],
-              "cookie": [],
-              "responseTime": null,
-              "body": "{\n    \"ID\": \"5e0a5505-cecf-4fd3-8663-79ca85b4a4f4\",\n    \"Name\": \"Synths\",\n    \"Description\": \"Create your own music from your own room\",\n    \"SortOrder\": 0,\n    \"Media\": [\n        {\n            \"ID\": null,\n            \"MediaUrl\": \"https://cdn.pixabay.com/photo/2016/12/14/12/09/violin-1906127_960_720.jpg\"\n        }\n    ],\n    \"ParentCategoryID\": null,\n    \"ChildCategories\": null,\n    \"Level\": null,\n    \"CreatedDateTime\": 1568965143,\n    \"ModifiedDateTime\": 1568965143,\n    \"Commission\": null\n}"
-            }
-          ]
-        },
-        {
-          "name": "Delete a category",
-          "_postman_id": "1b018490-9fd3-4a5c-a0c0-cdc8cf4e3a26",
-          "protocolProfileBehavior": {
-            "disableBodyPruning": true
-          },
-          "request": {
-            "auth": {
-              "type": "noauth"
-            },
-            "method": "DELETE",
-            "header": [
-              {
-                "key": "Authorization",
-                "value": "Bearer {{admintoken}}",
-                "type": "text"
-              }
-            ],
-            "url": "https://{{your-marketplace}}.arcadier.io/api/v2/admins/{{adminID}}/categories/{{categoryID_to_delete}}",
-            "description": "Deletes a category.\n\n#### Authentication\n>Admin token only."
-          },
-          "response": [
-            {
-              "id": "8290390e-5299-4b86-bd10-050e6b4be4a2",
-              "name": "Delete a category",
-              "originalRequest": {
-                "method": "DELETE",
-                "header": [
-                  {
-                    "key": "Authorization",
-                    "value": "Bearer {{admintoken}}",
-                    "type": "text"
-                  }
-                ],
-                "url": "https://{{your-marketplace}}.arcadier.io/api/v2/admins/{{adminID}}/categories/{{categoryID_to_delete}}"
-              },
-              "status": "OK",
-              "code": 200,
-              "_postman_previewlanguage": "json",
-              "header": [
-                {
-                  "key": "Cache-Control",
-                  "value": "no-cache"
-                },
-                {
-                  "key": "Pragma",
-                  "value": "no-cache"
-                },
-                {
-                  "key": "Content-Type",
-                  "value": "application/json; charset=utf-8"
-                },
-                {
-                  "key": "Expires",
-                  "value": "-1"
-                },
-                {
-                  "key": "request-id",
-                  "value": "9781f356-4075-476e-8842-8d14d6813df8"
-                },
-                {
-                  "key": "api-version",
-                  "value": "v2"
-                },
-                {
-                  "key": "X-XSS-Protection",
-                  "value": "1; mode=block"
-                },
-                {
-                  "key": "X-Content-Type-Options",
-                  "value": "nosniff"
-                },
-                {
-                  "key": "X-Powered-By",
-                  "value": "ARR/3.0"
-                },
-                {
-                  "key": "Date",
-                  "value": "Tue, 17 Sep 2019 03:55:06 GMT"
-                },
-                {
-                  "key": "Content-Length",
-                  "value": "471"
-                }
-              ],
-              "cookie": [],
-              "responseTime": null,
-              "body": "[\n    {\n        \"ID\": \"1dc8be17-0137-451b-bac7-3f362adcdcdf\",\n        \"Name\": \"Keys\",\n        \"Description\": \"The finest collection of keys be it classic or electronic\",\n        \"SortOrder\": 3,\n        \"Media\": [\n            {\n                \"ID\": null,\n                \"MediaUrl\": \"https://static1.squarespace.com/static/58c25c63cd0f68722ca260d8/5b0d95998a922d7f4d0ed3bb/5b15f40c88251b408d488515/1528165492648/OMS+PIANO+IMAGE+1.JPG\"\n            }\n        ],\n        \"ParentCategoryID\": null,\n        \"ChildCategories\": null,\n        \"Level\": null,\n        \"CreatedDateTime\": 1568614261,\n        \"ModifiedDateTime\": 1568692506,\n        \"Commission\": null\n    }\n]"
-            }
-          ]
-        },
-        {
-          "name": "Sort Categories - Admin",
-          "_postman_id": "10e13257-c401-4de2-8f69-9aa5594ff3e3",
-          "protocolProfileBehavior": {
-            "disableBodyPruning": true
-          },
-          "request": {
-            "auth": {
-              "type": "noauth"
-            },
-            "method": "PUT",
-            "header": [
-              {
-                "key": "Content-Type",
-                "name": "Content-Type",
-                "value": "application/json",
-                "type": "text"
-              },
-              {
-                "key": "Authorization",
-                "value": "Bearer {{admintoken}}",
-                "type": "text"
-              }
-            ],
-            "body": {
-              "mode": "raw",
-              "raw": "[\n\t\"Category ID of first placed category\",\n\t\"Category ID of second placed category\",\n\t\"Category ID of third placed category\"\n]"
-            },
-            "url": "https://{{your-marketplace}}.arcadier.io/api/v2/admins/{{adminID}}/categories",
-            "description": "This API rearranges the sequence in which the order appears to the Admin and the users. The sequence will be exactly matched with the sequence of the category IDs you put in the JSON body as shown in the examples.\n\n#### Authentication\n> Admin token only"
-          },
-          "response": [
-            {
-              "id": "f32f61b6-e8cf-4ae1-9563-6ad5be5483b9",
-              "name": "Sort Categories",
-              "originalRequest": {
-                "method": "PUT",
-                "header": [
-                  {
-                    "key": "Content-Type",
-                    "name": "Content-Type",
-                    "type": "text",
-                    "value": "application/json"
-                  },
-                  {
-                    "key": "Authorization",
-                    "value": "Bearer {{admintoken}}",
-                    "type": "text"
-                  }
-                ],
-                "body": {
-                  "mode": "raw",
-                  "raw": "[\t\n\t\"9f008e17-fda6-4466-be49-b2de2adc67a0\",\n\t\"84ab2eef-87fa-4e41-add8-c63670783230\",\n\t\"479b3df3-44a1-41cf-84ed-95ee4ff0206e\",\n\t\"a797d917-11a8-4590-99af-24a6cdd1d3e3\"\n]\n"
-                },
-                "url": "https://{{your-marketplace}}.arcadier.io/api/v2/admins/{{adminID}}/categories"
-              },
-              "status": "OK",
-              "code": 200,
-              "_postman_previewlanguage": "json",
-              "header": [
-                {
-                  "key": "Cache-Control",
-                  "value": "no-cache"
-                },
-                {
-                  "key": "Pragma",
-                  "value": "no-cache"
-                },
-                {
-                  "key": "Content-Type",
-                  "value": "application/json; charset=utf-8"
-                },
-                {
-                  "key": "Expires",
-                  "value": "-1"
-                },
-                {
-                  "key": "request-id",
-                  "value": "bcd0aaee-5cef-44bc-a226-bacf27d52911"
-                },
-                {
-                  "key": "api-version",
-                  "value": "v2"
-                },
-                {
-                  "key": "X-XSS-Protection",
-                  "value": "1; mode=block"
-                },
-                {
-                  "key": "X-Content-Type-Options",
-                  "value": "nosniff"
-                },
-                {
-                  "key": "X-Powered-By",
-                  "value": "ARR/3.0"
-                },
-                {
-                  "key": "Date",
-                  "value": "Tue, 17 Sep 2019 04:04:23 GMT"
-                },
-                {
-                  "key": "Content-Length",
-                  "value": "1282"
-                }
-              ],
-              "cookie": [],
-              "responseTime": null,
-              "body": "[\n    {\n        \"ID\": \"a797d917-11a8-4590-99af-24a6cdd1d3e3\",\n        \"Name\": \"Category1\",\n        \"Description\": \"This is Category1\",\n        \"SortOrder\": 3,\n        \"Media\": null,\n        \"ParentCategoryID\": null,\n        \"ChildCategories\": null,\n        \"Level\": null,\n        \"CreatedDateTime\": 1566198170,\n        \"ModifiedDateTime\": 1568693064,\n        \"Commission\": null\n    },\n    {\n        \"ID\": \"479b3df3-44a1-41cf-84ed-95ee4ff0206e\",\n        \"Name\": \"Category2\",\n        \"Description\": \"This is Category2\",\n        \"SortOrder\": 2,\n        \"Media\": null,\n        \"ParentCategoryID\": null,\n        \"ChildCategories\": null,\n        \"Level\": null,\n        \"CreatedDateTime\": 1566198170,\n        \"ModifiedDateTime\": 1568693064,\n        \"Commission\": null\n    },\n    {\n        \"ID\": \"84ab2eef-87fa-4e41-add8-c63670783230\",\n        \"Name\": \"SubCategory 2B\",\n        \"Description\": \"This is SubCategory B of Category2\",\n        \"SortOrder\": 1,\n        \"Media\": null,\n        \"ParentCategoryID\": null,\n        \"ChildCategories\": null,\n        \"Level\": null,\n        \"CreatedDateTime\": 1566198170,\n        \"ModifiedDateTime\": 1568693064,\n        \"Commission\": null\n    },\n    {\n        \"ID\": \"9f008e17-fda6-4466-be49-b2de2adc67a0\",\n        \"Name\": \"Keys\",\n        \"Description\": \"The finest collection of keys be it classic or electronic\",\n        \"SortOrder\": 0,\n        \"Media\": [\n            {\n                \"ID\": null,\n                \"MediaUrl\": \"https://static1.squarespace.com/static/58c25c63cd0f68722ca260d8/5b0d95998a922d7f4d0ed3bb/5b15f40c88251b408d488515/1528165492648/OMS+PIANO+IMAGE+1.JPG\"\n            }\n        ],\n        \"ParentCategoryID\": null,\n        \"ChildCategories\": null,\n        \"Level\": null,\n        \"CreatedDateTime\": 1568614342,\n        \"ModifiedDateTime\": 1568693064,\n        \"Commission\": null\n    }\n]"
-            }
-          ]
-        },
-        {
-          "name": "Update a category",
-          "_postman_id": "8b562c45-5d49-4c49-b24f-64becb20fe9c",
-          "protocolProfileBehavior": {
-            "disableBodyPruning": true
-          },
-          "request": {
-            "auth": {
-              "type": "noauth"
-            },
-            "method": "PUT",
-            "header": [
-              {
-                "key": "Content-Type",
-                "name": "Content-Type",
-                "value": "application/json",
-                "type": "text"
-              },
-              {
-                "key": "Authorization",
-                "value": "Bearer {{admintoken}}",
-                "type": "text"
-              }
-            ],
-            "body": {
-              "mode": "raw",
-              "raw": "{\r\n  \"ID\": \"00000000-0000-0000-0000-000000000000\",\r\n  \"Name\": \"string\",\r\n  \"Description\": \"string\",\r\n  \"SortOrder\": 0,\r\n  \"Media\": [\r\n    {\r\n      \"ID\": \"00000000-0000-0000-0000-000000000000\",\r\n      \"MediaUrl\": \"string\"\r\n    }\r\n  ],\r\n  \"ParentCategoryID\": \"00000000-0000-0000-0000-000000000000\",\r\n  \"ChildCategories\": [\r\n    {}\r\n  ],\r\n  \"Level\": 0\r\n}"
-            },
-            "url": "https://{{your-marketplace}}.arcadier.io/api/v2/admins/{{adminID}}/categories/{{categoryID_to_update}}",
-            "description": "Edits details of a Category/Sub-Category\n\n#### Authentication\n> Admin token only"
-          },
-          "response": [
-            {
-              "id": "24eca2ba-7c44-467c-86af-56459b95cf9f",
-              "name": "Changing the name of a category",
-              "originalRequest": {
-                "method": "PUT",
-                "header": [
-                  {
-                    "key": "Content-Type",
-                    "name": "Content-Type",
-                    "value": "application/json",
-                    "type": "text"
-                  }
-                ],
-                "body": {
-                  "mode": "raw",
-                  "raw": "{\r\n  \"ID\": \"b60a0dbb-6785-4a06-a6d0-1517968876d8\",\r\n  \"Name\": \"Drums & Equipment\"\r\n}"
-                },
-                "url": "https://{{your-marketplace}}.arcadier.io/api/v2/admins/{{adminID}}/categories/{{categoryID_to_update}}"
-              },
-              "status": "OK",
-              "code": 200,
-              "_postman_previewlanguage": "json",
-              "header": [
-                {
-                  "key": "Cache-Control",
-                  "value": "no-cache"
-                },
-                {
-                  "key": "Pragma",
-                  "value": "no-cache"
-                },
-                {
-                  "key": "Content-Type",
-                  "value": "application/json; charset=utf-8"
-                },
-                {
-                  "key": "Content-Encoding",
-                  "value": "gzip"
-                },
-                {
-                  "key": "Expires",
-                  "value": "-1"
-                },
-                {
-                  "key": "Vary",
-                  "value": "Accept-Encoding"
-                },
-                {
-                  "key": "X-StackifyID",
-                  "value": "V1|80000014-1401-d200-b63f-84710c7967bb|"
-                },
-                {
-                  "key": "api-version",
-                  "value": "v2"
-                },
-                {
-                  "key": "X-XSS-Protection",
-                  "value": "1; mode=block"
-                },
-                {
-                  "key": "X-Content-Type-Options",
-                  "value": "nosniff"
-                },
-                {
-                  "key": "Date",
-                  "value": "Fri, 29 Mar 2019 08:51:42 GMT"
-                },
-                {
-                  "key": "Content-Length",
-                  "value": "366"
-                }
-              ],
-              "cookie": [],
-              "responseTime": null,
-              "body": "{\n    \"ID\": \"b60a0dbb-6785-4a06-a6d0-1517968876d8\",\n    \"Name\": \"Drums & Equipment\",\n    \"SortOrder\": 0,\n    \"Media\": [\n        {\n            \"MediaUrl\": \"https://royally.test.arcadier.io/images/categories/02a91e63897afdd5ecbeaca11b194039-462u00j3hf0tzvd9rnic7s2eo.jpg\"\n        }\n    ],\n    \"CreatedDateTime\": 1553748032,\n    \"ModifiedDateTime\": 1553849502\n}"
-            }
-          ]
-        }
-      ],
-      "_postman_id": "f3ea7649-b5b1-46e9-a160-61bb8c41efe4"
-    },
-    {
       "name": "Checkout",
       "item": [
         {
@@ -6228,6 +5361,873 @@
         }
       ],
       "_postman_id": "098f3df5-dea8-478e-9259-b5e4b8ef4fae"
+    },
+    {
+      "name": "Categories",
+      "item": [
+        {
+          "name": "Get all Categories",
+          "_postman_id": "2f56d70c-d1e8-4589-b388-8a4fe2f85b27",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "auth": {
+              "type": "noauth"
+            },
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "https://{{your-marketplace}}.arcadier.io/api/v2/admins/{{adminID}}/categories?pageSize={{integer}}&pageNumber={{integer}}",
+              "protocol": "https",
+              "host": [
+                "{{your-marketplace}}",
+                "arcadier",
+                "io"
+              ],
+              "path": [
+                "api",
+                "v2",
+                "admins",
+                "{{adminID}}",
+                "categories"
+              ],
+              "query": [
+                {
+                  "key": "pageSize",
+                  "value": "{{integer}}",
+                  "description": "The number of results per page"
+                },
+                {
+                  "key": "pageNumber",
+                  "value": "{{integer}}",
+                  "description": "The page number"
+                }
+              ]
+            },
+            "description": "Returns all categories and their sub-categories. Paginated.\n\n#### Authentication\n> None required"
+          },
+          "response": [
+            {
+              "id": "43ebd760-60cb-433b-82c0-e1a6f9ecf2a6",
+              "name": " Get all Categories (Requires Admin ID)",
+              "originalRequest": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                  "raw": "https://{{your-marketplace}}.arcadier.io/api/v2/admins/{{adminID}}/categories?pageSize=2&pageNumber=1",
+                  "protocol": "https",
+                  "host": [
+                    "{{your-marketplace}}",
+                    "arcadier",
+                    "io"
+                  ],
+                  "path": [
+                    "api",
+                    "v2",
+                    "admins",
+                    "{{adminID}}",
+                    "categories"
+                  ],
+                  "query": [
+                    {
+                      "key": "pageSize",
+                      "value": "2",
+                      "description": "The number of results per page"
+                    },
+                    {
+                      "key": "pageNumber",
+                      "value": "1",
+                      "description": "The page number"
+                    }
+                  ]
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Cache-Control",
+                  "value": "no-cache"
+                },
+                {
+                  "key": "Pragma",
+                  "value": "no-cache"
+                },
+                {
+                  "key": "Content-Type",
+                  "value": "application/json; charset=utf-8"
+                },
+                {
+                  "key": "Expires",
+                  "value": "-1"
+                },
+                {
+                  "key": "request-id",
+                  "value": "dc8fa687-1c2d-4c2e-b50e-77015509fb82"
+                },
+                {
+                  "key": "api-version",
+                  "value": "v2"
+                },
+                {
+                  "key": "X-XSS-Protection",
+                  "value": "1; mode=block"
+                },
+                {
+                  "key": "X-Content-Type-Options",
+                  "value": "nosniff"
+                },
+                {
+                  "key": "X-Powered-By",
+                  "value": "ARR/3.0"
+                },
+                {
+                  "key": "Date",
+                  "value": "Mon, 16 Sep 2019 04:57:24 GMT"
+                },
+                {
+                  "key": "Content-Length",
+                  "value": "3304"
+                }
+              ],
+              "cookie": [],
+              "responseTime": null,
+              "body": "{\n    \"TotalRecords\": 12,\n    \"PageNumber\": 1,\n    \"PageSize\": 12,\n    \"Records\": [\n        {\n            \"ID\": \"ed36e72f-a36d-4eb4-9a5a-270296e766f7\",\n            \"Name\": \"Category9\",\n            \"Description\": \"This is Category9\",\n            \"SortOrder\": 0,\n            \"Media\": null,\n            \"ParentCategoryID\": null,\n            \"ChildCategories\": null,\n            \"Level\": 0,\n            \"CreatedDateTime\": 1567425433,\n            \"ModifiedDateTime\": 1567425433,\n            \"Commission\": null\n        },\n        {\n            \"ID\": \"dd599e4a-dc97-4e9a-ae09-6f98d0695b49\",\n            \"Name\": \"Category10\",\n            \"Description\": \"This is Category10\",\n            \"SortOrder\": 0,\n            \"Media\": null,\n            \"ParentCategoryID\": null,\n            \"ChildCategories\": null,\n            \"Level\": 0,\n            \"CreatedDateTime\": 1568022762,\n            \"ModifiedDateTime\": 1568022762,\n            \"Commission\": null\n        },\n        {\n            \"ID\": \"b60c7fb0-3e4e-4f97-97cc-38bb47ed8cab\",\n            \"Name\": \"Category11\",\n            \"Description\": \"This is Category11\",\n            \"SortOrder\": 0,\n            \"Media\": null,\n            \"ParentCategoryID\": null,\n            \"ChildCategories\": null,\n            \"Level\": 0,\n            \"CreatedDateTime\": 1568109020,\n            \"ModifiedDateTime\": 1568109020,\n            \"Commission\": null\n        },\n        {\n            \"ID\": \"a797d917-11a8-4590-99af-24a6cdd1d3e3\",\n            \"Name\": \"Category1\",\n            \"Description\": \"This is Category1\",\n            \"SortOrder\": 1,\n            \"Media\": null,\n            \"ParentCategoryID\": null,\n            \"ChildCategories\": null,\n            \"Level\": 0,\n            \"CreatedDateTime\": 1566198170,\n            \"ModifiedDateTime\": 1566806010,\n            \"Commission\": null\n        },\n        {\n            \"ID\": \"0b845ec6-41c8-433f-a8d9-33add9c9cdf7\",\n            \"Name\": \"Category6\",\n            \"Description\": \"This is Category6\",\n            \"SortOrder\": 2,\n            \"Media\": null,\n            \"ParentCategoryID\": null,\n            \"ChildCategories\": null,\n            \"Level\": 0,\n            \"CreatedDateTime\": 1566198260,\n            \"ModifiedDateTime\": 1566806010,\n            \"Commission\": null\n        },\n        {\n            \"ID\": \"d3fe70ee-6006-4847-ad2e-a78dce15f404\",\n            \"Name\": \"Categoryundefined\",\n            \"Description\": \"This is Categoryundefined\",\n            \"SortOrder\": 3,\n            \"Media\": null,\n            \"ParentCategoryID\": null,\n            \"ChildCategories\": null,\n            \"Level\": 0,\n            \"CreatedDateTime\": 1566199864,\n            \"ModifiedDateTime\": 1566806010,\n            \"Commission\": null\n        },\n        {\n            \"ID\": \"479b3df3-44a1-41cf-84ed-95ee4ff0206e\",\n            \"Name\": \"Category2\",\n            \"Description\": \"This is Category2\",\n            \"SortOrder\": 4,\n            \"Media\": null,\n            \"ParentCategoryID\": null,\n            \"ChildCategories\": null,\n            \"Level\": 0,\n            \"CreatedDateTime\": 1566198170,\n            \"ModifiedDateTime\": 1566806010,\n            \"Commission\": null\n        },\n        {\n            \"ID\": \"c4d76697-6d2b-41f6-aba5-521b98fa2ebd\",\n            \"Name\": \"Categoryundefined\",\n            \"Description\": \"This is Categoryundefined\",\n            \"SortOrder\": 5,\n            \"Media\": null,\n            \"ParentCategoryID\": null,\n            \"ChildCategories\": null,\n            \"Level\": 0,\n            \"CreatedDateTime\": 1566201273,\n            \"ModifiedDateTime\": 1566806010,\n            \"Commission\": null\n        },\n        {\n            \"ID\": \"955fe9b0-cb3f-496f-8b37-9e9b4ea85bee\",\n            \"Name\": \"SubCategory 2A\",\n            \"Description\": \"This is SubCategory A of Category2\",\n            \"SortOrder\": 0,\n            \"Media\": null,\n            \"ParentCategoryID\": null,\n            \"ChildCategories\": null,\n            \"Level\": 1,\n            \"CreatedDateTime\": 1566198170,\n            \"ModifiedDateTime\": 1566198170,\n            \"Commission\": null\n        },\n        {\n            \"ID\": \"84ab2eef-87fa-4e41-add8-c63670783230\",\n            \"Name\": \"SubCategory 2B\",\n            \"Description\": \"This is SubCategory B of Category2\",\n            \"SortOrder\": 0,\n            \"Media\": null,\n            \"ParentCategoryID\": null,\n            \"ChildCategories\": null,\n            \"Level\": 1,\n            \"CreatedDateTime\": 1566198170,\n            \"ModifiedDateTime\": 1566198170,\n            \"Commission\": null\n        },\n        {\n            \"ID\": \"078948dd-f1d4-42c5-8170-c6ac754fb76e\",\n            \"Name\": \"SubCategory 1A\",\n            \"Description\": \"This is SubCategory A of Category1\",\n            \"SortOrder\": 0,\n            \"Media\": null,\n            \"ParentCategoryID\": null,\n            \"ChildCategories\": null,\n            \"Level\": 1,\n            \"CreatedDateTime\": 1566198170,\n            \"ModifiedDateTime\": 1566198170,\n            \"Commission\": null\n        },\n        {\n            \"ID\": \"ad6f61bd-1c75-49af-bd2a-ba6cce84c020\",\n            \"Name\": \"SubCategory 1B\",\n            \"Description\": \"This is SubCategory B of Category1\",\n            \"SortOrder\": 0,\n            \"Media\": null,\n            \"ParentCategoryID\": null,\n            \"ChildCategories\": null,\n            \"Level\": 1,\n            \"CreatedDateTime\": 1566198170,\n            \"ModifiedDateTime\": 1566198170,\n            \"Commission\": null\n        }\n    ]\n}"
+            }
+          ]
+        },
+        {
+          "name": "Get all Categories - no Admin ID required",
+          "_postman_id": "cc9501e7-f421-48a6-90b0-66af6aeae97b",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": "https://{{your-marketplace}}.arcadier.io/api/v2/categories",
+            "description": "Returns all categories and their sub-categories. Paginated.\n\n#### Authentication\n> None required"
+          },
+          "response": [
+            {
+              "id": "a094b9e3-3f28-4c8a-94c4-f214e68b767c",
+              "name": "Get all Categories - no Admin ID required",
+              "originalRequest": {
+                "method": "GET",
+                "header": [],
+                "url": "https://{{your-marketplace}}.arcadier.io/api/v2/categories"
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Cache-Control",
+                  "value": "no-cache"
+                },
+                {
+                  "key": "Pragma",
+                  "value": "no-cache"
+                },
+                {
+                  "key": "Content-Type",
+                  "value": "application/json; charset=utf-8"
+                },
+                {
+                  "key": "Expires",
+                  "value": "-1"
+                },
+                {
+                  "key": "request-id",
+                  "value": "b9e27669-cc3b-4993-803b-6ff15b0b4ea1"
+                },
+                {
+                  "key": "api-version",
+                  "value": "v2"
+                },
+                {
+                  "key": "X-XSS-Protection",
+                  "value": "1; mode=block"
+                },
+                {
+                  "key": "X-Content-Type-Options",
+                  "value": "nosniff"
+                },
+                {
+                  "key": "X-Powered-By",
+                  "value": "ARR/3.0"
+                },
+                {
+                  "key": "Date",
+                  "value": "Tue, 17 Sep 2019 03:48:38 GMT"
+                },
+                {
+                  "key": "Content-Length",
+                  "value": "8915"
+                }
+              ],
+              "cookie": [],
+              "responseTime": null,
+              "body": "{\n    \"TotalRecords\": 24,\n    \"PageNumber\": 1,\n    \"PageSize\": 24,\n    \"Records\": [\n        {\n            \"ID\": \"ed36e72f-a36d-4eb4-9a5a-270296e766f7\",\n            \"Name\": \"Category9\",\n            \"Description\": \"This is Category9\",\n            \"SortOrder\": 0,\n            \"Media\": null,\n            \"ParentCategoryID\": null,\n            \"ChildCategories\": null,\n            \"Level\": 0,\n            \"CreatedDateTime\": 1567425433,\n            \"ModifiedDateTime\": 1567425433,\n            \"Commission\": null\n        },\n        {\n            \"ID\": \"dd599e4a-dc97-4e9a-ae09-6f98d0695b49\",\n            \"Name\": \"Category10\",\n            \"Description\": \"This is Category10\",\n            \"SortOrder\": 0,\n            \"Media\": null,\n            \"ParentCategoryID\": null,\n            \"ChildCategories\": null,\n            \"Level\": 0,\n            \"CreatedDateTime\": 1568022762,\n            \"ModifiedDateTime\": 1568022762,\n            \"Commission\": null\n        },\n        {\n            \"ID\": \"b60c7fb0-3e4e-4f97-97cc-38bb47ed8cab\",\n            \"Name\": \"Category11\",\n            \"Description\": \"This is Category11\",\n            \"SortOrder\": 0,\n            \"Media\": null,\n            \"ParentCategoryID\": null,\n            \"ChildCategories\": null,\n            \"Level\": 0,\n            \"CreatedDateTime\": 1568109020,\n            \"ModifiedDateTime\": 1568109020,\n            \"Commission\": null\n        },\n        {\n            \"ID\": \"b40da804-377d-46c4-a11f-b46064002831\",\n            \"Name\": \"Keys\",\n            \"Description\": \"The finest collection of keys be it classic or electronic\",\n            \"SortOrder\": 0,\n            \"Media\": [\n                {\n                    \"ID\": null,\n                    \"MediaUrl\": \"https://static1.squarespace.com/static/58c25c63cd0f68722ca260d8/5b0d95998a922d7f4d0ed3bb/5b15f40c88251b408d488515/1528165492648/OMS+PIANO+IMAGE+1.JPG\"\n                }\n            ],\n            \"ParentCategoryID\": null,\n            \"ChildCategories\": null,\n            \"Level\": 0,\n            \"CreatedDateTime\": 1568614686,\n            \"ModifiedDateTime\": 1568614686,\n            \"Commission\": null\n        },\n        {\n            \"ID\": \"a797d917-11a8-4590-99af-24a6cdd1d3e3\",\n            \"Name\": \"Category1\",\n            \"Description\": \"This is Category1\",\n            \"SortOrder\": 1,\n            \"Media\": null,\n            \"ParentCategoryID\": null,\n            \"ChildCategories\": null,\n            \"Level\": 0,\n            \"CreatedDateTime\": 1566198170,\n            \"ModifiedDateTime\": 1566806010,\n            \"Commission\": null\n        },\n        {\n            \"ID\": \"0b845ec6-41c8-433f-a8d9-33add9c9cdf7\",\n            \"Name\": \"Category6\",\n            \"Description\": \"This is Category6\",\n            \"SortOrder\": 2,\n            \"Media\": null,\n            \"ParentCategoryID\": null,\n            \"ChildCategories\": null,\n            \"Level\": 0,\n            \"CreatedDateTime\": 1566198260,\n            \"ModifiedDateTime\": 1566806010,\n            \"Commission\": null\n        },\n        {\n            \"ID\": \"d3fe70ee-6006-4847-ad2e-a78dce15f404\",\n            \"Name\": \"Categoryundefined\",\n            \"Description\": \"This is Categoryundefined\",\n            \"SortOrder\": 3,\n            \"Media\": null,\n            \"ParentCategoryID\": null,\n            \"ChildCategories\": null,\n            \"Level\": 0,\n            \"CreatedDateTime\": 1566199864,\n            \"ModifiedDateTime\": 1566806010,\n            \"Commission\": null\n        },\n        {\n            \"ID\": \"a7c3a7ee-7589-43e9-acab-a3cf91865a65\",\n            \"Name\": \"Keys\",\n            \"Description\": \"The finest collection of keys be it classic or electronic\",\n            \"SortOrder\": 3,\n            \"Media\": [\n                {\n                    \"ID\": null,\n                    \"MediaUrl\": \"https://static1.squarespace.com/static/58c25c63cd0f68722ca260d8/5b0d95998a922d7f4d0ed3bb/5b15f40c88251b408d488515/1528165492648/OMS+PIANO+IMAGE+1.JPG\"\n                }\n            ],\n            \"ParentCategoryID\": null,\n            \"ChildCategories\": null,\n            \"Level\": 0,\n            \"CreatedDateTime\": 1568614333,\n            \"ModifiedDateTime\": 1568614333,\n            \"Commission\": null\n        },\n        {\n            \"ID\": \"24d48476-8b61-48fc-8ff0-685457479c19\",\n            \"Name\": \"Keys\",\n            \"Description\": \"The finest collection of keys be it classic or electronic\",\n            \"SortOrder\": 3,\n            \"Media\": [\n                {\n                    \"ID\": null,\n                    \"MediaUrl\": \"https://static1.squarespace.com/static/58c25c63cd0f68722ca260d8/5b0d95998a922d7f4d0ed3bb/5b15f40c88251b408d488515/1528165492648/OMS+PIANO+IMAGE+1.JPG\"\n                }\n            ],\n            \"ParentCategoryID\": null,\n            \"ChildCategories\": null,\n            \"Level\": 0,\n            \"CreatedDateTime\": 1568614340,\n            \"ModifiedDateTime\": 1568614340,\n            \"Commission\": null\n        },\n        {\n            \"ID\": \"9f008e17-fda6-4466-be49-b2de2adc67a0\",\n            \"Name\": \"Keys\",\n            \"Description\": \"The finest collection of keys be it classic or electronic\",\n            \"SortOrder\": 3,\n            \"Media\": [\n                {\n                    \"ID\": null,\n                    \"MediaUrl\": \"https://static1.squarespace.com/static/58c25c63cd0f68722ca260d8/5b0d95998a922d7f4d0ed3bb/5b15f40c88251b408d488515/1528165492648/OMS+PIANO+IMAGE+1.JPG\"\n                }\n            ],\n            \"ParentCategoryID\": null,\n            \"ChildCategories\": null,\n            \"Level\": 0,\n            \"CreatedDateTime\": 1568614342,\n            \"ModifiedDateTime\": 1568614342,\n            \"Commission\": null\n        },\n        {\n            \"ID\": \"31b6d214-79b2-4656-bdca-570def5eca71\",\n            \"Name\": \"Keys\",\n            \"Description\": \"The finest collection of keys be it classic or electronic\",\n            \"SortOrder\": 3,\n            \"Media\": [\n                {\n                    \"ID\": null,\n                    \"MediaUrl\": \"https://static1.squarespace.com/static/58c25c63cd0f68722ca260d8/5b0d95998a922d7f4d0ed3bb/5b15f40c88251b408d488515/1528165492648/OMS+PIANO+IMAGE+1.JPG\"\n                }\n            ],\n            \"ParentCategoryID\": null,\n            \"ChildCategories\": null,\n            \"Level\": 0,\n            \"CreatedDateTime\": 1568614416,\n            \"ModifiedDateTime\": 1568614416,\n            \"Commission\": null\n        },\n        {\n            \"ID\": \"479b3df3-44a1-41cf-84ed-95ee4ff0206e\",\n            \"Name\": \"Category2\",\n            \"Description\": \"This is Category2\",\n            \"SortOrder\": 4,\n            \"Media\": null,\n            \"ParentCategoryID\": null,\n            \"ChildCategories\": null,\n            \"Level\": 0,\n            \"CreatedDateTime\": 1566198170,\n            \"ModifiedDateTime\": 1566806010,\n            \"Commission\": null\n        },\n        {\n            \"ID\": \"c4d76697-6d2b-41f6-aba5-521b98fa2ebd\",\n            \"Name\": \"Categoryundefined\",\n            \"Description\": \"This is Categoryundefined\",\n            \"SortOrder\": 5,\n            \"Media\": null,\n            \"ParentCategoryID\": null,\n            \"ChildCategories\": null,\n            \"Level\": 0,\n            \"CreatedDateTime\": 1566201273,\n            \"ModifiedDateTime\": 1566806010,\n            \"Commission\": null\n        },\n        {\n            \"ID\": \"955fe9b0-cb3f-496f-8b37-9e9b4ea85bee\",\n            \"Name\": \"SubCategory 2A\",\n            \"Description\": \"This is SubCategory A of Category2\",\n            \"SortOrder\": 0,\n            \"Media\": null,\n            \"ParentCategoryID\": null,\n            \"ChildCategories\": null,\n            \"Level\": 1,\n            \"CreatedDateTime\": 1566198170,\n            \"ModifiedDateTime\": 1566198170,\n            \"Commission\": null\n        },\n        {\n            \"ID\": \"84ab2eef-87fa-4e41-add8-c63670783230\",\n            \"Name\": \"SubCategory 2B\",\n            \"Description\": \"This is SubCategory B of Category2\",\n            \"SortOrder\": 0,\n            \"Media\": null,\n            \"ParentCategoryID\": null,\n            \"ChildCategories\": null,\n            \"Level\": 1,\n            \"CreatedDateTime\": 1566198170,\n            \"ModifiedDateTime\": 1566198170,\n            \"Commission\": null\n        },\n        {\n            \"ID\": \"078948dd-f1d4-42c5-8170-c6ac754fb76e\",\n            \"Name\": \"SubCategory 1A\",\n            \"Description\": \"This is SubCategory A of Category1\",\n            \"SortOrder\": 0,\n            \"Media\": null,\n            \"ParentCategoryID\": null,\n            \"ChildCategories\": null,\n            \"Level\": 1,\n            \"CreatedDateTime\": 1566198170,\n            \"ModifiedDateTime\": 1566198170,\n            \"Commission\": null\n        },\n        {\n            \"ID\": \"ad6f61bd-1c75-49af-bd2a-ba6cce84c020\",\n            \"Name\": \"SubCategory 1B\",\n            \"Description\": \"This is SubCategory B of Category1\",\n            \"SortOrder\": 0,\n            \"Media\": null,\n            \"ParentCategoryID\": null,\n            \"ChildCategories\": null,\n            \"Level\": 1,\n            \"CreatedDateTime\": 1566198170,\n            \"ModifiedDateTime\": 1566198170,\n            \"Commission\": null\n        },\n        {\n            \"ID\": \"24a12816-3721-4f6e-bc46-3b6acf3a277e\",\n            \"Name\": \"Grand Piano\",\n            \"Description\": \"Guaranteed to pull out the Taylor Swift hidden inside you\",\n            \"SortOrder\": 1,\n            \"Media\": [\n                {\n                    \"ID\": null,\n                    \"MediaUrl\": \"https://static1.squarespace.com/static/58c25c63cd0f68722ca260d8/5b0d95998a922d7f4d0ed3bb/5b15f40c88251b408d488515/1528165492648/OMS+PIANO+IMAGE+1.JPG\"\n                }\n            ],\n            \"ParentCategoryID\": null,\n            \"ChildCategories\": null,\n            \"Level\": 1,\n            \"CreatedDateTime\": 1568614798,\n            \"ModifiedDateTime\": 1568614798,\n            \"Commission\": null\n        },\n        {\n            \"ID\": \"b2a0828b-0373-4143-a270-1226f7e28b2e\",\n            \"Name\": \"Keys\",\n            \"Description\": \"The finest collection of keys be it classic or electronic\",\n            \"SortOrder\": 3,\n            \"Media\": [\n                {\n                    \"ID\": null,\n                    \"MediaUrl\": \"https://static1.squarespace.com/static/58c25c63cd0f68722ca260d8/5b0d95998a922d7f4d0ed3bb/5b15f40c88251b408d488515/1528165492648/OMS+PIANO+IMAGE+1.JPG\"\n                }\n            ],\n            \"ParentCategoryID\": null,\n            \"ChildCategories\": null,\n            \"Level\": 1,\n            \"CreatedDateTime\": 1568614211,\n            \"ModifiedDateTime\": 1568614211,\n            \"Commission\": null\n        },\n        {\n            \"ID\": \"1dc8be17-0137-451b-bac7-3f362adcdcdf\",\n            \"Name\": \"Keys\",\n            \"Description\": \"The finest collection of keys be it classic or electronic\",\n            \"SortOrder\": 3,\n            \"Media\": [\n                {\n                    \"ID\": null,\n                    \"MediaUrl\": \"https://static1.squarespace.com/static/58c25c63cd0f68722ca260d8/5b0d95998a922d7f4d0ed3bb/5b15f40c88251b408d488515/1528165492648/OMS+PIANO+IMAGE+1.JPG\"\n                }\n            ],\n            \"ParentCategoryID\": null,\n            \"ChildCategories\": null,\n            \"Level\": 1,\n            \"CreatedDateTime\": 1568614261,\n            \"ModifiedDateTime\": 1568614261,\n            \"Commission\": null\n        },\n        {\n            \"ID\": \"6b5dd30f-356e-4915-89e7-7496d0630987\",\n            \"Name\": \"Keys\",\n            \"Description\": \"The finest collection of keys be it classic or electronic\",\n            \"SortOrder\": 3,\n            \"Media\": [\n                {\n                    \"ID\": null,\n                    \"MediaUrl\": \"https://static1.squarespace.com/static/58c25c63cd0f68722ca260d8/5b0d95998a922d7f4d0ed3bb/5b15f40c88251b408d488515/1528165492648/OMS+PIANO+IMAGE+1.JPG\"\n                }\n            ],\n            \"ParentCategoryID\": null,\n            \"ChildCategories\": null,\n            \"Level\": 1,\n            \"CreatedDateTime\": 1568614429,\n            \"ModifiedDateTime\": 1568614429,\n            \"Commission\": null\n        },\n        {\n            \"ID\": \"c68bcc7d-9a6c-47c8-9e23-5959b4a702b9\",\n            \"Name\": \"Keys\",\n            \"Description\": \"The finest collection of keys be it classic or electronic\",\n            \"SortOrder\": 3,\n            \"Media\": [\n                {\n                    \"ID\": null,\n                    \"MediaUrl\": \"https://static1.squarespace.com/static/58c25c63cd0f68722ca260d8/5b0d95998a922d7f4d0ed3bb/5b15f40c88251b408d488515/1528165492648/OMS+PIANO+IMAGE+1.JPG\"\n                }\n            ],\n            \"ParentCategoryID\": null,\n            \"ChildCategories\": null,\n            \"Level\": 1,\n            \"CreatedDateTime\": 1568614510,\n            \"ModifiedDateTime\": 1568614510,\n            \"Commission\": null\n        },\n        {\n            \"ID\": \"435f2c24-ec26-4e84-8f07-06566b2b6965\",\n            \"Name\": \"Keys\",\n            \"Description\": \"The finest collection of keys be it classic or electronic\",\n            \"SortOrder\": 3,\n            \"Media\": [\n                {\n                    \"ID\": null,\n                    \"MediaUrl\": \"https://static1.squarespace.com/static/58c25c63cd0f68722ca260d8/5b0d95998a922d7f4d0ed3bb/5b15f40c88251b408d488515/1528165492648/OMS+PIANO+IMAGE+1.JPG\"\n                }\n            ],\n            \"ParentCategoryID\": null,\n            \"ChildCategories\": null,\n            \"Level\": 1,\n            \"CreatedDateTime\": 1568614533,\n            \"ModifiedDateTime\": 1568614533,\n            \"Commission\": null\n        },\n        {\n            \"ID\": \"be327faf-681b-49e4-8213-21410e22ee6b\",\n            \"Name\": \"Keys\",\n            \"Description\": \"The finest collection of keys be it classic or electronic\",\n            \"SortOrder\": 3,\n            \"Media\": [\n                {\n                    \"ID\": null,\n                    \"MediaUrl\": \"https://static1.squarespace.com/static/58c25c63cd0f68722ca260d8/5b0d95998a922d7f4d0ed3bb/5b15f40c88251b408d488515/1528165492648/OMS+PIANO+IMAGE+1.JPG\"\n                }\n            ],\n            \"ParentCategoryID\": null,\n            \"ChildCategories\": null,\n            \"Level\": 1,\n            \"CreatedDateTime\": 1568615090,\n            \"ModifiedDateTime\": 1568615090,\n            \"Commission\": null\n        }\n    ]\n}"
+            }
+          ]
+        },
+        {
+          "name": "Get the hierarchy of categories.",
+          "_postman_id": "9c1da2af-57f4-454a-a624-a9f242e4263d",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": "https://{{your-marketplace}}.arcadier.io/api/v2/categories/hierarchy",
+            "description": "Returns hierarchy of Categories and their child(sub) Categories.\n\n#### Authentication\n> None required"
+          },
+          "response": [
+            {
+              "id": "6d814c26-6a27-4e55-be3a-d179cbc07c1d",
+              "name": "Get the hierarchy of categories.",
+              "originalRequest": {
+                "method": "GET",
+                "header": [],
+                "url": "https://{{your-marketplace}}.arcadier.io/api/v2/categories/hierarchy"
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Cache-Control",
+                  "value": "no-cache"
+                },
+                {
+                  "key": "Pragma",
+                  "value": "no-cache"
+                },
+                {
+                  "key": "Content-Type",
+                  "value": "application/json; charset=utf-8"
+                },
+                {
+                  "key": "Expires",
+                  "value": "-1"
+                },
+                {
+                  "key": "request-id",
+                  "value": "77e51287-0911-4e96-ab96-04e3c14903fb"
+                },
+                {
+                  "key": "api-version",
+                  "value": "v2"
+                },
+                {
+                  "key": "X-XSS-Protection",
+                  "value": "1; mode=block"
+                },
+                {
+                  "key": "X-Content-Type-Options",
+                  "value": "nosniff"
+                },
+                {
+                  "key": "X-Powered-By",
+                  "value": "ARR/3.0"
+                },
+                {
+                  "key": "Date",
+                  "value": "Mon, 16 Sep 2019 05:05:29 GMT"
+                },
+                {
+                  "key": "Content-Length",
+                  "value": "3219"
+                }
+              ],
+              "cookie": [],
+              "responseTime": null,
+              "body": "[\n    {\n        \"ID\": \"ed36e72f-a36d-4eb4-9a5a-270296e766f7\",\n        \"Name\": \"Category9\",\n        \"Description\": \"This is Category9\",\n        \"SortOrder\": 0,\n        \"Media\": null,\n        \"ParentCategoryID\": null,\n        \"ChildCategories\": [],\n        \"Level\": 0,\n        \"CreatedDateTime\": 1567425433,\n        \"ModifiedDateTime\": 1567425433,\n        \"Commission\": null\n    },\n    {\n        \"ID\": \"dd599e4a-dc97-4e9a-ae09-6f98d0695b49\",\n        \"Name\": \"Category10\",\n        \"Description\": \"This is Category10\",\n        \"SortOrder\": 0,\n        \"Media\": null,\n        \"ParentCategoryID\": null,\n        \"ChildCategories\": [],\n        \"Level\": 0,\n        \"CreatedDateTime\": 1568022762,\n        \"ModifiedDateTime\": 1568022762,\n        \"Commission\": null\n    },\n    {\n        \"ID\": \"b60c7fb0-3e4e-4f97-97cc-38bb47ed8cab\",\n        \"Name\": \"Category11\",\n        \"Description\": \"This is Category11\",\n        \"SortOrder\": 0,\n        \"Media\": null,\n        \"ParentCategoryID\": null,\n        \"ChildCategories\": [],\n        \"Level\": 0,\n        \"CreatedDateTime\": 1568109020,\n        \"ModifiedDateTime\": 1568109020,\n        \"Commission\": null\n    },\n    {\n        \"ID\": \"a797d917-11a8-4590-99af-24a6cdd1d3e3\",\n        \"Name\": \"Category1\",\n        \"Description\": \"This is Category1\",\n        \"SortOrder\": 1,\n        \"Media\": null,\n        \"ParentCategoryID\": null,\n        \"ChildCategories\": [\n            {\n                \"ID\": \"078948dd-f1d4-42c5-8170-c6ac754fb76e\",\n                \"Name\": \"SubCategory 1A\",\n                \"Description\": \"This is SubCategory A of Category1\",\n                \"SortOrder\": 0,\n                \"Media\": null,\n                \"ParentCategoryID\": null,\n                \"ChildCategories\": [],\n                \"Level\": 1,\n                \"CreatedDateTime\": 1566198170,\n                \"ModifiedDateTime\": 1566198170,\n                \"Commission\": null\n            },\n            {\n                \"ID\": \"ad6f61bd-1c75-49af-bd2a-ba6cce84c020\",\n                \"Name\": \"SubCategory 1B\",\n                \"Description\": \"This is SubCategory B of Category1\",\n                \"SortOrder\": 0,\n                \"Media\": null,\n                \"ParentCategoryID\": null,\n                \"ChildCategories\": [],\n                \"Level\": 1,\n                \"CreatedDateTime\": 1566198170,\n                \"ModifiedDateTime\": 1566198170,\n                \"Commission\": null\n            }\n        ],\n        \"Level\": 0,\n        \"CreatedDateTime\": 1566198170,\n        \"ModifiedDateTime\": 1566806010,\n        \"Commission\": null\n    },\n    {\n        \"ID\": \"0b845ec6-41c8-433f-a8d9-33add9c9cdf7\",\n        \"Name\": \"Category6\",\n        \"Description\": \"This is Category6\",\n        \"SortOrder\": 2,\n        \"Media\": null,\n        \"ParentCategoryID\": null,\n        \"ChildCategories\": [],\n        \"Level\": 0,\n        \"CreatedDateTime\": 1566198260,\n        \"ModifiedDateTime\": 1566806010,\n        \"Commission\": null\n    },\n    {\n        \"ID\": \"d3fe70ee-6006-4847-ad2e-a78dce15f404\",\n        \"Name\": \"Categoryundefined\",\n        \"Description\": \"This is Categoryundefined\",\n        \"SortOrder\": 3,\n        \"Media\": null,\n        \"ParentCategoryID\": null,\n        \"ChildCategories\": [],\n        \"Level\": 0,\n        \"CreatedDateTime\": 1566199864,\n        \"ModifiedDateTime\": 1566806010,\n        \"Commission\": null\n    },\n    {\n        \"ID\": \"479b3df3-44a1-41cf-84ed-95ee4ff0206e\",\n        \"Name\": \"Category2\",\n        \"Description\": \"This is Category2\",\n        \"SortOrder\": 4,\n        \"Media\": null,\n        \"ParentCategoryID\": null,\n        \"ChildCategories\": [\n            {\n                \"ID\": \"955fe9b0-cb3f-496f-8b37-9e9b4ea85bee\",\n                \"Name\": \"SubCategory 2A\",\n                \"Description\": \"This is SubCategory A of Category2\",\n                \"SortOrder\": 0,\n                \"Media\": null,\n                \"ParentCategoryID\": null,\n                \"ChildCategories\": [],\n                \"Level\": 1,\n                \"CreatedDateTime\": 1566198170,\n                \"ModifiedDateTime\": 1566198170,\n                \"Commission\": null\n            },\n            {\n                \"ID\": \"84ab2eef-87fa-4e41-add8-c63670783230\",\n                \"Name\": \"SubCategory 2B\",\n                \"Description\": \"This is SubCategory B of Category2\",\n                \"SortOrder\": 0,\n                \"Media\": null,\n                \"ParentCategoryID\": null,\n                \"ChildCategories\": [],\n                \"Level\": 1,\n                \"CreatedDateTime\": 1566198170,\n                \"ModifiedDateTime\": 1566198170,\n                \"Commission\": null\n            }\n        ],\n        \"Level\": 0,\n        \"CreatedDateTime\": 1566198170,\n        \"ModifiedDateTime\": 1566806010,\n        \"Commission\": null\n    },\n    {\n        \"ID\": \"c4d76697-6d2b-41f6-aba5-521b98fa2ebd\",\n        \"Name\": \"Categoryundefined\",\n        \"Description\": \"This is Categoryundefined\",\n        \"SortOrder\": 5,\n        \"Media\": null,\n        \"ParentCategoryID\": null,\n        \"ChildCategories\": [],\n        \"Level\": 0,\n        \"CreatedDateTime\": 1566201273,\n        \"ModifiedDateTime\": 1566806010,\n        \"Commission\": null\n    }\n]"
+            }
+          ]
+        },
+        {
+          "name": "Get the hierarchy of Categories (requires admin ID in URL)",
+          "_postman_id": "da72b2aa-93ce-49fb-9cd7-dbeac5beda73",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": "https://{{your-marketplace}}.arcadier.io/api/v2/admins/{{adminID}}/categories/hierarchy",
+            "description": "Returns hierarchy of Categories and their child(sub) Categories.\n\n#### Authentication\n> None required"
+          },
+          "response": [
+            {
+              "id": "1002adb7-08d8-4a40-8a72-590f6efa796d",
+              "name": "Get the hierarchy of Categories (requires admin ID in URL)",
+              "originalRequest": {
+                "method": "GET",
+                "header": [],
+                "url": "https://{{your-marketplace}}.arcadier.io/api/v2/admins/{{adminID}}/categories/hierarchy"
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Cache-Control",
+                  "value": "no-cache"
+                },
+                {
+                  "key": "Pragma",
+                  "value": "no-cache"
+                },
+                {
+                  "key": "Content-Type",
+                  "value": "application/json; charset=utf-8"
+                },
+                {
+                  "key": "Expires",
+                  "value": "-1"
+                },
+                {
+                  "key": "request-id",
+                  "value": "1d6fa2d9-2fd6-46cd-947f-de218a0b1e12"
+                },
+                {
+                  "key": "api-version",
+                  "value": "v2"
+                },
+                {
+                  "key": "X-XSS-Protection",
+                  "value": "1; mode=block"
+                },
+                {
+                  "key": "X-Content-Type-Options",
+                  "value": "nosniff"
+                },
+                {
+                  "key": "X-Powered-By",
+                  "value": "ARR/3.0"
+                },
+                {
+                  "key": "Date",
+                  "value": "Mon, 16 Sep 2019 05:06:32 GMT"
+                },
+                {
+                  "key": "Content-Length",
+                  "value": "3219"
+                }
+              ],
+              "cookie": [],
+              "responseTime": null,
+              "body": "[\n    {\n        \"ID\": \"ed36e72f-a36d-4eb4-9a5a-270296e766f7\",\n        \"Name\": \"Category9\",\n        \"Description\": \"This is Category9\",\n        \"SortOrder\": 0,\n        \"Media\": null,\n        \"ParentCategoryID\": null,\n        \"ChildCategories\": [],\n        \"Level\": 0,\n        \"CreatedDateTime\": 1567425433,\n        \"ModifiedDateTime\": 1567425433,\n        \"Commission\": null\n    },\n    {\n        \"ID\": \"dd599e4a-dc97-4e9a-ae09-6f98d0695b49\",\n        \"Name\": \"Category10\",\n        \"Description\": \"This is Category10\",\n        \"SortOrder\": 0,\n        \"Media\": null,\n        \"ParentCategoryID\": null,\n        \"ChildCategories\": [],\n        \"Level\": 0,\n        \"CreatedDateTime\": 1568022762,\n        \"ModifiedDateTime\": 1568022762,\n        \"Commission\": null\n    },\n    {\n        \"ID\": \"b60c7fb0-3e4e-4f97-97cc-38bb47ed8cab\",\n        \"Name\": \"Category11\",\n        \"Description\": \"This is Category11\",\n        \"SortOrder\": 0,\n        \"Media\": null,\n        \"ParentCategoryID\": null,\n        \"ChildCategories\": [],\n        \"Level\": 0,\n        \"CreatedDateTime\": 1568109020,\n        \"ModifiedDateTime\": 1568109020,\n        \"Commission\": null\n    },\n    {\n        \"ID\": \"a797d917-11a8-4590-99af-24a6cdd1d3e3\",\n        \"Name\": \"Category1\",\n        \"Description\": \"This is Category1\",\n        \"SortOrder\": 1,\n        \"Media\": null,\n        \"ParentCategoryID\": null,\n        \"ChildCategories\": [\n            {\n                \"ID\": \"078948dd-f1d4-42c5-8170-c6ac754fb76e\",\n                \"Name\": \"SubCategory 1A\",\n                \"Description\": \"This is SubCategory A of Category1\",\n                \"SortOrder\": 0,\n                \"Media\": null,\n                \"ParentCategoryID\": null,\n                \"ChildCategories\": [],\n                \"Level\": 1,\n                \"CreatedDateTime\": 1566198170,\n                \"ModifiedDateTime\": 1566198170,\n                \"Commission\": null\n            },\n            {\n                \"ID\": \"ad6f61bd-1c75-49af-bd2a-ba6cce84c020\",\n                \"Name\": \"SubCategory 1B\",\n                \"Description\": \"This is SubCategory B of Category1\",\n                \"SortOrder\": 0,\n                \"Media\": null,\n                \"ParentCategoryID\": null,\n                \"ChildCategories\": [],\n                \"Level\": 1,\n                \"CreatedDateTime\": 1566198170,\n                \"ModifiedDateTime\": 1566198170,\n                \"Commission\": null\n            }\n        ],\n        \"Level\": 0,\n        \"CreatedDateTime\": 1566198170,\n        \"ModifiedDateTime\": 1566806010,\n        \"Commission\": null\n    },\n    {\n        \"ID\": \"0b845ec6-41c8-433f-a8d9-33add9c9cdf7\",\n        \"Name\": \"Category6\",\n        \"Description\": \"This is Category6\",\n        \"SortOrder\": 2,\n        \"Media\": null,\n        \"ParentCategoryID\": null,\n        \"ChildCategories\": [],\n        \"Level\": 0,\n        \"CreatedDateTime\": 1566198260,\n        \"ModifiedDateTime\": 1566806010,\n        \"Commission\": null\n    },\n    {\n        \"ID\": \"d3fe70ee-6006-4847-ad2e-a78dce15f404\",\n        \"Name\": \"Categoryundefined\",\n        \"Description\": \"This is Categoryundefined\",\n        \"SortOrder\": 3,\n        \"Media\": null,\n        \"ParentCategoryID\": null,\n        \"ChildCategories\": [],\n        \"Level\": 0,\n        \"CreatedDateTime\": 1566199864,\n        \"ModifiedDateTime\": 1566806010,\n        \"Commission\": null\n    },\n    {\n        \"ID\": \"479b3df3-44a1-41cf-84ed-95ee4ff0206e\",\n        \"Name\": \"Category2\",\n        \"Description\": \"This is Category2\",\n        \"SortOrder\": 4,\n        \"Media\": null,\n        \"ParentCategoryID\": null,\n        \"ChildCategories\": [\n            {\n                \"ID\": \"955fe9b0-cb3f-496f-8b37-9e9b4ea85bee\",\n                \"Name\": \"SubCategory 2A\",\n                \"Description\": \"This is SubCategory A of Category2\",\n                \"SortOrder\": 0,\n                \"Media\": null,\n                \"ParentCategoryID\": null,\n                \"ChildCategories\": [],\n                \"Level\": 1,\n                \"CreatedDateTime\": 1566198170,\n                \"ModifiedDateTime\": 1566198170,\n                \"Commission\": null\n            },\n            {\n                \"ID\": \"84ab2eef-87fa-4e41-add8-c63670783230\",\n                \"Name\": \"SubCategory 2B\",\n                \"Description\": \"This is SubCategory B of Category2\",\n                \"SortOrder\": 0,\n                \"Media\": null,\n                \"ParentCategoryID\": null,\n                \"ChildCategories\": [],\n                \"Level\": 1,\n                \"CreatedDateTime\": 1566198170,\n                \"ModifiedDateTime\": 1566198170,\n                \"Commission\": null\n            }\n        ],\n        \"Level\": 0,\n        \"CreatedDateTime\": 1566198170,\n        \"ModifiedDateTime\": 1566806010,\n        \"Commission\": null\n    },\n    {\n        \"ID\": \"c4d76697-6d2b-41f6-aba5-521b98fa2ebd\",\n        \"Name\": \"Categoryundefined\",\n        \"Description\": \"This is Categoryundefined\",\n        \"SortOrder\": 5,\n        \"Media\": null,\n        \"ParentCategoryID\": null,\n        \"ChildCategories\": [],\n        \"Level\": 0,\n        \"CreatedDateTime\": 1566201273,\n        \"ModifiedDateTime\": 1566806010,\n        \"Commission\": null\n    }\n]"
+            }
+          ]
+        },
+        {
+          "name": "Admin - Create a category",
+          "_postman_id": "be380e46-ec4b-4d2d-8a5f-ba2715ba1173",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "auth": {
+              "type": "noauth"
+            },
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "name": "Content-Type",
+                "value": "application/json",
+                "type": "text"
+              },
+              {
+                "key": "Authorization",
+                "value": "Bearer {{admintoken}}",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n  \"Name\": \"string\",\r\n  \"Description\": \"string\",\r\n  \"SortOrder\": 0,\r\n  \"Media\": [\r\n    {\r\n      \"ID\": \"00000000-0000-0000-0000-000000000000\",\r\n      \"MediaUrl\": \"string\"\r\n    }\r\n  ],\r\n  \"ParentCategoryID\": \"00000000-0000-0000-0000-000000000000\",\r\n  \"Level\": 0\r\n}"
+            },
+            "url": "https://{{your-marketplace}}.arcadier.io/api/v2/admins/{{adminID}}/categories",
+            "description": "Creates a category or sub-category.\n\n#### Authentication\n> Admin token only"
+          },
+          "response": [
+            {
+              "id": "b11d62c7-5705-43c1-808b-d9cd9433ec81",
+              "name": "Admin - Create a sub-category",
+              "originalRequest": {
+                "method": "POST",
+                "header": [
+                  {
+                    "key": "Content-Type",
+                    "name": "Content-Type",
+                    "value": "application/json",
+                    "type": "text"
+                  },
+                  {
+                    "key": "Authorization",
+                    "value": "Bearer {{admintoken}}",
+                    "type": "text"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\r\n  \"Name\": \"Synths\",\r\n  \"Description\": \"Create your own music from your own room\",\r\n  \"SortOrder\": 0,\r\n  \"Media\": [\r\n    {\r\n      \"MediaUrl\": \"https://cdn.pixabay.com/photo/2016/12/14/12/09/violin-1906127_960_720.jpg\"\r\n    }\r\n  ],\r\n  \"ParentCategoryID\": \"ed36e72f-a36d-4eb4-9a5a-270296e766f7\",\r\n  \"Level\": 1\r\n}"
+                },
+                "url": "https://{{your-marketplace}}.arcadier.io/api/v2/admins/{{adminID}}/categories"
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Cache-Control",
+                  "value": "no-cache"
+                },
+                {
+                  "key": "Pragma",
+                  "value": "no-cache"
+                },
+                {
+                  "key": "Content-Type",
+                  "value": "application/json; charset=utf-8"
+                },
+                {
+                  "key": "Expires",
+                  "value": "-1"
+                },
+                {
+                  "key": "request-id",
+                  "value": "74068cac-c8fb-4c7b-92ff-a12b154dcd2f"
+                },
+                {
+                  "key": "api-version",
+                  "value": "v2"
+                },
+                {
+                  "key": "X-XSS-Protection",
+                  "value": "1; mode=block"
+                },
+                {
+                  "key": "X-Content-Type-Options",
+                  "value": "nosniff"
+                },
+                {
+                  "key": "X-Powered-By",
+                  "value": "ARR/3.0"
+                },
+                {
+                  "key": "Date",
+                  "value": "Fri, 20 Sep 2019 07:38:16 GMT"
+                },
+                {
+                  "key": "Content-Length",
+                  "value": "378"
+                }
+              ],
+              "cookie": [],
+              "responseTime": null,
+              "body": "{\n    \"ID\": \"01dd1fc1-912a-4737-b8dc-daff13ef9f2b\",\n    \"Name\": \"Synths\",\n    \"Description\": \"Create your own music from your own room\",\n    \"SortOrder\": 0,\n    \"Media\": [\n        {\n            \"ID\": null,\n            \"MediaUrl\": \"https://cdn.pixabay.com/photo/2016/12/14/12/09/violin-1906127_960_720.jpg\"\n        }\n    ],\n    \"ParentCategoryID\": null,\n    \"ChildCategories\": null,\n    \"Level\": null,\n    \"CreatedDateTime\": 1568965095,\n    \"ModifiedDateTime\": 1568965095,\n    \"Commission\": null\n}"
+            },
+            {
+              "id": "8fafcdf2-6240-49a2-bd6b-8a10d3464c99",
+              "name": "Admin - Create a category",
+              "originalRequest": {
+                "method": "POST",
+                "header": [
+                  {
+                    "key": "Content-Type",
+                    "name": "Content-Type",
+                    "value": "application/json",
+                    "type": "text"
+                  },
+                  {
+                    "key": "Authorization",
+                    "value": "Bearer {{admintoken}}",
+                    "type": "text"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\r\n  \"Name\": \"Synths\",\r\n  \"Description\": \"Create your own music from your own room\",\r\n  \"SortOrder\": 0,\r\n  \"Media\": [\r\n    {\r\n      \"MediaUrl\": \"https://cdn.pixabay.com/photo/2016/12/14/12/09/violin-1906127_960_720.jpg\"\r\n    }\r\n  ]\r\n}"
+                },
+                "url": "https://{{your-marketplace}}.arcadier.io/api/v2/admins/{{adminID}}/categories"
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Cache-Control",
+                  "value": "no-cache"
+                },
+                {
+                  "key": "Pragma",
+                  "value": "no-cache"
+                },
+                {
+                  "key": "Content-Type",
+                  "value": "application/json; charset=utf-8"
+                },
+                {
+                  "key": "Expires",
+                  "value": "-1"
+                },
+                {
+                  "key": "request-id",
+                  "value": "350284eb-c0e3-4a13-9ad7-429a8fa0e622"
+                },
+                {
+                  "key": "api-version",
+                  "value": "v2"
+                },
+                {
+                  "key": "X-XSS-Protection",
+                  "value": "1; mode=block"
+                },
+                {
+                  "key": "X-Content-Type-Options",
+                  "value": "nosniff"
+                },
+                {
+                  "key": "X-Powered-By",
+                  "value": "ARR/3.0"
+                },
+                {
+                  "key": "Date",
+                  "value": "Fri, 20 Sep 2019 07:39:03 GMT"
+                },
+                {
+                  "key": "Content-Length",
+                  "value": "378"
+                }
+              ],
+              "cookie": [],
+              "responseTime": null,
+              "body": "{\n    \"ID\": \"5e0a5505-cecf-4fd3-8663-79ca85b4a4f4\",\n    \"Name\": \"Synths\",\n    \"Description\": \"Create your own music from your own room\",\n    \"SortOrder\": 0,\n    \"Media\": [\n        {\n            \"ID\": null,\n            \"MediaUrl\": \"https://cdn.pixabay.com/photo/2016/12/14/12/09/violin-1906127_960_720.jpg\"\n        }\n    ],\n    \"ParentCategoryID\": null,\n    \"ChildCategories\": null,\n    \"Level\": null,\n    \"CreatedDateTime\": 1568965143,\n    \"ModifiedDateTime\": 1568965143,\n    \"Commission\": null\n}"
+            }
+          ]
+        },
+        {
+          "name": "Delete a category",
+          "_postman_id": "1b018490-9fd3-4a5c-a0c0-cdc8cf4e3a26",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "auth": {
+              "type": "noauth"
+            },
+            "method": "DELETE",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{admintoken}}",
+                "type": "text"
+              }
+            ],
+            "url": "https://{{your-marketplace}}.arcadier.io/api/v2/admins/{{adminID}}/categories/{{categoryID_to_delete}}",
+            "description": "Deletes a category.\n\n#### Authentication\n>Admin token only."
+          },
+          "response": [
+            {
+              "id": "8290390e-5299-4b86-bd10-050e6b4be4a2",
+              "name": "Delete a category",
+              "originalRequest": {
+                "method": "DELETE",
+                "header": [
+                  {
+                    "key": "Authorization",
+                    "value": "Bearer {{admintoken}}",
+                    "type": "text"
+                  }
+                ],
+                "url": "https://{{your-marketplace}}.arcadier.io/api/v2/admins/{{adminID}}/categories/{{categoryID_to_delete}}"
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Cache-Control",
+                  "value": "no-cache"
+                },
+                {
+                  "key": "Pragma",
+                  "value": "no-cache"
+                },
+                {
+                  "key": "Content-Type",
+                  "value": "application/json; charset=utf-8"
+                },
+                {
+                  "key": "Expires",
+                  "value": "-1"
+                },
+                {
+                  "key": "request-id",
+                  "value": "9781f356-4075-476e-8842-8d14d6813df8"
+                },
+                {
+                  "key": "api-version",
+                  "value": "v2"
+                },
+                {
+                  "key": "X-XSS-Protection",
+                  "value": "1; mode=block"
+                },
+                {
+                  "key": "X-Content-Type-Options",
+                  "value": "nosniff"
+                },
+                {
+                  "key": "X-Powered-By",
+                  "value": "ARR/3.0"
+                },
+                {
+                  "key": "Date",
+                  "value": "Tue, 17 Sep 2019 03:55:06 GMT"
+                },
+                {
+                  "key": "Content-Length",
+                  "value": "471"
+                }
+              ],
+              "cookie": [],
+              "responseTime": null,
+              "body": "[\n    {\n        \"ID\": \"1dc8be17-0137-451b-bac7-3f362adcdcdf\",\n        \"Name\": \"Keys\",\n        \"Description\": \"The finest collection of keys be it classic or electronic\",\n        \"SortOrder\": 3,\n        \"Media\": [\n            {\n                \"ID\": null,\n                \"MediaUrl\": \"https://static1.squarespace.com/static/58c25c63cd0f68722ca260d8/5b0d95998a922d7f4d0ed3bb/5b15f40c88251b408d488515/1528165492648/OMS+PIANO+IMAGE+1.JPG\"\n            }\n        ],\n        \"ParentCategoryID\": null,\n        \"ChildCategories\": null,\n        \"Level\": null,\n        \"CreatedDateTime\": 1568614261,\n        \"ModifiedDateTime\": 1568692506,\n        \"Commission\": null\n    }\n]"
+            }
+          ]
+        },
+        {
+          "name": "Sort Categories - Admin",
+          "_postman_id": "10e13257-c401-4de2-8f69-9aa5594ff3e3",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "auth": {
+              "type": "noauth"
+            },
+            "method": "PUT",
+            "header": [
+              {
+                "key": "Content-Type",
+                "name": "Content-Type",
+                "value": "application/json",
+                "type": "text"
+              },
+              {
+                "key": "Authorization",
+                "value": "Bearer {{admintoken}}",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "[\n\t\"Category ID of first placed category\",\n\t\"Category ID of second placed category\",\n\t\"Category ID of third placed category\"\n]"
+            },
+            "url": "https://{{your-marketplace}}.arcadier.io/api/v2/admins/{{adminID}}/categories",
+            "description": "This API rearranges the sequence in which the order appears to the Admin and the users. The sequence will be exactly matched with the sequence of the category IDs you put in the JSON body as shown in the examples.\n\n#### Authentication\n> Admin token only"
+          },
+          "response": [
+            {
+              "id": "f32f61b6-e8cf-4ae1-9563-6ad5be5483b9",
+              "name": "Sort Categories",
+              "originalRequest": {
+                "method": "PUT",
+                "header": [
+                  {
+                    "key": "Content-Type",
+                    "name": "Content-Type",
+                    "type": "text",
+                    "value": "application/json"
+                  },
+                  {
+                    "key": "Authorization",
+                    "value": "Bearer {{admintoken}}",
+                    "type": "text"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "[\t\n\t\"9f008e17-fda6-4466-be49-b2de2adc67a0\",\n\t\"84ab2eef-87fa-4e41-add8-c63670783230\",\n\t\"479b3df3-44a1-41cf-84ed-95ee4ff0206e\",\n\t\"a797d917-11a8-4590-99af-24a6cdd1d3e3\"\n]\n"
+                },
+                "url": "https://{{your-marketplace}}.arcadier.io/api/v2/admins/{{adminID}}/categories"
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Cache-Control",
+                  "value": "no-cache"
+                },
+                {
+                  "key": "Pragma",
+                  "value": "no-cache"
+                },
+                {
+                  "key": "Content-Type",
+                  "value": "application/json; charset=utf-8"
+                },
+                {
+                  "key": "Expires",
+                  "value": "-1"
+                },
+                {
+                  "key": "request-id",
+                  "value": "bcd0aaee-5cef-44bc-a226-bacf27d52911"
+                },
+                {
+                  "key": "api-version",
+                  "value": "v2"
+                },
+                {
+                  "key": "X-XSS-Protection",
+                  "value": "1; mode=block"
+                },
+                {
+                  "key": "X-Content-Type-Options",
+                  "value": "nosniff"
+                },
+                {
+                  "key": "X-Powered-By",
+                  "value": "ARR/3.0"
+                },
+                {
+                  "key": "Date",
+                  "value": "Tue, 17 Sep 2019 04:04:23 GMT"
+                },
+                {
+                  "key": "Content-Length",
+                  "value": "1282"
+                }
+              ],
+              "cookie": [],
+              "responseTime": null,
+              "body": "[\n    {\n        \"ID\": \"a797d917-11a8-4590-99af-24a6cdd1d3e3\",\n        \"Name\": \"Category1\",\n        \"Description\": \"This is Category1\",\n        \"SortOrder\": 3,\n        \"Media\": null,\n        \"ParentCategoryID\": null,\n        \"ChildCategories\": null,\n        \"Level\": null,\n        \"CreatedDateTime\": 1566198170,\n        \"ModifiedDateTime\": 1568693064,\n        \"Commission\": null\n    },\n    {\n        \"ID\": \"479b3df3-44a1-41cf-84ed-95ee4ff0206e\",\n        \"Name\": \"Category2\",\n        \"Description\": \"This is Category2\",\n        \"SortOrder\": 2,\n        \"Media\": null,\n        \"ParentCategoryID\": null,\n        \"ChildCategories\": null,\n        \"Level\": null,\n        \"CreatedDateTime\": 1566198170,\n        \"ModifiedDateTime\": 1568693064,\n        \"Commission\": null\n    },\n    {\n        \"ID\": \"84ab2eef-87fa-4e41-add8-c63670783230\",\n        \"Name\": \"SubCategory 2B\",\n        \"Description\": \"This is SubCategory B of Category2\",\n        \"SortOrder\": 1,\n        \"Media\": null,\n        \"ParentCategoryID\": null,\n        \"ChildCategories\": null,\n        \"Level\": null,\n        \"CreatedDateTime\": 1566198170,\n        \"ModifiedDateTime\": 1568693064,\n        \"Commission\": null\n    },\n    {\n        \"ID\": \"9f008e17-fda6-4466-be49-b2de2adc67a0\",\n        \"Name\": \"Keys\",\n        \"Description\": \"The finest collection of keys be it classic or electronic\",\n        \"SortOrder\": 0,\n        \"Media\": [\n            {\n                \"ID\": null,\n                \"MediaUrl\": \"https://static1.squarespace.com/static/58c25c63cd0f68722ca260d8/5b0d95998a922d7f4d0ed3bb/5b15f40c88251b408d488515/1528165492648/OMS+PIANO+IMAGE+1.JPG\"\n            }\n        ],\n        \"ParentCategoryID\": null,\n        \"ChildCategories\": null,\n        \"Level\": null,\n        \"CreatedDateTime\": 1568614342,\n        \"ModifiedDateTime\": 1568693064,\n        \"Commission\": null\n    }\n]"
+            }
+          ]
+        },
+        {
+          "name": "Update a category",
+          "_postman_id": "8b562c45-5d49-4c49-b24f-64becb20fe9c",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "auth": {
+              "type": "noauth"
+            },
+            "method": "PUT",
+            "header": [
+              {
+                "key": "Content-Type",
+                "name": "Content-Type",
+                "value": "application/json",
+                "type": "text"
+              },
+              {
+                "key": "Authorization",
+                "value": "Bearer {{admintoken}}",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n  \"ID\": \"00000000-0000-0000-0000-000000000000\",\r\n  \"Name\": \"string\",\r\n  \"Description\": \"string\",\r\n  \"SortOrder\": 0,\r\n  \"Media\": [\r\n    {\r\n      \"ID\": \"00000000-0000-0000-0000-000000000000\",\r\n      \"MediaUrl\": \"string\"\r\n    }\r\n  ],\r\n  \"ParentCategoryID\": \"00000000-0000-0000-0000-000000000000\",\r\n  \"ChildCategories\": [\r\n    {}\r\n  ],\r\n  \"Level\": 0\r\n}"
+            },
+            "url": "https://{{your-marketplace}}.arcadier.io/api/v2/admins/{{adminID}}/categories/{{categoryID_to_update}}",
+            "description": "Edits details of a Category/Sub-Category\n\n#### Authentication\n> Admin token only"
+          },
+          "response": [
+            {
+              "id": "24eca2ba-7c44-467c-86af-56459b95cf9f",
+              "name": "Changing the name of a category",
+              "originalRequest": {
+                "method": "PUT",
+                "header": [
+                  {
+                    "key": "Content-Type",
+                    "name": "Content-Type",
+                    "value": "application/json",
+                    "type": "text"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\r\n  \"ID\": \"b60a0dbb-6785-4a06-a6d0-1517968876d8\",\r\n  \"Name\": \"Drums & Equipment\"\r\n}"
+                },
+                "url": "https://{{your-marketplace}}.arcadier.io/api/v2/admins/{{adminID}}/categories/{{categoryID_to_update}}"
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Cache-Control",
+                  "value": "no-cache"
+                },
+                {
+                  "key": "Pragma",
+                  "value": "no-cache"
+                },
+                {
+                  "key": "Content-Type",
+                  "value": "application/json; charset=utf-8"
+                },
+                {
+                  "key": "Content-Encoding",
+                  "value": "gzip"
+                },
+                {
+                  "key": "Expires",
+                  "value": "-1"
+                },
+                {
+                  "key": "Vary",
+                  "value": "Accept-Encoding"
+                },
+                {
+                  "key": "X-StackifyID",
+                  "value": "V1|80000014-1401-d200-b63f-84710c7967bb|"
+                },
+                {
+                  "key": "api-version",
+                  "value": "v2"
+                },
+                {
+                  "key": "X-XSS-Protection",
+                  "value": "1; mode=block"
+                },
+                {
+                  "key": "X-Content-Type-Options",
+                  "value": "nosniff"
+                },
+                {
+                  "key": "Date",
+                  "value": "Fri, 29 Mar 2019 08:51:42 GMT"
+                },
+                {
+                  "key": "Content-Length",
+                  "value": "366"
+                }
+              ],
+              "cookie": [],
+              "responseTime": null,
+              "body": "{\n    \"ID\": \"b60a0dbb-6785-4a06-a6d0-1517968876d8\",\n    \"Name\": \"Drums & Equipment\",\n    \"SortOrder\": 0,\n    \"Media\": [\n        {\n            \"MediaUrl\": \"https://royally.test.arcadier.io/images/categories/02a91e63897afdd5ecbeaca11b194039-462u00j3hf0tzvd9rnic7s2eo.jpg\"\n        }\n    ],\n    \"CreatedDateTime\": 1553748032,\n    \"ModifiedDateTime\": 1553849502\n}"
+            }
+          ]
+        }
+      ],
+      "_postman_id": "f3ea7649-b5b1-46e9-a160-61bb8c41efe4"
     },
     {
       "name": "Custom Fields",
