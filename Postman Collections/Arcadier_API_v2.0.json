@@ -2587,12 +2587,6 @@
           "_postman_isSubFolder": true
         },
         {
-          "name": "Checking Out",
-          "item": [],
-          "_postman_id": "60822fa5-ec0f-4f12-875e-4ff9f73402d4",
-          "_postman_isSubFolder": true
-        },
-        {
           "name": "Checkout - Generate Invoice and Orders from Cart",
           "_postman_id": "4b0bc4da-201c-472e-8deb-1a2e1099f908",
           "protocolProfileBehavior": {
