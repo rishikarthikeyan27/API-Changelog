@@ -178,7 +178,7 @@
               }
             ],
             "url": "https://{{your-marketplace}}.arcadier.io/api/v2/accounts/sign-out",
-            "description": "This API ends the session of a user using his/her authentication token.\n\n#### Authentication\n> Valid token of an ongoing session"
+            "description": "This API ends the session of a user using his/her [authentication token](https://apiv2.arcadier.com/?version=latest#intro).\n\n#### Authentication\n> Valid token of an ongoing session"
           },
           "response": [
             {
