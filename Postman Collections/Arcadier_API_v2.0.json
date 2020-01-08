@@ -2813,17 +2813,47 @@
                   "body": "{\n    \"ID\": \"3af12754-7956-41a8-a6c9-1a0ad8224d6c\",\n    \"CurrencyCode\": \"SGD\",\n    \"Total\": 1,\n    \"Tax\": null,\n    \"Freight\": 14,\n    \"Surcharge\": null,\n    \"Rounding\": 0,\n    \"GrandTotal\": 15,\n    \"Balance\": null,\n    \"Adjustment\": null,\n    \"Reason\": null,\n    \"OrderType\": null,\n    \"DiscountAmount\": null,\n    \"MerchantDetail\": null,\n    \"ConsumerDetail\": null,\n    \"CartItemDetails\": null,\n    \"PaymentDetails\": null,\n    \"DeliveryFromAddress\": null,\n    \"DeliveryToAddress\": null,\n    \"FulfilmentStatus\": null,\n    \"PaymentStatus\": null,\n    \"CustomFields\": null,\n    \"DiscountDateTime\": null,\n    \"CreatedDateTime\": 1568708057\n}"
                 }
               ]
+            }
+          ],
+          "_postman_id": "1068fa83-b989-47f1-8c60-e5ef9ee33f15",
+          "_postman_isSubFolder": true
+        },
+        {
+          "name": "Post Checkout - Edit Order Details (Admin Auth)",
+          "_postman_id": "02990d95-cb5f-4040-9965-a88bcb342c1c",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "auth": {
+              "type": "noauth"
             },
-            {
-              "name": "Post Checkout - Edit Order Details (Admin Auth)",
-              "_postman_id": "02990d95-cb5f-4040-9965-a88bcb342c1c",
-              "protocolProfileBehavior": {
-                "disableBodyPruning": true
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "name": "Content-Type",
+                "value": "application/json",
+                "type": "text"
               },
-              "request": {
-                "auth": {
-                  "type": "noauth"
-                },
+              {
+                "key": "Authorization",
+                "value": "Bearer {{merchanttoken}}",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "[\n    {\n        \"ID\": \"00000000-0000-0000-0000-000000000000\",\n        \"FulfilmentStatus\": \"string\",\n        \"PaymentStatus\": \"string\",\n        \"CartItemType\": \"delivery\",\n        \"DeliveryToAddress\": {\n        \t\"ID\": \"00000000-0000-0000-0000-000000000000\"\n        }\n    },\n    {\n        \"ID\": \"00000000-0000-0000-0000-000000000000\",\n        \"FulfilmentStatus\": \"string\",\n        \"PaymentStatus\": \"string\",\n        \"CartItemType\": \"delivery\",\n        \"DeliveryToAddress\": {\n        \t\"ID\": \"00000000-0000-0000-0000-000000000000\"\n        }\n    }\n]"
+            },
+            "url": "https://{{your-marketplace}}.arcadier.io/api/v2/admins/{{adminID}}/orders",
+            "description": "This Admin API can update the statuses, and buyer delivery addresses of multiple orders in a single call.\n\n`\"FulfilmentStatus\"`: `\"Delivered\"` or `\"Acknowledged\"`\n* Delivered: The item reached the buyer.\n* Acknowledged: The item has not reached the buyer yet.\n\n`\"PaymentStatus\"`: `\"Acknowledged\"`, `\"Processing\"`, `\"Waiting For Payment\"`, `\"Pending\"`, `\"Paid\"`, `\"Failed\"`, `\"Refunded\"`\n* Depends on what is the status reported by the payment gateway, or what you decide it to be if you know what's the status of the money movement.\n\n#### Freight/Shipping (Add Shipping Fee)  \n\nThe shipping fee will be shown when the customer is checking out his/her items. \nHence, to modify the shipping fee, the two main APIs that can be called are:\n\n* [Post-Checkout - Edit Order Details](https://apiv2.arcadier.com/?version=latest#5b14eb44-8967-480e-82ea-166378754b2b)\n* Post-Checkout - Edit Order Details (Admin Auth)\n\n\nAs customers checkout, the **GrandTotal** of their payment is calculated as shown below:\n\t\n\tGrandTotal = [(Price of Item) x (Quantity of Item)] + Freight + Surcharge - Merchant Discount\n\nBy adding the parameter \"Freight\" to either API, the merchant/admin can add a shipping fee. The input for freight can be either an integer or a float with 2 decimal places. For instance, \u201cFreight\u201d : 20.00  or \u201cFreight\u201d : 20 .\n\n#### Authentication\n> Admin token only."
+          },
+          "response": [
+            {
+              "id": "acab2d0f-6741-4c75-a787-4d9a466b9b0e",
+              "name": "Update Fulfilment and Payment Statuses",
+              "originalRequest": {
                 "method": "POST",
                 "header": [
                   {
@@ -2840,98 +2870,98 @@
                 ],
                 "body": {
                   "mode": "raw",
-                  "raw": "[\n    {\n        \"ID\": \"00000000-0000-0000-0000-000000000000\",\n        \"FulfilmentStatus\": \"string\",\n        \"PaymentStatus\": \"string\",\n        \"CartItemType\": \"delivery\",\n        \"DeliveryToAddress\": {\n        \t\"ID\": \"00000000-0000-0000-0000-000000000000\"\n        }\n    },\n    {\n        \"ID\": \"00000000-0000-0000-0000-000000000000\",\n        \"FulfilmentStatus\": \"string\",\n        \"PaymentStatus\": \"string\",\n        \"CartItemType\": \"delivery\",\n        \"DeliveryToAddress\": {\n        \t\"ID\": \"00000000-0000-0000-0000-000000000000\"\n        }\n    }\n]"
+                  "raw": "[\n    {\n        \"ID\": \"3af12754-7956-41a8-a6c9-1a0ad8224d6c\",\n        \"FulfilmentStatus\": \"Delivered\",\n        \"PaymentStatus\": \"Paid\"\n    }\n]"
                 },
-                "url": "https://{{your-marketplace}}.arcadier.io/api/v2/admins/{{adminID}}/orders",
-                "description": "This Admin API can update the statuses, and buyer delivery addresses of multiple orders in a single call.\n\n`\"FulfilmentStatus\"`: `\"Delivered\"` or `\"Acknowledged\"`\n* Delivered: The item reached the buyer.\n* Acknowledged: The item has not reached the buyer yet.\n\n`\"PaymentStatus\"`: `\"Acknowledged\"`, `\"Processing\"`, `\"Waiting For Payment\"`, `\"Pending\"`, `\"Paid\"`, `\"Failed\"`, `\"Refunded\"`\n* Depends on what is the status reported by the payment gateway, or what you decide it to be if you know what's the status of the money movement.\n\n#### Freight/Shipping (Add Shipping Fee)  \n\nThe shipping fee will be shown when the customer is checking out his/her items. \nHence, to modify the shipping fee, the two main APIs that can be called are:\n\n* [Post-Checkout - Edit Order Details](https://apiv2.arcadier.com/?version=latest#5b14eb44-8967-480e-82ea-166378754b2b)\n* Post-Checkout - Edit Order Details (Admin Auth)\n\n\nAs customers checkout, the **GrandTotal** of their payment is calculated as shown below:\n\t\n\tGrandTotal = [(Price of Item) x (Quantity of Item)] + Freight + Surcharge - Merchant Discount\n\nBy adding the parameter \"Freight\" to either API, the merchant/admin can add a shipping fee. The input for freight can be either an integer or a float with 2 decimal places. For instance, \u201cFreight\u201d : 20.00  or \u201cFreight\u201d : 20 .\n\n#### Authentication\n> Admin token only."
+                "url": "https://{{your-marketplace}}.arcadier.io/api/v2/admins/{{adminID}}/orders"
               },
-              "response": [
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": "json",
+              "header": [
                 {
-                  "id": "acab2d0f-6741-4c75-a787-4d9a466b9b0e",
-                  "name": "Update Fulfilment and Payment Statuses",
-                  "originalRequest": {
-                    "method": "POST",
-                    "header": [
-                      {
-                        "key": "Content-Type",
-                        "name": "Content-Type",
-                        "value": "application/json",
-                        "type": "text"
-                      },
-                      {
-                        "key": "Authorization",
-                        "value": "Bearer {{merchanttoken}}",
-                        "type": "text"
-                      }
-                    ],
-                    "body": {
-                      "mode": "raw",
-                      "raw": "[\n    {\n        \"ID\": \"3af12754-7956-41a8-a6c9-1a0ad8224d6c\",\n        \"FulfilmentStatus\": \"Delivered\",\n        \"PaymentStatus\": \"Paid\"\n    }\n]"
-                    },
-                    "url": "https://{{your-marketplace}}.arcadier.io/api/v2/admins/{{adminID}}/orders"
-                  },
-                  "status": "OK",
-                  "code": 200,
-                  "_postman_previewlanguage": "json",
-                  "header": [
-                    {
-                      "key": "Cache-Control",
-                      "value": "no-cache"
-                    },
-                    {
-                      "key": "Pragma",
-                      "value": "no-cache"
-                    },
-                    {
-                      "key": "Content-Type",
-                      "value": "application/json; charset=utf-8"
-                    },
-                    {
-                      "key": "Expires",
-                      "value": "-1"
-                    },
-                    {
-                      "key": "request-id",
-                      "value": "9f0a5aad-3452-4dfb-a223-147f015e77e6"
-                    },
-                    {
-                      "key": "api-version",
-                      "value": "v2"
-                    },
-                    {
-                      "key": "X-XSS-Protection",
-                      "value": "1; mode=block"
-                    },
-                    {
-                      "key": "X-Content-Type-Options",
-                      "value": "nosniff"
-                    },
-                    {
-                      "key": "X-Powered-By",
-                      "value": "ARR/3.0"
-                    },
-                    {
-                      "key": "Date",
-                      "value": "Tue, 17 Sep 2019 08:49:16 GMT"
-                    },
-                    {
-                      "key": "Content-Length",
-                      "value": "2165"
-                    }
-                  ],
-                  "cookie": [],
-                  "responseTime": null,
-                  "body": "[\n    {\n        \"ID\": \"3af12754-7956-41a8-a6c9-1a0ad8224d6c\",\n        \"CurrencyCode\": \"SGD\",\n        \"Total\": 1,\n        \"Tax\": null,\n        \"Freight\": 14,\n        \"Surcharge\": null,\n        \"Rounding\": 0,\n        \"GrandTotal\": 15,\n        \"Balance\": null,\n        \"Adjustment\": null,\n        \"Reason\": null,\n        \"OrderType\": null,\n        \"DiscountAmount\": null,\n        \"MerchantDetail\": null,\n        \"ConsumerDetail\": null,\n        \"CartItemDetails\": [\n            {\n                \"ID\": \"40f2b41e-3bed-4e18-8a0f-5aa135b0ec77\",\n                \"Quantity\": \"2\",\n                \"CurrencyCode\": \"SGD\",\n                \"SubTotal\": 840,\n                \"Freight\": 30,\n                \"Notes\": null,\n                \"DiscountAmount\": 0.3,\n                \"OrderID\": null,\n                \"CartItemType\": \"delivery\",\n                \"ShippingMethod\": null,\n                \"PickupAddress\": null,\n                \"Feedback\": null,\n                \"AddOns\": [],\n                \"BookingSlot\": null,\n                \"ItemDetail\": {\n                    \"Variants\": [\n                        {\n                            \"ID\": \"deb927f0-6ced-4d63-ba66-983ac72394be\",\n                            \"Name\": \"API Variant 1\",\n                            \"GroupID\": \"a0b186cd-c44e-4444-a0f0-3331fa3a3d51\",\n                            \"GroupName\": \"API\",\n                            \"PriceChange\": null,\n                            \"SortOrder\": null\n                        },\n                        {\n                            \"ID\": \"5271770c-e176-428e-9023-e2d9db043f29\",\n                            \"Name\": \"API Variant 2\",\n                            \"GroupID\": \"504e5b0b-a06a-4a26-8247-4078e5e84704\",\n                            \"GroupName\": \"API 2\",\n                            \"PriceChange\": null,\n                            \"SortOrder\": null\n                        }\n                    ],\n                    \"ID\": \"16031381-837d-4f2e-8973-77f90bd00f81\",\n                    \"SKU\": \"3101\",\n                    \"Name\": \"Yamaha TRBX305 5 String Bass Guitar Postman Example Latest Final LAST FOSHO 3 4 5\",\n                    \"BuyerDescription\": \"Sculpted Mahogany Body\",\n                    \"SellerDescription\": \"Test Seller Desc\",\n                    \"Price\": 420,\n                    \"PriceUnit\": \"SGD\",\n                    \"StockLimited\": true,\n                    \"StockQuantity\": \"8\",\n                    \"IsVisibleToCustomer\": true,\n                    \"Active\": true,\n                    \"IsAvailable\": true,\n                    \"DateOfPurchase\": null,\n                    \"Weight\": null,\n                    \"WeightUnit\": null,\n                    \"Cubes\": null,\n                    \"CubeUnit\": null,\n                    \"Length\": null,\n                    \"LengthUnit\": null,\n                    \"Width\": null,\n                    \"WidthUnit\": null,\n                    \"Height\": null,\n                    \"HeightUnit\": null,\n                    \"AdditionalDetails\": null,\n                    \"ExpiryDate\": null,\n                    \"CurrencyCode\": \"SGD\",\n                    \"ParentID\": null,\n                    \"AverageRating\": null,\n                    \"InstantBuy\": null,\n                    \"Negotiation\": null,\n                    \"MerchantDetail\": null,\n                    \"Location\": null,\n                    \"Categories\": null,\n                    \"ShippingMethods\": null,\n                    \"PickupAddresses\": null,\n                    \"Media\": null,\n                    \"Tags\": [\n                        \"API Tag\",\n                        \"API Tag 2\"\n                    ],\n                    \"Scheduler\": null,\n                    \"Distance\": null,\n                    \"CustomFields\": null,\n                    \"CreatedDateTime\": null,\n                    \"ModifiedDateTime\": null,\n                    \"HasChildItems\": false,\n                    \"ChildItems\": null\n                },\n                \"User\": null,\n                \"AcceptedOffer\": null\n            }\n        ],\n        \"PaymentDetails\": null,\n        \"DeliveryFromAddress\": null,\n        \"DeliveryToAddress\": null,\n        \"FulfilmentStatus\": \"Delivered\",\n        \"PaymentStatus\": \"Paid\",\n        \"CustomFields\": null,\n        \"DiscountDateTime\": null,\n        \"CreatedDateTime\": 1568708057\n    }\n]"
+                  "key": "Cache-Control",
+                  "value": "no-cache"
+                },
+                {
+                  "key": "Pragma",
+                  "value": "no-cache"
+                },
+                {
+                  "key": "Content-Type",
+                  "value": "application/json; charset=utf-8"
+                },
+                {
+                  "key": "Expires",
+                  "value": "-1"
+                },
+                {
+                  "key": "request-id",
+                  "value": "9f0a5aad-3452-4dfb-a223-147f015e77e6"
+                },
+                {
+                  "key": "api-version",
+                  "value": "v2"
+                },
+                {
+                  "key": "X-XSS-Protection",
+                  "value": "1; mode=block"
+                },
+                {
+                  "key": "X-Content-Type-Options",
+                  "value": "nosniff"
+                },
+                {
+                  "key": "X-Powered-By",
+                  "value": "ARR/3.0"
+                },
+                {
+                  "key": "Date",
+                  "value": "Tue, 17 Sep 2019 08:49:16 GMT"
+                },
+                {
+                  "key": "Content-Length",
+                  "value": "2165"
                 }
-              ]
-            },
-            {
-              "name": "Post-Checkout - Update payments for Invoice Number",
-              "_postman_id": "68a1094c-77b6-45fb-acc2-aec053d94a28",
-              "protocolProfileBehavior": {
-                "disableBodyPruning": true
+              ],
+              "cookie": [],
+              "responseTime": null,
+              "body": "[\n    {\n        \"ID\": \"3af12754-7956-41a8-a6c9-1a0ad8224d6c\",\n        \"CurrencyCode\": \"SGD\",\n        \"Total\": 1,\n        \"Tax\": null,\n        \"Freight\": 14,\n        \"Surcharge\": null,\n        \"Rounding\": 0,\n        \"GrandTotal\": 15,\n        \"Balance\": null,\n        \"Adjustment\": null,\n        \"Reason\": null,\n        \"OrderType\": null,\n        \"DiscountAmount\": null,\n        \"MerchantDetail\": null,\n        \"ConsumerDetail\": null,\n        \"CartItemDetails\": [\n            {\n                \"ID\": \"40f2b41e-3bed-4e18-8a0f-5aa135b0ec77\",\n                \"Quantity\": \"2\",\n                \"CurrencyCode\": \"SGD\",\n                \"SubTotal\": 840,\n                \"Freight\": 30,\n                \"Notes\": null,\n                \"DiscountAmount\": 0.3,\n                \"OrderID\": null,\n                \"CartItemType\": \"delivery\",\n                \"ShippingMethod\": null,\n                \"PickupAddress\": null,\n                \"Feedback\": null,\n                \"AddOns\": [],\n                \"BookingSlot\": null,\n                \"ItemDetail\": {\n                    \"Variants\": [\n                        {\n                            \"ID\": \"deb927f0-6ced-4d63-ba66-983ac72394be\",\n                            \"Name\": \"API Variant 1\",\n                            \"GroupID\": \"a0b186cd-c44e-4444-a0f0-3331fa3a3d51\",\n                            \"GroupName\": \"API\",\n                            \"PriceChange\": null,\n                            \"SortOrder\": null\n                        },\n                        {\n                            \"ID\": \"5271770c-e176-428e-9023-e2d9db043f29\",\n                            \"Name\": \"API Variant 2\",\n                            \"GroupID\": \"504e5b0b-a06a-4a26-8247-4078e5e84704\",\n                            \"GroupName\": \"API 2\",\n                            \"PriceChange\": null,\n                            \"SortOrder\": null\n                        }\n                    ],\n                    \"ID\": \"16031381-837d-4f2e-8973-77f90bd00f81\",\n                    \"SKU\": \"3101\",\n                    \"Name\": \"Yamaha TRBX305 5 String Bass Guitar Postman Example Latest Final LAST FOSHO 3 4 5\",\n                    \"BuyerDescription\": \"Sculpted Mahogany Body\",\n                    \"SellerDescription\": \"Test Seller Desc\",\n                    \"Price\": 420,\n                    \"PriceUnit\": \"SGD\",\n                    \"StockLimited\": true,\n                    \"StockQuantity\": \"8\",\n                    \"IsVisibleToCustomer\": true,\n                    \"Active\": true,\n                    \"IsAvailable\": true,\n                    \"DateOfPurchase\": null,\n                    \"Weight\": null,\n                    \"WeightUnit\": null,\n                    \"Cubes\": null,\n                    \"CubeUnit\": null,\n                    \"Length\": null,\n                    \"LengthUnit\": null,\n                    \"Width\": null,\n                    \"WidthUnit\": null,\n                    \"Height\": null,\n                    \"HeightUnit\": null,\n                    \"AdditionalDetails\": null,\n                    \"ExpiryDate\": null,\n                    \"CurrencyCode\": \"SGD\",\n                    \"ParentID\": null,\n                    \"AverageRating\": null,\n                    \"InstantBuy\": null,\n                    \"Negotiation\": null,\n                    \"MerchantDetail\": null,\n                    \"Location\": null,\n                    \"Categories\": null,\n                    \"ShippingMethods\": null,\n                    \"PickupAddresses\": null,\n                    \"Media\": null,\n                    \"Tags\": [\n                        \"API Tag\",\n                        \"API Tag 2\"\n                    ],\n                    \"Scheduler\": null,\n                    \"Distance\": null,\n                    \"CustomFields\": null,\n                    \"CreatedDateTime\": null,\n                    \"ModifiedDateTime\": null,\n                    \"HasChildItems\": false,\n                    \"ChildItems\": null\n                },\n                \"User\": null,\n                \"AcceptedOffer\": null\n            }\n        ],\n        \"PaymentDetails\": null,\n        \"DeliveryFromAddress\": null,\n        \"DeliveryToAddress\": null,\n        \"FulfilmentStatus\": \"Delivered\",\n        \"PaymentStatus\": \"Paid\",\n        \"CustomFields\": null,\n        \"DiscountDateTime\": null,\n        \"CreatedDateTime\": 1568708057\n    }\n]"
+            }
+          ]
+        },
+        {
+          "name": "Post-Checkout - Update payments for Invoice Number",
+          "_postman_id": "68a1094c-77b6-45fb-acc2-aec053d94a28",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "PUT",
+            "header": [
+              {
+                "key": "Content-Type",
+                "name": "Content-Type",
+                "value": "application/json",
+                "type": "text"
               },
-              "request": {
+              {
+                "key": "Authorization",
+                "value": "Bearer {{merchanttoken}}",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "[\n  {\n    \"Payee\": {\n      \"ID\": \"00000000-0000-0000-0000-000000000000\"\n    },\n    \"Order\": {\n      \"ID\": \"00000000-0000-0000-0000-000000000000\"\n    },\n    \"Total\": 0,\n    \"Fee\": 0,\n    \"Status\": \"string\",\n    \"Refunded\": false,\n    \"RefundedRef\": \"string\",\n    \"GatewayPayKey\": \"string\",\n    \"GatewayTransactionID\": \"string\",\n    \"GatewayStatus\": \"string\",\n    \"GatewayTimeStamp\": \"string\",\n    \"GatewayRef\": \"string\",\n    \"GatewayCorrelationId\": \"string\",\n    \"GatewaySenderId\": \"string\",\n    \"GatewaySenderRef\": \"string\",\n    \"GatewayReceiverId\": \"string\",\n    \"GatewayReceiverRef\": \"string\",\n    \"Gateway\": {\n      \"Code\": \"string\"\n    },\n    \"DateTimePaid\": 0\n  }\n]"
+            },
+            "url": "https://{{your-marketplace}}.arcadier.io/api/v2/admins/{{adminID}}/invoices/{{invoiceID}}",
+            "description": "Updates Marketplace's databases on payment details received from the payment gateway after a successful/pending/failed transaction has occured.\n\n#### Required parameters:\n> Payee.ID - merchant GUID\n>\n> Order.ID - order GUID\n>\n> Status\n\n* Values taken by `\"Status\"`: `\"Cancelled\"`, `\"Failed\"`, `\"Processing\"`, `\"Refunded\"`, `\"Success\"`, `\"Waiting For Payment\"`.\n* `\"Total\"` and `\"Fee\"` take the values of the original invoice by default. They can be updated manually.\n  * If `\"Status\"` is set to `\"Success\"`. Then you can omit `\"Total\"` and `\"Fee\"`.\n* The `\"Gatewayxxxxx\"` parameters are optional and can take anything.\n* `\"DateTimePaid\"` takes date-time in unix format (seconds from 01/01/1970).\n\nAfter setting `\"Status\"` to `\"Sucess\"`, the transaction will show up on the Administrator Dashboard.\n\n#### Authentication\n> Admin token only"
+          },
+          "response": [
+            {
+              "id": "4bd1e530-d165-4025-a965-8a4f6b4e5bf4",
+              "name": "Post-Checkout - Update payments for Invoice Number",
+              "originalRequest": {
                 "method": "PUT",
                 "header": [
                   {
@@ -2948,94 +2978,64 @@
                 ],
                 "body": {
                   "mode": "raw",
-                  "raw": "[\n  {\n    \"Payee\": {\n      \"ID\": \"00000000-0000-0000-0000-000000000000\"\n    },\n    \"Order\": {\n      \"ID\": \"00000000-0000-0000-0000-000000000000\"\n    },\n    \"Total\": 0,\n    \"Fee\": 0,\n    \"Status\": \"string\",\n    \"Refunded\": false,\n    \"RefundedRef\": \"string\",\n    \"GatewayPayKey\": \"string\",\n    \"GatewayTransactionID\": \"string\",\n    \"GatewayStatus\": \"string\",\n    \"GatewayTimeStamp\": \"string\",\n    \"GatewayRef\": \"string\",\n    \"GatewayCorrelationId\": \"string\",\n    \"GatewaySenderId\": \"string\",\n    \"GatewaySenderRef\": \"string\",\n    \"GatewayReceiverId\": \"string\",\n    \"GatewayReceiverRef\": \"string\",\n    \"Gateway\": {\n      \"Code\": \"string\"\n    },\n    \"DateTimePaid\": 0\n  }\n]"
+                  "raw": "[\n    {\n        \"InvoiceNo\": \"TANOO1567485883WAUG\",\n        \"Payer\": {\n            \"ID\": \"5c5d488a-e4c4-414b-a299-c7242b7cfbc5\"\n        },\n        \"Payee\": {\n            \"ID\": \"d90ca45c-3c56-459b-bfab-7d755111be2a\"\n        },\n        \"Order\": {\n            \"ID\": \"43b224da-f8ab-4732-ae97-32f3a3fa6505\"\n        },\n        \"Status\": \"Success\",\n        \"GatewayPayKey\": \"From payment gateway\",\n        \"GatewayTransactionID\": \"From payment gateway\",\n        \"GatewayStatus\": \"From payment gateway\",\n        \"GatewayTimeStamp\": \"From payment gateway\",\n        \"GatewayRef\": \"From payment gateway\",\n        \"GatewayCorrelationId\": \"From payment gateway\",\n        \"GatewaySenderId\": \"From payment gateway\",\n        \"GatewaySenderRef\": \"From payment gateway\",\n        \"GatewayReceiverId\": \"From payment gateway\",\n        \"GatewayReceiverRef\": \"From payment gateway\",\n        \"Gateway\": {\n            \"Code\": \"stripe\"\n        }\n    }\n]"
                 },
-                "url": "https://{{your-marketplace}}.arcadier.io/api/v2/admins/{{adminID}}/invoices/{{invoiceID}}",
-                "description": "Updates Marketplace's databases on payment details received from the payment gateway after a successful/pending/failed transaction has occured.\n\n#### Required parameters:\n> Payee.ID - merchant GUID\n>\n> Order.ID - order GUID\n>\n> Status\n\n* Values taken by `\"Status\"`: `\"Cancelled\"`, `\"Failed\"`, `\"Processing\"`, `\"Refunded\"`, `\"Success\"`, `\"Waiting For Payment\"`.\n* `\"Total\"` and `\"Fee\"` take the values of the original invoice by default. They can be updated manually.\n  * If `\"Status\"` is set to `\"Success\"`. Then you can omit `\"Total\"` and `\"Fee\"`.\n* The `\"Gatewayxxxxx\"` parameters are optional and can take anything.\n* `\"DateTimePaid\"` takes date-time in unix format (seconds from 01/01/1970).\n\nAfter setting `\"Status\"` to `\"Sucess\"`, the transaction will show up on the Administrator Dashboard.\n\n#### Authentication\n> Admin token only"
+                "url": "https://{{your-marketplace}}.arcadier.io/api/v2/admins/{{adminID}}/invoices/{{invoiceID}}"
               },
-              "response": [
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": "json",
+              "header": [
                 {
-                  "id": "4bd1e530-d165-4025-a965-8a4f6b4e5bf4",
-                  "name": "Post-Checkout - Update payments for Invoice Number",
-                  "originalRequest": {
-                    "method": "PUT",
-                    "header": [
-                      {
-                        "key": "Content-Type",
-                        "name": "Content-Type",
-                        "value": "application/json",
-                        "type": "text"
-                      },
-                      {
-                        "key": "Authorization",
-                        "value": "Bearer {{merchanttoken}}",
-                        "type": "text"
-                      }
-                    ],
-                    "body": {
-                      "mode": "raw",
-                      "raw": "[\n    {\n        \"InvoiceNo\": \"TANOO1567485883WAUG\",\n        \"Payer\": {\n            \"ID\": \"5c5d488a-e4c4-414b-a299-c7242b7cfbc5\"\n        },\n        \"Payee\": {\n            \"ID\": \"d90ca45c-3c56-459b-bfab-7d755111be2a\"\n        },\n        \"Order\": {\n            \"ID\": \"43b224da-f8ab-4732-ae97-32f3a3fa6505\"\n        },\n        \"Status\": \"Success\",\n        \"GatewayPayKey\": \"From payment gateway\",\n        \"GatewayTransactionID\": \"From payment gateway\",\n        \"GatewayStatus\": \"From payment gateway\",\n        \"GatewayTimeStamp\": \"From payment gateway\",\n        \"GatewayRef\": \"From payment gateway\",\n        \"GatewayCorrelationId\": \"From payment gateway\",\n        \"GatewaySenderId\": \"From payment gateway\",\n        \"GatewaySenderRef\": \"From payment gateway\",\n        \"GatewayReceiverId\": \"From payment gateway\",\n        \"GatewayReceiverRef\": \"From payment gateway\",\n        \"Gateway\": {\n            \"Code\": \"stripe\"\n        }\n    }\n]"
-                    },
-                    "url": "https://{{your-marketplace}}.arcadier.io/api/v2/admins/{{adminID}}/invoices/{{invoiceID}}"
-                  },
-                  "status": "OK",
-                  "code": 200,
-                  "_postman_previewlanguage": "json",
-                  "header": [
-                    {
-                      "key": "Cache-Control",
-                      "value": "no-cache"
-                    },
-                    {
-                      "key": "Pragma",
-                      "value": "no-cache"
-                    },
-                    {
-                      "key": "Content-Type",
-                      "value": "application/json; charset=utf-8"
-                    },
-                    {
-                      "key": "Expires",
-                      "value": "-1"
-                    },
-                    {
-                      "key": "request-id",
-                      "value": "f4b822cb-00f3-4e42-bc66-af97609cb21f"
-                    },
-                    {
-                      "key": "api-version",
-                      "value": "v2"
-                    },
-                    {
-                      "key": "X-XSS-Protection",
-                      "value": "1; mode=block"
-                    },
-                    {
-                      "key": "X-Content-Type-Options",
-                      "value": "nosniff"
-                    },
-                    {
-                      "key": "X-Powered-By",
-                      "value": "ARR/3.0"
-                    },
-                    {
-                      "key": "Date",
-                      "value": "Tue, 17 Sep 2019 08:35:46 GMT"
-                    },
-                    {
-                      "key": "Content-Length",
-                      "value": "3024"
-                    }
-                  ],
-                  "cookie": [],
-                  "responseTime": null,
-                  "body": "[\n    {\n        \"InvoiceNo\": \"TANOO1567485883WAUG\",\n        \"Payer\": {\n            \"ID\": \"e6e67a9d-cc28-46cf-8f8e-d1abc5b76851\",\n            \"Email\": \"tanoo@arcadier.com\",\n            \"FirstName\": \"Charlie\",\n            \"LastName\": \"Davis\",\n            \"DisplayName\": null,\n            \"Description\": null,\n            \"DOB\": null,\n            \"PhoneNumber\": \"10897340\",\n            \"DateJoined\": null,\n            \"Roles\": null,\n            \"Media\": null,\n            \"CustomFields\": null,\n            \"TimeZone\": null,\n            \"Onboarded\": null,\n            \"OnboardedDateTime\": null,\n            \"Active\": null,\n            \"Enabled\": null,\n            \"Visible\": null,\n            \"Addresses\": null,\n            \"PaymentMethods\": null,\n            \"PaymentAcceptanceMethods\": null,\n            \"UserLogin\": null\n        },\n        \"Payee\": {\n            \"ID\": \"1e813962-bd57-4abf-9247-84c0cdd06771\",\n            \"Email\": \"Merchant33\",\n            \"FirstName\": \"Olivia\",\n            \"LastName\": \"Smith\",\n            \"DisplayName\": null,\n            \"Description\": null,\n            \"DOB\": null,\n            \"PhoneNumber\": \"34360320\",\n            \"DateJoined\": null,\n            \"Roles\": null,\n            \"Media\": null,\n            \"CustomFields\": null,\n            \"TimeZone\": null,\n            \"Onboarded\": null,\n            \"OnboardedDateTime\": null,\n            \"Active\": null,\n            \"Enabled\": null,\n            \"Visible\": null,\n            \"Addresses\": null,\n            \"PaymentMethods\": null,\n            \"PaymentAcceptanceMethods\": null,\n            \"UserLogin\": null\n        },\n        \"Order\": null,\n        \"CurrencyCode\": \"SGD\",\n        \"Total\": 124,\n        \"Fee\": 0,\n        \"Status\": null,\n        \"Refunded\": false,\n        \"RefundedRef\": null,\n        \"GatewayPayKey\": null,\n        \"GatewayTransactionID\": null,\n        \"GatewayStatus\": null,\n        \"GatewayTimeStamp\": null,\n        \"GatewayRef\": null,\n        \"GatewayCorrelationId\": null,\n        \"GatewaySenderId\": null,\n        \"GatewaySenderRef\": null,\n        \"GatewayReceiverId\": null,\n        \"GatewayReceiverRef\": null,\n        \"Gateway\": {\n            \"Code\": null,\n            \"Description\": null,\n            \"Gateway\": null,\n            \"Active\": null,\n            \"Logo\": null,\n            \"CustomFields\": null,\n            \"Meta\": null\n        },\n        \"DateTimeCreated\": 1567485883,\n        \"DateTimePaid\": null,\n        \"DateTimeSubmittedForApproval\": null,\n        \"DateTimeRefunded\": null\n    },\n    {\n        \"InvoiceNo\": \"TANOO1567485883WAUG\",\n        \"Payer\": {\n            \"ID\": \"e6e67a9d-cc28-46cf-8f8e-d1abc5b76851\",\n            \"Email\": \"tanoo@arcadier.com\",\n            \"FirstName\": \"Charlie\",\n            \"LastName\": \"Davis\",\n            \"DisplayName\": null,\n            \"Description\": null,\n            \"DOB\": null,\n            \"PhoneNumber\": \"10897340\",\n            \"DateJoined\": null,\n            \"Roles\": null,\n            \"Media\": null,\n            \"CustomFields\": null,\n            \"TimeZone\": null,\n            \"Onboarded\": null,\n            \"OnboardedDateTime\": null,\n            \"Active\": null,\n            \"Enabled\": null,\n            \"Visible\": null,\n            \"Addresses\": null,\n            \"PaymentMethods\": null,\n            \"PaymentAcceptanceMethods\": null,\n            \"UserLogin\": null\n        },\n        \"Payee\": {\n            \"ID\": \"af6bf51d-426e-4a31-bcfc-1ecaf706b202\",\n            \"Email\": \"tanoo_joy@hotmail.com\",\n            \"FirstName\": \"TanooJoy\",\n            \"LastName\": \"Joyekurun\",\n            \"DisplayName\": null,\n            \"Description\": null,\n            \"DOB\": null,\n            \"PhoneNumber\": \"90854839\",\n            \"DateJoined\": null,\n            \"Roles\": null,\n            \"Media\": null,\n            \"CustomFields\": null,\n            \"TimeZone\": null,\n            \"Onboarded\": null,\n            \"OnboardedDateTime\": null,\n            \"Active\": null,\n            \"Enabled\": null,\n            \"Visible\": null,\n            \"Addresses\": null,\n            \"PaymentMethods\": null,\n            \"PaymentAcceptanceMethods\": null,\n            \"UserLogin\": null\n        },\n        \"Order\": null,\n        \"CurrencyCode\": \"SGD\",\n        \"Total\": 0,\n        \"Fee\": 0,\n        \"Status\": null,\n        \"Refunded\": false,\n        \"RefundedRef\": null,\n        \"GatewayPayKey\": null,\n        \"GatewayTransactionID\": null,\n        \"GatewayStatus\": null,\n        \"GatewayTimeStamp\": null,\n        \"GatewayRef\": null,\n        \"GatewayCorrelationId\": null,\n        \"GatewaySenderId\": null,\n        \"GatewaySenderRef\": null,\n        \"GatewayReceiverId\": null,\n        \"GatewayReceiverRef\": null,\n        \"Gateway\": {\n            \"Code\": null,\n            \"Description\": null,\n            \"Gateway\": null,\n            \"Active\": null,\n            \"Logo\": null,\n            \"CustomFields\": null,\n            \"Meta\": null\n        },\n        \"DateTimeCreated\": 1567485883,\n        \"DateTimePaid\": null,\n        \"DateTimeSubmittedForApproval\": null,\n        \"DateTimeRefunded\": null\n    }\n]"
+                  "key": "Cache-Control",
+                  "value": "no-cache"
+                },
+                {
+                  "key": "Pragma",
+                  "value": "no-cache"
+                },
+                {
+                  "key": "Content-Type",
+                  "value": "application/json; charset=utf-8"
+                },
+                {
+                  "key": "Expires",
+                  "value": "-1"
+                },
+                {
+                  "key": "request-id",
+                  "value": "f4b822cb-00f3-4e42-bc66-af97609cb21f"
+                },
+                {
+                  "key": "api-version",
+                  "value": "v2"
+                },
+                {
+                  "key": "X-XSS-Protection",
+                  "value": "1; mode=block"
+                },
+                {
+                  "key": "X-Content-Type-Options",
+                  "value": "nosniff"
+                },
+                {
+                  "key": "X-Powered-By",
+                  "value": "ARR/3.0"
+                },
+                {
+                  "key": "Date",
+                  "value": "Tue, 17 Sep 2019 08:35:46 GMT"
+                },
+                {
+                  "key": "Content-Length",
+                  "value": "3024"
                 }
-              ]
+              ],
+              "cookie": [],
+              "responseTime": null,
+              "body": "[\n    {\n        \"InvoiceNo\": \"TANOO1567485883WAUG\",\n        \"Payer\": {\n            \"ID\": \"e6e67a9d-cc28-46cf-8f8e-d1abc5b76851\",\n            \"Email\": \"tanoo@arcadier.com\",\n            \"FirstName\": \"Charlie\",\n            \"LastName\": \"Davis\",\n            \"DisplayName\": null,\n            \"Description\": null,\n            \"DOB\": null,\n            \"PhoneNumber\": \"10897340\",\n            \"DateJoined\": null,\n            \"Roles\": null,\n            \"Media\": null,\n            \"CustomFields\": null,\n            \"TimeZone\": null,\n            \"Onboarded\": null,\n            \"OnboardedDateTime\": null,\n            \"Active\": null,\n            \"Enabled\": null,\n            \"Visible\": null,\n            \"Addresses\": null,\n            \"PaymentMethods\": null,\n            \"PaymentAcceptanceMethods\": null,\n            \"UserLogin\": null\n        },\n        \"Payee\": {\n            \"ID\": \"1e813962-bd57-4abf-9247-84c0cdd06771\",\n            \"Email\": \"Merchant33\",\n            \"FirstName\": \"Olivia\",\n            \"LastName\": \"Smith\",\n            \"DisplayName\": null,\n            \"Description\": null,\n            \"DOB\": null,\n            \"PhoneNumber\": \"34360320\",\n            \"DateJoined\": null,\n            \"Roles\": null,\n            \"Media\": null,\n            \"CustomFields\": null,\n            \"TimeZone\": null,\n            \"Onboarded\": null,\n            \"OnboardedDateTime\": null,\n            \"Active\": null,\n            \"Enabled\": null,\n            \"Visible\": null,\n            \"Addresses\": null,\n            \"PaymentMethods\": null,\n            \"PaymentAcceptanceMethods\": null,\n            \"UserLogin\": null\n        },\n        \"Order\": null,\n        \"CurrencyCode\": \"SGD\",\n        \"Total\": 124,\n        \"Fee\": 0,\n        \"Status\": null,\n        \"Refunded\": false,\n        \"RefundedRef\": null,\n        \"GatewayPayKey\": null,\n        \"GatewayTransactionID\": null,\n        \"GatewayStatus\": null,\n        \"GatewayTimeStamp\": null,\n        \"GatewayRef\": null,\n        \"GatewayCorrelationId\": null,\n        \"GatewaySenderId\": null,\n        \"GatewaySenderRef\": null,\n        \"GatewayReceiverId\": null,\n        \"GatewayReceiverRef\": null,\n        \"Gateway\": {\n            \"Code\": null,\n            \"Description\": null,\n            \"Gateway\": null,\n            \"Active\": null,\n            \"Logo\": null,\n            \"CustomFields\": null,\n            \"Meta\": null\n        },\n        \"DateTimeCreated\": 1567485883,\n        \"DateTimePaid\": null,\n        \"DateTimeSubmittedForApproval\": null,\n        \"DateTimeRefunded\": null\n    },\n    {\n        \"InvoiceNo\": \"TANOO1567485883WAUG\",\n        \"Payer\": {\n            \"ID\": \"e6e67a9d-cc28-46cf-8f8e-d1abc5b76851\",\n            \"Email\": \"tanoo@arcadier.com\",\n            \"FirstName\": \"Charlie\",\n            \"LastName\": \"Davis\",\n            \"DisplayName\": null,\n            \"Description\": null,\n            \"DOB\": null,\n            \"PhoneNumber\": \"10897340\",\n            \"DateJoined\": null,\n            \"Roles\": null,\n            \"Media\": null,\n            \"CustomFields\": null,\n            \"TimeZone\": null,\n            \"Onboarded\": null,\n            \"OnboardedDateTime\": null,\n            \"Active\": null,\n            \"Enabled\": null,\n            \"Visible\": null,\n            \"Addresses\": null,\n            \"PaymentMethods\": null,\n            \"PaymentAcceptanceMethods\": null,\n            \"UserLogin\": null\n        },\n        \"Payee\": {\n            \"ID\": \"af6bf51d-426e-4a31-bcfc-1ecaf706b202\",\n            \"Email\": \"tanoo_joy@hotmail.com\",\n            \"FirstName\": \"TanooJoy\",\n            \"LastName\": \"Joyekurun\",\n            \"DisplayName\": null,\n            \"Description\": null,\n            \"DOB\": null,\n            \"PhoneNumber\": \"90854839\",\n            \"DateJoined\": null,\n            \"Roles\": null,\n            \"Media\": null,\n            \"CustomFields\": null,\n            \"TimeZone\": null,\n            \"Onboarded\": null,\n            \"OnboardedDateTime\": null,\n            \"Active\": null,\n            \"Enabled\": null,\n            \"Visible\": null,\n            \"Addresses\": null,\n            \"PaymentMethods\": null,\n            \"PaymentAcceptanceMethods\": null,\n            \"UserLogin\": null\n        },\n        \"Order\": null,\n        \"CurrencyCode\": \"SGD\",\n        \"Total\": 0,\n        \"Fee\": 0,\n        \"Status\": null,\n        \"Refunded\": false,\n        \"RefundedRef\": null,\n        \"GatewayPayKey\": null,\n        \"GatewayTransactionID\": null,\n        \"GatewayStatus\": null,\n        \"GatewayTimeStamp\": null,\n        \"GatewayRef\": null,\n        \"GatewayCorrelationId\": null,\n        \"GatewaySenderId\": null,\n        \"GatewaySenderRef\": null,\n        \"GatewayReceiverId\": null,\n        \"GatewayReceiverRef\": null,\n        \"Gateway\": {\n            \"Code\": null,\n            \"Description\": null,\n            \"Gateway\": null,\n            \"Active\": null,\n            \"Logo\": null,\n            \"CustomFields\": null,\n            \"Meta\": null\n        },\n        \"DateTimeCreated\": 1567485883,\n        \"DateTimePaid\": null,\n        \"DateTimeSubmittedForApproval\": null,\n        \"DateTimeRefunded\": null\n    }\n]"
             }
-          ],
-          "_postman_id": "1068fa83-b989-47f1-8c60-e5ef9ee33f15",
-          "_postman_isSubFolder": true
+          ]
         }
       ],
       "_postman_id": "05d083e7-c44f-46d1-bab1-95e4dd0b0f3d",
