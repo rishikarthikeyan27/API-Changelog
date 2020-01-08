@@ -2279,6 +2279,12 @@
       "name": "Checkout",
       "item": [
         {
+          "name": "Pre-Checkout",
+          "item": [],
+          "_postman_id": "0fe75bd0-dff4-4af0-b7fb-f6a7afcc330f",
+          "_postman_isSubFolder": true
+        },
+        {
           "name": "Pre-Checkout - Add item to cart",
           "_postman_id": "ff3b5052-d889-4421-b419-942d1be7e19d",
           "protocolProfileBehavior": {
