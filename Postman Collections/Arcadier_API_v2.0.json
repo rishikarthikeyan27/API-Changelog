@@ -8939,151 +8939,6 @@
       ]
     },
     {
-      "name": "Media (Under Testing)",
-      "item": [
-        {
-          "name": "Get user Media",
-          "_postman_id": "459e0eee-feae-44b2-bb85-188511c64a8b",
-          "protocolProfileBehavior": {
-            "disableBodyPruning": true
-          },
-          "request": {
-            "auth": {
-              "type": "bearer",
-              "bearer": {
-                "token": "{{admintoken}}"
-              }
-            },
-            "method": "GET",
-            "header": [],
-            "url": "https://{{your-marketplace}}.arcadier.io/api/v2/users/{{userID}}/media",
-            "description": "Not implemented yet"
-          },
-          "response": []
-        },
-        {
-          "name": "Update Media",
-          "_postman_id": "e8bcc78a-aac6-46f6-ba6f-831378476a6b",
-          "protocolProfileBehavior": {
-            "disableBodyPruning": true
-          },
-          "request": {
-            "auth": {
-              "type": "bearer",
-              "bearer": {
-                "token": "{{admintoken}}"
-              }
-            },
-            "method": "POST",
-            "header": [],
-            "body": {
-              "mode": "formdata",
-              "formdata": [
-                {
-                  "key": "",
-                  "type": "file",
-                  "value": null
-                }
-              ]
-            },
-            "url": {
-              "raw": "https://{{your-marketplace}}.arcadier.io/api/v2/users/{{userID}}/media?purpose",
-              "protocol": "https",
-              "host": [
-                "{{your-marketplace}}",
-                "arcadier",
-                "io"
-              ],
-              "path": [
-                "api",
-                "v2",
-                "users",
-                "{{userID}}",
-                "media"
-              ],
-              "query": [
-                {
-                  "key": "purpose",
-                  "value": "",
-                  "type": "text"
-                }
-              ]
-            },
-            "description": "Uploads photos for the userID given.\n\n\"purpose\" takes values of: gateways, categories, items and users\n\n#### Authentication\n> Admin token for any any userID of that marketplace\n>\n> or\n>\n> userID's token if user is not Admin"
-          },
-          "response": [
-            {
-              "id": "805bf34c-72e3-484b-ab33-660f48d63109",
-              "name": "Update Media",
-              "originalRequest": {
-                "method": "POST",
-                "header": [],
-                "body": {
-                  "mode": "formdata",
-                  "formdata": [
-                    {
-                      "key": "",
-                      "type": "file"
-                    }
-                  ]
-                },
-                "url": "https://{{your-marketplace}}.arcadier.io/api/v2/users/{{merchantID}}/media"
-              },
-              "status": "OK",
-              "code": 200,
-              "_postman_previewlanguage": "json",
-              "header": [
-                {
-                  "key": "Cache-Control",
-                  "value": "no-cache"
-                },
-                {
-                  "key": "Pragma",
-                  "value": "no-cache"
-                },
-                {
-                  "key": "Content-Type",
-                  "value": "application/json; charset=utf-8"
-                },
-                {
-                  "key": "Expires",
-                  "value": "-1"
-                },
-                {
-                  "key": "api-version",
-                  "value": "v2"
-                },
-                {
-                  "key": "X-XSS-Protection",
-                  "value": "1; mode=block"
-                },
-                {
-                  "key": "X-Content-Type-Options",
-                  "value": "nosniff"
-                },
-                {
-                  "key": "X-Powered-By",
-                  "value": "ARR/3.0"
-                },
-                {
-                  "key": "Date",
-                  "value": "Fri, 03 May 2019 07:22:03 GMT"
-                },
-                {
-                  "key": "Content-Length",
-                  "value": "197"
-                }
-              ],
-              "cookie": [],
-              "responseTime": null,
-              "body": "{\n    \"ID\": \"7666154e-075c-4195-8adc-66e5835421b0\",\n    \"MediaUrl\": \"https://inkit.sandbox.arcadier.io/images/4587d5a3-ee92-4a25-b73f-436e26eda75d-sgp73ll74446883844-352938912175265-7396275717727584256-n.jpg\"\n}"
-            }
-          ]
-        }
-      ],
-      "_postman_id": "92dc8d55-65be-4bb6-8de6-3ba2f86dbda2"
-    },
-    {
       "name": "Static",
       "item": [
         {
@@ -9638,6 +9493,151 @@
           }
         }
       ]
+    },
+    {
+      "name": "Media (Under Testing)",
+      "item": [
+        {
+          "name": "Get user Media",
+          "_postman_id": "459e0eee-feae-44b2-bb85-188511c64a8b",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": {
+                "token": "{{admintoken}}"
+              }
+            },
+            "method": "GET",
+            "header": [],
+            "url": "https://{{your-marketplace}}.arcadier.io/api/v2/users/{{userID}}/media",
+            "description": "Not implemented yet"
+          },
+          "response": []
+        },
+        {
+          "name": "Update Media",
+          "_postman_id": "e8bcc78a-aac6-46f6-ba6f-831378476a6b",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": {
+                "token": "{{admintoken}}"
+              }
+            },
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "formdata",
+              "formdata": [
+                {
+                  "key": "",
+                  "type": "file",
+                  "value": null
+                }
+              ]
+            },
+            "url": {
+              "raw": "https://{{your-marketplace}}.arcadier.io/api/v2/users/{{userID}}/media?purpose",
+              "protocol": "https",
+              "host": [
+                "{{your-marketplace}}",
+                "arcadier",
+                "io"
+              ],
+              "path": [
+                "api",
+                "v2",
+                "users",
+                "{{userID}}",
+                "media"
+              ],
+              "query": [
+                {
+                  "key": "purpose",
+                  "value": "",
+                  "type": "text"
+                }
+              ]
+            },
+            "description": "Uploads photos for the userID given.\n\n\"purpose\" takes values of: gateways, categories, items and users\n\n#### Authentication\n> Admin token for any any userID of that marketplace\n>\n> or\n>\n> userID's token if user is not Admin"
+          },
+          "response": [
+            {
+              "id": "805bf34c-72e3-484b-ab33-660f48d63109",
+              "name": "Update Media",
+              "originalRequest": {
+                "method": "POST",
+                "header": [],
+                "body": {
+                  "mode": "formdata",
+                  "formdata": [
+                    {
+                      "key": "",
+                      "type": "file"
+                    }
+                  ]
+                },
+                "url": "https://{{your-marketplace}}.arcadier.io/api/v2/users/{{merchantID}}/media"
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Cache-Control",
+                  "value": "no-cache"
+                },
+                {
+                  "key": "Pragma",
+                  "value": "no-cache"
+                },
+                {
+                  "key": "Content-Type",
+                  "value": "application/json; charset=utf-8"
+                },
+                {
+                  "key": "Expires",
+                  "value": "-1"
+                },
+                {
+                  "key": "api-version",
+                  "value": "v2"
+                },
+                {
+                  "key": "X-XSS-Protection",
+                  "value": "1; mode=block"
+                },
+                {
+                  "key": "X-Content-Type-Options",
+                  "value": "nosniff"
+                },
+                {
+                  "key": "X-Powered-By",
+                  "value": "ARR/3.0"
+                },
+                {
+                  "key": "Date",
+                  "value": "Fri, 03 May 2019 07:22:03 GMT"
+                },
+                {
+                  "key": "Content-Length",
+                  "value": "197"
+                }
+              ],
+              "cookie": [],
+              "responseTime": null,
+              "body": "{\n    \"ID\": \"7666154e-075c-4195-8adc-66e5835421b0\",\n    \"MediaUrl\": \"https://inkit.sandbox.arcadier.io/images/4587d5a3-ee92-4a25-b73f-436e26eda75d-sgp73ll74446883844-352938912175265-7396275717727584256-n.jpg\"\n}"
+            }
+          ]
+        }
+      ],
+      "_postman_id": "92dc8d55-65be-4bb6-8de6-3ba2f86dbda2"
     },
     {
       "name": "Pages (Plug-In)",
