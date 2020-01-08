@@ -5707,6 +5707,12 @@
       "name": "Items",
       "item": [
         {
+          "name": "Item Tags",
+          "item": [],
+          "_postman_id": "0b71d337-ee6a-472b-9582-417e9ede1e9e",
+          "_postman_isSubFolder": true
+        },
+        {
           "name": "Get item details",
           "_postman_id": "a48c136d-a478-41b3-b647-66ef6c2dd440",
           "protocolProfileBehavior": {
