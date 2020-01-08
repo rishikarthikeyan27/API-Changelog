@@ -6140,6 +6140,12 @@
           "_postman_isSubFolder": true
         },
         {
+          "name": "Item Search",
+          "item": [],
+          "_postman_id": "75cfc057-f670-4c92-b07a-312acafd6fd4",
+          "_postman_isSubFolder": true
+        },
+        {
           "name": "Get an item's Information",
           "_postman_id": "a48c136d-a478-41b3-b647-66ef6c2dd440",
           "protocolProfileBehavior": {
