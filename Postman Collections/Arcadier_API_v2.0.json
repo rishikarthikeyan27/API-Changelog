@@ -367,7 +367,7 @@
         }
       ],
       "_postman_id": "04374e8d-012b-4c98-9290-c1ff56a8da2f",
-      "description": "Our APIs use the \"Bearer + Token\" authentication method. Each user on every marketplace has a unique token, which remains valid for 3 hours and is refreshed after that. \n\nHow to get the token? See [Tokens](here) above.\n\nMore detailed information about how to get Client ID and Client Secret can be found [here](https://api.arcadier.com/api-item/auth)",
+      "description": "Our APIs use the \"Bearer + Token\" authentication method. Each user on every marketplace has a unique token, which remains valid for 3 hours and is refreshed after that. \n\nHow to get the token? See [Tokens](https://apiv2.arcadier.com/?version=latest#intro) above.\n\nMore detailed information about how to get Client ID and Client Secret can be found [here](https://api.arcadier.com/api-item/auth).",
       "event": [
         {
           "listen": "prerequest",
