@@ -2704,7 +2704,7 @@
           "name": "Post-Checkout",
           "item": [
             {
-              "name": "Post-Checkout -  Edit Order Details",
+              "name": "Merchant - Edit Order Details",
               "_postman_id": "5b14eb44-8967-480e-82ea-166378754b2b",
               "protocolProfileBehavior": {
                 "disableBodyPruning": true
