@@ -2926,7 +2926,7 @@
               ]
             },
             {
-              "name": "Post-Checkout - Update payments for Invoice Number",
+              "name": "Update Transaction Details",
               "_postman_id": "68a1094c-77b6-45fb-acc2-aec053d94a28",
               "protocolProfileBehavior": {
                 "disableBodyPruning": true
