@@ -423,7 +423,7 @@
                   "raw": "{\r\n  \"UserID\": \"00000000-0000-0000-0000-000000000000\",\r\n  \"Action\": \"token\"\r\n}"
                 },
                 "url": "https://{{your-marketplace}}.arcadier.io/api/v2/admins/{{adminID}}/password",
-                "description": "This API allows the resetting of a user's password by returning a link to Arcadier's reset password page for that user.\n\nRequest:\n\n* \"UserID\" - ID of the user who wants to change their password\n* \"Action\" - \"token\"\n\nResponse:\n\n* \"Url\" - URL of Arcadier's password reset page\n* \"Token\" - Reset password token to be used in [Update User Password API](https://apiv2.arcadier.com/?version=latest#39756c48-c576-4451-9edd-b6825ef789e8)\n\n(More details in example on the right)\n\n#### Authentication\n> Admin token only"
+                "description": "This API allows the resetting of a user's password by returning a link to Arcadier's reset password page for that user.\n\nRequest:\n\n* \"UserID\" - ID of the user who wants to change their password\n* \"Action\" - \"token\"  (the string \"token\", not authentication token).\n\nResponse:\n\n* \"Url\" - URL of Arcadier's password reset page\n* \"Token\" - Reset password token to be used in [Update User Password API](https://apiv2.arcadier.com/?version=latest#39756c48-c576-4451-9edd-b6825ef789e8)\n\n(More details in example on the right)\n\n#### Authentication\n> Admin token only"
               },
               "response": [
                 {
