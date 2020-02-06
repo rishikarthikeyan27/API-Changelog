@@ -2,9 +2,8 @@
 
 Major changes in Arcadier's APIs and Documentation will be logged here way before they are pushed to live. 
 
+<p align="center"><strong>Item Search APIs</strong></p>
 ```markdown
-<p align="center"> Item Search APIs </p>
-
 # Header 1
 ## Header 2
 ### Header 3
