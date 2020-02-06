@@ -4340,13 +4340,13 @@
                   {
                     "key": "Content-Type",
                     "name": "Content-Type",
-                    "value": "application/json",
-                    "type": "text"
+                    "type": "text",
+                    "value": "application/json"
                   },
                   {
                     "key": "Authorization",
-                    "value": "Bearer {{merchanttoken}}",
-                    "type": "text"
+                    "type": "text",
+                    "value": "Bearer {{admintoken}}"
                   }
                 ],
                 "body": {
