@@ -891,7 +891,30 @@
                     "type": "text"
                   }
                 ],
-                "url": "https://{{your-marketplace}}.arcadier.io/api/v2/admins/{{adminID}}/users",
+                "url": {
+                  "raw": "https://{{your-marketplace}}.arcadier.io/api/v2/admins/{{adminID}}/users?keywords=",
+                  "protocol": "https",
+                  "host": [
+                    "{{your-marketplace}}",
+                    "arcadier",
+                    "io"
+                  ],
+                  "path": [
+                    "api",
+                    "v2",
+                    "admins",
+                    "{{adminID}}",
+                    "users"
+                  ],
+                  "query": [
+                    {
+                      "key": "keywords",
+                      "value": "",
+                      "description": "Filter users using a keyword. The matches returned may have the keyword in their username/email/firstName/lastName.",
+                      "type": "text"
+                    }
+                  ]
+                },
                 "description": "Gets the information of all existing buyers/merchants/admins and owner of the marketplace.\n\n#### Authentication\n> Admin token only"
               },
               "response": [
@@ -5578,7 +5601,7 @@
           ]
         },
         {
-          "name": "Edit Item Details",
+          "name": "Edit Item",
           "_postman_id": "8af9bf27-a3fb-4623-b8d0-f53a67697c47",
           "protocolProfileBehavior": {
             "disableBodyPruning": true
