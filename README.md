@@ -10,12 +10,15 @@ Added sorting query parameters to
 * [Search for items - Params in JSON body](https://apiv2.arcadier.com/?version=latest#61b718db-2d07-4af1-992d-520c0fe259c0)
 
 Sorting Parameters:
+
 Parameter | Filter
 ------------ | -------------
 created | Sort results in ascending time of creation (earliest to latest)
 -created | Sort results in descending time of creation (latest to earliest)
 updated | Sort results in ascending time since last update (earliest to latest)
 -updated | Sort results in descending time since last update (latest to earliest)
+
+===
 
 
 For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
