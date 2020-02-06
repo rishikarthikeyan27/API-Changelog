@@ -1039,7 +1039,7 @@
                     }
                   ]
                 },
-                "description": "Responds with a list of users filtered by role. \n\nList of roles: Owner, Admin, Merchant, User\n\n* The admin can be a buyer and a merchant.\n* All merchants can be buyers.\n* That's why when not specifying the role, the total number displayed, TotalRecords, will be all the users of the marketplace. And that will be equal to the number of buyers + the admin.\n\nResponse parameters are identical to [Get All Users' Info](https://apiv2.arcadier.com/#5282732e-0930-43b5-b98f-eeb3d5ce94b8)\n\n#### Authentication\n> Admin token only"
+                "description": "Gets the list of all merchants, with a default `pageSize` of `24`. This can be changed in the query parameters. Search results can be filtered using `keywords`\n\n#### Authentication\n> Admin token only"
               },
               "response": [
                 {
