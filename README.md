@@ -1,7 +1,4 @@
-<script
-  src="https://code.jquery.com/jquery-3.4.1.min.js"
-  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
-  crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
 ## API v2 Changelog
 
 Major changes in Arcadier's APIs and Documentation will be logged here way before they are pushed to live. 
@@ -12,6 +9,7 @@ Major changes in Arcadier's APIs and Documentation will be logged here way befor
       console.log("Hi")
       $.getJSON("https://raw.githubusercontent.com/Arcadier/API-Changelog/master/Postman%20Collections/Arcadier_API_v2.0.json", function(result){
         console.log(result.info.name);
+        console.log(result.item.item.name);
       })
     });
   </script>
