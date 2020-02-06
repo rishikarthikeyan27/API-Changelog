@@ -18,14 +18,7 @@ created | Sort results in ascending time of creation (earliest to latest)
 updated | Sort results in ascending time since last update (earliest to latest)
 -updated | Sort results in descending time since last update (latest to earliest)
 
-===
-
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/Arcadier/API-Documentation/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+---
 
 ### Support or Contact
 
