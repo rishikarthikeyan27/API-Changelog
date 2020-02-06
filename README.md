@@ -5,7 +5,7 @@ Major changes in Arcadier's APIs and Documentation will be logged here way befor
   <button id="filter">Test Button</button>
   <script>console.log("Hi")</script>
 </div>
-<p align="center"><strong>Item Search APIs</strong></p>
+<p align="center"><strong>(6 February 2020) Item Search APIs</strong></p>
 
 Added sorting query parameters to 
 * [Get All Items](https://apiv2.arcadier.com/?version=latest#c06e85df-93f9-446c-a9b2-426296185d0d)
@@ -14,12 +14,12 @@ Added sorting query parameters to
 
 Sorting Parameters:
 
-Parameter | Filter
------------- | -------------
-created | Sort results in ascending time of creation (earliest to latest)
--created | Sort results in descending time of creation (latest to earliest)
-updated | Sort results in ascending time since last update (earliest to latest)
--updated | Sort results in descending time since last update (latest to earliest)
+|Parameter | Filter|
+|------------ | -------------|
+|created | Sort results in ascending time of creation (earliest to latest)|
+|-created | Sort results in descending time of creation (latest to earliest)|
+|updated | Sort results in ascending time since last update (earliest to latest)|
+|-updated | Sort results in descending time since last update (latest to earliest)|
 
 ---
 
