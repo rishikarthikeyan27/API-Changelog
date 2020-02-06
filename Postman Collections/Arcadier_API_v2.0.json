@@ -5327,6 +5327,82 @@
           "_postman_isSubFolder": true
         },
         {
+          "name": "Get one item's Information",
+          "_postman_id": "a48c136d-a478-41b3-b647-66ef6c2dd440",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": "https://{{your-marketplace}}.arcadier.io/api/v2/items/{{itemID}}",
+            "description": "Gets an item's details, including its variants' details.\n\nTo get a parent item and/or its variant, there are 2 possible scenarios: \n\n1. **Getting a parent item and its variants**  \n \n     * GET api/v2/items/{{parentItemID}}\n\n2. **Getting a specific child item (a specific variant)**\n\n    * GET api/v2/items/{{ChildItemID}}\n    * The API will respond with the details of the corresponding parent item. Search for that parent item ID (as in scenario 1, to get that child item's details)\n    \n#### Authentication\n> None required"
+          },
+          "response": [
+            {
+              "id": "efcc1725-3fa8-4020-be19-9509baefbb49",
+              "name": "Get item details - with ItemID",
+              "originalRequest": {
+                "method": "GET",
+                "header": [],
+                "url": "https://{{your-marketplace}}.arcadier.io/api/v2/items/{{itemID}}"
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Cache-Control",
+                  "value": "no-cache"
+                },
+                {
+                  "key": "Pragma",
+                  "value": "no-cache"
+                },
+                {
+                  "key": "Content-Type",
+                  "value": "application/json; charset=utf-8"
+                },
+                {
+                  "key": "Expires",
+                  "value": "-1"
+                },
+                {
+                  "key": "request-id",
+                  "value": "5e6b5220-6652-43ba-ad5b-b1e7f51f5829"
+                },
+                {
+                  "key": "api-version",
+                  "value": "v2"
+                },
+                {
+                  "key": "X-XSS-Protection",
+                  "value": "1; mode=block"
+                },
+                {
+                  "key": "X-Content-Type-Options",
+                  "value": "nosniff"
+                },
+                {
+                  "key": "X-Powered-By",
+                  "value": "ARR/3.0"
+                },
+                {
+                  "key": "Date",
+                  "value": "Fri, 20 Sep 2019 08:01:37 GMT"
+                },
+                {
+                  "key": "Content-Length",
+                  "value": "4326"
+                }
+              ],
+              "cookie": [],
+              "responseTime": null,
+              "body": "{\n    \"ID\": \"bc157723-1514-4130-909c-721a9c74d2fc\",\n    \"SKU\": null,\n    \"Name\": \"Item40\",\n    \"BuyerDescription\": \"This is Item40\",\n    \"SellerDescription\": null,\n    \"Price\": 40,\n    \"PriceUnit\": null,\n    \"StockLimited\": false,\n    \"StockQuantity\": \"0\",\n    \"IsVisibleToCustomer\": true,\n    \"Active\": true,\n    \"IsAvailable\": true,\n    \"DateOfPurchase\": null,\n    \"Weight\": null,\n    \"WeightUnit\": null,\n    \"Cubes\": null,\n    \"CubeUnit\": null,\n    \"Length\": null,\n    \"LengthUnit\": null,\n    \"Width\": null,\n    \"WidthUnit\": null,\n    \"Height\": null,\n    \"HeightUnit\": null,\n    \"AdditionalDetails\": null,\n    \"ExpiryDate\": null,\n    \"CurrencyCode\": \"SGD\",\n    \"ParentID\": null,\n    \"AverageRating\": null,\n    \"InstantBuy\": false,\n    \"Negotiation\": false,\n    \"MerchantDetail\": {\n        \"ID\": \"e541f808-fc92-40d8-9f1a-2c20860c2754\",\n        \"Email\": \"lordvador6@gmail.com\",\n        \"FirstName\": \"Charlie\",\n        \"LastName\": \"Brown\",\n        \"DisplayName\": \"Charlie Brown\",\n        \"Description\": null,\n        \"DOB\": null,\n        \"PhoneNumber\": \"32908981\",\n        \"DateJoined\": null,\n        \"Roles\": null,\n        \"Media\": null,\n        \"CustomFields\": null,\n        \"TimeZone\": null,\n        \"Onboarded\": null,\n        \"OnboardedDateTime\": null,\n        \"Active\": null,\n        \"Enabled\": null,\n        \"Visible\": null,\n        \"Addresses\": null,\n        \"PaymentMethods\": null,\n        \"PaymentAcceptanceMethods\": null,\n        \"UserLogin\": null\n    },\n    \"Location\": null,\n    \"Categories\": [\n        {\n            \"ID\": \"c4d76697-6d2b-41f6-aba5-521b98fa2ebd\",\n            \"Name\": \"Categoryundefined\",\n            \"Description\": \"This is Categoryundefined\",\n            \"SortOrder\": 5,\n            \"Media\": null,\n            \"ParentCategoryID\": null,\n            \"ChildCategories\": null,\n            \"Level\": null,\n            \"CreatedDateTime\": 1566201273,\n            \"ModifiedDateTime\": 1566806010,\n            \"Commission\": null\n        }\n    ],\n    \"ShippingMethods\": [],\n    \"PickupAddresses\": [],\n    \"Media\": [\n        {\n            \"ID\": \"e0532201-229e-488c-9cc9-29a9a9bc7020\",\n            \"MediaUrl\": \"https://dogaccessories.sandbox.arcadier.io/images/c27f4fc8-305b-4c5d-b209-635b2048d1ab-3x852dzo70Item19170-636439922842419797-C7k6Mg.jpg\"\n        }\n    ],\n    \"Tags\": [\n        \"Test_data\"\n    ],\n    \"Scheduler\": null,\n    \"Distance\": null,\n    \"CustomFields\": [\n        {\n            \"Code\": \"19521-WEIGHT-cWC7A5nzGw\",\n            \"Name\": \"WEIGHT\",\n            \"DataFieldType\": null,\n            \"Values\": [\n                \"0.100000\"\n            ]\n        },\n        {\n            \"Code\": \"19521-Brand-IxVe9JDJjF\",\n            \"Name\": \"Brand\",\n            \"DataFieldType\": null,\n            \"Values\": [\n                \"Nike\"\n            ]\n        },\n        {\n            \"Code\": \"19521-TestRich-c19gFrdFqa\",\n            \"Name\": \"Test Rich\",\n            \"DataFieldType\": null,\n            \"Values\": [\n                \"&lt;p&gt;Somehow this is&amp;nbsp;&lt;strong&gt;bold.&lt;/strong&gt;&lt;/p&gt;\"\n            ]\n        },\n        {\n            \"Code\": \"brands-JWxkDCAdwW\",\n            \"Name\": \"Brands\",\n            \"DataFieldType\": null,\n            \"Values\": [\n                \"Nike\"\n            ]\n        }\n    ],\n    \"CreatedDateTime\": 1566201279,\n    \"ModifiedDateTime\": 1568966456,\n    \"HasChildItems\": true,\n    \"ChildItems\": [\n        {\n            \"Variants\": [\n                {\n                    \"ID\": \"0a5ac449-c00a-4660-b9a0-d536b217dfb5\",\n                    \"Name\": \"Red\",\n                    \"GroupID\": \"6d7eab6d-5464-42a1-b290-ca7a74514414\",\n                    \"GroupName\": \"Color\",\n                    \"PriceChange\": null,\n                    \"SortOrder\": 1\n                }\n            ],\n            \"ID\": \"1fee5816-8b8f-4feb-9b38-b4893d02d3b4\",\n            \"SKU\": \"2000\",\n            \"Name\": null,\n            \"BuyerDescription\": null,\n            \"SellerDescription\": null,\n            \"Price\": 45,\n            \"PriceUnit\": null,\n            \"StockLimited\": true,\n            \"StockQuantity\": \"10\",\n            \"IsVisibleToCustomer\": null,\n            \"Active\": true,\n            \"IsAvailable\": true,\n            \"DateOfPurchase\": null,\n            \"Weight\": null,\n            \"WeightUnit\": null,\n            \"Cubes\": null,\n            \"CubeUnit\": null,\n            \"Length\": null,\n            \"LengthUnit\": null,\n            \"Width\": null,\n            \"WidthUnit\": null,\n            \"Height\": null,\n            \"HeightUnit\": null,\n            \"AdditionalDetails\": null,\n            \"ExpiryDate\": null,\n            \"CurrencyCode\": null,\n            \"ParentID\": \"bc157723-1514-4130-909c-721a9c74d2fc\",\n            \"AverageRating\": null,\n            \"InstantBuy\": false,\n            \"Negotiation\": false,\n            \"MerchantDetail\": null,\n            \"Location\": null,\n            \"Categories\": null,\n            \"ShippingMethods\": null,\n            \"PickupAddresses\": null,\n            \"Media\": null,\n            \"Tags\": null,\n            \"Scheduler\": null,\n            \"Distance\": null,\n            \"CustomFields\": null,\n            \"CreatedDateTime\": 1568966456,\n            \"ModifiedDateTime\": 1568966456,\n            \"HasChildItems\": false,\n            \"ChildItems\": null\n        },\n        {\n            \"Variants\": [\n                {\n                    \"ID\": \"7bb11f8f-daef-4368-a5d3-e58f8820eb0d\",\n                    \"Name\": \"Blue\",\n                    \"GroupID\": \"6d7eab6d-5464-42a1-b290-ca7a74514414\",\n                    \"GroupName\": \"Color\",\n                    \"PriceChange\": null,\n                    \"SortOrder\": 2\n                }\n            ],\n            \"ID\": \"4453b974-3f1b-47a5-a25b-c8b247413710\",\n            \"SKU\": \"2001\",\n            \"Name\": null,\n            \"BuyerDescription\": null,\n            \"SellerDescription\": null,\n            \"Price\": 42,\n            \"PriceUnit\": null,\n            \"StockLimited\": true,\n            \"StockQuantity\": \"10\",\n            \"IsVisibleToCustomer\": null,\n            \"Active\": true,\n            \"IsAvailable\": true,\n            \"DateOfPurchase\": null,\n            \"Weight\": null,\n            \"WeightUnit\": null,\n            \"Cubes\": null,\n            \"CubeUnit\": null,\n            \"Length\": null,\n            \"LengthUnit\": null,\n            \"Width\": null,\n            \"WidthUnit\": null,\n            \"Height\": null,\n            \"HeightUnit\": null,\n            \"AdditionalDetails\": null,\n            \"ExpiryDate\": null,\n            \"CurrencyCode\": null,\n            \"ParentID\": \"bc157723-1514-4130-909c-721a9c74d2fc\",\n            \"AverageRating\": null,\n            \"InstantBuy\": false,\n            \"Negotiation\": false,\n            \"MerchantDetail\": null,\n            \"Location\": null,\n            \"Categories\": null,\n            \"ShippingMethods\": null,\n            \"PickupAddresses\": null,\n            \"Media\": null,\n            \"Tags\": null,\n            \"Scheduler\": null,\n            \"Distance\": null,\n            \"CustomFields\": null,\n            \"CreatedDateTime\": 1568966456,\n            \"ModifiedDateTime\": 1568966456,\n            \"HasChildItems\": false,\n            \"ChildItems\": null\n        }\n    ]\n}"
+            }
+          ]
+        },
+        {
           "name": "Create Item",
           "_postman_id": "03d18078-0f46-4c84-b9ff-c464c7853580",
           "protocolProfileBehavior": {
@@ -5635,82 +5711,6 @@
               "cookie": [],
               "responseTime": null,
               "body": "{\n    \"ID\": \"b2c82fed-f6a7-4759-a7c7-afc3ab5b0973\",\n    \"SKU\": \"140899\",\n    \"Name\": \"Fender Electric Guitar\",\n    \"BuyerDescription\": \"Issa good guitar\\n10/10 condition\",\n    \"SellerDescription\": null,\n    \"Price\": 400,\n    \"PriceUnit\": null,\n    \"StockLimited\": true,\n    \"StockQuantity\": \"3\",\n    \"IsVisibleToCustomer\": true,\n    \"Active\": true,\n    \"IsAvailable\": true,\n    \"DateOfPurchase\": null,\n    \"Weight\": null,\n    \"WeightUnit\": null,\n    \"Cubes\": null,\n    \"CubeUnit\": null,\n    \"Length\": null,\n    \"LengthUnit\": null,\n    \"Width\": null,\n    \"WidthUnit\": null,\n    \"Height\": null,\n    \"HeightUnit\": null,\n    \"AdditionalDetails\": null,\n    \"ExpiryDate\": null,\n    \"CurrencyCode\": \"SGD\",\n    \"ParentID\": null,\n    \"AverageRating\": null,\n    \"InstantBuy\": false,\n    \"Negotiation\": false,\n    \"MerchantDetail\": {\n        \"ID\": \"0e7fe8be-4265-4a00-bd96-8f7fa20a00f0\",\n        \"UserName\": null,\n        \"Email\": \"zoestfu@gmail.com\",\n        \"FirstName\": \"Zoe\",\n        \"LastName\": \"Lim\",\n        \"DisplayName\": \"Zoe Lim \",\n        \"Description\": null,\n        \"DOB\": null,\n        \"PhoneNumber\": \"93825686\",\n        \"DateJoined\": null,\n        \"Roles\": null,\n        \"Media\": null,\n        \"CustomFields\": null,\n        \"TimeZone\": null,\n        \"Onboarded\": null,\n        \"OnboardedDateTime\": null,\n        \"Active\": null,\n        \"Enabled\": null,\n        \"Visible\": null,\n        \"Addresses\": null,\n        \"PaymentMethods\": null,\n        \"PaymentAcceptanceMethods\": null,\n        \"UserLogins\": null,\n        \"MerchantOwnerId\": null,\n        \"AdminOwnerId\": null,\n        \"LanguageCode\": null\n    },\n    \"Location\": null,\n    \"Categories\": [\n        {\n            \"ID\": \"6bf77efa-7b81-4a03-bb34-cb1d396559d6\",\n            \"Name\": \"Music & Media\",\n            \"Description\": null,\n            \"SortOrder\": 23562,\n            \"Media\": null,\n            \"ParentCategoryID\": null,\n            \"ChildCategories\": null,\n            \"Level\": null,\n            \"CreatedDateTime\": 1575252975,\n            \"ModifiedDateTime\": 1577433468,\n            \"Commission\": null,\n            \"CustomFields\": null\n        }\n    ],\n    \"ShippingMethods\": [],\n    \"PickupAddresses\": [],\n    \"Media\": [\n        {\n            \"ID\": \"3126429b-cc8e-4361-9da8-3fe269c71116\",\n            \"MediaUrl\": \"https://zoelze.arcadier.io/images/items/item-125710-637130310749163329-7hmvjz5492ove1soxclkujtz6.jpg\"\n        }\n    ],\n    \"Tags\": null,\n    \"Scheduler\": null,\n    \"Distance\": null,\n    \"CustomFields\": [\n        {\n            \"Code\": \"125679-WEIGHT-plcW7zoRuw\",\n            \"Name\": \"WEIGHT\",\n            \"DataFieldType\": null,\n            \"Values\": [\n                \"1.000000\"\n            ],\n            \"IsComparable\": false\n        },\n        {\n            \"Code\": \"125679-MusicalInstruments-7e6LO7nOVR\",\n            \"Name\": \"Musical Instruments\",\n            \"DataFieldType\": null,\n            \"Values\": [\n                \"Electric Guitar\"\n            ],\n            \"IsComparable\": true\n        }\n    ],\n    \"CreatedDateTime\": 1575262174,\n    \"ModifiedDateTime\": 1577434275,\n    \"HasChildItems\": true,\n    \"ChildItems\": [],\n    \"AddOns\": null\n}"
-            }
-          ]
-        },
-        {
-          "name": "Get one item's Information",
-          "_postman_id": "a48c136d-a478-41b3-b647-66ef6c2dd440",
-          "protocolProfileBehavior": {
-            "disableBodyPruning": true
-          },
-          "request": {
-            "method": "GET",
-            "header": [],
-            "url": "https://{{your-marketplace}}.arcadier.io/api/v2/items/{{itemID}}",
-            "description": "Gets an item's details, including its variants' details.\n\nTo get a parent item and/or its variant, there are 2 possible scenarios: \n\n1. **Getting a parent item and its variants**  \n \n     * GET api/v2/items/{{parentItemID}}\n\n2. **Getting a specific child item (a specific variant)**\n\n    * GET api/v2/items/{{ChildItemID}}\n    * The API will respond with the details of the corresponding parent item. Search for that parent item ID (as in scenario 1, to get that child item's details)\n    \n#### Authentication\n> None required"
-          },
-          "response": [
-            {
-              "id": "efcc1725-3fa8-4020-be19-9509baefbb49",
-              "name": "Get item details - with ItemID",
-              "originalRequest": {
-                "method": "GET",
-                "header": [],
-                "url": "https://{{your-marketplace}}.arcadier.io/api/v2/items/{{itemID}}"
-              },
-              "status": "OK",
-              "code": 200,
-              "_postman_previewlanguage": "json",
-              "header": [
-                {
-                  "key": "Cache-Control",
-                  "value": "no-cache"
-                },
-                {
-                  "key": "Pragma",
-                  "value": "no-cache"
-                },
-                {
-                  "key": "Content-Type",
-                  "value": "application/json; charset=utf-8"
-                },
-                {
-                  "key": "Expires",
-                  "value": "-1"
-                },
-                {
-                  "key": "request-id",
-                  "value": "5e6b5220-6652-43ba-ad5b-b1e7f51f5829"
-                },
-                {
-                  "key": "api-version",
-                  "value": "v2"
-                },
-                {
-                  "key": "X-XSS-Protection",
-                  "value": "1; mode=block"
-                },
-                {
-                  "key": "X-Content-Type-Options",
-                  "value": "nosniff"
-                },
-                {
-                  "key": "X-Powered-By",
-                  "value": "ARR/3.0"
-                },
-                {
-                  "key": "Date",
-                  "value": "Fri, 20 Sep 2019 08:01:37 GMT"
-                },
-                {
-                  "key": "Content-Length",
-                  "value": "4326"
-                }
-              ],
-              "cookie": [],
-              "responseTime": null,
-              "body": "{\n    \"ID\": \"bc157723-1514-4130-909c-721a9c74d2fc\",\n    \"SKU\": null,\n    \"Name\": \"Item40\",\n    \"BuyerDescription\": \"This is Item40\",\n    \"SellerDescription\": null,\n    \"Price\": 40,\n    \"PriceUnit\": null,\n    \"StockLimited\": false,\n    \"StockQuantity\": \"0\",\n    \"IsVisibleToCustomer\": true,\n    \"Active\": true,\n    \"IsAvailable\": true,\n    \"DateOfPurchase\": null,\n    \"Weight\": null,\n    \"WeightUnit\": null,\n    \"Cubes\": null,\n    \"CubeUnit\": null,\n    \"Length\": null,\n    \"LengthUnit\": null,\n    \"Width\": null,\n    \"WidthUnit\": null,\n    \"Height\": null,\n    \"HeightUnit\": null,\n    \"AdditionalDetails\": null,\n    \"ExpiryDate\": null,\n    \"CurrencyCode\": \"SGD\",\n    \"ParentID\": null,\n    \"AverageRating\": null,\n    \"InstantBuy\": false,\n    \"Negotiation\": false,\n    \"MerchantDetail\": {\n        \"ID\": \"e541f808-fc92-40d8-9f1a-2c20860c2754\",\n        \"Email\": \"lordvador6@gmail.com\",\n        \"FirstName\": \"Charlie\",\n        \"LastName\": \"Brown\",\n        \"DisplayName\": \"Charlie Brown\",\n        \"Description\": null,\n        \"DOB\": null,\n        \"PhoneNumber\": \"32908981\",\n        \"DateJoined\": null,\n        \"Roles\": null,\n        \"Media\": null,\n        \"CustomFields\": null,\n        \"TimeZone\": null,\n        \"Onboarded\": null,\n        \"OnboardedDateTime\": null,\n        \"Active\": null,\n        \"Enabled\": null,\n        \"Visible\": null,\n        \"Addresses\": null,\n        \"PaymentMethods\": null,\n        \"PaymentAcceptanceMethods\": null,\n        \"UserLogin\": null\n    },\n    \"Location\": null,\n    \"Categories\": [\n        {\n            \"ID\": \"c4d76697-6d2b-41f6-aba5-521b98fa2ebd\",\n            \"Name\": \"Categoryundefined\",\n            \"Description\": \"This is Categoryundefined\",\n            \"SortOrder\": 5,\n            \"Media\": null,\n            \"ParentCategoryID\": null,\n            \"ChildCategories\": null,\n            \"Level\": null,\n            \"CreatedDateTime\": 1566201273,\n            \"ModifiedDateTime\": 1566806010,\n            \"Commission\": null\n        }\n    ],\n    \"ShippingMethods\": [],\n    \"PickupAddresses\": [],\n    \"Media\": [\n        {\n            \"ID\": \"e0532201-229e-488c-9cc9-29a9a9bc7020\",\n            \"MediaUrl\": \"https://dogaccessories.sandbox.arcadier.io/images/c27f4fc8-305b-4c5d-b209-635b2048d1ab-3x852dzo70Item19170-636439922842419797-C7k6Mg.jpg\"\n        }\n    ],\n    \"Tags\": [\n        \"Test_data\"\n    ],\n    \"Scheduler\": null,\n    \"Distance\": null,\n    \"CustomFields\": [\n        {\n            \"Code\": \"19521-WEIGHT-cWC7A5nzGw\",\n            \"Name\": \"WEIGHT\",\n            \"DataFieldType\": null,\n            \"Values\": [\n                \"0.100000\"\n            ]\n        },\n        {\n            \"Code\": \"19521-Brand-IxVe9JDJjF\",\n            \"Name\": \"Brand\",\n            \"DataFieldType\": null,\n            \"Values\": [\n                \"Nike\"\n            ]\n        },\n        {\n            \"Code\": \"19521-TestRich-c19gFrdFqa\",\n            \"Name\": \"Test Rich\",\n            \"DataFieldType\": null,\n            \"Values\": [\n                \"&lt;p&gt;Somehow this is&amp;nbsp;&lt;strong&gt;bold.&lt;/strong&gt;&lt;/p&gt;\"\n            ]\n        },\n        {\n            \"Code\": \"brands-JWxkDCAdwW\",\n            \"Name\": \"Brands\",\n            \"DataFieldType\": null,\n            \"Values\": [\n                \"Nike\"\n            ]\n        }\n    ],\n    \"CreatedDateTime\": 1566201279,\n    \"ModifiedDateTime\": 1568966456,\n    \"HasChildItems\": true,\n    \"ChildItems\": [\n        {\n            \"Variants\": [\n                {\n                    \"ID\": \"0a5ac449-c00a-4660-b9a0-d536b217dfb5\",\n                    \"Name\": \"Red\",\n                    \"GroupID\": \"6d7eab6d-5464-42a1-b290-ca7a74514414\",\n                    \"GroupName\": \"Color\",\n                    \"PriceChange\": null,\n                    \"SortOrder\": 1\n                }\n            ],\n            \"ID\": \"1fee5816-8b8f-4feb-9b38-b4893d02d3b4\",\n            \"SKU\": \"2000\",\n            \"Name\": null,\n            \"BuyerDescription\": null,\n            \"SellerDescription\": null,\n            \"Price\": 45,\n            \"PriceUnit\": null,\n            \"StockLimited\": true,\n            \"StockQuantity\": \"10\",\n            \"IsVisibleToCustomer\": null,\n            \"Active\": true,\n            \"IsAvailable\": true,\n            \"DateOfPurchase\": null,\n            \"Weight\": null,\n            \"WeightUnit\": null,\n            \"Cubes\": null,\n            \"CubeUnit\": null,\n            \"Length\": null,\n            \"LengthUnit\": null,\n            \"Width\": null,\n            \"WidthUnit\": null,\n            \"Height\": null,\n            \"HeightUnit\": null,\n            \"AdditionalDetails\": null,\n            \"ExpiryDate\": null,\n            \"CurrencyCode\": null,\n            \"ParentID\": \"bc157723-1514-4130-909c-721a9c74d2fc\",\n            \"AverageRating\": null,\n            \"InstantBuy\": false,\n            \"Negotiation\": false,\n            \"MerchantDetail\": null,\n            \"Location\": null,\n            \"Categories\": null,\n            \"ShippingMethods\": null,\n            \"PickupAddresses\": null,\n            \"Media\": null,\n            \"Tags\": null,\n            \"Scheduler\": null,\n            \"Distance\": null,\n            \"CustomFields\": null,\n            \"CreatedDateTime\": 1568966456,\n            \"ModifiedDateTime\": 1568966456,\n            \"HasChildItems\": false,\n            \"ChildItems\": null\n        },\n        {\n            \"Variants\": [\n                {\n                    \"ID\": \"7bb11f8f-daef-4368-a5d3-e58f8820eb0d\",\n                    \"Name\": \"Blue\",\n                    \"GroupID\": \"6d7eab6d-5464-42a1-b290-ca7a74514414\",\n                    \"GroupName\": \"Color\",\n                    \"PriceChange\": null,\n                    \"SortOrder\": 2\n                }\n            ],\n            \"ID\": \"4453b974-3f1b-47a5-a25b-c8b247413710\",\n            \"SKU\": \"2001\",\n            \"Name\": null,\n            \"BuyerDescription\": null,\n            \"SellerDescription\": null,\n            \"Price\": 42,\n            \"PriceUnit\": null,\n            \"StockLimited\": true,\n            \"StockQuantity\": \"10\",\n            \"IsVisibleToCustomer\": null,\n            \"Active\": true,\n            \"IsAvailable\": true,\n            \"DateOfPurchase\": null,\n            \"Weight\": null,\n            \"WeightUnit\": null,\n            \"Cubes\": null,\n            \"CubeUnit\": null,\n            \"Length\": null,\n            \"LengthUnit\": null,\n            \"Width\": null,\n            \"WidthUnit\": null,\n            \"Height\": null,\n            \"HeightUnit\": null,\n            \"AdditionalDetails\": null,\n            \"ExpiryDate\": null,\n            \"CurrencyCode\": null,\n            \"ParentID\": \"bc157723-1514-4130-909c-721a9c74d2fc\",\n            \"AverageRating\": null,\n            \"InstantBuy\": false,\n            \"Negotiation\": false,\n            \"MerchantDetail\": null,\n            \"Location\": null,\n            \"Categories\": null,\n            \"ShippingMethods\": null,\n            \"PickupAddresses\": null,\n            \"Media\": null,\n            \"Tags\": null,\n            \"Scheduler\": null,\n            \"Distance\": null,\n            \"CustomFields\": null,\n            \"CreatedDateTime\": 1568966456,\n            \"ModifiedDateTime\": 1568966456,\n            \"HasChildItems\": false,\n            \"ChildItems\": null\n        }\n    ]\n}"
             }
           ]
         }
