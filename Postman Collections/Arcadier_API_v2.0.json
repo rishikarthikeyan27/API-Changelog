@@ -7967,7 +7967,7 @@
                 }
               ]
             },
-            "description": "This API returns all orders that have been placed on the marketplace. Pagination helps with filtering.\n\n#### Authentication\n> Admin token"
+            "description": "This API returns all orders that have been placed on the marketplace. Search results can be filtered using the parameters below.\n\n#### Authentication\n> Admin token"
           },
           "response": [
             {
