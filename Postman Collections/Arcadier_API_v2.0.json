@@ -4923,7 +4923,7 @@
               "request": {
                 "method": "GET",
                 "header": [],
-                "url": "https://{{your-marketplace}}.arcadier.io/api/v2/items/{{itemID}}",
+                "url": "https://{{your-marketplace}}.arcadier.io/api/v2/items/",
                 "description": "Gets an item's details, including its variants' details.\n\nTo get a parent item and/or its variant, there are 2 possible scenarios: \n\n1. **Getting a parent item and its variants**  \n \n     * GET api/v2/items/{{parentItemID}}\n\n2. **Getting a specific child item (a specific variant)**\n\n    * GET api/v2/items/{{ChildItemID}}\n    * The API will respond with the details of the corresponding parent item. Search for that parent item ID (as in scenario 1, to get that child item's details)\n    \n#### Authentication\n> None required"
               },
               "response": [
