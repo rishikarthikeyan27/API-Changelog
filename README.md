@@ -15,7 +15,7 @@ Added sorting query parameters to
 Sorting Parameters:
 
 |Parameter | Filter|
-|------------ | -------------|
+|:------------:|:-------------:|
 |created | Sort results in ascending time of creation (earliest to latest)|
 |-created | Sort results in descending time of creation (latest to earliest)|
 |updated | Sort results in ascending time since last update (earliest to latest)|
