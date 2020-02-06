@@ -1,15 +1,9 @@
 ## API v2 Changelog
 
-Major changes in the API documentation will be logged here way before they are pushed to live. 
-
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
-
-### Markdown
-
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+Major changes in Arcadier's APIs and Documentation will be logged here way before they are pushed to live. 
 
 ```markdown
-Syntax highlighted code block
+<p align="center"> Item Search APIs </p>
 
 # Header 1
 ## Header 2
