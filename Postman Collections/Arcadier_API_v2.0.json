@@ -3935,7 +3935,7 @@
               ]
             },
             {
-              "name": "Merchant - Edit Buyer's Cart (Optional)",
+              "name": "(Optional) Merchant - Edit Buyer's Cart",
               "_postman_id": "bef2b629-4546-4b5b-986b-e2749c062756",
               "protocolProfileBehavior": {
                 "disableBodyPruning": true
