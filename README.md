@@ -1,6 +1,6 @@
-## Welcome to GitHub Pages
+## API v2 Changelog
 
-You can use the [editor on GitHub](https://github.com/Arcadier/API-Documentation/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
+Major changes in the API documentation will be logged here way before they are pushed to live. 
 
 Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
 
