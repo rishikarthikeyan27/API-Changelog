@@ -3,7 +3,7 @@
 Major changes in Arcadier's APIs and Documentation will be logged here way before they are pushed to live. 
 
 <p align="center"><strong>Item Search APIs</strong></p>
-```markdown
+
 Added sorting query parameters to 
 * [Get All Items](https://apiv2.arcadier.com/?version=latest#c06e85df-93f9-446c-a9b2-426296185d0d)
 * [Search for items - Params in URL](https://apiv2.arcadier.com/?version=latest#c6d3c581-2556-4cb0-a7f1-daed8733f9fd)
@@ -16,7 +16,7 @@ created | Sort results in ascending time of creation (earliest to latest)
 -created | Sort results in descending time of creation (latest to earliest)
 updated | Sort results in ascending time since last update (earliest to latest)
 -updated | Sort results in descending time since last update (latest to earliest)
-```
+
 
 For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
 
