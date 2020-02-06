@@ -4923,7 +4923,71 @@
               "request": {
                 "method": "GET",
                 "header": [],
-                "url": "https://{{your-marketplace}}.arcadier.io/api/v2/items/",
+                "url": {
+                  "raw": "https://{{your-marketplace}}.arcadier.io/api/v2/items/?created&-created&updated&-updated&price&-price&keywords&name",
+                  "protocol": "https",
+                  "host": [
+                    "{{your-marketplace}}",
+                    "arcadier",
+                    "io"
+                  ],
+                  "path": [
+                    "api",
+                    "v2",
+                    "items",
+                    ""
+                  ],
+                  "query": [
+                    {
+                      "key": "created",
+                      "value": "",
+                      "description": "Sort by created date in ascending order.",
+                      "type": "text"
+                    },
+                    {
+                      "key": "-created",
+                      "value": "",
+                      "description": "Sort by created date in descending order.",
+                      "type": "text"
+                    },
+                    {
+                      "key": "updated",
+                      "value": "",
+                      "description": "Sort by updated date in ascending order.",
+                      "type": "text"
+                    },
+                    {
+                      "key": "-updated",
+                      "value": "",
+                      "description": "Sort by updated date in descending order.",
+                      "type": "text"
+                    },
+                    {
+                      "key": "price",
+                      "value": "",
+                      "description": "Sort by price in ascending order.",
+                      "type": "text"
+                    },
+                    {
+                      "key": "-price",
+                      "value": "",
+                      "description": "Sort by price in descending order.",
+                      "type": "text"
+                    },
+                    {
+                      "key": "keywords",
+                      "value": "",
+                      "description": "Filter by a certain keywords found in their name, description, category name, custom field name, etc.",
+                      "type": "text"
+                    },
+                    {
+                      "key": "name",
+                      "value": "",
+                      "description": "Sort alphabetically by item name.",
+                      "type": "text"
+                    }
+                  ]
+                },
                 "description": "Gets all items of the marketplace. They can be sorted using the query parameters below\n    \n#### Authentication\n> None required"
               },
               "response": [
