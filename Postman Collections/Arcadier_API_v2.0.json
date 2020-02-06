@@ -4186,6 +4186,29 @@
             }
           ],
           "_postman_id": "60822fa5-ec0f-4f12-875e-4ff9f73402d4",
+          "description": "The response of this API is what you send to your payment gateway's APIs.",
+          "event": [
+            {
+              "listen": "prerequest",
+              "script": {
+                "id": "2cfffde0-949c-49b8-ae03-1ea8f62d5bf2",
+                "type": "text/javascript",
+                "exec": [
+                  ""
+                ]
+              }
+            },
+            {
+              "listen": "test",
+              "script": {
+                "id": "5fdca4e7-68b5-4817-9c8a-ddd7ff1bcb9d",
+                "type": "text/javascript",
+                "exec": [
+                  ""
+                ]
+              }
+            }
+          ],
           "_postman_isSubFolder": true
         },
         {
