@@ -5107,7 +5107,7 @@
                     }
                   ]
                 },
-                "description": "Searches for items and returns results filtered by the parameters below.\n\n#### Authentication\n> None Required"
+                "description": "Searches for items and returns results filtered by the parameters below. Filtered results can be further sorted using the last 8 parameters described.\n\n#### Authentication\n> None Required"
               },
               "response": [
                 {
