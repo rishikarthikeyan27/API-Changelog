@@ -7631,7 +7631,7 @@
               "raw": "{\n    \"From\": \"string\",\n    \"To\": \"string\",\n    \"Body\": \"Your email content. It can be in plaintext or in HTML\",\n    \"Subject\": \"string\"\n}"
             },
             "url": "https://{{your-marketplace}}.arcadier.io/api/v2/admins/{{adminID}}/emails",
-            "description": "This API can send emails on behalf of the marketplace Admin to anyone with a valid email address.\n\nTo write the message in HTML, your whole HTML code should be in one single line, i.e, no line breaks in the JSON body. Here is a list of things you need to know before writing HTML in the \"Body\" parameter:\n* Line breaks in your email can be inserted using `<br>`\n* Inverted commas `href=\"example\"` should be written as `href=\\\"example\\\"` or `style=\"color:#fff\"` should be written `style=\\\"color:#fff\\\"`\n* Links should always start as `http://` or `https://`\n\n#### Authentication\n> Admin Token only."
+            "description": "This API can send emails on behalf of the marketplace Admin to anyone with a valid email address.\n\nTo write the message in HTML, your whole HTML code should be in one single line, i.e, no line breaks in the JSON body. Here is a list of things you need to know before writing HTML in the \"Body\" parameter:\n* Line breaks in your email can be inserted using ```<br>```\n* Inverted commas `href=\"example\"` should be written as `href=\\\"example\\\"` or `style=\"color:#fff\"` should be written `style=\\\"color:#fff\\\"`\n* Links should always start as `http://` or `https://`\n\n#### Authentication\n> Admin Token only."
           },
           "response": [
             {
