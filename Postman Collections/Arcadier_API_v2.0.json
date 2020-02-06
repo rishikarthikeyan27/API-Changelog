@@ -1006,7 +1006,7 @@
                   }
                 ],
                 "url": {
-                  "raw": "https://{{your-marketplace}}.arcadier.io/api/v2/admins/{{adminID}}/users/?pageSize={{integer}}&pageNumber={{integer}}&role={{string}}",
+                  "raw": "https://{{your-marketplace}}.arcadier.io/api/v2/admins/{{adminID}}/users/?pageSize=&pageNumber=&role=merchant&keywords=",
                   "protocol": "https",
                   "host": [
                     "{{your-marketplace}}",
@@ -1024,18 +1024,24 @@
                   "query": [
                     {
                       "key": "pageSize",
-                      "value": "{{integer}}",
-                      "description": "The number of results displayed"
+                      "value": "",
+                      "description": "The number of results displayed per API call."
                     },
                     {
                       "key": "pageNumber",
-                      "value": "{{integer}}",
+                      "value": "",
                       "description": "The page number"
                     },
                     {
                       "key": "role",
-                      "value": "{{string}}",
-                      "description": "Admin, merchant, buyer"
+                      "value": "merchant",
+                      "description": "Merchant role only"
+                    },
+                    {
+                      "key": "keywords",
+                      "value": "",
+                      "description": "Filter users using a keyword. The matches returned may have the keyword in their username/email/firstName/lastName.",
+                      "type": "text"
                     }
                   ]
                 },
