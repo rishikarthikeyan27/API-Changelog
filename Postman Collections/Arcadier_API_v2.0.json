@@ -4049,6 +4049,29 @@
             }
           ],
           "_postman_id": "0fe75bd0-dff4-4af0-b7fb-f6a7afcc330f",
+          "description": "These APIs are called before having to call your payment gateway's APIs.",
+          "event": [
+            {
+              "listen": "prerequest",
+              "script": {
+                "id": "00198a57-30e8-435a-805b-610546dd1072",
+                "type": "text/javascript",
+                "exec": [
+                  ""
+                ]
+              }
+            },
+            {
+              "listen": "test",
+              "script": {
+                "id": "cfeb8cf7-4fb4-4089-b4d6-701d490e9912",
+                "type": "text/javascript",
+                "exec": [
+                  ""
+                ]
+              }
+            }
+          ],
           "_postman_isSubFolder": true
         },
         {
