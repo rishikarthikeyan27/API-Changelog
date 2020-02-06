@@ -1163,12 +1163,12 @@
                 "header": [
                   {
                     "key": "Authorization",
-                    "value": "Bearer {{admintoken}}",
-                    "type": "text"
+                    "type": "text",
+                    "value": "Bearer {{admintoken}}"
                   }
                 ],
                 "url": {
-                  "raw": "https://{{your-marketplace}}.arcadier.io/api/v2/admins/{{adminID}}/users/?pageSize=&pageNumber=&role=buyer&keywords=",
+                  "raw": "https://{{your-marketplace}}.arcadier.io/api/v2/admins/{{adminID}}/users/?role=buyer&keywords=&pageSize=&pageNumber=",
                   "protocol": "https",
                   "host": [
                     "{{your-marketplace}}",
@@ -1185,6 +1185,16 @@
                   ],
                   "query": [
                     {
+                      "key": "role",
+                      "value": "buyer",
+                      "description": "Admin, merchant, buyer"
+                    },
+                    {
+                      "key": "keywords",
+                      "value": "",
+                      "description": "Filter users using a keyword. The matches returned may have the keyword in their username/email/firstName/lastName."
+                    },
+                    {
                       "key": "pageSize",
                       "value": "",
                       "description": "The number of results displayed"
@@ -1193,17 +1203,6 @@
                       "key": "pageNumber",
                       "value": "",
                       "description": "The page number"
-                    },
-                    {
-                      "key": "role",
-                      "value": "buyer",
-                      "description": "Admin, merchant, buyer"
-                    },
-                    {
-                      "key": "keywords",
-                      "value": "",
-                      "description": "Filter users using a keyword. The matches returned may have the keyword in their username/email/firstName/lastName.",
-                      "type": "text"
                     }
                   ]
                 },
