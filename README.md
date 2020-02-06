@@ -3,6 +3,7 @@
 Major changes in Arcadier's APIs and Documentation will be logged here way before they are pushed to live. 
 <div align="center">
   <button id="filter">Test Button</button>
+  <script>console.log("Hi")</script>
 </div>
 <p align="center"><strong>Item Search APIs</strong></p>
 
@@ -25,4 +26,3 @@ updated | Sort results in ascending time since last update (earliest to latest)
 ### Support or Contact
 
 Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
-<script>$("#filter").click(function(){consoleo.log("Hi")});</script>
