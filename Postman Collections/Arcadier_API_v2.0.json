@@ -7977,15 +7977,18 @@
           },
           "request": {
             "auth": {
-              "type": "bearer",
-              "bearer": {
-                "token": "{{admintoken}}"
-              }
+              "type": "noauth"
             },
             "method": "GET",
-            "header": [],
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer {{admintoken}}",
+                "type": "text"
+              }
+            ],
             "url": {
-              "raw": "https://{{your-marketplace}}.arcadier.io/api/v2/admins/{{adminID}}/transactions/?pageSize=&pageNumber=&startDate=&endDate=",
+              "raw": "https://{{your-marketplace}}.arcadier.io/api/v2/admins/{{adminID}}/transactions/?pageSize=&pageNumber=&startDate&endDate",
               "protocol": "https",
               "host": [
                 "{{your-marketplace}}",
@@ -8013,15 +8016,13 @@
                 },
                 {
                   "key": "startDate",
-                  "value": "",
-                  "description": "The lower limit of the time frame after which a transaction occured.",
-                  "type": "text"
+                  "value": null,
+                  "description": "The lower limit of the time frame after which a transaction occured."
                 },
                 {
                   "key": "endDate",
-                  "value": "",
-                  "description": "The upper limit of the time frame before which a trasnaction occured.",
-                  "type": "text"
+                  "value": null,
+                  "description": "The upper limit of the time frame before which a trasnaction occured."
                 }
               ]
             },
