@@ -7939,7 +7939,7 @@
             "method": "GET",
             "header": [],
             "url": {
-              "raw": "https://{{your-marketplace}}.arcadier.io/api/v2/admins/{{adminID}}/transactions/?pageSize={{integer}}&pageNumber={{integer}}",
+              "raw": "https://{{your-marketplace}}.arcadier.io/api/v2/admins/{{adminID}}/transactions/?pageSize=&pageNumber=&startDate=&endDate=",
               "protocol": "https",
               "host": [
                 "{{your-marketplace}}",
@@ -7957,13 +7957,25 @@
               "query": [
                 {
                   "key": "pageSize",
-                  "value": "{{integer}}",
+                  "value": "",
                   "description": "(Optional) The number of results per page"
                 },
                 {
                   "key": "pageNumber",
-                  "value": "{{integer}}",
+                  "value": "",
                   "description": "(Optional) The page number"
+                },
+                {
+                  "key": "startDate",
+                  "value": "",
+                  "description": "The lower limit of the time frame after which a transaction occured.",
+                  "type": "text"
+                },
+                {
+                  "key": "endDate",
+                  "value": "",
+                  "description": "The upper limit of the time frame before which a trasnaction occured.",
+                  "type": "text"
                 }
               ]
             },
