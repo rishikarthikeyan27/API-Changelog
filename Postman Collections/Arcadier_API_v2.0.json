@@ -4922,7 +4922,7 @@
                 "method": "GET",
                 "header": [],
                 "url": {
-                  "raw": "https://{{your-marketplace}}.arcadier.io/api/v2/items?sellerID=&pageSize=&pageNumber=&categories=&customFields=&tags=&minPrice=&maxPrice=&minRating=&maxRating=&startDate=&endDate=&latitude=&longitude=&keywords=&createdStartDate=&createdEndDate=&updatedStartDate=&updatedEndDate=",
+                  "raw": "https://{{your-marketplace}}.arcadier.io/api/v2/items?sellerID=&pageSize=&pageNumber=&categories=&customFields=&tags=&minPrice=&maxPrice=&minRating=&maxRating=&startDate=&endDate=&latitude=&longitude=&keywords=&createdStartDate=&createdEndDate=&updatedStartDate=&updatedEndDate=&created&-created&updated&-updated&price&-price&keywords=&name",
                   "protocol": "https",
                   "host": [
                     "{{your-marketplace}}",
@@ -4938,96 +4938,163 @@
                     {
                       "key": "sellerID",
                       "value": "",
+                      "type": "text",
                       "description": "The merchant GUID"
                     },
                     {
                       "key": "pageSize",
                       "value": "",
+                      "type": "text",
                       "description": "The number of results per page"
                     },
                     {
                       "key": "pageNumber",
                       "value": "",
+                      "type": "text",
                       "description": "The number of pages"
                     },
                     {
                       "key": "categories",
                       "value": "",
+                      "type": "text",
                       "description": "The category GUID the item belongs to"
                     },
                     {
                       "key": "customFields",
                       "value": "",
+                      "type": "text",
                       "description": "The name of the custom field it might have"
                     },
                     {
                       "key": "tags",
                       "value": "",
+                      "type": "text",
                       "description": "Tags that were given to it"
                     },
                     {
                       "key": "minPrice",
                       "value": "",
+                      "type": "text",
                       "description": "Its minimum price"
                     },
                     {
                       "key": "maxPrice",
                       "value": "",
+                      "type": "text",
                       "description": "Its maximum price"
                     },
                     {
                       "key": "minRating",
                       "value": "",
+                      "type": "text",
                       "description": "Its minimum rating"
                     },
                     {
                       "key": "maxRating",
                       "value": "",
+                      "type": "text",
                       "description": "Its maximum rating"
                     },
                     {
                       "key": "startDate",
                       "value": "",
+                      "type": "text",
                       "description": "(For spacetime) The start date of the service in unix format"
                     },
                     {
                       "key": "endDate",
                       "value": "",
+                      "type": "text",
                       "description": "(For spacetime) The end date of the service in unix format"
                     },
                     {
                       "key": "latitude",
                       "value": "",
+                      "type": "text",
                       "description": "The geographical number of degrees above or below the equator."
                     },
                     {
                       "key": "longitude",
                       "value": "",
+                      "type": "text",
                       "description": "The geographical number of degrees before of after Greenwich, UK. "
                     },
                     {
                       "key": "keywords",
-                      "value": ""
+                      "value": "",
+                      "type": "text"
                     },
                     {
                       "key": "createdStartDate",
                       "value": "",
+                      "type": "text",
                       "description": "The search will look for items created at `CreatedDateTime > createdStartDate`"
                     },
                     {
                       "key": "createdEndDate",
                       "value": "",
+                      "type": "text",
                       "description": "The search will look for items created at `CreatedEndTime < createdEndDate`"
                     },
                     {
                       "key": "updatedStartDate",
                       "value": "",
+                      "type": "text",
                       "description": "The search will look for items updated at `ModifiedDateTime > UpdatedStartDate`"
                     },
                     {
                       "key": "updatedEndDate",
                       "value": "",
+                      "type": "text",
                       "description": "The search will look for items updated at `ModifiedDateTime < UpdatedEndDate`"
+                    },
+                    {
+                      "key": "created",
+                      "value": "",
+                      "type": "text",
+                      "description": "Sort by created date in ascending order."
+                    },
+                    {
+                      "key": "-created",
+                      "value": "",
+                      "type": "text",
+                      "description": "Sort by created date in descending order."
+                    },
+                    {
+                      "key": "updated",
+                      "value": "",
+                      "type": "text",
+                      "description": "Sort by updated date in ascending order."
+                    },
+                    {
+                      "key": "-updated",
+                      "value": "",
+                      "type": "text",
+                      "description": "Sort by updated date in descending order."
+                    },
+                    {
+                      "key": "price",
+                      "value": "",
+                      "type": "text",
+                      "description": "Sort by price in ascending order."
+                    },
+                    {
+                      "key": "-price",
+                      "value": "",
+                      "type": "text",
+                      "description": "Sort by price in descending order."
+                    },
+                    {
+                      "key": "keywords",
+                      "value": "",
+                      "type": "text",
+                      "description": "Filter by certain keywords found in their name, description, category name, custom field name, etc."
+                    },
+                    {
+                      "key": "name",
+                      "value": "",
+                      "type": "text",
+                      "description": "Sort alphabetically by item name."
                     }
                   ]
                 },
