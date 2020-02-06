@@ -5394,7 +5394,7 @@
           "_postman_isSubFolder": true
         },
         {
-          "name": "Get one item's Information",
+          "name": "Get one item",
           "_postman_id": "a48c136d-a478-41b3-b647-66ef6c2dd440",
           "protocolProfileBehavior": {
             "disableBodyPruning": true
