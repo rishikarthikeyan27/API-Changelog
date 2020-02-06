@@ -988,7 +988,7 @@
               ]
             },
             {
-              "name": "Get All merchants",
+              "name": "Get All Merchants",
               "_postman_id": "1964d4ac-5dff-4bf3-b8a4-b6382cf8383b",
               "protocolProfileBehavior": {
                 "disableBodyPruning": true
@@ -1006,7 +1006,7 @@
                   }
                 ],
                 "url": {
-                  "raw": "https://{{your-marketplace}}.arcadier.io/api/v2/admins/{{adminID}}/users/?pageSize={{integer}}&pageNumber={{integer}}&role={{string}}",
+                  "raw": "https://{{your-marketplace}}.arcadier.io/api/v2/admins/{{adminID}}/users/?pageSize=&pageNumber=&role=merchant&keywords=",
                   "protocol": "https",
                   "host": [
                     "{{your-marketplace}}",
@@ -1024,22 +1024,28 @@
                   "query": [
                     {
                       "key": "pageSize",
-                      "value": "{{integer}}",
-                      "description": "The number of results displayed"
+                      "value": "",
+                      "description": "The number of results displayed per API call."
                     },
                     {
                       "key": "pageNumber",
-                      "value": "{{integer}}",
+                      "value": "",
                       "description": "The page number"
                     },
                     {
                       "key": "role",
-                      "value": "{{string}}",
-                      "description": "Admin, merchant, buyer"
+                      "value": "merchant",
+                      "description": "Merchant role only"
+                    },
+                    {
+                      "key": "keywords",
+                      "value": "",
+                      "description": "Filter users using a keyword. The matches returned may have the keyword in their username/email/firstName/lastName.",
+                      "type": "text"
                     }
                   ]
                 },
-                "description": "Responds with a list of users filtered by role. \n\nList of roles: Owner, Admin, Merchant, User\n\n* The admin can be a buyer and a merchant.\n* All merchants can be buyers.\n* That's why when not specifying the role, the total number displayed, TotalRecords, will be all the users of the marketplace. And that will be equal to the number of buyers + the admin.\n\nResponse parameters are identical to [Get All Users' Info](https://apiv2.arcadier.com/#5282732e-0930-43b5-b98f-eeb3d5ce94b8)\n\n#### Authentication\n> Admin token only"
+                "description": "Gets the list of all merchants, with a default `pageSize` of `24`. This can be changed in the query parameters. Search results can be filtered using `keywords`\n\n#### Authentication\n> Admin token only"
               },
               "response": [
                 {
@@ -1163,7 +1169,7 @@
                   }
                 ],
                 "url": {
-                  "raw": "https://{{your-marketplace}}.arcadier.io/api/v2/admins/{{adminID}}/users/?pageSize={{integer}}&pageNumber={{integer}}&role={{string}}",
+                  "raw": "https://{{your-marketplace}}.arcadier.io/api/v2/admins/{{adminID}}/users/?pageSize=&pageNumber=&role=buyer&keywords=",
                   "protocol": "https",
                   "host": [
                     "{{your-marketplace}}",
@@ -1181,18 +1187,24 @@
                   "query": [
                     {
                       "key": "pageSize",
-                      "value": "{{integer}}",
+                      "value": "",
                       "description": "The number of results displayed"
                     },
                     {
                       "key": "pageNumber",
-                      "value": "{{integer}}",
+                      "value": "",
                       "description": "The page number"
                     },
                     {
                       "key": "role",
-                      "value": "{{string}}",
+                      "value": "buyer",
                       "description": "Admin, merchant, buyer"
+                    },
+                    {
+                      "key": "keywords",
+                      "value": "",
+                      "description": "Filter users using a keyword. The matches returned may have the keyword in their username/email/firstName/lastName.",
+                      "type": "text"
                     }
                   ]
                 },
