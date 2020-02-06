@@ -4778,7 +4778,7 @@
           "name": "Item Search",
           "item": [
             {
-              "name": "Get an item's Information",
+              "name": "Get one item's Information",
               "_postman_id": "a48c136d-a478-41b3-b647-66ef6c2dd440",
               "protocolProfileBehavior": {
                 "disableBodyPruning": true
@@ -4940,51 +4940,43 @@
                   "query": [
                     {
                       "key": "created",
-                      "value": "",
-                      "description": "Sort by created date in ascending order.",
-                      "type": "text"
+                      "value": null,
+                      "description": "Sort by created date in ascending order."
                     },
                     {
                       "key": "-created",
-                      "value": "",
-                      "description": "Sort by created date in descending order.",
-                      "type": "text"
+                      "value": null,
+                      "description": "Sort by created date in descending order."
                     },
                     {
                       "key": "updated",
-                      "value": "",
-                      "description": "Sort by updated date in ascending order.",
-                      "type": "text"
+                      "value": null,
+                      "description": "Sort by updated date in ascending order."
                     },
                     {
                       "key": "-updated",
-                      "value": "",
-                      "description": "Sort by updated date in descending order.",
-                      "type": "text"
+                      "value": null,
+                      "description": "Sort by updated date in descending order."
                     },
                     {
                       "key": "price",
-                      "value": "",
-                      "description": "Sort by price in ascending order.",
-                      "type": "text"
+                      "value": null,
+                      "description": "Sort by price in ascending order."
                     },
                     {
                       "key": "-price",
-                      "value": "",
-                      "description": "Sort by price in descending order.",
-                      "type": "text"
+                      "value": null,
+                      "description": "Sort by price in descending order."
                     },
                     {
                       "key": "keywords",
-                      "value": "",
-                      "description": "Filter by a certain keywords found in their name, description, category name, custom field name, etc.",
-                      "type": "text"
+                      "value": null,
+                      "description": "Filter by certain keywords found in their name, description, category name, custom field name, etc."
                     },
                     {
                       "key": "name",
-                      "value": "",
-                      "description": "Sort alphabetically by item name.",
-                      "type": "text"
+                      "value": null,
+                      "description": "Sort alphabetically by item name."
                     }
                   ]
                 },
