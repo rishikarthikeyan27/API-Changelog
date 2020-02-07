@@ -39,10 +39,10 @@ function import_css(){
 	var timer = setInterval(function(){
 		if(i == 2){
 			var style = document.createElement('link');
-			link.href = "/API-Changelog/changelog.css"
-			link.type = 'text/css';
-			link.rel = "stylesheet";
-			document.getElementsByTagName('head')[0].appendChild(link);
+			style.href = "/API-Changelog/changelog.css"
+			style.type = 'text/css';
+			style.rel = "stylesheet";
+			document.getElementsByTagName('head')[0].appendChild(style);
 			clearInterval(timer);
 		}
 		i++;
