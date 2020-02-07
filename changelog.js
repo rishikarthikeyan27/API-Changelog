@@ -1,5 +1,6 @@
 $(document).ready(function(){
 	import_jQuery();
+	import_css();
 	$("#filter").click(function(){
 		var json_url = "https://raw.githubusercontent.com/Arcadier/API-Changelog/master/Postman%20Collections/Arcadier_API_v2.0.json";
 		$.getJSON(json_url, function(result){ 
@@ -26,10 +27,19 @@ $(document).ready(function(){
 		var view_btn = document.querySelector(".page-header > a.btn");
 		view_btn.hide();
 	}
+	
 	 function import_jQuery(){
 	 	var script = document.createElement('script');
 		script.src = 'https://code.jquery.com/jquery-3.4.1.min.js';
 		script.type = 'text/javascript';
 		document.getElementsByTagName('head')[0].appendChild(script);
 	 }
+	
+	function import_css(){
+		var style = document.createElement('link');
+		link.href = "/API-Changelog/changelog.css"
+		link.type = 'text/css';
+		link.rel = "stylesheet";
+		document.getElementsByTagName('head')[0].appendChild(link);
+	}
 });
