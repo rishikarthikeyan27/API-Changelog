@@ -20,11 +20,4 @@ Added time filtering query parameters to:
 
 ---
 
-<script>
-    $("#filter").click(function(){
-      $.getJSON("https://raw.githubusercontent.com/Arcadier/API-Changelog/master/Postman%20Collections/Arcadier_API_v2.0.json", function(result){
-        console.log(result.info.name);
-        console.log(result.item[0].item[0].name);
-      })
-    });
-  </script>
+<script src="https://github.com/Arcadier/API-Changelog/edit/master/changelog.js"></script>
