@@ -12,8 +12,9 @@ $(document).ready(function(){
 	
 	function addPostmanButton(){
 		var header = document.querySelector(".page-header");
-		var postman = "<div style=\"display: inline-block;\" class=\"btn\" data-postman-action=\"collection/import\" data-postman-var-1=\"346b915f84ec00600260\">Run in Postman App</div>";
+		var postman = "<div class=\"btn\" data-postman-action=\"collection/import\" data-postman-var-1=\"346b915f84ec00600260\">Run in Postman App</div>";
 		var postman_ctn = document.createElement("div");
+		postman_ctn.css("display", "inline-block");
 		postman_ctn.innerHTML = postman;
 		header.appendChild(postman_ctn);
 
