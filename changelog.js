@@ -10,6 +10,7 @@ $(document).ready(function(){
 	
 	addPostmanButton();
 	changeViewButton();
+	changeTitles();
 	
 	function addPostmanButton(){
 		var header = document.querySelector(".page-header");
@@ -35,6 +36,14 @@ $(document).ready(function(){
 		}, 100);
 	}
 });
+
+function changeTitles(){
+	var title = document.querySelector(".project-name");
+	title.innerHTML = "Arcadier API Changelog";
+	
+	var subtitle = document.querySelector(".project-tagline");
+	subtitle.innerHTML = "View and PLay on Postman using the links below"
+}
 
 function import_css(){
 	var i=0;
