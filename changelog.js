@@ -31,9 +31,6 @@ $(document).ready(function(){
 				view_btn.href = "https://apiv2.arcadier.com";
 				view_btn.target = "_blank";
 				view_btn.innerHTML = "View on Postman";
-				
-				var small = document.querySelector(".wrapper > header > p > a > small");
-				small.innerHTML = "Api.Arcadier.com/welcome"
 				clearInterval(timer);
 			}
 		}, 100);
