@@ -26,13 +26,12 @@ $(document).ready(function(){
 	function changeViewButton(){
 		var timer = setInterval(function(){
 			var view_btn = document.querySelector(".page-header > a.btn");
-			if(view_btn.length){
+			if(view_btn){
 				console.log("exists");
-				view_btn.
+				view_btn.href = "https://apiv2.arcadier.com";
+				view_btn.target = "_blank";
 			}
-		}, 2000)
-		
-		view_btn.hide();
+		}, 2000);
 	}
 });
 
