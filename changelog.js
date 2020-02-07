@@ -1,6 +1,6 @@
 $(document).ready(function(){
 	import_jQuery();
-	import_css();
+	//import_css();
 	$("#filter").click(function(){
 		var json_url = "https://raw.githubusercontent.com/Arcadier/API-Changelog/master/Postman%20Collections/Arcadier_API_v2.0.json";
 		$.getJSON(json_url, function(result){ 
