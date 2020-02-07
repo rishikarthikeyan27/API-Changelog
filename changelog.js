@@ -38,7 +38,7 @@ $(document).ready(function(){
 });
 
 function changeTitles(){
-	var title = document.querySelector(".project-name");
+	var title = document.querySelector(".wrapper > header > h1 > a");
 	title.innerHTML = "Arcadier API Changelog";
 	
 	var subtitle = document.querySelector(".project-tagline");
