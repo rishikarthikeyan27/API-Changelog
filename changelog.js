@@ -30,8 +30,9 @@ $(document).ready(function(){
 				view_btn.href = "https://apiv2.arcadier.com";
 				view_btn.target = "_blank";
 				view_btn.innerHTML = "View on Postman";
+				clearInterval(timer);
 			}
-		}, 2000);
+		}, 100);
 	}
 });
 
@@ -47,6 +48,6 @@ function import_css(){
 			clearInterval(timer);
 		}
 		i++;
-	}, 100);
+	}, 50);
 	
 }
