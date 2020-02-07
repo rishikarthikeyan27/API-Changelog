@@ -26,4 +26,3 @@ Added time filtering query parameters to:
 
 ---
 <script src="/API-Changelog/changelog.js" type="text/javascript"></script>
-<link rel="stylesheet" type="text/css" href="/API-Changelog/changelog.css">
