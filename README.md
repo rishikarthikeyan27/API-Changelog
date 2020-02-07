@@ -20,4 +20,10 @@ Added time filtering query parameters to:
 
 ---
 
+<p align="center"><strong>(7 February 2020) Transaction History APIs</strong></p>
+
+Added time filtering query parameters to:
+* [Get Transactions History of marketplace](https://apiv2.arcadier.com/?version=latest#fd876791-d71f-43bd-be02-bfe6bf17747a)
+
+---
 <script src="/API-Changelog/changelog.js" type="text/javascript"></script>
