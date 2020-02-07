@@ -1,4 +1,3 @@
-import_jQuery();
 $(document).ready(function(){
 	import_css();
 	$("#filter").click(function(){
@@ -34,13 +33,6 @@ $(document).ready(function(){
 		}, 2000);
 	}
 });
-
-function import_jQuery(){
-	var script = document.createElement('script');
-	script.src = 'https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js';
-	script.type = 'text/javascript';
-	document.getElementsByTagName('head')[0].appendChild(script);
- }
 
 function import_css(){
 	var i=0;
