@@ -43,9 +43,9 @@ function import_css(){
 			style.type = 'text/css';
 			style.rel = "stylesheet";
 			document.getElementsByTagName('head')[0].appendChild(style);
-			clearInterval(timer);
+			clearInterval(style);
 		}
 		i++;
-	}, 2000);
+	}, 100);
 	
 }
