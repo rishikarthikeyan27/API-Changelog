@@ -29,6 +29,7 @@ $(document).ready(function(){
 				console.log("exists");
 				view_btn.href = "https://apiv2.arcadier.com";
 				view_btn.target = "_blank";
+				view_btn.innerHTML = "View on Postman";
 			}
 		}, 2000);
 	}
@@ -43,7 +44,7 @@ function import_css(){
 			style.type = 'text/css';
 			style.rel = "stylesheet";
 			document.getElementsByTagName('head')[0].appendChild(style);
-			clearInterval(style);
+			clearInterval(timer);
 		}
 		i++;
 	}, 100);
