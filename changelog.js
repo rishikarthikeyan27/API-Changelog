@@ -24,8 +24,5 @@ $(document).ready(function(){
 	function changeViewButton(){
 		var view_btn = document.querySelector(".page-header > a.btn");
 		view_btn.innerHTML = "View on Postman";
-		view_btn.attr('href', 'https://apiv2.arcadier.com');
-		view_btn.removeClass("btn");
-		view_btn.addClass("postman-run-button");
 	}
 });
