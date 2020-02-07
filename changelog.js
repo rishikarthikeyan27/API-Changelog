@@ -13,7 +13,7 @@ $(document).ready(function(){
 	changeTitles();
 	
 	function addPostmanButton(){
-		var header = document.querySelector(".page-header");
+		var header = document.querySelector(".wrapper > header");
 		var postman = "<div class=\"postman-run-button\" data-postman-action=\"collection/import\" data-postman-var-1=\"346b915f84ec00600260\"></div>";
 		var postman_ctn = document.createElement("div");
 		postman_ctn.innerHTML = postman;
@@ -25,12 +25,15 @@ $(document).ready(function(){
 	
 	function changeViewButton(){
 		var timer = setInterval(function(){
-			var view_btn = document.querySelector(".page-header > a.btn");
+			var view_btn = document.querySelector(".wrapper > header > p > a");
 			if(view_btn){
 				console.log("exists");
 				view_btn.href = "https://apiv2.arcadier.com";
 				view_btn.target = "_blank";
 				view_btn.innerHTML = "View on Postman";
+				
+				var small = document.querySelector(".wrapper > header > p > a > small");
+				small.innerHTML = "Api.Arcadier.com/welcome"
 				clearInterval(timer);
 			}
 		}, 100);
