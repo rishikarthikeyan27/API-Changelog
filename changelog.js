@@ -12,7 +12,7 @@ $(document).ready(function(){
 	
 	function addPostmanButton(){
 		var header = document.querySelector(".page-header");
-		var postman = "<div class=\"postman-run-button\" data-postman-action=\"collection/import\" data-postman-var-1=\"346b915f84ec00600260\">Run in Postman App</div>";
+		var postman = "<div class=\"postman-run-button\" data-postman-action=\"collection/import\" data-postman-var-1=\"346b915f84ec00600260\"></div>";
 		var postman_ctn = document.createElement("div");
 		postman_ctn.innerHTML = postman;
 		header.appendChild(postman_ctn);
