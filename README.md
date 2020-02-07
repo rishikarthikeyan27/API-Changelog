@@ -20,4 +20,4 @@ Added time filtering query parameters to:
 
 ---
 
-<script src="https://github.com/Arcadier/API-Changelog/edit/master/changelog.js"></script>
+<script src="https://github.com/Arcadier/API-Changelog/blob/master/changelog.js"></script>
