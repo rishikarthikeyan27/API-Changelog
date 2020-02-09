@@ -44,9 +44,6 @@ $(document).ready(function(){
 function changeTitles(){
 	var title = document.querySelector(".wrapper > header > h1 > a");
 	title.innerHTML = "Arcadier API Changelog";
-	
-	var subtitle = document.querySelector(".project-tagline");
-	subtitle.innerHTML = "View and PLay on Postman using the links below"
 }
 
 function import_css(){
