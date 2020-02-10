@@ -63,7 +63,7 @@ function import_css(){
 			clearInterval(timer);
 		}
 		i++;
-	}, 50);
+	}, 10);
 }
 
 function import_toastr(){
