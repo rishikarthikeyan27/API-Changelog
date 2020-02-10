@@ -8,3 +8,7 @@ header {
   padding: 16px;
   min-width: 400px;
 }
+
+footer {
+  display: none;
+}
