@@ -25,4 +25,67 @@ Added time filtering query parameters to:
 * [Search for items - Params in URL](https://apiv2.arcadier.com/?version=latest#c6d3c581-2556-4cb0-a7f1-daed8733f9fd)
 
 ---
+
+<p align="center"><strong>(8 February 2020) Fixed Bug in Item Search API</strong></p>
+
+**sellerID** query parameter now properly returns items from a specific merchant only:
+* [Search for items - Params in URL](https://apiv2.arcadier.com/?version=latest#c6d3c581-2556-4cb0-a7f1-daed8733f9fd)
+
+---
+
+<p align="center"><strong>(8 February 2020) Fixed Bug in Item Search API</strong></p>
+
+**sellerID** query parameter now properly returns items from a specific merchant only:
+* [Search for items - Params in URL](https://apiv2.arcadier.com/?version=latest#c6d3c581-2556-4cb0-a7f1-daed8733f9fd)
+
+---
+
+<p align="center"><strong>(8 February 2020) Fixed Bug in Item Search API</strong></p>
+
+**sellerID** query parameter now properly returns items from a specific merchant only:
+* [Search for items - Params in URL](https://apiv2.arcadier.com/?version=latest#c6d3c581-2556-4cb0-a7f1-daed8733f9fd)
+
+---
+
+<p align="center"><strong>(8 February 2020) Fixed Bug in Item Search API</strong></p>
+
+**sellerID** query parameter now properly returns items from a specific merchant only:
+* [Search for items - Params in URL](https://apiv2.arcadier.com/?version=latest#c6d3c581-2556-4cb0-a7f1-daed8733f9fd)
+
+---
+
+<p align="center"><strong>(8 February 2020) Fixed Bug in Item Search API</strong></p>
+
+**sellerID** query parameter now properly returns items from a specific merchant only:
+* [Search for items - Params in URL](https://apiv2.arcadier.com/?version=latest#c6d3c581-2556-4cb0-a7f1-daed8733f9fd)
+
+---
+
+<p align="center"><strong>(8 February 2020) Fixed Bug in Item Search API</strong></p>
+
+**sellerID** query parameter now properly returns items from a specific merchant only:
+* [Search for items - Params in URL](https://apiv2.arcadier.com/?version=latest#c6d3c581-2556-4cb0-a7f1-daed8733f9fd)
+
+---
+
+<p align="center"><strong>(8 February 2020) Fixed Bug in Item Search API</strong></p>
+
+**sellerID** query parameter now properly returns items from a specific merchant only:
+* [Search for items - Params in URL](https://apiv2.arcadier.com/?version=latest#c6d3c581-2556-4cb0-a7f1-daed8733f9fd)
+
+---
+
+<p align="center"><strong>(8 February 2020) Fixed Bug in Item Search API</strong></p>
+
+**sellerID** query parameter now properly returns items from a specific merchant only:
+* [Search for items - Params in URL](https://apiv2.arcadier.com/?version=latest#c6d3c581-2556-4cb0-a7f1-daed8733f9fd)
+
+---
+
+<p align="center"><strong>(8 February 2020) Fixed Bug in Item Search API</strong></p>
+
+**sellerID** query parameter now properly returns items from a specific merchant only:
+* [Search for items - Params in URL](https://apiv2.arcadier.com/?version=latest#c6d3c581-2556-4cb0-a7f1-daed8733f9fd)
+
+---
 <script src="/API-Changelog/changelog.js" type="text/javascript"></script>
