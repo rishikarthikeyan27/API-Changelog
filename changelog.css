@@ -5,4 +5,6 @@
 header {
   border: 1px solid #ccc!important;
   border-radius: 16px;
+  padding: 16px;
+  min-width: 400px;
 }
