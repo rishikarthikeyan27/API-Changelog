@@ -19,6 +19,7 @@ $(document).ready(function(){
 	addPostmanButton();
 	changeViewButton();
 	changeTitles();
+	hideFooter();
 	
 	function addPostmanButton(){
 		var header = document.querySelector(".wrapper > header");
@@ -92,4 +93,8 @@ function import_toastr_css(){
 		}
 		i++;
 	}, 50);
+}
+
+function hideFooter(){
+	//done by css
 }
