@@ -17,3 +17,21 @@ header {
 footer {
   display: none;
 }
+
+@media (max-width: 47.9em)
+body .top-bar .top-bar-right {
+    margin-right: 10px;
+}
+body .top-bar .top-bar-right {
+    margin: 21px 20px 0 0;
+    float: right;
+}
+* {
+    /* -webkit-box-sizing: border-box; */
+    -moz-box-sizing: border-box;
+    /* box-sizing: border-box; */
+}
+user agent stylesheet
+div {
+    display: block;
+}
