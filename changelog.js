@@ -1,4 +1,3 @@
-//import_css();
 import_toastr();
 import_toastr_css();
 $(document).ready(function(){
@@ -44,21 +43,6 @@ $(document).ready(function(){
 function changeTitles(){
 	var title = document.querySelector(".wrapper > header > h1 > a");
 	title.innerHTML = "Arcadier API Changelog";
-}
-
-function import_css(){
-	var i=0;
-	var timer = setInterval(function(){
-		if(i == 2){
-			var style = document.createElement('link');
-			style.href = "/API-Changelog/changelog.css"
-			style.type = 'text/css';
-			style.rel = "stylesheet";
-			document.getElementsByTagName('head')[0].appendChild(style);
-			clearInterval(timer);
-		}
-		i++;
-	}, 10);
 }
 
 function import_toastr(){
