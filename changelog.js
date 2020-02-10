@@ -1,5 +1,6 @@
 $(document).ready(function(){
 	import_css();
+	import_toastr();
 // 	var catalog = document.createElement("div");
 // 	var wrapper = document.querySelector(".wrapper");
 // 	catalog.innerHTML = "<div class=\"catalog-banner\"><div class=\"background-image-holder\" style=\"background: url(&quot;https://api.arcadier.com/assets/images/catalog-banner-top.png &quot;);\"><img src=\"https://api.arcadier.com/assets/images/catalog-banner-top.png \" alt=\"catalog\" style=\"display: none;\"></div><div class=\"over-catalog-search text-center\"><h1>Find the right Plug-ins for <br>your marketplace </h1><div class=\"search-bar-catalog\"><form><input type=\"text\" name=\"search-catalog\" class=\"cat-search\" placeholder=\"Search Plug-in\"><button class=\"ser-round-square\"><i class=\"fa fa-search\"></i></button></form></div></div></div>";
