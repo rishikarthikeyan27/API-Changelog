@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="{{ site.lang | default: "en-US" }}">
   <head>
     <meta charset="UTF-8">
@@ -13,6 +13,11 @@
     <![endif]-->
   </head>
   <body>
+    <div class="custom_header">
+        <div class="logo_arc">
+<!--             <img src="https://media-exp1.licdn.com/dms/image/C510BAQHqUlIUNTt84g/company-logo_200_200/0?e=2159024400&v=beta&t=oeoTTp8WNsuLcp67SYCsz4W6lhOuG9FN6ihDcyTVObY"/> -->
+        </div>
+    </div>
     <div class="wrapper">
       <header>
         <h1><a href="{{ "/" | absolute_url }}">{{ site.title | default: site.github.repository_name }}</a></h1>
@@ -45,10 +50,10 @@
 
       </section>
       <footer>
-        {% if site.github.is_project_page %}
-        <p>This project is maintained by <a href="{{ site.github.owner_url }}">{{ site.github.owner_name }}</a></p>
-        {% endif %}
-        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
+          {% if site.github.is_project_page %}
+          <!-- <p>This project is maintained by <a href="{{ site.github.owner_url }}">{{ site.github.owner_name }}</a></p>-->
+          {% endif %}
+          <p><small>Hosted on GitHub Pages</small></p>
       </footer>
     </div>
     <script src="{{ "/assets/js/scale.fix.js" | relative_url }}"></script>
