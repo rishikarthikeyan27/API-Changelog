@@ -16,10 +16,14 @@ h1 {
   font-weight: 500;
 }
 
-// a, a:active, a:focus{
-//     color: #ef5b25;
-//     text-decoration: none;
-// }
+a, a:active, a:focus, a:hover{
+    color: #ef5b25;
+    text-decoration: none;
+}
+
+a:hover{
+  text-decoration:underline;
+}
 
 .wrapper {
   width: auto;
