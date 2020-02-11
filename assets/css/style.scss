@@ -37,11 +37,14 @@ footer {
 
 body {
     margin: 0px;
-    padding: 0px;
-    background-image: url("https://images.unsplash.com/photo-1519389950473-47ba0277781c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60");
+    padding: 0px; 
     background-color: #d6525a;
-    background-blend-mode: screen;
+    background-image: url("https://images.unsplash.com/photo-1519389950473-47ba0277781c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60");
+         /* Full height */
+    height: 100%;
+         /* Center and scale the image nicely */
+    background-position: center;
     background-repeat: no-repeat;
-    opacity: 0.3;
-    background-size: cover;
+    background-size: cover;  
 }
+
