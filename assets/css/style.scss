@@ -2,6 +2,25 @@
 ---
 @import "{{ site.theme }}";
 
+body {
+  font-family: "Open Sans",sans-serif;
+  -webkit-font-smoothing: antialiased;
+  line-height: 1.5;
+  color: #282828;
+  margin: 0px;
+  padding: 0px;
+}
+
+h1 {
+  font-size: 36px;
+  font-weight: 500;
+}
+
+a, a:active, a:focus, a:hover {
+    color: #ef5b25;
+    text-decoration: none;
+}
+
 .wrapper {
   width: auto;
 }
@@ -10,10 +29,12 @@ header {
   border: 1px solid #ccc!important;
   border-radius: 16px;
   padding: 16px;
-  min-width: 400px;
+  width: auto;
   margin-top: 40px;
   margin-left: 8px;
+  text-align: center;
 }
+
 
 footer {
   //display: none;
